@@ -107,6 +107,10 @@ python -m core.run.eval --config-name=config_procthor \
 
 Metrics reported per run: Task Success Rate (TSR), Subgoal Success Rate (SSR), and average decision steps (successful episodes).
 
+## License
+
+This project is released under the MIT License (see [LICENSE](LICENSE)). The vendored VirtualHome package under `virtualhome/` retains its own license (CC BY-NC-SA 4.0); see `virtualhome/LICENSE.md`.
+
 ## Citation
 
 ```bibtex
