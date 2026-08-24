@@ -327,43 +327,43 @@ def check_holding_obj(graph, agent_id, obj_id):
 from PIL import Image, ImageDraw, ImageFont
 
 def add_text_to_np_img(np_img, text, font_path="UbuntuMono-B.ttf", font_size=35, padding=10):
-    # 이미지 생성 및 준비 (BGR -> RGB 변환)
+    # Create and prepare the image (BGR -> RGB conversion)
     img = Image.fromarray(np_img[:, :, ::-1])
     draw = ImageDraw.Draw(img)
     font = ImageFont.truetype(font_path, size=font_size)
     
-    # 이미지의 너비에 맞춰 텍스트 줄을 나누기 위한 계산
-    image_width = img.width - 2 * padding  # 좌우 여백을 고려한 이미지 너비
+    # Compute line wrapping to fit the image width
+    image_width = img.width - 2 * padding  # Image width accounting for left/right padding
     text_lines = []
     
-    # 텍스트를 적절한 줄 길이에 맞추기
+    # Wrap text to an appropriate line length
     words = text.split()
     line = ""
     for word in words:
-        # 임시로 단어를 더해가며 현재 줄의 너비를 계산
+        # Tentatively add the word and measure the current line width
         test_line = f"{line} {word}".strip()
-        # 텍스트의 크기를 getbbox로 계산
+        # Measure text size with getbbox
         line_bbox = font.getbbox(test_line)
-        line_width = line_bbox[2] - line_bbox[0]  # 텍스트의 너비
+        line_width = line_bbox[2] - line_bbox[0]  # Text width
         
-        # 줄의 너비가 이미지 너비를 넘으면 줄을 나눈다
+        # Break the line if it exceeds the image width
         if line_width <= image_width:
             line = test_line
         else:
-            text_lines.append(line)  # 넘으면 현재 줄을 저장하고
-            line = word              # 다음 줄 시작
+            text_lines.append(line)  # If it overflows, save the current line
+            line = word              # and start next line
         
-    # 마지막 줄 추가
+    # Add the last line
     if line:
         text_lines.append(line)
 
-    # 첫 번째 텍스트 줄의 y 위치 설정
+    # Set the y position of the first text line
     y_text = padding
     
-    # 각 줄에 텍스트 그리기
+    # Draw each line of text
     for line in text_lines:
         draw.text((padding, y_text), line, font=font, fill=(255, 255, 255, 255))
-        y_text += font_size + 5  # 각 줄 사이에 여백 추가
+        y_text += font_size + 5  # Add spacing between lines
     
     return img
 
@@ -501,15 +501,15 @@ def sort_with_same_similarity(sorted_ic_ex_encode_list):
         if current_similarity is None:
             current_similarity = similarity
 
-        # 유사도가 동일한 경우
+        # Same similarity as the current group
         if similarity == current_similarity:
             same_similarity_list.append(experience)
         else:
-            # 유사도가 달라지면 이전 유사도 그룹 처리 후 초기화
+            # When similarity changes, process the previous group and reset
             final_list.extend(process_same_similarity_list(same_similarity_list))
             current_similarity = similarity
             same_similarity_list = [experience]
-    # 마지막 유사도 그룹 처리
+    # Process the last similarity group
     if same_similarity_list:
         final_list.extend(process_same_similarity_list(same_similarity_list))
     return final_list
@@ -529,7 +529,7 @@ def process_same_similarity_list(experience_list, select_next='expand'):
             expand_list.append(exp)
         else:
             etc_list.append(exp)
-    # expand, success, failure 번갈아가며 추가
+    # Add expand, success, failure in alternation
     while expand_list or success_list or failure_list:
         if select_next == "expand" and expand_list:
             result_list.append(expand_list.pop(0))
@@ -540,7 +540,7 @@ def process_same_similarity_list(experience_list, select_next='expand'):
         elif select_next == "failure" and failure_list:
             result_list.append(failure_list.pop(0))
             select_next = "expand"
-        # 만약 선택한 리스트가 비어있다면 바로 다음으로 넘어가기
+        # If the selected list is empty, move on to the next one
         else:
             if select_next == "expand":
                 select_next = "success" if success_list else "failure"
@@ -548,6 +548,6 @@ def process_same_similarity_list(experience_list, select_next='expand'):
                 select_next = "failure" if failure_list else "expand"
             elif select_next == "failure":
                 select_next = "expand" if expand_list else "success"
-    # 남은 success나 failure가 있다면 추가 (번갈아 선택 다 못한 경우)
+    # Add any remaining success/failure items (when alternation could not pick them all)
     result_list.extend(etc_list)
     return result_list

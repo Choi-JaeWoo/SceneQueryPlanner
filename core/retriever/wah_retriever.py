@@ -75,11 +75,11 @@ class WahRetriever(BaseRetriever):
         func_name = match.group(1)
         args_str = match.group(2).strip()
 
-        # (a) 인수가 비어 있을 때 → None
+        # (a) When arguments are empty -> None
         if args_str == "":
             args_literal = None
 
-        # (b) 인수가 있을 때 → 안전하게 파싱
+        # (b) When arguments exist -> parse safely
         else:
             try:
                 args_literal = ast.literal_eval(args_str)
@@ -94,12 +94,12 @@ class WahRetriever(BaseRetriever):
         args       = parsed_call["args"]      # str | dict | None
         outcome    = {"execution_successful": False, "result": None, "error": None}
 
-        # ① 그래프 검증
+        # (1) Validate the graph
         if current_graph is None:
             outcome["error"] = "working_memory.scene_graph is None"
             return outcome
 
-        # ② 인터페이스 존재 여부
+        # (2) Check that the interface exists
         if not hasattr(self.sg_interface, func_name):
             outcome["error"] = f"SceneGraphInterface has no method '{func_name}'"
             return outcome
@@ -107,29 +107,29 @@ class WahRetriever(BaseRetriever):
         method = getattr(self.sg_interface, func_name)
 
         try:
-            # ③ find_objects ↔ read_node 분기
+            # (3) Branch between find_objects and read_node
             if func_name == "find_objects":
                 if not isinstance(args, dict):
                     raise ValueError("find_objects expects a dict argument.")
                 result = method(current_graph, filt=args)
 
-            elif func_name == "get_child_nodes": # get_descendant_nodes_data 명시적 처리
+            elif func_name == "get_child_nodes": # explicit handling via get_descendant_nodes_data
                 if not isinstance(args, dict):
                     raise ValueError(f"'{func_name}' expects a dict argument (e.g., {{'parent_node_id': 'id', ...}}).")
-                # get_descendant_nodes_data(self, scene_graph, parent_node_id, ...) 시그니처 가정
-                # 'args' 딕셔너리의 모든 키-값을 키워드 인자로 전달
+                # assumes signature get_descendant_nodes_data(self, scene_graph, parent_node_id, ...)
+                # pass all key-value pairs of the 'args' dict as keyword arguments
                 result = method(current_graph, **args)
-            elif func_name == "get_child_node_names": # get_descendant_nodes_data 명시적 처리
+            elif func_name == "get_child_node_names": # explicit handling via get_descendant_nodes_data
                 if not isinstance(args, dict):
                     raise ValueError(f"'{func_name}' expects a dict argument (e.g., {{'parent_node_id': 'id', ...}}).")
-                # get_descendant_nodes_data(self, scene_graph, parent_node_id, ...) 시그니처 가정
-                # 'args' 딕셔너리의 모든 키-값을 키워드 인자로 전달
+                # assumes signature get_descendant_nodes_data(self, scene_graph, parent_node_id, ...)
+                # pass all key-value pairs of the 'args' dict as keyword arguments
                 result = method(current_graph, **args)
             elif func_name == "get_edges_for_node":
                 if not isinstance(args, dict):
                     raise ValueError(f"'{func_name}' expects a dict argument (e.g., {{'parent_node_id': 'id', ...}}).")
-                # get_descendant_nodes_data(self, scene_graph, parent_node_id, ...) 시그니처 가정
-                # 'args' 딕셔너리의 모든 키-값을 키워드 인자로 전달
+                # assumes signature get_descendant_nodes_data(self, scene_graph, parent_node_id, ...)
+                # pass all key-value pairs of the 'args' dict as keyword arguments
                 result = method(current_graph, **args)
 
             elif func_name == "read_node":
@@ -143,10 +143,10 @@ class WahRetriever(BaseRetriever):
                     raise ValueError("read_node arguments must be str or dict.")
 
             else:
-                # ⬇︎ 일반화 (선택) – inspect 로 파라미터 매칭
+                # ⬇︎ Generalization (optional) – match parameters via inspect
                 sig = inspect.signature(method)
                 kwargs = {}
-                for p in list(sig.parameters.values())[1:]:  # 첫 인자 = scene_graph
+                for p in list(sig.parameters.values())[1:]:  # first argument = scene_graph
                     if isinstance(args, dict) and p.name in args:
                         kwargs[p.name] = args[p.name]
                 result = method(current_graph, **kwargs)

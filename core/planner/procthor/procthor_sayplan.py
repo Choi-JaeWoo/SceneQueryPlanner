@@ -76,10 +76,10 @@ class ProcThorSayPlan(SayPlan):
 
     def initial_collect_semantic_search(self, traj_file_path, task_data, sayplan_dict):
         cleaned_sg = self.clean_sayplan_dict(sayplan_dict)
-        # JSON 직렬화
+        # JSON serialization
         sg_json = json.dumps(cleaned_sg, ensure_ascii=False)
 
-        # Key에서만 " 제거 (정규식: "key": → key:)
+        # Remove " only from keys (regex: "key": -> key:)
         sg_custom = sg_json.replace('"','')
         with open(traj_file_path, 'w') as f:
             f.write(f'Your task is to: {task_data["instruction"][0]}\n')
@@ -92,10 +92,10 @@ class ProcThorSayPlan(SayPlan):
     
     def write_semantic_search(self, traj_file_path, sayplan_dict, memory):
         cleaned_sg = self.clean_sayplan_dict(sayplan_dict)
-        # JSON 직렬화
+        # JSON serialization
         sg_json = json.dumps(cleaned_sg, ensure_ascii=False)
 
-        # Key에서만 " 제거 (정규식: "key": → key:)
+        # Remove " only from keys (regex: "key": -> key:)
         sg_custom = sg_json.replace('"','')
         with open(traj_file_path, 'a') as f:
             f.write(f"3D Scene Graph: {sg_custom}\n")
@@ -107,10 +107,10 @@ class ProcThorSayPlan(SayPlan):
     
     def log_semantic_search(self, log, sayplan_dict, memory):
         cleaned_sg = self.clean_sayplan_dict(sayplan_dict)
-        # JSON 직렬화
+        # JSON serialization
         sg_json = json.dumps(cleaned_sg, ensure_ascii=False)
 
-        # Key에서만 " 제거 (정규식: "key": → key:)
+        # Remove " only from keys (regex: "key": -> key:)
         sg_custom = sg_json.replace('"','')
         log.info(f"3D Scene Graph: {sg_custom}\n")
         log.info(f'Memory: {memory}\n')
@@ -119,10 +119,10 @@ class ProcThorSayPlan(SayPlan):
     
     def initial_collect_iterative_replanning(self, traj_file_path, task_data, sayplan_dict, semantic_search_memory):
         cleaned_sg = self.clean_sayplan_dict(sayplan_dict)
-        # JSON 직렬화
+        # JSON serialization
         sg_json = json.dumps(cleaned_sg, ensure_ascii=False)
 
-        # Key에서만 " 제거 (정규식: "key": → key:)
+        # Remove " only from keys (regex: "key": -> key:)
         sg_custom = sg_json.replace('"','')
         with open(traj_file_path, 'w') as f:
             f.write(f'Your task is to: {task_data["instruction"][0]}\n')

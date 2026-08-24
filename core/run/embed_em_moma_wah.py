@@ -50,30 +50,30 @@ def extract_success_traj(cfg):
     success_traj_dir = os.path.join(em_dir, 'text_traj')
     os.makedirs(success_traj_dir, exist_ok=True)
 
-    # ---- 여기부터 추가: task_id별로 step 정렬해서 나누기 ----
+    # ---- Added: group files by task_id, sorted by step ----
     pat = re.compile(r'^traj_(\d{3})_(\d{3})\.txt$')  # traj_{task_id}_{step_id}.txt
     grouped = defaultdict(list)  # {task_id: [(s
 
     for fn in file_names:
         m = pat.match(fn)
         if not m:
-            # 패턴에 안 맞는 파일은 무시
+            # ignore files that do not match the pattern
             continue
         task_id = m.group(1)          # '061'
         step_id = int(m.group(2))     # 69
         grouped[task_id].append((step_id, fn))
 
-    # step_id 기준으로 정렬 후 파일명만 뽑기
+    # sort by step_id, then keep only the filenames
     files_by_task = {
         tid: [fn for (step, fn) in sorted(pairs, key=lambda x: x[0])]
         for tid, pairs in grouped.items()
     }
 
-    # 2. files_by_task에 있는 task_id만 순회
+    # 2. Iterate only over task_ids present in files_by_task
     for task_id, fn_list in files_by_task.items():
         task_d = train_set[int(task_id)]
 
-        # 액션 시퀀스 뽑기 (Act: 라인만)
+        # Extract the action sequence (Act: lines only)
         act_seq = []
         for fn in fn_list:
             fp = os.path.join(collect_traj_dir, fn)
@@ -82,9 +82,9 @@ def extract_success_traj(cfg):
                     line = line.strip()
                     if line.startswith("Act:"):
                         act_seq.append(line.replace("Act:", "").strip())
-                        break   # 액션 하나만 있으니 break
+                        break   # only one action, so break
         
-        # 환경 초기화 및 실행
+        # Initialize the environment and run
         env.reset(task_d)
         for nl_action in act_seq:
             if nl_action in ["done", "failure"]:

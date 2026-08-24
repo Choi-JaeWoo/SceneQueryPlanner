@@ -226,9 +226,9 @@ class MoMa(BasePlanner):
     def make_list_room_object(self, scene_graph):
         room_to_objects = defaultdict(list)
         room_node_map = dict()  # name_id_nl → room_node
-        # (1) room 노드 수집
+        # (1) Collect room nodes
         room_nodes = [n for n, data in scene_graph.nodes(data=True) if data.get('node_type') == 'room']
-        # (2) 각 room 노드에 대해 들어오는 INSIDE edge 탐색
+        # (2) For each room node, find incoming INSIDE edges
         for room_node in room_nodes:
             room_data = scene_graph.nodes[room_node]
             room_name_raw = room_data.get("name_id_nl", room_node)
@@ -241,7 +241,7 @@ class MoMa(BasePlanner):
                 if 'user' in obj_name_raw[0].lower():
                     continue
                 room_to_objects[room_name_raw].append(obj_name_raw)
-        # (3) 포맷팅
+        # (3) Formatting
         formatted_lines = []
         for room_key, obj_list in sorted(room_to_objects.items()):
             room_node = room_node_map.get(room_key, None)
@@ -262,7 +262,7 @@ class MoMa(BasePlanner):
                         if node_data.get("name_id_nl") == obj_key:
                             node_type = node_data.get("node_type", "")
                             visited = node_data.get("visited", False)
-                            # 무조건 괄호 없이 출력 if node_type == object
+                            # always print without parentheses if node_type == object
                             if node_type == "object":
                                 obj_str = f"{name} {id_}"
                             else:

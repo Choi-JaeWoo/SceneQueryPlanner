@@ -76,7 +76,7 @@ class ProcThorSG(BaseSG):
     
     def update_nx_graph(self, partial_graph, last_event):
         G_new = self.convert_nx_graph(partial_graph)
-        G = self.scene_graph  # 기존 전체 scene graph
+        G = self.scene_graph  # existing full scene graph
 
         # --- Node update ---
         for node_key, attrs in G_new.nodes(data=True):
@@ -85,17 +85,17 @@ class ProcThorSG(BaseSG):
             else:
                 for k, v in attrs.items():
                     if G.nodes[node_key].get(k) != v:
-                        G.nodes[node_key][k] = v  # 상태/속성 업데이트
+                        G.nodes[node_key][k] = v  # update state/attributes
 
         # --- Edge update ---
-        # 1. user 노드의 기존 엣지 제거
+        # 1. Remove existing edges of the user node
         user_key = "user 1"
         if user_key in G:
             for u, v, k in list(G.out_edges(user_key, keys=True)):
                 G.remove_edge(u, v, k)
             for u, v, k in list(G.in_edges(user_key, keys=True)):
                 G.remove_edge(u, v, k)
-        # 2. held_nodes의 기존 엣지 제거
+        # 2. Remove existing edges of held_nodes
         inventory = last_event.metadata.get('inventoryObjects', [])
         held_node_key = None
         connected_objs = set()
@@ -106,14 +106,14 @@ class ProcThorSG(BaseSG):
             if held_name_id_nl:
                 held_node_key = f"{held_name_id_nl[0]} {held_name_id_nl[1]}"
                 if held_node_key in G:
-                    # out-edges 제거
+                    # remove out-edges
                     for u, v, k in list(G.out_edges(held_node_key, keys=True)):
                         G.remove_edge(u, v, k)
-                    # in-edges 제거
+                    # remove in-edges
                     for u, v, k in list(G.in_edges(held_node_key, keys=True)):
                         edge_data = G[u][v][k]
                         if edge_data.get("relation") in {"ON", "INSIDE"}:
-                            continue  # receptacle 내부 object는 유지
+                            continue  # keep objects inside the receptacle
                         G.remove_edge(u, v, k)
                 ################  
                 for u, v, k, data in G.in_edges(held_node_key, keys=True, data=True):
@@ -123,17 +123,17 @@ class ProcThorSG(BaseSG):
                 for obj_key in connected_objs:
                     for uu, vv, kk in list(G.in_edges(obj_key, keys=True)):
                         if vv == held_node_key:
-                            continue  # held_node와의 관계는 유지
+                            continue  # keep relations with held_node
                         G.remove_edge(uu, vv, kk)
                     for uu, vv, kk in list(G.out_edges(obj_key, keys=True)):
                         if vv == held_node_key:
-                             continue  # held_node와의 관계는 유지
+                             continue  # keep relations with held_node
                         G.remove_edge(uu, vv, kk)
                         
                 if user_key in G:
                     G.add_edge(user_key, held_node_key, relation="HOLD")
             
-        # 3. 일반적인 노드 업데이트: partial에 u,v 모두 있으면 기존 엣지 제거 ---
+        # 3. General node update: remove existing edges if both u and v are in partial ---
         affected_pairs = {
             (u, v) for u, v, k in G_new.edges(keys=True) if u in G and v in G and u != held_node_key and v != held_node_key
         }
@@ -142,7 +142,7 @@ class ProcThorSG(BaseSG):
                 for k in list(G[u][v].keys()):
                     G.remove_edge(u, v, k)
 
-        # 4. partial_graph의 엣지 추가 ---
+        # 4. Add edges from partial_graph ---
         for u, v, k, attrs in G_new.edges(keys=True, data=True):
             if u in G and v in G and not u in connected_objs and v not in connected_objs:
                 G.add_edge(u, v, **attrs)
@@ -166,27 +166,27 @@ class ProcThorSG_One(BaseSG):
             if self.scene_graph.nodes[target]['node_type'] == 'room':
                 self.scene_graph.nodes[target]['visited'] = True
         
-        # (1) room 및 asset 노드 수집
+        # (1) Collect room and asset nodes
         room_and_asset_nodes = {node_key for node_key, data in self.scene_graph.nodes(data=True)
                                 if data.get('node_type') in ['room', 'asset'] or node_key == 'user 1'}
 
-        # (2) 'user 1'과 연결된 노드 수집 (엣지 방향 무관)
+        # (2) Collect nodes connected to 'user 1' (regardless of edge direction)
         connected_to_agent = set()
         for u, v in self.scene_graph.in_edges('user 1'):
             connected_to_agent.add(u)
         for u, v in self.scene_graph.out_edges('user 1'):
             connected_to_agent.add(v)
             
-        # (2.5) 어떤 asset과도 INSIDE, ON edge로 연결되지 않은 object 노드 추가
+        # (2.5) Add object nodes not connected to any asset via INSIDE/ON edges
         unconnected_objects = set()
         for node_key, data in self.scene_graph.nodes(data=True):
             if data.get("node_type") != "object":
                 continue
-            connected = False  # asset과 INSIDE/ON으로 연결되었는지 여부
+            connected = False  # whether connected to an asset via INSIDE/ON
             for a, adata in self.scene_graph.nodes(data=True):
                 if adata.get("node_type") != "asset":
                     continue
-                # 방향: object → asset
+                # direction: object → asset
                 if self.scene_graph.has_edge(node_key, a):
                     edge_dict = self.scene_graph.get_edge_data(node_key, a)
                     for edge_data in edge_dict.values():
@@ -195,7 +195,7 @@ class ProcThorSG_One(BaseSG):
                             break
                     if connected:
                         break
-                # 방향: asset → object
+                # direction: asset → object
                 if self.scene_graph.has_edge(a, node_key):
                     edge_dict = self.scene_graph.get_edge_data(a, node_key)
                     for edge_data in edge_dict.values():
@@ -207,14 +207,14 @@ class ProcThorSG_One(BaseSG):
             if not connected:
                 unconnected_objects.add(node_key)
 
-        # (3) 최종 노드 집합
+        # (3) Final node set
         faucet_nodes = {
             node_key for node_key, data in self.scene_graph.nodes(data=True)
             if "faucet" in node_key.lower()
         }
         final_nodes = room_and_asset_nodes.union(connected_to_agent).union(unconnected_objects).union(faucet_nodes)
 
-        # (4) Induced subgraph 생성 및 대체
+        # (4) Create induced subgraph and replace
         self.scene_graph = self.scene_graph.subgraph(final_nodes).copy()
 
 
@@ -316,7 +316,7 @@ class ProcThorSG_One(BaseSG):
         if initialize == True:
             for room_key in G.nodes:
                 if G.nodes[room_key].get("node_type") == "room":
-                    # room 노드와 연결된 모든 인고잉 엣지들에 대해
+                    # for all incoming edges connected to the room node
                     for source_key, _, edge_data in G.in_edges(room_key, data=True):
                         if G.nodes[source_key].get("node_type") == "asset":
                             G.nodes[source_key]["room"] = room_key
@@ -326,11 +326,11 @@ class ProcThorSG_One(BaseSG):
     def update_nx_graph(self, partial_graph, last_event, visited_node=None):    
         G_new = self.convert_nx_graph(partial_graph)
         #########################################################################
-        # (1) room 및 asset 노드 수집
+        # (1) Collect room and asset nodes
         room_asset_agent_nodes = {node_key for node_key, data in G_new.nodes(data=True)
                                 if data.get('node_type') in ['room', 'asset'] or node_key == 'user 1'}
 
-        # (2) 'user 1'과 InFront로 연결된 노드 수집
+        # (2) Collect nodes connected to 'user 1' via InFront
         connected_to_agent = set()
         infront_assets = set()
         for _, v, edge_data in G_new.out_edges('user 1', data=True):
@@ -338,32 +338,32 @@ class ProcThorSG_One(BaseSG):
                 connected_to_agent.add(v)
                 infront_assets.add(v)
 
-        # (2.1) InFront로 연결된 asset 내부 object도 수집
+        # (2.1) Also collect objects inside assets connected via InFront
         for asset_node in infront_assets:
             for obj_node, _, e_data in G_new.in_edges(asset_node, data=True):
                 if e_data.get("edge_type") == "o2a":
                     connected_to_agent.add(obj_node)
                     
-        # (2.2) 'user 1'과 연결된 노드 수집 (엣지 방향 무관)
+        # (2.2) Collect nodes connected to 'user 1' (regardless of edge direction)
         for u, v in G_new.in_edges('user 1'):
             connected_to_agent.add(u)
         for u, v in G_new.out_edges('user 1'):
             connected_to_agent.add(v)
 
-        # (2.2) InFront edge 삭제
+        # (2.2) Delete InFront edges
         edges_to_remove = []
         for u, v, edge_data in G_new.edges(data=True):
             if edge_data.get("relation") == "InFront":
                 edges_to_remove.append((u, v))
         G_new.remove_edges_from(edges_to_remove)
-        # 전체 포함 노드
+        # all included nodes
         final_nodes = room_asset_agent_nodes.union(connected_to_agent)
 
-        # --- G_new를 subgraph로 갱신 ---
+        # --- Refresh G_new as the subgraph ---
         G_new = G_new.subgraph(final_nodes).copy()
         ###########################################################################
 
-        G = self.scene_graph  # 기존 전체 scene graph
+        G = self.scene_graph  # existing full scene graph
         
         # --- Node update ---
         for node_key, attrs in G_new.nodes(data=True):
@@ -375,17 +375,17 @@ class ProcThorSG_One(BaseSG):
             else:
                 for k, v in attrs.items():
                     if G.nodes[node_key].get(k) != v:
-                        G.nodes[node_key][k] = v  # 상태/속성 업데이트
+                        G.nodes[node_key][k] = v  # update state/attributes
         
         # --- Edge update ---
-        # 1. user 노드의 기존 엣지 제거
+        # 1. Remove existing edges of the user node
         user_key = "user 1"
         if user_key in G:
             for u, v, k in list(G.out_edges(user_key, keys=True)):
                 G.remove_edge(u, v, k)
             for u, v, k in list(G.in_edges(user_key, keys=True)):
                 G.remove_edge(u, v, k)
-        # 2. held_nodes의 기존 엣지 제거
+        # 2. Remove existing edges of held_nodes
         inventory = last_event.metadata.get('inventoryObjects', [])
         held_node_key = None
         connected_objs = set()
@@ -396,14 +396,14 @@ class ProcThorSG_One(BaseSG):
             if held_name_id_nl:
                 held_node_key = f"{held_name_id_nl[0]} {held_name_id_nl[1]}"
                 if held_node_key in G:
-                    # out-edges 제거
+                    # remove out-edges
                     for u, v, k in list(G.out_edges(held_node_key, keys=True)):
                         G.remove_edge(u, v, k)
-                    # in-edges 제거
+                    # remove in-edges
                     for u, v, k in list(G.in_edges(held_node_key, keys=True)):
                         edge_data = G[u][v][k]
                         if edge_data.get("relation") in {"ON", "INSIDE"}:
-                            continue  # receptacle 내부 object는 유지
+                            continue  # keep objects inside the receptacle
                         G.remove_edge(u, v, k)
                 ################  
                 for u, v, k, data in G.in_edges(held_node_key, keys=True, data=True):
@@ -413,17 +413,17 @@ class ProcThorSG_One(BaseSG):
                 for obj_key in connected_objs:
                     for uu, vv, kk in list(G.in_edges(obj_key, keys=True)):
                         if vv == held_node_key:
-                            continue  # held_node와의 관계는 유지
+                            continue  # keep relations with held_node
                         G.remove_edge(uu, vv, kk)
                     for uu, vv, kk in list(G.out_edges(obj_key, keys=True)):
                         if vv == held_node_key:
-                             continue  # held_node와의 관계는 유지
+                             continue  # keep relations with held_node
                         G.remove_edge(uu, vv, kk)
                         
                 if user_key in G:
                     G.add_edge(user_key, held_node_key, relation="HOLD")
             
-        # 3. 일반적인 노드 업데이트: partial에 u,v 모두 있으면 기존 엣지 제거 ---
+        # 3. General node update: remove existing edges if both u and v are in partial ---
         affected_pairs = {
             (u, v) for u, v, k in G_new.edges(keys=True) if u in G and v in G and u != held_node_key and v != held_node_key
         }
@@ -432,7 +432,7 @@ class ProcThorSG_One(BaseSG):
                 for k in list(G[u][v].keys()):
                     G.remove_edge(u, v, k)
 
-        # 4. partial_graph의 엣지 추가 ---
+        # 4. Add edges from partial_graph ---
         for u, v, k, attrs in G_new.edges(keys=True, data=True):
             if u in G and v in G and not u in connected_objs and v not in connected_objs:
                 G.add_edge(u, v, **attrs)
@@ -447,7 +447,7 @@ def draw_scene_graph(G, save_path, title="Packed Subgraph Layout", user_node="us
     # 1. connected components (for directed graph: weakly)
     components = list(nx.weakly_connected_components(G))
 
-    # 2. 그래프 배치 초기화
+    # 2. Initialize graph layout
     all_pos = dict()
     x_offset = 0
 
@@ -456,20 +456,20 @@ def draw_scene_graph(G, save_path, title="Packed Subgraph Layout", user_node="us
 
     for i, comp in enumerate(components):
         subG = G.subgraph(comp)
-        # 각 컴포넌트는 독립된 layout
-        pos = nx.spring_layout(subG, seed=42, k=0.5)  # 내부는 뭉쳐있게
-        # x축 기준 위치 이동 (packing)
+        # each component gets an independent layout
+        pos = nx.spring_layout(subG, seed=42, k=0.5)  # keep internal nodes clustered
+        # shift position along x-axis (packing)
         pos = {n: (x + x_offset, y) for n, (x, y) in pos.items()}
-        x_offset += 3.0  # 다음 컴포넌트는 오른쪽으로 이동
+        x_offset += 3.0  # shift next component to the right
 
         all_pos.update(pos)
 
-        # 노드 색상 지정
+        # set node colors
         node_colors = ["orange" if n == user_node else "skyblue" for n in subG.nodes]
         nx.draw_networkx_nodes(subG, pos, node_color=node_colors, node_size=800)
         nx.draw_networkx_labels(subG, pos, font_size=8)
 
-        # 엣지 및 라벨
+        # edges and labels
         for u, v, k, data in subG.edges(keys=True, data=True):
             rel = data.get("relation", "rel")
             rad = 0.15 + 0.05 * (k % 4)

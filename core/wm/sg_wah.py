@@ -78,7 +78,7 @@ class WahSG(BaseSG):
     
     def update_nx_graph(self, partial_graph):
         G_new = self.convert_nx_graph(partial_graph)
-        G = self.scene_graph  # 기존 전체 scene graph
+        G = self.scene_graph  # existing full scene graph
 
         # --- Node update ---
         for node_key, attrs in G_new.nodes(data=True):
@@ -87,17 +87,17 @@ class WahSG(BaseSG):
             else:
                 for k, v in attrs.items():
                     if G.nodes[node_key].get(k) != v:
-                        G.nodes[node_key][k] = v  # 상태/속성 업데이트
+                        G.nodes[node_key][k] = v  # update state/attributes
 
         # --- Edge update ---
         user_node = "user 1"
-        # 1. 먼저 held_nodes 찾기
+        # 1. Find held_nodes first
         held_nodes = set()
         for u, v, k, data in G.edges(keys=True, data=True):
             if (u == user_node or v == user_node) and data.get("relation") in ("HOLDS_LH", "HOLDS_RH"):
                 held_nodes.add(v if u == user_node else u)
 
-        # 2. user와 연결된 모든 엣지 제거
+        # 2. Remove all edges connected to user
         edges_to_remove = []
         for u, v, k, data in G.edges(keys=True, data=True):
             if (u == user_node or v == user_node):
@@ -105,12 +105,12 @@ class WahSG(BaseSG):
         for u, v, k in edges_to_remove:
             G.remove_edge(u, v, k)
 
-        # 3. held_nodes의 기존 엣지 제거
+        # 3. Remove existing edges of held_nodes
         for node in held_nodes:
             for u, v, k in list(G.edges(node, keys=True)):
                 G.remove_edge(u, v, k)
 
-        # 4. 일반적인 노드 업데이트: partial에 u,v 모두 있으면 기존 엣지 제거 ---
+        # 4. General node update: remove existing edges if both u and v are in partial ---
         G_new_nodes = set(G_new.nodes)
         affected_pairs = set()
         for u, v, k in G_new.edges(keys=True):
@@ -123,7 +123,7 @@ class WahSG(BaseSG):
                 for k in keys_to_remove:
                     G.remove_edge(u, v, k)
 
-        # 5. partial_graph의 엣지 추가 ---
+        # 5. Add edges from partial_graph ---
         for u, v, k, attrs in G_new.edges(keys=True, data=True):
             if u in G and v in G:
                 G.add_edge(u, v, **attrs)
@@ -147,21 +147,21 @@ class WahSG_One(BaseSG):
             if self.scene_graph.nodes[target]['node_type'] == 'room':
                 self.scene_graph.nodes[target]['visited'] = True
         
-        # (1) room 및 asset 노드 수집
+        # (1) Collect room and asset nodes
         room_and_asset_nodes = {node_key for node_key, data in self.scene_graph.nodes(data=True)
                                 if data.get('node_type') in ['room', 'asset'] or node_key == 'user 1'}
 
-        # (2) 'user 1'과 연결된 노드 수집 (엣지 방향 무관)
+        # (2) Collect nodes connected to 'user 1' (regardless of edge direction)
         connected_to_agent = set()
         for u, v in self.scene_graph.in_edges('user 1'):
             connected_to_agent.add(u)
         for u, v in self.scene_graph.out_edges('user 1'):
             connected_to_agent.add(v)
 
-        # (3) 최종 노드 집합
+        # (3) Final node set
         final_nodes = room_and_asset_nodes.union(connected_to_agent)
 
-        # (4) Induced subgraph 생성 및 대체
+        # (4) Create induced subgraph and replace
         self.scene_graph = self.scene_graph.subgraph(final_nodes).copy()
 
 
@@ -262,17 +262,17 @@ class WahSG_One(BaseSG):
         if initialize == True:
             for room_key in G.nodes:
                 if G.nodes[room_key].get("node_type") == "room":
-                    # room 노드와 연결된 모든 인고잉 엣지들에 대해
+                    # for all incoming edges connected to the room node
                     for source_key, _, edge_data in G.in_edges(room_key, data=True):
                         if G.nodes[source_key].get("node_type") == "asset":
                             G.nodes[source_key]["room"] = room_key
 
-        # 3. 연결되지 않은 object → 가까운 asset 연결
+        # 3. Connect unconnected objects → nearest asset
         object_nodes = [n for n, d in G.nodes(data=True) if d.get("node_type") == "object"]
         asset_nodes = [n for n, d in G.nodes(data=True) if d.get("node_type") == "asset"]
 
         for obj in object_nodes:
-            # 가장 가까운 asset 찾기
+            # find the nearest asset
             obj_pos = G.nodes[obj].get("obj_transform", {}).get("position", None)
             if not obj_pos:
                 continue
@@ -288,9 +288,9 @@ class WahSG_One(BaseSG):
                 if dist < min_dist:
                     min_dist = dist
                     closest_asset = asset
-            # edge 추가
+            # add edge
             if closest_asset:
-                # 이미 obj → asset 혹은 asset → obj 관계가 있는 경우 생략
+                # skip if an obj → asset or asset → obj relation already exists
                 already_connected = any(
                     (obj == u and closest_asset == v) or (obj == v and closest_asset == u)
                     for u, v in G.edges()
@@ -303,24 +303,24 @@ class WahSG_One(BaseSG):
     def update_nx_graph(self, partial_graph, visited_node=None):    
         G_new = self.convert_nx_graph(partial_graph)
         #########################################################################
-        # (1) room 및 asset 노드 수집
+        # (1) Collect room and asset nodes
         room_asset_agent_nodes = {node_key for node_key, data in G_new.nodes(data=True)
                                 if data.get('node_type') in ['room', 'asset'] or node_key == 'user 1'}
 
-        # (2) 'user 1'과 연결된 노드 수집 (엣지 방향 무관)
+        # (2) Collect nodes connected to 'user 1' (regardless of edge direction)
         connected_to_agent = set()
         for u, v in G_new.in_edges('user 1'):
             connected_to_agent.add(u)
         for u, v in G_new.out_edges('user 1'):
             connected_to_agent.add(v)
-        # 전체 포함 노드
+        # all included nodes
         final_nodes = room_asset_agent_nodes.union(connected_to_agent)
 
-        # --- G_new를 subgraph로 갱신 ---
+        # --- Refresh G_new as the subgraph ---
         G_new = G_new.subgraph(final_nodes).copy()
         ###########################################################################
 
-        G = self.scene_graph  # 기존 전체 scene graph
+        G = self.scene_graph  # existing full scene graph
         
         # --- Node update ---
         for node_key, attrs in G_new.nodes(data=True):
@@ -332,17 +332,17 @@ class WahSG_One(BaseSG):
             else:
                 for k, v in attrs.items():
                     if G.nodes[node_key].get(k) != v:
-                        G.nodes[node_key][k] = v  # 상태/속성 업데이트
+                        G.nodes[node_key][k] = v  # update state/attributes
         
         # --- Edge update ---
         user_node = "user 1"
-        # 1. 먼저 held_nodes 찾기
+        # 1. Find held_nodes first
         held_nodes = set()
         for u, v, k, data in G.edges(keys=True, data=True):
             if (u == user_node or v == user_node) and data.get("relation") in ("HOLDS_LH", "HOLDS_RH"):
                 held_nodes.add(v if u == user_node else u)
         
-        # 2. user와 연결된 모든 엣지 제거
+        # 2. Remove all edges connected to user
         edges_to_remove = []
         for u, v, k, data in G.edges(keys=True, data=True):
             if (u == user_node or v == user_node):
@@ -350,12 +350,12 @@ class WahSG_One(BaseSG):
         for u, v, k in edges_to_remove:
             G.remove_edge(u, v, k)
         
-        # 3. held_nodes의 기존 엣지 제거
+        # 3. Remove existing edges of held_nodes
         for node in held_nodes:
             for u, v, k in list(G.edges(node, keys=True)):
                 G.remove_edge(u, v, k)
 
-        # 4. 일반적인 노드 업데이트: partial에 u,v 모두 있으면 기존 엣지 제거 ---
+        # 4. General node update: remove existing edges if both u and v are in partial ---
         G_new_nodes = set(G_new.nodes)
         affected_pairs = set()
         for u, v, k in G_new.edges(keys=True):
@@ -368,7 +368,7 @@ class WahSG_One(BaseSG):
                 for k in keys_to_remove:
                     G.remove_edge(u, v, k)
 
-        # 5. partial_graph의 엣지 추가 ---
+        # 5. Add edges from partial_graph ---
         for u, v, k, attrs in G_new.edges(keys=True, data=True):
             if u in G and v in G:
                 G.add_edge(u, v, **attrs)
@@ -383,7 +383,7 @@ def draw_scene_graph(G, save_path, title="Packed Subgraph Layout", user_node="us
     # 1. connected components (for directed graph: weakly)
     components = list(nx.weakly_connected_components(G))
 
-    # 2. 그래프 배치 초기화
+    # 2. Initialize graph layout
     all_pos = dict()
     x_offset = 0
 
@@ -392,20 +392,20 @@ def draw_scene_graph(G, save_path, title="Packed Subgraph Layout", user_node="us
 
     for i, comp in enumerate(components):
         subG = G.subgraph(comp)
-        # 각 컴포넌트는 독립된 layout
-        pos = nx.spring_layout(subG, seed=42, k=0.5)  # 내부는 뭉쳐있게
-        # x축 기준 위치 이동 (packing)
+        # each component gets an independent layout
+        pos = nx.spring_layout(subG, seed=42, k=0.5)  # keep internal nodes clustered
+        # shift position along x-axis (packing)
         pos = {n: (x + x_offset, y) for n, (x, y) in pos.items()}
-        x_offset += 3.0  # 다음 컴포넌트는 오른쪽으로 이동
+        x_offset += 3.0  # shift next component to the right
 
         all_pos.update(pos)
 
-        # 노드 색상 지정
+        # set node colors
         node_colors = ["orange" if n == user_node else "skyblue" for n in subG.nodes]
         nx.draw_networkx_nodes(subG, pos, node_color=node_colors, node_size=800)
         nx.draw_networkx_labels(subG, pos, font_size=8)
 
-        # 엣지 및 라벨
+        # edges and labels
         for u, v, k, data in subG.edges(keys=True, data=True):
             rel = data.get("relation", "rel")
             rad = 0.15 + 0.05 * (k % 4)

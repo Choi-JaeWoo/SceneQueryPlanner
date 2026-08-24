@@ -208,25 +208,25 @@ class SceneGraphInterface_One():
             # In-edges: asset -> room (edge_type 'a2r')
             for u, _, edge_data in scene_graph.in_edges(parent_node_id, data=True):
                 if edge_data.get('edge_type') == 'a2r':
-                    child_node_ids.add(u) # u가 asset 자식
+                    child_node_ids.add(u) # u is the asset child
             # Out-edges: room -> asset (edge_type 'r2a')
             for _, v, edge_data in scene_graph.out_edges(parent_node_id, data=True):
                 if edge_data.get('edge_type') == 'r2a':
-                    child_node_ids.add(v) # v가 asset 자식
+                    child_node_ids.add(v) # v is the asset child
 
         elif parent_node_type == 'asset':
             # In-edges: object -> asset (edge_type 'o2a')
             for u, _, edge_data in scene_graph.in_edges(parent_node_id, data=True):
                 if edge_data.get('edge_type') == 'o2a':
-                    child_node_ids.add(u) # u가 object 자식
+                    child_node_ids.add(u) # u is the object child
             # Out-edges: asset -> object (edge_type 'a2o')
             for _, v, edge_data in scene_graph.out_edges(parent_node_id, data=True):
                 if edge_data.get('edge_type') == 'a2o':
-                    child_node_ids.add(v) # v가 object 자식
+                    child_node_ids.add(v) # v is the object child
         
         children_data_list: List[Dict[str, Any]] = []
         for child_id in child_node_ids:
-            if child_id in scene_graph: # 자식 노드가 그래프에 실제로 존재하는지 확인
+            if child_id in scene_graph: # check that the child node actually exists in the graph
                 child_ndata = scene_graph.nodes[child_id]
                 filtered_data = self._get_filtered_node_data(child_ndata)
                 children_data_list.append(filtered_data)
@@ -247,21 +247,21 @@ class SceneGraphInterface_One():
             # In-edges: asset -> room (edge_type 'a2r')
             for u, _, edge_data in scene_graph.in_edges(parent_node_id, data=True):
                 if edge_data.get('edge_type') == 'a2r':
-                    child_node_ids.add(u) # u가 asset 자식
+                    child_node_ids.add(u) # u is the asset child
             # Out-edges: room -> asset (edge_type 'r2a')
             for _, v, edge_data in scene_graph.out_edges(parent_node_id, data=True):
                 if edge_data.get('edge_type') == 'r2a':
-                    child_node_ids.add(v) # v가 asset 자식
+                    child_node_ids.add(v) # v is the asset child
 
         elif parent_node_type == 'asset':
             # In-edges: object -> asset (edge_type 'o2a')
             for u, _, edge_data in scene_graph.in_edges(parent_node_id, data=True):
                 if edge_data.get('edge_type') == 'o2a':
-                    child_node_ids.add(u) # u가 object 자식
+                    child_node_ids.add(u) # u is the object child
             # Out-edges: asset -> object (edge_type 'a2o')
             for _, v, edge_data in scene_graph.out_edges(parent_node_id, data=True):
                 if edge_data.get('edge_type') == 'a2o':
-                    child_node_ids.add(v) # v가 object 자식
+                    child_node_ids.add(v) # v is the object child
         
         def _as_list(x: Union[str, List[str]]) -> List[str]:
             return x if isinstance(x, list) else [x]
@@ -283,7 +283,7 @@ class SceneGraphInterface_One():
 
         children_data_list: List[Dict[str, Any]] = []
         for child_id in child_node_ids:
-            if child_id in scene_graph: # 자식 노드가 그래프에 실제로 존재하는지 확인
+            if child_id in scene_graph: # check that the child node actually exists in the graph
                 child_ndata = scene_graph.nodes[child_id]
                 child_node_name =  f"{child_ndata['name_id_nl'][0]} {child_ndata['name_id_nl'][1]}"
                 
@@ -311,10 +311,10 @@ class SceneGraphInterface_One():
         return edge_info_list
     
 def compress_object_list(object_list: str) -> str:
-    # 1. object_list를 comma로 나누고 strip
+    # 1. Split object_list by commas and strip
     # entries = [entry.strip() for entry in object_list.split(",") if entry.strip()]
     entries = object_list
-    # 2. 딕셔너리: 클래스 이름 → 번호 리스트
+    # 2. Dictionary: class name -> list of numbers
     grouped = defaultdict(list)
     for entry in entries:
         match = re.match(r"(.+?)\s+(\d+)$", entry)
@@ -322,10 +322,10 @@ def compress_object_list(object_list: str) -> str:
             cls, idx = match.group(1), int(match.group(2))
             grouped[cls].append(idx)
         else:
-            # 매치되지 않는 경우 그냥 문자열 그대로 저장
+            # If no match, store the string as-is
             grouped[entry].append(None)
 
-    # 3. 클래스별로 번호가 여러 개면 압축
+    # 3. Compress when a class has multiple numbers
     compressed_entries = []
     for cls, ids in grouped.items():
         ids = sorted(i for i in ids if i is not None)
@@ -334,6 +334,6 @@ def compress_object_list(object_list: str) -> str:
         elif len(ids) == 1:
             compressed_entries.append(f"{cls} {ids[0]}")
         else:
-            compressed_entries.append(cls)  # None만 있는 경우
+            compressed_entries.append(cls)  # case with only None values
 
     return ", ".join(compressed_entries)

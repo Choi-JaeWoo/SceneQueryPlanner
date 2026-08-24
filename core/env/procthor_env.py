@@ -41,7 +41,7 @@ class ProcThorEnv(BaseEnv):
         print("[PROCTHOR] ProcThorEnv initialized.")
 
     def reset(self, task_d):
-        # Task 초기화
+        # Initialize task
         self.env_id = task_d["env_id"]
         self.mode = task_d["mode"]
         self.task_goal = task_d["task_goal"]
@@ -50,7 +50,7 @@ class ProcThorEnv(BaseEnv):
         self.cur_recep_info = (None, None)
         self.sliced = []
                 
-        # Scene 초기화
+        # Initialize scene
         house = self.envs[self.env_id]
         self.controller.reset(scene=house)
         
@@ -63,7 +63,7 @@ class ProcThorEnv(BaseEnv):
         self.nodes = procthor_utils.filter_ignored_nodes(nodes, self.sliced)
         self.reachable_positions, self.reachable_position_kdtree = self.get_reachable_positions()
         
-        # room 정보 추출 및 polygon 저장
+        # Extract room info and store polygons
         self.room_info = {}  # room_id -> {type, polcygon (shapely.Polygon)}
         if "rooms" in house:
             for room in house["rooms"]:
@@ -75,7 +75,7 @@ class ProcThorEnv(BaseEnv):
                     "polygon": floor_poly
                 }
         
-        # name-id 변환
+        # name-id conversion
         self.name_id_dict_sim2nl, self.name_id_dict_nl2sim = procthor_utils.make_name_id_dict(self.nodes, self.obj_dict_sim2nl, self.room_info)
 
         # self.vis_log = [{'action': 'init', 'images': self.get_visual_obs()}]
@@ -308,7 +308,7 @@ class ProcThorEnv(BaseEnv):
         # Success case
         success = True
         objects = self.last_event.metadata.get("objects", [])
-        # Microwave 내부 오브젝트를 heated_objects에 추가
+        # Add objects inside the Microwave to heated_objects
         if "Microwave" in obj_id:
             microwave_obj = next((obj for obj in objects if obj.get("objectId") == obj_id), None)
             if microwave_obj:
@@ -319,7 +319,7 @@ class ProcThorEnv(BaseEnv):
             if toaster_obj:
                 heated_ids = toaster_obj.get("receptacleObjectIds", [])
                 self.heated_objects.update(heated_ids)
-        # Faucet 사용 시 가까운 SinkBasin 안의 오브젝트를 cleaned_objects에 추가
+        # When the Faucet is used, add objects in the nearest SinkBasin to cleaned_objects
         elif "Faucet" in obj_id:
             faucet_obj = next((obj for obj in objects if obj.get("objectId") == obj_id), None)
             if faucet_obj:
@@ -516,7 +516,7 @@ class ProcThorEnv(BaseEnv):
                     self.controller.step(dict(action="MoveRight"))
                 self.controller.step(dict(action="RotateHand", x=40, y=0, z=0))
 
-            # pick 시도
+            # Attempt pick
             self.last_event = self.controller.step(dict(
                 action=action,
                 objectId=obj_id,
@@ -536,7 +536,7 @@ class ProcThorEnv(BaseEnv):
                 else:
                     held = inventory[0]
                     feedback = f'Pick up action failed: Robot is currently holding {held["objectType"].lower()}.'
-                    break  # 이미 다른 물건을 들고 있으므로 pick 반복 중단
+                    break  # Already holding another object, so stop retrying pick
 
         return success, feedback
 
@@ -552,10 +552,10 @@ class ProcThorEnv(BaseEnv):
         teleport_success = False
         feedback = ''
         
-        # 방 이름이면 room teleport 로직 실행
+        # If it is a room name, run the room teleport logic
         room_types = {'kitchen', 'livingroom', 'bedroom', 'bathroom'}
         if obj_data in room_types:
-            room_id = obj_id  # 여기선 obj_id가 실제로 room_id임
+            room_id = obj_id  # Here obj_id is actually a room_id
             room_polygon = self.room_info[room_id]['polygon']
         
             # Get reachable positions
@@ -572,7 +572,7 @@ class ProcThorEnv(BaseEnv):
                 feedback = f"No reachable points found inside room {obj_data.lower()}"
                 return teleport_success, feedback
 
-            # 가장 중앙에 가까운 위치 선택
+            # Pick the position closest to the center
             center = room_polygon.centroid
             inside_points.sort(key=lambda p: Point(p['x'], p['z']).distance(center))
             target = inside_points[0]
@@ -747,7 +747,7 @@ class ProcThorEnv(BaseEnv):
         agent_position = self.last_event.metadata["agent"]["position"]
         agent_point = Point(agent_position["x"], agent_position["z"])
         
-        # Step 1: room nodes + polygon 찾기
+        # Step 1: Find room nodes + polygon
         room_id = None
         room_name = None
         all_rooms = []
@@ -762,7 +762,7 @@ class ProcThorEnv(BaseEnv):
             print("[WARNING] Agent is not inside any known room polygon.")
             return None, None, None
         
-        # Step 2: 해당 방 안에 포함된 object 탐색
+        # Step 2: Find objects contained in that room
         room_objects = []
         all_room_objs = [] 
                         
@@ -777,18 +777,18 @@ class ProcThorEnv(BaseEnv):
             obj_pos = obj["position"]
             obj_point = Point(obj_pos["x"], obj_pos["z"])
 
-            # 이 object가 현재 room polygon 내부에 있어야 함
+            # This object must be inside the current room polygon
             if not self.room_info[room_id]["polygon"].contains(obj_point):
                 continue
 
-            # parentReceptacles에 closed된 receptacle이 있으면 제외
+            # Exclude if parentReceptacles contains a closed receptacle
             parent_receptacles = obj.get("parentReceptacles") or []
             if any(pid in closed_receptacle_ids for pid in parent_receptacles if "toilet" not in pid.lower()):
                 continue
 
             room_objects.append(obj)
 
-        # 현재 방의 room node도 obs_agent_room으로 리턴
+        # Also return the current room's node as obs_agent_room
         room_node = (room_name, room_id)
 
         return room_objects, room_node, all_rooms
@@ -960,7 +960,7 @@ class ProcThorEnv(BaseEnv):
         }
         nodes.append(user_node)
         self.agent_id = user_node_id
-        # Step 3: Add room-object INSIDE edges (polygon 기반)
+        # Step 3: Add room-object INSIDE edges (polygon-based)
         obj_room_map = {}
         object_lookup = {obj["objectId"]: obj for obj in full_graph}
         for obj in full_graph:
@@ -980,7 +980,7 @@ class ProcThorEnv(BaseEnv):
                     })
                     obj_room_map[obj_id] = room_id
                     matched = True
-                    break  # 한 room에만 포함되면 바로 break
+                    break  # An object belongs to only one room, so break immediately
             if not matched:
                 min_dist = float('inf')
                 nearest_room_id = None
@@ -1000,7 +1000,7 @@ class ProcThorEnv(BaseEnv):
                     })
                     obj_room_map[obj_id] = nearest_room_id
                 
-        # 이제 agent (user node) 도 room과 연결
+        # Now connect the agent (user node) to a room as well
         agent_point = Point(user_pos["x"], user_pos["z"])
         for room_id, info in self.room_info.items():
             room_node_id = room_id_to_node_id[room_id]
@@ -1032,7 +1032,7 @@ class ProcThorEnv(BaseEnv):
                 })
                 excluded_pairs.add((from_id, to_id))
                 excluded_pairs.add((to_id, from_id))
-        # Step 5: Add CLOSE edges (이제 polygon 없이 room 매핑만 활용)
+        # Step 5: Add CLOSE edges (now uses only the room mapping, no polygons)
         id_map["agent"] = user_node_id
         all_objs_with_user = full_graph + [user_node]
         object_lookup["agent"] = user_node

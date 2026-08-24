@@ -18,27 +18,27 @@ from core.utils.wah_utils import check_goal_condition
 
 def extract_all_plans(text: str):
     """
-    텍스트에서 가장 마지막 plan: [ ... ] 블록을 찾아 리스트로 반환한다.
-    항목은 strip되어 있으며, 쉼표로 구분된 명령어 문자열을 리스트로 반환.
+    Find the last plan: [ ... ] block in the text and return it as a list.
+    Items are stripped; returns the comma-separated command strings as a list.
     """
-    # 모든 plan: [ ... ] 구간 추출
+    # Extract all plan: [ ... ] sections
     pattern = r'plan:\s*\[(.*?)\]'
     matches = re.findall(pattern, text, flags=re.DOTALL)
 
     if not matches:
         return []
 
-    # 마지막 plan 블록 선택
+    # Select the last plan block
     last_plan_raw = matches[-1]
 
-    # 쉼표로 분할하고 양끝 공백 제거
+    # Split by commas and strip surrounding whitespace
     plan_steps = [step.strip() for step in last_plan_raw.split(',') if step.strip()]
     return plan_steps
 
 
 def parse_task_goal(text: str) -> str:
     """
-    'Your task is to:'부터 '3D Scene Graph' 이전까지의 텍스트를 줄바꿈 포함 그대로 반환한다.
+    Return the text from 'Your task is to:' up to (but not including) '3D Scene Graph', preserving newlines.
     """
     start_token = "Your task is to:"
     end_token = "3D Scene Graph"
@@ -49,7 +49,7 @@ def parse_task_goal(text: str) -> str:
     if start_idx == -1 or end_idx == -1 or start_idx > end_idx:
         return ""
 
-    # start_token부터 end_token 이전까지 그대로 반환
+    # Return the text from start_token up to end_token as-is
     task_goal = text[start_idx:end_idx]
     return task_goal.strip()
 

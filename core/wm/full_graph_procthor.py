@@ -81,7 +81,7 @@ class ProcThorFullGraph():
             G.add_edge(head_key, tail_key, **sg_edge)
         
         
-        # 3. 연결되지 않은 object → 가까운 asset 연결
+        # 3. Connect unconnected objects → nearest asset
         object_nodes = [n for n, d in G.nodes(data=True) if d.get("node_type") == "object"]
         asset_nodes = [n for n, d in G.nodes(data=True) if d.get("node_type") == "asset"]
         unconnected_objects = []
@@ -96,7 +96,7 @@ class ProcThorFullGraph():
                             break
                     if connected:
                         break
-                # 방향: asset → obj
+                # direction: asset → obj
                 if G.has_edge(asset, obj):
                     edge_dict = G.get_edge_data(asset, obj)
                     for edge_data in edge_dict.values():
@@ -109,7 +109,7 @@ class ProcThorFullGraph():
                 unconnected_objects.append(obj)
 
         for obj in unconnected_objects:
-            # 가장 가까운 asset 찾기
+            # find the nearest asset
             obj_pos = G.nodes[obj].get("position", None)
             if not obj_pos:
                 continue
@@ -125,9 +125,9 @@ class ProcThorFullGraph():
                 if dist < min_dist:
                     min_dist = dist
                     closest_asset = asset
-            # edge 추가
+            # add edge
             if closest_asset:
-                # 이미 obj → asset 혹은 asset → obj 관계가 있는 경우 생략
+                # skip if an obj → asset or asset → obj relation already exists
                 already_connected = any(
                     (obj == u and closest_asset == v) or (obj == v and closest_asset == u)
                     for u, v in G.edges()
@@ -158,18 +158,18 @@ class ProcThorFullGraph():
 
         self.cur_graph.add_node(node_id, **base_node_data)
         
-        # 2. room → asset 탐색
+        # 2. Traverse room → asset
         room_neighbors = set(self.scene_graph.successors(node_id)) | set(self.scene_graph.predecessors(node_id))
         for asset_id in room_neighbors:
             asset_data = self.scene_graph.nodes[asset_id]
             # if asset_data.get("node_type") != "asset":
             #     continue
 
-            # 2-1. asset 추가
+            # 2-1. Add asset
             self.cur_graph.add_node(asset_id, **asset_data)
             self._copy_edges_between(self.scene_graph, self.cur_graph, node_id, asset_id)
 
-            # 2-2. asset → object 탐색
+            # 2-2. Traverse asset → object
             asset_neighbors = set(self.scene_graph.successors(asset_id)) | set(self.scene_graph.predecessors(asset_id))
             for obj_id in asset_neighbors:
                 obj_data = self.scene_graph.nodes[obj_id]
@@ -189,12 +189,12 @@ class ProcThorFullGraph():
         #     neighbor_data = self.scene_graph.nodes[neighbor_id]
         #     neighbor_type = neighbor_data.get("node_type", "")
 
-        #     # 조건 1: room → asset
+        #     # condition 1: room → asset
         #     if base_type == "room" and neighbor_type == "asset":
         #         self.cur_graph.add_node(neighbor_id, **neighbor_data)
         #         self._copy_edges_between(self.scene_graph, self.cur_graph, node_id, neighbor_id)
 
-        #     # 조건 2: asset → object
+        #     # condition 2: asset → object
         #     elif base_type == "asset" and neighbor_type == "object":
         #         self.cur_graph.add_node(neighbor_id, **neighbor_data)
         #         self._copy_edges_between(self.scene_graph, self.cur_graph, node_id, neighbor_id)
@@ -216,41 +216,41 @@ class ProcThorFullGraph():
             print(f"contract_node only works for node_type='room', but got '{base_type}'")
             return
 
-        # 1. room → asset 탐색
+        # 1. Traverse room → asset
         room_neighbors = set(self.cur_graph.successors(node_id)) | set(self.cur_graph.predecessors(node_id))
-        for asset_id in list(room_neighbors):  # 방어적 복사
+        for asset_id in list(room_neighbors):  # defensive copy
             if asset_id not in self.cur_graph:
                 continue
             asset_data = self.cur_graph.nodes[asset_id]
             if asset_data.get("node_type") != "asset":
                 continue
 
-            # 2. asset → object 탐색 및 제거
+            # 2. Traverse and remove asset → object
             asset_neighbors = set(self.cur_graph.successors(asset_id)) | set(self.cur_graph.predecessors(asset_id))
             for obj_id in list(asset_neighbors):
                 if obj_id in self.cur_graph and self.cur_graph.nodes[obj_id].get("node_type") == "object":
                     self.cur_graph.remove_node(obj_id)
 
-            # 3. asset 제거
+            # 3. Remove asset
             self.cur_graph.remove_node(asset_id)
 
         sayplan_dict = self.scene_graph_to_sayplan_dict()
         return sayplan_dict
 
-        # # 현재 cur_graph 기준으로 이웃 탐색 (양방향)
+        # # Traverse neighbors based on current cur_graph (both directions)
         # neighbors = set(self.cur_graph.successors(node_id)) | set(self.cur_graph.predecessors(node_id))
 
         # for neighbor_id in neighbors:
         #     if neighbor_id not in self.cur_graph.nodes:
-        #         continue  # 혹시나 연결만 있고 노드 없는 경우 방어
+        #         continue  # guard against edge existing without the node
 
         #     neighbor_type = self.cur_graph.nodes[neighbor_id].get("node_type", "")
 
-        #     # 조건 1: room → asset → 제거
+        #     # condition 1: room → asset → remove
         #     if base_type == "room" and neighbor_type == "asset":
         #         self.cur_graph.remove_node(neighbor_id)
 
-        #     # 조건 2: asset → object → 제거
+        #     # condition 2: asset → object → remove
         #     elif base_type == "asset" and neighbor_type == "object":
         #         self.cur_graph.remove_node(neighbor_id)
 
@@ -287,11 +287,11 @@ class ProcThorFullGraph():
             elif node_type == "object":
                 sayplan_graph["nodes"]["object"].append(filtered_attr)
                 
-            # 링크 생성 (edge 기준으로 room과 연결된 다른 타입 연결)
+            # Create links (connect other types linked to room via edges)
         for u, v, edge_attr in sg.edges(data=True):
             u_type = sg.nodes[u].get("node_type")
             v_type = sg.nodes[v].get("node_type")
-            # # agent/asset/object가 room과 연결된 경우만 link 추가
+            # # add link only when agent/asset/object is connected to room
             # if (u_type == "room" and v_type in ["agent", "asset", "object"]):
             #     sayplan_graph["links"].append(f"{u}↔{v}")
             # elif (v_type == "room" and u_type in ["agent", "asset", "object"]):
@@ -313,7 +313,7 @@ class ProcThorFullGraph():
         return sayplan_graph
 
     def _copy_edges_between(self, source_graph, target_graph, u, v):
-        """source_graph에서 u↔v 간의 모든 edge를 target_graph에 복사"""
+        """Copy all edges between u↔v from source_graph to target_graph"""
         if source_graph.has_edge(u, v):
             for key, attr in source_graph.get_edge_data(u, v).items():
                 target_graph.add_edge(u, v, **attr)

@@ -1,0 +1,30 @@
+# Core
+hydra-core==1.3.2
+omegaconf==2.3.0
+numpy==1.24.4
+networkx==3.1
+scipy
+shapely==2.0.7
+opencv-python==4.10.0.84
+Pillow
+matplotlib
+tqdm
+
+# LLM stack
+torch==2.4.1
+transformers==4.44.1
+accelerate==0.34.2
+bitsandbytes
+guidance==0.1.15
+sentence-transformers==3.0.1
+tiktoken
+openai
+
+# ProcTHOR / AI2-THOR (AttPlan-Bench)
+ai2thor==5.0.0
+prior==1.0.3
+
+# VirtualHome simulator communication (WAH-NL; the simulator package itself is vendored in ./virtualhome)
+requests
+termcolor
+plotly

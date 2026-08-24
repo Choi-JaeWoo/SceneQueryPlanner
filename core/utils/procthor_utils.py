@@ -57,7 +57,7 @@ def make_name_id_dict(graph, obj_dict_sim2nl, room_info):
         class_name = node['objectType']
         class_id_dict[class_name].append(obj_id)
         
-    # room 노드 정리 (roomType을 key로 사용)
+    # Organize room nodes (use roomType as key)
     for room_id, room_data in room_info.items():
         room_type = room_data["roomType"]
         class_id_dict[room_type].append(room_id)
@@ -78,7 +78,7 @@ def make_name_id_dict(graph, obj_dict_sim2nl, room_info):
         name_id_dict_sim2nl[name_id_sim] = name_id_nl
         name_id_dict_nl2sim[name_id_nl] = name_id_sim
         
-    # room 노드 처리 (roomType을 class_name으로 사용)
+    # Handle room nodes (use roomType as class_name)
     for room_id, room_data in room_info.items():
         class_name = room_data["roomType"]  # e.g., "bedroom"
         name_id_sim = (class_name, room_id)
@@ -225,15 +225,15 @@ def sort_with_same_similarity(sorted_ic_ex_encode_list):
         if current_similarity is None:
             current_similarity = similarity
 
-        # 유사도가 동일한 경우
+        # Same similarity as the current group
         if similarity == current_similarity:
             same_similarity_list.append(experience)
         else:
-            # 유사도가 달라지면 이전 유사도 그룹 처리 후 초기화
+            # When similarity changes, process the previous group and reset
             final_list.extend(process_same_similarity_list(same_similarity_list))
             current_similarity = similarity
             same_similarity_list = [experience]
-    # 마지막 유사도 그룹 처리
+    # Process the last similarity group
     if same_similarity_list:
         final_list.extend(process_same_similarity_list(same_similarity_list))
     return final_list
@@ -253,7 +253,7 @@ def process_same_similarity_list(experience_list, select_next='expand'):
             expand_list.append(exp)
         else:
             etc_list.append(exp)
-    # expand, success, failure 번갈아가며 추가
+    # Add expand, success, failure in alternation
     while expand_list or success_list or failure_list:
         if select_next == "expand" and expand_list:
             result_list.append(expand_list.pop(0))
@@ -264,7 +264,7 @@ def process_same_similarity_list(experience_list, select_next='expand'):
         elif select_next == "failure" and failure_list:
             result_list.append(failure_list.pop(0))
             select_next = "expand"
-        # 만약 선택한 리스트가 비어있다면 바로 다음으로 넘어가기
+        # If the selected list is empty, move on to the next one
         else:
             if select_next == "expand":
                 select_next = "success" if success_list else "failure"
@@ -272,7 +272,7 @@ def process_same_similarity_list(experience_list, select_next='expand'):
                 select_next = "failure" if failure_list else "expand"
             elif select_next == "failure":
                 select_next = "expand" if expand_list else "success"
-    # 남은 success나 failure가 있다면 추가 (번갈아 선택 다 못한 경우)
+    # Add any remaining success/failure items (when alternation could not pick them all)
     result_list.extend(etc_list)
     return result_list
 
@@ -452,7 +452,7 @@ def check_goal_heat(task_goal, controller, heated_objects):
         elif cond in ['on', 'in'] and len(args) == 2:
             obj_type, recep_type = args[0].lower(), args[1].lower()
             obj_ids = set()
-            # bread인 경우 sliced 포함
+            # For bread, include sliced as well
             if obj_type == 'bread':
                 obj_ids |= {o['objectId'] for o in obj_by_type.get('bread', [])}
                 obj_ids |= {o['objectId'] for o in obj_by_type.get('breadsliced', [])}
@@ -529,13 +529,13 @@ def check_goal_toggle(task_goal, controller, init_event):
     for key in task_goal:
         if key.startswith("toggleOff_"):
             target_type = key.split("_", 1)[1].lower()
-            # 초기 상태에서 toggle on된 객체들 필터링
+            # Filter objects toggled on in the initial state
             init_objs = init_by_type.get(target_type, [])
             toggled_on_ids = {
                 obj['objectId'] for obj in init_objs if obj.get('isToggled', False)
             }
             ts += len(toggled_on_ids)
-            # 현재 상태에서 해당 object들이 toggle off 되었는지 확인
+            # Check whether those objects are toggled off in the current state
             now_objs = now_by_type.get(target_type, [])
             now_lookup = {obj['objectId']: obj for obj in now_objs}
             for obj_id in toggled_on_ids:
@@ -649,7 +649,7 @@ def check_goal_cook(task_goal, controller, filled_coffee_objects, heated_objects
         if prefix == 'isCooked':
             obj_type = parts[1].lower()
             if obj_type in {'potato', 'egg'}:
-                # heated_objects에 해당 obj_type이 포함된 objectId가 있는지 확인
+                # Check if heated_objects contains an objectId matching this obj_type
                 if any(obj_type in obj_id.lower() for obj_id in heated_objects):
                     s += 1
             else:
@@ -710,38 +710,38 @@ def add_text_to_np_img(np_img, text, font_path="UbuntuMono-B.ttf", font_size=35,
     draw = ImageDraw.Draw(img)
     font = ImageFont.truetype(font_path, size=font_size)
     
-    # 이미지의 너비에 맞춰 텍스트 줄을 나누기 위한 계산
-    image_width = img.width - 2 * padding  # 좌우 여백을 고려한 이미지 너비
+    # Compute line wrapping to fit the image width
+    image_width = img.width - 2 * padding  # Image width accounting for left/right padding
     text_lines = []
     
-    # 텍스트를 적절한 줄 길이에 맞추기
+    # Wrap text to an appropriate line length
     words = text.split()
     line = ""
     for word in words:
-        # 임시로 단어를 더해가며 현재 줄의 너비를 계산
+        # Tentatively add the word and measure the current line width
         test_line = f"{line} {word}".strip()
-        # 텍스트의 크기를 getbbox로 계산
+        # Measure text size with getbbox
         line_bbox = font.getbbox(test_line)
-        line_width = line_bbox[2] - line_bbox[0]  # 텍스트의 너비
+        line_width = line_bbox[2] - line_bbox[0]  # Text width
         
-        # 줄의 너비가 이미지 너비를 넘으면 줄을 나눈다
+        # Break the line if it exceeds the image width
         if line_width <= image_width:
             line = test_line
         else:
-            text_lines.append(line)  # 넘으면 현재 줄을 저장하고
-            line = word              # 다음 줄 시작
+            text_lines.append(line)  # If it overflows, save the current line
+            line = word              # and start next line
         
-    # 마지막 줄 추가
+    # Add the last line
     if line:
         text_lines.append(line)
 
-    # 첫 번째 텍스트 줄의 y 위치 설정
+    # Set the y position of the first text line
     y_text = padding
     
-    # 각 줄에 텍스트 그리기
+    # Draw each line of text
     for line in text_lines:
         draw.text((padding, y_text), line, font=font, fill=(255, 255, 255, 255))
-        y_text += font_size + 5  # 각 줄 사이에 여백 추가
+        y_text += font_size + 5  # Add spacing between lines
     
     return img
 
