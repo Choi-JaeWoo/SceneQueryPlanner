@@ -1,0 +1,55 @@
+Your task is to: Wash the egg and then put it in the sink basin.
+You are in the house, and there are 8 rooms: bathroom (1, 2), bedroom (1, 2, 3), kitchen (1), living room (1, 2). You are in the middle of a bathroom (2). Looking quickly around the room, you see garbage can (2), plunger (2), sink (2), sink basin (2), toilet (2).
+Think: To solve the task, I need to find and pick up egg, find sink basin and put down egg, turn on faucet to wash egg, pick up egg and put it down in sink basin.
+OK.
+Think: First, I need to find and pick up egg.
+OK.
+Query: recall location of egg
+You have not seen egg before.
+Think: I have not seen egg yet. The egg is more likely to appear in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see countertop (1), fridge (1).
+Think: In kitchen 1, the egg is likely to appear in/on countertop 1, fridge 1. I can check each place one by one until I find egg.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see apple (1), bottle (1), countertop (1), egg (1), knife (1), pen (1), pencil (1), pepper shaker (1), plate (1), salt shaker (1), spatula (1), spoon (1), tomato (1), vase (1).
+Think: I find egg 1. Now, I need to pick it up.
+OK.
+Act: go to egg 1
+You arrive at the egg (1). You see egg (1), fridge (1), knife (1), pepper shaker (1), salt shaker (1), spatula (1), tomato (1), vase (1).
+Act: pick up egg 1
+You pick up egg (1). You hold egg (1).
+Think: Now, I need to find sink basin.
+OK.
+Query: recall location of sink basin
+You saw sink basin 1 in bathroom 1. You saw sink basin 2 in bathroom 2.
+Think: Sink basin 1 is in bathroom 1.
+OK.
+Act: go to bathroom 1
+You move to the bathroom (1). Looking quickly around the room, you see drawer (20), garbage can (1), plunger (1), side table (1), sink (1), sink basin (1), toilet (1). You hold egg (1).
+Act: go to sink basin 1
+You arrive at the sink basin (1). You see candle (2), cloth (1), faucet (1), sink (1), sink basin (1), soap bar (1), toilet (1), toilet paper (1). You hold egg (1).
+Think: Now, I need to put down egg 1.
+OK.
+Act: put down egg 1
+You put egg (1) in sink basin (1).
+Think: Now, I need to turn on faucet 1 briefly and turn off to wash egg 1.
+OK.
+Act: turn on faucet 1
+You turn on faucet (1).
+Act: turn off faucet 1
+You turn off faucet (1).
+Think: Now, I need to pick up egg 1 and find sink basin.
+OK.
+Act: pick up egg 1
+You pick up egg (1). You hold egg (1).
+Act: go to sink basin 1
+You arrive at the sink basin (1). You see candle (2), cloth (1), faucet (1), sink (1), sink basin (1), soap bar (1), toilet (1), toilet paper (1). You hold egg (1).
+Think: Now, I need to put down egg 1.
+OK.
+Act: put down egg 1
+You put egg (1) in sink basin (1).
+Think: Now I complete task.
+OK.
+Act: done

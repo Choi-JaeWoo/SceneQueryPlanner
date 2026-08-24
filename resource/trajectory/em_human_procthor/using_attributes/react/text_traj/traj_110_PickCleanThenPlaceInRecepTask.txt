@@ -1,0 +1,47 @@
+Your task is to: Wash the sponge object on the countertop and then put it in the sink basin.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a bathroom (1). Looking quickly around the room, you see garbage can (1), painting (2, 3, 4), plunger (1), sink (1), sink basin (1), toilet (1).
+Think: To solve the task, I need to find and pick up the sponge object on countertop, find sink basin and put it down, turn on faucet to wash the sponge object, pick up the sponge object and put it down in sink basin.
+OK.
+Think: First, I need to find countertop and find the sponge object on countertop. The countertop is more likely to appear in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see chair (2), countertop (1), dining table (1), fridge (1).
+Think: I find countertop 1. Now, I need to move to countertop 1 to find the sponge object.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see apple (1), bottle (1), bread (1), chair (2), countertop (1), dining table (1), dish sponge (1), house plant (3), kettle (1), knife (1), ladle (1), pen (1, 2), pepper shaker (1), potato (1, 4), salt shaker (1), soap bottle (1), spatula (1), spray bottle (1), statue (4), tomato (1, 2).
+Think: On countertop 1, the sponge item is dish sponge 1. Now, I need to pick it up.
+OK.
+Act: go to dish sponge 1
+You arrive at the dish sponge (1). You see bread (1), countertop (1), dish sponge (1), house plant (3), kettle (1), knife (1), ladle (1), pen (1), pepper shaker (1), potato (4), salt shaker (1), soap bottle (1), spatula (1), spray bottle (1), tomato (1).
+Act: pick up dish sponge 1
+You pick up dish sponge (1). You hold dish sponge (1).
+Think: Now, I need to find sink basin. The sink basin is more likely to appear in bathroom 1.
+OK.
+Act: go to bathroom 1
+You move to the bathroom (1). Looking quickly around the room, you see garbage can (1), painting (2, 3, 4), plunger (1), sink (1), sink basin (1), toilet (1). You hold dish sponge (1).
+Act: go to sink basin 1
+You arrive at the sink basin (1). You see faucet (1), painting (3), plunger (1), sink (1), sink basin (1). You hold dish sponge (1).
+Think: Now, I need to put down dish sponge 1.
+OK.
+Act: put down dish sponge 1
+You put dish sponge (1) in sink basin (1).
+Think: Now, I need to turn on faucet 1 briefly and turn off to wash dish sponge 1.
+OK.
+Act: turn on faucet 1
+You turn on faucet (1).
+Act: turn off faucet 1
+You turn off faucet (1).
+Think: Now, I need to pick up dish sponge 1 and find sink basin.
+OK.
+Act: pick up dish sponge 1
+You pick up dish sponge (1). You hold dish sponge (1).
+Act: go to sink basin 1
+You arrive at the sink basin (1). You see faucet (1), painting (3), plunger (1), sink (1), sink basin (1). You hold dish sponge (1).
+Think: Now, I need to put down dish sponge 1.
+OK.
+Act: put down dish sponge 1
+You put dish sponge (1) in sink basin (1).
+Think: Now I complete the task.
+OK.
+Act: done

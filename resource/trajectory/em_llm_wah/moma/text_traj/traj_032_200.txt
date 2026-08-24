@@ -1,0 +1,2 @@
+Your task is to: Place 1 pancake and 1 juice in the fridge
+Max decision steps reached.

@@ -1,0 +1,2 @@
+Your task is to: With a book in hand, switch on the floor lamp for better viewing.
+Max decision steps reached.

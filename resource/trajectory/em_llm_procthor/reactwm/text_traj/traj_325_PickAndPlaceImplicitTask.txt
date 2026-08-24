@@ -1,0 +1,81 @@
+Your task is to: Transfer everything from the TV stand to the dining table.
+You are in the house, and there are 2 rooms: kitchen (1), living room (1). You are in the middle of a living room (1). Looking quickly around the room, you see TV stand (1), box (1), dining table (2), house plant (2), painting (3, 4), shelf (1, 2, 3, 4, 5, 6), sofa (1).
+Think: To solve the task, I need to find TV stand and check what is on top of it. Then, I need to move everything on TV stand to dining table.
+OK.
+Think: First, I need to find TV stand.
+OK.
+Query: recall location of TV stand
+You saw TV stand 1 in living room 1.
+Think: TV stand 1 is in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), box (1), dining table (2), house plant (2), painting (3, 4), shelf (1, 2, 3, 4, 5, 6), sofa (1).
+Act: go to TV stand 1
+You arrive at the TV stand (1). You see TV stand (1), cell phone (2), pencil (1, 2), remote control (1, 2), shelf (1, 2, 3, 4, 5, 6), statue (1), television (2), watch (1).
+Think: Now, I need to move cell phone (2), pencil (1, 2), remote control (1, 2), statue (1), watch (1) to dining table.
+OK.
+Act: go to cell phone 2
+You arrive at the cell phone (2). You see TV stand (1), cell phone (2), pencil (1, 2), remote control (1, 2), shelf (1, 2, 3, 4, 5, 6), statue (1), television (2), watch (1).
+Act: pick up cell phone 2
+You pick up cell phone (2). You hold cell phone (2).
+Think: Now, I need to find dining table.
+OK.
+Query: recall location of dining table
+You saw dining table 2 in living room 1. You saw dining table 1 in kitchen 1.
+Think: Dining table 2 is in living room 1.
+OK.
+Act: go to dining table 2
+You arrive at the dining table (2). You see bowl (2), candle (1), dining table (2), painting (3). You hold cell phone (2).
+Act: put down cell phone 2
+You put cell phone (2) in dining table (2).
+Act: go to pencil 1
+You arrive at the pencil (1). You see book (1), pencil (1), sofa (1).
+Act: pick up pencil 1
+You pick up pencil (1). You hold pencil (1).
+Act: go to dining table 2
+You arrive at the dining table (2). You see bowl (2), candle (1), cell phone (2), dining table (2), painting (3). You hold pencil (1).
+Act: put down pencil 1
+You put pencil (1) in dining table (2).
+Act: go to pencil 2
+You arrive at the pencil (2). You see TV stand (1), pencil (2), remote control (1, 2), shelf (1, 2, 3, 4, 5, 6), statue (1), television (2), watch (1).
+Act: pick up pencil 2
+You pick up pencil (2). You hold pencil (2).
+Act: go to dining table 2
+You arrive at the dining table (2). You see bowl (2), candle (1), cell phone (2), dining table (2), painting (3), pencil (1). You hold pencil (2).
+Act: put down pencil 2
+You put pencil (2) in dining table (2).
+Act: go to remote control 1
+You arrive at the remote control (1). You see TV stand (1), remote control (1, 2), shelf (1, 2, 3, 4, 5, 6), statue (1), television (2), watch (1).
+Act: pick up remote control 1
+You pick up remote control (1). You hold remote control (1).
+Act: go to dining table 2
+You arrive at the dining table (2). You see bowl (2), candle (1), cell phone (2), dining table (2), painting (3), pencil (1, 2). You hold remote control (1).
+Act: put down remote control 1
+You put remote control (1) in dining table (2).
+Act: go to remote control 2
+You arrive at the remote control (2). You see TV stand (1), house plant (2), remote control (2), shelf (1, 2, 3, 4, 5, 6), statue (1), television (2), watch (1).
+Act: pick up remote control 2
+You pick up remote control (2). You hold remote control (2).
+Act: go to dining table 2
+You arrive at the dining table (2). You see bowl (2), candle (1), cell phone (2), dining table (2), painting (3), pencil (1, 2), remote control (1). You hold remote control (2).
+Act: put down remote control 2
+You put remote control (2) in dining table (2).
+Act: go to statue 1
+You arrive at the statue (1). You see TV stand (1), shelf (1, 2, 3, 4, 5, 6), statue (1), television (2), watch (1).
+Act: pick up statue 1
+You pick up statue (1). You hold statue (1).
+Act: go to dining table 2
+You arrive at the dining table (2). You see bowl (2), candle (1), cell phone (2), dining table (2), painting (3), pencil (1, 2), remote control (1, 2). You hold statue (1).
+Act: put down statue 1
+You put statue (1) in dining table (2).
+Act: go to watch 1
+You arrive at the watch (1). You see TV stand (1), shelf (1, 2, 3, 4, 5, 6), television (2), watch (1).
+Act: pick up watch 1
+You pick up watch (1). You hold watch (1).
+Act: go to dining table 2
+You arrive at the dining table (2). You see bowl (2), candle (1), cell phone (2), dining table (2), painting (3), pencil (1, 2), remote control (1, 2), statue (1). You hold watch (1).
+Act: put down watch 1
+You put watch (1) in dining table (2).
+Think: Now I complete the task.
+OK.
+Act: done

@@ -1,0 +1,37 @@
+Your task is to: Hold the remote control and turn on the floor lamp for illumination.
+You are in the house, and there are 6 rooms: bathroom (1, 2), bedroom (1, 2), kitchen (1), living room (1). You are in the middle of a bathroom (2). Looking quickly around the room, you see garbage can (2), sink (2), sink basin (2), toilet (2).
+Think: To solve the task, I need to find and pick up remote control, then find and turn on floor lamp.
+OK.
+Think: First, I need to find and pick up remote control.
+OK.
+Query: find_objects({'label': 'remote control'})
+Info: 
+Think: I have not seen remote control yet. Now I need to check where to search. First, I will search bedroom 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'bedroom 1'})
+Info: TV stand 1, bed (1, 2), box 1, drawer (1, 2, 3, 7), dresser 1, shelf (4, 5, 6, 7, 8, 9), side table 1
+Think: In bedroom 1, the remote control is likely to appear in/on TV stand 1, bed (1, 2), box 1, drawer (1, 2, 3, 7), dresser 1, shelf (4, 5, 6, 7, 8, 9), side table 1. I can check each place one by one until I find remote control.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see TV stand (1), bed (1, 2), drawer (1, 2, 3, 7), dresser (1), painting (1), shelf (4, 5, 6, 7, 8, 9), side table (1).
+Act: go to TV stand 1
+You arrive at the TV stand (1). You see TV stand (1), bed (2), credit card (1), pencil (1), pillow (1), remote control (3, 4), shelf (4, 5, 6, 7, 8, 9), teddy bear (1), television (1), watch (1).
+Think: I find remote control 3. Now, I need to pick it up.
+OK.
+Act: go to remote control 3
+You arrive at the remote control (3). You see TV stand (1), bed (2), credit card (1), pencil (1), pillow (1), remote control (3, 4), shelf (4, 5, 6, 7, 8, 9), teddy bear (1), television (1), watch (1).
+Act: pick up remote control 3
+You pick up remote control (3). You hold remote control (3).
+Think: Now, I need to find and turn on floor lamp.
+OK.
+Query: find_objects({'label': 'floor lamp'})
+Info: [{'name_id_nl': 'floor lamp 1', 'node_type': 'object', 'properties': ['toggleable'], 'states': []}]
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see chair (2), dining table (1), floor lamp (1), house plant (1), television (2). You hold remote control (3).
+Act: go to floor lamp 1
+You arrive at the floor lamp (1). You see book (5, 6), chair (2), dining table (1), floor lamp (1), pen (1), statue (3). You hold remote control (3).
+Act: turn on floor lamp 1
+You turn on floor lamp (1). You hold remote control (3).
+Think: Now I complete the task.
+OK.
+Act: done

@@ -1,0 +1,12 @@
+Your task is to: Hold the remote control and turn on the floor lamp for illumination.
+You arrive at the bed (1). You see alarm clock (1), baseball bat (2), basket ball (1), bed (1), book (1), box (1), laptop (1), remote control (1), teddy bear (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- (bathroom 1): [(sink basin 1), painting 3, (toilet 1), (sink 1), (garbage can 1), painting 2, faucet 1, plunger 1]
+- bathroom 2: [(sink basin 2), (toilet 2), faucet 2, (sink 2), (garbage can 2)]
+- bedroom 1: [painting 1, pillow 1, remote control 3, bowl 1, cell phone 1, house plant 2, key chain 1, vase 1, alarm clock 1, baseball bat 2, basket ball 1, bed 2, bed 1, book 1, (box 1), drawer 7, (drawer 1), (drawer 3), (drawer 2), (dresser 1), laptop 1, remote control 1, (shelf 4), (shelf 5), (shelf 6), (shelf 8), (shelf 9), (shelf 7), (side table 1), teddy bear 1, (TV stand 1)]
+- (bedroom 2): [(dresser 2), (drawer 6), baseball bat 1, (drawer 5), (drawer 4), painting 4, (bed 3)]
+- (kitchen 1): [(countertop 1), (cabinet 1), shelving unit 1, egg 3, (shelf 1), (shelf 3), (fridge 1), (shelf 2), (chair 1)]
+- (living room 1): [(chair 2), floor lamp 1, (dining table 1), television 2, house plant 1]
+Your 5 previous actions were: go to bedroom 1 (success), go to bed 2 (success), go to drawer 7 (success), open drawer 7 (success), go to bed 1 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I arrive at bed 1. I need to check unexplored areas in bedroom 1 to find remote control. Now, I need to check box 1.
+Act: go to box 1

@@ -1,0 +1,6 @@
+Your task is to: 1. find all of: 1 cutlery fork and 1 wine glass and remember their location.
+2. remove all that are already on the kitchen table
+3. grab as much as you can hold by going to remembered locations
+4. go to kitchen table deposit at the table.
+5. if any elements aren't yet on the table go to step 3.
+Max decision steps reached.

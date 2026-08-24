@@ -1,0 +1,10 @@
+Your task is to: Wash the sponge object on the countertop and then put it in the sink basin.
+You pick up dish sponge (1). You hold dish sponge (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- bathroom 1: [painting 2, painting 4, toilet paper 1, dish sponge 1, faucet 1, (garbage can 1), painting 3, plunger 1, (sink 1), sink basin 1, (toilet 1)]
+- (bedroom 1): [(drawer 1), (drawer 2), basket ball 1, painting 1, television 1, (drawer 3), (bed 2), (chair 1), (dresser 1), (desk 1), (bed 1), (side table 1)]
+- kitchen 1: [apple 1, bottle 1, pen 2, potato 1, statue 4, tomato 2, bread 1, (chair 2), countertop 1, (dining table 1), (fridge 1), house plant 3, kettle 1, knife 1, ladle 1, pen 1, pepper shaker 1, potato 4, salt shaker 1, soap bottle 1, spatula 1, spray bottle 1, tomato 1]
+- (living room 1): [(box 1), house plant 1, (dining table 2), television 2, (sofa 1)]
+Your 5 previous actions were: go to sink basin 1 (success), put down dish sponge 1 (success), turn on faucet 1 (success), turn off faucet 1 (success), pick up dish sponge 1 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I pick up dish sponge 1. Now, I need to find sink basin. I find sink basin 1. Now, I need to move toward sink basin 1 to put down dish sponge 1.
+Act: go to sink basin 1

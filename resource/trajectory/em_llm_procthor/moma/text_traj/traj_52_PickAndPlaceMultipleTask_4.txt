@@ -1,0 +1,7 @@
+Your task is to: Put a soap bar and a spray bottle into the garbage can.
+You arrive at the sink (1). You see faucet (1), sink (1), sink basin (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- bathroom 1: [painting 1, faucet 1, (garbage can 1), sink 1, (sink basin 1), (toilet 1)]
+Your 2 previous actions were: go to bathroom 1 (success), go to sink 1 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I arrive at sink 1. I need to check unexplored areas to find soap bar and spray bottle. Now, I need to check sink basin 1.
+Act: go to sink basin 1

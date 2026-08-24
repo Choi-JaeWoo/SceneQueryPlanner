@@ -1,0 +1,2 @@
+Your task is to: Make a mug of coffee with the coffee machine and place it on the countertop.
+Max decision steps reached.

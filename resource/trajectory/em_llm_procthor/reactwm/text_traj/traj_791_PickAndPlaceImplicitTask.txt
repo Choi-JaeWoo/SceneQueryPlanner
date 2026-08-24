@@ -1,0 +1,35 @@
+Your task is to: Move all the objects from the sofa to the dining table.
+You are in the house, and there are 5 rooms: bathroom (1), bedroom (1, 2), kitchen (1), living room (1). You are in the middle of a kitchen (1). Looking quickly around the room, you see cabinet (1), countertop (1), fridge (1), shelf (5, 6, 7), shelving unit (1).
+Think: To solve the task, I need to find sofa and check what is on top of it. Then, I need to move everything on sofa to dining table.
+OK.
+Think: First, I need to find sofa.
+OK.
+Query: recall location of sofa
+You saw sofa 1 in bedroom 1.
+Think: Sofa 1 is in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see armchair (1), bed (1), drawer (1, 2, 3, 4, 5, 6), dresser (1), floor lamp (1), painting (1, 2), sofa (1).
+Act: go to sofa 1
+You arrive at the sofa (1). You see cell phone (1), painting (1, 2), sofa (1).
+Think: Now, I need to move cell phone 1 to dining table.
+OK.
+Act: go to cell phone 1
+You arrive at the cell phone (1). You see cell phone (1), painting (1, 2), sofa (1).
+Act: pick up cell phone 1
+You pick up cell phone (1). You hold cell phone (1).
+Think: Now, I need to find dining table.
+OK.
+Query: recall location of dining table
+You saw dining table 1 in living room 1.
+Think: Dining table 1 is in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), dining table (1), house plant (2), shelf (8). You hold cell phone (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see CD (2), baseball bat (2), book (1), chair (1), desk (1), drawer (7, 8, 9, 10, 11, 12, 13, 14, 15, 16), dresser (2), mug (2), pencil (1), shelf (1, 2), television (1). You hold cell phone (1).
+Act: put down cell phone 1
+You put cell phone (1) in dining table (1).
+Think: Now I complete the task.
+OK.
+Act: done

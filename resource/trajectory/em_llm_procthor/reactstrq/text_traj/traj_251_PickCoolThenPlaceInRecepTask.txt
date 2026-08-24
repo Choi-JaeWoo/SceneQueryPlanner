@@ -1,0 +1,57 @@
+Your task is to: Place an egg in the fridge to cool, then move it to the countertop afterwards.
+You are in the house, and there are 3 rooms: bedroom (1), kitchen (1), living room (1). You are in the middle of a bedroom (1). Looking quickly around the room, you see basket ball (1), bed (1), drawer (1, 2, 3, 4, 5, 6), dresser (1), garbage can (1), painting (1, 2), television (1).
+Think: To solve the task, I need to find and pick up egg, find fridge, put down egg in fridge briefly and pick up egg, find countertop and put down egg.
+OK.
+Think: First, I need to find and pick up egg.
+OK.
+Query: find_objects({'label': 'egg'})
+Info: 
+Think: I have not seen egg yet. Now I need to check where to search. First, I will search kitchen 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'kitchen 1'})
+Info: countertop 1, fridge 1
+Think: In kitchen 1, the egg is likely to appear in/on countertop 1, fridge 1. I can check each place one by one until I find egg.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see countertop (1), fridge (1), garbage bag (1), painting (3, 4), television (2).
+Act: go to countertop 1
+You arrive at the countertop (1). You see countertop (1), egg (1), lettuce (1), painting (4), pan (1), pepper shaker (1), potato (1).
+Act: go to egg 1
+You arrive at the egg (1). You see countertop (1), egg (1), lettuce (1), painting (4), pan (1), pepper shaker (1), potato (1).
+Act: pick up egg 1
+You pick up egg (1). You hold egg (1).
+Think: Now, I need to find fridge.
+OK.
+Query: find_objects({'label': 'fridge'})
+Info: [{'name_id_nl': 'fridge 1', 'node_type': 'asset', 'properties': ['isColdSource', 'openable'], 'states': [], 'room': 'kitchen 1'}]
+Think: Fridge 1 is in kitchen 1.
+OK.
+Act: go to fridge 1
+You arrive at the fridge (1). The fridge (1) is closed. You see fridge (1), painting (3). You hold egg (1).
+Think: Since fridge 1 is closed, I need to open it to put down egg 1.
+OK.
+Act: open fridge 1
+You open fridge (1). You see fridge (1), lettuce (2, 3, 4), painting (3). You hold egg (1).
+Act: put down egg 1
+You put egg (1) in fridge (1).
+Think: To make egg 1 cold, I need to briefly close fridge 1 and then open it again.
+OK.
+Act: close fridge 1
+You close fridge (1).
+Act: open fridge 1
+You open fridge (1). You see egg (1), fridge (1), lettuce (2, 3, 4), painting (3).
+Think: Now I need to pick up egg 1 and find countertop.
+OK.
+Act: pick up egg 1
+You pick up egg (1). You hold egg (1).
+Query: find_objects({'label': 'countertop'})
+Info: [{'name_id_nl': 'countertop 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'kitchen 1'}]
+Act: go to countertop 1
+You arrive at the countertop (1). You see countertop (1), lettuce (1), painting (4), pan (1), pepper shaker (1), potato (1). You hold egg (1).
+Think: Now I need to put down egg 1.
+OK.
+Act: put down egg 1
+You put egg (1) in countertop (1).
+Think: Now I complete task.
+OK.
+Act: done

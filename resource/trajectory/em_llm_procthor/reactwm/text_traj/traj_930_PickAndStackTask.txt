@@ -1,0 +1,55 @@
+Your task is to: Put a box with a book inside it on the bed.
+You are in the house, and there are 5 rooms: bathroom (1), bedroom (1, 2), kitchen (1), living room (1). You are in the middle of a kitchen (1). Looking quickly around the room, you see cabinet (2), countertop (1), fridge (1), house plant (2), painting (2, 3), shelf (4, 5, 6), shelving unit (2).
+Think: To solve the task, I need to find and pick up book, put it in box, pick up and place box on bed.
+OK.
+Think: First, I need to find and pick up book.
+OK.
+Query: recall location of book
+You have not seen book before.
+Think: I have not seen book yet. The book is more likely to appear in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see baseball bat (1), bed (1), desk (1), drawer (1, 2, 3), dresser (1), dumbbell (1), garbage can (1), house plant (1), television (1).
+Think: In bedroom 1, the book is likely to appear in/on bed 1, desk 1, drawer (1, 2, 3), dresser 1. I can check each place one by one until I find book.
+OK.
+Act: go to bed 1
+You arrive at the bed (1). You see baseball bat (1), bed (1), book (1), garbage can (1), pillow (1), teddy bear (1).
+Think: I find book 1. Now, I need to pick it up.
+OK.
+Act: go to book 1
+You arrive at the book (1). The book (1) is closed. You see baseball bat (1), bed (1), book (1), garbage can (1), pillow (1), teddy bear (1).
+Act: pick up book 1
+You pick up book (1). You hold book (1).
+Think: Now, I need to find box and put down book 1.
+OK.
+Query: recall location of box
+You saw box 2 in bedroom 2. You saw box 1 in bedroom 2.
+Think: Box 1 is in bedroom 2.
+OK.
+Act: go to bedroom 2
+You move to the bedroom (2). Looking quickly around the room, you see bed (2), cabinet (1), chair (1, 2, 3, 4, 5, 6), desk (2), dining table (1), drawer (4, 5, 6, 7, 8, 9), dresser (2), painting (1), shelf (1, 2, 3), shelving unit (1). You hold book (1).
+Act: go to box 1
+You arrive at the box (1). The box (1) is closed. You see baseball bat (2), book (2), box (1, 2), cell phone (5), chair (2, 3, 4), dining table (1), laptop (1), mug (1), pen (1), statue (1). You hold book (1).
+Act: open box 1
+You open box (1). You see baseball bat (2), book (2), box (1, 2), cell phone (5), chair (2, 3, 4), dining table (1), laptop (1), mug (1), pen (1), statue (1). You hold book (1).
+Act: put down book 1
+You put book (1) in box (1).
+Think: Now, I need to pick up box 1.
+OK.
+Act: pick up box 1
+You pick up box (1). You hold box (1).
+Think: Now, I need to find bed and put down box 1.
+OK.
+Query: recall location of bed
+You saw bed 1 in bedroom 1. You saw bed 2 in bedroom 2.
+Think: Bed 1 is in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see baseball bat (1), bed (1), desk (1), drawer (1, 2, 3), dresser (1), dumbbell (1), garbage can (1), house plant (1), television (1). You hold box (1).
+Act: go to bed 1
+You arrive at the bed (1). You see baseball bat (1), bed (1), book (1), garbage can (1), pillow (1), teddy bear (1). You hold box (1).
+Act: put down box 1
+You put box (1) in bed (1).
+Think: Now I complete the task.
+OK.
+Act: done

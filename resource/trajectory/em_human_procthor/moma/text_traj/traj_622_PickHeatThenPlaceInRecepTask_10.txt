@@ -1,0 +1,9 @@
+Your task is to: Heat an lettuce and place it on the dining table.
+You open microwave (1). You see microwave (1), salt shaker (1), soap bottle (1), spoon (1), spray bottle (1). You hold lettuce (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- (bedroom 1): [baseball bat 1, (bed 1), (desk 1), (drawer 6), (drawer 1), (drawer 2), (drawer 3), (drawer 4), (drawer 7), (drawer 8), (drawer 9), (drawer 10), (drawer 5), (dresser 1), painting 1, painting 2, (safe 1), vacuum cleaner 1]
+- kitchen 1: [garbage bag 1, coffee machine 1, mug 1, (countertop 1), (fridge 1), lettuce 1, microwave 1, salt shaker 1, soap bottle 1, spoon 1, spray bottle 1]
+- living room 1: [(armchair 1), (box 1), cart 1, (dining table 1), floor lamp 1, painting 3, painting 4, (sofa 1), television 1]
+Your 5 previous actions were: go to kitchen 1 (success), go to lettuce 1 (success), pick up lettuce 1 (success), go to microwave 1 (success), open microwave 1 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I open microwave 1. I hold lettuce 1. Now, I need to put down lettuce 1.
+Act: put down lettuce 1

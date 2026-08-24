@@ -1,0 +1,752 @@
+[
+  {
+    "env_id": 152,
+    "mode": "PickCleanThenPlaceInRecepTask",
+    "instruction": [
+      "Clean the cloth and place it in the garbage can.",
+      "Wash the cloth and then put it in the garbage can.",
+      "After cleaning the cloth, dispose of it in the garbage can.",
+      "Once the cloth is clean, throw it away in the garbage can."
+    ],
+    "task_goal": {
+      "isClean_cloth": 1,
+      "in_cloth_garbagecan": 1,
+      "in_isClean_cloth_garbagecan": 1
+    }
+  },
+  {
+    "env_id": 920,
+    "mode": "PickCleanThenPlaceInRecepTask",
+    "instruction": [
+      "Clean the knife and place it on the side table.",
+      "Wash the knife and then put it on the side table.",
+      "After you clean the knife, place it on the side table.",
+      "Once the knife is clean, you can put it on the side table."
+    ],
+    "task_goal": {
+      "isClean_knife": 1,
+      "on_knife_sidetable": 1,
+      "on_isClean_knife_sidetable": 1
+    }
+  },
+  {
+    "env_id": 688,
+    "mode": "PickCleanThenPlaceInRecepTask",
+    "instruction": [
+      "Clean the pencil and place it on the shelf.",
+      "Wash the pencil and then put it on the shelf.",
+      "After cleaning the pencil, place it on the shelf.",
+      "Make sure the pencil is clean before you put it on the shelf."
+    ],
+    "task_goal": {
+      "isClean_pencil": 1,
+      "on_pencil_shelf": 1,
+      "on_isClean_pencil_shelf": 1
+    }
+  },
+  {
+    "env_id": 915,
+    "mode": "PickCleanThenPlaceInRecepTask",
+    "instruction": [
+      "Clean the spoon and place it in the cabinet.",
+      "Wash the spoon and then put it away in the cabinet.",
+      "After you've cleaned the spoon, store it in the cabinet.",
+      "Make sure the spoon is clean before you place it in the cabinet."
+    ],
+    "task_goal": {
+      "isClean_spoon": 1,
+      "in_spoon_cabinet": 1,
+      "in_isClean_spoon_cabinet": 1
+    }
+  },
+  {
+    "env_id": 214,
+    "mode": "PickCleanThenPlaceInRecepTask",
+    "instruction": [
+      "Clean the spoon and place it on the shelf.",
+      "Wash the spoon and then put it on the shelf.",
+      "After cleaning the spoon, position it on the shelf.",
+      "Make sure the spoon is clean before placing it on the shelf."
+    ],
+    "task_goal": {
+      "isClean_spoon": 1,
+      "on_spoon_shelf": 1,
+      "on_isClean_spoon_shelf": 1
+    }
+  },
+  {
+    "env_id": 823,
+    "mode": "PickCleanThenPlaceInRecepTask",
+    "instruction": [
+      "Clean the pen and place it in the cabinet.",
+      "Wash the pen and then put it away in the cabinet.",
+      "After you've cleaned the pen, store it in the cabinet.",
+      "Make sure the pen is clean before you place it in the cabinet."
+    ],
+    "task_goal": {
+      "isClean_pen": 1,
+      "in_pen_cabinet": 1,
+      "in_isClean_pen_cabinet": 1
+    }
+  },
+  {
+    "env_id": 758,
+    "mode": "PickCleanThenPlaceInRecepTask",
+    "instruction": [
+      "Clean the fork and place it on the shelf.",
+      "Wash the fork and then put it on the shelf.",
+      "After you clean the fork, place it on the shelf.",
+      "Make sure the fork is clean before you put it on the shelf."
+    ],
+    "task_goal": {
+      "isClean_fork": 1,
+      "on_fork_shelf": 1,
+      "on_isClean_fork_shelf": 1
+    }
+  },
+  {
+    "env_id": 273,
+    "mode": "PickCleanThenPlaceInRecepTask",
+    "instruction": [
+      "Clean the fork and place it in the fridge.",
+      "Wash the fork and then put it in the fridge.",
+      "After cleaning the fork, store it in the fridge.",
+      "Make sure the fork is clean before you place it in the fridge."
+    ],
+    "task_goal": {
+      "isClean_fork": 1,
+      "in_fork_fridge": 1,
+      "in_isClean_fork_fridge": 1
+    }
+  },
+  {
+    "env_id": 727,
+    "mode": "PickCleanThenPlaceInRecepTask",
+    "instruction": [
+      "Clean the knife and place it in the cabinet.",
+      "Wash the knife and then put it away in the cabinet.",
+      "After you've cleaned the knife, place it inside the cabinet.",
+      "Make sure the knife is clean before you store it in the cabinet."
+    ],
+    "task_goal": {
+      "isClean_knife": 1,
+      "in_knife_cabinet": 1,
+      "in_isClean_knife_cabinet": 1
+    }
+  },
+  {
+    "env_id": 89,
+    "mode": "PickCleanThenPlaceInRecepTask",
+    "instruction": [
+      "Clean the fork and place it in the shelf.",
+      "Wash the fork and then put it on the shelf.",
+      "After cleaning the fork, store it in the shelf.",
+      "Make sure the fork is clean before you place it on the shelf."
+    ],
+    "task_goal": {
+      "isClean_fork": 1,
+      "in_fork_shelf": 1,
+      "in_isClean_fork_shelf": 1
+    }
+  },
+  {
+    "env_id": 825,
+    "mode": "PickCleanThenPlaceInRecepTask",
+    "instruction": [
+      "Clean the knife and place it in the cabinet.",
+      "Wash the knife and then put it away in the cabinet.",
+      "Place the knife in the cabinet after you have cleaned it.",
+      "First clean the knife, and afterwards store it in the cabinet."
+    ],
+    "task_goal": {
+      "isClean_knife": 1,
+      "in_knife_cabinet": 1,
+      "in_isClean_knife_cabinet": 1
+    }
+  },
+  {
+    "env_id": 211,
+    "mode": "PickCleanThenPlaceInRecepTask",
+    "instruction": [
+      "Clean the pen and place it on the countertop.",
+      "Wash the pen and then put it on the countertop.",
+      "After you clean the pen, place it on the countertop.",
+      "Make sure the pen is clean before you set it on the countertop."
+    ],
+    "task_goal": {
+      "isClean_pen": 1,
+      "on_pen_countertop": 1,
+      "on_isClean_pen_countertop": 1
+    }
+  },
+  {
+    "env_id": 84,
+    "mode": "PickCleanThenPlaceInRecepTask",
+    "instruction": [
+      "Clean the knife and place it in the shelf.",
+      "Wash the knife and then put it on the shelf.",
+      "After cleaning the knife, store it in the shelf.",
+      "Make sure the knife is clean before you place it on the shelf."
+    ],
+    "task_goal": {
+      "isClean_knife": 1,
+      "in_knife_shelf": 1,
+      "in_isClean_knife_shelf": 1
+    }
+  },
+  {
+    "env_id": 866,
+    "mode": "PickCleanThenPlaceInRecepTask",
+    "instruction": [
+      "Clean the cloth and place it in the box.",
+      "Wash the cloth and then put it in the box.",
+      "After cleaning the cloth, store it in the box.",
+      "Make sure the cloth is clean before you place it in the box."
+    ],
+    "task_goal": {
+      "isClean_cloth": 1,
+      "in_cloth_box": 1,
+      "in_isClean_cloth_box": 1
+    }
+  },
+  {
+    "env_id": 946,
+    "mode": "PickCleanThenPlaceInRecepTask",
+    "instruction": [
+      "Clean the pen and place it in the sink basin.",
+      "Wash the pen and then put it in the sink basin.",
+      "Place the pen in the sink basin after you have cleaned it.",
+      "After cleaning, put the pen in the sink basin."
+    ],
+    "task_goal": {
+      "isClean_pen": 1,
+      "in_pen_sinkbasin": 1,
+      "in_isClean_pen_sinkbasin": 1
+    }
+  },
+  {
+    "env_id": 474,
+    "mode": "PickCleanThenPlaceInRecepTask",
+    "instruction": [
+      "Clean the fork and place it on the countertop.",
+      "Wash the fork and then put it on the countertop.",
+      "After cleaning the fork, position it on the countertop.",
+      "Make sure the fork is clean before setting it on the countertop."
+    ],
+    "task_goal": {
+      "isClean_fork": 1,
+      "on_fork_countertop": 1,
+      "on_isClean_fork_countertop": 1
+    }
+  },
+  {
+    "env_id": 498,
+    "mode": "PickCleanThenPlaceInRecepTask",
+    "instruction": [
+      "Clean the egg and place it on the countertop.",
+      "Wash the egg and then put it on the countertop.",
+      "After cleaning the egg, set it down on the countertop.",
+      "Once the egg is clean, place it on the countertop."
+    ],
+    "task_goal": {
+      "isClean_egg": 1,
+      "on_egg_countertop": 1,
+      "on_isClean_egg_countertop": 1
+    }
+  },
+  {
+    "env_id": 603,
+    "mode": "PickCleanThenPlaceInRecepTask",
+    "instruction": [
+      "Clean the fork and place it in the cabinet.",
+      "Wash the fork and then put it in the cabinet.",
+      "After you clean the fork, store it in the cabinet.",
+      "Make sure the fork is clean before you place it in the cabinet."
+    ],
+    "task_goal": {
+      "isClean_fork": 1,
+      "in_fork_cabinet": 1,
+      "in_isClean_fork_cabinet": 1
+    }
+  },
+  {
+    "env_id": 484,
+    "mode": "PickCleanThenPlaceInRecepTask",
+    "instruction": [
+      "Clean the knife and place it in the sink basin.",
+      "Wash the knife and then put it in the sink basin.",
+      "After washing the knife, place it in the sink basin.",
+      "Make sure the knife is clean before you put it in the sink basin."
+    ],
+    "task_goal": {
+      "isClean_knife": 1,
+      "in_knife_sinkbasin": 1,
+      "in_isClean_knife_sinkbasin": 1
+    }
+  },
+  {
+    "env_id": 897,
+    "mode": "PickCleanThenPlaceInRecepTask",
+    "instruction": [
+      "Clean the spray bottle and place it on the countertop.",
+      "After washing the spray bottle, set it on the countertop.",
+      "Place the spray bottle on the countertop once it has been cleaned.",
+      "Wash the spray bottle and then put it on the countertop."
+    ],
+    "task_goal": {
+      "isClean_spraybottle": 1,
+      "on_spraybottle_countertop": 1,
+      "on_isClean_spraybottle_countertop": 1
+    }
+  },
+  {
+    "env_id": 245,
+    "mode": "PickCleanThenPlaceInRecepTask",
+    "instruction": [
+      "Clean the pen and place it in the sink basin.",
+      "Wash the pen and then put it in the sink basin.",
+      "After you clean the pen, place it in the sink basin.",
+      "Make sure the pen is clean before you put it in the sink basin."
+    ],
+    "task_goal": {
+      "isClean_pen": 1,
+      "in_pen_sinkbasin": 1,
+      "in_isClean_pen_sinkbasin": 1
+    }
+  },
+  {
+    "env_id": 804,
+    "mode": "PickCleanThenPlaceInRecepTask",
+    "instruction": [
+      "Clean the spoon and place it in the cabinet.",
+      "Wash the spoon and then put it in the cabinet.",
+      "After you clean the spoon, place it inside the cabinet.",
+      "Make sure the spoon is clean before you store it in the cabinet."
+    ],
+    "task_goal": {
+      "isClean_spoon": 1,
+      "in_spoon_cabinet": 1,
+      "in_isClean_spoon_cabinet": 1
+    }
+  },
+  {
+    "env_id": 568,
+    "mode": "PickCleanThenPlaceInRecepTask",
+    "instruction": [
+      "Clean the spoon and place it in the cabinet.",
+      "Wash the spoon and then put it away in the cabinet.",
+      "Place the spoon in the cabinet after you've cleaned it.",
+      "After washing the spoon, store it in the cabinet."
+    ],
+    "task_goal": {
+      "isClean_spoon": 1,
+      "in_spoon_cabinet": 1,
+      "in_isClean_spoon_cabinet": 1
+    }
+  },
+  {
+    "env_id": 572,
+    "mode": "PickCleanThenPlaceInRecepTask",
+    "instruction": [
+      "Clean the spray bottle and place it in the sink basin.",
+      "Wash the spray bottle and then put it in the sink basin.",
+      "Place the spray bottle in the sink basin after you have cleaned it.",
+      "The spray bottle needs to be cleaned before it is put in the sink basin."
+    ],
+    "task_goal": {
+      "isClean_spraybottle": 1,
+      "in_spraybottle_sinkbasin": 1,
+      "in_isClean_spraybottle_sinkbasin": 1
+    }
+  },
+  {
+    "env_id": 678,
+    "mode": "PickCleanThenPlaceInRecepTask",
+    "instruction": [
+      "Clean the egg and place it in the shelf.",
+      "Wash the egg and then put it on the shelf.",
+      "After cleaning the egg, store it in the shelf.",
+      "Make sure the egg is clean before you place it on the shelf."
+    ],
+    "task_goal": {
+      "isClean_egg": 1,
+      "in_egg_shelf": 1,
+      "in_isClean_egg_shelf": 1
+    }
+  },
+  {
+    "env_id": 549,
+    "mode": "PickCleanThenPlaceInRecepTask",
+    "instruction": [
+      "Clean the spray bottle and place it in the sink basin.",
+      "Wash the spray bottle thoroughly before placing it in the sink basin.",
+      "After cleaning the spray bottle, put it away in the sink basin.",
+      "Make sure the spray bottle is clean, then place it in the sink basin."
+    ],
+    "task_goal": {
+      "isClean_spraybottle": 1,
+      "in_spraybottle_sinkbasin": 1,
+      "in_isClean_spraybottle_sinkbasin": 1
+    }
+  },
+  {
+    "env_id": 175,
+    "mode": "PickCleanThenPlaceInRecepTask",
+    "instruction": [
+      "Clean the spray bottle and place it in the sink basin.",
+      "Wash the spray bottle and then put it in the sink basin.",
+      "Place the spray bottle in the sink basin after you have cleaned it.",
+      "The spray bottle needs to be cleaned before it is put in the sink basin."
+    ],
+    "task_goal": {
+      "isClean_spraybottle": 1,
+      "in_spraybottle_sinkbasin": 1,
+      "in_isClean_spraybottle_sinkbasin": 1
+    }
+  },
+  {
+    "env_id": 405,
+    "mode": "PickCleanThenPlaceInRecepTask",
+    "instruction": [
+      "Clean the knife and place it on the countertop.",
+      "Wash the knife and then put it on the countertop.",
+      "After cleaning the knife, set it down on the countertop.",
+      "Place the knife on the countertop once you've cleaned it."
+    ],
+    "task_goal": {
+      "isClean_knife": 1,
+      "on_knife_countertop": 1,
+      "on_isClean_knife_countertop": 1
+    }
+  },
+  {
+    "env_id": 146,
+    "mode": "PickCleanThenPlaceInRecepTask",
+    "instruction": [
+      "Clean the fork and place it in the cabinet.",
+      "Wash the fork and then put it in the cabinet.",
+      "After cleaning the fork, store it in the cabinet.",
+      "Make sure the fork is clean before you place it in the cabinet."
+    ],
+    "task_goal": {
+      "isClean_fork": 1,
+      "in_fork_cabinet": 1,
+      "in_isClean_fork_cabinet": 1
+    }
+  },
+  {
+    "env_id": 615,
+    "mode": "PickCleanThenPlaceInRecepTask",
+    "instruction": [
+      "Clean the knife and place it in the cabinet.",
+      "Wash the knife and then put it away in the cabinet.",
+      "After you've cleaned the knife, store it in the cabinet.",
+      "Make sure the knife is clean before you place it in the cabinet."
+    ],
+    "task_goal": {
+      "isClean_knife": 1,
+      "in_knife_cabinet": 1,
+      "in_isClean_knife_cabinet": 1
+    }
+  },
+  {
+    "env_id": 683,
+    "mode": "PickCleanThenPlaceInRecepTask",
+    "instruction": [
+      "Clean the butter knife and place it on the countertop.",
+      "Wash the butter knife and then put it on the countertop.",
+      "After cleaning the butter knife, set it down on the countertop.",
+      "Make sure the butter knife is clean before placing it on the countertop."
+    ],
+    "task_goal": {
+      "isClean_butterknife": 1,
+      "on_butterknife_countertop": 1,
+      "on_isClean_butterknife_countertop": 1
+    }
+  },
+  {
+    "env_id": 578,
+    "mode": "PickCleanThenPlaceInRecepTask",
+    "instruction": [
+      "Clean the pencil and place it on the side table.",
+      "Wash the pencil and then put it on the side table.",
+      "After cleaning the pencil, position it on the side table.",
+      "Make sure the pencil is clean before you place it on the side table."
+    ],
+    "task_goal": {
+      "isClean_pencil": 1,
+      "on_pencil_sidetable": 1,
+      "on_isClean_pencil_sidetable": 1
+    }
+  },
+  {
+    "env_id": 480,
+    "mode": "PickCleanThenPlaceInRecepTask",
+    "instruction": [
+      "Clean the cloth and place it in the cabinet.",
+      "Wash the cloth thoroughly before placing it in the cabinet.",
+      "After washing, put the cloth, now clean, in the cabinet.",
+      "Place the cloth in the cabinet only after it has been cleaned."
+    ],
+    "task_goal": {
+      "isClean_cloth": 1,
+      "in_cloth_cabinet": 1,
+      "in_isClean_cloth_cabinet": 1
+    }
+  },
+  {
+    "env_id": 756,
+    "mode": "PickCleanThenPlaceInRecepTask",
+    "instruction": [
+      "Clean the knife and place it in the sink basin.",
+      "Wash the knife and then put it in the sink basin.",
+      "After washing, place the knife in the sink basin.",
+      "Ensure the knife is clean before you place it in the sink basin."
+    ],
+    "task_goal": {
+      "isClean_knife": 1,
+      "in_knife_sinkbasin": 1,
+      "in_isClean_knife_sinkbasin": 1
+    }
+  },
+  {
+    "env_id": 681,
+    "mode": "PickCleanThenPlaceInRecepTask",
+    "instruction": [
+      "Clean the knife and place it in the cabinet.",
+      "Wash the knife and then put it in the cabinet.",
+      "After washing the knife, store it in the cabinet.",
+      "Make sure the knife is clean before you place it in the cabinet."
+    ],
+    "task_goal": {
+      "isClean_knife": 1,
+      "in_knife_cabinet": 1,
+      "in_isClean_knife_cabinet": 1
+    }
+  },
+  {
+    "env_id": 867,
+    "mode": "PickCleanThenPlaceInRecepTask",
+    "instruction": [
+      "Clean the soap bar and place it in the sink basin.",
+      "Wash the soap bar and then put it in the sink basin.",
+      "Place the soap bar in the sink basin after you have cleaned it.",
+      "After cleaning, put the soap bar in the sink basin."
+    ],
+    "task_goal": {
+      "isClean_soapbar": 1,
+      "in_soapbar_sinkbasin": 1,
+      "in_isClean_soapbar_sinkbasin": 1
+    }
+  },
+  {
+    "env_id": 510,
+    "mode": "PickCleanThenPlaceInRecepTask",
+    "instruction": [
+      "Clean the egg and place it in the sink basin.",
+      "Wash the egg and then put it in the sink basin.",
+      "After you clean the egg, place it in the sink basin.",
+      "Make sure the egg is clean before you put it in the sink basin."
+    ],
+    "task_goal": {
+      "isClean_egg": 1,
+      "in_egg_sinkbasin": 1,
+      "in_isClean_egg_sinkbasin": 1
+    }
+  },
+  {
+    "env_id": 242,
+    "mode": "PickCleanThenPlaceInRecepTask",
+    "instruction": [
+      "Clean the knife and place it in the shelf.",
+      "Wash the knife and then put it on the shelf.",
+      "After cleaning the knife, store it in the shelf.",
+      "Make sure the knife is clean before you place it on the shelf."
+    ],
+    "task_goal": {
+      "isClean_knife": 1,
+      "in_knife_shelf": 1,
+      "in_isClean_knife_shelf": 1
+    }
+  },
+  {
+    "env_id": 582,
+    "mode": "PickCleanThenPlaceInRecepTask",
+    "instruction": [
+      "Clean the spatula and place it in the cabinet.",
+      "Wash the spatula thoroughly before placing it in the cabinet.",
+      "After cleaning the spatula, store it away in the cabinet.",
+      "Make sure the spatula is spotless, then put it in the cabinet."
+    ],
+    "task_goal": {
+      "isClean_spatula": 1,
+      "in_spatula_cabinet": 1,
+      "in_isClean_spatula_cabinet": 1
+    }
+  },
+  {
+    "env_id": 651,
+    "mode": "PickCleanThenPlaceInRecepTask",
+    "instruction": [
+      "Clean the knife and place it on the shelf.",
+      "Wash the knife and then put it on the shelf.",
+      "After cleaning the knife, position it on the shelf.",
+      "Make sure the knife is clean before placing it on the shelf."
+    ],
+    "task_goal": {
+      "isClean_knife": 1,
+      "on_knife_shelf": 1,
+      "on_isClean_knife_shelf": 1
+    }
+  },
+  {
+    "env_id": 892,
+    "mode": "PickCleanThenPlaceInRecepTask",
+    "instruction": [
+      "Clean the knife and place it in the cabinet.",
+      "Wash the knife and then put it in the cabinet.",
+      "After cleaning the knife, store it in the cabinet.",
+      "Make sure the knife is clean before you place it in the cabinet."
+    ],
+    "task_goal": {
+      "isClean_knife": 1,
+      "in_knife_cabinet": 1,
+      "in_isClean_knife_cabinet": 1
+    }
+  },
+  {
+    "env_id": 315,
+    "mode": "PickCleanThenPlaceInRecepTask",
+    "instruction": [
+      "Clean the butter knife and place it in the box.",
+      "Wash the butter knife and then put it in the box.",
+      "After washing the butter knife, place it inside the box.",
+      "Make sure the butter knife is clean before you put it in the box."
+    ],
+    "task_goal": {
+      "isClean_butterknife": 1,
+      "in_butterknife_box": 1,
+      "in_isClean_butterknife_box": 1
+    }
+  },
+  {
+    "env_id": 545,
+    "mode": "PickCleanThenPlaceInRecepTask",
+    "instruction": [
+      "Clean the knife and place it in the sink basin.",
+      "Wash the knife and then put it in the sink basin.",
+      "Place the knife in the sink basin after you have cleaned it.",
+      "After cleaning, put the knife in the sink basin."
+    ],
+    "task_goal": {
+      "isClean_knife": 1,
+      "in_knife_sinkbasin": 1,
+      "in_isClean_knife_sinkbasin": 1
+    }
+  },
+  {
+    "env_id": 254,
+    "mode": "PickCleanThenPlaceInRecepTask",
+    "instruction": [
+      "Clean the pencil and place it in the sink basin.",
+      "Wash the pencil and then put it in the sink basin.",
+      "Place the pencil in the sink basin after you have cleaned it.",
+      "After cleaning, put the pencil in the sink basin."
+    ],
+    "task_goal": {
+      "isClean_pencil": 1,
+      "in_pencil_sinkbasin": 1,
+      "in_isClean_pencil_sinkbasin": 1
+    }
+  },
+  {
+    "env_id": 811,
+    "mode": "PickCleanThenPlaceInRecepTask",
+    "instruction": [
+      "Clean the dish sponge and place it in the sink basin.",
+      "Wash the dish sponge and then put it in the sink basin.",
+      "After washing the dish sponge, place it in the sink basin.",
+      "Make sure the dish sponge is clean before you put it in the sink basin."
+    ],
+    "task_goal": {
+      "isClean_dishsponge": 1,
+      "in_dishsponge_sinkbasin": 1,
+      "in_isClean_dishsponge_sinkbasin": 1
+    }
+  },
+  {
+    "env_id": 372,
+    "mode": "PickCleanThenPlaceInRecepTask",
+    "instruction": [
+      "Clean the spoon and place it in the sink basin.",
+      "Wash the spoon and then put it in the sink basin.",
+      "Place the spoon in the sink basin after you have cleaned it.",
+      "Make sure the spoon is clean before you put it in the sink basin."
+    ],
+    "task_goal": {
+      "isClean_spoon": 1,
+      "in_spoon_sinkbasin": 1,
+      "in_isClean_spoon_sinkbasin": 1
+    }
+  },
+  {
+    "env_id": 963,
+    "mode": "PickCleanThenPlaceInRecepTask",
+    "instruction": [
+      "Clean the spoon and place it on the shelf.",
+      "Wash the spoon and then put it on the shelf.",
+      "After you clean the spoon, place it on the shelf.",
+      "Once the spoon is clean, you can put it away on the shelf."
+    ],
+    "task_goal": {
+      "isClean_spoon": 1,
+      "on_spoon_shelf": 1,
+      "on_isClean_spoon_shelf": 1
+    }
+  },
+  {
+    "env_id": 857,
+    "mode": "PickCleanThenPlaceInRecepTask",
+    "instruction": [
+      "Clean the knife and place it on the shelf.",
+      "Wash the knife and then put it on the shelf.",
+      "After cleaning the knife, place it on the shelf.",
+      "Make sure the knife is clean before you put it on the shelf."
+    ],
+    "task_goal": {
+      "isClean_knife": 1,
+      "on_knife_shelf": 1,
+      "on_isClean_knife_shelf": 1
+    }
+  },
+  {
+    "env_id": 182,
+    "mode": "PickCleanThenPlaceInRecepTask",
+    "instruction": [
+      "Clean the spray bottle and place it in the sink basin.",
+      "Wash the spray bottle and then put it in the sink basin.",
+      "After washing, place the spray bottle in the sink basin.",
+      "The spray bottle needs to be cleaned before it is placed in the sink basin."
+    ],
+    "task_goal": {
+      "isClean_spraybottle": 1,
+      "in_spraybottle_sinkbasin": 1,
+      "in_isClean_spraybottle_sinkbasin": 1
+    }
+  },
+  {
+    "env_id": 274,
+    "mode": "PickCleanThenPlaceInRecepTask",
+    "instruction": [
+      "Clean the dish sponge and place it in the sink basin.",
+      "Wash the dish sponge and then put it in the sink basin.",
+      "After cleaning, place the dish sponge in the sink basin.",
+      "The dish sponge needs to be cleaned before it goes in the sink basin."
+    ],
+    "task_goal": {
+      "isClean_dishsponge": 1,
+      "in_dishsponge_sinkbasin": 1,
+      "in_isClean_dishsponge_sinkbasin": 1
+    }
+  }
+]

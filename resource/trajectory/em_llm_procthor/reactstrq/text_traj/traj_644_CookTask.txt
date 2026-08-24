@@ -1,0 +1,97 @@
+Your task is to: Cook a potato using a microwave and cook an egg using a microwave, then place the cooked food on the countertop.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a kitchen (1). Looking quickly around the room, you see cabinet (1), chair (3), countertop (1), dining table (2), drawer (13, 14), fridge (1), garbage can (2), shelf (5, 6, 7), shelving unit (1), side table (2), television (1).
+Think: To solve the task, I need to find and pick up potato, put it in microwave and turn it on, pick up and place cooked potato on countertop. And I need to find and pick up egg, put it in microwave and turn it on, pick up and place cooked egg on countertop.
+OK.
+Think: First, I need to find and pick up potato.
+OK.
+Query: find_objects({'label': 'potato'})
+Info: [{'name_id_nl': 'potato 1', 'node_type': 'object', 'properties': ['cookable', 'sliceable', 'pickupable'], 'states': []}]
+Query: get_edges_for_node({'node_id': 'potato 1'})
+Info: [('potato 1', 'kitchen 1', 'INSIDE'), ('potato 1', 'countertop 1', 'ON'), ('potato 1', 'bowl 2', 'CLOSE'), ('potato 1', 'egg 1', 'CLOSE'), ('potato 1', 'fork 1', 'CLOSE'), ('potato 1', 'kettle 1', 'CLOSE'), ('potato 1', 'pen 3', 'CLOSE'), ('potato 1', 'pepper shaker 1', 'CLOSE'), ('potato 1', 'spatula 1', 'CLOSE'), ('potato 1', 'spoon 1', 'CLOSE'), ('potato 1', 'statue 3', 'CLOSE'), ('potato 1', 'television 1', 'CLOSE'), ('potato 1', 'tomato 1', 'CLOSE'), ('potato 1', 'user 1', 'CLOSE'), ('bowl 2', 'potato 1', 'CLOSE'), ('egg 1', 'potato 1', 'CLOSE'), ('fork 1', 'potato 1', 'CLOSE'), ('kettle 1', 'potato 1', 'CLOSE'), ('pen 3', 'potato 1', 'CLOSE'), ('pepper shaker 1', 'potato 1', 'CLOSE'), ('spatula 1', 'potato 1', 'CLOSE'), ('spoon 1', 'potato 1', 'CLOSE'), ('statue 3', 'potato 1', 'CLOSE'), ('television 1', 'potato 1', 'CLOSE'), ('tomato 1', 'potato 1', 'CLOSE'), ('user 1', 'potato 1', 'CLOSE')]
+Think: Potato 1 is on countertop 1.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see bowl (2), countertop (1), dish sponge (1), egg (1), fork (1), kettle (1), microwave (1), pen (2, 3), pepper shaker (1), plate (1), potato (1), spatula (1), spoon (1), statue (3), television (1), tomato (1).
+Act: go to potato 1
+You arrive at the potato (1). You see bowl (2), countertop (1), dish sponge (1), egg (1), fork (1), kettle (1), microwave (1), pen (3), pepper shaker (1), potato (1), spatula (1), spoon (1), statue (3), television (1), tomato (1).
+Act: pick up potato 1
+You pick up potato (1). You hold potato (1).
+Think: Now, I need to find microwave.
+OK.
+Query: find_objects({'label': 'microwave'})
+Info: [{'name_id_nl': 'microwave 1', 'node_type': 'object', 'properties': ['toggleable', 'isHeatSource', 'openable'], 'states': []}]
+Query: get_edges_for_node({'node_id': 'microwave 1'})
+Info: [('microwave 1', 'countertop 1', 'ON'), ('microwave 1', 'bowl 2', 'CLOSE'), ('microwave 1', 'dish sponge 1', 'CLOSE'), ('microwave 1', 'egg 1', 'CLOSE'), ('microwave 1', 'fork 1', 'CLOSE'), ('microwave 1', 'kettle 1', 'CLOSE'), ('microwave 1', 'pen 3', 'CLOSE'), ('microwave 1', 'pepper shaker 1', 'CLOSE'), ('microwave 1', 'potato 1', 'CLOSE'), ('microwave 1', 'spatula 1', 'CLOSE'), ('microwave 1', 'spoon 1', 'CLOSE'), ('microwave 1', 'statue 3', 'CLOSE'), ('microwave 1', 'television 1', 'CLOSE'), ('microwave 1', 'tomato 1', 'CLOSE'), ('microwave 1', 'user 1', 'CLOSE'), ('microwave 1', 'kitchen 1', 'INSIDE'), ('bowl 2', 'microwave 1', 'CLOSE'), ('dish sponge 1', 'microwave 1', 'CLOSE'), ('egg 1', 'microwave 1', 'CLOSE'), ('fork 1', 'microwave 1', 'CLOSE'), ('kettle 1', 'microwave 1', 'CLOSE'), ('pen 3', 'microwave 1', 'CLOSE'), ('pepper shaker 1', 'microwave 1', 'CLOSE'), ('potato 1', 'microwave 1', 'CLOSE'), ('spatula 1', 'microwave 1', 'CLOSE'), ('spoon 1', 'microwave 1', 'CLOSE'), ('statue 3', 'microwave 1', 'CLOSE'), ('television 1', 'microwave 1', 'CLOSE'), ('tomato 1', 'microwave 1', 'CLOSE'), ('user 1', 'microwave 1', 'CLOSE')]
+Think: Microwave 1 is on countertop 1.
+OK.
+Act: go to microwave 1
+You arrive at the microwave (1). The microwave (1) is closed. You see bowl (2), countertop (1), dish sponge (1), egg (1), fork (1), kettle (1), microwave (1), pen (3), pepper shaker (1), spatula (1), spoon (1), statue (3), television (1), tomato (1). You hold potato (1).
+Think: Now, I need to open microwave 1 and put down potato 1.
+OK.
+Act: open microwave 1
+You open microwave (1). You see bowl (2), countertop (1), dish sponge (1), egg (1), fork (1), kettle (1), microwave (1), pen (3), pepper shaker (1), spatula (1), spoon (1), statue (3), television (1), tomato (1). You hold potato (1).
+Act: put down potato 1
+You put potato (1) in microwave (1).
+Think: Now, I need to close and turn on microwave 1.
+OK.
+Act: close microwave 1
+You close microwave (1).
+Act: turn on microwave 1
+You turn on microwave (1).
+Think: Now, I need to turn off and open microwave 1 to pick up potato 1.
+OK.
+Act: turn off microwave 1
+You turn off microwave (1).
+Act: open microwave 1
+You open microwave (1). You see bowl (2), countertop (1), dish sponge (1), egg (1), fork (1), kettle (1), microwave (1), pen (3), pepper shaker (1), potato (1), spatula (1), spoon (1), statue (3), television (1), tomato (1).
+Act: pick up potato 1
+You pick up potato (1). You hold potato (1).
+Think: Now, I need to find countertop 1 and put down potato 1.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see bowl (2), countertop (1), dish sponge (1), egg (1), fork (1), kettle (1), microwave (1), pen (2, 3), pepper shaker (1), plate (1), spatula (1), spoon (1), statue (3), television (1), tomato (1). You hold potato (1).
+Act: put down potato 1
+You put potato (1) in countertop (1).
+Think: Now, I need to find and pick up egg.
+OK.
+Query: find_objects({'label': 'egg'})
+Info: [{'name_id_nl': 'egg 1', 'node_type': 'object', 'properties': ['breakable', 'sliceable', 'pickupable'], 'states': []}]
+Query: get_edges_for_node({'node_id': 'egg 1'})
+Info: [('egg 1', 'countertop 1', 'ON'), ('egg 1', 'bowl 2', 'CLOSE'), ('egg 1', 'dish sponge 1', 'CLOSE'), ('egg 1', 'fork 1', 'CLOSE'), ('egg 1', 'kettle 1', 'CLOSE'), ('egg 1', 'microwave 1', 'CLOSE'), ('egg 1', 'pen 3', 'CLOSE'), ('egg 1', 'pepper shaker 1', 'CLOSE'), ('egg 1', 'potato 1', 'CLOSE'), ('egg 1', 'spatula 1', 'CLOSE'), ('egg 1', 'spoon 1', 'CLOSE'), ('egg 1', 'statue 3', 'CLOSE'), ('egg 1', 'television 1', 'CLOSE'), ('egg 1', 'tomato 1', 'CLOSE'), ('egg 1', 'user 1', 'CLOSE'), ('egg 1', 'kitchen 1', 'INSIDE'), ('bowl 2', 'egg 1', 'CLOSE'), ('dish sponge 1', 'egg 1', 'CLOSE'), ('fork 1', 'egg 1', 'CLOSE'), ('kettle 1', 'egg 1', 'CLOSE'), ('microwave 1', 'egg 1', 'CLOSE'), ('pen 3', 'egg 1', 'CLOSE'), ('pepper shaker 1', 'egg 1', 'CLOSE'), ('potato 1', 'egg 1', 'CLOSE'), ('spatula 1', 'egg 1', 'CLOSE'), ('spoon 1', 'egg 1', 'CLOSE'), ('statue 3', 'egg 1', 'CLOSE'), ('television 1', 'egg 1', 'CLOSE'), ('tomato 1', 'egg 1', 'CLOSE'), ('user 1', 'egg 1', 'CLOSE')]
+Think: Egg 1 is on countertop 1.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see bowl (2), countertop (1), dish sponge (1), egg (1), fork (1), kettle (1), microwave (1), pen (2, 3), pepper shaker (1), plate (1), potato (1), spatula (1), spoon (1), statue (3), television (1), tomato (1).
+Act: go to egg 1
+You arrive at the egg (1). You see bowl (2), countertop (1), dish sponge (1), egg (1), fork (1), kettle (1), microwave (1), pen (2, 3), pepper shaker (1), plate (1), potato (1), spatula (1), spoon (1), statue (3), television (1), tomato (1).
+Act: pick up egg 1
+You pick up egg (1). You hold egg (1).
+Think: Now, I need to find microwave and put down egg 1.
+OK.
+Act: go to microwave 1
+You arrive at the microwave (1). The microwave (1) is open. You see bowl (2), countertop (1), dish sponge (1), fork (1), kettle (1), microwave (1), pen (3), pepper shaker (1), potato (1), spatula (1), spoon (1), statue (3), television (1), tomato (1). You hold egg (1).
+Act: put down egg 1
+You put egg (1) in microwave (1).
+Think: Now, I need to close and turn on microwave 1.
+OK.
+Act: close microwave 1
+You close microwave (1).
+Act: turn on microwave 1
+You turn on microwave (1).
+Think: Now, I need to turn off and open microwave 1 to pick up egg 1.
+OK.
+Act: turn off microwave 1
+You turn off microwave (1).
+Act: open microwave 1
+You open microwave (1). You see bowl (2), countertop (1), dish sponge (1), egg (1), fork (1), kettle (1), microwave (1), pen (3), pepper shaker (1), potato (1), spatula (1), spoon (1), statue (3), television (1), tomato (1).
+Act: pick up egg 1
+You pick up egg (1). You hold egg (1).
+Think: Now, I need to find countertop 1 and put down egg 1.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see bowl (2), countertop (1), dish sponge (1), fork (1), kettle (1), microwave (1), pen (2, 3), pepper shaker (1), plate (1), potato (1), spatula (1), spoon (1), statue (3), television (1), tomato (1). You hold egg (1).
+Act: put down egg 1
+You put egg (1) in countertop (1).
+Think: Now I complete task.
+OK.
+Act: done

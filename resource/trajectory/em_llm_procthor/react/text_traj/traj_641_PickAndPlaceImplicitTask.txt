@@ -1,0 +1,203 @@
+Your task is to: Take all the objects off the coffee table and put them on the shelf.
+You are in the house, and there are 1 rooms: living room (1). You are in the middle of a living room (1). Looking quickly around the room, you see TV stand (1), coffee table (1), dining table (1), painting (1, 2), shelf (1, 2, 3, 4, 5, 6), sofa (1), statue (2).
+Think: To solve the task, I need to find coffee table and check what is on top of it. Then, I need to move everything on coffee table to shelf.
+OK.
+Think: First, I need to find coffee table. The coffee table is more likely to appear in living room 1.
+OK.
+Act: go to coffee table 1
+You arrive at the coffee table (1). You see book (1), bowl (1), candle (1), cell phone (1), coffee table (1), credit card (1), dining table (1), key chain (1), painting (1), pencil (1), plate (1), remote control (2, 3), statue (1), vase (1).
+Think: Now, I need to move book 1, bowl 1, candle 1, cell phone 1, credit card 1, key chain 1, pencil 1, plate 1, remote control (2, 3), vase 1 to shelf.
+OK.
+Act: go to book 1
+You arrive at the book (1). The book (1) is closed. You see TV stand (1), book (1), bowl (1), candle (1), cell phone (1), coffee table (1), credit card (1), house plant (1), key chain (1), pillow (1), plate (1), remote control (2, 3), shelf (1, 2, 3, 4, 5, 6), statue (2), television (1), vase (1).
+Act: pick up book 1
+You pick up book (1). You hold book (1).
+Act: go to shelf 1
+You arrive at the shelf (1). You see TV stand (1), bowl (1), candle (1), cell phone (1), coffee table (1), credit card (1), house plant (1), key chain (1), pillow (1), plate (1), remote control (2, 3), shelf (1, 2, 3, 4, 5, 6), statue (2), television (1), vase (1). You hold book (1).
+Act: put down book 1
+Put action failed: There is no valid space to place the object in the target receptacle.
+Act: go to shelf 2
+You arrive at the shelf (2). You see TV stand (1), bowl (1), candle (1), cell phone (1), coffee table (1), credit card (1), house plant (1), key chain (1), pillow (1), plate (1), remote control (2, 3), shelf (1, 2, 3, 4, 5, 6), statue (2), television (1), vase (1). You hold book (1).
+Act: put down book 1
+Put action failed: There is no valid space to place the object in the target receptacle.
+Act: go to shelf 3
+You arrive at the shelf (3). You see TV stand (1), bowl (1), candle (1), cell phone (1), coffee table (1), credit card (1), house plant (1), key chain (1), pillow (1), plate (1), remote control (2, 3), shelf (1, 2, 3, 4, 5, 6), statue (2), television (1), vase (1). You hold book (1).
+Act: put down book 1
+Put action failed: There is no valid space to place the object in the target receptacle.
+Act: go to shelf 4
+You arrive at the shelf (4). You see TV stand (1), house plant (1), painting (2), pillow (1), remote control (1), shelf (1, 2, 3, 4, 5, 6), sofa (1), statue (2), television (1). You hold book (1).
+Act: put down book 1
+Put action failed: There is no valid space to place the object in the target receptacle.
+Act: go to shelf 5
+You arrive at the shelf (5). You see TV stand (1), house plant (1), painting (2), pillow (1), remote control (1), shelf (1, 2, 3, 4, 5, 6), sofa (1), statue (2), television (1). You hold book (1).
+Act: put down book 1
+Put action failed: There is no valid space to place the object in the target receptacle.
+Act: go to shelf 6
+You arrive at the shelf (6). You see TV stand (1), house plant (1), painting (2), pillow (1), remote control (1), shelf (1, 2, 3, 4, 5, 6), sofa (1), statue (2), television (1). You hold book (1).
+Act: put down book 1
+You put book (1) in shelf (6).
+Act: go to bowl 1
+You arrive at the bowl (1). You see book (1), bowl (1), candle (1), cell phone (1), coffee table (1), credit card (1), dining table (1), key chain (1), painting (1), pencil (1), plate (1), remote control (2, 3), shelf (1, 2, 3), statue (1, 2), vase (1).
+Act: pick up bowl 1
+You pick up bowl (1). You hold bowl (1).
+Act: go to shelf 1
+You arrive at the shelf (1). You see TV stand (1), book (1), candle (1), cell phone (1), coffee table (1), credit card (1), house plant (1), key chain (1), plate (1), remote control (2, 3), shelf (1, 2, 3, 4, 5, 6), statue (2), television (1), vase (1). You hold bowl (1).
+Act: put down bowl 1
+Put action failed: There is no valid space to place the object in the target receptacle.
+Act: go to shelf 2
+You arrive at the shelf (2). You see TV stand (1), book (1), candle (1), cell phone (1), coffee table (1), credit card (1), house plant (1), key chain (1), pillow (1), plate (1), remote control (2, 3), shelf (1, 2, 3, 4, 5, 6), statue (2), television (1), vase (1). You hold bowl (1).
+Act: put down bowl 1
+Put action failed: There is no valid space to place the object in the target receptacle.
+Act: go to shelf 3
+You arrive at the shelf (3). You see TV stand (1), book (1), candle (1), cell phone (1), coffee table (1), credit card (1), house plant (1), key chain (1), pillow (1), plate (1), remote control (2, 3), shelf (1, 2, 3, 4, 5, 6), statue (2), television (1), vase (1). You hold bowl (1).
+Act: put down bowl 1
+Put action failed: There is no valid space to place the object in the target receptacle.
+Act: go to shelf 4
+You arrive at the shelf (4). You see TV stand (1), book (1), house plant (1), painting (2), pillow (1), remote control (1), shelf (1, 2, 3, 4, 5, 6), sofa (1), statue (2), television (1). You hold bowl (1).
+Act: put down bowl 1
+Put action failed: There is no valid space to place the object in the target receptacle.
+Act: go to shelf 5
+You arrive at the shelf (5). You see TV stand (1), book (1), house plant (1), painting (2), pillow (1), remote control (1), shelf (1, 2, 3, 4, 5, 6), sofa (1), statue (2), television (1). You hold bowl (1).
+Act: put down bowl 1
+Put action failed: There is no valid space to place the object in the target receptacle.
+Act: go to shelf 6
+You arrive at the shelf (6). You see TV stand (1), book (1), house plant (1), painting (2), pillow (1), remote control (1), shelf (1, 2, 3, 4, 5, 6), sofa (1), statue (2), television (1). You hold bowl (1).
+Act: put down bowl 1
+You put bowl (1) in shelf (6).
+Act: go to candle 1
+You arrive at the candle (1). You see candle (1), cell phone (1), coffee table (1), credit card (1), dining table (1), key chain (1), pencil (1), plate (1), remote control (2, 3), shelf (1, 2, 3), statue (1, 2), vase (1).
+Act: pick up candle 1
+You pick up candle (1). You hold candle (1).
+Act: go to shelf 1
+You arrive at the shelf (1). You see TV stand (1), book (1), bowl (1), cell phone (1), coffee table (1), credit card (1), house plant (1), key chain (1), plate (1), remote control (2, 3), shelf (1, 2, 3, 4, 5, 6), statue (2), television (1), vase (1). You hold candle (1).
+Act: put down candle 1
+You put candle (1) in shelf (1).
+Act: go to cell phone 1
+You arrive at the cell phone (1). You see book (1), bowl (1), candle (1), cell phone (1), coffee table (1), credit card (1), dining table (1), key chain (1), pencil (1), plate (1), remote control (2, 3), shelf (1, 2, 3, 6), statue (2), television (1), vase (1).
+Act: pick up cell phone 1
+You pick up cell phone (1). You hold cell phone (1).
+Act: go to shelf 1
+You arrive at the shelf (1). You see TV stand (1), book (1), bowl (1), candle (1), coffee table (1), credit card (1), house plant (1), key chain (1), plate (1), remote control (2, 3), shelf (1, 2, 3, 4, 5, 6), statue (2), television (1), vase (1). You hold cell phone (1).
+Act: put down cell phone 1
+You put cell phone (1) in shelf (1).
+Act: go to credit card 1
+You arrive at the credit card (1). You see book (1), bowl (1), candle (1), cell phone (1), coffee table (1), credit card (1), dining table (1), key chain (1), pencil (1), plate (1), remote control (2, 3), shelf (1, 2, 3, 6), statue (2), television (1), vase (1).
+Act: pick up credit card 1
+You pick up credit card (1). You hold credit card (1).
+Act: go to shelf 1
+You arrive at the shelf (1). You see TV stand (1), book (1), bowl (1), candle (1), cell phone (1), coffee table (1), house plant (1), key chain (1), plate (1), remote control (2, 3), shelf (1, 2, 3, 4, 5, 6), statue (2), television (1), vase (1). You hold credit card (1).
+Act: put down credit card 1
+You put credit card (1) in shelf (1).
+Act: go to key chain 1
+You arrive at the key chain (1). You see book (1), bowl (1), candle (1), cell phone (1), coffee table (1), credit card (1), key chain (1), plate (1), remote control (2, 3), shelf (1, 2, 3, 6), statue (2), television (1), vase (1).
+Act: pick up key chain 1
+You pick up key chain (1). You hold key chain (1).
+Act: go to shelf 1
+You arrive at the shelf (1). You see TV stand (1), book (1), bowl (1), candle (1), cell phone (1), coffee table (1), credit card (1), house plant (1), plate (1), remote control (2, 3), shelf (1, 2, 3, 4, 5, 6), statue (2), television (1), vase (1). You hold key chain (1).
+Act: put down key chain 1
+You put key chain (1) in shelf (1).
+Act: go to pencil 1
+You arrive at the pencil (1). You see dining table (1), painting (1), pencil (1), plate (1), remote control (2, 3), statue (1), vase (1).
+Act: pick up pencil 1
+You pick up pencil (1). You hold pencil (1).
+Act: go to shelf 1
+You arrive at the shelf (1). You see TV stand (1), book (1), bowl (1), candle (1), cell phone (1), coffee table (1), credit card (1), house plant (1), key chain (1), plate (1), remote control (2, 3), shelf (1, 2, 3, 4, 5, 6), statue (2), television (1), vase (1). You hold pencil (1).
+Act: put down pencil 1
+You put pencil (1) in shelf (1).
+Act: go to plate 1
+You arrive at the plate (1). You see candle (1), cell phone (1), coffee table (1), credit card (1), dining table (1), key chain (1), painting (1), pencil (1), plate (1), remote control (2, 3), shelf (1, 2, 3), statue (1), vase (1).
+Act: pick up plate 1
+You pick up plate (1). You hold plate (1).
+Act: go to shelf 1
+You arrive at the shelf (1). You see TV stand (1), book (1), bowl (1), candle (1), cell phone (1), coffee table (1), credit card (1), house plant (1), key chain (1), pencil (1), remote control (2, 3), shelf (1, 2, 3, 4, 5, 6), statue (2), television (1), vase (1). You hold plate (1).
+Act: put down plate 1
+Put action failed: There is no valid space to place the object in the target receptacle.
+Act: go to shelf 2
+You arrive at the shelf (2). You see TV stand (1), book (1), bowl (1), candle (1), cell phone (1), coffee table (1), credit card (1), house plant (1), key chain (1), pencil (1), pillow (1), remote control (2, 3), shelf (1, 2, 3, 4, 5, 6), statue (2), television (1), vase (1). You hold plate (1).
+Act: put down plate 1
+Put action failed: There is no valid space to place the object in the target receptacle.
+Act: go to shelf 3
+You arrive at the shelf (3). You see TV stand (1), book (1), bowl (1), candle (1), cell phone (1), coffee table (1), credit card (1), house plant (1), key chain (1), pencil (1), pillow (1), remote control (2, 3), shelf (1, 2, 3, 4, 5, 6), statue (2), television (1), vase (1). You hold plate (1).
+Act: put down plate 1
+Put action failed: There is no valid space to place the object in the target receptacle.
+Act: go to shelf 4
+You arrive at the shelf (4). You see TV stand (1), book (1), bowl (1), candle (1), cell phone (1), credit card (1), house plant (1), key chain (1), painting (2), pencil (1), pillow (1), remote control (1), shelf (1, 2, 3, 4, 5, 6), sofa (1), statue (2), television (1). You hold plate (1).
+Act: put down plate 1
+Put action failed: There is no valid space to place the object in the target receptacle.
+Act: go to shelf 5
+You arrive at the shelf (5). You see TV stand (1), book (1), bowl (1), candle (1), cell phone (1), credit card (1), house plant (1), key chain (1), painting (2), pencil (1), pillow (1), remote control (1), shelf (1, 2, 3, 4, 5, 6), sofa (1), statue (2), television (1). You hold plate (1).
+Act: put down plate 1
+Put action failed: There is no valid space to place the object in the target receptacle.
+Act: go to shelf 6
+You arrive at the shelf (6). You see TV stand (1), book (1), bowl (1), candle (1), cell phone (1), credit card (1), house plant (1), key chain (1), painting (2), pencil (1), pillow (1), remote control (1), shelf (1, 2, 3, 4, 5, 6), sofa (1), statue (2), television (1). You hold plate (1).
+Act: put down plate 1
+Put action failed: There is no valid space to place the object in the target receptacle.
+Act: go to remote control 2
+You arrive at the remote control (2). You see candle (1), cell phone (1), coffee table (1), credit card (1), dining table (1), key chain (1), painting (1), pencil (1), remote control (2, 3), shelf (1, 2, 3), statue (1, 2), vase (1). You hold plate (1).
+Act: pick up remote control 2
+Pick up action failed: Robot is currently holding plate
+Act: put down plate 1
+Put action failed: There is no valid space to place the object in the target receptacle.
+Act: go to shelf 1
+You arrive at the shelf (1). You see TV stand (1), book (1), bowl (1), candle (1), cell phone (1), coffee table (1), credit card (1), house plant (1), key chain (1), pencil (1), remote control (2, 3), shelf (1, 2, 3, 4, 5, 6), statue (2), television (1), vase (1). You hold plate (1).
+Act: put down plate 1
+Put action failed: There is no valid space to place the object in the target receptacle.
+Act: go to shelf 2
+You arrive at the shelf (2). You see TV stand (1), book (1), bowl (1), candle (1), cell phone (1), coffee table (1), credit card (1), house plant (1), key chain (1), pencil (1), pillow (1), remote control (2, 3), shelf (1, 2, 3, 4, 5, 6), statue (2), television (1), vase (1). You hold plate (1).
+Act: put down plate 1
+Put action failed: There is no valid space to place the object in the target receptacle.
+Act: go to shelf 3
+You arrive at the shelf (3). You see TV stand (1), book (1), bowl (1), candle (1), cell phone (1), coffee table (1), credit card (1), house plant (1), key chain (1), pencil (1), pillow (1), remote control (2, 3), shelf (1, 2, 3, 4, 5, 6), statue (2), television (1), vase (1). You hold plate (1).
+Act: put down plate 1
+Put action failed: There is no valid space to place the object in the target receptacle.
+Act: go to shelf 4
+You arrive at the shelf (4). You see TV stand (1), book (1), bowl (1), candle (1), cell phone (1), credit card (1), house plant (1), key chain (1), painting (2), pencil (1), pillow (1), remote control (1), shelf (1, 2, 3, 4, 5, 6), sofa (1), statue (2), television (1). You hold plate (1).
+Act: put down plate 1
+Put action failed: There is no valid space to place the object in the target receptacle.
+Act: go to shelf 5
+You arrive at the shelf (5). You see TV stand (1), book (1), bowl (1), candle (1), cell phone (1), credit card (1), house plant (1), key chain (1), painting (2), pencil (1), pillow (1), remote control (1), shelf (1, 2, 3, 4, 5, 6), sofa (1), statue (2), television (1). You hold plate (1).
+Act: put down plate 1
+Put action failed: There is no valid space to place the object in the target receptacle.
+Act: go to shelf 6
+You arrive at the shelf (6). You see TV stand (1), book (1), bowl (1), candle (1), cell phone (1), credit card (1), house plant (1), key chain (1), painting (2), pencil (1), pillow (1), remote control (1), shelf (1, 2, 3, 4, 5, 6), sofa (1), statue (2), television (1). You hold plate (1).
+Act: put down plate 1
+Put action failed: There is no valid space to place the object in the target receptacle.
+Act: go to remote control 2
+You arrive at the remote control (2). You see candle (1), cell phone (1), coffee table (1), credit card (1), dining table (1), key chain (1), painting (1), pencil (1), remote control (2, 3), shelf (1, 2, 3), statue (1, 2), vase (1). You hold plate (1).
+Act: pick up remote control 2
+Pick up action failed: Robot is currently holding plate
+Act: put down plate 1
+Put action failed: There is no valid space to place the object in the target receptacle.
+Act: go to shelf 1
+You arrive at the shelf (1). You see TV stand (1), book (1), bowl (1), candle (1), cell phone (1), coffee table (1), credit card (1), house plant (1), key chain (1), pencil (1), remote control (2, 3), shelf (1, 2, 3, 4, 5, 6), statue (2), television (1), vase (1). You hold plate (1).
+Act: put down plate 1
+Put action failed: There is no valid space to place the object in the target receptacle.
+Act: go to shelf 2
+You arrive at the shelf (2). You see TV stand (1), book (1), bowl (1), candle (1), cell phone (1), coffee table (1), credit card (1), house plant (1), key chain (1), pencil (1), pillow (1), remote control (2, 3), shelf (1, 2, 3, 4, 5, 6), statue (2), television (1), vase (1). You hold plate (1).
+Act: put down plate 1
+Put action failed: There is no valid space to place the object in the target receptacle.
+Act: go to shelf 3
+You arrive at the shelf (3). You see TV stand (1), book (1), bowl (1), candle (1), cell phone (1), coffee table (1), credit card (1), house plant (1), key chain (1), pencil (1), pillow (1), remote control (2, 3), shelf (1, 2, 3, 4, 5, 6), statue (2), television (1), vase (1). You hold plate (1).
+Act: put down plate 1
+Put action failed: There is no valid space to place the object in the target receptacle.
+Act: go to shelf 4
+You arrive at the shelf (4). You see TV stand (1), book (1), bowl (1), candle (1), cell phone (1), credit card (1), house plant (1), key chain (1), painting (2), pencil (1), pillow (1), remote control (1), shelf (1, 2, 3, 4, 5, 6), sofa (1), statue (2), television (1). You hold plate (1).
+Act: put down plate 1
+Put action failed: There is no valid space to place the object in the target receptacle.
+Act: go to shelf 5
+You arrive at the shelf (5). You see TV stand (1), book (1), bowl (1), candle (1), cell phone (1), credit card (1), house plant (1), key chain (1), painting (2), pencil (1), pillow (1), remote control (1), shelf (1, 2, 3, 4, 5, 6), sofa (1), statue (2), television (1). You hold plate (1).
+Act: put down plate 1
+Put action failed: There is no valid space to place the object in the target receptacle.
+Act: go to shelf 6
+You arrive at the shelf (6). You see TV stand (1), book (1), bowl (1), candle (1), cell phone (1), credit card (1), house plant (1), key chain (1), painting (2), pencil (1), pillow (1), remote control (1), shelf (1, 2, 3, 4, 5, 6), sofa (1), statue (2), television (1). You hold plate (1).
+Act: put down plate 1
+Put action failed: There is no valid space to place the object in the target receptacle.
+Act: go to remote control 2
+You arrive at the remote control (2). You see candle (1), cell phone (1), coffee table (1), credit card (1), dining table (1), key chain (1), painting (1), pencil (1), remote control (2, 3), shelf (1, 2, 3), statue (1, 2), vase (1). You hold plate (1).
+Act: pick up remote control 2
+Pick up action failed: Robot is currently holding plate
+Act: put down plate 1
+Put action failed: There is no valid space to place the object in the target receptacle.
+Act: go to shelf 1
+You arrive at the shelf (1). You see TV stand (1), book (1), bowl (1), candle (1), cell phone (1), coffee table (1), credit card (1), house plant (1), key chain (1), pencil (1), remote control (2, 3), shelf (1, 2, 3, 4, 5, 6), statue (2), television (1), vase (1). You hold plate (1).
+Max decision steps reached.

@@ -1,0 +1,10 @@
+Your task is to: Brew coffee into a mug with the coffee machine and toast some bread using the toaster, then put the coffee and toast on the countertop.
+You put sliced bread (1) in toaster (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- (bathroom 1): [(toilet 1), painting 1, plunger 1, (garbage can 1), (side table 2), (sink basin 1), faucet 1, (sink 1)]
+- bedroom 1: [(chair 4), (dining table 1), (side table 1), (chair 3), (drawer 1), dog bed 1, (dresser 1), (bed 1), (chair 1), (chair 2), (drawer 3), (drawer 2)]
+- kitchen 1: [house plant 1, painting 2, painting 4, television 1, bread 1, book 2, painting 3, bottle 1, butter knife 1, coffee machine 1, lettuce 1, mug 2, paper towel roll 1, pen 2, plate 1, soap bottle 1, wine bottle 2, book 1, bread 2, (chair 8), (chair 7), (chair 6), (chair 5), countertop 1, credit card 1, (dining table 2), egg 1, (fridge 1), (garbage can 2), potato 2, salt shaker 1, spatula 1, (stool 1), toaster 1, wine bottle 1, sliced bread 1]
+- (living room 1): [house plant 2, (dining table 3), (sofa 1), (box 1), (TV stand 1), (shelf 1), cart 1, (box 2)]
+Your 5 previous actions were: put down butter knife 1 (success), pick up sliced bread 1 (success), go to kitchen 1 (success), go to toaster 1 (success), put down sliced bread 1 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I put sliced bread 1 in toaster 1. Now, I need to turn on toaster 1 to toast sliced bread 1.
+Act: turn on toaster 1

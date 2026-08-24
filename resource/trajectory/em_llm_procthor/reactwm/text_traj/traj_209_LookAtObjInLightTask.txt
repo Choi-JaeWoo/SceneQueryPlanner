@@ -1,0 +1,45 @@
+Your task is to: Turn on the candle while holding a plunger.
+You are in the house, and there are 1 rooms: bathroom (1). You are in the middle of a bathroom (1). Looking quickly around the room, you see garbage can (1), painting (1), plunger (1), sink (1), sink basin (1), toilet (1).
+Think: To solve the task, I need to find and pick up plunger, find and turn on candle.
+OK.
+Think: First, I need to find and pick up plunger.
+OK.
+Query: recall location of plunger
+You have not seen plunger before.
+Think: I have not seen plunger yet. The plunger is more likely to appear in bathroom 1.
+OK.
+Act: go to bathroom 1
+You move to the bathroom (1). Looking quickly around the room, you see garbage can (1), painting (1), plunger (1), sink (1), sink basin (1), toilet (1).
+Think: In bathroom 1, the plunger is likely to appear in/on toilet 1, garbage can 1, sink 1, sink basin 1. I can check each place one by one until I find plunger.
+OK.
+Act: go to toilet 1
+You arrive at the toilet (1). The toilet (1) is closed. You see candle (1), cloth (1), toilet (1).
+Act: go to garbage can 1
+You arrive at the garbage can (1). You see garbage can (1).
+Act: go to sink 1
+You arrive at the sink (1). You see faucet (1), sink (1), sink basin (1).
+Act: go to sink basin 1
+You arrive at the sink basin (1). You see faucet (1), sink (1), sink basin (1).
+Think: In bathroom 1, I visit all places. Now I need to search bathroom 1.
+OK.
+Act: go to bathroom 1
+You move to the bathroom (1). Looking quickly around the room, you see garbage can (1), painting (1), plunger (1), sink (1), sink basin (1), toilet (1).
+Act: go to plunger 1
+You arrive at the plunger (1). You see painting (1), plunger (1).
+Think: I find plunger 1. Now, I need to pick it up.
+OK.
+Act: pick up plunger 1
+You pick up plunger (1). You hold plunger (1).
+Think: Now I need to find and turn on candle.
+OK.
+Query: recall location of candle
+You saw candle 1 near toilet 1 in bathroom 1.
+Think: Candle 1 is near toilet 1 in bathroom 1.
+OK.
+Act: go to candle 1
+You arrive at the candle (1). You see candle (1), cloth (1), toilet (1). You hold plunger (1).
+Act: turn on candle 1
+You turn on candle (1). You hold plunger (1).
+Think: Now I complete the task.
+OK.
+Act: done

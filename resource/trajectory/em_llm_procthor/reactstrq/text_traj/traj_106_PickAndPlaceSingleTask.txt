@@ -1,0 +1,111 @@
+Your task is to: Put the book in the box after picking it up.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a bedroom (1). Looking quickly around the room, you see armchair (1), basket ball (1), bed (1), chair (1, 2), desk (1), dining table (1), dog bed (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), floor lamp (1), painting (1), shelf (1, 2, 3, 4).
+Think: To solve the task, I need to find and pick up book, find and open box, put down book in box.
+OK.
+Think: First, I need to find and pick up book.
+OK.
+Query: find_objects({'label': 'book'})
+Info: 
+Think: I have not seen book yet. Now I need to check where to search. First, I will search bedroom 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'bedroom 1'})
+Info: armchair 1, bed 1, box 1, chair (1, 2), desk 1, dining table 1, drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser 1, shelf (1, 2, 3, 4)
+Think: In bedroom 1, the book is likely to appear in/on armchair 1, bed 1, box 1, chair (1, 2), desk 1, dining table 1, drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser 1, shelf (1, 2, 3, 4). I can check each place one by one until I find book.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see armchair (1), basket ball (1), bed (1), chair (1, 2), desk (1), dining table (1), dog bed (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), floor lamp (1), painting (1), shelf (1, 2, 3, 4).
+Act: go to armchair 1
+You arrive at the armchair (1). You see alarm clock (1), armchair (1), drawer (1, 2, 3, 4, 5), floor lamp (1).
+Act: go to bed 1
+You arrive at the bed (1). You see baseball bat (1), bed (1), box (1), chair (2), desk (1), pen (1), pillow (1, 2), remote control (1), shelf (1, 2, 3, 4), statue (1), tennis racket (1), tissue box (1).
+Act: go to box 1
+You arrive at the box (1). The box (1) is open. You see bed (1), box (1).
+Act: go to chair 1
+You arrive at the chair (1). You see book (2), cell phone (1), chair (1), dining table (1), mug (1), vase (1).
+Act: go to chair 2
+You arrive at the chair (2). You see basket ball (1), chair (2), desk (1), drawer (6, 7, 8, 9, 10), house plant (1), painting (1), pen (1), remote control (1), shelf (1, 2, 3, 4), statue (1), tennis racket (1), tissue box (1).
+Act: go to desk 1
+You arrive at the desk (1). You see basket ball (1), book (1), chair (2), desk (1), drawer (6, 7, 8, 9, 10), dresser (1), house plant (1), painting (1), pen (1), remote control (1), shelf (1, 2, 3, 4), statue (1), tennis racket (1), tissue box (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see basket ball (1), book (2), cell phone (1), chair (1), dining table (1), mug (1), vase (1).
+Act: go to drawer 1
+You arrive at the drawer (1). The drawer (1) is closed. You see alarm clock (1), armchair (1), basket ball (1), book (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), painting (1).
+Act: open drawer 1
+You open drawer (1). You see alarm clock (1), armchair (1), basket ball (1), book (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), painting (1).
+Act: go to drawer 2
+You arrive at the drawer (2). The drawer (2) is closed. You see alarm clock (1), armchair (1), basket ball (1), book (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), painting (1).
+Act: open drawer 2
+You open drawer (2). You see alarm clock (1), armchair (1), basket ball (1), book (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), painting (1), pen (2).
+Act: go to drawer 3
+You arrive at the drawer (3). The drawer (3) is closed. You see alarm clock (1), armchair (1), basket ball (1), book (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), painting (1), pen (2).
+Act: open drawer 3
+You open drawer (3). You see alarm clock (1), armchair (1), basket ball (1), book (1), bowl (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), painting (1), pen (2).
+Act: go to drawer 4
+You arrive at the drawer (4). The drawer (4) is closed. You see alarm clock (1), armchair (1), basket ball (1), book (1), bowl (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), painting (1), pen (2).
+Act: open drawer 4
+You open drawer (4). You see alarm clock (1), armchair (1), basket ball (1), book (1), bowl (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), painting (1), pen (2).
+Act: go to drawer 5
+You arrive at the drawer (5). The drawer (5) is closed. You see alarm clock (1), armchair (1), basket ball (1), book (1), bowl (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), painting (1), pen (2).
+Act: open drawer 5
+You open drawer (5). You see alarm clock (1), armchair (1), basket ball (1), book (1), bowl (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), painting (1), pen (2).
+Act: go to drawer 6
+You arrive at the drawer (6). The drawer (6) is closed. You see alarm clock (1), basket ball (1), book (1), bowl (1), chair (2), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), painting (1), pen (2), remote control (1), shelf (1, 2, 3, 4), tissue box (1).
+Act: open drawer 6
+You open drawer (6). You see alarm clock (1), basket ball (1), book (1), bowl (1), chair (2), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), painting (1), pen (2), remote control (1), shelf (1, 2, 3, 4), tissue box (1).
+Act: go to drawer 7
+You arrive at the drawer (7). The drawer (7) is closed. You see alarm clock (1), basket ball (1), book (1), bowl (1), chair (2), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), painting (1), pen (2), remote control (1), shelf (1, 2, 3, 4), tissue box (1).
+Act: open drawer 7
+You open drawer (7). You see alarm clock (1), basket ball (1), book (1), bowl (1), chair (2), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), painting (1), pen (2), remote control (1), shelf (1, 2, 3, 4), tissue box (1).
+Act: go to drawer 8
+You arrive at the drawer (8). The drawer (8) is closed. You see alarm clock (1), basket ball (1), book (1), bowl (1), chair (2), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), painting (1), pen (2), remote control (1), shelf (1, 2, 3, 4), tissue box (1).
+Act: open drawer 8
+You open drawer (8). You see alarm clock (1), basket ball (1), book (1), bowl (1), chair (2), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), painting (1), pen (2), remote control (1), shelf (1, 2, 3, 4), tissue box (1).
+Act: go to drawer 9
+You arrive at the drawer (9). The drawer (9) is closed. You see alarm clock (1), basket ball (1), book (1), bowl (1), chair (2), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), painting (1), pen (2), remote control (1), shelf (1, 2, 3, 4), tissue box (1).
+Act: open drawer 9
+You open drawer (9). You see alarm clock (1), basket ball (1), book (1), bowl (1), chair (2), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), painting (1), pen (2), remote control (1), shelf (1, 2, 3, 4), tissue box (1).
+Act: go to drawer 10
+You arrive at the drawer (10). The drawer (10) is closed. You see alarm clock (1), basket ball (1), book (1), bowl (1), chair (2), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), painting (1), pen (2), remote control (1), shelf (1, 2, 3, 4), tissue box (1).
+Act: open drawer 10
+You open drawer (10). You see alarm clock (1), basket ball (1), book (1), bowl (1), chair (2), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), painting (1), pen (2), remote control (1), shelf (1, 2, 3, 4), tissue box (1).
+Act: go to dresser 1
+You arrive at the dresser (1). You see alarm clock (1), basket ball (1), book (1), bowl (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), painting (1), pen (2), remote control (1), shelf (2, 3, 4).
+Act: go to shelf 1
+You arrive at the shelf (1). You see basket ball (1), book (1), chair (2), desk (1), drawer (5, 6, 7, 8, 9, 10), dresser (1), house plant (1), painting (1), pen (1), remote control (1), shelf (1, 2, 3, 4), statue (1), tennis racket (1), tissue box (1).
+Act: go to shelf 2
+You arrive at the shelf (2). You see basket ball (1), book (1), chair (2), desk (1), drawer (5, 6, 7, 8, 9, 10), dresser (1), house plant (1), painting (1), pen (1), remote control (1), shelf (1, 2, 3, 4), statue (1), tennis racket (1), tissue box (1).
+Act: go to shelf 3
+You arrive at the shelf (3). You see basket ball (1), book (1), chair (2), desk (1), drawer (5, 6, 7, 8, 9, 10), dresser (1), house plant (1), painting (1), pen (1), remote control (1), shelf (1, 2, 3, 4), statue (1), tennis racket (1), tissue box (1).
+Act: go to shelf 4
+You arrive at the shelf (4). You see basket ball (1), book (1), chair (2), desk (1), drawer (5, 6, 7, 8, 9, 10), dresser (1), house plant (1), painting (1), pen (1), remote control (1), shelf (1, 2, 3, 4), statue (1), tennis racket (1), tissue box (1).
+Think: I need to check whether I see book.
+OK.
+Query: find_objects({'label': 'book'})
+Info: [{'name_id_nl': 'book 2', 'node_type': 'object', 'properties': ['openable', 'pickupable'], 'states': []}, {'name_id_nl': 'book 1', 'node_type': 'object', 'properties': ['openable', 'pickupable'], 'states': []}]
+Query: get_edges_for_node({'node_id': 'book 2'})
+Info: [('book 2', 'dining table 1', 'ON'), ('book 2', 'cell phone 1', 'CLOSE'), ('book 2', 'chair 1', 'CLOSE'), ('book 2', 'mug 1', 'CLOSE'), ('book 2', 'vase 1', 'CLOSE'), ('book 2', 'bedroom 1', 'INSIDE'), ('cell phone 1', 'book 2', 'CLOSE'), ('chair 1', 'book 2', 'CLOSE'), ('mug 1', 'book 2', 'CLOSE'), ('vase 1', 'book 2', 'CLOSE')]
+Query: get_edges_for_node({'node_id': 'book 1'})
+Info: [('book 1', 'alarm clock 1', 'CLOSE'), ('book 1', 'dresser 1', 'ON'), ('book 1', 'armchair 1', 'CLOSE'), ('book 1', 'bowl 1', 'CLOSE'), ('book 1', 'drawer 8', 'CLOSE'), ('book 1', 'drawer 5', 'CLOSE'), ('book 1', 'drawer 9', 'CLOSE'), ('book 1', 'drawer 10', 'CLOSE'), ('book 1', 'drawer 6', 'CLOSE'), ('book 1', 'drawer 4', 'CLOSE'), ('book 1', 'drawer 7', 'CLOSE'), ('book 1', 'drawer 2', 'CLOSE'), ('book 1', 'drawer 3', 'CLOSE'), ('book 1', 'drawer 1', 'CLOSE'), ('book 1', 'house plant 1', 'CLOSE'), ('book 1', 'painting 1', 'CLOSE'), ('book 1', 'pen 2', 'CLOSE'), ('book 1', 'remote control 1', 'CLOSE'), ('book 1', 'shelf 3', 'CLOSE'), ('book 1', 'shelf 4', 'CLOSE'), ('book 1', 'shelf 1', 'CLOSE'), ('book 1', 'shelf 2', 'CLOSE'), ('book 1', 'user 1', 'CLOSE'), ('book 1', 'bedroom 1', 'INSIDE'), ('alarm clock 1', 'book 1', 'CLOSE'), ('armchair 1', 'book 1', 'CLOSE'), ('bowl 1', 'book 1', 'CLOSE'), ('drawer 8', 'book 1', 'CLOSE'), ('drawer 5', 'book 1', 'CLOSE'), ('drawer 9', 'book 1', 'CLOSE'), ('drawer 10', 'book 1', 'CLOSE'), ('drawer 6', 'book 1', 'CLOSE'), ('drawer 4', 'book 1', 'CLOSE'), ('drawer 7', 'book 1', 'CLOSE'), ('drawer 2', 'book 1', 'CLOSE'), ('drawer 3', 'book 1', 'CLOSE'), ('drawer 1', 'book 1', 'CLOSE'), ('house plant 1', 'book 1', 'CLOSE'), ('painting 1', 'book 1', 'CLOSE'), ('pen 2', 'book 1', 'CLOSE'), ('remote control 1', 'book 1', 'CLOSE'), ('shelf 3', 'book 1', 'CLOSE'), ('shelf 4', 'book 1', 'CLOSE'), ('shelf 1', 'book 1', 'CLOSE'), ('shelf 2', 'book 1', 'CLOSE'), ('user 1', 'book 1', 'CLOSE')]
+Think: Book 2 is on dining table 1.
+OK.
+Act: go to dining table 1
+You arrive at the dining table (1). You see basket ball (1), book (2), cell phone (1), chair (1), dining table (1), mug (1), vase (1).
+Act: go to book 2
+You arrive at the book (2). The book (2) is closed. You see basket ball (1), book (2), cell phone (1), chair (1), dining table (1), mug (1), vase (1).
+Act: pick up book 2
+You pick up book (2). You hold book (2).
+Think: Now, I need to find and open box.
+OK.
+Query: find_objects({'label': 'box'})
+Info: [{'name_id_nl': 'box 2', 'node_type': 'asset', 'properties': ['openable', 'pickupable'], 'states': [], 'room': 'living room 1'}, {'name_id_nl': 'box 1', 'node_type': 'asset', 'properties': ['openable', 'pickupable'], 'states': ['isOpen'], 'room': 'bedroom 1'}]
+Think: Box 1 is in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see armchair (1), basket ball (1), bed (1), bowl (1), chair (1, 2), desk (1), dining table (1), dog bed (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), floor lamp (1), painting (1), pen (2), shelf (1, 2, 3, 4). You hold book (2).
+Act: go to box 1
+You arrive at the box (1). The box (1) is open. You see bed (1), box (1). You hold book (2).
+Act: put down book 2
+You put book (2) in box (1).
+Think: Now I complete the task.
+OK.
+Act: done

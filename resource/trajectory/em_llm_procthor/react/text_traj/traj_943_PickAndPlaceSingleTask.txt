@@ -1,0 +1,57 @@
+Your task is to: Take a pencil and set it down on the countertop.
+You are in the house, and there are 2 rooms: kitchen (1), living room (1). You are in the middle of a kitchen (1). Looking quickly around the room, you see chair (1, 2, 3, 4), countertop (1), dining table (1), fridge (1), house plant (1), painting (1), stool (1, 2).
+Think: To solve the task, I need to find and pick up pencil, then put it on countertop.
+OK.
+Think: First, I need to find and pick up pencil. The pencil is more likely to appear in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), armchair (1), dining table (2), floor lamp (1), garbage can (1), painting (2, 3, 4), shelf (1, 2, 3, 4, 5, 6), sofa (1).
+Think: In living room 1, the pencil is likely to appear in/on TV stand 1, armchair 1, dining table 2, floor lamp 1, garbage can 1, shelf (1, 2, 3, 4, 5, 6), sofa 1. I can check each place one by one until I find pencil.
+OK.
+Act: go to TV stand 1
+You arrive at the TV stand (1). You see TV stand (1), garbage can (1), painting (3), pillow (1), shelf (1, 2, 3, 4, 5, 6), sofa (1), television (1).
+Act: go to armchair 1
+You arrive at the armchair (1). You see armchair (1), floor lamp (1), garbage can (1).
+Act: go to dining table 2
+You arrive at the dining table (2). You see cell phone (1), dining table (2), painting (2), plate (1).
+Act: go to floor lamp 1
+You arrive at the floor lamp (1). You see armchair (1), floor lamp (1).
+Act: go to garbage can 1
+You arrive at the garbage can (1). You see TV stand (1), armchair (1), garbage can (1), shelf (3, 4, 5, 6), television (1).
+Act: go to shelf 1
+You arrive at the shelf (1). You see TV stand (1), painting (3), pillow (1), shelf (1, 2, 3, 4, 5, 6), sofa (1), television (1).
+Act: go to shelf 2
+You arrive at the shelf (2). You see TV stand (1), painting (3), pillow (1), shelf (1, 2, 3, 4, 5, 6), sofa (1), television (1).
+Act: go to shelf 3
+You arrive at the shelf (3). You see TV stand (1), painting (3), pillow (1), shelf (1, 2, 3, 4, 5, 6), sofa (1), television (1).
+Act: go to shelf 4
+You arrive at the shelf (4). You see TV stand (1), garbage can (1), painting (3), pillow (1), shelf (1, 2, 3, 4, 5, 6), sofa (1), television (1).
+Act: go to shelf 5
+You arrive at the shelf (5). You see TV stand (1), garbage can (1), painting (3), pillow (1), shelf (1, 2, 3, 4, 5, 6), sofa (1), television (1).
+Act: go to shelf 6
+You arrive at the shelf (6). You see TV stand (1), garbage can (1), painting (3), pillow (1), shelf (1, 2, 3, 4, 5, 6), sofa (1), television (1).
+Act: go to sofa 1
+You arrive at the sofa (1). You see painting (3), pillow (1), shelf (4, 6), sofa (1).
+Think: There is no pencil in living room 1. I need to move to kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see chair (1, 2, 3, 4), countertop (1), dining table (1), fridge (1), house plant (1), painting (1), stool (1, 2).
+Think: In kitchen 1, the pencil is likely to appear in/on chair (1, 2, 3, 4), countertop 1, dining table 1, fridge 1, house plant 1, stool (1, 2). I can check each place one by one until I find pencil.
+OK.
+Act: go to chair 1
+You arrive at the chair (1). You see butter knife (1), chair (1), dining table (1), fork (1), pencil (1).
+Think: I find pencil 1. Now, I need to pick it up.
+OK.
+Act: go to pencil 1
+You arrive at the pencil (1). You see butter knife (1), chair (1, 3, 4), dining table (1), fork (1), pencil (1).
+Act: pick up pencil 1
+You pick up pencil (1). You hold pencil (1).
+Think: Now, I need to find countertop and put down pencil 1.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see bowl (1), coffee machine (1), countertop (1), knife (1), pan (1), paper towel roll (1). You hold pencil (1).
+Act: put down pencil 1
+You put pencil (1) in countertop (1).
+Think: Now I complete the task.
+OK.
+Act: done

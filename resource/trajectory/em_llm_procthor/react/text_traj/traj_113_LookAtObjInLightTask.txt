@@ -1,0 +1,45 @@
+Your task is to: Illuminate the remote control by switching on the desk lamp.
+You are in the house, and there are 5 rooms: bathroom (1), bedroom (1, 2), kitchen (1), living room (1). You are in the middle of a bedroom (1). Looking quickly around the room, you see armchair (1), baseball bat (1), basket ball (1), bed (1), box (2), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 19, 20), dresser (1), floor lamp (1), side table (1).
+Think: To solve the task, I need to find and pick up remote control, find and turn on desk lamp.
+OK.
+Think: First, I need to find and pick up remote control. The remote control is more likely to appear in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), box (1), painting (3, 4), shelf (1), sofa (1).
+Think: In living room 1, the remote control is likely to appear in/on TV stand 1, box 1, shelf 1, sofa 1. I can check each place one by one until I find remote control.
+OK.
+Act: go to TV stand 1
+You arrive at the TV stand (1). You see TV stand (1), box (5), pencil (1), plate (1), shelf (1), television (2), vase (1).
+Act: go to box 1
+You arrive at the box (1). 
+Think: I find remote control 1. Now, I need to pick it up.
+OK.
+Act: go to television 1
+You arrive at the television (1). You see basket ball (1), credit card (1), desk lamp (1), drawer (1, 2, 5, 6, 7, 8, 9, 10, 11), dresser (1), key chain (1), laptop (1), remote control (1, 2), statue (1), teddy bear (1).
+Act: pick up remote control 1
+Pick up action failed: The target object is not within the visible range.
+Act: go to remote control 1
+You arrive at the remote control (1). You see basket ball (1), bed (1), credit card (1), desk lamp (1), drawer (1, 2, 5, 6, 7, 8, 9, 10), dresser (1), laptop (1), remote control (1, 2), statue (1), teddy bear (1).
+Act: pick up remote control 1
+You pick up remote control (1). You hold remote control (1).
+Think: Now I need to find and turn on desk lamp. The desk lamp is more likely to appear in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see armchair (1), baseball bat (1), basket ball (1), bed (1), box (2), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 19, 20), dresser (1), floor lamp (1), side table (1). You hold remote control (1).
+Think: In bedroom 1, the desk lamp is likely to appear in/on armchair 1, baseball bat 1, basket ball 1, bed 1, box 2, drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 19, 20), dresser 1, floor lamp 1, side table 1. I can check each place one by one until I find desk lamp.
+OK.
+Act: go to armchair 1
+You arrive at the armchair (1). You see armchair (1), drawer (3, 4, 12), floor lamp (1), mug (1), watch (1). You hold remote control (1).
+Act: go to baseball bat 1
+You arrive at the baseball bat (1). You see alarm clock (1), baseball bat (1), basket ball (1), box (2), drawer (19, 20), pencil (3), pillow (2), side table (1), teddy bear (1). You hold remote control (1).
+Act: go to basket ball 1
+You arrive at the basket ball (1). You see basket ball (1), bed (1), credit card (1), desk lamp (1), drawer (1, 2, 5, 6, 7, 8, 9, 10, 11), dresser (1), laptop (1), remote control (2), statue (1), teddy bear (1). You hold remote control (1).
+Think: I find desk lamp 1. Now, I need to turn it on.
+OK.
+Act: go to desk lamp 1
+You arrive at the desk lamp (1). You see basket ball (1), bowl (1), credit card (1), desk lamp (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), key chain (1), mug (1), remote control (2), statue (1), teddy bear (1), watch (1). You hold remote control (1).
+Act: turn on desk lamp 1
+You turn on desk lamp (1). You hold remote control (1).
+Think: Now I complete the task.
+OK.
+Act: done

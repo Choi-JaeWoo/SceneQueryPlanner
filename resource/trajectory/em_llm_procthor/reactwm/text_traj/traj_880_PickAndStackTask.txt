@@ -1,0 +1,77 @@
+Your task is to: Put a plate with a spatula on it on the countertop.
+You are in the house, and there are 2 rooms: kitchen (1), living room (1). You are in the middle of a living room (1). Looking quickly around the room, you see TV stand (1), dining table (2), floor lamp (1), house plant (1), shelf (1, 2, 3, 4, 5, 6), sofa (1).
+Think: To solve the task, I need to find the plate and spatula, put down spatula on plate, find countertop and put down plate.
+OK.
+Think: First, I need to find and pick up plate.
+OK.
+Query: recall location of plate
+You have not seen plate before.
+Think: I have not seen plate yet. The plate is more likely to appear in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see chair (1, 2, 3, 4, 5), countertop (1), dining table (1), fridge (1), garbage can (1), painting (1, 2).
+Think: In kitchen 1, the plate is likely to appear in/on countertop 1, dining table 1. I can check each place one by one until I find plate.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see bowl (1), bread (1), butter knife (1), cell phone (2), chair (2, 3), countertop (1), cup (1), dish sponge (1), house plant (2), kettle (1), lettuce (1), spatula (1), wine bottle (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see apple (1), bowl (1), cell phone (1), chair (1, 2, 3, 4, 5), cup (2), dining table (1), ladle (1), pepper shaker (1), plate (1), potato (1), tomato (1).
+Think: I find plate 1. Now, I need to pick it up.
+OK.
+Act: go to plate 1
+You arrive at the plate (1). You see apple (1), bowl (1), cell phone (1), chair (1, 2, 3, 4, 5), cup (2), dining table (1), ladle (1), pepper shaker (1), plate (1), potato (1), tomato (1).
+Act: pick up plate 1
+You pick up plate (1). You hold plate (1).
+Think: Now, I need to find and pick up spatula.
+OK.
+Query: recall location of spatula
+You saw spatula 1 near countertop 1 in kitchen 1.
+Think: Spatula 1 is near countertop 1 in kitchen 1.
+OK.
+Act: go to spatula 1
+You arrive at the spatula (1). You see bread (1), cell phone (2), cup (1), dish sponge (1), house plant (2), lettuce (1), spatula (1). You hold plate (1).
+Act: pick up spatula 1
+Pick up action failed: Robot is currently holding plate
+Think: I need to put down plate 1 before I can pick up spatula 1.
+OK.
+Act: put down plate 1
+Put action failed: There is no valid space to place the object in the target receptacle.
+Think: I need to find a valid space to place plate 1.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see bowl (1), bread (1), butter knife (1), cell phone (2), chair (2, 3), countertop (1), cup (1), dish sponge (1), house plant (2), kettle (1), lettuce (1), spatula (1), wine bottle (1). You hold plate (1).
+Act: put down plate 1
+You put plate (1) on countertop (1).
+Act: go to spatula 1
+You arrive at the spatula (1). You see bread (1), cell phone (2), cup (1), dish sponge (1), house plant (2), lettuce (1), plate (1), spatula (1).
+Act: pick up spatula 1
+You pick up spatula (1). You hold spatula (1).
+Think: Now, I need to put down spatula 1 on plate 1.
+OK.
+Act: go to plate 1
+You arrive at the plate (1). You see countertop (1), cup (1), dish sponge (1), house plant (2), lettuce (1), plate (1), wine bottle (1). You hold spatula (1).
+Act: put down spatula 1
+You put spatula (1) in plate (1).
+Think: Now, I need to find countertop and put down plate 1.
+OK.
+Query: recall location of countertop
+You saw countertop 1 in kitchen 1.
+Think: Countertop 1 is in kitchen 1.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see bowl (1), bread (1), butter knife (1), cell phone (2), chair (2, 3), countertop (1), cup (1), dish sponge (1), house plant (2), kettle (1), lettuce (1), plate (1), spatula (1), wine bottle (1).
+Act: go to plate 1
+You arrive at the plate (1). You see countertop (1), cup (1), dish sponge (1), house plant (2), lettuce (1), plate (1), spatula (1), wine bottle (1).
+Act: pick up plate 1
+You pick up plate (1). You hold plate (1).
+Act: put down plate 1
+Put action failed: There is no valid space to place the object in the target receptacle.
+Think: I need to find a valid space to place plate 1.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see bowl (1), bread (1), butter knife (1), cell phone (2), chair (2, 3), countertop (1), cup (1), dish sponge (1), house plant (2), kettle (1), lettuce (1), spatula (1), wine bottle (1). You hold plate (1).
+Act: put down plate 1
+You put plate (1) on countertop (1).
+Think: Now I complete task.
+OK.
+Act: done

@@ -1,0 +1,8 @@
+Your task is to: Move all the objects from the dresser to the dining table.
+You arrive at the armchair (1). You see armchair (1), floor lamp (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- bathroom 1: [faucet 1, (garbage can 1), painting 2, painting 1, plunger 1, (sink 1), (sink basin 1), (toilet 1)]
+- bedroom 1: [dog bed 1, floor lamp 2, television 1, armchair 1, (armchair 2), (bed 1), (box 1), (box 2), (chair 1), (chair 2), (chair 4), (chair 3), (dining table 1), (drawer 8), (drawer 7), (drawer 6), (drawer 3), (drawer 4), (drawer 2), (drawer 5), (drawer 9), (drawer 1), (drawer 10), (dresser 1), floor lamp 1]
+Your 2 previous actions were: go to bedroom 1 (success), go to armchair 1 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I arrive at armchair 1. I need to check unexplored areas in bedroom 1 to find dresser 1. Now, I need to check armchair 2.
+Act: go to armchair 2

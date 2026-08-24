@@ -1,0 +1,8 @@
+Your task is to: Examine a pen under the light of the candle.
+You are in the house, and there are 2 rooms: bathroom (1), bedroom (1). You are in the middle of a bathroom (1). Looking quickly around the room, you see garbage can (1), painting (3, 4), plunger (1), sink (1), sink basin (1), toilet (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- bathroom 1: [candle 1, faucet 1, (garbage can 1), painting 4, painting 3, plunger 1, (sink 1), (sink basin 1), (toilet 1), toilet paper 1]
+- (bedroom 1): [baseball bat 1, (bed 1), (drawer 9), (drawer 8), (drawer 7), (drawer 6), (drawer 4), (drawer 10), (drawer 3), (drawer 2), (drawer 1), (drawer 5), (dresser 1), painting 2, painting 1, (side table 1), (sofa 1), television 1]
+You have not taken any actions yet.
+What is the best next action to complete the task as efficiently as possible?
+Think: First, I need to find and pick up pen. The pen is more likely to appear in bedroom 1.
+Act: go to bedroom 1

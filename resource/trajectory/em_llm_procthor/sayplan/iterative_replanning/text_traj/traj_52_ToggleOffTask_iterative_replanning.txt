@@ -1,0 +1,7 @@
+Your task is to: Toggle off all faucets that are currently on.
+3D Scene Graph: {nodes: {agent: [{id: user 1, location: bathroom 1}], room: [{id: bathroom 1}], asset: [{id: sink basin 1, location: bathroom 1}, {id: sink 1, location: bathroom 1}, {id: garbage can 1, location: bathroom 1}, {id: toilet 1, location: bathroom 1}], object: [{id: spray bottle 1, location: bathroom 1}, {id: toilet paper 1, location: bathroom 1}, {id: painting 1, location: bathroom 1}, {id: soap bar 1, location: bathroom 1}, {id: faucet 1, location: bathroom 1}]}, links: [user 1↔bathroom 1, user 1↔bathroom 1, spray bottle 1↔toilet 1, toilet paper 1↔toilet 1, painting 1↔garbage can 1, soap bar 1↔toilet 1, sink basin 1↔bathroom 1, sink basin 1↔faucet 1, faucet 1↔sink basin 1, faucet 1↔sink 1, sink 1↔bathroom 1, garbage can 1↔bathroom 1, garbage can 1↔painting 1, toilet 1↔bathroom 1]}
+Memory: ['bathroom 1']
+chain-of-thought: i have found the faucet on the graph -> search complete -> i will switch to planning mode -> generate plan to toggle off all faucets that are currently on
+reasoning: I will generate a task plan using the identified subgraph
+plan: [go to bathroom 1, go to faucet 1, turn off faucet 1]
+Scene Graph Simulator: Plan Verified

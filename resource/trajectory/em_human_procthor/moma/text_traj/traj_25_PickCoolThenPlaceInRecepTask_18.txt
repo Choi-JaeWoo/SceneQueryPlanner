@@ -1,0 +1,8 @@
+Your task is to: Place a cold bowl on the countertop.
+You open fridge (1). You see bowl (1), fridge (1), house plant (1), painting (2). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- kitchen 1: [painting 1, pepper shaker 1, painting 3, bowl 1, (countertop 1), fridge 1, house plant 1, painting 2]
+- living room 1: [floor lamp 1, painting 4, (box 1), (box 2), candle 1, cart 1, (chair 1), (dining table 1), house plant 2, newspaper 1, (shelf 2), (shelf 1), (shelf 3), (shelf 4), (shelf 5), (shelf 6), television 1, (TV stand 1), vase 1]
+Your 5 previous actions were: go to fridge 1 (success), open fridge 1 (success), put down bowl 1 (success), close fridge 1 (success), open fridge 1 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I open fridge 1. Now, I need to pick up bowl 1.
+Act: pick up bowl 1

@@ -1,0 +1,55 @@
+Your task is to: Ensure the soap bar is clean before placing it in the sinkbasin.
+You are in the house, and there are 5 rooms: bathroom (1), bedroom (1, 2), kitchen (1), living room (1). You are in the middle of a living room (1). Looking quickly around the room, you see box (1), cart (1), chair (1, 2, 3), dining table (1), room decor (1), sofa (1).
+Think: To solve the task, I need to find and pick up soap bar, find sinkbasin and put down soap bar, turn on faucet to wash soap bar, pick up soap bar and put it down in sinkbasin.
+OK.
+Think: First, I need to find and pick up soap bar. The soap bar is more likely to appear in bathroom 1.
+OK.
+Act: go to bathroom 1
+You move to the bathroom (1). Looking quickly around the room, you see sink (1), sink basin (1), toilet (1).
+Think: In bathroom 1, the soap bar is likely to appear in/on sink 1, sink basin 1, toilet 1. I can check each place one by one until I find soap bar.
+OK.
+Act: go to sink 1
+You arrive at the sink (1). You see alarm clock (1), armchair (1), floor lamp (1).
+Act: go to bathroom 1
+You move to the bathroom (1). Looking quickly around the room, you see sink (1), sink basin (1), toilet (1).
+Act: go to sink basin 1
+You arrive at the sink basin (1). You see faucet (1), sink (1), sink basin (1).
+Act: go to toilet 1
+You arrive at the toilet (1). The toilet (1) is closed. You see dish sponge (1), soap bar (1), spray bottle (2), toilet (1), toilet paper (1).
+Act: open toilet 1
+You open toilet (1). You see dish sponge (1), soap bar (1), spray bottle (2), toilet (1), toilet paper (1).
+Think: I find soap bar 1. Now, I need to pick it up.
+OK.
+Act: go to soap bar 1
+You arrive at the soap bar (1). You see dish sponge (1), soap bar (1), spray bottle (2), toilet (1), toilet paper (1).
+Act: pick up soap bar 1
+You pick up soap bar (1). You hold soap bar (1).
+Think: Now, I need to find sinkbasin. The sinkbasin is more likely to appear in bathroom 1.
+OK.
+Act: go to bathroom 1
+You move to the bathroom (1). Looking quickly around the room, you see sink (1), sink basin (1), toilet (1). You hold soap bar (1).
+Act: go to sink basin 1
+You arrive at the sink basin (1). You see faucet (1), sink (1), sink basin (1). You hold soap bar (1).
+Think: Now, I need to put down soap bar 1.
+OK.
+Act: put down soap bar 1
+You put soap bar (1) in sink basin (1).
+Think: Now, I need to turn on faucet 1 briefly and turn off to wash soap bar 1.
+OK.
+Act: turn on faucet 1
+You turn on faucet (1).
+Act: turn off faucet 1
+You turn off faucet (1).
+Think: Now, I need to pick up soap bar 1 and find sinkbasin.
+OK.
+Act: pick up soap bar 1
+You pick up soap bar (1). You hold soap bar (1).
+Act: go to sink basin 1
+You arrive at the sink basin (1). You see faucet (1), sink (1), sink basin (1). You hold soap bar (1).
+Think: Now, I need to put down soap bar 1.
+OK.
+Act: put down soap bar 1
+You put soap bar (1) in sink basin (1).
+Think: Now I complete task.
+OK.
+Act: done

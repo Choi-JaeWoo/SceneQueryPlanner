@@ -1,0 +1,137 @@
+Your task is to: Remove all the objects from the cabinet and put them on the dining table.
+You are in the house, and there are 2 rooms: kitchen (1), living room (1). You are in the middle of a kitchen (1). Looking quickly around the room, you see cabinet (1), countertop (1), fridge (1), painting (1), shelf (1, 2, 3), shelving unit (1).
+Think: To solve the task, I need to find cabinet and check what is inside it. Then, I need to move everything inside cabinet to dining table.
+OK.
+Think: First, I need to find cabinet. The cabinet is more likely to appear in kitchen 1.
+OK.
+Act: go to cabinet 1
+You arrive at the cabinet (1). The cabinet (1) is closed. You see bottle (1), bowl (1), cabinet (1), fork (1), painting (1), plate (1), salt shaker (1), shelf (1, 2, 3), shelving unit (1), statue (1), vase (1), wine bottle (1).
+Act: open cabinet 1
+You open cabinet (1). You see book (2), bottle (1), bowl (1), cabinet (1), fork (1), painting (1), plate (1), salt shaker (1), shelf (1, 2, 3), shelving unit (1), statue (1), vase (1), wine bottle (1).
+Think: Now, I need to move book (2), bottle 1, bowl 1, fork 1, plate 1, salt shaker 1, statue 1, vase 1, wine bottle 1 to dining table.
+OK.
+Act: go to book 2
+You arrive at the book (2). The book (2) is closed. You see book (2), bottle (1), bowl (1), cabinet (1), fork (1), painting (1), plate (1), salt shaker (1), shelf (1, 2, 3), shelving unit (1), statue (1), vase (1), wine bottle (1).
+Act: pick up book 2
+You pick up book (2). You hold book (2).
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see box (1, 2), dining table (1), drawer (1, 2, 3), dresser (1), house plant (1), painting (2, 3, 4), sofa (1), television (1). You hold book (2).
+Act: go to dining table 1
+You arrive at the dining table (1). You see book (3), bowl (2), box (2), desk lamp (2), dining table (1), pillow (1), television (1). You hold book (2).
+Act: put down book 2
+You put book (2) in dining table (1).
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see cabinet (1), countertop (1), fridge (1), painting (1), shelf (1, 2, 3), shelving unit (1).
+Act: go to cabinet 1
+You arrive at the cabinet (1). The cabinet (1) is open. You see bottle (1), bowl (1), cabinet (1), painting (1), shelf (1, 2, 3), shelving unit (1), vase (1), wine bottle (1).
+Act: go to bottle 1
+You arrive at the bottle (1). You see apple (1), book (1), bottle (1), bowl (1), cabinet (1), countertop (1), fork (1), painting (1), pen (1), plate (1), pot (1), salt shaker (1), shelf (1, 2, 3), shelving unit (1), soap bottle (1), spray bottle (1), statue (1), vase (1), wine bottle (1).
+Act: pick up bottle 1
+You pick up bottle (1). You hold bottle (1).
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see box (1, 2), dining table (1), drawer (1, 2, 3), dresser (1), house plant (1), painting (2, 3, 4), sofa (1), television (1). You hold bottle (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see book (2, 3), bowl (2), box (2), desk lamp (2), dining table (1), pillow (1), television (1). You hold bottle (1).
+Act: put down bottle 1
+You put bottle (1) in dining table (1).
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see cabinet (1), countertop (1), fridge (1), painting (1), shelf (1, 2, 3), shelving unit (1).
+Act: go to cabinet 1
+You arrive at the cabinet (1). The cabinet (1) is open. You see bowl (1), cabinet (1), painting (1), shelf (1, 2, 3), shelving unit (1), vase (1), wine bottle (1).
+Act: go to bowl 1
+You arrive at the bowl (1). You see apple (1), book (1), bowl (1), cabinet (1), countertop (1), fork (1), painting (1), pen (1), plate (1), pot (1), salt shaker (1), shelf (1, 2, 3), shelving unit (1), soap bottle (1), spray bottle (1), statue (1), vase (1), wine bottle (1).
+Act: pick up bowl 1
+You pick up bowl (1). You hold bowl (1).
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see box (1, 2), dining table (1), drawer (1, 2, 3), dresser (1), house plant (1), painting (2, 3, 4), sofa (1), television (1). You hold bowl (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see book (2, 3), bottle (1), bowl (2), box (2), desk lamp (2), dining table (1), pillow (1), television (1). You hold bowl (1).
+Act: put down bowl 1
+You put bowl (1) in dining table (1).
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see cabinet (1), countertop (1), fridge (1), painting (1), shelf (1, 2, 3), shelving unit (1).
+Act: go to cabinet 1
+You arrive at the cabinet (1). The cabinet (1) is open. You see cabinet (1), painting (1), shelf (1, 2, 3), shelving unit (1), vase (1), wine bottle (1).
+Act: go to fork 1
+You arrive at the fork (1). You see apple (1), book (1), countertop (1), fork (1), pen (1), plate (1), pot (1), salt shaker (1), soap bottle (1), spray bottle (1), statue (1), vase (1), wine bottle (1).
+Act: pick up fork 1
+You pick up fork (1). You hold fork (1).
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see box (1, 2), dining table (1), drawer (1, 2, 3), dresser (1), house plant (1), painting (2, 3, 4), sofa (1), television (1). You hold fork (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see book (2, 3), bottle (1), bowl (1, 2), box (2), desk lamp (2), dining table (1), pillow (1), television (1). You hold fork (1).
+Act: put down fork 1
+You put fork (1) in dining table (1).
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see cabinet (1), countertop (1), fridge (1), painting (1), shelf (1, 2, 3), shelving unit (1).
+Act: go to cabinet 1
+You arrive at the cabinet (1). The cabinet (1) is open. You see cabinet (1), painting (1), shelf (1, 2, 3), shelving unit (1), vase (1), wine bottle (1).
+Act: go to plate 1
+You arrive at the plate (1). You see apple (1), countertop (1), pen (1), plate (1), pot (1), salt shaker (1), statue (1), vase (1), wine bottle (1).
+Act: pick up plate 1
+You pick up plate (1). You hold plate (1).
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see box (1, 2), dining table (1), drawer (1, 2, 3), dresser (1), house plant (1), painting (2, 3, 4), sofa (1), television (1). You hold plate (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see book (2, 3), bottle (1), bowl (1, 2), box (2), desk lamp (2), dining table (1), fork (1), pillow (1), television (1). You hold plate (1).
+Act: put down plate 1
+You put plate (1) on dining table (1).
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see cabinet (1), countertop (1), fridge (1), painting (1), shelf (1, 2, 3), shelving unit (1).
+Act: go to cabinet 1
+You arrive at the cabinet (1). The cabinet (1) is open. You see cabinet (1), painting (1), shelf (1, 2, 3), shelving unit (1), vase (1), wine bottle (1).
+Act: go to salt shaker 1
+You arrive at the salt shaker (1). You see apple (1), countertop (1), pen (1), pot (1), salt shaker (1), soap bottle (1), spray bottle (1), statue (1), vase (1), wine bottle (1).
+Act: pick up salt shaker 1
+You pick up salt shaker (1). You hold salt shaker (1).
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see box (1, 2), dining table (1), drawer (1, 2, 3), dresser (1), house plant (1), painting (2, 3, 4), sofa (1), television (1). You hold salt shaker (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see book (2, 3), bottle (1), bowl (1, 2), box (2), desk lamp (2), dining table (1), fork (1), pillow (1), plate (1), television (1). You hold salt shaker (1).
+Act: put down salt shaker 1
+You put salt shaker (1) in dining table (1).
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see cabinet (1), countertop (1), fridge (1), painting (1), shelf (1, 2, 3), shelving unit (1).
+Act: go to cabinet 1
+You arrive at the cabinet (1). The cabinet (1) is open. You see cabinet (1), painting (1), shelf (1, 2, 3), shelving unit (1), vase (1), wine bottle (1).
+Act: go to statue 1
+You arrive at the statue (1). You see apple (1), book (1), cabinet (1), countertop (1), pen (1), pot (1), shelf (1, 2, 3), shelving unit (1), soap bottle (1), spray bottle (1), statue (1), vase (1), wine bottle (1).
+Act: pick up statue 1
+You pick up statue (1). You hold statue (1).
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see box (1, 2), dining table (1), drawer (1, 2, 3), dresser (1), house plant (1), painting (2, 3, 4), sofa (1), television (1). You hold statue (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see book (2, 3), bottle (1), bowl (1, 2), box (2), desk lamp (2), dining table (1), fork (1), pillow (1), plate (1), salt shaker (1), television (1). You hold statue (1).
+Act: put down statue 1
+You put statue (1) in dining table (1).
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see cabinet (1), countertop (1), fridge (1), painting (1), shelf (1, 2, 3), shelving unit (1).
+Act: go to cabinet 1
+You arrive at the cabinet (1). The cabinet (1) is open. You see cabinet (1), painting (1), shelf (1, 2, 3), shelving unit (1), vase (1), wine bottle (1).
+Act: go to vase 1
+You arrive at the vase (1). You see apple (1), book (1), cabinet (1), countertop (1), painting (1), pen (1), pot (1), shelf (1, 2, 3), shelving unit (1), soap bottle (1), spray bottle (1), vase (1), wine bottle (1).
+Act: pick up vase 1
+You pick up vase (1). You hold vase (1).
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see box (1, 2), dining table (1), drawer (1, 2, 3), dresser (1), house plant (1), painting (2, 3, 4), sofa (1), television (1). You hold vase (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see book (2, 3), bottle (1), bowl (1, 2), box (2), desk lamp (2), dining table (1), fork (1), pillow (1), plate (1), salt shaker (1), statue (1), television (1). You hold vase (1).
+Act: put down vase 1
+You put vase (1) in dining table (1).
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see cabinet (1), countertop (1), fridge (1), painting (1), shelf (1, 2, 3), shelving unit (1).
+Act: go to cabinet 1
+You arrive at the cabinet (1). The cabinet (1) is open. You see cabinet (1), painting (1), shelf (1, 2, 3), shelving unit (1), wine bottle (1).
+Act: go to wine bottle 1
+You arrive at the wine bottle (1). You see apple (1), book (1), cabinet (1), countertop (1), painting (1), pen (1), pot (1), shelf (1, 2, 3), shelving unit (1), soap bottle (1), spray bottle (1), wine bottle (1).
+Act: pick up wine bottle 1
+You pick up wine bottle (1). You hold wine bottle (1).
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see box (1, 2), dining table (1), drawer (1, 2, 3), dresser (1), house plant (1), painting (2, 3, 4), sofa (1), television (1). You hold wine bottle (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see book (2, 3), bottle (1), bowl (1, 2), box (2), desk lamp (2), dining table (1), fork (1), pillow (1), plate (1), salt shaker (1), statue (1), television (1), vase (1). You hold wine bottle (1).
+Act: put down wine bottle 1
+You put wine bottle (1) in dining table (1).
+Think: Now I complete the task.
+OK.
+Act: done

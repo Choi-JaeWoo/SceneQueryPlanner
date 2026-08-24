@@ -1,0 +1,8 @@
+Your task is to: Pick up a tomato, and put it on the plate.
+You pick up tomato (1). You hold tomato (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- kitchen 1: [television 1, apple 1, bread 1, mug 1, pan 1, pen 1, plate 1, shelving unit 1, spray bottle 1, bread 2, cabinet 1, (chair 2), (chair 3), (chair 1), countertop 1, (dining table 1), dish sponge 1, fork 1, (fridge 1), (garbage can 1), painting 1, (shelf 1), (shelf 2), (shelf 3), soap bottle 1, (stool 1), tomato 1]
+- living room 1: [(armchair 1), (armchair 2), book 1, (chair 8), (chair 7), (chair 6), (chair 5), (chair 4), (dining table 2), floor lamp 1, floor lamp 2, house plant 1, painting 4, painting 3, painting 2, pillow 1, remote control 1, (shelf 4), (sofa 1), (TV stand 1)]
+Your 5 previous actions were: go to cabinet 1 (success), open cabinet 1 (success), go to countertop 1 (success), go to tomato 1 (success), pick up tomato 1 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I pick up tomato 1. Now, I need to find plate and put down tomato 1. Plate 1 is in kitchen 1.
+Act: go to kitchen 1

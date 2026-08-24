@@ -1,0 +1,77 @@
+Your task is to: Move all the objects from the countertop to the diningtable.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a kitchen (1). Looking quickly around the room, you see chair (1, 2, 3, 4, 5, 6), countertop (1), dining table (1), fridge (1), television (2).
+Think: To solve the task, I need to find countertop and check what is on top of it. Then, I need to move everything on countertop to diningtable.
+OK.
+Think: First, I need to find countertop. The countertop is more likely to appear in kitchen 1.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see bottle (1), bowl (1), chair (1), countertop (1), fork (1), knife (1), pen (1), pencil (2), pot (1), spray bottle (1).
+Think: Now, I need to move bottle 1, bowl 1, fork 1, knife 1, pen 1, pencil 2, pot 1, spray bottle 1 to diningtable.
+OK.
+Act: go to bottle 1
+You arrive at the bottle (1). You see bottle (1), bowl (1), chair (1), countertop (1), fork (1), knife (1), pen (1), pencil (2), pot (1), spray bottle (1).
+Act: pick up bottle 1
+You pick up bottle (1). You hold bottle (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see book (1), bowl (1), bread (1), butter knife (1), cell phone (1), chair (1, 2, 3, 4, 5, 6), dining table (1), lettuce (1), mug (1), pen (2), pencil (1), plate (1), toaster (1). You hold bottle (1).
+Act: put down bottle 1
+You put bottle (1) in dining table (1).
+Act: go to bowl 1
+You arrive at the bowl (1). You see bottle (1), bowl (1), bread (1), butter knife (1), cell phone (1), chair (1, 5, 6), dining table (1), fork (1), knife (1), lettuce (1), mug (1), pen (1, 2), pencil (1, 2), plate (1), pot (1), spray bottle (1), toaster (1).
+Act: pick up bowl 1
+You pick up bowl (1). You hold bowl (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see book (1), bottle (1), bread (1), butter knife (1), cell phone (1), chair (1, 2, 3, 4, 5, 6), dining table (1), lettuce (1), mug (1), pen (2), pencil (1), plate (1), toaster (1). You hold bowl (1).
+Act: put down bowl 1
+You put bowl (1) in dining table (1).
+Act: go to fork 1
+You arrive at the fork (1). You see bottle (1), bowl (1), bread (1), butter knife (1), chair (1, 5), countertop (1), fork (1), knife (1), pen (1), pencil (2), pot (1), spray bottle (1).
+Act: pick up fork 1
+You pick up fork (1). You hold fork (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see book (1), bottle (1), bowl (1), bread (1), butter knife (1), cell phone (1), chair (1, 2, 3, 4, 5, 6), dining table (1), lettuce (1), mug (1), pen (2), pencil (1), plate (1), toaster (1). You hold fork (1).
+Act: put down fork 1
+You put fork (1) in dining table (1).
+Act: go to knife 1
+You arrive at the knife (1). You see bottle (1), bowl (1), chair (1), countertop (1), fork (1), knife (1), pen (1), pencil (2), pot (1), spray bottle (1).
+Act: pick up knife 1
+You pick up knife (1). You hold knife (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see book (1), bottle (1), bowl (1), bread (1), butter knife (1), cell phone (1), chair (1, 2, 3, 4, 5, 6), dining table (1), fork (1), lettuce (1), mug (1), pen (2), pencil (1), plate (1), toaster (1). You hold knife (1).
+Act: put down knife 1
+You put knife (1) in dining table (1).
+Act: go to pen 1
+You arrive at the pen (1). You see bottle (1), bowl (1), chair (1), countertop (1), fork (1), knife (1), pen (1), pencil (2), pot (1), spray bottle (1).
+Act: pick up pen 1
+You pick up pen (1). You hold pen (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see book (1), bottle (1), bowl (1), bread (1), butter knife (1), cell phone (1), chair (1, 2, 3, 4, 5, 6), dining table (1), fork (1), knife (1), lettuce (1), mug (1), pen (2), pencil (1), plate (1), toaster (1). You hold pen (1).
+Act: put down pen 1
+You put pen (1) in dining table (1).
+Act: go to pencil 2
+You arrive at the pencil (2). You see bottle (1), bowl (1), chair (1), countertop (1), fork (1), knife (1), pencil (2), pot (1), spray bottle (1).
+Act: pick up pencil 2
+You pick up pencil (2). You hold pencil (2).
+Act: go to dining table 1
+You arrive at the dining table (1). You see book (1), bottle (1), bowl (1), bread (1), butter knife (1), cell phone (1), chair (1, 2, 3, 4, 5, 6), dining table (1), fork (1), knife (1), lettuce (1), mug (1), pen (1, 2), pencil (1), plate (1), toaster (1). You hold pencil (2).
+Act: put down pencil 2
+You put pencil (2) in dining table (1).
+Act: go to pot 1
+You arrive at the pot (1). You see bottle (1), bowl (1), bread (1), butter knife (1), chair (1, 5), countertop (1), fork (1), knife (1), pen (1), pot (1), spray bottle (1).
+Act: pick up pot 1
+You pick up pot (1). You hold pot (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see book (1), bottle (1), bowl (1), bread (1), butter knife (1), cell phone (1), chair (1, 2, 3, 4, 5, 6), dining table (1), fork (1), knife (1), lettuce (1), mug (1), pen (1, 2), pencil (1, 2), plate (1), toaster (1). You hold pot (1).
+Act: put down pot 1
+You put pot (1) in dining table (1).
+Act: go to spray bottle 1
+You arrive at the spray bottle (1). You see bottle (1), bowl (1), chair (1), countertop (1), fork (1), knife (1), spray bottle (1).
+Act: pick up spray bottle 1
+You pick up spray bottle (1). You hold spray bottle (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see book (1), bottle (1), bowl (1), bread (1), butter knife (1), cell phone (1), chair (1, 2, 3, 4, 5, 6), dining table (1), fork (1), knife (1), lettuce (1), mug (1), pen (1, 2), pencil (1, 2), plate (1), pot (1), toaster (1). You hold spray bottle (1).
+Act: put down spray bottle 1
+You put spray bottle (1) in dining table (1).
+Think: Now I complete the task.
+OK.
+Act: done

@@ -1,0 +1,159 @@
+Your task is to: Place a book and a pen together on the countertop.
+You are in the house, and there are 5 rooms: bathroom (1), bedroom (1, 2), kitchen (1), living room (1). You are in the middle of a living room (1). Looking quickly around the room, you see armchair (1), dining table (1), floor lamp (1), side table (1), sofa (1), television (1).
+Think: To solve the task, I need to find and pick up book, then put it on countertop. And I need to find and pick up pen, then put it on countertop.
+OK.
+Think: First, I need to find and pick up book.
+OK.
+Query: find_objects({'label': 'book'})
+Info: 
+Think: I have not seen book yet. Now I need to check where to search. First, I will search bedroom 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'bedroom 1'})
+Info: bed (1, 2), drawer (1, 2, 3, 4, 5, 6), dresser 1
+Think: In bedroom 1, the book is likely to appear in/on bed (1, 2), drawer (1, 2, 3, 4, 5, 6), dresser 1. I can check each place one by one until I find book.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see bed (1, 2), drawer (1, 2, 3, 4, 5, 6), dresser (1), house plant (1).
+Act: go to bed 1
+You arrive at the bed (1). You see alarm clock (1), bed (1, 2), book (1), laptop (1), pillow (1).
+Act: go to bed 2
+You arrive at the bed (2). You see bed (2), drawer (1, 2, 3, 4, 5, 6), dresser (1), laptop (1), pillow (1).
+Act: go to drawer 1
+You arrive at the drawer (1). The drawer (1) is closed. You see bed (2), drawer (1, 2, 3, 4, 5, 6), dresser (1), laptop (1), pillow (1).
+Act: go to drawer 2
+You arrive at the drawer (2). The drawer (2) is closed. You see bed (2), drawer (1, 2, 3, 4, 5, 6), dresser (1), laptop (1), pillow (1).
+Act: go to drawer 3
+You arrive at the drawer (3). The drawer (3) is closed. You see bed (2), drawer (1, 2, 3, 4, 5, 6), dresser (1), laptop (1), pillow (1).
+Act: go to drawer 4
+You arrive at the drawer (4). The drawer (4) is closed. You see bed (2), drawer (1, 2, 3, 4, 5, 6), dresser (1), laptop (1), pillow (1).
+Act: go to drawer 5
+You arrive at the drawer (5). The drawer (5) is closed. You see bed (2), drawer (1, 2, 3, 4, 5, 6), dresser (1), laptop (1), pillow (1).
+Act: go to drawer 6
+You arrive at the drawer (6). The drawer (6) is closed. You see bed (2), drawer (1, 2, 3, 4, 5, 6), dresser (1), laptop (1), pillow (1).
+Act: go to dresser 1
+You arrive at the dresser (1). You see bed (2), drawer (1, 2, 3, 4, 5, 6), dresser (1), laptop (1), pillow (1).
+Think: There is no book in bedroom 1. I need to move to bedroom 2.
+OK.
+Query: get_child_node_names({'parent_node_id': 'bedroom 2'})
+Info: bed (3, 4), chair 1, desk 1, drawer (7, 8, 9, 10, 11, 12), dresser 2
+Think: In bedroom 2, the book is likely to appear in/on bed (3, 4), chair 1, desk 1, drawer (7, 8, 9, 10, 11, 12), dresser 2. I can check each place one by one until I find book.
+OK.
+Act: go to bedroom 2
+You move to the bedroom (2). Looking quickly around the room, you see baseball bat (1), basket ball (1), bed (3, 4), chair (1), desk (1), dog bed (1), drawer (7, 8, 9, 10, 11, 12), dresser (2), house plant (2), painting (2).
+Act: go to bed 3
+You arrive at the bed (3). You see baseball bat (1), bed (3), cell phone (1), credit card (1), desktop (1), pen (1).
+Act: go to bed 4
+You arrive at the bed (4). You see CD (1), bed (4), cell phone (1), chair (1), credit card (1), desk (1), desktop (1), laptop (2), pen (1), pillow (2, 3).
+Act: go to chair 1
+You arrive at the chair (1). You see CD (1), chair (1), desk (1).
+Act: go to desk 1
+You arrive at the desk (1). You see CD (1), bed (4), cell phone (1), chair (1), credit card (1), desk (1), desktop (1), laptop (2), pen (1), pillow (3).
+Act: go to drawer 7
+You arrive at the drawer (7). The drawer (7) is closed. You see drawer (7, 8, 9, 10, 11, 12), dresser (2), mug (1).
+Act: go to drawer 8
+You arrive at the drawer (8). The drawer (8) is closed. You see drawer (7, 8, 9, 10, 11, 12), dresser (2), mug (1).
+Act: go to drawer 9
+You arrive at the drawer (9). The drawer (9) is closed. You see drawer (7, 8, 9, 10, 11, 12), dresser (2), mug (1).
+Act: go to drawer 10
+You arrive at the drawer (10). The drawer (10) is closed. You see drawer (7, 8, 9, 10, 11, 12), dresser (2), mug (1).
+Act: go to drawer 11
+You arrive at the drawer (11). The drawer (11) is closed. You see drawer (7, 8, 9, 10, 11, 12), dresser (2), mug (1).
+Act: go to drawer 12
+You arrive at the drawer (12). The drawer (12) is closed. You see drawer (7, 8, 9, 10, 11, 12), dresser (2), mug (1).
+Act: go to dresser 2
+You arrive at the dresser (2). You see drawer (7, 8, 9, 10, 11, 12), dresser (2), mug (1).
+Think: There is no book in bedroom 2. I need to move to bathroom 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'bathroom 1'})
+Info: garbage can 1, sink 1, sink basin 1, toilet 1
+Think: In bathroom 1, the book is likely to appear in/on garbage can 1, sink 1, sink basin 1, toilet 1. I can check each place one by one until I find book.
+OK.
+Act: go to bathroom 1
+You move to the bathroom (1). Looking quickly around the room, you see garbage can (1), painting (1), sink (1), sink basin (1), toilet (1).
+Act: go to garbage can 1
+You arrive at the garbage can (1). You see garbage can (1).
+Act: go to sink 1
+You arrive at the sink (1). You see faucet (1), sink (1), sink basin (1).
+Act: go to sink basin 1
+You arrive at the sink basin (1). You see faucet (1), sink (1), sink basin (1).
+Act: go to toilet 1
+You arrive at the toilet (1). The toilet (1) is closed. You see painting (1), paper towel roll (1), toilet (1), toilet paper (1).
+Think: There is no book in bathroom 1. I need to move to kitchen 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'kitchen 1'})
+Info: cabinet 1, countertop 1, fridge 1, shelf (1, 2, 3)
+Think: In kitchen 1, the book is likely to appear in/on cabinet 1, countertop 1, fridge 1, shelf (1, 2, 3). I can check each place one by one until I find book.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see cabinet (1), countertop (1), fridge (1), painting (3, 4), shelf (1, 2, 3), shelving unit (1).
+Act: go to cabinet 1
+You arrive at the cabinet (1). The cabinet (1) is closed. You see book (3), bowl (1), butter knife (1), cabinet (1), house plant (3), shelf (1, 2, 3), shelving unit (1).
+Act: go to countertop 1
+You arrive at the countertop (1). You see bowl (1), butter knife (1), coffee machine (1), countertop (1), cup (1), dish sponge (1), house plant (3), pepper shaker (1), soap bottle (1), spray bottle (1).
+Act: go to fridge 1
+You arrive at the fridge (1). The fridge (1) is closed. You see fridge (1).
+Act: go to shelf 1
+You arrive at the shelf (1). You see book (3), bowl (1), butter knife (1), cabinet (1), house plant (3), shelf (1, 2, 3), shelving unit (1).
+Act: go to shelf 2
+You arrive at the shelf (2). You see book (3), bowl (1), butter knife (1), cabinet (1), house plant (3), shelf (1, 2, 3), shelving unit (1).
+Act: go to shelf 3
+You arrive at the shelf (3). You see book (3), bowl (1), butter knife (1), cabinet (1), house plant (3), shelf (1, 2, 3), shelving unit (1).
+Think: There is no book in kitchen 1. I need to move to living room 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'living room 1'})
+Info: armchair 1, dining table 1, side table 1, sofa 1
+Think: In living room 1, the book is likely to appear in/on armchair 1, dining table 1, side table 1, sofa 1. I can check each place one by one until I find book.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see armchair (1), dining table (1), floor lamp (1), side table (1), sofa (1), television (1).
+Act: go to armchair 1
+You arrive at the armchair (1). You see armchair (1), floor lamp (1), laptop (3), newspaper (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see book (4, 5), cell phone (2), dining table (1), pen (2), plate (1), side table (1), vase (2).
+Act: go to side table 1
+You arrive at the side table (1). You see book (4, 5), cell phone (2), dining table (1), floor lamp (1), pen (2), plate (1), side table (1), vase (2).
+Act: go to sofa 1
+You arrive at the sofa (1). You see laptop (3), newspaper (1), sofa (1), television (1).
+Think: I find book 4. Now, I need to pick it up.
+OK.
+Act: go to book 4
+You arrive at the book (4). The book (4) is closed. You see book (4, 5), cell phone (2), dining table (1), floor lamp (1), pen (2), plate (1), side table (1), vase (2).
+Act: pick up book 4
+You pick up book (4). You hold book (4).
+Think: Now, I need to find countertop and put down book 4.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see cabinet (1), countertop (1), fridge (1), painting (3, 4), shelf (1, 2, 3), shelving unit (1). You hold book (4).
+Act: go to countertop 1
+You arrive at the countertop (1). You see bowl (1), butter knife (1), coffee machine (1), countertop (1), cup (1), dish sponge (1), house plant (3), pepper shaker (1), soap bottle (1), spray bottle (1). You hold book (4).
+Act: put down book 4
+You put book (4) in countertop (1).
+Think: Now, I need to find and pick up pen.
+OK.
+Query: find_objects({'label': 'pen'})
+Info: [{'name_id_nl': 'pen 1', 'node_type': 'object', 'properties': ['pickupable'], 'states': []}, {'name_id_nl': 'pen 2', 'node_type': 'object', 'properties': ['pickupable'], 'states': []}]
+Query: get_edges_for_node({'node_id': 'pen 1'})
+Info: [('pen 1', 'desk 1', 'ON'), ('pen 1', 'baseball bat 1', 'CLOSE'), ('pen 1', 'CD 1', 'CLOSE'), ('pen 1', 'cell phone 1', 'CLOSE'), ('pen 1', 'chair 1', 'CLOSE'), ('pen 1', 'credit card 1', 'CLOSE'), ('pen 1', 'desktop 1', 'CLOSE'), ('pen 1', 'bedroom 2', 'INSIDE'), ('baseball bat 1', 'pen 1', 'CLOSE'), ('CD 1', 'pen 1', 'CLOSE'), ('cell phone 1', 'pen 1', 'CLOSE'), ('chair 1', 'pen 1', 'CLOSE'), ('credit card 1', 'pen 1', 'CLOSE'), ('desktop 1', 'pen 1', 'CLOSE')]
+Query: get_edges_for_node({'node_id': 'pen 2'})
+Info: [('pen 2', 'dining table 1', 'ON'), ('pen 2', 'book 5', 'CLOSE'), ('pen 2', 'cell phone 2', 'CLOSE'), ('pen 2', 'floor lamp 1', 'CLOSE'), ('pen 2', 'plate 1', 'CLOSE'), ('pen 2', 'side table 1', 'CLOSE'), ('pen 2', 'vase 2', 'CLOSE'), ('pen 2', 'living room 1', 'INSIDE'), ('book 5', 'pen 2', 'CLOSE'), ('cell phone 2', 'pen 2', 'CLOSE'), ('floor lamp 1', 'pen 2', 'CLOSE'), ('plate 1', 'pen 2', 'CLOSE'), ('side table 1', 'pen 2', 'CLOSE'), ('vase 2', 'pen 2', 'CLOSE')]
+Think: Pen 2 is on dining table 1 in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see armchair (1), dining table (1), floor lamp (1), side table (1), sofa (1), television (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see book (5), cell phone (2), dining table (1), pen (2), plate (1), side table (1), vase (2).
+Act: go to pen 2
+You arrive at the pen (2). You see armchair (1), book (5), cell phone (2), dining table (1), floor lamp (1), pen (2), vase (2).
+Act: pick up pen 2
+You pick up pen (2). You hold pen (2).
+Think: Now, I need to find countertop and put down pen 2.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see cabinet (1), countertop (1), fridge (1), painting (3, 4), shelf (1, 2, 3), shelving unit (1). You hold pen (2).
+Act: go to countertop 1
+You arrive at the countertop (1). You see book (4), bowl (1), butter knife (1), coffee machine (1), countertop (1), cup (1), dish sponge (1), house plant (3), pepper shaker (1), soap bottle (1), spray bottle (1). You hold pen (2).
+Act: put down pen 2
+You put pen (2) in countertop (1).
+Think: Now I complete the task.
+OK.
+Act: done

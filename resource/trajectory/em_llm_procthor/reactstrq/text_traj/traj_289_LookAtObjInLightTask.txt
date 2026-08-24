@@ -1,0 +1,67 @@
+Your task is to: Hold a book and illuminate it with the desk lamp.
+You are in the house, and there are 10 rooms: bathroom (1, 2, 3), bedroom (1, 2, 3), kitchen (1), living room (1, 2, 3). You are in the middle of a bathroom (2). Looking quickly around the room, you see garbage can (5), laundry hamper (1), plunger (2), sink (2), sink basin (2), toilet (2).
+Think: To solve the task, I need to find and pick up book, then find and turn on desk lamp.
+OK.
+Think: First, I need to find and pick up book.
+OK.
+Query: find_objects({'label': 'book'})
+Info: 
+Think: I have not seen book yet. Now I need to check where to search. First, I will search bedroom 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'bedroom 1'})
+Info: armchair 1, bed 1, desk 1, drawer (1, 2, 3, 4, 5, 6), dresser 1, shelf (1, 2, 3, 4)
+Think: In bedroom 1, the book is likely to appear in/on armchair 1, bed 1, desk 1, drawer (1, 2, 3, 4, 5, 6), dresser 1, shelf (1, 2, 3, 4). I can check each place one by one until I find book.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see armchair (1), bed (1), desk (1), drawer (1, 2, 3, 4, 5, 6), dresser (1), shelf (1, 2, 3, 4).
+Act: go to armchair 1
+You arrive at the armchair (1). You see armchair (1), basket ball (1), bed (1), book (3, 4), cell phone (1), credit card (1), pillow (5), teddy bear (1), tissue box (1).
+Act: go to bed 1
+You arrive at the bed (1). You see armchair (1), basket ball (1), bed (1), book (3), credit card (1), pillow (5), teddy bear (1).
+Act: go to desk 1
+You arrive at the desk (1). You see garbage can (5), plunger (2).
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), box (1), cart (1), chair (3, 4), dining table (2), garbage can (3), house plant (1), shelf (8, 9, 10, 11, 12, 13).
+Act: go to TV stand 1
+You arrive at the TV stand (1). You see TV stand (1), candle (3, 4, 5), desk lamp (1), laptop (1), newspaper (1), shelf (8, 9, 10, 11, 12, 13), television (1), tissue box (2).
+Act: go to box 1
+You arrive at the box (1). The box (1) is closed. You see paper towel roll (1), plunger (3), soap bar (2), spray bottle (3), toilet (3), toilet paper (3).
+Act: go to living room 2
+You move to the living room (2). Looking quickly around the room, you see TV stand (2), armchair (2), box (2), dining table (3), floor lamp (1), house plant (2), shelf (14, 15, 16, 17, 18, 19), sofa (1).
+Act: go to TV stand 2
+You arrive at the TV stand (2). You see TV stand (2), box (4), key chain (3), laptop (2), remote control (2), shelf (14, 15, 16, 17, 18, 19), television (2), vase (3).
+Act: go to box 2
+You arrive at the box (2). The box (2) is closed. You see box (2), plate (2).
+Act: go to living room 3
+You move to the living room (3). Looking quickly around the room, you see TV stand (3), box (3), garbage can (4), shelf (20), sofa (2).
+Act: go to TV stand 3
+You arrive at the TV stand (3). You see TV stand (3), laptop (3), remote control (3), shelf (20), television (3), watch (2).
+Act: go to box 3
+You arrive at the box (3). The box (3) is open. You see box (3), sofa (2).
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see chair (1, 2), countertop (1), dining table (1), fridge (1), garbage can (2), stool (1).
+Act: go to chair 1
+You arrive at the chair (1). You see book (5), bottle (2), chair (1, 2), dining table (1), fridge (1), plate (1), pot (1), spoon (2), toaster (1).
+Act: go to book 5
+You arrive at the book (5). The book (5) is closed. You see book (5), bottle (2), chair (1, 2), dining table (1), fridge (1), plate (1), pot (1), spoon (2), toaster (1).
+Think: I find book 5. Now, I need to pick it up.
+OK.
+Act: pick up book 5
+You pick up book (5). You hold book (5).
+Think: Now, I need to find and turn on desk lamp.
+OK.
+Query: find_objects({'label': 'desk lamp'})
+Info: [{'name_id_nl': 'desk lamp 1', 'node_type': 'object', 'properties': ['toggleable'], 'states': []}]
+Think: I find desk lamp 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), box (1), cart (1), chair (3, 4), dining table (2), garbage can (3), house plant (1), shelf (8, 9, 10, 11, 12, 13). You hold book (5).
+Act: go to TV stand 1
+You arrive at the TV stand (1). You see TV stand (1), candle (3, 4, 5), desk lamp (1), laptop (1), newspaper (1), shelf (8, 9, 10, 11, 12, 13), television (1), tissue box (2). You hold book (5).
+Act: go to desk lamp 1
+You arrive at the desk lamp (1). You see TV stand (1), candle (3, 4, 5), desk lamp (1), laptop (1), newspaper (1), shelf (8, 9, 10, 11, 12, 13), television (1), tissue box (2). You hold book (5).
+Act: turn on desk lamp 1
+You turn on desk lamp (1). You hold book (5).
+Think: Now I complete the task.
+OK.
+Act: done

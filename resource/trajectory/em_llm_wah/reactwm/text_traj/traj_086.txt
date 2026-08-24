@@ -1,0 +1,83 @@
+Your task is to: I need you to store the following food items in the fridge:
+- 1 pudding
+- 1 wine
+- 1 apple
+- 1 juice
+You are in the house, and there are 4 rooms: bathroom 1, bedroom 1, kitchen 1, living room 1. You are in the middle of a bedroom 1. Looking quickly around the room, you see bed 1, cabinet 1, chair 6, closet 2, nightstand 2, sofa 3.
+Think: To solve the task, I need to find and pick up pudding, find fridge and put down pudding, find and pick up wine, find fridge and put down wine, find and pick up apple, find fridge and put down apple, find and pick up juice, find fridge and put down juice.
+OK.
+Think: First, I need to find and pick up pudding.
+OK.
+Query: recall location of pudding
+You have not seen pudding before.
+Think: I have not seen pudding yet. The pudding is more likely to appear in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen 1. Looking quickly around the room, you see bookshelf 1, chair (2, 3, 4, 5), dishwasher 1, faucet 1, fridge 1, kitchen cabinet (1, 2, 3, 4, 5, 6, 7, 8), kitchen counter 1, kitchen table 1, microwave oven 1, sink 1, sofa 2, stove 1, toaster 1, tv 2.
+Think: In kitchen 1, the pudding is likely to appear in/on dishwasher 1, fridge 1, kitchen cabinet (1, 2, 3, 4, 5, 6, 7, 8), kitchen counter 1, kitchen table 1. I can check each place one by one until I find it.
+OK.
+Act: go to dishwasher 1
+You arrive at the dishwasher 1. The dishwasher 1 is closed. You see apple 1, cell phone 2, cereal 1, chair (2, 5), chocolate syrup 1, coffee pot 1, cutlets 1, dishwasher 1, juice 2, kitchen cabinet (2, 3), kitchen counter 1, kitchen table 1, microwave oven 1, minced meat 1, mug (2, 3), plate (3, 4), wine 1.
+Act: open dishwasher 1
+You open dishwasher 1. You see apple 1, cell phone 2, cereal 1, chair (2, 5), chocolate syrup 1, coffee pot 1, cutlets 1, dishwasher 1, juice 2, kitchen cabinet (2, 3), kitchen counter 1, kitchen table 1, microwave oven 1, minced meat 1, mug (2, 3), plate (3, 4), pudding 1, wine 1
+Think: I find pudding 1. Now, I need to pick it up.
+OK.
+Act: pick up pudding 1
+You pick up pudding 1. You hold pudding 1.
+Think: Now I need to find fridge and put down pudding 1.
+OK.
+Act: go to fridge 1
+You arrive at the fridge 1. The fridge 1 is closed. You see apple 1, bananas (1, 2), bowl 2, chair (4, 5), coffee pot 1, condiment shaker (1, 2), fridge 1, juice 2, kitchen cabinet 5, kitchen counter 1, kitchen table 1, mug (2, 3), pie 1, plate (3, 4, 5), pudding 1, sofa 2, wine 1. You hold pudding 1.
+Act: open fridge 1
+You open fridge 1. You see apple 1, bananas (1, 2), bowl 2, chair (4, 5), coffee pot 1, condiment shaker (1, 2), fridge 1, juice 2, kitchen cabinet 5, kitchen counter 1, kitchen table 1, mug (2, 3), pie 1, plate (3, 4, 5), pudding 1, sofa 2, wine 1 You hold pudding 1.
+Act: put down pudding 1
+You put pudding 1 in fridge 1.
+Think: Now I need to find and pick up wine.
+OK.
+Query: recall location of wine
+You saw wine 1 near fridge 1 in kitchen 1.
+Think: Wine 1 is near fridge 1.
+OK.
+Act: go to fridge 1
+You arrive at the fridge 1. The fridge 1 is open. You see apple 1, bananas (1, 2), bowl 2, chair (4, 5), coffee pot 1, condiment shaker (1, 2), fridge 1, juice 2, kitchen cabinet 5, kitchen counter 1, kitchen table 1, mug (2, 3), pie 1, plate (3, 4, 5), pudding 1, sofa 2, wine 1.
+Act: pick up wine 1
+You pick up wine 1. You hold wine 1.
+Think: Now I need to find fridge and put down wine 1.
+OK.
+Act: put down wine 1
+You put wine 1 in fridge 1.
+Think: Now I need to find and pick up apple.
+OK.
+Query: recall location of apple
+You saw apple 1 near fridge 1 in kitchen 1.
+Think: Apple 1 is near fridge 1.
+OK.
+Act: go to fridge 1
+You arrive at the fridge 1. The fridge 1 is open. You see apple 1, bananas (1, 2), bowl 2, chair (4, 5), coffee pot 1, condiment shaker (1, 2), fridge 1, juice 2, kitchen cabinet 5, kitchen counter 1, kitchen table 1, mug (2, 3), pie 1, plate (3, 4, 5), pudding 1, sofa 2, wine 1.
+Act: pick up apple 1
+You pick up apple 1. You hold apple 1.
+Think: Now I need to find fridge and put down apple 1.
+OK.
+Act: put down apple 1
+You can't put apple 1 in fridge 1 because the fridge is not close to you.
+Act: go to fridge 1
+You arrive at the fridge 1. The fridge 1 is open. You see apple 1, bananas (1, 2), bowl 2, chair (4, 5), coffee pot 1, condiment shaker (1, 2), fridge 1, juice 2, kitchen cabinet 5, kitchen counter 1, kitchen table 1, mug (2, 3), pie 1, plate (3, 4, 5), pudding 1, sofa 2, wine 1. You hold apple 1.
+Act: put down apple 1
+You put apple 1 in fridge 1.
+Think: Now I need to find and pick up juice.
+OK.
+Query: recall location of juice
+You saw juice 2 near fridge 1 in kitchen 1.
+Think: Juice 2 is near fridge 1.
+OK.
+Act: go to fridge 1
+You arrive at the fridge 1. The fridge 1 is open. You see apple 1, bananas (1, 2), bowl 2, chair (4, 5), coffee pot 1, condiment shaker (1, 2), fridge 1, juice 2, kitchen cabinet 5, kitchen counter 1, kitchen table 1, mug (2, 3), pie 1, plate (3, 4, 5), pudding 1, sofa 2, wine 1.
+Act: pick up juice 2
+You pick up juice 2. You hold juice 2.
+Think: Now I need to find fridge and put down juice 2.
+OK.
+Act: put down juice 2
+You put juice 2 in fridge 1.
+Think: Now I complete the task.
+OK.
+Act: done

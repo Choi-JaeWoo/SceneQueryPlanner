@@ -1,0 +1,71 @@
+Your task is to: Place the vase inside a box, then put the box on the sofa.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a kitchen (1). Looking quickly around the room, you see cabinet (1), countertop (1), fridge (1), garbage bag (1), house plant (1), painting (1), shelf (1, 2, 3), shelving unit (1).
+Think: To solve the task, I need to find and pick up vase, put it in box, pick up and place box on sofa.
+OK.
+Think: First, I need to find and pick up vase. The vase is more likely to appear in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see chair (1, 2), dining table (1), floor lamp (1), house plant (2), painting (2, 3, 4), sofa (1), television (2).
+Think: In living room 1, the vase is likely to appear in/on chair (1, 2), dining table 1, floor lamp 1, sofa 1. I can check each place one by one until I find vase.
+OK.
+Act: go to chair 1
+You arrive at the chair (1). You see book (4, 5), box (1), chair (1), dining table (1), floor lamp (1), laptop (1), newspaper (1), painting (4), pen (2), pillow (2), watch (1).
+Act: go to chair 2
+You arrive at the chair (2). You see TV stand (1), credit card (1), pencil (1), remote control (1, 2, 3), shelf (7, 8, 9), television (1).
+Act: go to TV stand 1
+You arrive at the TV stand (1). You see TV stand (1), cell phone (2), credit card (1), pencil (1), remote control (1, 2, 3), shelf (4, 5, 6, 7, 8, 9), television (1).
+Act: go to shelf 4
+You arrive at the shelf (4). You see TV stand (1), bed (1), cell phone (1, 2), credit card (1), pencil (1), pillow (1), remote control (1, 2, 3), shelf (4, 5, 6, 7, 8, 9), teddy bear (1), television (1).
+Act: go to shelf 5
+You arrive at the shelf (5). You see TV stand (1), bed (1), cell phone (1, 2), credit card (1), pencil (1), pillow (1), remote control (1, 2, 3), shelf (4, 5, 6, 7, 8, 9), teddy bear (1), television (1).
+Act: go to shelf 6
+You arrive at the shelf (6). You see TV stand (1), bed (1), cell phone (1, 2), credit card (1), pencil (1), pillow (1), remote control (1, 2, 3), shelf (4, 5, 6, 7, 8, 9), teddy bear (1), television (1).
+Act: go to shelf 7
+You arrive at the shelf (7). You see TV stand (1), cell phone (2), credit card (1), pencil (1), remote control (1, 2, 3), shelf (4, 5, 6, 7, 8, 9), television (1).
+Act: go to shelf 8
+You arrive at the shelf (8). You see TV stand (1), cell phone (2), credit card (1), pencil (1), remote control (1, 2, 3), shelf (4, 5, 6, 7, 8, 9), television (1).
+Act: go to shelf 9
+You arrive at the shelf (9). You see TV stand (1), cell phone (2), credit card (1), pencil (1), remote control (1, 2, 3), shelf (4, 5, 6, 7, 8, 9), television (1).
+Act: go to television 1
+You arrive at the television (1). You see TV stand (1), cell phone (2), credit card (1), pencil (1), remote control (1, 2, 3), shelf (4, 5, 6, 7, 8, 9), television (1).
+Act: go to remote control 1
+You arrive at the remote control (1). You see TV stand (1), cell phone (2), credit card (1), pencil (1), remote control (1, 2, 3), shelf (4, 5, 6, 7, 8, 9), television (1).
+Act: go to remote control 2
+You arrive at the remote control (2). You see TV stand (1), cell phone (2), credit card (1), pencil (1), remote control (1, 2, 3), shelf (4, 5, 6, 7, 8, 9), television (1).
+Act: go to remote control 3
+You arrive at the remote control (3). You see TV stand (1), cell phone (2), credit card (1), pencil (1), remote control (1, 2, 3), shelf (4, 5, 6, 7, 8, 9), television (1).
+Act: go to pencil 1
+You arrive at the pencil (1). You see TV stand (1), cell phone (2), credit card (1), pencil (1), remote control (1, 2, 3), shelf (4, 5, 6, 7, 8, 9), television (1).
+Act: go to credit card 1
+You arrive at the credit card (1). You see TV stand (1), cell phone (2), credit card (1), pencil (1), remote control (1, 2, 3), shelf (4, 5, 6, 7, 8, 9), television (1).
+Act: go to cell phone 1
+You arrive at the cell phone (1). You see bed (1), book (1, 2), cell phone (1), drawer (3, 4, 6, 7, 8, 9, 10, 11, 12), dresser (1), house plant (3), pillow (1), teddy bear (1), vase (1).
+Think: I find vase 1. Now, I need to pick it up.
+OK.
+Act: go to vase 1
+You arrive at the vase (1). You see bed (1), book (1, 2), cell phone (1), drawer (3, 4, 6, 7, 8, 9, 10, 11, 12), dresser (1), house plant (3), pillow (1), statue (1), teddy bear (1), vase (1).
+Act: pick up vase 1
+You pick up vase (1). You hold vase (1).
+Think: Now, I need to find box and put down vase 1. The box is more likely to appear in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see chair (1, 2), dining table (1), floor lamp (1), house plant (2), painting (2, 3, 4), sofa (1), television (2). You hold vase (1).
+Act: go to chair 1
+You arrive at the chair (1). You see book (4, 5), box (1), chair (1), dining table (1), floor lamp (1), laptop (1), newspaper (1), painting (4), pen (2), pillow (2), watch (1). You hold vase (1).
+Act: go to box 1
+You arrive at the box (1). The box (1) is open. You see book (4), box (1), chair (1, 2), dining table (1), floor lamp (1), laptop (1), newspaper (1), pen (2), watch (1). You hold vase (1).
+Act: put down vase 1
+You put vase (1) in box (1).
+Think: Now, I need to pick up box 1.
+OK.
+Act: pick up box 1
+You pick up box (1). You hold box (1).
+Think: Now, I need to find sofa and put down box 1.
+OK.
+Act: go to sofa 1
+You arrive at the sofa (1). You see book (5), chair (1), floor lamp (1), pen (2), pillow (2), sofa (1), television (2), vase (1), watch (1). You hold box (1).
+Act: put down box 1
+You put box (1) in sofa (1).
+Think: Now I complete the task.
+OK.
+Act: done

@@ -1,0 +1,33 @@
+Your task is to: Turn off every faucet that is currently on.
+You are in the house, and there are 1 rooms: bathroom (1). You are in the middle of a bathroom (1). Looking quickly around the room, you see laundry hamper (1), painting (1), sink (1), sink basin (1), toilet (1).
+Think: To solve the task, I need to find and turn off every faucet that is currently on.
+OK.
+Think: First, I need to check if I saw faucet.
+OK.
+Query: recall location of faucet
+You have not seen faucet before.
+Think: I have not seen faucet yet. I need to check bathroom 1.
+OK.
+Act: go to bathroom 1
+You move to the bathroom (1). Looking quickly around the room, you see laundry hamper (1), painting (1), sink (1), sink basin (1), toilet (1).
+Think: In bathroom 1, I can check laundry hamper 1, sink 1, sink basin 1, toilet 1 until I find faucet.
+OK.
+Act: go to laundry hamper 1
+You arrive at the laundry hamper (1). The laundry hamper (1) is closed. You see laundry hamper (1).
+Act: open toilet 1
+You open toilet (1). You see laundry hamper (1), toilet paper (1).
+Act: go to sink 1
+You arrive at the sink (1). You see faucet (1), sink (1), sink basin (1).
+Think: I find faucet 1. Now, I need to turn it off.
+OK.
+Act: go to faucet 1
+You arrive at the faucet (1). You see faucet (1), sink (1), sink basin (1).
+Act: turn off faucet 1
+You turn off faucet (1).
+Act: go to sink basin 1
+You arrive at the sink basin (1). You see faucet (1), sink (1), sink basin (1).
+Act: go to toilet 1
+You arrive at the toilet (1). The toilet (1) is open. You see toilet (1), toilet paper (1).
+Think: Now I complete the task.
+OK.
+Act: done

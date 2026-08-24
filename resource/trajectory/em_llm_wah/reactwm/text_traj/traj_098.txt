@@ -1,0 +1,71 @@
+Your task is to: Put the wine glass and cutlery fork in the dishwasher and turn the dishwasher on
+You are in the house, and there are 4 rooms: bathroom 1, bedroom 1, kitchen 1, living room 1. You are in the middle of a bedroom 1. Looking quickly around the room, you see bed 1, bookshelf 2, cabinet 1, chair 1, coffee table 1, computer 1, desk 1, nightstand (1, 2), sofa 1.
+Think: To solve the task I need to find and open dishwasher, find and pick up wine glass, find dishwasher and put down wine glass, find and pick up cutlery fork, find dishwasher and put down cutlery fork, close and turn on dishwasher.
+OK.
+Think: First, I need to find dishwasher.
+OK.
+Query: recall location of dishwasher
+You saw dishwasher 1 in kitchen 1.
+Think: Dishwasher 1 is in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen 1. Looking quickly around the room, you see bench (1, 2), bookshelf 1, dishwasher 1, faucet 2, fridge 1, garbage can 1, kitchen cabinet (1, 2, 3, 4, 5, 6, 7, 8), kitchen counter (1, 2), kitchen table 1, microwave oven 1, sink 2, stove 1, toaster 1.
+Act: go to dishwasher 1
+You arrive at the dishwasher 1. The dishwasher 1 is closed. You see coffee pot 1, dishwasher 1, kitchen cabinet (6, 7), microwave oven 1, toaster 1.
+Act: open dishwasher 1
+You open dishwasher 1. You see coffee pot 1, dishwasher 1, kitchen cabinet (5, 6, 7), microwave oven 1, toaster 1
+Think: Now I need to find and pick up wine glass.
+OK.
+Query: recall location of wine glass
+You have not seen wine glass before.
+Think: I have not seen wine glass yet. In kitchen 1, the wine glass is likely to appear in/on bench (1, 2), bookshelf 1, dishwasher 1, fridge 1, kitchen cabinet (1, 2, 3, 4, 5, 6, 7, 8), kitchen counter (1, 2), kitchen table 1, microwave oven 1. I can check each place one by one until I find it.
+OK.
+Act: go to bench 1
+You arrive at the bench 1. You see apple (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11), bench 1, bowl 6, cell phone 1, condiment shaker (1, 2), kitchen table 1.
+Act: go to bench 2
+You arrive at the bench 2. You see apple (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11), bench 2, book 1, bowl 6, cell phone 1, condiment shaker (1, 2), kitchen table 1, pound cake 1, water glass 1.
+Act: go to bookshelf 1
+You arrive at the bookshelf 1. The bookshelf 1 is closed. You see bookshelf 1.
+Act: open bookshelf 1
+You can't open bookshelf (1) because of low-level controller problem.
+Act: go to dishwasher 1
+You arrive at the dishwasher 1. The dishwasher 1 is open. You see coffee pot 1, dishwasher 1, kitchen cabinet (6, 7), microwave oven 1, toaster 1.
+Act: go to fridge 1
+You arrive at the fridge 1. The fridge 1 is closed. You see bench 1, fridge 1, kitchen table 1.
+Act: open fridge 1
+You open fridge 1. You see bench 1, cutlery fork 1, fridge 1, kitchen table 1, plate 1, wine glass 1
+Think: I find wine glass 1. Now, I need to pick it up.
+OK.
+Act: pick up wine glass 1
+You pick up wine glass 1. You hold wine glass 1.
+Think: Now I need to find dishwasher and put down wine glass 1.
+OK.
+Act: go to dishwasher 1
+You arrive at the dishwasher 1. The dishwasher 1 is open. You see coffee pot 1, dishwasher 1, kitchen cabinet (6, 7), microwave oven 1, toaster 1, wine glass 1. You hold wine glass 1.
+Act: put down wine glass 1
+You put wine glass 1 in dishwasher 1.
+Think: Now I need to find and pick up cutlery fork.
+OK.
+Query: recall location of cutlery fork
+You saw cutlery fork 1 near fridge 1 in kitchen 1.
+Think: Cutlery fork 1 is near fridge 1.
+OK.
+Act: go to fridge 1
+You arrive at the fridge 1. The fridge 1 is open. You see bench 1, cutlery fork 1, fridge 1, kitchen table 1, plate 1.
+Act: pick up cutlery fork 1
+You pick up cutlery fork 1. You hold cutlery fork 1.
+Think: Now I need to find dishwasher and put down cutlery fork 1.
+OK.
+Act: go to dishwasher 1
+You arrive at the dishwasher 1. The dishwasher 1 is open. You see coffee pot 1, cutlery fork 1, dishwasher 1, kitchen cabinet (6, 7), microwave oven 1, toaster 1, wine glass 1. You hold cutlery fork 1.
+Act: put down cutlery fork 1
+You put cutlery fork 1 in dishwasher 1.
+Think: Now I need to close and turn on dishwasher.
+OK.
+Act: close dishwasher 1
+You close dishwasher 1.
+Act: turn on dishwasher 1
+You turn on dishwasher 1.
+Think: Now I complete the task.
+OK.
+Act: done

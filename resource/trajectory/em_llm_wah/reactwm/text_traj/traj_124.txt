@@ -1,0 +1,133 @@
+Your task is to: Could you put 1 apple, 1 pancake, 1 cupcake and 1 pudding in the fridge?
+You are in the house, and there are 4 rooms: bathroom 1, bedroom 1, kitchen 1, living room 1. You are in the middle of a bathroom 1. Looking quickly around the room, you see bathroom cabinet 1, bathroom counter 1, faucet 1, sink 1, toilet 1, towel rack (1, 2, 3), washing machine 1.
+Think: To solve the task, I need to find and open fridge, find and pick up apple, find fridge and put down apple, find and pick up pancake, find fridge and put down pancake, find and pick up cupcake, find fridge and put down cupcake, find and pick up pudding, find fridge and put down pudding.
+OK.
+Query: recall location of fridge
+You saw fridge 1 in kitchen 1.
+Think: Fridge 1 is in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen 1. Looking quickly around the room, you see bench (1, 2), bookshelf 2, faucet 2, fridge 1, kitchen counter 1, kitchen table 1, microwave oven 1, sink 2, stove 1, toaster 1, tv 1.
+Act: go to fridge 1
+You arrive at the fridge 1. The fridge 1 is closed. You see bench 2, coffee pot 2, cutting board 2, fridge 1, frying pan 1, juice 1, kitchen counter 1, microwave oven 1, stove 1.
+Act: open fridge 1
+You open fridge 1. You see bench 2, coffee pot 2, cutting board 2, fridge 1, frying pan 1, juice 1, kitchen counter 1, microwave oven 1, stove 1
+Think: Now, I need to find and pick up apple.
+OK.
+Query: recall location of apple
+You have not seen apple before.
+Think: I have not seen apple yet. In the kitchen, the apple is more likely to appear in/on bench (1, 2), fridge 1, kitchen counter 1, kitchen table 1, microwave oven 1, sink 2. I can check each place one by one until I find apple.
+OK.
+Act: go to bench 1
+You arrive at the bench 1. You see apple 1, bench 1, chips 1, condiment shaker 1, cutlery fork 1, cutlery knife 1, kitchen table 1, mug 2, plate 2, salad 1, water glass (2, 3).
+Act: pick up apple 1
+You pick up apple 1. You hold apple 1.
+Think: Now, I need to find fridge and put down apple.
+OK.
+Act: go to fridge 1
+You arrive at the fridge 1. The fridge 1 is open. You see apple 1, bench 2, coffee pot 2, cutting board 2, fridge 1, frying pan 1, juice 1, kitchen counter 1, microwave oven 1, stove 1. You hold apple 1.
+Act: put down apple 1
+You put apple 1 in fridge 1.
+Think: Now, I need to find and pick up pancake.
+OK.
+Query: recall location of pancake
+You have not seen pancake before.
+Think: I have not seen pancake yet. In the kitchen, the pancake is more likely to appear in/on bench (1, 2), fridge 1, kitchen counter 1, kitchen table 1, microwave oven 1, sink 2. I can check each place one by one until I find pancake.
+OK.
+Act: go to bench 2
+You arrive at the bench 2. You see bench 2, chips 1, condiment shaker 1, cutlery fork 2, cutlery knife 2, juice 1, kitchen table 1, mug 2, plate 3, salad 1, water glass (2, 3).
+Act: go to kitchen counter 1
+You arrive at the kitchen counter 1. You see bench 2, bucket 1, carrot 1, coffee pot 2, cutting board 2, faucet 2, juice 1, kitchen counter 1, microwave oven 1, milk (1, 2), sink 2, toaster 1, washing sponge 1.
+Act: go to kitchen table 1
+You arrive at the kitchen table 1. You see bench (1, 2), chips 1, condiment shaker 1, cutlery fork (1, 2), cutlery knife (1, 2), juice 1, kitchen table 1, light switch 3, mug 2, plate (2, 3), salad 1, water glass (2, 3).
+Act: go to microwave oven 1
+You arrive at the microwave oven 1. The microwave oven 1 is closed. You see apple 1, bench 2, coffee pot 2, cutting board 2, faucet 2, fridge 1, frying pan 1, juice 1, kitchen counter 1, microwave oven 1, milk 1, sink 2.
+Act: open microwave oven 1
+You open microwave oven 1. You see apple 1, bench 2, coffee pot 2, cutting board 2, faucet 2, fridge 1, frying pan 1, juice 1, kitchen counter 1, microwave oven 1, milk 1, plate 4, sink 2
+Act: go to sink 2
+You arrive at the sink 2. You see bucket 1, carrot 1, coffee pot 2, cutting board 2, faucet 2, kitchen counter 1, microwave oven 1, milk (1, 2), plate 4, sink 2, toaster 1, washing sponge 1.
+Think: I cannot find pancake in kitchen 1. The pancake is likely to appear in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room 1. Looking quickly around the room, you see bookshelf 3, cabinet 1, chair 3, closet 2, coffee table 2, computer 1, desk 1, sofa 1, tv 2.
+Think: In living room 1, the pancake is likely to appear in/on chair 3, coffee table 2, desk 1.
+OK.
+Act: go to chair 3
+You arrive at the chair 3. You see chair 3, computer 1, desk 1, mug 3.
+Act: go to coffee table 2
+You arrive at the coffee table 2. You see cell phone 2, coffee table 2, cupcake (1, 2), tv 2, wine 1.
+Act: go to desk 1
+You arrive at the desk 1. You see chair 3, computer 1, desk 1, mug 3.
+Think: I cannot find pancake in living room 1. The pancake is likely to appear in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom 1. Looking quickly around the room, you see bed 1, bookshelf 1, chair (1, 2), closet 1, coffee table 1, nightstand 1.
+Think: In bedroom 1, the pancake is likely to appear in/on chair (1, 2), coffee table 1.
+OK.
+Act: go to chair 1
+You arrive at the chair 1. You see chair 1.
+Act: go to chair 2
+You arrive at the chair 2. You see chair 2.
+Act: go to coffee table 1
+You arrive at the coffee table 1. You see Chinese food 1, bed 1, coffee table 1, pancake 1, pudding (1, 2).
+Think: I find pancake 1. Now, I need to pick it up.
+OK.
+Act: pick up pancake 1
+You pick up pancake 1. You hold pancake 1.
+Think: Now, I need to find fridge and put down pancake.
+OK.
+Query: recall location of fridge
+You saw fridge 1 near microwave oven 1 in kitchen 1.
+Think: Fridge 1 is near microwave oven 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen 1. Looking quickly around the room, you see bench (1, 2), bookshelf 2, faucet 2, fridge 1, kitchen counter 1, kitchen table 1, microwave oven 1, sink 2, stove 1, toaster 1, tv 1. You hold pancake 1.
+Act: go to microwave oven 1
+You arrive at the microwave oven 1. The microwave oven 1 is open. You see apple 1, bench 2, coffee pot 2, cutting board 2, faucet 2, fridge 1, frying pan 1, juice 1, kitchen counter 1, microwave oven 1, milk 1, pancake 1, plate 4, sink 2. You hold pancake 1.
+Act: go to fridge 1
+You arrive at the fridge 1. The fridge 1 is open. You see apple 1, bench 2, coffee pot 2, cutting board 2, fridge 1, frying pan 1, juice 1, kitchen counter 1, microwave oven 1, pancake 1, plate 4, stove 1. You hold pancake 1.
+Act: put down pancake 1
+You put pancake 1 in fridge 1.
+Think: Now, I need to find and pick up cupcake.
+OK.
+Query: recall location of cupcake
+You saw cupcake 1 near coffee table 2 in living room 1. You saw cupcake 2 near coffee table 2 in living room 1.
+Think: Cupcake 1 is near coffee table 2. Cupcake 2 is near coffee table 2.
+OK.
+Act: go to living room 1
+You move to the living room 1. Looking quickly around the room, you see bookshelf 3, cabinet 1, chair 3, closet 2, coffee table 2, computer 1, desk 1, sofa 1, tv 2.
+Act: go to coffee table 2
+You arrive at the coffee table 2. You see cell phone 2, coffee table 2, cupcake (1, 2), tv 2, wine 1.
+Act: pick up cupcake 1
+You pick up cupcake 1. You hold cupcake 1.
+Think: Now, I need to find fridge and put down cupcake.
+OK.
+Act: go to kitchen 1
+You move to the kitchen 1. Looking quickly around the room, you see bench (1, 2), bookshelf 2, faucet 2, fridge 1, kitchen counter 1, kitchen table 1, microwave oven 1, sink 2, stove 1, toaster 1, tv 1. You hold cupcake 1.
+Act: go to fridge 1
+You arrive at the fridge 1. The fridge 1 is open. You see apple 1, bench 2, coffee pot 2, cupcake 1, cutting board 2, fridge 1, frying pan 1, juice 1, kitchen counter 1, microwave oven 1, pancake 1, plate 4, stove 1. You hold cupcake 1.
+Act: put down cupcake 1
+You put cupcake 1 in fridge 1.
+Think: Now, I need to find and pick up pudding.
+OK.
+Query: recall location of pudding
+You saw pudding 2 near coffee table 1 in bedroom 1. You saw pudding 1 near coffee table 1 in bedroom 1.
+Think: Pudding 2 is near coffee table 1. Pudding 1 is near coffee table 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom 1. Looking quickly around the room, you see bed 1, bookshelf 1, chair (1, 2), closet 1, coffee table 1, nightstand 1.
+Act: go to coffee table 1
+You arrive at the coffee table 1. You see Chinese food 1, bed 1, coffee table 1, pudding (1, 2).
+Act: pick up pudding 1
+You pick up pudding 1. You hold pudding 1.
+Think: Now, I need to find fridge and put down pudding.
+OK.
+Act: go to kitchen 1
+You move to the kitchen 1. Looking quickly around the room, you see bench (1, 2), bookshelf 2, faucet 2, fridge 1, kitchen counter 1, kitchen table 1, microwave oven 1, sink 2, stove 1, toaster 1, tv 1. You hold pudding 1.
+Act: go to fridge 1
+You arrive at the fridge 1. The fridge 1 is open. You see apple 1, bench 2, coffee pot 2, cupcake 1, cutting board 2, fridge 1, frying pan 1, juice 1, kitchen counter 1, microwave oven 1, pancake 1, plate 4, pudding 1, stove 1. You hold pudding 1.
+Act: put down pudding 1
+You put pudding 1 in fridge 1.
+Think: Now I complete the task.
+OK.
+Act: done

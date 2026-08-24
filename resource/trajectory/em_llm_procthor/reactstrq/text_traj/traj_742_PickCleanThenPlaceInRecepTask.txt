@@ -1,0 +1,139 @@
+Your task is to: Clean the spoon and place it on the shelf.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a living room (1). Looking quickly around the room, you see TV stand (1), dining table (3), drawer (14, 15), shelf (8, 9, 10, 11, 12, 13), side table (3), sofa (1).
+Think: To solve the task, I need to find and pick up spoon, put it in sink basin and turn on faucet, pick up and put down spoon on shelf.
+OK.
+Think: First, I need to find and pick up spoon.
+OK.
+Query: find_objects({'label': 'spoon'})
+Info: 
+Think: I have not seen spoon yet. Now I need to check where to search. First, I will search kitchen 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'kitchen 1'})
+Info: cabinet 1, chair 7, countertop 1, dining table 2, fridge 1, shelf (5, 6, 7)
+Think: In kitchen 1, the spoon is likely to appear in/on cabinet 1, chair 7, countertop 1, dining table 2, fridge 1, shelf (5, 6, 7). I can check each place one by one until I find spoon.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see cabinet (1), chair (7), countertop (1), dining table (2), fridge (1), shelf (5, 6, 7), shelving unit (1), television (1).
+Act: go to cabinet 1
+You arrive at the cabinet (1). The cabinet (1) is closed. You see bottle (1), bowl (2), butter knife (1), cabinet (1), cell phone (1), chair (7), fridge (1), pen (2, 3), shelf (5, 6, 7), shelving unit (1), soap bottle (1), spatula (1), spray bottle (2).
+Act: open cabinet 1
+You open cabinet (1). You see bottle (1), bowl (2), butter knife (1), cabinet (1), cell phone (1), chair (7), fridge (1), pen (2, 3), shelf (5, 6, 7), shelving unit (1), soap bottle (1), spatula (1), spray bottle (2), statue (1).
+Act: go to chair 7
+You arrive at the chair (7). You see apple (1), chair (7), cup (1, 2), dining table (2), pen (3), pencil (6), plate (1), spoon (1), television (1).
+Act: go to countertop 1
+You arrive at the countertop (1). You see bottle (1), bowl (2), butter knife (1), cabinet (1), cell phone (1), countertop (1), fridge (1), pen (2), shelf (5, 6, 7), shelving unit (1), soap bottle (1), spatula (1, 2), spray bottle (2), statue (1).
+Act: go to dining table 2
+You arrive at the dining table (2). You see apple (1), chair (7), cup (1, 2), dining table (2), pen (3), pencil (6), plate (1), spoon (1), television (1).
+Act: go to fridge 1
+You arrive at the fridge (1). The fridge (1) is closed. You see bottle (1), butter knife (1), cell phone (1), chair (7), countertop (1), cup (1, 2), dining table (2), fridge (1), pen (3), pencil (6), plate (1), spatula (1), spoon (1).
+Act: open fridge 1
+You open fridge (1). You see bottle (1), butter knife (1), cell phone (1), chair (7), countertop (1), cup (1, 2), dining table (2), egg (1), fridge (1), lettuce (1), pen (3), pencil (6), plate (1), spatula (1), spoon (1).
+Act: go to shelf 5
+You arrive at the shelf (5). You see bottle (1), bowl (2), butter knife (1), cabinet (1), cell phone (1), chair (7), egg (1), fridge (1), lettuce (1), pen (2, 3), shelf (5, 6, 7), shelving unit (1), soap bottle (1), spatula (1), spray bottle (2), statue (1).
+Act: go to shelf 6
+You arrive at the shelf (6). You see bottle (1), bowl (2), butter knife (1), cabinet (1), cell phone (1), chair (7), egg (1), fridge (1), lettuce (1), pen (2, 3), shelf (5, 6, 7), shelving unit (1), soap bottle (1), spatula (1), spray bottle (2), statue (1).
+Act: go to shelf 7
+You arrive at the shelf (7). You see bottle (1), bowl (2), butter knife (1), cabinet (1), cell phone (1), countertop (1), egg (1), fridge (1), lettuce (1), pen (2), shelf (5, 6, 7), shelving unit (1), soap bottle (1), spatula (1, 2), spray bottle (2), statue (1).
+Think: I need to check whether I see spoon.
+OK.
+Query: find_objects({'label': 'spoon'})
+Info: [{'name_id_nl': 'spoon 1', 'node_type': 'object', 'properties': ['pickupable'], 'states': []}]
+Query: get_edges_for_node({'node_id': 'spoon 1'})
+Info: [('spoon 1', 'apple 1', 'CLOSE'), ('spoon 1', 'television 1', 'CLOSE'), ('spoon 1', 'dining table 2', 'ON'), ('spoon 1', 'chair 7', 'CLOSE'), ('spoon 1', 'cup 2', 'CLOSE'), ('spoon 1', 'cup 1', 'CLOSE'), ('spoon 1', 'pen 3', 'CLOSE'), ('spoon 1', 'pencil 6', 'CLOSE'), ('spoon 1', 'plate 1', 'CLOSE'), ('spoon 1', 'kitchen 1', 'INSIDE'), ('apple 1', 'spoon 1', 'CLOSE'), ('television 1', 'spoon 1', 'CLOSE'), ('chair 7', 'spoon 1', 'CLOSE'), ('cup 2', 'spoon 1', 'CLOSE'), ('cup 1', 'spoon 1', 'CLOSE'), ('pen 3', 'spoon 1', 'CLOSE'), ('pencil 6', 'spoon 1', 'CLOSE'), ('plate 1', 'spoon 1', 'CLOSE')]
+Think: Spoon 1 is on dining table 2 in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see cabinet (1), chair (7), countertop (1), dining table (2), fridge (1), shelf (5, 6, 7), shelving unit (1), television (1).
+Act: go to dining table 2
+You arrive at the dining table (2). You see apple (1), chair (7), cup (1, 2), dining table (2), pen (3), pencil (6), plate (1), spoon (1), television (1).
+Act: go to spoon 1
+You arrive at the spoon (1). You see apple (1), chair (7), cup (1, 2), dining table (2), pen (3), pencil (6), plate (1), spoon (1), television (1).
+Act: pick up spoon 1
+You pick up spoon (1). You hold spoon (1).
+Think: Now, I need to find sink basin.
+OK.
+Query: find_objects({'label': 'sink basin'})
+Info: [{'name_id_nl': 'sink basin 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'bathroom 1'}]
+Think: Sink basin 1 is in bathroom 1.
+OK.
+Act: go to bathroom 1
+You move to the bathroom (1). Looking quickly around the room, you see drawer (11, 12, 13), painting (4), plunger (1), side table (1, 2), sink (1), sink basin (1), toilet (1). You hold spoon (1).
+Act: go to sink basin 1
+You arrive at the sink basin (1). You see faucet (1), sink (1), sink basin (1). You hold spoon (1).
+Act: put down spoon 1
+You put spoon (1) in sink basin (1).
+Think: Now, I need to turn on faucet 1 briefly and turn off to wash spoon 1.
+OK.
+Act: turn on faucet 1
+You turn on faucet (1).
+Act: turn off faucet 1
+You turn off faucet (1).
+Think: Now, I need to pick up spoon 1 and find shelf.
+OK.
+Act: pick up spoon 1
+You pick up spoon (1). You hold spoon (1).
+Query: find_objects({'label': 'shelf'})
+Info: [{'name_id_nl': 'shelf 12', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}, {'name_id_nl': 'shelf 11', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}, {'name_id_nl': 'shelf 10', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}, {'name_id_nl': 'shelf 9', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}, {'name_id_nl': 'shelf 8', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}, {'name_id_nl': 'shelf 7', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'kitchen 1'}, {'name_id_nl': 'shelf 4', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'bedroom 1'}, {'name_id_nl': 'shelf 5', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'kitchen 1'}, {'name_id_nl': 'shelf 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'bedroom 1'}, {'name_id_nl': 'shelf 2', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'bedroom 1'}, {'name_id_nl': 'shelf 3', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'bedroom 1'}, {'name_id_nl': 'shelf 13', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}, {'name_id_nl': 'shelf 6', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'kitchen 1'}]
+Think: Shelf 12 is in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), dining table (3), drawer (14, 15), shelf (8, 9, 10, 11, 12, 13), side table (3), sofa (1). You hold spoon (1).
+Act: go to shelf 12
+You arrive at the shelf (12). You see TV stand (1), drawer (14, 15), pen (4), pencil (7), shelf (8, 9, 10, 11, 12, 13), side table (3), television (2). You hold spoon (1).
+Think: Now, I need to put down spoon 1.
+OK.
+Act: put down spoon 1
+Put action failed: There is no valid space to place the object in the target receptacle.
+Think: I need to check whether I see spoon.
+OK.
+Query: find_objects({'label': 'spoon'})
+Info: [{'name_id_nl': 'spoon 1', 'node_type': 'object', 'properties': ['pickupable'], 'states': ['isPickedUp']}]
+Think: I have spoon 1 in hand.
+OK.
+Act: go to shelf 11
+You arrive at the shelf (11). You see TV stand (1), drawer (14, 15), pen (4), pencil (7), shelf (8, 9, 10, 11, 12, 13), side table (3), television (2). You hold spoon (1).
+Act: put down spoon 1
+Put action failed: There is no valid space to place the object in the target receptacle.
+Think: I need to check whether I see spoon.
+OK.
+Query: find_objects({'label': 'spoon'})
+Info: [{'name_id_nl': 'spoon 1', 'node_type': 'object', 'properties': ['pickupable'], 'states': ['isPickedUp']}]
+Think: I have spoon 1 in hand.
+OK.
+Act: go to shelf 10
+You arrive at the shelf (10). You see TV stand (1), drawer (14, 15), pen (4), pencil (7), pillow (2), shelf (8, 9, 10, 11, 12, 13), side table (3), sofa (1), television (2). You hold spoon (1).
+Act: put down spoon 1
+Put action failed: There is no valid space to place the object in the target receptacle.
+Think: I need to check whether I see spoon.
+OK.
+Query: find_objects({'label': 'spoon'})
+Info: [{'name_id_nl': 'spoon 1', 'node_type': 'object', 'properties': ['pickupable'], 'states': ['isPickedUp']}]
+Think: I have spoon 1 in hand.
+OK.
+Act: go to shelf 9
+You arrive at the shelf (9). You see TV stand (1), drawer (14, 15), pen (4), pencil (7), pillow (2), shelf (8, 9, 10, 11, 12, 13), side table (3), sofa (1), television (2). You hold spoon (1).
+Act: put down spoon 1
+Put action failed: There is no valid space to place the object in the target receptacle.
+Think: I need to check whether I see spoon.
+OK.
+Query: find_objects({'label': 'spoon'})
+Info: [{'name_id_nl': 'spoon 1', 'node_type': 'object', 'properties': ['pickupable'], 'states': ['isPickedUp']}]
+Think: I have spoon 1 in hand.
+OK.
+Act: go to shelf 8
+You arrive at the shelf (8). You see TV stand (1), pencil (7), pillow (2), plate (2), shelf (8, 9, 10, 11, 12, 13), sofa (1), television (2). You hold spoon (1).
+Act: put down spoon 1
+Put action failed: There is no valid space to place the object in the target receptacle.
+Think: I need to check whether I see spoon.
+OK.
+Query: find_objects({'label': 'spoon'})
+Info: [{'name_id_nl': 'spoon 1', 'node_type': 'object', 'properties': ['pickupable'], 'states': ['isPickedUp']}]
+Think: I have spoon 1 in hand.
+OK.
+Act: go to shelf 13
+You arrive at the shelf (13). You see TV stand (1), drawer (14, 15), pen (4), pencil (7), shelf (8, 9, 10, 11, 12, 13), side table (3), television (2). You hold spoon (1).
+Act: put down spoon 1
+You put spoon (1) in shelf (13).
+Think: Now I complete the task.
+OK.
+Act: done

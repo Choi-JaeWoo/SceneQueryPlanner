@@ -1,0 +1,10 @@
+Your task is to: Put a pillow and a book on the armchair.
+You arrive at the dresser (1). You see alarm clock (1), bed (1), book (1), cell phone (1), drawer (1, 2, 3), dresser (1), mug (1), pillow (1), teddy bear (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- (bathroom 1): [(sink basin 1), (side table 1), painting 3, (shelf 1), painting 4, (toilet 1), (sink 1), (shelf 2), faucet 1, (garbage can 2), plunger 1]
+- bedroom 1: [painting 1, painting 2, desk lamp 1, statue 1, vase 1, watch 1, alarm clock 1, bed 1, book 1, cell phone 1, chair 1, dining table 1, drawer 2, drawer 1, drawer 3, dresser 1, (garbage can 1), mug 1, pillow 1, teddy bear 1]
+- (kitchen 1): [(countertop 1), garbage bag 1, (fridge 1)]
+- (living room 1): [(dining table 2), (chair 2), television 1, (armchair 1), (sofa 1), cart 1, house plant 1]
+Your 5 previous actions were: go to drawer 2 (success), open drawer 2 (success), go to drawer 3 (success), open drawer 3 (success), go to dresser 1 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I arrive at dresser 1. I need to check unexplored areas in bedroom 1 to find pillow. Now, I need to check garbage can 1.
+Act: go to garbage can 1

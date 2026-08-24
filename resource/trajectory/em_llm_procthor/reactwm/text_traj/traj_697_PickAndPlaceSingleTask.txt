@@ -1,0 +1,39 @@
+Your task is to: Put a pencil inside the box.
+You are in the house, and there are 5 rooms: bathroom (1), bedroom (1, 2), kitchen (1), living room (1). You are in the middle of a bathroom (1). Looking quickly around the room, you see garbage can (1), plunger (1), sink (1), sink basin (1), toilet (1).
+Think: To solve the task, I need to find and pick up pencil, put it in box.
+OK.
+Think: First, I need to find and pick up pencil.
+OK.
+Query: recall location of pencil
+You have not seen pencil before.
+Think: I have not seen pencil yet. The pencil is more likely to appear in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see baseball bat (1), bed (1), chair (1, 2), dining table (1), drawer (1, 2, 3), dresser (1), painting (1, 2, 3).
+Think: In bedroom 1, the pencil is likely to appear in/on bed 1, chair (1, 2), dining table 1, drawer (1, 2, 3), dresser 1. I can check each place one by one until I find pencil.
+OK.
+Act: go to bed 1
+You arrive at the bed (1). You see baseball bat (1), bed (1), pillow (1, 2), teddy bear (1).
+Act: go to chair 1
+You arrive at the chair (1). You see CD (1), box (1), chair (1), dining table (1), drawer (1, 2), house plant (1), laptop (1), painting (1, 2), pencil (1, 2), statue (1).
+Think: I find pencil 1. Now, I need to pick it up.
+OK.
+Act: go to pencil 1
+You arrive at the pencil (1). You see CD (1), box (1), chair (1), dining table (1), house plant (1), laptop (1), painting (2), pencil (1), statue (1).
+Act: pick up pencil 1
+You pick up pencil (1). You hold pencil (1).
+Think: Now, I need to find box and put down pencil 1.
+OK.
+Query: recall location of box
+You saw box 1 in bedroom 1. You saw box 2 in living room 1.
+Think: Box 1 is in bedroom 1.
+OK.
+Act: go to box 1
+You arrive at the box (1). The box (1) is closed. You see CD (1), alarm clock (1), book (1), box (1), chair (1, 2), credit card (1), dining table (1), drawer (1, 2, 3), dresser (1), house plant (1), key chain (1), laptop (1), pencil (2), tissue box (1), vase (1). You hold pencil (1).
+Act: open box 1
+You open box (1). You see CD (1), alarm clock (1), book (1), box (1), chair (1, 2), credit card (1), dining table (1), drawer (1, 2, 3), dresser (1), house plant (1), key chain (1), laptop (1), pencil (2), tissue box (1), vase (1). You hold pencil (1).
+Act: put down pencil 1
+You put pencil (1) in box (1).
+Think: Now I complete the task.
+OK.
+Act: done

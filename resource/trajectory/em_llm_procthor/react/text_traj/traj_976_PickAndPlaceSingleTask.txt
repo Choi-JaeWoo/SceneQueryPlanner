@@ -1,0 +1,41 @@
+Your task is to: Place a book on the armchair.
+You are in the house, and there are 5 rooms: bathroom (1), bedroom (1, 2), kitchen (1), living room (1). You are in the middle of a bedroom (1). Looking quickly around the room, you see TV stand (2), armchair (1), basket ball (1), bed (1, 2), drawer (1, 2, 3, 4, 5, 6), dresser (1), floor lamp (1), painting (3, 4), shelf (2).
+Think: To solve the task, I need to find and pick up book, then put it on armchair.
+OK.
+Think: First, I need to find and pick up book. The book is more likely to appear in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), dining table (1), painting (1, 2), shelf (1), sofa (1).
+Think: In living room 1, the book is likely to appear in/on TV stand 1, dining table 1, shelf 1, sofa 1. I can check each place one by one until I find book.
+OK.
+Act: go to TV stand 1
+You arrive at the TV stand (1). You see TV stand (1), painting (1), remote control (1, 2), shelf (1), television (1), vase (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see dining table (1), house plant (2), laptop (1), pen (1).
+Act: go to shelf 1
+You arrive at the shelf (1). You see TV stand (1), painting (1), remote control (1, 2), shelf (1), television (1), vase (1).
+Act: go to sofa 1
+You arrive at the sofa (1). You see house plant (1), kettle (1, 2), plate (1), salt shaker (1), soap bottle (1).
+Think: There is no book in living room 1. I need to move to bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see TV stand (2), armchair (1), basket ball (1), bed (1, 2), drawer (1, 2, 3, 4, 5, 6), dresser (1), floor lamp (1), painting (3, 4), shelf (2).
+Think: In bedroom 1, the book is likely to appear in/on TV stand 2, armchair 1, bed (1, 2), drawer (1, 2, 3, 4, 5, 6), dresser 1, shelf 2. I can check each place one by one until I find book.
+OK.
+Act: go to TV stand 2
+You arrive at the TV stand (2). You see TV stand (2), armchair (1), basket ball (1), bed (1), book (1, 2), remote control (3), shelf (2), television (2).
+Think: I find book 1. Now, I need to pick it up.
+OK.
+Act: go to book 1
+You arrive at the book (1). The book (1) is closed. You see TV stand (2), basket ball (1), bed (1), book (1, 2), painting (3), remote control (3), shelf (2), television (2).
+Act: pick up book 1
+You pick up book (1). You hold book (1).
+Think: Now, I need to find armchair and put down book 1.
+OK.
+Act: go to armchair 1
+You arrive at the armchair (1). You see TV stand (2), armchair (1), basket ball (1), floor lamp (1), shelf (2), television (2). You hold book (1).
+Act: put down book 1
+You put book (1) in armchair (1).
+Think: Now I complete the task.
+OK.
+Act: done

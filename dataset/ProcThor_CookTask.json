@@ -1,0 +1,722 @@
+[
+  {
+    "env_id": 514,
+    "mode": "CookTask",
+    "instruction": [
+      "Use the coffee machine to brew coffee into a mug, then place the coffee on the countertop.",
+      "Brew coffee into a mug with the coffee machine, then set the coffee on the countertop.",
+      "Make a mug of coffee using the coffee machine, then put it on the countertop.",
+      "Use the coffee machine to make coffee in a mug, then place the coffee on the countertop."
+    ],
+    "task_goal": {
+      "fillLiquid_coffee_mug": 1,
+      "on_mug_countertop": 1
+    }
+  },
+  {
+    "env_id": 31,
+    "mode": "CookTask",
+    "instruction": [
+      "Cook an egg using a microwave and then place it on the countertop.",
+      "Use the microwave to cook an egg, then put it on the countertop.",
+      "Microwave an egg and place it on the countertop afterwards.",
+      "After cooking an egg in the microwave, set it down on the countertop."
+    ],
+    "task_goal": {
+      "isCooked_egg": 1,
+      "on_egg_countertop": 1
+    }
+  },
+  {
+    "env_id": 981,
+    "mode": "CookTask",
+    "instruction": [
+      "Toast a slice of bread using a toaster and then place it on the countertop.",
+      "Use the toaster to make a slice of toast, then put it on the countertop.",
+      "After toasting a slice of bread in the toaster, place it on the countertop.",
+      "Place a slice of bread in the toaster to toast it, and then set it on the countertop."
+    ],
+    "task_goal": {
+      "isCooked_breadsliced": 1,
+      "on_breadsliced_countertop": 1
+    }
+  },
+  {
+    "env_id": 751,
+    "mode": "CookTask",
+    "instruction": [
+      "Use the coffee machine to brew coffee into a mug and then place the mug on the countertop.",
+      "Brew coffee into a mug with the coffee machine, then set the mug on the countertop.",
+      "Make a mug of coffee using the coffee machine and place it on the countertop.",
+      "Fill a mug with coffee from the coffee machine and put it on the countertop."
+    ],
+    "task_goal": {
+      "fillLiquid_coffee_mug": 1,
+      "on_mug_countertop": 1
+    }
+  },
+  {
+    "env_id": 205,
+    "mode": "CookTask",
+    "instruction": [
+      "Toast a slice of bread using a toaster and then place it on the countertop.",
+      "Use the toaster to make toast, then put the slice of bread on the countertop.",
+      "After toasting a slice of bread in the toaster, place it on the countertop.",
+      "Place a slice of toast, made using the toaster, onto the countertop."
+    ],
+    "task_goal": {
+      "isCooked_breadsliced": 1,
+      "on_breadsliced_countertop": 1
+    }
+  },
+  {
+    "env_id": 844,
+    "mode": "CookTask",
+    "instruction": [
+      "Cook an egg using a microwave and then place it on the countertop.",
+      "Use the microwave to cook an egg, then put it on the countertop.",
+      "Microwave an egg and place it on the countertop afterwards.",
+      "After cooking an egg in the microwave, set it down on the countertop."
+    ],
+    "task_goal": {
+      "isCooked_egg": 1,
+      "on_egg_countertop": 1
+    }
+  },
+  {
+    "env_id": 652,
+    "mode": "CookTask",
+    "instruction": [
+      "Use the coffee machine to brew coffee into a mug and then place the mug on the dining table.",
+      "Brew coffee into a mug using the coffee machine, then put it on the dining table.",
+      "Make a mug of coffee with the coffee machine and place it on the dining table.",
+      "Using the coffee machine, fill a mug with coffee and set it on the dining table."
+    ],
+    "task_goal": {
+      "fillLiquid_coffee_mug": 1,
+      "on_mug_diningtable": 1
+    }
+  },
+  {
+    "env_id": 236,
+    "mode": "CookTask",
+    "instruction": [
+      "Toast a slice of bread using a toaster and then place it on the dining table.",
+      "Use the toaster to make a slice of toast, then put it on the dining table.",
+      "After toasting a slice of bread with the toaster, place it on the dining table.",
+      "Place a slice of bread in the toaster to toast it, then set it on the dining table."
+    ],
+    "task_goal": {
+      "isCooked_breadsliced": 1,
+      "on_breadsliced_diningtable": 1
+    }
+  },
+  {
+    "env_id": 390,
+    "mode": "CookTask",
+    "instruction": [
+      "Use the coffee machine to brew coffee into a mug and then place the mug on the side table.",
+      "Brew coffee into a mug with the coffee machine, then set it on the side table.",
+      "Make a mug of coffee using the coffee machine and place it on the side table.",
+      "Fill a mug with coffee from the coffee machine and put it on the side table."
+    ],
+    "task_goal": {
+      "fillLiquid_coffee_mug": 1,
+      "on_mug_sidetable": 1
+    }
+  },
+  {
+    "env_id": 106,
+    "mode": "CookTask",
+    "instruction": [
+      "Toast a slice of bread using a toaster and then place it on the countertop.",
+      "Use the toaster to toast a slice of bread, then put it on the countertop.",
+      "After toasting a slice of bread in the toaster, place it onto the countertop.",
+      "Place a slice of toast, made using the toaster, on the countertop."
+    ],
+    "task_goal": {
+      "isCooked_breadsliced": 1,
+      "on_breadsliced_countertop": 1
+    }
+  },
+  {
+    "env_id": 708,
+    "mode": "CookTask",
+    "instruction": [
+      "Use the coffee machine to brew coffee into a mug, cook a potato using a microwave, and cook an egg using a microwave, then place the food on the dining table.",
+      "Brew coffee into a mug with the coffee machine, then use the microwave to cook a potato and an egg, and finally put the food on the dining table.",
+      "Make a mug of coffee using the coffee machine and cook a potato and an egg in the microwave, then place everything on the dining table.",
+      "Using the coffee machine, fill a mug with coffee, and using the microwave, cook a potato and an egg, then set the food out on the dining table."
+    ],
+    "task_goal": {
+      "isCooked_potato": 1,
+      "isCooked_egg": 1,
+      "fillLiquid_coffee_mug": 1,
+      "on_potato_diningtable": 1,
+      "on_egg_diningtable": 1,
+      "on_mug_diningtable": 1
+    }
+  },
+  {
+    "env_id": 992,
+    "mode": "CookTask",
+    "instruction": [
+      "Use the coffee machine to brew coffee into a mug and then place the mug on the side table.",
+      "Brew coffee into a mug with the coffee machine, then put it on the side table.",
+      "Make a mug of coffee using the coffee machine and place it on the side table.",
+      "Fill a mug with coffee from the coffee machine and set it down on the side table."
+    ],
+    "task_goal": {
+      "fillLiquid_coffee_mug": 1,
+      "on_mug_sidetable": 1
+    }
+  },
+  {
+    "env_id": 836,
+    "mode": "CookTask",
+    "instruction": [
+      "Use the coffee machine to brew coffee into a mug and cook a potato using a microwave, then place the cooked food on the countertop.",
+      "Brew coffee into a mug with the coffee machine and microwave a potato, then put the coffee and potato on the countertop.",
+      "Using the coffee machine, make coffee in a mug, and use a microwave to cook a potato, then place them on the countertop.",
+      "Make a mug of coffee using the coffee machine and cook a potato in the microwave, then transfer the food to the countertop."
+    ],
+    "task_goal": {
+      "isCooked_potato": 1,
+      "fillLiquid_coffee_mug": 1,
+      "on_potato_countertop": 1,
+      "on_mug_countertop": 1
+    }
+  },
+  {
+    "env_id": 753,
+    "mode": "CookTask",
+    "instruction": [
+      "Cook an egg using a microwave and then place it on the countertop.",
+      "Use the microwave to cook an egg, then put it on the countertop.",
+      "Microwave an egg and place it on the countertop afterwards.",
+      "Cook an egg in the microwave and then set it down on the countertop."
+    ],
+    "task_goal": {
+      "isCooked_egg": 1,
+      "on_egg_countertop": 1
+    }
+  },
+  {
+    "env_id": 651,
+    "mode": "CookTask",
+    "instruction": [
+      "Use the coffee machine to brew coffee into a mug and then place the mug on the coffee table.",
+      "Brew coffee into a mug using the coffee machine, then put it on the coffee table.",
+      "Make a mug of coffee with the coffee machine and place it on the coffee table.",
+      "Fill a mug with coffee from the coffee machine and set it on the coffee table."
+    ],
+    "task_goal": {
+      "fillLiquid_coffee_mug": 1,
+      "on_mug_coffeetable": 1
+    }
+  },
+  {
+    "env_id": 845,
+    "mode": "CookTask",
+    "instruction": [
+      "Use the coffee machine to brew coffee into a mug and then place it on the countertop.",
+      "Brew coffee into a mug using the coffee machine, then set it on the countertop.",
+      "Make a mug of coffee with the coffee machine and place it on the countertop.",
+      "Fill a mug with coffee from the coffee machine and put it on the countertop."
+    ],
+    "task_goal": {
+      "fillLiquid_coffee_mug": 1,
+      "on_mug_countertop": 1
+    }
+  },
+  {
+    "env_id": 471,
+    "mode": "CookTask",
+    "instruction": [
+      "Cook a potato and an egg using a microwave, then place the cooked food on the dining table.",
+      "Use the microwave to cook a potato and an egg, then put the cooked food on the dining table.",
+      "Microwave a potato and an egg, and afterwards place the cooked items on the dining table.",
+      "After cooking a potato and an egg in the microwave, transfer the food to the dining table."
+    ],
+    "task_goal": {
+      "isCooked_potato": 1,
+      "isCooked_egg": 1,
+      "on_potato_diningtable": 1,
+      "on_egg_diningtable": 1
+    }
+  },
+  {
+    "env_id": 322,
+    "mode": "CookTask",
+    "instruction": [
+      "Cook a potato using a microwave and then place it on the countertop.",
+      "Use the microwave to cook a potato, then put it on the countertop.",
+      "Microwave a potato and place it on the countertop afterwards.",
+      "After cooking a potato in the microwave, set it down on the countertop."
+    ],
+    "task_goal": {
+      "isCooked_potato": 1,
+      "on_potato_countertop": 1
+    }
+  },
+  {
+    "env_id": 585,
+    "mode": "CookTask",
+    "instruction": [
+      "Use the coffee machine to brew coffee into a mug and then place the mug on the countertop.",
+      "Brew coffee into a mug using the coffee machine, then set it on the countertop.",
+      "Make a mug of coffee with the coffee machine and place it on the countertop.",
+      "Fill a mug with coffee from the coffee machine and put it on the countertop."
+    ],
+    "task_goal": {
+      "fillLiquid_coffee_mug": 1,
+      "on_mug_countertop": 1
+    }
+  },
+  {
+    "env_id": 666,
+    "mode": "CookTask",
+    "instruction": [
+      "Use the coffee machine to brew coffee into a mug and then place the mug on the countertop.",
+      "Brew coffee into a mug using the coffee machine, then put it on the countertop.",
+      "Make a mug of coffee with the coffee machine and place it on the countertop.",
+      "Fill a mug with coffee from the coffee machine and set it down on the countertop."
+    ],
+    "task_goal": {
+      "fillLiquid_coffee_mug": 1,
+      "on_mug_countertop": 1
+    }
+  },
+  {
+    "env_id": 440,
+    "mode": "CookTask",
+    "instruction": [
+      "Use the coffee machine to brew coffee into a mug and then place the mug on the countertop.",
+      "Brew coffee into a mug using the coffee machine, then set the mug on the countertop.",
+      "Make a mug of coffee with the coffee machine and place it on the countertop.",
+      "Fill a mug with coffee from the coffee machine and put it on the countertop."
+    ],
+    "task_goal": {
+      "fillLiquid_coffee_mug": 1,
+      "on_mug_countertop": 1
+    }
+  },
+  {
+    "env_id": 60,
+    "mode": "CookTask",
+    "instruction": [
+      "Use the coffee machine to brew coffee into a mug and then place the mug on the dining table.",
+      "Brew coffee into a mug using the coffee machine, then put it on the dining table.",
+      "Make a mug of coffee with the coffee machine and place it on the dining table.",
+      "Using the coffee machine, fill a mug with coffee and set it on the dining table."
+    ],
+    "task_goal": {
+      "fillLiquid_coffee_mug": 1,
+      "on_mug_diningtable": 1
+    }
+  },
+  {
+    "env_id": 706,
+    "mode": "CookTask",
+    "instruction": [
+      "Use the coffee machine to brew coffee into a mug and then place it on the countertop.",
+      "Brew coffee into a mug with the coffee machine, then set it on the countertop.",
+      "Make a mug of coffee using the coffee machine and place it on the countertop.",
+      "Fill a mug with coffee from the coffee machine and put it on the countertop."
+    ],
+    "task_goal": {
+      "fillLiquid_coffee_mug": 1,
+      "on_mug_countertop": 1
+    }
+  },
+  {
+    "env_id": 164,
+    "mode": "CookTask",
+    "instruction": [
+      "Toast a slice of bread using a toaster and then place it on the countertop.",
+      "Use the toaster to make toast, then put the slice of bread on the countertop.",
+      "After toasting a slice of bread in the toaster, place it on the countertop.",
+      "Place a slice of toast, made using the toaster, onto the countertop."
+    ],
+    "task_goal": {
+      "isCooked_breadsliced": 1,
+      "on_breadsliced_countertop": 1
+    }
+  },
+  {
+    "env_id": 557,
+    "mode": "CookTask",
+    "instruction": [
+      "Toast a slice of bread using a toaster and then place it on the countertop.",
+      "Use the toaster to make toast, then put the slice of bread on the countertop.",
+      "After toasting a slice of bread in the toaster, place it on the countertop.",
+      "Place a slice of toast, made using the toaster, onto the countertop."
+    ],
+    "task_goal": {
+      "isCooked_breadsliced": 1,
+      "on_breadsliced_countertop": 1
+    }
+  },
+  {
+    "env_id": 267,
+    "mode": "CookTask",
+    "instruction": [
+      "Cook a potato and an egg using a microwave, then place the cooked food on the countertop.",
+      "Use the microwave to cook a potato and an egg, then put the cooked food on the countertop.",
+      "Microwave a potato and an egg, and afterwards, place the cooked items on the countertop.",
+      "After cooking a potato and an egg in the microwave, transfer the food to the countertop."
+    ],
+    "task_goal": {
+      "isCooked_potato": 1,
+      "isCooked_egg": 1,
+      "on_potato_countertop": 1,
+      "on_egg_countertop": 1
+    }
+  },
+  {
+    "env_id": 937,
+    "mode": "CookTask",
+    "instruction": [
+      "Cook a potato using a microwave and cook an egg using a microwave, then place the cooked food on the countertop.",
+      "Microwave a potato and then an egg, and afterwards, put the cooked food on the countertop.",
+      "Use the microwave to cook both a potato and an egg, and place the cooked items on the countertop.",
+      "Cook a potato and an egg separately in the microwave, then transfer the cooked food to the countertop."
+    ],
+    "task_goal": {
+      "isCooked_potato": 1,
+      "isCooked_egg": 1,
+      "on_potato_countertop": 1,
+      "on_egg_countertop": 1
+    }
+  },
+  {
+    "env_id": 193,
+    "mode": "CookTask",
+    "instruction": [
+      "Use the coffee machine to brew coffee into a mug and then place the mug on the countertop.",
+      "Brew coffee into a mug using the coffee machine, then set it down on the countertop.",
+      "Make a mug of coffee with the coffee machine and place it on the countertop.",
+      "Using the coffee machine, fill a mug with coffee and put it on the countertop."
+    ],
+    "task_goal": {
+      "fillLiquid_coffee_mug": 1,
+      "on_mug_countertop": 1
+    }
+  },
+  {
+    "env_id": 886,
+    "mode": "CookTask",
+    "instruction": [
+      "Use the coffee machine to brew coffee into a mug and then place the mug on the TV stand.",
+      "Brew coffee into a mug with the coffee machine, then put it on the TV stand.",
+      "Make a mug of coffee using the coffee machine and place it on the TV stand.",
+      "Using the coffee machine, fill a mug with coffee and set it on the TV stand."
+    ],
+    "task_goal": {
+      "fillLiquid_coffee_mug": 1,
+      "on_mug_tvstand": 1
+    }
+  },
+  {
+    "env_id": 578,
+    "mode": "CookTask",
+    "instruction": [
+      "Use the coffee machine to brew coffee into a mug and then place the mug on the countertop.",
+      "Brew coffee into a mug using the coffee machine, then set the mug on the countertop.",
+      "Make a mug of coffee with the coffee machine and place it on the countertop.",
+      "Using the coffee machine, fill a mug with coffee and then put it on the countertop."
+    ],
+    "task_goal": {
+      "fillLiquid_coffee_mug": 1,
+      "on_mug_countertop": 1
+    }
+  },
+  {
+    "env_id": 365,
+    "mode": "CookTask",
+    "instruction": [
+      "Use the coffee machine to brew coffee into a mug and then place the mug on the countertop.",
+      "Brew coffee into a mug with the coffee machine, then set the mug on the countertop.",
+      "Make a mug of coffee using the coffee machine and place it on the countertop.",
+      "Using the coffee machine, fill a mug with coffee and then put it on the countertop."
+    ],
+    "task_goal": {
+      "fillLiquid_coffee_mug": 1,
+      "on_mug_countertop": 1
+    }
+  },
+  {
+    "env_id": 92,
+    "mode": "CookTask",
+    "instruction": [
+      "Use the coffee machine to brew coffee into a mug and then place the mug on the coffee table.",
+      "Brew coffee into a mug with the coffee machine, then set the mug down on the coffee table.",
+      "Make a mug of coffee using the coffee machine and place it on the coffee table.",
+      "Using the coffee machine, fill a mug with coffee and then put it on the coffee table."
+    ],
+    "task_goal": {
+      "fillLiquid_coffee_mug": 1,
+      "on_mug_coffeetable": 1
+    }
+  },
+  {
+    "env_id": 37,
+    "mode": "CookTask",
+    "instruction": [
+      "Use the coffee machine to brew coffee into a mug and toast a slice of bread using a toaster, then place the coffee and toast on the dining table.",
+      "Brew coffee into a mug with the coffee machine and use the toaster to make toast, then put everything on the dining table.",
+      "To start your day, use the coffee machine to make coffee in a mug and the toaster to toast a slice of bread, then set them on the dining table.",
+      "Make a mug of coffee using the coffee machine and toast some bread with the toaster, then arrange the coffee and toast on the dining table."
+    ],
+    "task_goal": {
+      "isCooked_breadsliced": 1,
+      "fillLiquid_coffee_mug": 1,
+      "on_breadsliced_diningtable": 1,
+      "on_mug_diningtable": 1
+    }
+  },
+  {
+    "env_id": 97,
+    "mode": "CookTask",
+    "instruction": [
+      "Toast a slice of bread using a toaster and then place it on the countertop.",
+      "Use the toaster to make toast, then put the slice of bread on the countertop.",
+      "After toasting a slice of bread in the toaster, place it on the countertop.",
+      "Place a slice of toast, made using the toaster, onto the countertop."
+    ],
+    "task_goal": {
+      "isCooked_breadsliced": 1,
+      "on_breadsliced_countertop": 1
+    }
+  },
+  {
+    "env_id": 200,
+    "mode": "CookTask",
+    "instruction": [
+      "Use the coffee machine to brew coffee into a mug, cook a potato and an egg using a microwave, then place the cooked food on the countertop.",
+      "Brew coffee into a mug with the coffee machine, then use a microwave to cook a potato and an egg, and place the cooked food on the countertop.",
+      "Make coffee in a mug using the coffee machine, and cook a potato and an egg in the microwave, then put the food on the countertop.",
+      "With the coffee machine, brew coffee into a mug, and use the microwave to cook a potato and an egg, before placing the food on the countertop."
+    ],
+    "task_goal": {
+      "isCooked_potato": 1,
+      "isCooked_egg": 1,
+      "fillLiquid_coffee_mug": 1,
+      "on_potato_countertop": 1,
+      "on_egg_countertop": 1,
+      "on_mug_countertop": 1
+    }
+  },
+  {
+    "env_id": 940,
+    "mode": "CookTask",
+    "instruction": [
+      "Cook an egg using a microwave and then place it on the TV stand.",
+      "Use the microwave to cook an egg, then put it on the TV stand.",
+      "Microwave an egg and place it on the TV stand afterwards.",
+      "After cooking an egg in the microwave, set it down on the TV stand."
+    ],
+    "task_goal": {
+      "isCooked_egg": 1,
+      "on_egg_tvstand": 1
+    }
+  },
+  {
+    "env_id": 819,
+    "mode": "CookTask",
+    "instruction": [
+      "Use the coffee machine to brew coffee into a mug and then place it on the TV stand.",
+      "Brew coffee into a mug with the coffee machine, then put it on the TV stand.",
+      "Make a mug of coffee using the coffee machine and place it on the TV stand.",
+      "Place a mug of coffee, brewed with the coffee machine, onto the TV stand."
+    ],
+    "task_goal": {
+      "fillLiquid_coffee_mug": 1,
+      "on_mug_tvstand": 1
+    }
+  },
+  {
+    "env_id": 612,
+    "mode": "CookTask",
+    "instruction": [
+      "Use the coffee machine to brew coffee into a mug and then place the mug on the countertop.",
+      "Brew coffee into a mug using the coffee machine, then put it on the countertop.",
+      "Make a mug of coffee with the coffee machine and place it on the countertop.",
+      "Using the coffee machine, fill a mug with coffee and set it on the countertop."
+    ],
+    "task_goal": {
+      "fillLiquid_coffee_mug": 1,
+      "on_mug_countertop": 1
+    }
+  },
+  {
+    "env_id": 672,
+    "mode": "CookTask",
+    "instruction": [
+      "Toast a slice of bread using a toaster and then place it on the countertop.",
+      "Use the toaster to toast a slice of bread, then put it on the countertop.",
+      "After toasting a slice of bread in the toaster, place it onto the countertop.",
+      "Toast a slice of bread with the toaster and set it down on the countertop."
+    ],
+    "task_goal": {
+      "isCooked_breadsliced": 1,
+      "on_breadsliced_countertop": 1
+    }
+  },
+  {
+    "env_id": 389,
+    "mode": "CookTask",
+    "instruction": [
+      "Use the coffee machine to brew coffee into a mug and toast a slice of bread using a toaster, then place the coffee and toast on the countertop.",
+      "Brew a mug of coffee with the coffee machine and toast some bread using the toaster, then put them on the countertop.",
+      "Make coffee in a mug using the coffee machine, and toast a slice of bread in the toaster, before placing both on the countertop.",
+      "Using the coffee machine, fill a mug with coffee and use the toaster to make some toast, then set them down on the countertop."
+    ],
+    "task_goal": {
+      "isCooked_breadsliced": 1,
+      "fillLiquid_coffee_mug": 1,
+      "on_breadsliced_countertop": 1,
+      "on_mug_countertop": 1
+    }
+  },
+  {
+    "env_id": 904,
+    "mode": "CookTask",
+    "instruction": [
+      "Toast a slice of bread using a toaster and then place it on the countertop.",
+      "Use the toaster to make toast, then put the slice of bread on the countertop.",
+      "After toasting a slice of bread in the toaster, place it onto the countertop.",
+      "Place a slice of bread in the toaster to toast it, then set it on the countertop."
+    ],
+    "task_goal": {
+      "isCooked_breadsliced": 1,
+      "on_breadsliced_countertop": 1
+    }
+  },
+  {
+    "env_id": 830,
+    "mode": "CookTask",
+    "instruction": [
+      "Use the coffee machine to brew coffee into a mug and then place the mug on the countertop.",
+      "Brew coffee into a mug using the coffee machine, then put it on the countertop.",
+      "Make a mug of coffee with the coffee machine and place it on the countertop.",
+      "Using the coffee machine, fill a mug with coffee and set it on the countertop."
+    ],
+    "task_goal": {
+      "fillLiquid_coffee_mug": 1,
+      "on_mug_countertop": 1
+    }
+  },
+  {
+    "env_id": 250,
+    "mode": "CookTask",
+    "instruction": [
+      "Use the coffee machine to brew coffee into a mug and then place the mug on the countertop.",
+      "Brew coffee into a mug with the coffee machine, then set the mug on the countertop.",
+      "Make a mug of coffee using the coffee machine and place it on the countertop.",
+      "Fill a mug with coffee from the coffee machine and put it on the countertop."
+    ],
+    "task_goal": {
+      "fillLiquid_coffee_mug": 1,
+      "on_mug_countertop": 1
+    }
+  },
+  {
+    "env_id": 539,
+    "mode": "CookTask",
+    "instruction": [
+      "Use the coffee machine to brew coffee into a mug and then place the mug on the countertop.",
+      "Brew coffee into a mug using the coffee machine, then set it down on the countertop.",
+      "Make a mug of coffee with the coffee machine and place it on the countertop.",
+      "Fill a mug with coffee from the coffee machine and put it on the countertop."
+    ],
+    "task_goal": {
+      "fillLiquid_coffee_mug": 1,
+      "on_mug_countertop": 1
+    }
+  },
+  {
+    "env_id": 444,
+    "mode": "CookTask",
+    "instruction": [
+      "Use the coffee machine to brew coffee into a mug and then place the mug on the countertop.",
+      "Brew coffee into a mug using the coffee machine, then set the mug on the countertop.",
+      "Make a mug of coffee with the coffee machine and place it on the countertop.",
+      "Using the coffee machine, fill a mug with coffee and then put it on the countertop."
+    ],
+    "task_goal": {
+      "fillLiquid_coffee_mug": 1,
+      "on_mug_countertop": 1
+    }
+  },
+  {
+    "env_id": 547,
+    "mode": "CookTask",
+    "instruction": [
+      "Cook a potato using a microwave and then place it on the countertop.",
+      "Use the microwave to cook a potato, then put it on the countertop.",
+      "Microwave a potato and afterwards place it on the countertop.",
+      "Cook a potato in the microwave and place the result on the countertop."
+    ],
+    "task_goal": {
+      "isCooked_potato": 1,
+      "on_potato_countertop": 1
+    }
+  },
+  {
+    "env_id": 364,
+    "mode": "CookTask",
+    "instruction": [
+      "Use the coffee machine to brew coffee into a mug and then place the mug on the countertop.",
+      "Brew coffee into a mug using the coffee machine, then set the mug on the countertop.",
+      "Make a mug of coffee with the coffee machine and place it on the countertop.",
+      "Fill a mug with coffee from the coffee machine and put it on the countertop."
+    ],
+    "task_goal": {
+      "fillLiquid_coffee_mug": 1,
+      "on_mug_countertop": 1
+    }
+  },
+  {
+    "env_id": 437,
+    "mode": "CookTask",
+    "instruction": [
+      "Use the coffee machine to brew coffee into a mug and then place the mug on the countertop.",
+      "Brew coffee into a mug using the coffee machine, then set it down on the countertop.",
+      "Make a mug of coffee with the coffee machine and place the mug on the countertop.",
+      "Using the coffee machine, fill a mug with coffee and then put the mug on the countertop."
+    ],
+    "task_goal": {
+      "fillLiquid_coffee_mug": 1,
+      "on_mug_countertop": 1
+    }
+  },
+  {
+    "env_id": 483,
+    "mode": "CookTask",
+    "instruction": [
+      "Use the coffee machine to brew coffee into a mug and then place the mug on the countertop.",
+      "Brew coffee into a mug using the coffee machine, then set the mug on the countertop.",
+      "With the coffee machine, make a mug of coffee and place it on the countertop.",
+      "Make coffee in a mug with the coffee machine and then put the mug on the countertop."
+    ],
+    "task_goal": {
+      "fillLiquid_coffee_mug": 1,
+      "on_mug_countertop": 1
+    }
+  },
+  {
+    "env_id": 805,
+    "mode": "CookTask",
+    "instruction": [
+      "Use the coffee machine to brew coffee into a mug and then place the mug on the countertop.",
+      "Brew coffee into a mug using the coffee machine, then put it on the countertop.",
+      "Make a mug of coffee with the coffee machine and place it on the countertop.",
+      "Using the coffee machine, fill a mug with coffee and set it on the countertop."
+    ],
+    "task_goal": {
+      "fillLiquid_coffee_mug": 1,
+      "on_mug_countertop": 1
+    }
+  }
+]

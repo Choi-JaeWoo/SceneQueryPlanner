@@ -1,0 +1,53 @@
+Your task is to: Position a cold bottle on the shelf.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a bedroom (1). Looking quickly around the room, you see armchair (1), bed (1), chair (1), dining table (1), drawer (1, 2, 3, 4, 5, 6), dresser (1), floor lamp (1), television (1).
+Think: To solve the task, I need to find and pick up bottle, find fridge, put down bottle in fridge briefly and pick up bottle, find shelf and put down bottle.
+OK.
+Think: First, I need to find and pick up bottle.
+OK.
+Query: find_objects({'label': 'bottle'})
+Info: 
+Think: I have not seen bottle yet. Now I need to check where to search. First, I will search kitchen 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'kitchen 1'})
+Info: cabinet 1, chair 2, countertop 1, dining table 2, fridge 1, garbage can 2, shelf (1, 2, 3), stool 1
+Think: In kitchen 1, the bottle is likely to appear in/on cabinet 1, chair 2, countertop 1, dining table 2, fridge 1, garbage can 2, shelf (1, 2, 3), stool 1. I can check each place one by one until I find bottle.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see cabinet (1), chair (2), countertop (1), dining table (2), fridge (1), garbage can (2), painting (2, 3, 4), shelf (1, 2, 3), shelving unit (1), stool (1), television (2).
+Act: go to cabinet 1
+You arrive at the cabinet (1). The cabinet (1) is closed. You see book (3), cabinet (1), fridge (1), painting (2, 3), shelf (1, 2, 3), shelving unit (1).
+Act: go to chair 2
+You arrive at the chair (2). You see book (2), bottle (1), chair (2), credit card (1), dining table (2), fork (1), kettle (1), mug (2), painting (2), pencil (1), plate (1), statue (2), vase (1).
+Act: go to bottle 1
+You arrive at the bottle (1). You see book (2), bottle (1), chair (2), credit card (1), dining table (2), fork (1), kettle (1), mug (2), pencil (1), plate (1), statue (2), vase (1).
+Act: pick up bottle 1
+You pick up bottle (1). You hold bottle (1).
+Think: Now, I need to find fridge 1.
+OK.
+Act: go to fridge 1
+You arrive at the fridge (1). The fridge (1) is closed. You see cabinet (1), fridge (1), painting (2), shelf (1, 2). You hold bottle (1).
+Think: Since fridge 1 is closed, I need to open it to put down bottle 1.
+OK.
+Act: open fridge 1
+You open fridge (1). You see cabinet (1), egg (1), fridge (1), lettuce (1), painting (2), shelf (1, 2). You hold bottle (1).
+Act: put down bottle 1
+You put bottle (1) in fridge (1).
+Think: To make bottle 1 cold, I need to briefly close fridge 1 and then open it again.
+OK.
+Act: close fridge 1
+You close fridge (1).
+Act: open fridge 1
+You open fridge (1). You see bottle (1), cabinet (1), egg (1), fridge (1), lettuce (1), painting (2), shelf (1, 2).
+Think: Now I need to pick up bottle 1 and find shelf.
+OK.
+Act: pick up bottle 1
+You pick up bottle (1). You hold bottle (1).
+Query: find_objects({'label': 'shelf'})
+Info: [{'name_id_nl': 'shelf 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'kitchen 1'}, {'name_id_nl': 'shelf 2', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'kitchen 1'}, {'name_id_nl': 'shelf 3', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'kitchen 1'}]
+Act: go to shelf 1
+You arrive at the shelf (1). You see book (3), cabinet (1), egg (1), fridge (1), garbage can (2), lettuce (1), painting (3), shelf (1, 2, 3), shelving unit (1). You hold bottle (1).
+Act: put down bottle 1
+You put bottle (1) in shelf (1).
+Think: Now I complete task.
+OK.
+Act: done

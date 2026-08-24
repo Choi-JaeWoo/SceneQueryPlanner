@@ -1,0 +1,16 @@
+Your task is to: Take a book and deposit it into the box.
+You arrive at the shelf (5). You see TV stand (1), book (3), candle (1), laptop (2), remote control (2), shelf (4, 5, 6, 7, 8, 9), television (1), tissue box (2). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- (bathroom 1): [faucet 1, plunger 1, (sink 1), (sink basin 1), (toilet 1), toilet paper 1]
+- (bathroom 2): [faucet 2, (garbage can 1), plunger 2, (sink 2), (sink basin 2), (toilet 2)]
+- (bathroom 3): [faucet 3, (garbage can 2), plunger 3, (sink 3), (sink basin 3), (toilet 3), (washing machine 1)]
+- (bathroom 4): [faucet 4, (garbage can 3), (laundry hamper 1), plunger 4, (sink 4), (sink basin 4), (toilet 4)]
+- bedroom 1: [statue 1, baseball bat 2, alarm clock 1, bed 1, bowl 1, cell phone 1, cell phone 2, cell phone 3, chair 1, chair 2, (chair 3), (chair 4), (dining table 1), drawer 2, drawer 6, drawer 5, drawer 4, drawer 3, (drawer 1), (dresser 1), house plant 3, laptop 1, pencil 1, pillow 1, remote control 1, tennis racket 1, tissue box 1, vase 1]
+- bedroom 2: [(bed 2), (chair 8), (chair 9), (chair 10), (chair 11), (dining table 4), (drawer 10), (drawer 9), (drawer 7), (drawer 17), (drawer 8), (drawer 11), (drawer 12), (drawer 13), (drawer 18), (drawer 15), (drawer 16), (drawer 14), (dresser 2), house plant 2, painting 3, painting 4]
+- (bedroom 3): [baseball bat 1, (bed 3), (box 2), (chair 13), (chair 12), (dining table 5), dog bed 1, (drawer 22), (drawer 21), (drawer 32), (drawer 20), (drawer 19), (drawer 31), (drawer 24), (drawer 23), (dresser 3), (side table 1), television 2]
+- (bedroom 4): [basket ball 1, (bed 4), (box 3), dog bed 2, (drawer 30), (drawer 29), (drawer 25), (drawer 26), (drawer 28), (drawer 27), (dresser 4), television 3]
+- (kitchen 1): [(cabinet 1), (chair 5), (chair 6), (chair 7), (countertop 1), (dining table 2), (fridge 1), garbage bag 1, house plant 1, (shelf 1), (shelf 2), (shelf 3), shelving unit 1]
+- living room 1: [painting 1, cart 1, newspaper 1, pillow 2, book 1, house plant 4, painting 2, pencil 3, pencil 2, plate 2, statue 3, book 3, box 1, candle 1, dining table 3, laptop 2, remote control 2, shelf 5, shelf 6, (shelf 7), (shelf 9), (shelf 8), shelf 4, (sofa 1), television 1, tissue box 2, (TV stand 1)]
+Your 5 previous actions were: go to shelf 6 (success), put down book 3 (fail), go to shelf 4 (success), put down book 3 (fail), go to shelf 5 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I arrive at shelf 5. I hold book 3. Now, I need to put down book 3.
+Act: put down book 3

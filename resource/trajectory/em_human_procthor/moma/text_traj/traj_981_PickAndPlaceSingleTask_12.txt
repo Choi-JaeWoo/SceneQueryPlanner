@@ -1,0 +1,8 @@
+Your task is to: Slice an apple and put it in the fridge.
+You arrive at the apple (1). You see apple (1), soap bottle (1), toaster (1), tomato (1). You hold knife (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- kitchen 1: [credit card 1, dish sponge 1, apple 1, cabinet 1, (countertop 1), (fridge 1), knife 1, painting 1, (shelf 2), (shelf 1), (shelf 3), shelving unit 1, soap bottle 1, spray bottle 1, toaster 1, tomato 1]
+- living room 1: [painting 2, (chair 1), (dining table 1), painting 3, (side table 2), (drawer 1), (side table 1), (chair 3), (sofa 1), (TV stand 1), (chair 2), (shelf 4), (box 1)]
+Your 5 previous actions were: go to cabinet 1 (success), go to knife 1 (success), pick up knife 1 (success), go to kitchen 1 (success), go to apple 1 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I arrive at apple 1. I hold knife 1. Now, I need to slice apple 1.
+Act: slice apple 1

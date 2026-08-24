@@ -1,0 +1,63 @@
+Your task is to: Transfer all items from the bed to the dining table.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a bedroom (1). Looking quickly around the room, you see armchair (1), basket ball (1), bed (1), chair (1, 2, 3, 4), dining table (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), floor lamp (1), painting (1), television (1).
+Think: To solve the task, I need to find bed and check what is on top of it. Then, I need to move everything on bed to dining table.
+OK.
+Think: First, I need to find bed.
+OK.
+Query: find_objects({'label': 'bed'})
+Info: [{'name_id_nl': 'bed 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'bedroom 1'}]
+Think: I find bed 1.
+OK.
+Act: go to bed 1
+You arrive at the bed (1). You see bed (1), box (1), cell phone (1), chair (2), credit card (1), desk lamp (1), drawer (1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), house plant (2), painting (1), pillow (1, 2), remote control (1), tissue box (1).
+Think: Now, I need to check what is on top of bed 1.
+OK.
+Query: get_edges_for_node({'node_id': 'bed 1', 'relation': 'ON'})
+Info: [('box 1', 'bed 1', 'ON'), ('pillow 2', 'bed 1', 'ON'), ('pillow 1', 'bed 1', 'ON'), ('remote control 1', 'bed 1', 'ON')]
+Think: Now, I need to move box 1, pillow 2, pillow 1, remote control 1 to dining table.
+OK.
+Act: go to box 1
+You arrive at the box (1). The box (1) is open. You see armchair (1), bed (1), box (1), pillow (1, 2), remote control (1).
+Act: pick up box 1
+You pick up box (1). You hold box (1).
+Think: Now, I need to find dining table.
+OK.
+Query: find_objects({'label': 'dining table'})
+Info: [{'name_id_nl': 'dining table 2', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'kitchen 1'}, {'name_id_nl': 'dining table 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'bedroom 1'}, {'name_id_nl': 'dining table 3', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}]
+Think: I find dining table 1.
+OK.
+Act: go to dining table 1
+You arrive at the dining table (1). You see cell phone (1, 2), chair (1, 2, 3), credit card (1), desk lamp (1), dining table (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), house plant (2), key chain (1), pen (1), remote control (2), statue (1, 2), tissue box (1). You hold box (1).
+Act: put down box 1
+You put box (1) in dining table (1).
+Act: go to pillow 2
+You arrive at the pillow (2). You see bed (1), cell phone (1), chair (2), credit card (1), desk lamp (1), drawer (1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), house plant (2), painting (1), pillow (1, 2), remote control (1), tissue box (1).
+Act: pick up pillow 2
+You pick up pillow (2). You hold pillow (2).
+Act: go to dining table 1
+You arrive at the dining table (1). You see box (1), cell phone (1, 2), chair (1, 2, 3), credit card (1), desk lamp (1), dining table (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), house plant (2), key chain (1), pen (1), remote control (2), statue (1, 2), tissue box (1). You hold pillow (2).
+Act: put down pillow 2
+You put pillow (2) in dining table (1).
+Act: go to pillow 1
+You arrive at the pillow (1). You see bed (1), cell phone (1), chair (2), credit card (1), desk lamp (1), drawer (1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), house plant (2), painting (1), pillow (1), remote control (1), tissue box (1).
+Act: pick up pillow 1
+You pick up pillow (1). You hold pillow (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see box (1), cell phone (1, 2), chair (1, 2, 3), credit card (1), desk lamp (1), dining table (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), house plant (2), key chain (1), pen (1), pillow (2), remote control (2), statue (1, 2), tissue box (1). You hold pillow (1).
+Act: put down pillow 1
+You put pillow (1) in dining table (1).
+Act: go to remote control 1
+You arrive at the remote control (1). You see bed (1), cell phone (1), chair (2), credit card (1), desk lamp (1), drawer (1, 2, 3, 5, 6, 7, 8, 9, 10, 11), dresser (1), house plant (2), key chain (1), painting (1), remote control (1), tissue box (1).
+Act: pick up remote control 1
+You pick up remote control (1). You hold remote control (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see box (1), cell phone (1, 2), chair (1, 2, 3), credit card (1), desk lamp (1), dining table (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), house plant (2), key chain (1), pen (1), pillow (1, 2), remote control (2), statue (1, 2), tissue box (1). You hold remote control (1).
+Act: put down remote control 1
+You put remote control (1) in dining table (1).
+Think: Now I need to check what's left on bed 1.
+OK.
+Query: get_edges_for_node({'node_id': 'bed 1', 'relation': 'ON'})
+Info: 
+Think: Now I complete the task.
+OK.
+Act: done

@@ -1,0 +1,53 @@
+Your task is to: Place the pencil in a box, then put the box at the location with the credit card.
+You are in the house, and there are 5 rooms: bathroom (1), bedroom (1, 2), kitchen (1), living room (1). You are in the middle of a bedroom (2). Looking quickly around the room, you see TV stand (3), armchair (1), basket ball (1), bed (2), box (1), cabinet (1, 2, 3, 4), drawer (7, 8, 9, 10), dresser (2), floor lamp (1), painting (2, 3, 4), shelf (8).
+Think: To solve the task, I need to find and pick up pencil, put it in box, pick up and place box at the location with credit card.
+OK.
+Think: First, I need to find and pick up pencil. The pencil is more likely to appear in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), dining table (1), shelf (1, 2, 3, 4, 5, 6).
+Think: In living room 1, the pencil is likely to appear in/on TV stand 1, dining table 1, shelf (1, 2, 3, 4, 5, 6). I can check each place one by one until I find pencil.
+OK.
+Act: go to TV stand 1
+You arrive at the TV stand (1). You see TV stand (1), bowl (1), box (2), candle (1, 2), house plant (2), shelf (1, 2, 3, 4, 5, 6), television (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see credit card (1), dining table (1), pencil (1), remote control (1), statue (1).
+Think: I find pencil 1. Now, I need to pick it up.
+OK.
+Act: go to pencil 1
+You arrive at the pencil (1). You see credit card (1), dining table (1), pencil (1), remote control (1), statue (1).
+Act: pick up pencil 1
+You pick up pencil (1). You hold pencil (1).
+Think: Now, I need to find box and put down pencil 1. I find box 2.
+OK.
+Act: go to box 2
+You arrive at the box (2). The box (2) is closed. You see TV stand (1), bowl (1), box (2), candle (1, 2), house plant (2), shelf (1, 2, 3, 4, 5, 6), television (1). You hold pencil (1).
+Think: Since box 2 is closed, I need to open it to put down pencil 1.
+OK.
+Act: open box 2
+You open box (2). You see TV stand (1), bowl (1), box (2), candle (1, 2), house plant (2), shelf (1, 2, 3, 4, 5, 6), television (1). You hold pencil (1).
+Act: put down pencil 1
+You put pencil (1) in box (2).
+Think: Now, I need to pick up box 2.
+OK.
+Act: pick up box 2
+You pick up box (2). You hold box (2).
+Think: Now, I need to find credit card and check the receptacle where credit card is located. The credit card is more likely to appear in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), dining table (1), pencil (1), shelf (1, 2, 3, 4, 5, 6). You hold box (2).
+Think: In living room 1, the credit card is likely to appear in/on TV stand 1, dining table 1, shelf (1, 2, 3, 4, 5, 6). I can check each place one by one until I find credit card.
+OK.
+Act: go to TV stand 1
+You arrive at the TV stand (1). You see TV stand (1), bowl (1), candle (1, 2), house plant (2), pencil (1), shelf (1, 2, 3, 4, 5, 6), television (1). You hold box (2).
+Act: go to dining table 1
+You arrive at the dining table (1). You see credit card (1), dining table (1), pencil (1), remote control (1), statue (1). You hold box (2).
+Think: I find credit card 1. Credit card 1 is on dining table 1. Now, I need to move to dining table 1 and put down box 2.
+OK.
+Act: go to dining table 1
+You arrive at the dining table (1). You see credit card (1), dining table (1), pencil (1), remote control (1), statue (1). You hold box (2).
+Act: put down box 2
+You put box (2) in dining table (1).
+Think: Now I complete the task.
+OK.
+Act: done

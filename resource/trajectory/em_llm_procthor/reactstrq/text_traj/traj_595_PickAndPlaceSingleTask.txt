@@ -1,0 +1,97 @@
+Your task is to: Pick up a pencil and put it in the box.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a bedroom (1). Looking quickly around the room, you see TV stand (1), bed (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), garbage can (1), painting (1), safe (1), shelf (4), vacuum cleaner (1).
+Think: To solve the task, I need to find and pick up pencil, find and open box, put down pencil in box.
+OK.
+Think: First, I need to find and pick up pencil.
+OK.
+Query: find_objects({'label': 'pencil'})
+Info: 
+Think: I have not seen pencil yet. Now I need to check where to search. First, I will search bedroom 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'bedroom 1'})
+Info: TV stand 1, bed 1, box 1, drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser 1, garbage can 1, safe 1, shelf 4
+Think: In bedroom 1, the pencil is likely to appear in/on TV stand 1, bed 1, box 1, drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser 1, garbage can 1, safe 1, shelf 4. I can check each place one by one until I find pencil.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see TV stand (1), bed (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), garbage can (1), painting (1), safe (1), shelf (4), vacuum cleaner (1).
+Act: go to TV stand 1
+You arrive at the TV stand (1). You see TV stand (1), box (1), drawer (1, 2, 3, 4, 5), pencil (1), remote control (1), safe (1), shelf (4), television (1), tissue box (1), vase (1), watch (1).
+Act: go to bed 1
+You arrive at the bed (1). You see butter knife (1), chair (1, 3), dining table (1), fridge (1), kettle (1), lettuce (2), painting (2), pan (1), pencil (2), plate (1), salt shaker (1).
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see TV stand (1), bed (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), garbage can (1), painting (1), safe (1), shelf (4), vacuum cleaner (1).
+Act: go to box 1
+You arrive at the box (1). The box (1) is closed. You see TV stand (1), box (1), drawer (1, 2, 3, 4, 5, 7, 8, 9, 10), dresser (1), laptop (1), pencil (1), remote control (1), safe (1), shelf (4), television (1), tissue box (1), vase (1), watch (1).
+Act: go to drawer 1
+You arrive at the drawer (1). The drawer (1) is closed. You see TV stand (1), box (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), laptop (1), painting (1), pencil (1), remote control (1), shelf (4), television (1), tissue box (1), vase (1), watch (1).
+Act: open drawer 1
+You open drawer (1). You see TV stand (1), box (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), laptop (1), painting (1), pencil (1), remote control (1), shelf (4), television (1), tissue box (1), vase (1), watch (1).
+Act: go to drawer 2
+You arrive at the drawer (2). The drawer (2) is closed. You see TV stand (1), box (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), laptop (1), painting (1), pencil (1), remote control (1), shelf (4), television (1), tissue box (1), vase (1), watch (1).
+Act: open drawer 2
+You open drawer (2). You see TV stand (1), box (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), laptop (1), painting (1), pencil (1), remote control (1), shelf (4), television (1), tissue box (1), vase (1), watch (1).
+Act: go to drawer 3
+You arrive at the drawer (3). The drawer (3) is closed. You see TV stand (1), box (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), laptop (1), painting (1), pencil (1), remote control (1), shelf (4), television (1), tissue box (1), vase (1), watch (1).
+Act: open drawer 3
+You open drawer (3). You see TV stand (1), box (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), laptop (1), painting (1), pencil (1), remote control (1), shelf (4), television (1), tissue box (1), vase (1), watch (1).
+Act: go to drawer 4
+You arrive at the drawer (4). The drawer (4) is closed. You see TV stand (1), box (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), laptop (1), painting (1), pencil (1), remote control (1), shelf (4), television (1), tissue box (1), vase (1), watch (1).
+Act: open drawer 4
+You open drawer (4). You see TV stand (1), box (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), laptop (1), painting (1), pencil (1), remote control (1), shelf (4), television (1), tissue box (1), vase (1), watch (1).
+Act: go to drawer 5
+You arrive at the drawer (5). The drawer (5) is closed. You see TV stand (1), box (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), laptop (1), painting (1), pencil (1), remote control (1), shelf (4), television (1), tissue box (1), vase (1), watch (1).
+Act: open drawer 5
+You open drawer (5). You see TV stand (1), box (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), laptop (1), painting (1), pencil (1), remote control (1), shelf (4), television (1), tissue box (1), vase (1), watch (1).
+Act: go to drawer 6
+You arrive at the drawer (6). The drawer (6) is closed. You see box (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), laptop (1), painting (1), remote control (1), television (1), tissue box (1), vase (1), watch (1).
+Act: open drawer 6
+You open drawer (6). You see box (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), laptop (1), painting (1), remote control (1), television (1), tissue box (1), vase (1), watch (1).
+Act: go to drawer 7
+You arrive at the drawer (7). The drawer (7) is closed. You see box (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), laptop (1), painting (1), remote control (1), television (1), tissue box (1), vase (1), watch (1).
+Act: open drawer 7
+You open drawer (7). You see box (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), laptop (1), painting (1), remote control (1), television (1), tissue box (1), vase (1), watch (1).
+Act: go to drawer 8
+You arrive at the drawer (8). The drawer (8) is closed. You see box (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), laptop (1), painting (1), remote control (1), television (1), tissue box (1), vase (1), watch (1).
+Act: open drawer 8
+You open drawer (8). You see box (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), laptop (1), painting (1), remote control (1), television (1), tissue box (1), vase (1), watch (1).
+Act: go to drawer 9
+You arrive at the drawer (9). The drawer (9) is closed. You see box (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), laptop (1), painting (1), remote control (1), television (1), tissue box (1), vase (1), watch (1).
+Act: open drawer 9
+You open drawer (9). You see box (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), laptop (1), painting (1), remote control (1), television (1), tissue box (1), vase (1), watch (1).
+Act: go to drawer 10
+You arrive at the drawer (10). The drawer (10) is closed. You see box (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), laptop (1), painting (1), remote control (1), television (1), tissue box (1), vase (1), watch (1).
+Act: open drawer 10
+You open drawer (10). You see box (1), credit card (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), laptop (1), painting (1), remote control (1), television (1), tissue box (1), vase (1), watch (1).
+Think: I need to check whether I see pencil.
+OK.
+Query: find_objects({'label': 'pencil'})
+Info: [{'name_id_nl': 'pencil 1', 'node_type': 'object', 'properties': ['pickupable'], 'states': []}, {'name_id_nl': 'pencil 2', 'node_type': 'object', 'properties': ['pickupable'], 'states': []}]
+Query: get_edges_for_node({'node_id': 'pencil 1'})
+Info: [('pencil 1', 'shelf 4', 'ON'), ('pencil 1', 'box 1', 'CLOSE'), ('pencil 1', 'drawer 1', 'CLOSE'), ('pencil 1', 'drawer 2', 'CLOSE'), ('pencil 1', 'drawer 3', 'CLOSE'), ('pencil 1', 'drawer 4', 'CLOSE'), ('pencil 1', 'drawer 5', 'CLOSE'), ('pencil 1', 'dresser 1', 'CLOSE'), ('pencil 1', 'remote control 1', 'CLOSE'), ('pencil 1', 'safe 1', 'CLOSE'), ('pencil 1', 'television 1', 'CLOSE'), ('pencil 1', 'tissue box 1', 'CLOSE'), ('pencil 1', 'TV stand 1', 'CLOSE'), ('pencil 1', 'vase 1', 'CLOSE'), ('pencil 1', 'watch 1', 'CLOSE'), ('pencil 1', 'bedroom 1', 'INSIDE'), ('box 1', 'pencil 1', 'CLOSE'), ('drawer 1', 'pencil 1', 'CLOSE'), ('drawer 2', 'pencil 1', 'CLOSE'), ('drawer 3', 'pencil 1', 'CLOSE'), ('drawer 4', 'pencil 1', 'CLOSE'), ('drawer 5', 'pencil 1', 'CLOSE'), ('dresser 1', 'pencil 1', 'CLOSE'), ('remote control 1', 'pencil 1', 'CLOSE'), ('safe 1', 'pencil 1', 'CLOSE'), ('television 1', 'pencil 1', 'CLOSE'), ('tissue box 1', 'pencil 1', 'CLOSE'), ('TV stand 1', 'pencil 1', 'CLOSE'), ('vase 1', 'pencil 1', 'CLOSE'), ('watch 1', 'pencil 1', 'CLOSE')]
+Query: get_edges_for_node({'node_id': 'pencil 2'})
+Info: [('pencil 2', 'dining table 1', 'ON'), ('pencil 2', 'butter knife 1', 'CLOSE'), ('pencil 2', 'chair 1', 'CLOSE'), ('pencil 2', 'chair 2', 'CLOSE'), ('pencil 2', 'chair 3', 'CLOSE'), ('pencil 2', 'kettle 1', 'CLOSE'), ('pencil 2', 'lettuce 2', 'CLOSE'), ('pencil 2', 'painting 2', 'CLOSE'), ('pencil 2', 'pan 1', 'CLOSE'), ('pencil 2', 'plate 1', 'CLOSE'), ('pencil 2', 'salt shaker 1', 'CLOSE'), ('pencil 2', 'kitchen 1', 'INSIDE'), ('butter knife 1', 'pencil 2', 'CLOSE'), ('chair 1', 'pencil 2', 'CLOSE'), ('chair 2', 'pencil 2', 'CLOSE'), ('chair 3', 'pencil 2', 'CLOSE'), ('kettle 1', 'pencil 2', 'CLOSE'), ('lettuce 2', 'pencil 2', 'CLOSE'), ('painting 2', 'pencil 2', 'CLOSE'), ('pan 1', 'pencil 2', 'CLOSE'), ('plate 1', 'pencil 2', 'CLOSE'), ('salt shaker 1', 'pencil 2', 'CLOSE')]
+Think: Pencil 1 is on shelf 4.
+OK.
+Act: go to shelf 4
+You arrive at the shelf (4). You see TV stand (1), box (1), drawer (1, 2, 3, 4, 5), dresser (1), pencil (1), remote control (1), safe (1), shelf (4), television (1), tissue box (1), vase (1), watch (1).
+Act: go to pencil 1
+You arrive at the pencil (1). You see TV stand (1), box (1), drawer (1, 2, 3, 4, 5), dresser (1), pencil (1), remote control (1), safe (1), shelf (4), television (1), tissue box (1), vase (1), watch (1).
+Act: pick up pencil 1
+You pick up pencil (1). You hold pencil (1).
+Think: Now, I need to find and open box.
+OK.
+Query: find_objects({'label': 'box'})
+Info: [{'name_id_nl': 'box 2', 'node_type': 'asset', 'properties': ['openable', 'pickupable'], 'states': [], 'room': 'living room 1'}, {'name_id_nl': 'box 1', 'node_type': 'asset', 'properties': ['openable', 'pickupable'], 'states': [], 'room': 'bedroom 1'}]
+Think: Box 1 is in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see TV stand (1), bed (1), credit card (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), garbage can (1), painting (1), safe (1), shelf (4), vacuum cleaner (1). You hold pencil (1).
+Act: go to box 1
+You arrive at the box (1). The box (1) is closed. You see TV stand (1), box (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), laptop (1), remote control (1), safe (1), shelf (4), television (1), tissue box (1), vase (1), watch (1). You hold pencil (1).
+Act: open box 1
+You open box (1). You see TV stand (1), box (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), laptop (1), remote control (1), safe (1), shelf (4), television (1), tissue box (1), vase (1), watch (1). You hold pencil (1).
+Act: put down pencil 1
+You put pencil (1) in box (1).
+Think: Now I complete the task.
+OK.
+Act: done

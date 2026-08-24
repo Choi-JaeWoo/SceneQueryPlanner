@@ -1,0 +1,7 @@
+Your task is to: Toggle off all candles and faucets that are currently on.
+You arrive at the faucet (1). You see faucet (1), garbage can (1), painting (1), sink (1), sink basin (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- bathroom 1: [painting 2, plunger 1, faucet 1, (garbage can 1), painting 1, (side table 1), (sink 1), (sink basin 1), (toilet 1)]
+Your 1 previous actions were: go to faucet 1 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I arrive at faucet 1. Now, I need to turn off faucet 1.
+Act: turn off faucet 1

@@ -1,0 +1,63 @@
+Your task is to: Place the dish sponge in the sink basin after you have cleaned it.
+You are in the house, and there are 5 rooms: bathroom (1), bedroom (1, 2), kitchen (1), living room (1). You are in the middle of a bathroom (1). Looking quickly around the room, you see garbage can (1), plunger (1), sink (1), sink basin (1), toilet (1).
+Think: To solve the task, I need to find and pick up dish sponge, put it in sink basin and turn on faucet, pick up and put down dish sponge in sink basin.
+OK.
+Think: First, I need to find and pick up dish sponge.
+OK.
+Query: find_objects({'label': 'dish sponge'})
+Info: 
+Think: I have not seen dish sponge yet. Now I need to check where to search. First, I will search kitchen 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'kitchen 1'})
+Info: chair (1, 2, 3), countertop 1, dining table 1
+Think: In kitchen 1, the dish sponge is likely to appear in/on chair (1, 2, 3), countertop 1, dining table 1. I can check each place one by one until I find dish sponge.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see chair (1, 2, 3), countertop (1), dining table (1), garbage bag (1).
+Act: go to chair 1
+You arrive at the chair (1). You see bottle (1), bread (1), cell phone (1), chair (1), coffee machine (1), cup (1), dining table (1), house plant (3), pepper shaker (1), pot (1), potato (1), salt shaker (1).
+Act: go to chair 2
+You arrive at the chair (2). You see cell phone (1), chair (2), coffee machine (1), dining table (1), house plant (3), pepper shaker (1), pot (1), potato (1).
+Act: go to chair 3
+You arrive at the chair (3). You see bottle (1), bread (1), cell phone (1), chair (3), coffee machine (1), cup (1), dining table (1), house plant (3), pepper shaker (1), pot (1), salt shaker (1).
+Act: go to countertop 1
+You arrive at the countertop (1). You see plunger (1).
+Act: go to dish sponge 1
+You arrive at the dish sponge (1). You see candle (1), dish sponge (1), paper towel roll (2), spray bottle (2), toilet (1), toilet paper (1).
+Act: pick up dish sponge 1
+You pick up dish sponge (1). You hold dish sponge (1).
+Think: Now, I need to find sink basin.
+OK.
+Query: find_objects({'label': 'sink basin'})
+Info: [{'name_id_nl': 'sink basin 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'bathroom 1'}]
+Think: Sink basin 1 is in bathroom 1.
+OK.
+Act: go to bathroom 1
+You move to the bathroom (1). Looking quickly around the room, you see garbage can (1), plunger (1), sink (1), sink basin (1), toilet (1). You hold dish sponge (1).
+Act: go to sink basin 1
+You arrive at the sink basin (1). You see faucet (1), sink (1), sink basin (1). You hold dish sponge (1).
+Act: put down dish sponge 1
+You put dish sponge (1) in sink basin (1).
+Think: Now, I need to turn on faucet 1 briefly and turn off to wash dish sponge 1.
+OK.
+Act: turn on faucet 1
+You turn on faucet (1).
+Act: turn off faucet 1
+You turn off faucet (1).
+Think: Now, I need to pick up dish sponge 1 and find sink basin.
+OK.
+Act: pick up dish sponge 1
+You pick up dish sponge (1). You hold dish sponge (1).
+Query: find_objects({'label': 'sink basin'})
+Info: [{'name_id_nl': 'sink basin 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'bathroom 1'}]
+Think: Sink basin 1 is in bathroom 1.
+OK.
+Act: go to bathroom 1
+You move to the bathroom (1). Looking quickly around the room, you see garbage can (1), plunger (1), sink (1), sink basin (1), toilet (1). You hold dish sponge (1).
+Act: go to sink basin 1
+You arrive at the sink basin (1). You see faucet (1), sink (1), sink basin (1). You hold dish sponge (1).
+Act: put down dish sponge 1
+You put dish sponge (1) in sink basin (1).
+Think: Now I complete the task.
+OK.
+Act: done

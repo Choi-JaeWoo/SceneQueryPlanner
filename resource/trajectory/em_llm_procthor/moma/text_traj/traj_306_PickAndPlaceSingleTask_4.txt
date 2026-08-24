@@ -1,0 +1,9 @@
+Your task is to: Pick up a newspaper and put it in the drawer.
+You arrive at the newspaper (1). You see cabinet (1), newspaper (1), shelf (1, 2, 3), shelving unit (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- (bedroom 1): [baseball bat 1, (bed 1), (drawer 3), (drawer 1), (drawer 2), (drawer 6), (drawer 5), (drawer 4), (dresser 1), (garbage can 1), painting 2, painting 1, television 1]
+- kitchen 1: [cell phone 2, (chair 1), (countertop 1), cup 2, (dining table 1), (fridge 1), garbage bag 1, house plant 1, painting 4, painting 3, plate 1, potato 1]
+- living room 1: [television 2, candle 1, remote control 1, (cabinet 1), (drawer 9), (drawer 8), (drawer 7), (dresser 2), newspaper 1, (shelf 1), (shelf 2), (shelf 3), shelving unit 1]
+Your 2 previous actions were: go to living room 1 (success), go to newspaper 1 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I arrive at newspaper 1. Now, I need to pick up newspaper 1.
+Act: pick up newspaper 1

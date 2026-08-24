@@ -1,0 +1,91 @@
+Your task is to: Robot, please go get 1 apple, 1 pound cake, 1 cupcake and 1 juice and put them in the fridge
+You are in the house, and there are 4 rooms: bathroom 1, bedroom 1, kitchen 1, living room 1. You are in the middle of a bathroom 1. Looking quickly around the room, you see bathroom cabinet 1, bathroom counter 1, faucet 1, sink 1, toilet 1, towel rack (1, 2, 3, 4), washing machine 1.
+Think: To solve the task, I need to find and open fridge, find and pick up apple, find fridge and put down apple, find and pick up pound cake, find fridge and put down pound cake, find and pick up cupcake, find fridge and put down cupcake, find and pick up juice, find fridge and put down juice.
+OK.
+Query: recall location of fridge
+You saw fridge 1 in kitchen 1.
+Think: Fridge 1 is in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen 1. Looking quickly around the room, you see bench (1, 2), bookshelf 2, faucet 2, fridge 1, kitchen cabinet (1, 2, 3, 4), kitchen counter 1, kitchen table 1, microwave oven 1, sink 2, stove 1, toaster 1, tv 1.
+Act: go to fridge 1
+You arrive at the fridge 1. The fridge 1 is closed. You see bell pepper (1, 2, 5, 6), bowl 3, clock 1, fridge 1, kitchen cabinet 4, kitchen counter 1, light switch 3, microwave oven 1, salmon 1.
+Act: open fridge 1
+You open fridge 1. You see bell pepper (2, 5, 6), clock 1, fridge 1, kitchen cabinet 4, kitchen counter 1, light switch 3, microwave oven 1, salmon 1
+Think: Now, I need to find and pick up apple.
+OK.
+Query: recall location of apple
+You have not seen apple before.
+Think: I have not seen apple yet. In kitchen 1, the apple is more likely to appear in/on bench (1, 2), fridge 1, kitchen cabinet (1, 2, 3, 4), kitchen counter 1, kitchen table 1, microwave oven 1, sink 2. I can check each place one by one until I find apple.
+OK.
+Act: go to bench 1
+You arrive at the bench 1. You see apple 2, bench 1, book 3, cutlery fork (1, 2, 3, 4), cutlery knife (1, 2, 4), juice 1, kitchen table 1, pie 1, plate (4, 5, 6, 7), water glass (2, 3, 4, 5), whipped cream 1.
+Think: I find apple 2. Now, I need to pick it up.
+OK.
+Act: pick up apple 2
+You pick up apple 2. You hold apple 2.
+Think: Now, I need to find fridge and put down apple.
+OK.
+Act: go to fridge 1
+You arrive at the fridge 1. The fridge 1 is open. You see apple 2, bell pepper (1, 2, 5, 6), bowl 3, clock 1, fridge 1, kitchen cabinet 4, kitchen counter 1, light switch 3, microwave oven 1, salmon 1. You hold apple 2.
+Act: put down apple 2
+You put apple 2 in fridge 1.
+Think: Now, I need to find and pick up pound cake.
+OK.
+Query: recall location of pound cake
+You have not seen pound cake before.
+Think: I have not seen pound cake yet. In kitchen 1, the pound cake is more likely to appear in/on bench (1, 2), fridge 1, kitchen cabinet (1, 2, 3, 4), kitchen counter 1, kitchen table 1, microwave oven 1, sink 2. I can check each place one by one until I find pound cake.
+OK.
+Act: go to bench 1
+You arrive at the bench 1. You see bench 1, book 3, cutlery fork (1, 2, 3, 4), cutlery knife (1, 2, 4), juice 1, kitchen table 1, pie 1, plate (4, 5, 6, 7), water glass (2, 3, 4, 5), whipped cream 1.
+Act: go to bench 2
+You arrive at the bench 2. You see apple 1, bench 2, book 3, cupcake (1, 2), cutlery fork (3, 4), cutlery knife (3, 4), kitchen table 1, pie 1, plate (6, 7), pound cake 2, water glass (2, 3, 4, 5), whipped cream 1.
+Think: I find pound cake 2. Now, I need to pick it up.
+OK.
+Act: pick up pound cake 2
+You pick up pound cake 2. You hold pound cake 2.
+Think: Now, I need to find fridge and put down pound cake.
+OK.
+Act: go to fridge 1
+You arrive at the fridge 1. The fridge 1 is open. You see apple 2, bell pepper (1, 2, 5, 6), bowl 3, clock 1, fridge 1, kitchen cabinet 4, kitchen counter 1, light switch 3, microwave oven 1, pound cake 2, salmon 1. You hold pound cake 2.
+Act: put down pound cake 2
+You put pound cake 2 in fridge 1.
+Think: Now, I need to find and pick up cupcake.
+OK.
+Query: recall location of cupcake
+You saw cupcake 2 near bench 2 in kitchen 1. You saw cupcake 1 near bench 2 in kitchen 1.
+Think: Cupcake 2 is near bench 2 in kitchen 1.
+OK.
+Act: go to bench 2
+You arrive at the bench 2. You see apple 1, bench 2, book 3, cupcake (1, 2), cutlery fork (3, 4), cutlery knife (3, 4), kitchen table 1, pie 1, plate (6, 7), water glass (2, 3, 4, 5), whipped cream 1.
+Think: I find cupcake 2. Now, I need to pick it up.
+OK.
+Act: pick up cupcake 2
+You pick up cupcake 2. You hold cupcake 2.
+Think: Now, I need to find fridge and put down cupcake.
+OK.
+Act: go to fridge 1
+You arrive at the fridge 1. The fridge 1 is open. You see apple 2, bell pepper (1, 2, 5, 6), bowl 3, clock 1, cupcake 2, fridge 1, kitchen cabinet 4, kitchen counter 1, light switch 3, microwave oven 1, pound cake 2, salmon 1. You hold cupcake 2.
+Act: put down cupcake 2
+You put cupcake 2 in fridge 1.
+Think: Now, I need to find and pick up juice.
+OK.
+Query: recall location of juice
+You saw juice 1 near bench 1 in kitchen 1.
+Think: Juice 1 is near bench 1 in kitchen 1.
+OK.
+Act: go to bench 1
+You arrive at the bench 1. You see bench 1, book 3, cutlery fork (1, 2, 3, 4), cutlery knife (1, 2, 4), juice 1, kitchen table 1, pie 1, plate (4, 5, 6, 7), water glass (2, 3, 4, 5), whipped cream 1.
+Think: I find juice 1. Now, I need to pick it up.
+OK.
+Act: pick up juice 1
+You pick up juice 1. You hold juice 1.
+Think: Now, I need to find fridge and put down juice.
+OK.
+Act: go to fridge 1
+You arrive at the fridge 1. The fridge 1 is open. You see apple 2, bell pepper (1, 2, 5, 6), bowl 3, clock 1, cupcake 2, fridge 1, juice 1, kitchen cabinet 4, kitchen counter 1, light switch 3, microwave oven 1, pound cake 2, salmon 1. You hold juice 1.
+Act: put down juice 1
+You put juice 1 in fridge 1.
+Think: Now I complete task.
+OK.
+Act: done

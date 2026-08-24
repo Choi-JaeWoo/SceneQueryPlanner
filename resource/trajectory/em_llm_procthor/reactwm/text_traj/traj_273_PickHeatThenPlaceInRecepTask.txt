@@ -1,0 +1,73 @@
+Your task is to: Warm the tomato and then put it on the countertop.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a bathroom (1). Looking quickly around the room, you see drawer (13), garbage can (2), plunger (1), side table (1), sink (1), sink basin (1), toilet (1).
+Think: To solve the task, I need to find and pick up tomato, find microwave and put down tomato, turn on microwave briefly and turn off microwave, pick up tomato and find countertop, put down tomato.
+OK.
+Think: First, I need to find and pick up tomato.
+OK.
+Query: recall location of tomato
+You have not seen tomato before.
+Think: I have not seen tomato yet. The tomato is more likely to appear in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see cabinet (1), chair (4), countertop (1), dining table (2), fridge (1), garbage can (3), painting (2, 3, 4), shelf (1, 2, 3), shelving unit (1).
+Think: In kitchen 1, the tomato is likely to appear in/on cabinet 1, countertop 1, dining table 2, fridge 1, shelf (1, 2, 3). I can check each place one by one until I find tomato.
+OK.
+Act: go to cabinet 1
+You arrive at the cabinet (1). The cabinet (1) is closed. You see book (2), cabinet (1), shelf (1, 2, 3), shelving unit (1).
+Act: open cabinet 1
+You open cabinet (1). You see book (2), cabinet (1), shelf (1, 2, 3), shelving unit (1), spray bottle (2).
+Act: go to countertop 1
+You arrive at the countertop (1). You see bread (1), countertop (1), fork (1, 2, 3), house plant (1), knife (1), lettuce (1), microwave (1), soap bottle (1), statue (2), tomato (2), wine bottle (1).
+Think: I find tomato 2. Now, I need to pick it up.
+OK.
+Act: go to tomato 2
+You arrive at the tomato (2). You see bread (1), countertop (1), fork (1, 2, 3), house plant (1), knife (1), lettuce (1), soap bottle (1), statue (2), tomato (2), wine bottle (1).
+Act: pick up tomato 2
+You pick up tomato (2). You hold tomato (2).
+Think: Now, I need to find microwave.
+OK.
+Query: recall location of microwave
+You saw microwave 1 near countertop 1 in kitchen 1.
+Think: Microwave 1 is near countertop 1 in kitchen 1.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see bread (1), countertop (1), fork (1, 2, 3), house plant (1), knife (1), lettuce (1), microwave (1), soap bottle (1), statue (2), wine bottle (1). You hold tomato (2).
+Act: go to microwave 1
+You arrive at the microwave (1). The microwave (1) is closed. You see countertop (1), fork (1), house plant (1), lettuce (1), microwave (1), soap bottle (1). You hold tomato (2).
+Think: Since microwave 1 is closed, I need to open it to put down tomato 2.
+OK.
+Act: open microwave 1
+You open microwave (1). You see countertop (1), fork (1), house plant (1), lettuce (1), microwave (1), soap bottle (1). You hold tomato (2).
+Act: put down tomato 2
+You put tomato (2) in microwave (1).
+Think: To warm tomato 2, I need to briefly close microwave 1, turn it on, and then turn it off.
+OK.
+Act: close microwave 1
+You close microwave (1).
+Act: turn on microwave 1
+You turn on microwave (1).
+Act: turn off microwave 1
+You turn off microwave (1).
+Think: Now I need to open microwave 1 and pick up tomato 2.
+OK.
+Act: open microwave 1
+You open microwave (1). You see countertop (1), fork (1), house plant (1), lettuce (1), microwave (1), soap bottle (1), tomato (2).
+Act: pick up tomato 2
+You pick up tomato (2). You hold tomato (2).
+Think: Now, I need to find countertop.
+OK.
+Query: recall location of countertop
+You saw countertop 1 in kitchen 1.
+Think: Countertop 1 is in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see cabinet (1), chair (4), countertop (1), dining table (2), fridge (1), garbage can (3), painting (2, 3, 4), shelf (1, 2, 3), shelving unit (1). You hold tomato (2).
+Act: go to countertop 1
+You arrive at the countertop (1). You see bread (1), countertop (1), fork (1, 2, 3), house plant (1), knife (1), lettuce (1), microwave (1), soap bottle (1), statue (2), wine bottle (1). You hold tomato (2).
+Think: Now I need to put down tomato 2.
+OK.
+Act: put down tomato 2
+You put tomato (2) in countertop (1).
+Think: Now I complete task.
+OK.
+Act: done

@@ -1,0 +1,769 @@
+[
+  {
+    "env_id": 469,
+    "mode": "PickHeatThenPlaceInRecepTask",
+    "instruction": [
+      "Heat a sliced bread and place it on the countertop.",
+      "Warm the sliced bread and then put it on the countertop.",
+      "Place the heated slice of bread on the countertop.",
+      "Put the sliced bread on the countertop after it has been heated."
+    ],
+    "task_goal": {
+      "temperatureHot_bread": 1,
+      "on_bread_countertop": 1,
+      "isSliced_bread": 1,
+      "on_temperatureHot_bread_countertop": 1
+    }
+  },
+  {
+    "env_id": 844,
+    "mode": "PickHeatThenPlaceInRecepTask",
+    "instruction": [
+      "Heat an egg and place it in the bowl.",
+      "Place a heated egg into the bowl.",
+      "Put the egg in the bowl once it's been heated.",
+      "After heating the egg, put it in the bowl."
+    ],
+    "task_goal": {
+      "temperatureHot_egg": 1,
+      "in_egg_bowl": 1,
+      "in_temperatureHot_egg_bowl": 1
+    }
+  },
+  {
+    "env_id": 284,
+    "mode": "PickHeatThenPlaceInRecepTask",
+    "instruction": [
+      "Heat a sliced apple and place it in the bowl.",
+      "Place a heated apple slice into the bowl.",
+      "Put the apple slice in the bowl after it has been heated.",
+      "The apple slice should be heated and then placed in the bowl."
+    ],
+    "task_goal": {
+      "temperatureHot_apple": 1,
+      "in_apple_bowl": 1,
+      "isSliced_apple": 1,
+      "in_temperatureHot_apple_bowl": 1
+    }
+  },
+  {
+    "env_id": 494,
+    "mode": "PickHeatThenPlaceInRecepTask",
+    "instruction": [
+      "Heat an egg and place it in the bowl.",
+      "Place a heated egg into the bowl.",
+      "After warming the egg, put it in the bowl.",
+      "Put the egg in the bowl once it has been heated."
+    ],
+    "task_goal": {
+      "temperatureHot_egg": 1,
+      "in_egg_bowl": 1,
+      "in_temperatureHot_egg_bowl": 1
+    }
+  },
+  {
+    "env_id": 34,
+    "mode": "PickHeatThenPlaceInRecepTask",
+    "instruction": [
+      "Heat a potato and place it in the bowl.",
+      "Place a potato slice into the bowl.",
+      "Put the potato in the bowl after it has been heated.",
+      "Warm the potato and then put it in the bowl."
+    ],
+    "task_goal": {
+      "temperatureHot_potato": 1,
+      "in_potato_bowl": 1,
+      "in_temperatureHot_potato_bowl": 1
+    }
+  },
+  {
+    "env_id": 547,
+    "mode": "PickHeatThenPlaceInRecepTask",
+    "instruction": [
+      "Heat a mug and place it on the countertop.",
+      "Place a heated mug onto the countertop.",
+      "Put the mug on the countertop once it's been heated.",
+      "Warm the mug and then put it on the countertop."
+    ],
+    "task_goal": {
+      "temperatureHot_mug": 1,
+      "on_mug_countertop": 1,
+      "on_temperatureHot_mug_countertop": 1
+    }
+  },
+  {
+    "env_id": 999,
+    "mode": "PickHeatThenPlaceInRecepTask",
+    "instruction": [
+      "Heat a bread and place it on the countertop.",
+      "Warm the bread and then put it on the countertop.",
+      "Place the heated bread on the countertop.",
+      "Put the bread on the countertop after it has been heated."
+    ],
+    "task_goal": {
+      "temperatureHot_bread": 1,
+      "on_bread_countertop": 1,
+      "on_temperatureHot_bread_countertop": 1
+    }
+  },
+  {
+    "env_id": 193,
+    "mode": "PickHeatThenPlaceInRecepTask",
+    "instruction": [
+      "Heat a mug and place it on the countertop.",
+      "Place the mug on the countertop after it has been heated.",
+      "Put a heated mug on the countertop.",
+      "Once the mug is warm, position it on the countertop."
+    ],
+    "task_goal": {
+      "temperatureHot_mug": 1,
+      "on_mug_countertop": 1,
+      "on_temperatureHot_mug_countertop": 1
+    }
+  },
+  {
+    "env_id": 824,
+    "mode": "PickHeatThenPlaceInRecepTask",
+    "instruction": [
+      "Heat a bread and place it on the countertop.",
+      "Warm the bread and then put it on the countertop.",
+      "The bread should be heated before being placed on the countertop.",
+      "Place the warmed bread on the countertop."
+    ],
+    "task_goal": {
+      "temperatureHot_bread": 1,
+      "on_bread_countertop": 1,
+      "on_temperatureHot_bread_countertop": 1
+    }
+  },
+  {
+    "env_id": 550,
+    "mode": "PickHeatThenPlaceInRecepTask",
+    "instruction": [
+      "Heat an egg and place it on the plate.",
+      "Once the egg is heated, put it on the plate.",
+      "Place a warmed egg on the plate.",
+      "Warm the egg and then put it on the plate."
+    ],
+    "task_goal": {
+      "temperatureHot_egg": 1,
+      "on_egg_plate": 1,
+      "on_temperatureHot_egg_plate": 1
+    }
+  },
+  {
+    "env_id": 480,
+    "mode": "PickHeatThenPlaceInRecepTask",
+    "instruction": [
+      "Heat a potato and place it on the countertop.",
+      "Place a heated potato on the countertop.",
+      "After warming the potato, put it on the countertop.",
+      "Warm a potato and then place it on the countertop."
+    ],
+    "task_goal": {
+      "temperatureHot_potato": 1,
+      "on_potato_countertop": 1,
+      "on_temperatureHot_potato_countertop": 1
+    }
+  },
+  {
+    "env_id": 937,
+    "mode": "PickHeatThenPlaceInRecepTask",
+    "instruction": [
+      "Heat an apple and place it on the dining table.",
+      "Place a heated apple onto the dining table.",
+      "Put the apple on the dining table after it has been heated.",
+      "Warm the apple and then put it on the dining table."
+    ],
+    "task_goal": {
+      "temperatureHot_apple": 1,
+      "in_apple_diningtable": 1,
+      "in_temperatureHot_apple_diningtable": 1
+    }
+  },
+  {
+    "env_id": 743,
+    "mode": "PickHeatThenPlaceInRecepTask",
+    "instruction": [
+      "Heat a bread and place it on the countertop.",
+      "Warm the bread and then put it on the countertop.",
+      "Place the heated bread on the countertop.",
+      "Put the bread on the countertop after it has been heated."
+    ],
+    "task_goal": {
+      "temperatureHot_bread": 1,
+      "on_bread_countertop": 1,
+      "on_temperatureHot_bread_countertop": 1
+    }
+  },
+  {
+    "env_id": 384,
+    "mode": "PickHeatThenPlaceInRecepTask",
+    "instruction": [
+      "Heat a bread and place it on the countertop.",
+      "Warm the bread and then put it on the countertop.",
+      "Place the heated bread on the countertop.",
+      "Put the bread on the countertop after it has been heated."
+    ],
+    "task_goal": {
+      "temperatureHot_bread": 1,
+      "on_bread_countertop": 1,
+      "on_temperatureHot_bread_countertop": 1
+    }
+  },
+  {
+    "env_id": 100,
+    "mode": "PickHeatThenPlaceInRecepTask",
+    "instruction": [
+      "Heat a sliced apple and place it in the bowl.",
+      "Place a heated slice of apple into the bowl.",
+      "Put the apple slice in the bowl after it has been heated.",
+      "Warm the sliced apple and then put it in the bowl."
+    ],
+    "task_goal": {
+      "temperatureHot_apple": 1,
+      "in_apple_bowl": 1,
+      "isSliced_apple": 1,
+      "in_temperatureHot_apple_bowl": 1
+    }
+  },
+  {
+    "env_id": 584,
+    "mode": "PickHeatThenPlaceInRecepTask",
+    "instruction": [
+      "Heat a sliced apple and place it in the bowl.",
+      "Put the sliced apple in the bowl after it's been heated.",
+      "Warm the sliced apple and then put it in the bowl.",
+      "Place a heated slice of apple into the bowl."
+    ],
+    "task_goal": {
+      "temperatureHot_apple": 1,
+      "in_apple_bowl": 1,
+      "isSliced_apple": 1,
+      "in_temperatureHot_apple_bowl": 1
+    }
+  },
+  {
+    "env_id": 261,
+    "mode": "PickHeatThenPlaceInRecepTask",
+    "instruction": [
+      "Heat a sliced bread and place it on the countertop.",
+      "Warm the bread slice and then put it on the countertop.",
+      "Place the heated bread slice on the countertop.",
+      "Put the bread slice on the countertop after you have heated it."
+    ],
+    "task_goal": {
+      "temperatureHot_bread": 1,
+      "on_bread_countertop": 1,
+      "isSliced_bread": 1,
+      "on_temperatureHot_bread_countertop": 1
+    }
+  },
+  {
+    "env_id": 39,
+    "mode": "PickHeatThenPlaceInRecepTask",
+    "instruction": [
+      "Heat a bread and place it on the countertop.",
+      "Warm the bread and then put it on the countertop.",
+      "Put the bread on the countertop once it has been heated.",
+      "The bread should be heated before being placed on the countertop."
+    ],
+    "task_goal": {
+      "temperatureHot_bread": 1,
+      "on_bread_countertop": 1,
+      "on_temperatureHot_bread_countertop": 1
+    }
+  },
+  {
+    "env_id": 181,
+    "mode": "PickHeatThenPlaceInRecepTask",
+    "instruction": [
+      "Heat a sliced apple and place it in the bowl.",
+      "Place a heated slice of apple into the bowl.",
+      "Put the sliced apple in the bowl after it has been heated.",
+      "Warm the sliced apple and then put it in the bowl."
+    ],
+    "task_goal": {
+      "temperatureHot_apple": 1,
+      "in_apple_bowl": 1,
+      "isSliced_apple": 1,
+      "in_temperatureHot_apple_bowl": 1
+    }
+  },
+  {
+    "env_id": 503,
+    "mode": "PickHeatThenPlaceInRecepTask",
+    "instruction": [
+      "Heat a bread and place it on the countertop.",
+      "Warm the bread and then put it on the countertop.",
+      "The bread should be heated before being placed on the countertop.",
+      "Place the heated bread on the countertop."
+    ],
+    "task_goal": {
+      "temperatureHot_bread": 1,
+      "on_bread_countertop": 1,
+      "on_temperatureHot_bread_countertop": 1
+    }
+  },
+  {
+    "env_id": 391,
+    "mode": "PickHeatThenPlaceInRecepTask",
+    "instruction": [
+      "Heat an apple and place it on the countertop.",
+      "Place a heated apple on the countertop.",
+      "Put the apple on the countertop after you've heated it.",
+      "Warm the apple and then put it on the countertop."
+    ],
+    "task_goal": {
+      "temperatureHot_apple": 1,
+      "on_apple_countertop": 1,
+      "on_temperatureHot_apple_countertop": 1
+    }
+  },
+  {
+    "env_id": 653,
+    "mode": "PickHeatThenPlaceInRecepTask",
+    "instruction": [
+      "Heat a bread and place it on the countertop.",
+      "Warm the bread and then put it on the countertop.",
+      "Place the heated bread on the countertop.",
+      "Put the bread on the countertop after it has been heated."
+    ],
+    "task_goal": {
+      "temperatureHot_bread": 1,
+      "on_bread_countertop": 1,
+      "on_temperatureHot_bread_countertop": 1
+    }
+  },
+  {
+    "env_id": 557,
+    "mode": "PickHeatThenPlaceInRecepTask",
+    "instruction": [
+      "Heat a slice of bread and place it on the countertop.",
+      "Warm the slice of bread and then set it on the countertop.",
+      "Put the bread slice on the countertop once it has been heated.",
+      "First, heat the bread slice, and afterwards place it on the countertop."
+    ],
+    "task_goal": {
+      "temperatureHot_bread": 1,
+      "on_bread_countertop": 1,
+      "isSliced_bread": 1,
+      "on_temperatureHot_bread_countertop": 1
+    }
+  },
+  {
+    "env_id": 236,
+    "mode": "PickHeatThenPlaceInRecepTask",
+    "instruction": [
+      "Heat a bread and place it on the countertop.",
+      "Warm the bread and then put it on the countertop.",
+      "Place the heated bread on the countertop.",
+      "Put the bread on the countertop after it has been heated."
+    ],
+    "task_goal": {
+      "temperatureHot_bread": 1,
+      "on_bread_countertop": 1,
+      "on_temperatureHot_bread_countertop": 1
+    }
+  },
+  {
+    "env_id": 291,
+    "mode": "PickHeatThenPlaceInRecepTask",
+    "instruction": [
+      "Heat a bread and place it on the countertop.",
+      "Warm the bread and then put it on the countertop.",
+      "Place the heated bread on the countertop.",
+      "Put the bread on the countertop after it has been heated."
+    ],
+    "task_goal": {
+      "temperatureHot_bread": 1,
+      "on_bread_countertop": 1,
+      "on_temperatureHot_bread_countertop": 1
+    }
+  },
+  {
+    "env_id": 861,
+    "mode": "PickHeatThenPlaceInRecepTask",
+    "instruction": [
+      "Heat a bread and place it on the countertop.",
+      "Warm the bread and then put it on the countertop.",
+      "Put the bread on the countertop once it has been heated.",
+      "Place the heated bread on the countertop."
+    ],
+    "task_goal": {
+      "temperatureHot_bread": 1,
+      "on_bread_countertop": 1,
+      "on_temperatureHot_bread_countertop": 1
+    }
+  },
+  {
+    "env_id": 514,
+    "mode": "PickHeatThenPlaceInRecepTask",
+    "instruction": [
+      "Heat a bread and place it on the countertop.",
+      "Warm the bread and then put it on the countertop.",
+      "Place the heated bread on the countertop.",
+      "Put the bread on the countertop after it has been heated."
+    ],
+    "task_goal": {
+      "temperatureHot_bread": 1,
+      "on_bread_countertop": 1,
+      "on_temperatureHot_bread_countertop": 1
+    }
+  },
+  {
+    "env_id": 772,
+    "mode": "PickHeatThenPlaceInRecepTask",
+    "instruction": [
+      "Heat a sliced bread and place it on the countertop.",
+      "Warm the sliced bread and then put it on the countertop.",
+      "Place the heated slice of bread on the countertop.",
+      "Put the sliced bread on the countertop after it has been heated."
+    ],
+    "task_goal": {
+      "temperatureHot_bread": 1,
+      "on_bread_countertop": 1,
+      "isSliced_bread": 1,
+      "on_temperatureHot_bread_countertop": 1
+    }
+  },
+  {
+    "env_id": 212,
+    "mode": "PickHeatThenPlaceInRecepTask",
+    "instruction": [
+      "Heat a bread and place it on the countertop.",
+      "Warm the bread and then put it on the countertop.",
+      "Place the heated bread on the countertop.",
+      "Put the bread on the countertop after you've heated it."
+    ],
+    "task_goal": {
+      "temperatureHot_bread": 1,
+      "on_bread_countertop": 1,
+      "on_temperatureHot_bread_countertop": 1
+    }
+  },
+  {
+    "env_id": 47,
+    "mode": "PickHeatThenPlaceInRecepTask",
+    "instruction": [
+      "Heat a sliced potato and place it on the countertop.",
+      "Place a heated potato slice on the countertop.",
+      "Put the potato slice on the countertop after it has been heated.",
+      "Once the potato slice is warm, place it on the countertop."
+    ],
+    "task_goal": {
+      "temperatureHot_potato": 1,
+      "on_potato_countertop": 1,
+      "isSliced_potato": 1,
+      "on_temperatureHot_potato_countertop": 1
+    }
+  },
+  {
+    "env_id": 150,
+    "mode": "PickHeatThenPlaceInRecepTask",
+    "instruction": [
+      "Heat an apple and place it on the countertop.",
+      "Place a heated apple on the countertop.",
+      "After warming the apple, put it on the countertop.",
+      "Put the apple on the countertop once it's been heated."
+    ],
+    "task_goal": {
+      "temperatureHot_apple": 1,
+      "on_apple_countertop": 1,
+      "on_temperatureHot_apple_countertop": 1
+    }
+  },
+  {
+    "env_id": 821,
+    "mode": "PickHeatThenPlaceInRecepTask",
+    "instruction": [
+      "Heat a potato slice and place it on the countertop.",
+      "Place a heated potato slice on the countertop.",
+      "Once the potato slice is warmed, put it on the countertop.",
+      "Warm the potato slice, then set it on the countertop."
+    ],
+    "task_goal": {
+      "temperatureHot_potato": 1,
+      "on_potato_countertop": 1,
+      "isSliced_potato": 1,
+      "on_temperatureHot_potato_countertop": 1
+    }
+  },
+  {
+    "env_id": 904,
+    "mode": "PickHeatThenPlaceInRecepTask",
+    "instruction": [
+      "Heat a bread and place it on the countertop.",
+      "Warm the bread and then put it on the countertop.",
+      "Place the warmed bread on the countertop.",
+      "Put the bread on the countertop after it has been heated."
+    ],
+    "task_goal": {
+      "temperatureHot_bread": 1,
+      "on_bread_countertop": 1,
+      "on_temperatureHot_bread_countertop": 1
+    }
+  },
+  {
+    "env_id": 906,
+    "mode": "PickHeatThenPlaceInRecepTask",
+    "instruction": [
+      "Heat a bread and place it on the countertop.",
+      "Warm the bread and then put it on the countertop.",
+      "Place the heated bread on the countertop.",
+      "Put the bread on the countertop after you've heated it."
+    ],
+    "task_goal": {
+      "temperatureHot_bread": 1,
+      "on_bread_countertop": 1,
+      "on_temperatureHot_bread_countertop": 1
+    }
+  },
+  {
+    "env_id": 756,
+    "mode": "PickHeatThenPlaceInRecepTask",
+    "instruction": [
+      "Heat a bread and place it on the countertop.",
+      "Warm the bread and then put it on the countertop.",
+      "Place the heated bread on the countertop.",
+      "Put the bread on the countertop after you have heated it."
+    ],
+    "task_goal": {
+      "temperatureHot_bread": 1,
+      "on_bread_countertop": 1,
+      "on_temperatureHot_bread_countertop": 1
+    }
+  },
+  {
+    "env_id": 905,
+    "mode": "PickHeatThenPlaceInRecepTask",
+    "instruction": [
+      "Heat a bowl and place it on the countertop.",
+      "Place the bowl on the countertop after it has been heated.",
+      "Put the heated bowl on the countertop.",
+      "Warm the bowl and then set it on the countertop."
+    ],
+    "task_goal": {
+      "temperatureHot_bowl": 1,
+      "on_bowl_countertop": 1,
+      "on_temperatureHot_bowl_countertop": 1
+    }
+  },
+  {
+    "env_id": 266,
+    "mode": "PickHeatThenPlaceInRecepTask",
+    "instruction": [
+      "Heat a bread and place it on the countertop.",
+      "Warm the bread and then put it on the countertop.",
+      "Place the heated bread on the countertop.",
+      "Put the bread on the countertop after you have heated it."
+    ],
+    "task_goal": {
+      "temperatureHot_bread": 1,
+      "on_bread_countertop": 1,
+      "on_temperatureHot_bread_countertop": 1
+    }
+  },
+  {
+    "env_id": 418,
+    "mode": "PickHeatThenPlaceInRecepTask",
+    "instruction": [
+      "Heat a bread and place it on the countertop.",
+      "Warm the bread and then put it on the countertop.",
+      "Place the heated bread on the countertop.",
+      "Put the bread on the countertop after you have heated it."
+    ],
+    "task_goal": {
+      "temperatureHot_bread": 1,
+      "on_bread_countertop": 1,
+      "on_temperatureHot_bread_countertop": 1
+    }
+  },
+  {
+    "env_id": 981,
+    "mode": "PickHeatThenPlaceInRecepTask",
+    "instruction": [
+      "Heat a bread and place it on the countertop.",
+      "Warm the bread and then set it on the countertop.",
+      "Put the bread on the countertop once it has been heated.",
+      "The bread should be heated before being placed on the countertop."
+    ],
+    "task_goal": {
+      "temperatureHot_bread": 1,
+      "on_bread_countertop": 1,
+      "on_temperatureHot_bread_countertop": 1
+    }
+  },
+  {
+    "env_id": 753,
+    "mode": "PickHeatThenPlaceInRecepTask",
+    "instruction": [
+      "Heat a sliced bread and place it on the plate.",
+      "Place the sliced bread on the plate after it has been heated.",
+      "Put the heated slice of bread on the plate.",
+      "Warm the sliced bread and then place it on the plate."
+    ],
+    "task_goal": {
+      "temperatureHot_bread": 1,
+      "on_bread_plate": 1,
+      "isSliced_bread": 1,
+      "on_temperatureHot_bread_plate": 1
+    }
+  },
+  {
+    "env_id": 386,
+    "mode": "PickHeatThenPlaceInRecepTask",
+    "instruction": [
+      "Heat a bread and place it on the countertop.",
+      "Warm the bread and then put it on the countertop.",
+      "Place the heated bread on the countertop.",
+      "Put the bread on the countertop after it has been heated."
+    ],
+    "task_goal": {
+      "temperatureHot_bread": 1,
+      "on_bread_countertop": 1,
+      "on_temperatureHot_bread_countertop": 1
+    }
+  },
+  {
+    "env_id": 994,
+    "mode": "PickHeatThenPlaceInRecepTask",
+    "instruction": [
+      "Heat a bread and place it on the countertop.",
+      "Warm the bread and then put it on the countertop.",
+      "Place the heated bread on the countertop.",
+      "Put the bread on the countertop after it has been heated."
+    ],
+    "task_goal": {
+      "temperatureHot_bread": 1,
+      "on_bread_countertop": 1,
+      "on_temperatureHot_bread_countertop": 1
+    }
+  },
+  {
+    "env_id": 990,
+    "mode": "PickHeatThenPlaceInRecepTask",
+    "instruction": [
+      "Heat a sliced apple and place it on the dining table.",
+      "Place a heated slice of apple onto the dining table.",
+      "Put the slice of apple on the dining table after it has been heated.",
+      "Warm the apple slice and then put it on the dining table."
+    ],
+    "task_goal": {
+      "temperatureHot_apple": 1,
+      "on_apple_diningtable": 1,
+      "isSliced_apple": 1,
+      "on_temperatureHot_apple_diningtable": 1
+    }
+  },
+  {
+    "env_id": 350,
+    "mode": "PickHeatThenPlaceInRecepTask",
+    "instruction": [
+      "Heat an egg and place it on the countertop.",
+      "Place a heated egg on the countertop.",
+      "Put the egg on the countertop after it has been heated.",
+      "Warm the egg and then put it on the countertop."
+    ],
+    "task_goal": {
+      "temperatureHot_egg": 1,
+      "on_egg_countertop": 1,
+      "on_temperatureHot_egg_countertop": 1
+    }
+  },
+  {
+    "env_id": 214,
+    "mode": "PickHeatThenPlaceInRecepTask",
+    "instruction": [
+      "Heat a sliced bread and place it on the countertop.",
+      "Warm the sliced bread and then put it on the countertop.",
+      "Place the heated bread slice on the countertop.",
+      "Put the sliced bread on the countertop after you have heated it."
+    ],
+    "task_goal": {
+      "temperatureHot_bread": 1,
+      "on_bread_countertop": 1,
+      "isSliced_bread": 1,
+      "on_temperatureHot_bread_countertop": 1
+    }
+  },
+  {
+    "env_id": 672,
+    "mode": "PickHeatThenPlaceInRecepTask",
+    "instruction": [
+      "Heat a sliced bread and place it on the countertop.",
+      "Warm the sliced bread and then put it on the countertop.",
+      "Place the heated slice of bread on the countertop.",
+      "Put the sliced bread on the countertop after it has been heated."
+    ],
+    "task_goal": {
+      "temperatureHot_bread": 1,
+      "on_bread_countertop": 1,
+      "isSliced_bread": 1,
+      "on_temperatureHot_bread_countertop": 1
+    }
+  },
+  {
+    "env_id": 746,
+    "mode": "PickHeatThenPlaceInRecepTask",
+    "instruction": [
+      "Heat a bread slice and place it on the countertop.",
+      "Warm the bread slice and then put it on the countertop.",
+      "Place the heated bread slice on the countertop.",
+      "Put the bread slice on the countertop after it has been heated."
+    ],
+    "task_goal": {
+      "temperatureHot_bread": 1,
+      "on_bread_countertop": 1,
+      "isSliced_bread": 1,
+      "on_temperatureHot_bread_countertop": 1
+    }
+  },
+  {
+    "env_id": 644,
+    "mode": "PickHeatThenPlaceInRecepTask",
+    "instruction": [
+      "Heat a slice of tomato and place it on the dining table.",
+      "Place a heated slice of tomato onto the dining table.",
+      "Put the sliced tomato on the dining table after it has been heated.",
+      "The sliced tomato should be heated and then placed on the dining table."
+    ],
+    "task_goal": {
+      "temperatureHot_tomato": 1,
+      "on_tomato_diningtable": 1,
+      "isSliced_tomato": 1,
+      "on_temperatureHot_tomato_diningtable": 1
+    }
+  },
+  {
+    "env_id": 997,
+    "mode": "PickHeatThenPlaceInRecepTask",
+    "instruction": [
+      "Heat a bread and place it on the countertop.",
+      "Warm the bread and then put it on the countertop.",
+      "Place the heated bread on the countertop.",
+      "Put the bread on the countertop after it has been heated."
+    ],
+    "task_goal": {
+      "temperatureHot_bread": 1,
+      "on_bread_countertop": 1,
+      "on_temperatureHot_bread_countertop": 1
+    }
+  },
+  {
+    "env_id": 522,
+    "mode": "PickHeatThenPlaceInRecepTask",
+    "instruction": [
+      "Heat a sliced bread and place it on the countertop.",
+      "Warm the sliced bread and then put it on the countertop.",
+      "Place the heated slice of bread on the countertop.",
+      "Put the sliced bread on the countertop after you have heated it."
+    ],
+    "task_goal": {
+      "temperatureHot_bread": 1,
+      "on_bread_countertop": 1,
+      "isSliced_bread": 1,
+      "on_temperatureHot_bread_countertop": 1
+    }
+  }
+]

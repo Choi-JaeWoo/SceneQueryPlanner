@@ -1,0 +1,2 @@
+Your task is to: Put the coffee pot, pancake, and pudding on the kitchen table.
+Max decision steps reached.

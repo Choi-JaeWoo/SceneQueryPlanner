@@ -1,0 +1,59 @@
+Your task is to: Put a plate with a spatula on it on the countertop.
+You are in the house, and there are 2 rooms: kitchen (1), living room (1). You are in the middle of a living room (1). Looking quickly around the room, you see TV stand (1), dining table (2), floor lamp (1), house plant (1), shelf (1, 2, 3, 4, 5, 6), sofa (1).
+Think: To solve the task, I need to find the plate and spatula, and put them on the countertop.
+OK.
+Think: First, I need to check if there is a plate and spatula.
+OK.
+Query: find_objects({'label': 'plate'})
+Info: 
+Query: find_objects({'label': 'spatula'})
+Info: 
+Think: I have not seen plate or spatula yet. Now I need to check where to search. First, I will search kitchen 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'kitchen 1'})
+Info: chair (1, 2, 3, 4, 5), countertop 1, dining table 1, fridge 1, garbage can 1
+Think: In kitchen 1, the plate or spatula is likely to appear in/on countertop 1, dining table 1. I can check each place one by one until I find plate or spatula.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see chair (1, 2, 3, 4, 5), countertop (1), dining table (1), fridge (1), garbage can (1), painting (1, 2).
+Act: go to countertop 1
+You arrive at the countertop (1). You see bowl (1), bread (1), butter knife (1), cell phone (2), chair (2, 3), countertop (1), cup (1), dish sponge (1), house plant (2), kettle (1), lettuce (1), spatula (1), wine bottle (1).
+Think: I see spatula 1.
+OK.
+Act: go to spatula 1
+You arrive at the spatula (1). You see bread (1), cell phone (2), cup (1), dish sponge (1), house plant (2), lettuce (1), spatula (1).
+Act: pick up spatula 1
+You pick up spatula (1). You hold spatula (1).
+Think: Now, I need to find plate.
+OK.
+Query: find_objects({'label': 'plate'})
+Info: [{'name_id_nl': 'plate 1', 'node_type': 'object', 'properties': ['breakable', 'pickupable'], 'states': []}]
+Query: get_edges_for_node({'node_id': 'plate 1'})
+Info: [('plate 1', 'dining table 1', 'ON'), ('plate 1', 'apple 1', 'CLOSE'), ('plate 1', 'cell phone 1', 'CLOSE'), ('plate 1', 'chair 3', 'CLOSE'), ('plate 1', 'chair 5', 'CLOSE'), ('plate 1', 'chair 4', 'CLOSE'), ('plate 1', 'chair 2', 'CLOSE'), ('plate 1', 'chair 1', 'CLOSE'), ('plate 1', 'pepper shaker 1', 'CLOSE'), ('plate 1', 'potato 1', 'CLOSE'), ('plate 1', 'tomato 1', 'CLOSE'), ('plate 1', 'kitchen 1', 'INSIDE'), ('apple 1', 'plate 1', 'CLOSE'), ('cell phone 1', 'plate 1', 'CLOSE'), ('chair 3', 'plate 1', 'CLOSE'), ('chair 5', 'plate 1', 'CLOSE'), ('chair 4', 'plate 1', 'CLOSE'), ('chair 2', 'plate 1', 'CLOSE'), ('chair 1', 'plate 1', 'CLOSE'), ('pepper shaker 1', 'plate 1', 'CLOSE'), ('potato 1', 'plate 1', 'CLOSE'), ('tomato 1', 'plate 1', 'CLOSE')]
+Think: Plate 1 is on dining table 1.
+OK.
+Act: go to dining table 1
+You arrive at the dining table (1). You see apple (1), bowl (1), cell phone (1), chair (1, 2, 3, 4, 5), cup (2), dining table (1), ladle (1), pepper shaker (1), plate (1), potato (1), tomato (1). You hold spatula (1).
+Act: go to plate 1
+You arrive at the plate (1). You see apple (1), bowl (1), cell phone (1), chair (1, 2, 3, 4, 5), cup (2), dining table (1), ladle (1), pepper shaker (1), plate (1), potato (1), tomato (1). You hold spatula (1).
+Act: pick up plate 1
+Pick up action failed: Robot is currently holding spatula
+Think: I need to put down spatula 1 to pick up plate 1.
+OK.
+Act: put down spatula 1
+You put spatula (1) in plate (1).
+Act: pick up plate 1
+You pick up plate (1). You hold plate (1).
+Think: Now, I need to find countertop.
+OK.
+Query: find_objects({'label': 'countertop'})
+Info: [{'name_id_nl': 'countertop 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'kitchen 1'}]
+Act: go to countertop 1
+You arrive at the countertop (1). You see bowl (1), bread (1), butter knife (1), cell phone (2), chair (2, 3), countertop (1), cup (1), dish sponge (1), house plant (2), kettle (1), lettuce (1), spatula (1), wine bottle (1). You hold plate (1).
+Think: Now, I need to put down plate 1.
+OK.
+Act: put down plate 1
+You put plate (1) on countertop (1).
+Think: Now I complete task.
+OK.
+Act: done

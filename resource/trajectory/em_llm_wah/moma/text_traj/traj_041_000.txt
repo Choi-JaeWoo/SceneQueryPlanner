@@ -1,0 +1,10 @@
+Your task is to: Put the coffee pot, pancake, and pudding on the kitchen table.
+You are in the house, and there are 4 rooms: bathroom 1, bedroom 1, kitchen 1, living room 1. You are in the middle of a bedroom 1. Looking quickly around the room, you see bed 1, bookshelf 2, cabinet 1, chair 1, coffee table 1, computer 1, desk 1, nightstand (1, 2), sofa 1. Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- (bathroom 1): [(bathroom cabinet 1), (bathroom counter 1), (faucet 1), (light switch 1), (sink 1), (toilet 1), (washing machine 1)]
+- bedroom 1: [(bed 1), book 3, (bookshelf 2), (cabinet 1), (chair 1), (coffee table 1), (computer 1), (desk 1), (light switch 3), mug 1, (nightstand 1), (nightstand 2), (sofa 1), water glass 2]
+- (kitchen 1): [(bench 1), (bench 2), (bookshelf 1), (dishwasher 1), (faucet 2), (fridge 1), (kitchen cabinet 1), (kitchen cabinet 2), (kitchen cabinet 3), (kitchen cabinet 4), (kitchen cabinet 5), (kitchen cabinet 6), (kitchen cabinet 7), (kitchen cabinet 8), (kitchen counter 1), (kitchen counter 2), (kitchen counter 3), (kitchen table 1), (light switch 2), (microwave oven 1), (oven tray 1), (plate 7), (sink 2), (slice of bread 1), (slice of bread 2), (stove 1), (toaster 1)]
+- (living room 1): [(bookshelf 3), (chair 2), (closet 1), (coffee table 2), (computer 2), (desk 2), (light switch 4), (sofa 2), (tv 1)]
+You have not taken any actions yet.
+What is the best next action to complete the task as efficiently as possible?
+Think: To solve the task, I need to find and pick up coffee pot first. I will search kitchen 1.
+Act: go to kitchen 1

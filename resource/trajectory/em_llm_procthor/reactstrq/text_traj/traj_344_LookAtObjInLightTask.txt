@@ -1,0 +1,65 @@
+Your task is to: Examine a pen by the light of the candle.
+You are in the house, and there are 2 rooms: kitchen (1), living room (1). You are in the middle of a kitchen (1). Looking quickly around the room, you see chair (1), countertop (1), dining table (1), fridge (1), house plant (1), painting (1), stool (1), television (1).
+Think: To solve the task, I need to find and pick up pen, find and turn on candle to examine pen.
+OK.
+Think: First, I need to find and pick up pen.
+OK.
+Query: find_objects({'label': 'pen'})
+Info: 
+Think: I have not seen pen yet. Now I need to check where to search. First, I will search kitchen 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'kitchen 1'})
+Info: chair 1, countertop 1, dining table 1, fridge 1, stool 1
+Think: In kitchen 1, the pen is likely to appear in/on chair 1, countertop 1, dining table 1, fridge 1, stool 1. I can check each place one by one until I find pen.
+OK.
+Act: go to chair 1
+You arrive at the chair (1). You see bottle (1), bowl (1), bread (1), chair (1), coffee machine (1), cup (1), dining table (1), mug (1), painting (1), pen (1), statue (1).
+Act: go to pen 1
+You arrive at the pen (1). You see bottle (1), bowl (1), bread (1), chair (1), coffee machine (1), cup (1), dining table (1), fridge (1), mug (1), painting (1), pen (1), statue (1).
+Act: pick up pen 1
+You pick up pen (1). You hold pen (1).
+Think: Now I need to find and turn on candle.
+OK.
+Query: find_objects({'label': 'candle'})
+Info: 
+Think: I have not seen candle yet. Now I need to check where to search. First, I will search kitchen 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'kitchen 1'})
+Info: chair 1, countertop 1, dining table 1, fridge 1, stool 1
+Think: In kitchen 1, the candle is likely to appear in/on chair 1, countertop 1, dining table 1, fridge 1, stool 1. I can check each place one by one until I find candle.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see apple (1), countertop (1), fork (1), knife (1, 2), ladle (1), pencil (1), plate (1), potato (1), soap bottle (1), television (1), vase (1), wine bottle (1). You hold pen (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see bottle (1), bowl (1), bread (1), chair (1), coffee machine (1), cup (1), dining table (1), mug (1), painting (1), statue (1). You hold pen (1).
+Act: go to fridge 1
+You arrive at the fridge (1). The fridge (1) is closed. You see bottle (1), bowl (1), coffee machine (1), cup (1), dining table (1), fridge (1), mug (1), stool (1). You hold pen (1).
+Act: open fridge 1
+You open fridge (1). You see bottle (1), bowl (1), coffee machine (1), cup (1), dining table (1), fridge (1), lettuce (1), mug (1), stool (1). You hold pen (1).
+Act: go to stool 1
+You arrive at the stool (1). You see cup (1), house plant (1), lettuce (1), mug (1), stool (1). You hold pen (1).
+Think: I need to check whether I see candle.
+OK.
+Query: find_objects({'label': 'candle'})
+Info: 
+Think: I need to check if there's any place in kitchen 1 that I haven't visited.
+OK.
+Query: get_child_node_names({'parent_node_id': 'kitchen 1', 'child_node_attrs': {'visited': False}})
+Info: 
+Think: In kitchen 1, I visit all places. Now I need to search living room 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'living room 1'})
+Info: TV stand 1, box (1, 2), chair (2, 3, 4, 5), dining table 2, drawer 1, shelf 1, side table 1
+Think: In living room 1, the candle is likely to appear in/on TV stand 1, box (1, 2), chair (2, 3, 4, 5), dining table 2, drawer 1, shelf 1, side table 1. I can check each place one by one until I find candle.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), box (1), cart (1), chair (2, 3, 4, 5), dining table (2), drawer (1), house plant (2), painting (2, 3, 4), shelf (1), side table (1). You hold pen (1).
+Act: go to TV stand 1
+You arrive at the TV stand (1). You see TV stand (1), bowl (2), box (2), candle (2), cart (1), laptop (1), painting (2), shelf (1), statue (2), television (2), tissue box (1). You hold pen (1).
+Act: go to candle 2
+You arrive at the candle (2). You see TV stand (1), bowl (2), box (2), candle (2), laptop (1), painting (2), shelf (1), statue (2), television (2), tissue box (1). You hold pen (1).
+Act: turn on candle 2
+You turn on candle (2). You hold pen (1).
+Think: Now I complete the task.
+OK.
+Act: done

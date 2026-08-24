@@ -1,0 +1,49 @@
+Your task is to: Transfer all items from the toilet to the dining table.
+You are in the house, and there are 2 rooms: bathroom (1), bedroom (1). You are in the middle of a bedroom (1). Looking quickly around the room, you see TV stand (1), baseball bat (1), basket ball (1), bed (1), chair (1, 2), dining table (1), drawer (1, 2, 3), dresser (1), house plant (1), painting (1, 2, 3), shelf (1).
+Think: To solve the task, I need to find toilet and check what is on top of it. Then, I need to move everything on toilet to dining table.
+OK.
+Think: First, I need to find toilet.
+OK.
+Query: recall location of toilet
+You saw toilet 1 in bathroom 1.
+Think: Toilet 1 is in bathroom 1.
+OK.
+Act: go to bathroom 1
+You move to the bathroom (1). Looking quickly around the room, you see garbage can (1), painting (4), plunger (1), toilet (1), toilet paper (1).
+Act: go to toilet 1
+You arrive at the toilet (1). The toilet (1) is closed. You see cloth (1), painting (4), plunger (1), toilet (1), toilet paper (1).
+Think: Now, I need to move cloth 1, toilet paper 1 to dining table.
+OK.
+Act: go to cloth 1
+You arrive at the cloth (1). You see cloth (1), painting (4), plunger (1), toilet (1), toilet paper (1).
+Act: pick up cloth 1
+You pick up cloth (1). You hold cloth (1).
+Think: Now, I need to find dining table.
+OK.
+Query: recall location of dining table
+You saw dining table 1 in bedroom 1.
+Think: Dining table 1 is in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see TV stand (1), baseball bat (1), basket ball (1), bed (1), chair (1, 2), dining table (1), drawer (1, 2, 3), dresser (1), house plant (1), painting (1, 2, 3), shelf (1). You hold cloth (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see baseball bat (1), book (2), box (1), chair (1, 2), dining table (1), laptop (1), pencil (1), pillow (2). You hold cloth (1).
+Act: put down cloth 1
+You put cloth (1) in dining table (1).
+Act: go to bathroom 1
+You move to the bathroom (1). Looking quickly around the room, you see garbage can (1), painting (4), plunger (1), toilet (1), toilet paper (1).
+Act: go to toilet 1
+You arrive at the toilet (1). The toilet (1) is closed. You see painting (4), plunger (1), toilet (1), toilet paper (1).
+Act: go to toilet paper 1
+You arrive at the toilet paper (1). You see painting (4), plunger (1), toilet (1), toilet paper (1).
+Act: pick up toilet paper 1
+You pick up toilet paper (1). You hold toilet paper (1).
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see TV stand (1), baseball bat (1), basket ball (1), bed (1), chair (1, 2), dining table (1), drawer (1, 2, 3), dresser (1), house plant (1), painting (1, 2, 3), shelf (1). You hold toilet paper (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see baseball bat (1), book (2), box (1), chair (1, 2), cloth (1), dining table (1), laptop (1), pencil (1), pillow (2). You hold toilet paper (1).
+Act: put down toilet paper 1
+You put toilet paper (1) in dining table (1).
+Think: Now I complete the task.
+OK.
+Act: done

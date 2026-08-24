@@ -1,0 +1,69 @@
+Your task is to: Place a baseball bat, a basket ball, and a teddy bear together on the countertop.
+You are in the house, and there are 3 rooms: bedroom (1), kitchen (1), living room (1). You are in the middle of a living room (1). Looking quickly around the room, you see TV stand (1), cart (1), dining table (1), house plant (2), shelf (1, 2, 3, 4, 5, 6), sofa (1).
+Think: To solve the task, I need to find and pick up baseball bat, then put it on countertop. And I need to find and pick up basket ball, then put it on countertop. And I need to find and pick up teddy bear, then put it on countertop.
+OK.
+Think: First, I need to find and pick up baseball bat. The baseball bat is more likely to appear in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see baseball bat (1), basket ball (1), bed (1), drawer (1, 2, 3, 4, 5, 6), dresser (1), vacuum cleaner (1).
+Think: In bedroom 1, the baseball bat is likely to appear in/on bed 1, drawer (1, 2, 3, 4, 5, 6), dresser 1. I can check each place one by one until I find baseball bat.
+OK.
+Act: go to bed 1
+You arrive at the bed (1). You see baseball bat (1), basket ball (1), bed (1), drawer (1, 2, 3, 4, 5, 6), dresser (1), laptop (1), mug (1), pillow (1), teddy bear (1), watch (1).
+Think: I find baseball bat 1. Now, I need to pick it up.
+OK.
+Act: go to baseball bat 1
+You arrive at the baseball bat (1). You see baseball bat (1), basket ball (1), drawer (1, 2, 3, 4, 5, 6), dresser (1), mug (1), teddy bear (1), watch (1).
+Act: pick up baseball bat 1
+You pick up baseball bat (1). You hold baseball bat (1).
+Think: Now, I need to find countertop and put down baseball bat 1. The countertop is more likely to appear in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see countertop (1), fridge (1), garbage bag (1), house plant (1), painting (1, 2, 3, 4). You hold baseball bat (1).
+Act: go to countertop 1
+You arrive at the countertop (1). You see bottle (1), bowl (1), butter knife (1), coffee machine (1), countertop (1), fridge (1), knife (1), lettuce (2), painting (1), soap bottle (1), spatula (1), spoon (1), toaster (1). You hold baseball bat (1).
+Act: put down baseball bat 1
+You put baseball bat (1) in countertop (1).
+Think: Now, I need to find and pick up basket ball.
+OK.
+Think: I find basket ball 1. Now, I need to pick it up.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see basket ball (1), bed (1), drawer (1, 2, 3, 4, 5, 6), dresser (1), vacuum cleaner (1).
+Act: go to bed 1
+You arrive at the bed (1). You see basket ball (1), bed (1), drawer (1, 2, 3, 4, 5, 6), dresser (1), laptop (1), mug (1), pillow (1), teddy bear (1), watch (1).
+Act: go to basket ball 1
+You arrive at the basket ball (1). You see basket ball (1), drawer (2, 3, 4), teddy bear (1).
+Act: pick up basket ball 1
+You pick up basket ball (1). You hold basket ball (1).
+Think: Now, I need to find countertop and put down basket ball 1. The countertop is more likely to appear in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see countertop (1), fridge (1), garbage bag (1), house plant (1), painting (1, 2, 3, 4). You hold basket ball (1).
+Act: go to countertop 1
+You arrive at the countertop (1). You see baseball bat (1), bottle (1), bowl (1), butter knife (1), coffee machine (1), countertop (1), fridge (1), knife (1), lettuce (2), painting (1), soap bottle (1), spatula (1), spoon (1), toaster (1). You hold basket ball (1).
+Act: put down basket ball 1
+You put basket ball (1) in countertop (1).
+Think: Now, I need to find and pick up teddy bear.
+OK.
+Think: I find teddy bear 1. Now, I need to pick it up.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see bed (1), drawer (1, 2, 3, 4, 5, 6), dresser (1), vacuum cleaner (1).
+Act: go to bed 1
+You arrive at the bed (1). You see bed (1), drawer (1, 2, 3, 4, 5, 6), dresser (1), laptop (1), mug (1), pillow (1), teddy bear (1), watch (1).
+Act: go to teddy bear 1
+You arrive at the teddy bear (1). You see bed (1), drawer (1, 2, 3, 4, 5, 6), dresser (1), laptop (1), mug (1), teddy bear (1), watch (1).
+Act: pick up teddy bear 1
+You pick up teddy bear (1). You hold teddy bear (1).
+Think: Now, I need to find countertop and put down teddy bear 1. The countertop is more likely to appear in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see countertop (1), fridge (1), garbage bag (1), house plant (1), painting (1, 2, 3, 4). You hold teddy bear (1).
+Act: go to countertop 1
+You arrive at the countertop (1). You see baseball bat (1), basket ball (1), bottle (1), bowl (1), butter knife (1), coffee machine (1), countertop (1), fridge (1), knife (1), lettuce (2), painting (1), soap bottle (1), spatula (1), spoon (1), toaster (1). You hold teddy bear (1).
+Act: put down teddy bear 1
+You put teddy bear (1) in countertop (1).
+Think: Now I complete the task.
+OK.
+Act: done

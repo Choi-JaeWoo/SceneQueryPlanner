@@ -1,0 +1,79 @@
+Your task is to: Take a book and set it on the countertop.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a bedroom (1). Looking quickly around the room, you see TV stand (1), bed (1), box (1), chair (1, 2), dining table (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), shelf (1, 2, 3, 4, 5, 6), sofa (1).
+Think: To solve the task, I need to find and pick up book, then put it on countertop.
+OK.
+Think: First, I need to find and pick up book.
+OK.
+Query: find_objects({'label': 'book'})
+Info: 
+Think: I have not seen book yet. Now I need to check where to search. First, I will search living room 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'living room 1'})
+Info: TV stand 2, dining table 3, shelf (7, 8, 9, 10, 11, 12), sofa 2
+Think: In living room 1, the book is likely to appear in/on TV stand 2, dining table 3, shelf (7, 8, 9, 10, 11, 12), sofa 2. I can check each place one by one until I find book.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (2), cart (1), dining table (3), shelf (7, 8, 9, 10, 11, 12), sofa (2).
+Act: go to TV stand 2
+You arrive at the TV stand (2). You see TV stand (2), bowl (3), laptop (2), shelf (7, 8, 9, 10, 11, 12), television (2), watch (1).
+Act: go to dining table 3
+You arrive at the dining table (3). You see candle (1), dining table (3), remote control (1).
+Act: go to shelf 7
+You arrive at the shelf (7). You see TV stand (2), bowl (3), laptop (2), shelf (7, 8, 9, 10, 11, 12), television (2), watch (1).
+Act: go to shelf 8
+You arrive at the shelf (8). You see TV stand (2), bowl (3), laptop (2), shelf (7, 8, 9, 10, 11, 12), television (2), watch (1).
+Act: go to shelf 9
+You arrive at the shelf (9). You see TV stand (2), bowl (3), laptop (2), shelf (7, 8, 9, 10, 11, 12), television (2), watch (1).
+Act: go to shelf 10
+You arrive at the shelf (10). You see TV stand (2), bowl (3), laptop (2), shelf (7, 8, 9, 10, 11, 12), television (2), watch (1).
+Act: go to shelf 11
+You arrive at the shelf (11). You see TV stand (2), bowl (3), laptop (2), shelf (7, 8, 9, 10, 11, 12), television (2), watch (1).
+Act: go to shelf 12
+You arrive at the shelf (12). You see TV stand (2), bowl (3), laptop (2), shelf (7, 8, 9, 10, 11, 12), television (2), watch (1).
+Act: go to sofa 2
+You arrive at the sofa (2). You see cart (1), cell phone (3), newspaper (1), pillow (2), sofa (2).
+Think: I need to check whether I see book.
+OK.
+Query: find_objects({'label': 'book'})
+Info: 
+Think: There is no book in living room 1. I need to move to kitchen 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'kitchen 1'})
+Info: chair 3, countertop 1, dining table 2, fridge 1
+Think: In kitchen 1, the book is likely to appear in/on chair 3, countertop 1, dining table 2, fridge 1. I can check each place one by one until I find book.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see chair (3), countertop (1), dining table (2), fridge (1), garbage bag (1), painting (4).
+Act: go to chair 3
+You arrive at the chair (3). You see apple (1), book (4), bowl (2), bread (1, 2), chair (3), dining table (2), fork (1, 2), ladle (1), lettuce (1), pan (1), pot (1), statue (4, 5), vase (1).
+Act: go to countertop 1
+You arrive at the countertop (1). You see bottle (1), bread (1), cell phone (2), countertop (1), fork (1), house plant (2), knife (1), pan (1), pepper shaker (1), salt shaker (1), soap bottle (1), spoon (1), spray bottle (1).
+Act: go to dining table 2
+You arrive at the dining table (2). You see apple (1), book (4), bowl (2), bread (2), chair (3), dining table (2), fork (2), ladle (1), lettuce (1), pot (1), statue (4, 5), vase (1).
+Act: go to fridge 1
+You arrive at the fridge (1). The fridge (1) is closed. You see fridge (1).
+Act: open fridge 1
+You open fridge (1). You see egg (1), fridge (1), lettuce (2).
+Think: I need to check whether I see book.
+OK.
+Query: find_objects({'label': 'book'})
+Info: [{'name_id_nl': 'book 4', 'node_type': 'object', 'properties': ['openable', 'pickupable'], 'states': []}]
+Query: get_edges_for_node({'node_id': 'book 4'})
+Info: [('book 4', 'fork 1', 'CLOSE'), ('book 4', 'pan 1', 'CLOSE'), ('book 4', 'dining table 2', 'ON'), ('book 4', 'apple 1', 'CLOSE'), ('book 4', 'bowl 2', 'CLOSE'), ('book 4', 'bread 2', 'CLOSE'), ('book 4', 'chair 3', 'CLOSE'), ('book 4', 'fork 2', 'CLOSE'), ('book 4', 'ladle 1', 'CLOSE'), ('book 4', 'lettuce 1', 'CLOSE'), ('book 4', 'pot 1', 'CLOSE'), ('book 4', 'statue 5', 'CLOSE'), ('book 4', 'statue 4', 'CLOSE'), ('book 4', 'vase 1', 'CLOSE'), ('book 4', 'kitchen 1', 'INSIDE'), ('fork 1', 'book 4', 'CLOSE'), ('pan 1', 'book 4', 'CLOSE'), ('apple 1', 'book 4', 'CLOSE'), ('bowl 2', 'book 4', 'CLOSE'), ('bread 2', 'book 4', 'CLOSE'), ('chair 3', 'book 4', 'CLOSE'), ('fork 2', 'book 4', 'CLOSE'), ('ladle 1', 'book 4', 'CLOSE'), ('lettuce 1', 'book 4', 'CLOSE'), ('pot 1', 'book 4', 'CLOSE'), ('statue 5', 'book 4', 'CLOSE'), ('statue 4', 'book 4', 'CLOSE'), ('vase 1', 'book 4', 'CLOSE')]
+Think: Book 4 is on dining table 2 in kitchen 1.
+OK.
+Act: go to dining table 2
+You arrive at the dining table (2). You see apple (1), book (4), bowl (2), bread (2), chair (3), dining table (2), fork (2), ladle (1), lettuce (1), pot (1), statue (4, 5), vase (1).
+Act: go to book 4
+You arrive at the book (4). The book (4) is closed. You see apple (1), book (4), bowl (2), bread (1, 2), chair (3), dining table (2), fork (1, 2), ladle (1), lettuce (1), pan (1), pot (1), statue (4, 5), vase (1).
+Act: pick up book 4
+You pick up book (4). You hold book (4).
+Think: Now, I need to find countertop and put down book 4.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see bottle (1), bread (1), cell phone (2), countertop (1), fork (1), house plant (2), knife (1), pan (1), pepper shaker (1), salt shaker (1), soap bottle (1), spoon (1), spray bottle (1). You hold book (4).
+Act: put down book 4
+You put book (4) in countertop (1).
+Think: Now I complete the task.
+OK.
+Act: done

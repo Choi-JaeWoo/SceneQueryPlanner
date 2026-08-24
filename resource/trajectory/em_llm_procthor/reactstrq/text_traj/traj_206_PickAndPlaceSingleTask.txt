@@ -1,0 +1,33 @@
+Your task is to: Place a book on the armchair.
+You are in the house, and there are 3 rooms: bedroom (1), kitchen (1), living room (1). You are in the middle of a bedroom (1). Looking quickly around the room, you see armchair (1), bed (1, 2), chair (1, 2), desk (1), dining table (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), floor lamp (1), shelf (1, 2), side table (1), television (1).
+Think: To solve the task, I need to find book and check where it is. Then, I need to move it to armchair.
+OK.
+Think: First, I need to find book.
+OK.
+Query: find_objects({'label': 'book'})
+Info: [{'name_id_nl': 'book 5', 'node_type': 'object', 'properties': ['openable', 'pickupable'], 'states': []}]
+Query: get_edges_for_node({'node_id': 'book 5'})
+Info: [('book 5', 'bedroom 1', 'INSIDE'), ('book 5', 'bed 2', 'ON'), ('book 5', 'television 1', 'CLOSE'), ('book 5', 'user 1', 'CLOSE'), ('television 1', 'book 5', 'CLOSE'), ('user 1', 'book 5', 'CLOSE')]
+Think: Book 5 is on bed 2 in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see armchair (1), bed (1, 2), chair (1, 2), desk (1), dining table (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), floor lamp (1), shelf (1, 2), side table (1), television (1).
+Act: go to bed 2
+You arrive at the bed (2). You see armchair (1), bed (2), book (5), cell phone (1), laptop (1).
+Act: go to book 5
+You arrive at the book (5). The book (5) is closed. You see armchair (1), bed (2), book (5), cell phone (1), laptop (1).
+Act: pick up book 5
+You pick up book (5). You hold book (5).
+Think: Now, I need to find armchair and put down book 5.
+OK.
+Query: find_objects({'label': 'armchair'})
+Info: [{'name_id_nl': 'armchair 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'bedroom 1'}, {'name_id_nl': 'armchair 2', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}]
+Think: I find armchair 1 and armchair 2.
+OK.
+Act: go to armchair 1
+You arrive at the armchair (1). You see armchair (1), bed (2), cell phone (1), floor lamp (1), laptop (1). You hold book (5).
+Act: put down book 5
+You put book (5) in armchair (1).
+Think: Now I complete the task.
+OK.
+Act: done

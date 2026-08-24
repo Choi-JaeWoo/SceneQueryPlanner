@@ -1,0 +1,81 @@
+Your task is to: Remove all items from the countertop and put them on the dining table.
+You are in the house, and there are 1 rooms: kitchen (1). You are in the middle of a kitchen (1). Looking quickly around the room, you see chair (1, 2), countertop (1), dining table (1), fridge (1), house plant (1), painting (1), stool (1).
+Think: To solve the task, I need to find countertop and check what is on top of it. Then, I need to move everything on countertop to dining table.
+OK.
+Think: First, I need to find countertop.
+OK.
+Query: recall location of countertop
+You saw countertop 1 in kitchen 1.
+Think: Countertop 1 is in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see chair (1, 2), countertop (1), dining table (1), fridge (1), house plant (1), painting (1), stool (1).
+Act: go to countertop 1
+You arrive at the countertop (1). You see bottle (2), bread (1), chair (1), countertop (1), dish sponge (1), mug (1), pencil (2), potato (1), spatula (1).
+Think: Now, I need to move bottle (2), bread (1), dish sponge (1), mug (1), pencil (2), potato (1), spatula (1) to dining table.
+OK.
+Act: go to bottle 2
+You arrive at the bottle (2). You see bottle (2), bread (1), chair (1), countertop (1), dish sponge (1), mug (1), pencil (2), potato (1), spatula (1).
+Act: pick up bottle 2
+You pick up bottle (2). You hold bottle (2).
+Think: Now, I need to find dining table.
+OK.
+Query: recall location of dining table
+You saw dining table 1 in kitchen 1.
+Think: Dining table 1 is in kitchen 1.
+OK.
+Act: go to dining table 1
+You arrive at the dining table (1). You see bottle (1), butter knife (1), chair (1, 2), dining table (1), pan (1), pencil (1), spoon (1), spray bottle (1). You hold bottle (2).
+Act: put down bottle 2
+You put bottle (2) in dining table (1).
+Act: go to bread 1
+You arrive at the bread (1). You see bread (1).
+Act: pick up bread 1
+You pick up bread (1). You hold bread (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see bottle (1, 2), butter knife (1), chair (1, 2), dining table (1), pan (1), pencil (1), spoon (1), spray bottle (1). You hold bread (1).
+Act: put down bread 1
+You put bread (1) in dining table (1).
+Act: go to dish sponge 1
+You arrive at the dish sponge (1). You see butter knife (1), chair (1), countertop (1), dish sponge (1), mug (1), pan (1), pencil (2), potato (1), spatula (1), spray bottle (1).
+Act: pick up dish sponge 1
+You pick up dish sponge (1). You hold dish sponge (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see bottle (1, 2), bread (1), butter knife (1), chair (1, 2), dining table (1), pan (1), pencil (1), spoon (1), spray bottle (1). You hold dish sponge (1).
+Act: put down dish sponge 1
+You put dish sponge (1) in dining table (1).
+Act: go to mug 1
+You arrive at the mug (1). You see bottle (2), chair (1), countertop (1), mug (1), pencil (2), potato (1), spatula (1).
+Act: pick up mug 1
+You pick up mug (1). You hold mug (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see bottle (1, 2), bread (1), butter knife (1), chair (1, 2), dining table (1), dish sponge (1), pan (1), pencil (1), spoon (1), spray bottle (1). You hold mug (1).
+Act: put down mug 1
+You put mug (1) in dining table (1).
+Act: go to pencil 2
+You arrive at the pencil (2). You see bottle (2), butter knife (1), chair (1), countertop (1), dining table (1), pan (1), pencil (2), potato (1), spatula (1), spray bottle (1).
+Act: pick up pencil 2
+You pick up pencil (2). You hold pencil (2).
+Act: go to dining table 1
+You arrive at the dining table (1). You see bottle (1, 2), bread (1), butter knife (1), chair (1, 2), dining table (1), dish sponge (1), mug (1), pan (1), pencil (1), spoon (1), spray bottle (1). You hold pencil (2).
+Act: put down pencil 2
+You put pencil (2) in dining table (1).
+Act: go to potato 1
+You arrive at the potato (1). You see butter knife (1), chair (1), countertop (1), pan (1), potato (1), spatula (1), spray bottle (1).
+Act: pick up potato 1
+You pick up potato (1). You hold potato (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see bottle (1, 2), bread (1), butter knife (1), chair (1, 2), dining table (1), dish sponge (1), mug (1), pan (1), pencil (1, 2), spoon (1), spray bottle (1). You hold potato (1).
+Act: put down potato 1
+You put potato (1) in dining table (1).
+Act: go to spatula 1
+You arrive at the spatula (1). You see bottle (2), chair (1), countertop (1), spatula (1).
+Act: pick up spatula 1
+You pick up spatula (1). You hold spatula (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see bottle (1, 2), bread (1), butter knife (1), chair (1, 2), dining table (1), dish sponge (1), mug (1), pan (1), pencil (1, 2), potato (1), spoon (1), spray bottle (1). You hold spatula (1).
+Act: put down spatula 1
+You put spatula (1) in dining table (1).
+Think: Now I complete the task.
+OK.
+Act: done

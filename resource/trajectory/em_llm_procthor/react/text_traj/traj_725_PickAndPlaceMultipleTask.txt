@@ -1,0 +1,41 @@
+Your task is to: Gather a pencil and a book, then set them on the diningtable.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a bathroom (1). Looking quickly around the room, you see garbage can (1), plunger (1), sink (1), sink basin (1), toilet (1), washing machine (1).
+Think: To solve the task, I need to find and pick up pencil, then put it on diningtable. And I need to find and pick up book, then put it on diningtable.
+OK.
+Think: First, I need to find and pick up pencil. The pencil is more likely to appear in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), dining table (1), dog bed (2), floor lamp (1), house plant (2), shelf (4), sofa (1).
+Think: In living room 1, the pencil is likely to appear in/on TV stand 1, dining table 1, shelf 4. I can check each place one by one until I find pencil.
+OK.
+Act: go to TV stand 1
+You arrive at the TV stand (1). You see TV stand (1), book (1), box (3), dog bed (2), pencil (1, 2), shelf (4), sofa (1), television (1).
+Think: I find pencil 1. Now, I need to pick it up.
+OK.
+Act: go to pencil 1
+You arrive at the pencil (1). You see TV stand (1), book (1), box (3), dog bed (2), floor lamp (1), pencil (1, 2), shelf (4), sofa (1), television (1).
+Act: pick up pencil 1
+You pick up pencil (1). You hold pencil (1).
+Think: Now, I need to find diningtable and put down pencil 1.
+OK.
+Act: go to dining table 1
+You arrive at the dining table (1). You see bowl (1), box (2), dining table (1), dog bed (2), laptop (1), newspaper (1), plate (2). You hold pencil (1).
+Act: put down pencil 1
+You put pencil (1) in dining table (1).
+Think: Now, I need to find and pick up book.
+OK.
+Think: I find book 1. Now, I need to pick it up.
+OK.
+Act: go to book 1
+You arrive at the book (1). The book (1) is closed. You see TV stand (1), book (1), box (3), dog bed (2), floor lamp (1), pencil (2), shelf (4), sofa (1), television (1).
+Act: pick up book 1
+You pick up book (1). You hold book (1).
+Think: Now, I need to find diningtable and put down book 1.
+OK.
+Act: go to dining table 1
+You arrive at the dining table (1). You see bowl (1), box (2), dining table (1), dog bed (2), laptop (1), newspaper (1), pencil (1), plate (2). You hold book (1).
+Act: put down book 1
+You put book (1) in dining table (1).
+Think: Now I complete the task.
+OK.
+Act: done

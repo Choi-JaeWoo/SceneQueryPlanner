@@ -1,0 +1,8 @@
+Your task is to: Put the plunger away in the cabinet.
+You arrive at the sink basin (1). You see faucet (1), painting (3), sink (1), sink basin (1), soap bottle (1), toilet (1), toilet paper (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- bathroom 1: [painting 4, plunger 1, faucet 1, garbage can 2, painting 3, sink 1, sink basin 1, soap bottle 1, toilet 1, toilet paper 1]
+- (bedroom 1): [(bed 1), (cabinet 4), (cabinet 3), (cabinet 1), (cabinet 2), (chair 1), (desk 1), (drawer 3), (drawer 4), (drawer 1), (drawer 2), (dresser 1), (garbage can 1), painting 2, painting 1]
+Your 5 previous actions were: go to garbage can 2 (success), put down plunger 1 (success), go to bathroom 1 (success), go to painting 3 (success), go to sink basin 1 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I arrive at sink basin 1. I see plunger 1. Now, I need to pick up plunger 1.
+Act: pick up plunger 1

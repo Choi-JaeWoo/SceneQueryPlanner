@@ -1,0 +1,105 @@
+Your task is to: Clean the spoon and place it on the shelf.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a living room (1). Looking quickly around the room, you see TV stand (1), dining table (3), drawer (14, 15), shelf (8, 9, 10, 11, 12, 13), side table (3), sofa (1).
+Think: To solve the task, I need to find and pick up spoon, put it in sink basin and turn on faucet, pick up and put down spoon on shelf.
+OK.
+Think: First, I need to find and pick up spoon.
+OK.
+Query: recall location of spoon
+You have not seen spoon before.
+Think: I have not seen spoon yet. The spoon is more likely to appear in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see cabinet (1), chair (7), countertop (1), dining table (2), fridge (1), shelf (5, 6, 7), shelving unit (1), television (1).
+Think: In kitchen 1, the spoon is likely to appear in/on cabinet 1, chair 7, countertop 1, dining table 2, shelf (5, 6, 7), shelving unit 1. I can check each place one by one until I find spoon.
+OK.
+Act: go to cabinet 1
+You arrive at the cabinet (1). The cabinet (1) is closed. You see bottle (1), bowl (2), butter knife (1), cabinet (1), cell phone (1), chair (7), fridge (1), pen (2, 3), shelf (5, 6, 7), shelving unit (1), soap bottle (1), spatula (1), spray bottle (2).
+Act: open cabinet 1
+You open cabinet (1). You see bottle (1), bowl (2), butter knife (1), cabinet (1), cell phone (1), chair (7), fridge (1), pen (2, 3), shelf (5, 6, 7), shelving unit (1), soap bottle (1), spatula (1), spray bottle (2), statue (1).
+Act: go to chair 7
+You arrive at the chair (7). You see apple (1), chair (7), cup (1, 2), dining table (2), pen (3), pencil (6), plate (1), spoon (1), television (1).
+Think: I find spoon 1. Now, I need to pick it up.
+OK.
+Act: go to spoon 1
+You arrive at the spoon (1). You see apple (1), chair (7), cup (1, 2), dining table (2), pen (3), pencil (6), plate (1), spoon (1), television (1).
+Act: pick up spoon 1
+You pick up spoon (1). You hold spoon (1).
+Think: Now, I need to find sink basin.
+OK.
+Query: recall location of sink basin
+You saw sink basin 1 in bathroom 1.
+Think: Sink basin 1 is in bathroom 1.
+OK.
+Act: go to bathroom 1
+You move to the bathroom (1). Looking quickly around the room, you see drawer (11, 12, 13), painting (4), plunger (1), side table (1, 2), sink (1), sink basin (1), toilet (1). You hold spoon (1).
+Act: go to sink basin 1
+You arrive at the sink basin (1). You see faucet (1), sink (1), sink basin (1). You hold spoon (1).
+Think: Now, I need to put down spoon 1.
+OK.
+Act: put down spoon 1
+You put spoon (1) in sink basin (1).
+Think: Now, I need to turn on faucet 1 briefly and turn off to wash spoon 1.
+OK.
+Act: turn on faucet 1
+You turn on faucet (1).
+Act: turn off faucet 1
+You turn off faucet (1).
+Think: Now, I need to pick up spoon 1 and find shelf.
+OK.
+Act: pick up spoon 1
+You pick up spoon (1). You hold spoon (1).
+Query: recall location of shelf
+You saw shelf 12 in living room 1. You saw shelf 11 in living room 1. You saw shelf 10 in living room 1. You saw shelf 9 in living room 1. You saw shelf 8 in living room 1. You saw shelf 7 in kitchen 1. You saw shelf 4 in bedroom 1. You saw shelf 5 in kitchen 1. You saw shelf 1 in bedroom 1. You saw shelf 2 in bedroom 1. You saw shelf 3 in bedroom 1. You saw shelf 13 in living room 1. You saw shelf 6 in kitchen 1.
+Think: Shelf 12 is in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), dining table (3), drawer (14, 15), shelf (8, 9, 10, 11, 12, 13), side table (3), sofa (1). You hold spoon (1).
+Act: go to shelf 12
+You arrive at the shelf (12). You see TV stand (1), drawer (14, 15), pen (4), pencil (7), shelf (8, 9, 10, 11, 12, 13), side table (3), television (2). You hold spoon (1).
+Think: Now, I need to put down spoon 1.
+OK.
+Act: put down spoon 1
+Put action failed: There is no valid space to place the object in the target receptacle.
+Think: I cannot put down spoon 1 in shelf 12. I need to find another shelf.
+OK.
+Act: go to shelf 11
+You arrive at the shelf (11). You see TV stand (1), drawer (14, 15), pen (4), pencil (7), shelf (8, 9, 10, 11, 12, 13), side table (3), television (2). You hold spoon (1).
+Think: Now, I need to put down spoon 1.
+OK.
+Act: put down spoon 1
+Put action failed: There is no valid space to place the object in the target receptacle.
+Think: I cannot put down spoon 1 in shelf 11. I need to find another shelf.
+OK.
+Act: go to shelf 10
+You arrive at the shelf (10). You see TV stand (1), drawer (14, 15), pen (4), pencil (7), pillow (2), shelf (8, 9, 10, 11, 12, 13), side table (3), sofa (1), television (2). You hold spoon (1).
+Think: Now, I need to put down spoon 1.
+OK.
+Act: put down spoon 1
+Put action failed: There is no valid space to place the object in the target receptacle.
+Think: I cannot put down spoon 1 in shelf 10. I need to find another shelf.
+OK.
+Act: go to shelf 9
+You arrive at the shelf (9). You see TV stand (1), drawer (14, 15), pen (4), pencil (7), pillow (2), shelf (8, 9, 10, 11, 12, 13), side table (3), sofa (1), television (2). You hold spoon (1).
+Think: Now, I need to put down spoon 1.
+OK.
+Act: put down spoon 1
+Put action failed: There is no valid space to place the object in the target receptacle.
+Think: I cannot put down spoon 1 in shelf 9. I need to find another shelf.
+OK.
+Act: go to shelf 8
+You arrive at the shelf (8). You see TV stand (1), pencil (7), pillow (2), plate (2), shelf (8, 9, 10, 11, 12, 13), sofa (1), television (2). You hold spoon (1).
+Think: Now, I need to put down spoon 1.
+OK.
+Act: put down spoon 1
+Put action failed: There is no valid space to place the object in the target receptacle.
+Think: I cannot put down spoon 1 in shelf 8. I need to find another shelf.
+OK.
+Act: go to shelf 13
+You arrive at the shelf (13). You see TV stand (1), drawer (14, 15), pen (4), pencil (7), shelf (8, 9, 10, 11, 12, 13), side table (3), television (2). You hold spoon (1).
+Think: Now, I need to put down spoon 1.
+OK.
+Act: put down spoon 1
+You put spoon (1) in shelf (13).
+Think: Now I complete the task.
+OK.
+Act: done

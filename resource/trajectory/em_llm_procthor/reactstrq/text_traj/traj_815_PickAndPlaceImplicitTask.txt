@@ -1,0 +1,69 @@
+Your task is to: Transfer everything from the countertop to the dining table.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a bedroom (1). Looking quickly around the room, you see basket ball (1), bed (1), chair (1, 2, 3, 4, 5), dining table (1), drawer (1, 2, 3), dresser (1).
+Think: To solve the task, I need to find countertop and check what is on top of it. Then, I need to move everything on countertop to dining table.
+OK.
+Think: First, I need to find countertop.
+OK.
+Query: find_objects({'label': 'countertop'})
+Info: [{'name_id_nl': 'countertop 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'kitchen 1'}]
+Think: I find countertop 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see cabinet (1), chair (6, 7, 8), countertop (1), dining table (2), fridge (1), garbage can (2), painting (1, 2), shelf (1, 2, 3), shelving unit (1), stool (1).
+Act: go to countertop 1
+You arrive at the countertop (1). You see butter knife (1), countertop (1), painting (2), pepper shaker (1), soap bottle (1), spray bottle (1).
+Think: Now, I need to check what is on top of countertop 1.
+OK.
+Query: get_edges_for_node({'node_id': 'countertop 1', 'relation': 'ON'})
+Info: [('butter knife 1', 'countertop 1', 'ON'), ('pepper shaker 1', 'countertop 1', 'ON'), ('soap bottle 1', 'countertop 1', 'ON'), ('spray bottle 1', 'countertop 1', 'ON')]
+Think: Now, I need to move butter knife 1, pepper shaker 1, soap bottle 1, spray bottle 1 to dining table.
+OK.
+Act: go to butter knife 1
+You arrive at the butter knife (1). You see butter knife (1), countertop (1), painting (2), pepper shaker (1), soap bottle (1), spray bottle (1).
+Act: pick up butter knife 1
+You pick up butter knife (1). You hold butter knife (1).
+Think: Now, I need to find dining table.
+OK.
+Query: find_objects({'label': 'dining table'})
+Info: [{'name_id_nl': 'dining table 3', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}, {'name_id_nl': 'dining table 2', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'kitchen 1'}, {'name_id_nl': 'dining table 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'bedroom 1'}]
+Think: I find dining table 3.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see cart (1), chair (9, 10, 11), dining table (3), house plant (1), painting (3, 4), sofa (1). You hold butter knife (1).
+Act: go to dining table 3
+You arrive at the dining table (3). You see book (2), bowl (2), cart (1), chair (9, 10, 11), desk lamp (1), dining table (3), laptop (2), plate (1). You hold butter knife (1).
+Act: put down butter knife 1
+You put butter knife (1) in dining table (3).
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see cabinet (1), chair (6, 7, 8), countertop (1), dining table (2), fridge (1), garbage can (2), painting (1, 2), shelf (1, 2, 3), shelving unit (1), stool (1).
+Act: go to pepper shaker 1
+You arrive at the pepper shaker (1). You see countertop (1), painting (2), pepper shaker (1), soap bottle (1), spray bottle (1).
+Act: pick up pepper shaker 1
+You pick up pepper shaker (1). You hold pepper shaker (1).
+Act: go to dining table 2
+You arrive at the dining table (2). You see book (1), bowl (1), chair (6, 8), dining table (2), pencil (1), pot (1), toaster (1). You hold pepper shaker (1).
+Act: put down pepper shaker 1
+You put pepper shaker (1) in dining table (2).
+Act: go to soap bottle 1
+You arrive at the soap bottle (1). You see cabinet (1), countertop (1), painting (2), soap bottle (1), spray bottle (1).
+Act: pick up soap bottle 1
+You pick up soap bottle (1). You hold soap bottle (1).
+Act: go to dining table 2
+You arrive at the dining table (2). You see book (1), bowl (1), chair (6, 8), dining table (2), pencil (1), pepper shaker (1), pot (1), toaster (1). You hold soap bottle (1).
+Act: put down soap bottle 1
+You put soap bottle (1) in dining table (2).
+Act: go to spray bottle 1
+You arrive at the spray bottle (1). You see countertop (1), painting (2), spray bottle (1).
+Act: pick up spray bottle 1
+You pick up spray bottle (1). You hold spray bottle (1).
+Act: go to dining table 2
+You arrive at the dining table (2). You see book (1), bowl (1), chair (6, 8), dining table (2), pencil (1), pepper shaker (1), pot (1), soap bottle (1), toaster (1). You hold spray bottle (1).
+Act: put down spray bottle 1
+You put spray bottle (1) in dining table (2).
+Think: Now I need to check what's left on countertop 1.
+OK.
+Query: get_edges_for_node({'node_id': 'countertop 1', 'relation': 'ON'})
+Info: 
+Think: Now I complete the task.
+OK.
+Act: done

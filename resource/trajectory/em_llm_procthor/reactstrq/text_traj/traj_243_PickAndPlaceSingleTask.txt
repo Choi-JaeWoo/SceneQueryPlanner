@@ -1,0 +1,93 @@
+Your task is to: Place a baseball bat on the countertop.
+You are in the house, and there are 3 rooms: bedroom (1), kitchen (1), living room (1). You are in the middle of a living room (1). Looking quickly around the room, you see TV stand (1), cart (1), dining table (1), house plant (2), shelf (1, 2, 3, 4, 5, 6), sofa (1).
+Think: To solve the task, I need to find and pick up baseball bat, find countertop and put down baseball bat.
+OK.
+Think: First, I need to find and pick up baseball bat.
+OK.
+Query: find_objects({'label': 'baseball bat'})
+Info: [{'name_id_nl': 'baseball bat 1', 'node_type': 'object', 'properties': ['pickupable'], 'states': []}]
+Think: Baseball bat 1 is in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), cart (1), dining table (1), house plant (2), shelf (1, 2, 3, 4, 5, 6), sofa (1).
+Act: go to TV stand 1
+You arrive at the TV stand (1). You see TV stand (1), book (1), candle (1), laptop (2), pillow (2), remote control (1), shelf (1, 2, 3, 4, 5, 6), sofa (1), television (1).
+Act: go to book 1
+You arrive at the book (1). The book (1) is closed. You see TV stand (1), book (1), candle (1), laptop (2), pillow (2), remote control (1), shelf (1, 2, 3, 4, 5, 6), sofa (1), television (1).
+Act: go to candle 1
+You arrive at the candle (1). You see TV stand (1), book (1), candle (1), laptop (2), pillow (2), remote control (1), shelf (1, 2, 3, 4, 5, 6), sofa (1), television (1).
+Act: go to laptop 2
+You arrive at the laptop (2). The laptop (2) is open. You see book (2), candle (1, 2), dining table (1), key chain (1), laptop (2), pillow (2), plate (1), sofa (1), vase (1), watch (2).
+Act: go to book 2
+You arrive at the book (2). The book (2) is closed. You see book (2), candle (2), cart (1), cell phone (1), dining table (1), key chain (1), laptop (2), plate (1), sofa (1), statue (1), vase (1), watch (2).
+Act: go to candle 2
+You arrive at the candle (2). You see book (2), candle (2), cart (1), cell phone (1), dining table (1), key chain (1), laptop (2), plate (1), sofa (1), statue (1), vase (1), watch (2).
+Act: go to dining table 1
+You arrive at the dining table (1). You see book (2), candle (2), cart (1), cell phone (1), dining table (1), key chain (1), plate (1), statue (1), vase (1), watch (2).
+Act: go to cart 1
+You arrive at the cart (1). You see book (2), candle (2), cart (1), cell phone (1), key chain (1), plate (1), statue (1), watch (2).
+Act: go to cell phone 1
+You arrive at the cell phone (1). You see book (2), candle (2), cart (1), cell phone (1), dining table (1), key chain (1), laptop (2), plate (1), statue (1), vase (1), watch (2).
+Act: go to key chain 1
+You arrive at the key chain (1). You see book (2), candle (2), cart (1), cell phone (1), dining table (1), key chain (1), laptop (2), plate (1), statue (1), vase (1), watch (2).
+Act: go to plate 1
+You arrive at the plate (1). You see book (2), candle (2), cart (1), cell phone (1), dining table (1), key chain (1), laptop (2), plate (1), statue (1), vase (1), watch (2).
+Act: go to statue 1
+You arrive at the statue (1). You see book (2), candle (2), cart (1), cell phone (1), dining table (1), key chain (1), laptop (2), plate (1), statue (1), vase (1), watch (2).
+Act: go to vase 1
+You arrive at the vase (1). You see book (2), candle (2), cart (1), cell phone (1), dining table (1), key chain (1), laptop (2), plate (1), statue (1), vase (1), watch (2).
+Act: go to watch 2
+You arrive at the watch (2). You see book (2), candle (2), cart (1), cell phone (1), dining table (1), key chain (1), laptop (2), plate (1), statue (1), vase (1), watch (2).
+Act: go to laptop 2
+You arrive at the laptop (2). The laptop (2) is open. You see book (2), candle (1, 2), dining table (1), key chain (1), laptop (2), pillow (2), plate (1), sofa (1), vase (1), watch (2).
+Act: go to pillow 2
+You arrive at the pillow (2). You see TV stand (1), book (1), candle (1), house plant (2), laptop (2), pillow (2), remote control (1), shelf (1, 2, 3, 4, 5, 6), sofa (1), television (1).
+Act: go to remote control 1
+You arrive at the remote control (1). You see TV stand (1), book (1), candle (1), house plant (2), laptop (2), pillow (2), remote control (1), shelf (1, 2, 3, 4, 5, 6), sofa (1), television (1).
+Act: go to shelf 1
+You arrive at the shelf (1). You see TV stand (1), book (1), candle (1), house plant (2), laptop (2), pillow (2), remote control (1), shelf (1, 2, 3, 4, 5, 6), sofa (1), television (1).
+Act: go to shelf 2
+You arrive at the shelf (2). You see TV stand (1), book (1), candle (1), house plant (2), laptop (2), pillow (2), remote control (1), shelf (1, 2, 3, 4, 5, 6), sofa (1), television (1).
+Act: go to shelf 3
+You arrive at the shelf (3). You see TV stand (1), book (1), candle (1), house plant (2), laptop (2), pillow (2), remote control (1), shelf (1, 2, 3, 4, 5, 6), sofa (1), television (1).
+Act: go to shelf 4
+You arrive at the shelf (4). You see TV stand (1), book (1), candle (1), laptop (2), pillow (2), remote control (1), shelf (1, 2, 3, 4, 5, 6), sofa (1), television (1).
+Act: go to shelf 5
+You arrive at the shelf (5). You see TV stand (1), book (1), candle (1), laptop (2), pillow (2), remote control (1), shelf (1, 2, 3, 4, 5, 6), sofa (1), television (1).
+Act: go to shelf 6
+You arrive at the shelf (6). You see TV stand (1), book (1), candle (1), laptop (2), pillow (2), remote control (1), shelf (1, 2, 3, 4, 5, 6), sofa (1), television (1).
+Act: go to sofa 1
+You arrive at the sofa (1). You see TV stand (1), book (1, 2), candle (1), key chain (1), laptop (2), pillow (2), remote control (1), shelf (1, 2, 3, 4, 5, 6), sofa (1), television (1), watch (2).
+Act: go to television 1
+You arrive at the television (1). You see TV stand (1), book (1), candle (1), house plant (2), laptop (2), pillow (2), remote control (1), shelf (1, 2, 3, 4, 5, 6), sofa (1), television (1).
+Think: I need to check whether I see baseball bat.
+OK.
+Query: find_objects({'label': 'baseball bat'})
+Info: [{'name_id_nl': 'baseball bat 1', 'node_type': 'object', 'properties': ['pickupable'], 'states': []}]
+Query: get_edges_for_node({'node_id': 'baseball bat 1'})
+Info: [('baseball bat 1', 'bedroom 1', 'INSIDE'), ('baseball bat 1', 'basket ball 1', 'CLOSE'), ('baseball bat 1', 'bed 1', 'CLOSE'), ('baseball bat 1', 'drawer 4', 'CLOSE'), ('baseball bat 1', 'drawer 2', 'CLOSE'), ('baseball bat 1', 'drawer 3', 'CLOSE'), ('baseball bat 1', 'drawer 5', 'CLOSE'), ('baseball bat 1', 'drawer 6', 'CLOSE'), ('baseball bat 1', 'drawer 1', 'CLOSE'), ('baseball bat 1', 'dresser 1', 'CLOSE'), ('basket ball 1', 'baseball bat 1', 'CLOSE'), ('bed 1', 'baseball bat 1', 'CLOSE'), ('drawer 4', 'baseball bat 1', 'CLOSE'), ('drawer 2', 'baseball bat 1', 'CLOSE'), ('drawer 3', 'baseball bat 1', 'CLOSE'), ('drawer 5', 'baseball bat 1', 'CLOSE'), ('drawer 6', 'baseball bat 1', 'CLOSE'), ('drawer 1', 'baseball bat 1', 'CLOSE'), ('dresser 1', 'baseball bat 1', 'CLOSE')]
+Think: Baseball bat 1 is in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see baseball bat (1), basket ball (1), bed (1), drawer (1, 2, 3, 4, 5, 6), dresser (1), vacuum cleaner (1).
+Act: go to baseball bat 1
+You arrive at the baseball bat (1). You see baseball bat (1), basket ball (1), drawer (1, 2, 3, 4, 5, 6), dresser (1), mug (1), teddy bear (1), watch (1).
+Act: pick up baseball bat 1
+You pick up baseball bat (1). You hold baseball bat (1).
+Think: Now, I need to find countertop.
+OK.
+Query: find_objects({'label': 'countertop'})
+Info: [{'name_id_nl': 'countertop 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'kitchen 1'}]
+Think: Countertop 1 is in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see countertop (1), fridge (1), garbage bag (1), house plant (1), painting (1, 2, 3, 4). You hold baseball bat (1).
+Act: go to countertop 1
+You arrive at the countertop (1). You see bottle (1), bowl (1), butter knife (1), coffee machine (1), countertop (1), fridge (1), knife (1), lettuce (2), painting (1), soap bottle (1), spatula (1), spoon (1), toaster (1). You hold baseball bat (1).
+Think: Now I need to put down baseball bat 1.
+OK.
+Act: put down baseball bat 1
+You put baseball bat (1) in countertop (1).
+Think: Now I complete task.
+OK.
+Act: done

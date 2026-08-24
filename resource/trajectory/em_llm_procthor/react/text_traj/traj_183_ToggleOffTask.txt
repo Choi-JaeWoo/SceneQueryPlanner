@@ -1,0 +1,201 @@
+Your task is to: Make sure to turn off any candles, laptops, and toasters that are currently on.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a living room (1). Looking quickly around the room, you see cart (1), chair (4, 5, 6, 7, 8), dining table (3), shelf (1, 2), side table (1), sofa (1), television (2).
+Think: To solve the task, I need to go through every room, check for candle, laptop, and toaster, and turn them off if they are turned on.
+OK.
+Think: First, I need to check living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see cart (1), chair (4, 5, 6, 7, 8), dining table (3), shelf (1, 2), side table (1), sofa (1), television (2).
+Think: In living room 1, I can check cart 1, chair (4, 5, 6, 7, 8), dining table 3, shelf (1, 2), side table 1, sofa 1, television 2 until I find candle, laptop, or toaster.
+OK.
+Act: go to cart 1
+You arrive at the cart (1). You see cart (1), laptop (2).
+Think: I find laptop 2. Now, I need to turn it off.
+OK.
+Act: go to laptop 2
+You arrive at the laptop (2). The laptop (2) is open. You see cart (1), cell phone (1), laptop (2), sofa (1).
+Act: turn off laptop 2
+(controller) Turn off action failed: can't toggle object off if it's already off!
+Think: I need to find another laptop.
+OK.
+Act: go to chair 4
+You arrive at the chair (4). You see chair (4, 7, 8), desk lamp (2), dining table (3), pen (1), pencil (2, 3, 4), vase (2).
+Act: go to chair 5
+You arrive at the chair (5). You see candle (3), chair (5, 6), pencil (3, 4), vase (2).
+Think: I find candle 3. Now, I need to turn it off.
+OK.
+Act: go to candle 3
+You arrive at the candle (3). You see candle (3), chair (5, 6), desk lamp (2), dining table (3), pencil (3, 4), vase (2).
+Act: turn off candle 3
+(controller) Turn off action failed: can't toggle object off if it's already off!
+Think: I need to find another candle.
+OK.
+Act: go to chair 6
+You arrive at the chair (6). You see candle (3), cart (1), chair (4, 5, 6, 8), desk lamp (2), dining table (3), pen (1), pencil (2, 3, 4), vase (2).
+Act: go to chair 7
+You arrive at the chair (7). You see chair (4, 7), desk lamp (2), dining table (3), pen (1), pencil (2), television (2), vase (2).
+Act: go to chair 8
+You arrive at the chair (8). You see candle (3), cart (1), chair (4, 6, 8), desk lamp (2), dining table (3), pen (1), pencil (2, 3, 4).
+Act: go to dining table 3
+You arrive at the dining table (3). You see candle (3), chair (4, 5, 6, 7, 8), desk lamp (2), dining table (3), pen (1), pencil (2, 3, 4), television (2), vase (2).
+Act: go to shelf 1
+You arrive at the shelf (1). You see book (2), credit card (3), key chain (2), newspaper (1), pillow (3), remote control (1), shelf (1, 2), side table (1), statue (1), tissue box (1).
+Act: go to shelf 2
+You arrive at the shelf (2). You see book (2), credit card (3), key chain (2), newspaper (1), pillow (3), remote control (1), shelf (1, 2), side table (1), statue (1), tissue box (1).
+Act: go to side table 1
+You arrive at the side table (1). 
+Think: It seems there are no more objects to turn off in living room 1, so I should go to kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see chair (3), countertop (1), dining table (2), fridge (1), garbage bag (1), garbage can (2), television (1).
+Think: In kitchen 1, I can check chair 3, countertop 1, dining table 2, fridge 1, garbage bag 1, garbage can 2, television 1 until I find candle, laptop, or toaster.
+OK.
+Act: go to chair 3
+You arrive at the chair (3). You see bowl (1), chair (3), credit card (2), dining table (2), fork (1), house plant (2), knife (1), pepper shaker (1), spoon (1), spray bottle (1).
+Act: go to countertop 1
+You arrive at the countertop (1). You see coffee machine (1), countertop (1), egg (1), knife (2), ladle (1), paper towel roll (1), pot (1), salt shaker (1), soap bottle (1), spoon (2), television (1), toaster (1), vase (1).
+Think: I find toaster 1. Now, I need to turn it off.
+OK.
+Act: go to toaster 1
+You arrive at the toaster (1). You see bowl (1), coffee machine (1), credit card (2), egg (1), fork (1), house plant (2), knife (2), ladle (1), paper towel roll (1), pepper shaker (1), pot (1), salt shaker (1), soap bottle (1), spoon (1, 2), television (1), toaster (1), vase (1).
+Act: turn off toaster 1
+You turn off toaster (1).
+Act: go to dining table 2
+You arrive at the dining table (2). You see bowl (1), chair (3), credit card (2), dining table (2), egg (1), fork (1), house plant (2), knife (1, 2), ladle (1), pepper shaker (1), spoon (1), spray bottle (1), vase (1).
+Act: go to fridge 1
+You arrive at the fridge (1). The fridge (1) is closed. You see fridge (1), garbage can (2).
+Act: open fridge 1
+You open fridge (1). You see egg (2), fridge (1), garbage can (2), lettuce (1).
+Act: go to garbage bag 1
+You arrive at the garbage bag (1). You see garbage bag (1).
+Act: go to garbage can 2
+You arrive at the garbage can (2). You see egg (2), fridge (1), garbage can (2), lettuce (1).
+Act: go to television 1
+You arrive at the television (1). You see coffee machine (1), countertop (1), egg (1), knife (2), ladle (1), paper towel roll (1), pot (1), salt shaker (1), soap bottle (1), spoon (2), television (1), toaster (1).
+Think: It seems there are no more objects to turn off in kitchen 1, so I should go to bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see baseball bat (1), basket ball (1), bed (1), chair (1, 2), dining table (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), painting (1, 2, 3).
+Think: In bedroom 1, I can check baseball bat 1, basket ball 1, bed 1, chair (1, 2), dining table 1, drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser 1, painting (1, 2, 3) until I find candle, laptop, or toaster.
+OK.
+Act: go to baseball bat 1
+You arrive at the baseball bat (1). You see baseball bat (1), painting (3).
+Act: go to basket ball 1
+You arrive at the basket ball (1). You see basket ball (1).
+Act: go to bed 1
+You arrive at the bed (1). You see bed (1), box (1), painting (2), pillow (1, 2), teddy bear (1).
+Act: go to chair 1
+You arrive at the chair (1). You see alarm clock (1), basket ball (1), chair (1, 2), desk lamp (1), dining table (1), key chain (1), pencil (1).
+Act: go to chair 2
+You arrive at the chair (2). You see alarm clock (1), chair (1, 2), credit card (1), desk lamp (1), dining table (1), drawer (1, 2, 3, 4, 5), dresser (1), key chain (1), laptop (1), pencil (1).
+Think: I find laptop 1. Now, I need to turn it off.
+OK.
+Act: go to laptop 1
+You arrive at the laptop (1). The laptop (1) is closed. You see credit card (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), laptop (1).
+Act: open laptop 1
+You open laptop (1). You see credit card (1), dining table (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), laptop (1).
+Act: turn off laptop 1
+You turn off laptop (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see alarm clock (1), chair (1, 2), credit card (1), desk lamp (1), dining table (1), drawer (1, 2, 3, 4, 5), key chain (1), laptop (1), pencil (1).
+Act: go to drawer 1
+You arrive at the drawer (1). The drawer (1) is closed. You see credit card (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), laptop (1).
+Act: open drawer 1
+You open drawer (1). You see credit card (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), laptop (1).
+Act: go to drawer 2
+You arrive at the drawer (2). The drawer (2) is closed. You see credit card (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), laptop (1).
+Act: open drawer 2
+You open drawer (2). You see credit card (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), laptop (1).
+Act: go to drawer 3
+You arrive at the drawer (3). The drawer (3) is closed. You see credit card (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), laptop (1).
+Act: open drawer 3
+You open drawer (3). You see credit card (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), laptop (1).
+Act: go to drawer 4
+You arrive at the drawer (4). The drawer (4) is closed. You see credit card (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), laptop (1).
+Act: open drawer 4
+You open drawer (4). You see credit card (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), laptop (1).
+Act: go to drawer 5
+You arrive at the drawer (5). The drawer (5) is closed. You see credit card (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), laptop (1).
+Act: open drawer 5
+You open drawer (5). You see credit card (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), laptop (1).
+Act: go to drawer 6
+You arrive at the drawer (6). The drawer (6) is closed. You see credit card (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), laptop (1).
+Act: open drawer 6
+You open drawer (6). You see credit card (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), laptop (1).
+Act: go to drawer 7
+You arrive at the drawer (7). The drawer (7) is closed. You see credit card (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), laptop (1).
+Act: open drawer 7
+You open drawer (7). You see credit card (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), laptop (1).
+Act: go to drawer 8
+You arrive at the drawer (8). The drawer (8) is closed. You see credit card (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), laptop (1).
+Act: open drawer 8
+You open drawer (8). You see book (1), credit card (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), laptop (1).
+Act: go to drawer 9
+You arrive at the drawer (9). The drawer (9) is closed. You see book (1), credit card (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), laptop (1).
+Act: open drawer 9
+You open drawer (9). You see book (1), credit card (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), laptop (1).
+Act: go to drawer 10
+You arrive at the drawer (10). The drawer (10) is closed. You see book (1), credit card (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), laptop (1).
+Act: open drawer 10
+You open drawer (10). You see book (1), credit card (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), laptop (1).
+Act: go to dresser 1
+You arrive at the dresser (1). You see book (1), credit card (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), laptop (1).
+Act: go to painting 1
+You arrive at the painting (1). You see painting (1).
+Act: go to painting 2
+You arrive at the painting (2). You see bed (1), box (1), painting (2), pillow (1, 2), teddy bear (1).
+Act: go to painting 3
+You arrive at the painting (3). You see laptop (2).
+Think: It seems there are no more objects to turn off in bedroom 1, so I should go to bathroom 1.
+OK.
+Act: go to bathroom 1
+You move to the bathroom (1). Looking quickly around the room, you see candle (1), garbage can (1), painting (4), plunger (1), sink (1), sink basin (1), toilet (1).
+Think: In bathroom 1, I can check candle 1, garbage can 1, painting 4, plunger 1, sink 1, sink basin 1, toilet 1 until I find candle, laptop, or toaster.
+OK.
+Act: go to candle 1
+You arrive at the candle (1). You see candle (1, 2), dish sponge (1), faucet (1), painting (4), sink (1), sink basin (1), toilet (1), toilet paper (1).
+Think: I find candle 1. Now, I need to turn it off.
+OK.
+Act: turn off candle 1
+You turn off candle (1).
+Think: I find candle 2. Now, I need to turn it off.
+OK.
+Act: turn off candle 2
+(controller) Turn off action failed: can't toggle object off if it's already off!
+Think: I need to find another candle.
+OK.
+Act: go to garbage can 1
+You arrive at the garbage can (1). You see garbage can (1), plunger (1).
+Act: go to painting 4
+You arrive at the painting (4). You see candle (1, 2), dish sponge (1), faucet (1), painting (4), sink (1), sink basin (1), toilet (1), toilet paper (1).
+Act: go to plunger 1
+You arrive at the plunger (1). You see plunger (1).
+Act: go to sink 1
+You arrive at the sink (1). You see candle (1, 2), dish sponge (1), faucet (1), painting (4), sink (1), sink basin (1), toilet (1), toilet paper (1).
+Act: go to sink basin 1
+You arrive at the sink basin (1). You see candle (1, 2), dish sponge (1), faucet (1), painting (4), sink (1), sink basin (1), toilet (1), toilet paper (1).
+Act: go to toilet 1
+You arrive at the toilet (1). The toilet (1) is closed. You see candle (1, 2), dish sponge (1), faucet (1), painting (4), sink (1), sink basin (1), toilet (1), toilet paper (1).
+Think: It seems there are no more objects to turn off in bathroom 1, so I should go to bathroom 2.
+OK.
+Act: go to bathroom 1
+You move to the bathroom (1). Looking quickly around the room, you see candle (1), garbage can (1), painting (4), plunger (1), sink (1), sink basin (1), toilet (1).
+Think: In bathroom 1, I can check candle 1, garbage can 1, painting 4, plunger 1, sink 1, sink basin 1, toilet 1 until I find candle, laptop, or toaster.
+OK.
+Act: go to candle 1
+You arrive at the candle (1). You see candle (1, 2), dish sponge (1), faucet (1), painting (4), sink (1), sink basin (1), toilet (1), toilet paper (1).
+Act: go to garbage can 1
+You arrive at the garbage can (1). You see garbage can (1), plunger (1).
+Act: go to painting 4
+You arrive at the painting (4). You see candle (1, 2), dish sponge (1), faucet (1), painting (4), sink (1), sink basin (1), toilet (1), toilet paper (1).
+Act: go to plunger 1
+You arrive at the plunger (1). You see plunger (1).
+Act: go to sink 1
+You arrive at the sink (1). You see candle (1, 2), dish sponge (1), faucet (1), painting (4), sink (1), sink basin (1), toilet (1), toilet paper (1).
+Act: go to sink basin 1
+You arrive at the sink basin (1). You see candle (1, 2), dish sponge (1), faucet (1), painting (4), sink (1), sink basin (1), toilet (1), toilet paper (1).
+Act: go to toilet 1
+You arrive at the toilet (1). The toilet (1) is closed. You see candle (1, 2), dish sponge (1), faucet (1), painting (4), sink (1), sink basin (1), toilet (1), toilet paper (1).
+Think: Now I complete the task.
+OK.
+Act: done

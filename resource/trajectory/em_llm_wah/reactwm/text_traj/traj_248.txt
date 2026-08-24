@@ -1,0 +1,135 @@
+Your task is to: Robot, please pick up the fork, wine glass, and plate from the kitchen counter and place them on the kitchen table.
+You are in the house, and there are 4 rooms: bathroom 1, bedroom 1, kitchen 1, living room 1. You are in the middle of a bathroom 1. Looking quickly around the room, you see bathroom cabinet 1, bathroom counter 1, faucet 1, sink 1, toilet 1, towel rack (1, 2, 3, 4), washing machine 1.
+Think: To solve the task, I need to find and pick up fork, find and pick up wine glass, find and pick up plate, find kitchen table and put down fork, find kitchen table and put down wine glass, find kitchen table and put down plate.
+OK.
+Think: First, I need to find fork.
+OK.
+Query: recall location of fork
+You have not seen fork before.
+Think: I have not seen fork yet. The fork is more likely to appear in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen 1. Looking quickly around the room, you see bench (1, 2), bookshelf 2, faucet 2, fridge 1, kitchen cabinet (1, 2, 3, 4), kitchen counter 1, kitchen table 1, microwave oven 1, sink 2, stove 1, toaster 1, tv 1.
+Think: In kitchen 1, the fork is likely to appear in/on bench (1, 2), fridge 1, kitchen cabinet (1, 2, 3, 4), kitchen counter 1, kitchen table 1. I can check each place one by one until I find it.
+OK.
+Act: go to bench 1
+You arrive at the bench 1. You see bench 1, kitchen table 1, pie 1, whipped cream 1.
+Act: go to bench 2
+You arrive at the bench 2. You see bench 2, kitchen table 1, pie 1, whipped cream 1.
+Act: go to fridge 1
+You arrive at the fridge 1. The fridge 1 is closed. You see bell pepper (1, 2, 5, 6), bowl 3, clock 1, fridge 1, kitchen cabinet 4, kitchen counter 1, light switch 3, microwave oven 1, salmon 1.
+Act: open fridge 1
+You open fridge 1. You see bell pepper (1, 2, 5, 6), bowl 3, clock 1, cutlery fork (1, 2), fridge 1, kitchen cabinet 4, kitchen counter 1, light switch 3, microwave oven 1, salmon 1
+Think: I find cutlery fork (1, 2). Now, I need to pick it up.
+OK.
+Act: pick up cutlery fork 1
+You pick up cutlery fork 1. You hold cutlery fork 1.
+Think: Now I need to find and pick up wine glass.
+OK.
+Query: recall location of wine glass
+You have not seen wine glass before.
+Think: I have not seen wine glass yet. The wine glass is more likely to appear in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen 1. Looking quickly around the room, you see bench (1, 2), bookshelf 2, faucet 2, fridge 1, kitchen cabinet (1, 2, 3, 4), kitchen counter 1, kitchen table 1, microwave oven 1, sink 2, stove 1, toaster 1, tv 1. You hold cutlery fork 1.
+Think: In kitchen 1, the wine glass is likely to appear in/on bench (1, 2), fridge 1, kitchen cabinet (1, 2, 3, 4), kitchen counter 1, kitchen table 1. I can check each place one by one until I find it.
+OK.
+Act: go to bench 1
+You arrive at the bench 1. You see bench 1, cutlery fork 1, kitchen table 1, pie 1, whipped cream 1. You hold cutlery fork 1.
+Act: go to bench 2
+You arrive at the bench 2. You see bench 2, cutlery fork 1, kitchen table 1, pie 1, whipped cream 1. You hold cutlery fork 1.
+Act: go to fridge 1
+You arrive at the fridge 1. The fridge 1 is open. You see bell pepper (1, 2, 5, 6), bowl 3, clock 1, cutlery fork (1, 2), fridge 1, kitchen cabinet 4, kitchen counter 1, light switch 3, microwave oven 1, salmon 1. You hold cutlery fork 1.
+Act: go to kitchen cabinet 1
+You arrive at the kitchen cabinet 1. The kitchen cabinet 1 is closed. You see candy bar 1, chips (1, 2), chocolate syrup 1, coffee pot 1, cutlery fork 1, dishwashing liquid 1, faucet 2, frying pan 1, kitchen cabinet (1, 2), kitchen counter 1, sink 2, stove 1, toaster 1. You hold cutlery fork 1.
+Act: open kitchen cabinet 1
+You open kitchen cabinet 1. You see candy bar 1, chips (1, 2), chocolate syrup 1, coffee pot 1, cutlery fork 1, dishwashing liquid 1, faucet 2, frying pan 1, kitchen cabinet (1, 2), kitchen counter 1, sink 2, stove 1, toaster 1 You hold cutlery fork 1.
+Act: go to kitchen cabinet 2
+You arrive at the kitchen cabinet 2. The kitchen cabinet 2 is closed. You see bell pepper (1, 2, 3, 4, 5, 6), bowl 3, chocolate syrup 1, coffee pot 1, cutlery fork 1, dishwashing liquid 1, faucet 2, frying pan 1, kitchen cabinet (1, 2, 3), kitchen counter 1, sink 2, stove 1, toaster 1, washing sponge 1. You hold cutlery fork 1.
+Act: open kitchen cabinet 2
+You open kitchen cabinet 2. You see bell pepper (1, 2, 3, 4, 5, 6), bowl 3, chocolate syrup 1, coffee pot 1, cutlery fork 1, dishwashing liquid 1, faucet 2, frying pan 1, kitchen cabinet (1, 2, 3), kitchen counter 1, sink 2, stove 1, toaster 1, washing sponge 1 You hold cutlery fork 1.
+Act: go to kitchen cabinet 3
+You arrive at the kitchen cabinet 3. The kitchen cabinet 3 is closed. You see bell pepper (1, 2, 3, 4, 5, 6), bowl 3, coffee pot 1, cutlery fork 1, dishwashing liquid 1, faucet 2, kitchen cabinet (1, 2, 3, 4), kitchen counter 1, microwave oven 1, salmon 1, sink 2, toaster 1, washing sponge 1. You hold cutlery fork 1.
+Act: open kitchen cabinet 3
+You open kitchen cabinet 3. You see bell pepper (1, 2, 3, 4, 5, 6), bowl 3, coffee pot 1, cutlery fork 1, dishwashing liquid 1, faucet 2, kitchen cabinet (1, 2, 3, 4), kitchen counter 1, microwave oven 1, plate 2, salmon 1, sink 2, toaster 1, washing sponge 1, wine glass 1 You hold cutlery fork 1.
+Think: I find wine glass 1. Now, I need to pick it up.
+OK.
+Act: pick up wine glass 1
+You pick up wine glass 1. You hold cutlery fork 1, wine glass 1.
+Think: Now I need to find and pick up plate.
+OK.
+Query: recall location of plate
+You saw plate 2 near kitchen cabinet 3 in kitchen 1.
+Think: Plate 2 is near kitchen cabinet 3 in kitchen 1.
+OK.
+Act: go to kitchen cabinet 3
+You arrive at the kitchen cabinet 3. The kitchen cabinet 3 is open. You see bell pepper (1, 2, 3, 4, 5, 6), bowl 3, coffee pot 1, cutlery fork 1, dishwashing liquid 1, faucet 2, kitchen cabinet (1, 2, 3, 4), kitchen counter 1, microwave oven 1, plate 2, salmon 1, sink 2, toaster 1, washing sponge 1, wine glass 1. You hold cutlery fork 1, wine glass 1.
+Act: pick up plate 2
+You can't pick up plate 2 because you don't have an empty hand.
+Think: I need to put down cutlery fork 1 or wine glass 1 to pick up plate 2.
+OK.
+Act: put down cutlery fork 1
+You put cutlery fork 1 in kitchen cabinet 3. You hold wine glass 1.
+Act: pick up plate 2
+You pick up plate 2. You hold plate 2, wine glass 1.
+Think: Now I need to find kitchen table and put down cutlery fork 1.
+OK.
+Query: recall location of kitchen table
+You saw kitchen table 1 near bench 2 in kitchen 1.
+Think: Kitchen table 1 is near bench 2 in kitchen 1.
+OK.
+Act: go to bench 2
+You arrive at the bench 2. You see bench 2, kitchen table 1, pie 1, plate 2, whipped cream 1, wine glass 1. You hold plate 2, wine glass 1.
+Act: go to kitchen table 1
+You arrive at the kitchen table 1. You see bench (1, 2), cereal 1, chips (1, 2), crackers 1, creamy buns 1, kitchen table 1, pie 1, plate 2, whipped cream 1, wine glass 1. You hold plate 2, wine glass 1.
+Act: put down cutlery fork 1
+You can't put cutlery fork 1 on kitchen table 1 because you're not holding it.
+Think: I need to pick up cutlery fork 1 to put it down.
+OK.
+Act: go to kitchen cabinet 3
+You arrive at the kitchen cabinet 3. The kitchen cabinet 3 is open. You see bell pepper (1, 2, 3, 4, 5, 6), bowl 3, coffee pot 1, cutlery fork 1, dishwashing liquid 1, faucet 2, kitchen cabinet (1, 2, 3, 4), kitchen counter 1, microwave oven 1, plate 2, salmon 1, sink 2, toaster 1, washing sponge 1, wine glass 1. You hold plate 2, wine glass 1.
+Act: pick up cutlery fork 1
+You can't pick up cutlery fork 1 because you don't have an empty hand.
+Think: I need to put down plate 2 or wine glass 1 to pick up cutlery fork 1.
+OK.
+Act: put down plate 2
+You put plate 2 in kitchen cabinet 3. You hold wine glass 1.
+Act: pick up cutlery fork 1
+You pick up cutlery fork 1. You hold cutlery fork 1, wine glass 1.
+Act: go to kitchen table 1
+You arrive at the kitchen table 1. You see bench (1, 2), cereal 1, chips (1, 2), crackers 1, creamy buns 1, cutlery fork 1, kitchen table 1, pie 1, whipped cream 1, wine glass 1. You hold cutlery fork 1, wine glass 1.
+Act: put down cutlery fork 1
+You put cutlery fork 1 on kitchen table 1. You hold wine glass 1.
+Think: Now I need to find kitchen table and put down wine glass 1.
+OK.
+Query: recall location of kitchen table
+You saw kitchen table 1 near kitchen table 1 in kitchen 1.
+Think: Kitchen table 1 is near kitchen table 1 in kitchen 1.
+OK.
+Act: go to kitchen table 1
+You arrive at the kitchen table 1. You see bench (1, 2), cereal 1, chips (1, 2), crackers 1, creamy buns 1, cutlery fork 1, kitchen table 1, pie 1, whipped cream 1, wine glass 1. You hold wine glass 1.
+Act: put down wine glass 1
+You put wine glass 1 on kitchen table 1.
+Think: Now I need to find kitchen table and put down plate 2.
+OK.
+Query: recall location of kitchen table
+You saw kitchen table 1 near kitchen table 1 in kitchen 1.
+Think: Kitchen table 1 is near kitchen table 1 in kitchen 1.
+OK.
+Act: go to kitchen table 1
+You arrive at the kitchen table 1. You see bench (1, 2), cereal 1, chips (1, 2), crackers 1, creamy buns 1, cutlery fork 1, kitchen table 1, pie 1, whipped cream 1, wine glass 1.
+Act: pick up plate 2
+You can't pick up plate 2 because it's not close to you.
+Think: I need to go to kitchen cabinet 3 to pick up plate 2.
+OK.
+Act: go to kitchen cabinet 3
+You arrive at the kitchen cabinet 3. The kitchen cabinet 3 is open. You see bell pepper (1, 2, 3, 4, 5, 6), bowl 3, coffee pot 1, dishwashing liquid 1, faucet 2, kitchen cabinet (1, 2, 3, 4), kitchen counter 1, microwave oven 1, plate 2, salmon 1, sink 2, toaster 1, washing sponge 1.
+Act: pick up plate 2
+You pick up plate 2. You hold plate 2.
+Act: go to kitchen table 1
+You arrive at the kitchen table 1. You see bench (1, 2), cereal 1, chips (1, 2), crackers 1, creamy buns 1, cutlery fork 1, kitchen table 1, pie 1, plate 2, whipped cream 1, wine glass 1. You hold plate 2.
+Act: put down plate 2
+You put plate 2 on kitchen table 1.
+Think: Now I complete the task.
+OK.
+Act: done

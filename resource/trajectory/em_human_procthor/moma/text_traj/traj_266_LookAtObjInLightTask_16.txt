@@ -1,0 +1,10 @@
+Your task is to: Examine the pencil under the light of the desklamp after turning it on.
+You arrive at the chair (7). You see chair (7, 8), desk lamp (1), dining table (3), pencil (2). You hold pencil (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- (bathroom 1): [(toilet 1), faucet 1, (garbage can 1), (sink basin 1), (sink 1), plunger 1]
+- bedroom 1: [painting 2, painting 1, alarm clock 1, book 1, book 2, cell phone 1, laptop 1, pillow 1, tennis racket 1, bed 1, book 4, book 3, book 5, CD 1, chair 2, (chair 3), (chair 4), (chair 1), (dining table 1), (drawer 1), (drawer 3), (drawer 2), (dresser 1), (sofa 1)]
+- kitchen 1: [television 1, (countertop 1), (fridge 1), (chair 5), painting 3, bread 1, spatula 1, (dining table 2)]
+- living room 1: [television 2, painting 4, statue 2, bowl 1, chair 6, chair 7, (chair 8), (chair 9), (chair 10), desk lamp 1, (dining table 3), (garbage can 2), pencil 2, pencil 1, (sofa 2)]
+Your 5 previous actions were: go to pencil 1 (success), pick up pencil 1 (success), go to living room 1 (success), go to chair 6 (success), go to chair 7 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I arrive at chair 7. I hold pencil 1. I find desk lamp 1. Now, I need to move toward desk lamp 1 to turn it on.
+Act: go to desk lamp 1

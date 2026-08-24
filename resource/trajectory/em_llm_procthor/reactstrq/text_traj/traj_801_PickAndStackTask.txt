@@ -1,0 +1,113 @@
+Your task is to: Set a pencil in a box and then place the box on the shelf.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a bathroom (1). Looking quickly around the room, you see garbage can (1), plunger (1), sink (1), sink basin (1), toilet (1).
+Think: To solve the task, I need to find and pick up pencil, put it in box, pick up and place box on shelf.
+OK.
+Think: First, I need to find and pick up pencil.
+OK.
+Query: find_objects({'label': 'pencil'})
+Info: 
+Think: I have not seen pencil yet. Now I need to check where to search. First, I will search bathroom 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'bathroom 1'})
+Info: garbage can 1, sink 1, sink basin 1, toilet 1
+Think: In bathroom 1, the pencil is likely to appear in/on garbage can 1, sink 1, sink basin 1, toilet 1. I can check each place one by one until I find pencil.
+OK.
+Act: go to bathroom 1
+You move to the bathroom (1). Looking quickly around the room, you see garbage can (1), plunger (1), sink (1), sink basin (1), toilet (1).
+Act: go to garbage can 1
+You arrive at the garbage can (1). You see faucet (1), garbage can (1), sink (1), sink basin (1).
+Think: I need to check whether I see pencil.
+OK.
+Query: find_objects({'label': 'pencil'})
+Info: 
+Think: I have not seen pencil yet. Now I need to keep searching.
+OK.
+Act: go to sink 1
+You arrive at the sink (1). You see faucet (1), garbage can (1), sink (1), sink basin (1).
+Think: I need to check whether I see pencil.
+OK.
+Query: find_objects({'label': 'pencil'})
+Info: 
+Think: I have not seen pencil yet. Now I need to keep searching.
+OK.
+Act: go to sink basin 1
+You arrive at the sink basin (1). You see faucet (1), garbage can (1), sink (1), sink basin (1).
+Think: I need to check whether I see pencil.
+OK.
+Query: find_objects({'label': 'pencil'})
+Info: 
+Think: I have not seen pencil yet. Now I need to keep searching.
+OK.
+Act: go to toilet 1
+You arrive at the toilet (1). The toilet (1) is closed. You see dish sponge (1), soap bar (1), spray bottle (1), toilet (1), toilet paper (1).
+Think: I need to check whether I see pencil.
+OK.
+Query: find_objects({'label': 'pencil'})
+Info: 
+Think: I have not seen pencil yet. Now I need to keep searching.
+OK.
+Act: go to bathroom 1
+You move to the bathroom (1). Looking quickly around the room, you see garbage can (1), plunger (1), sink (1), sink basin (1), toilet (1).
+Think: I have not seen pencil yet. Now I need to check where to search. Next, I will search bedroom 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'bedroom 1'})
+Info: TV stand 1, bed 1, box 1, cabinet (1, 2, 3, 4), chair (1, 2, 3, 4), desk 1, dining table 1, drawer (1, 2, 3, 4), dresser 1, shelf (1, 2, 3)
+Think: In bedroom 1, the pencil is likely to appear in/on TV stand 1, bed 1, box 1, cabinet (1, 2, 3, 4), chair (1, 2, 3, 4), desk 1, dining table 1, drawer (1, 2, 3, 4), dresser 1, shelf (1, 2, 3). I can check each place one by one until I find pencil.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see TV stand (1), bed (1), cabinet (1, 2, 3, 4), chair (1, 2, 3, 4), desk (1), dining table (1), drawer (1, 2, 3, 4), dresser (1), shelf (1, 2, 3).
+Act: go to TV stand 1
+You arrive at the TV stand (1). You see TV stand (1), bowl (1), cabinet (4), drawer (4), pencil (2), shelf (3), statue (1), television (1), watch (1).
+Think: I need to check whether I see pencil.
+OK.
+Query: find_objects({'label': 'pencil'})
+Info: [{'name_id_nl': 'pencil 2', 'node_type': 'object', 'properties': ['pickupable'], 'states': []}]
+Query: get_edges_for_node({'node_id': 'pencil 2'})
+Info: [('pencil 2', 'TV stand 1', 'ON'), ('pencil 2', 'bowl 1', 'CLOSE'), ('pencil 2', 'cabinet 4', 'CLOSE'), ('pencil 2', 'drawer 3', 'CLOSE'), ('pencil 2', 'drawer 4', 'CLOSE'), ('pencil 2', 'shelf 3', 'CLOSE'), ('pencil 2', 'statue 1', 'CLOSE'), ('pencil 2', 'television 1', 'CLOSE'), ('pencil 2', 'watch 1', 'CLOSE'), ('pencil 2', 'user 1', 'CLOSE'), ('pencil 2', 'bedroom 1', 'INSIDE'), ('bowl 1', 'pencil 2', 'CLOSE'), ('cabinet 4', 'pencil 2', 'CLOSE'), ('drawer 3', 'pencil 2', 'CLOSE'), ('drawer 4', 'pencil 2', 'CLOSE'), ('shelf 3', 'pencil 2', 'CLOSE'), ('statue 1', 'pencil 2', 'CLOSE'), ('television 1', 'pencil 2', 'CLOSE'), ('watch 1', 'pencil 2', 'CLOSE'), ('user 1', 'pencil 2', 'CLOSE')]
+Think: Pencil 2 is on TV stand 1.
+OK.
+Act: go to pencil 2
+You arrive at the pencil (2). You see TV stand (1), bowl (1), cabinet (2, 3, 4), drawer (2, 3, 4), dresser (1), pencil (2), shelf (3), statue (1), television (1), watch (1).
+Act: pick up pencil 2
+You pick up pencil (2). You hold pencil (2).
+Think: Now, I need to find box.
+OK.
+Query: find_objects({'label': 'box'})
+Info: [{'name_id_nl': 'box 1', 'node_type': 'asset', 'properties': ['openable', 'pickupable'], 'states': [], 'room': 'bedroom 1'}]
+Think: I find box 1.
+OK.
+Act: go to box 1
+You arrive at the box (1). The box (1) is closed. You see CD (1), box (1), desk (1), laptop (1), pen (2), shelf (1, 2), statue (2), tabletop decor (1). You hold pencil (2).
+Act: open box 1
+You open box (1). You see CD (1), box (1), desk (1), laptop (1), pen (2), shelf (1, 2), statue (2), tabletop decor (1). You hold pencil (2).
+Act: put down pencil 2
+You put pencil (2) in box (1).
+Act: close box 1
+You close box (1).
+Act: pick up box 1
+You pick up box (1). You hold box (1).
+Think: Now, I need to find shelf and put down box 1.
+OK.
+Query: find_objects({'label': 'shelf'})
+Info: [{'name_id_nl': 'shelf 2', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'bedroom 1'}, {'name_id_nl': 'shelf 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'bedroom 1'}, {'name_id_nl': 'shelf 4', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}, {'name_id_nl': 'shelf 9', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}, {'name_id_nl': 'shelf 3', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'bedroom 1'}, {'name_id_nl': 'shelf 8', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}, {'name_id_nl': 'shelf 5', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}, {'name_id_nl': 'shelf 6', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}, {'name_id_nl': 'shelf 7', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}]
+Think: Shelf 2 is in bedroom 1.
+OK.
+Act: go to shelf 2
+You arrive at the shelf (2). You see CD (1), desk (1), laptop (1), pen (2), pencil (2), shelf (1, 2), statue (2), tabletop decor (1). You hold box (1).
+Act: put down box 1
+Put action failed: There is no valid space to place the object in the target receptacle.
+Think: I need to find another shelf. I see shelf 1.
+OK.
+Act: go to shelf 1
+You arrive at the shelf (1). You see CD (1), desk (1), laptop (1), pen (2), pencil (2), shelf (1, 2), statue (2), tabletop decor (1). You hold box (1).
+Act: put down box 1
+Put action failed: There is no valid space to place the object in the target receptacle.
+Think: I need to find another shelf. I see shelf 4.
+OK.
+Act: go to shelf 3
+You arrive at the shelf (3). You see TV stand (1), bowl (1), cabinet (4), drawer (4), pencil (2), shelf (3), statue (1), television (1), watch (1). You hold box (1).
+Act: put down box 1
+You put box (1) in shelf (3).
+Think: Now I complete task.
+OK.
+Act: done

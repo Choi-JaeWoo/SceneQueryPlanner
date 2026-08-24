@@ -1,0 +1,6 @@
+Your task is to: I need you to bring me the following food items and put them on the coffee table:
+- 1 pudding
+- 1 apple
+- 1 cupcake
+- 1 juice
+Max decision steps reached.

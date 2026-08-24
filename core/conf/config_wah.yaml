@@ -1,0 +1,47 @@
+task_planner: reactstrq
+dataset_type: wah
+name: ${dataset_type}-${task_planner}
+
+hydra:
+  run:
+    dir: outputs/${name}/${now:%Y-%m-%d}_${now:%H-%M-%S}
+
+environment:
+  agent_reset_id: 0 # 0 or 1
+  observation_types: ['partial']
+  use_editor: True
+  base_port: 8080
+  port_id: 1
+  executable_args: {'file_name': 'virtualhome/simulation/unity_simulator/linux_exec.x86_64'}
+  recording_options: {
+    'recording': False,
+    'output_folder': 'outputs/recording',
+    'file_name_prefix': 'Test',
+    'cameras': ['PERSON_FROM_BACK']
+    }
+  vis_log: False
+  filtered_sim_objs: ['alcohol', 'apple', 'bananas', 'barsoap', 'bathroom', 'bathroomcabinet', 'bathroomcounter', 'bed', 'bedroom', 'bedroom', 'bellpepper', 'bench', 'book', 'bookshelf', 'box', 'breadslice', 'bucket', 'cabinet', 'candybar', 'carrot', 'cellphone', 'cereal', 'chair', 'character', 'chicken', 'chinesefood', 'chips', 'chocolatesyrup', 'clock', 'closet', 'clothespants', 'clothesshirt', 'coffeepot', 'coffeetable', 'computer', 'condimentbottle', 'condimentshaker', 'cookingpot', 'crackers', 'creamybuns', 'cupcake', 'cutleryfork', 'cutleryknife', 'cutlets', 'cuttingboard', 'desk', 'dishbowl', 'dishwasher', 'dishwashingliquid', 'door', 'facecream', 'faucet', 'folder', 'fridge', 'fryingpan', 'garbagecan', 'glasses', 'juice', 'kitchen', 'kitchencabinet', 'kitchencounter', 'kitchentable', 'lightswitch', 'lime', 'livingroom', 'lotionbottle', 'magazine', 'microwave', 'milk', 'milkshake', 'mincedmeat', 'mug', 'nightstand', 'notes', 'oventray', 'pancake', 'pear', 'pie', 'plate', 'plum', 'poundcake', 'pudding', 'remotecontrol', 'salad', 'salmon', 'sink', 'sofa', 'sportsball', 'stove', 'sundae', 'teddybear', 'toaster', 'toilet', 'toiletpaper', 'towelrack', 'toy', 'tv', 'washingmachine', 'washingsponge', 'waterglass', 'whippedcream', 'wine', 'wineglass']
+  sim_receps: ['bathroomcabinet', 'bathroomcounter', 'bed', 'bench', 'boardgame', 'bookshelf', 'box', 'cabinet', 'chair', 'closet', 'clothespile', 'coffeetable', 'cuttingboard', 'desk', 'dishwasher', 'floor', 'folder', 'fridge', 'fryingpan', 'garbagecan', 'kitchencabinet', 'kitchencounter', 'kitchentable', 'microwave', 'mousemat', 'nightstand', 'oventray', 'plate', 'printer', 'radio', 'rug', 'sink', 'sofa', 'stove', 'toaster', 'toilet', 'towelrack', 'washingmachine']
+
+
+dataset:
+  wah_trainset: 'dataset/wah_nl_train_rev.json'
+  wah_testset: 'dataset/wah_nl_test_rev.json'
+  obj_dict_sim2nl: 'resource/wah_obj_dict_sim2nl.json'
+  obj_dict_nl2sim: 'resource/wah_obj_dict_nl2sim.json'
+  collect_dir: 'resource/trajectory/collect_human_wah/reactstrq'
+
+llm_agent:
+  model_name: 'meta-llama/Meta-Llama-3.1-8B'
+  initial_step: 0
+  max_decision_step: 199
+  use_accelerate_device_map: True
+  load_in_8bit: False
+  hf_auth_token: ${oc.env:HF_TOKEN,null}
+  openai_api_key: ${oc.env:OPENAI_API_KEY,null}
+  random_seed: 0
+  retrieval_type: 'similarity' # 'static', 'simple_static', 'task_type', 'similarity'
+  use_guidance: True
+  tool_select_type: 'select' # 'select', 'generate'
+  em_dir: 'resource/trajectory/em_llm_wah/reactstrq'
+  sys_prompt_path: 'resource/sys_prompt/wah/reactstrq.txt'

@@ -1,0 +1,41 @@
+Your task is to: Shut down all active candles and faucets.
+You are in the house, and there are 1 rooms: bathroom (1). You are in the middle of a bathroom (1). Looking quickly around the room, you see painting (1, 2), sink (1), sink basin (1), toilet (1).
+Think: To solve the task, I need to find and shut down all active candles and faucets.
+OK.
+Think: First, I need to check if I saw candle and faucet.
+OK.
+Query: recall location of candle
+You have not seen candle before.
+Query: recall location of faucet
+You have not seen faucet before.
+Think: I have not seen candle and faucet yet. I need to check bathroom 1.
+OK.
+Act: go to bathroom 1
+You move to the bathroom (1). Looking quickly around the room, you see painting (1, 2), sink (1), sink basin (1), toilet (1).
+Think: In bathroom 1, I can check painting 1, sink 1, sink basin 1, toilet 1 until I find candle or faucet.
+OK.
+Act: go to painting 1
+You arrive at the painting (1). You see painting (1, 2).
+Act: go to sink 1
+You arrive at the sink (1). You see faucet (1), sink (1), sink basin (1).
+Think: I find faucet 1. Now, I need to shut it down.
+OK.
+Act: go to faucet 1
+You arrive at the faucet (1). You see faucet (1), sink (1), sink basin (1).
+Act: turn off faucet 1
+You turn off faucet (1).
+Act: go to sink basin 1
+You arrive at the sink basin (1). You see faucet (1), sink (1), sink basin (1).
+Act: go to toilet 1
+You arrive at the toilet (1). The toilet (1) is closed. You see candle (1), cloth (1), painting (2), toilet (1), toilet paper (1).
+Act: open toilet 1
+You open toilet (1). You see candle (1), cloth (1), painting (2), toilet (1), toilet paper (1).
+Think: I find candle 1. Now, I need to shut it down.
+OK.
+Act: go to candle 1
+You arrive at the candle (1). You see candle (1), cloth (1), painting (2), toilet (1), toilet paper (1).
+Act: turn off candle 1
+You turn off candle (1).
+Think: Now I complete the task.
+OK.
+Act: done

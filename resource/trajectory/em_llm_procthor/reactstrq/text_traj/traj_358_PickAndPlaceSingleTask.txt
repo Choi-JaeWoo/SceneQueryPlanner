@@ -1,0 +1,193 @@
+Your task is to: Take a book and deposit it into the box.
+You are in the house, and there are 10 rooms: bathroom (1, 2, 3, 4), bedroom (1, 2, 3, 4), kitchen (1), living room (1). You are in the middle of a bedroom (2). Looking quickly around the room, you see bed (2), chair (8, 9, 10, 11), dining table (4), drawer (7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18), dresser (2), house plant (2), painting (3, 4).
+Think: To solve the task, I need to find and pick up book, put it in box, pick up and place box on shelf.
+OK.
+Think: First, I need to find and pick up book.
+OK.
+Query: find_objects({'label': 'book'})
+Info: 
+Think: I have not seen book yet. Now I need to check where to search. First, I will search bedroom 2.
+OK.
+Query: get_child_node_names({'parent_node_id': 'bedroom 2'})
+Info: bed 2, chair (8, 9, 10, 11), dining table 4, drawer (7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18), dresser 2
+Think: In bedroom 2, the book is likely to appear in/on bed 2, chair (8, 9, 10, 11), dining table 4, drawer (7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18), dresser 2. I can check each place one by one until I find book.
+OK.
+Act: go to bed 2
+You arrive at the bed (2). You see alarm clock (2), bed (2), book (5, 6), house plant (2), pillow (3).
+Act: go to book 5
+You arrive at the book (5). The book (5) is closed. You see alarm clock (2), bed (2), book (5, 6), house plant (2), pillow (3).
+Act: go to book 6
+You arrive at the book (6). The book (6) is closed. You see alarm clock (2), bed (2), book (5, 6), house plant (2), pillow (3).
+Act: go to chair 8
+You arrive at the chair (8). You see book (4), cell phone (5), chair (8, 9, 10, 11), dining table (4), laptop (3), vase (3).
+Act: go to chair 9
+You arrive at the chair (9). You see book (4), cell phone (5), chair (8, 9, 10, 11), dining table (4), laptop (3), vase (3).
+Act: go to chair 10
+You arrive at the chair (10). You see book (4), cell phone (5), chair (8, 10, 11), dining table (4), laptop (3), vase (3).
+Act: go to chair 11
+You arrive at the chair (11). You see book (4), cell phone (5), chair (8, 9, 10, 11), dining table (4), laptop (3), vase (3).
+Act: go to dining table 4
+You arrive at the dining table (4). You see book (4), cell phone (5), chair (8, 9, 10, 11), desk lamp (1), dining table (4), drawer (9), laptop (3), vase (3).
+Act: go to drawer 7
+You arrive at the drawer (7). The drawer (7) is closed. You see CD (1), desk lamp (1), drawer (7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18), dresser (2), mug (1).
+Act: go to drawer 8
+You arrive at the drawer (8). The drawer (8) is closed. You see CD (1), desk lamp (1), drawer (7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18), dresser (2), mug (1).
+Act: go to drawer 9
+You arrive at the drawer (9). The drawer (9) is closed. You see CD (1), book (4), cell phone (5), chair (9), desk lamp (1), drawer (9, 10, 12, 13, 14, 15, 16, 17, 18), dresser (2), mug (1).
+Act: go to drawer 10
+You arrive at the drawer (10). The drawer (10) is closed. You see CD (1), book (4), cell phone (5), chair (9), desk lamp (1), drawer (9, 10, 12, 13, 14, 15, 16, 17, 18), dresser (2), mug (1).
+Act: go to drawer 11
+You arrive at the drawer (11). The drawer (11) is closed. You see CD (1), desk lamp (1), drawer (7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18), dresser (2), mug (1).
+Act: go to drawer 12
+You arrive at the drawer (12). The drawer (12) is closed. You see CD (1), desk lamp (1), drawer (7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18), dresser (2), mug (1).
+Act: go to drawer 13
+You arrive at the drawer (13). The drawer (13) is closed. You see CD (1), desk lamp (1), drawer (7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18), dresser (2), mug (1).
+Act: go to drawer 14
+You arrive at the drawer (14). The drawer (14) is closed. You see CD (1), desk lamp (1), drawer (7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18), dresser (2), mug (1).
+Act: go to drawer 15
+You arrive at the drawer (15). The drawer (15) is closed. You see CD (1), desk lamp (1), drawer (7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18), dresser (2), mug (1).
+Act: go to drawer 16
+You arrive at the drawer (16). The drawer (16) is closed. You see CD (1), desk lamp (1), drawer (7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18), dresser (2), mug (1).
+Act: go to drawer 17
+You arrive at the drawer (17). The drawer (17) is closed. You see CD (1), desk lamp (1), drawer (7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18), dresser (2), mug (1).
+Act: go to drawer 18
+You arrive at the drawer (18). The drawer (18) is closed. You see CD (1), book (4), cell phone (5), chair (9), desk lamp (1), drawer (9, 10, 12, 13, 14, 15, 16, 17, 18), dresser (2), mug (1).
+Act: go to dresser 2
+You arrive at the dresser (2). You see CD (1), desk lamp (1), drawer (7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18), dresser (2), mug (1).
+Think: I have not found book yet. Now I need to check where to search. Next, I will search bedroom 3.
+OK.
+Query: get_child_node_names({'parent_node_id': 'bedroom 3'})
+Info: bed 3, box 2, chair (12, 13), dining table 5, drawer (19, 20, 21, 22, 23, 24, 31, 32), dresser 3, side table 1
+Think: In bedroom 3, the book is likely to appear in/on bed 3, box 2, chair (12, 13), dining table 5, drawer (19, 20, 21, 22, 23, 24, 31, 32), dresser 3, side table 1. I can check each place one by one until I find book.
+OK.
+Act: go to bedroom 3
+You move to the bedroom (3). Looking quickly around the room, you see baseball bat (1), bed (3), chair (12, 13), dining table (5), dog bed (1), drawer (19, 20, 21, 22, 23, 24, 31, 32), dresser (3), side table (1), television (2).
+Act: go to bed 3
+You arrive at the bed (3). You see alarm clock (3), baseball bat (1), bed (3), bowl (4), cell phone (6), credit card (2), drawer (31, 32), key chain (2), pillow (4), remote control (3), side table (1).
+Act: go to box 2
+You arrive at the box (2). The box (2) is open. You see basket ball (2), box (2), chair (12, 13), dining table (5), house plant (5), mug (2), remote control (4).
+Act: go to chair 12
+You arrive at the chair (12). You see basket ball (2), box (2), chair (12), dining table (5), house plant (5), mug (2), remote control (4).
+Act: go to chair 13
+You arrive at the chair (13). You see basket ball (2), box (2), chair (13), dining table (5), house plant (5), mug (2).
+Act: go to dining table 5
+You arrive at the dining table (5). You see basket ball (2), box (2), chair (12, 13), dining table (5), house plant (5), mug (2), remote control (4).
+Act: go to drawer 19
+You arrive at the drawer (19). The drawer (19) is closed. You see dog bed (1), drawer (19, 20, 21, 22, 23, 24), dresser (3), television (2).
+Act: go to drawer 20
+You arrive at the drawer (20). The drawer (20) is closed. You see dog bed (1), drawer (19, 20, 21, 22, 23, 24), dresser (3), television (2).
+Act: go to drawer 21
+You arrive at the drawer (21). The drawer (21) is closed. You see dog bed (1), drawer (19, 20, 21, 22, 23, 24), dresser (3), television (2).
+Act: go to drawer 22
+You arrive at the drawer (22). The drawer (22) is closed. You see dog bed (1), drawer (19, 20, 21, 22, 23, 24), dresser (3), television (2).
+Act: go to drawer 23
+You arrive at the drawer (23). The drawer (23) is closed. You see dog bed (1), drawer (19, 20, 21, 22, 23, 24), dresser (3), television (2).
+Act: go to drawer 24
+You arrive at the drawer (24). The drawer (24) is closed. You see dog bed (1), drawer (19, 20, 21, 22, 23, 24), dresser (3), television (2).
+Act: go to drawer 31
+You arrive at the drawer (31). The drawer (31) is closed. You see baseball bat (1), bowl (4), credit card (2), drawer (31, 32), key chain (2), side table (1).
+Act: go to drawer 32
+You arrive at the drawer (32). The drawer (32) is closed. You see baseball bat (1), bowl (4), credit card (2), drawer (31, 32), key chain (2), side table (1).
+Act: go to dresser 3
+You arrive at the dresser (3). You see drawer (19, 20, 21, 22, 23, 24), dresser (3), television (2).
+Act: go to side table 1
+You arrive at the side table (1). You see alarm clock (3), baseball bat (1), bowl (4), cell phone (6), credit card (2), drawer (31, 32), key chain (2), side table (1).
+Think: I have not found book yet. Now I need to check where to search. Next, I will search bedroom 4.
+OK.
+Query: get_child_node_names({'parent_node_id': 'bedroom 4'})
+Info: bed 4, box 3, drawer (25, 26, 27, 28, 29, 30), dresser 4
+Think: In bedroom 4, the book is likely to appear in/on bed 4, box 3, drawer (25, 26, 27, 28, 29, 30), dresser 4. I can check each place one by one until I find book.
+OK.
+Act: go to bedroom 4
+You move to the bedroom (4). Looking quickly around the room, you see basket ball (1), bed (4), dog bed (2), drawer (25, 26, 27, 28, 29, 30), dresser (4), television (3).
+Act: go to bed 4
+You arrive at the bed (4). You see faucet (2), sink (2), sink basin (2).
+Act: go to bedroom 2
+You move to the bedroom (2). Looking quickly around the room, you see bed (2), chair (8, 9, 10, 11), dining table (4), drawer (7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18), dresser (2), house plant (2), painting (3, 4).
+Act: go to book 5
+You arrive at the book (5). The book (5) is closed. You see alarm clock (2), bed (2), book (5, 6), pillow (3).
+Act: go to book 6
+You arrive at the book (6). The book (6) is closed. You see alarm clock (2), bed (2), book (5, 6), pillow (3).
+Act: go to book 4
+You arrive at the book (4). The book (4) is closed. You see book (4), cell phone (5), chair (8, 9, 10, 11), dining table (4), laptop (3), vase (3).
+Think: I find book 4. Now, I need to pick it up.
+OK.
+Act: pick up book 4
+You pick up book (4). You hold book (4).
+Think: Now, I need to find box and put down book 4.
+OK.
+Act: go to bedroom 3
+You move to the bedroom (3). Looking quickly around the room, you see baseball bat (1), bed (3), chair (12, 13), dining table (5), dog bed (1), drawer (19, 20, 21, 22, 23, 24, 31, 32), dresser (3), side table (1), television (2). You hold book (4).
+Act: go to box 2
+You arrive at the box (2). The box (2) is open. You see basket ball (2), box (2), chair (12, 13), dining table (5), house plant (5), mug (2), remote control (4). You hold book (4).
+Act: put down book 4
+You put book (4) in box (2).
+Think: Now, I need to pick up box 2.
+OK.
+Act: pick up box 2
+You pick up box (2). You hold box (2).
+Think: Now, I need to find shelf and put down box 2.
+OK.
+Query: find_objects({'label': 'shelf'})
+Info: [{'name_id_nl': 'shelf 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'kitchen 1'}, {'name_id_nl': 'shelf 2', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'kitchen 1'}, {'name_id_nl': 'shelf 3', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'kitchen 1'}, {'name_id_nl': 'shelf 5', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}, {'name_id_nl': 'shelf 6', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}, {'name_id_nl': 'shelf 7', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}, {'name_id_nl': 'shelf 9', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}, {'name_id_nl': 'shelf 8', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}, {'name_id_nl': 'shelf 4', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}]
+Think: Shelf 1 is in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see cabinet (1), chair (5, 6, 7), countertop (1), dining table (2), fridge (1), garbage bag (1), house plant (1), shelf (1, 2, 3), shelving unit (1). You hold box (2).
+Act: go to shelf 1
+You arrive at the shelf (1). You see book (2, 4), cabinet (1), garbage bag (1), shelf (1, 2, 3), shelving unit (1), vase (2). You hold box (2).
+Act: put down box 2
+Put action failed: There is no valid space to place the object in the target receptacle.
+Think: I need to find another shelf. I see shelf 2.
+OK.
+Act: go to shelf 2
+You arrive at the shelf (2). You see book (2, 4), cabinet (1), garbage bag (1), shelf (1, 2, 3), shelving unit (1), vase (2). You hold box (2).
+Act: put down box 2
+Put action failed: There is no valid space to place the object in the target receptacle.
+Think: I need to find another shelf. I see shelf 3.
+OK.
+Act: go to shelf 3
+You arrive at the shelf (3). You see book (2, 4), cabinet (1), garbage bag (1), shelf (1, 2, 3), shelving unit (1), vase (2). You hold box (2).
+Act: put down box 2
+Put action failed: There is no valid space to place the object in the target receptacle.
+Think: I need to find another shelf. I see shelf 5.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), cart (1), dining table (3), painting (1, 2), shelf (4, 5, 6, 7, 8, 9), sofa (1). You hold box (2).
+Act: go to shelf 5
+You arrive at the shelf (5). You see TV stand (1), book (3, 4), candle (1), laptop (2), remote control (2), shelf (4, 5, 6, 7, 8, 9), television (1), tissue box (2). You hold box (2).
+Act: put down box 2
+Put action failed: There is no valid space to place the object in the target receptacle.
+Think: I need to find another shelf. I see shelf 6.
+OK.
+Act: go to shelf 6
+You arrive at the shelf (6). You see TV stand (1), book (3, 4), candle (1), laptop (2), remote control (2), shelf (4, 5, 6, 7, 8, 9), television (1), tissue box (2). You hold box (2).
+Act: put down box 2
+Put action failed: There is no valid space to place the object in the target receptacle.
+Think: I need to find another shelf. I see shelf 7.
+OK.
+Act: go to shelf 7
+You arrive at the shelf (7). You see TV stand (1), book (3, 4), candle (1), laptop (2), remote control (2), shelf (4, 5, 6, 7, 8, 9), television (1), tissue box (2). You hold box (2).
+Act: put down box 2
+Put action failed: There is no valid space to place the object in the target receptacle.
+Think: I need to find another shelf. I see shelf 9.
+OK.
+Act: go to shelf 9
+You arrive at the shelf (9). You see TV stand (1), book (3, 4), candle (1), laptop (2), remote control (2), shelf (4, 5, 6, 7, 8, 9), television (1), tissue box (2). You hold box (2).
+Act: put down box 2
+Put action failed: There is no valid space to place the object in the target receptacle.
+Think: I need to find another shelf. I see shelf 8.
+OK.
+Act: go to shelf 8
+You arrive at the shelf (8). You see TV stand (1), book (3, 4), candle (1), laptop (2), remote control (2), shelf (4, 5, 6, 7, 8, 9), television (1), tissue box (2). You hold box (2).
+Act: put down box 2
+Put action failed: There is no valid space to place the object in the target receptacle.
+Think: I need to find another shelf. I see shelf 4.
+OK.
+Act: go to shelf 4
+You arrive at the shelf (4). You see TV stand (1), book (3, 4), candle (1), laptop (2), remote control (2), shelf (4, 5, 6, 7, 8, 9), television (1), tissue box (2). You hold box (2).
+Act: put down box 2
+Put action failed: There is no valid space to place the object in the target receptacle.
+Think: Now I complete task.
+OK.
+Act: done

@@ -1,0 +1,8 @@
+Your task is to: Take the key chain and deposit it into the box.
+You are in the house, and there are 2 rooms: kitchen (1), living room (1). You are in the middle of a living room (1). Looking quickly around the room, you see TV stand (1), armchair (1), dining table (2), dog bed (1), drawer (1, 2, 3, 4, 5, 6), dresser (1), garbage can (1), painting (3, 4), shelf (4), sofa (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- (kitchen 1): [(cabinet 1), (chair 4), (chair 3), (chair 2), (chair 1), (countertop 1), (dining table 1), egg 1, (fridge 1), house plant 1, painting 1, painting 2, (shelf 1), (shelf 3), (shelf 2), shelving unit 1, television 1]
+- living room 1: [(armchair 1), (box 1), (dining table 2), dog bed 1, (drawer 2), (drawer 3), (drawer 4), (drawer 6), (drawer 1), (drawer 5), (dresser 1), (garbage can 1), painting 3, painting 4, (shelf 4), (sofa 1), (TV stand 1)]
+You have not taken any actions yet.
+What is the best next action to complete the task as efficiently as possible?
+Think: I am in the middle of a living room (1). I see TV stand (1), armchair (1), dining table (2), dog bed (1), drawer (1, 2, 3, 4, 5, 6), dresser (1), garbage can (1), painting (3, 4), shelf (4), sofa (1). I need to take the key chain and deposit it into the box. I find key chain (1) in the drawer (1). Now, I need to move toward drawer (1) to take key chain (1).
+Act: go to drawer 1

@@ -1,0 +1,25 @@
+Your task is to: Hold the remote control and turn on the candle for illumination.
+You are in the house, and there are 1 rooms: living room (1). You are in the middle of a living room (1). Looking quickly around the room, you see TV stand (1), cart (1), dining table (1), drawer (1), painting (1, 2), room decor (1), shelf (1, 2, 3, 4, 5, 6), side table (1).
+Think: To solve the task, I need to find and pick up remote control, find and turn on candle.
+OK.
+Think: First, I need to find and pick up remote control. The remote control is more likely to appear in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), cart (1), dining table (1), drawer (1), painting (1, 2), room decor (1), shelf (1, 2, 3, 4, 5, 6), side table (1).
+Act: go to TV stand 1
+You arrive at the TV stand (1). You see TV stand (1), bowl (1), candle (1), cell phone (1, 2), drawer (1), plate (1), remote control (2), room decor (1), shelf (1, 2, 3, 4, 5, 6), side table (1), television (1), vase (1).
+Think: I find remote control 2. Now, I need to pick it up.
+OK.
+Act: go to remote control 2
+You arrive at the remote control (2). You see TV stand (1), bowl (1), candle (1), cart (1), cell phone (1, 2), dining table (1), drawer (1), key chain (1), laptop (1), pen (1), pencil (1), plate (1), remote control (1, 2), shelf (1, 2, 3, 4, 5, 6), side table (1), television (1), vase (1).
+Act: pick up remote control 2
+You pick up remote control (2). You hold remote control (2).
+Think: Now I need to find and turn on candle. The candle is more likely to appear in living room 1.
+OK.
+Act: go to candle 1
+You arrive at the candle (1). You see TV stand (1), bowl (1), candle (1), cell phone (1, 2), drawer (1), key chain (1), pen (1), pencil (1), plate (1), remote control (1), room decor (1), shelf (1, 2, 3, 4, 5, 6), side table (1), television (1), vase (1). You hold remote control (2).
+Act: turn on candle 1
+You turn on candle (1). You hold remote control (2).
+Think: Now I complete the task.
+OK.
+Act: done

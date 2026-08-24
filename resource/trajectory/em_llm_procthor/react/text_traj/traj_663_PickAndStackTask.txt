@@ -1,0 +1,95 @@
+Your task is to: Place a box containing a pencil on the shelf.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a bedroom (1). Looking quickly around the room, you see baseball bat (1), bed (1), cabinet (1, 2, 3, 4), chair (1, 2, 3, 4, 5, 6), dining table (1), drawer (1, 2, 3, 4), dresser (1), painting (1, 2), side table (1), television (1).
+Think: To solve the task, I need to find and pick up pencil, put it in box, pick up and place box on shelf.
+OK.
+Think: First, I need to find and pick up pencil. The pencil is more likely to appear in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), box (1), cabinet (6), dining table (3), shelf (4, 5, 6, 7), shelving unit (2), television (2).
+Think: In living room 1, the pencil is likely to appear in/on TV stand 1, box 1, cabinet 6, dining table 3, shelf (4, 5, 6, 7), shelving unit 2. I can check each place one by one until I find pencil.
+OK.
+Act: go to TV stand 1
+You arrive at the TV stand (1). You see TV stand (1), book (3), bowl (3), cabinet (6), candle (1, 2), cell phone (2), credit card (2), house plant (3), key chain (2), laptop (2), newspaper (1), remote control (2, 3), shelf (4, 5, 6, 7), shelving unit (2), television (2), vase (3).
+Act: go to box 1
+You arrive at the box (1). You see box (1), cabinet (6), dining table (3), laptop (2), plate (2).
+Act: go to cabinet 6
+You arrive at the cabinet (6). The cabinet (6) is closed. You see TV stand (1), book (3), bowl (3), cabinet (6), candle (1, 2), cell phone (2), credit card (2), dining table (3), house plant (3), key chain (2), laptop (2), newspaper (1), plate (2), remote control (2, 3), shelf (4, 5, 6, 7), shelving unit (2), television (2), vase (3).
+Act: open cabinet 6
+You open cabinet (6). You see TV stand (1), book (3), bowl (3), cabinet (6), candle (1, 2), cell phone (2), credit card (2), dining table (3), house plant (3), key chain (2), laptop (2), newspaper (1), plate (2), remote control (2, 3), shelf (4, 5, 6, 7), shelving unit (2), television (2), vase (3).
+Act: go to dining table 3
+You arrive at the dining table (3). You see book (3), box (1), cabinet (6), dining table (3), laptop (2), newspaper (1), plate (2), shelf (4, 5), shelving unit (2).
+Act: go to shelf 4
+You arrive at the shelf (4). You see TV stand (1), book (3), bowl (3), cabinet (6), candle (1, 2), cell phone (2), credit card (2), house plant (3), key chain (2), laptop (2), newspaper (1), remote control (2, 3), shelf (4, 5, 6, 7), shelving unit (2), television (2), vase (3).
+Act: go to shelf 5
+You arrive at the shelf (5). You see TV stand (1), book (3), bowl (3), cabinet (6), candle (1, 2), cell phone (2), credit card (2), house plant (3), key chain (2), laptop (2), newspaper (1), remote control (2, 3), shelf (4, 5, 6, 7), shelving unit (2), television (2), vase (3).
+Act: go to shelf 6
+You arrive at the shelf (6). You see TV stand (1), book (3), bowl (3), cabinet (6), candle (1, 2), cell phone (2), credit card (2), house plant (3), key chain (2), laptop (2), newspaper (1), remote control (2, 3), shelf (4, 5, 6, 7), shelving unit (2), television (2), vase (3).
+Act: go to shelf 7
+You arrive at the shelf (7). You see TV stand (1), book (3), bowl (3), cabinet (6), candle (1, 2), cell phone (2), credit card (2), house plant (3), key chain (2), laptop (2), newspaper (1), plate (2), remote control (2, 3), shelf (4, 5, 6, 7), shelving unit (2), television (2), vase (3).
+Act: go to shelving unit 2
+You arrive at the shelving unit (2). You see TV stand (1), book (3), bowl (3), cabinet (6), candle (1, 2), cell phone (2), credit card (2), dining table (3), house plant (3), key chain (2), laptop (2), newspaper (1), plate (2), remote control (2, 3), shelf (4, 5, 6, 7), shelving unit (2), television (2), vase (3).
+Think: There is no pencil in living room 1. I need to move to bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see baseball bat (1), bed (1), cabinet (1, 2, 3, 4), chair (1, 2, 3, 4, 5, 6), dining table (1), drawer (1, 2, 3, 4), dresser (1), painting (1, 2), side table (1), television (1).
+Think: In bedroom 1, the pencil is likely to appear in/on baseball bat 1, bed 1, cabinet (1, 2, 3, 4), chair (1, 2, 3, 4, 5, 6), dining table 1, drawer (1, 2, 3, 4), dresser 1, side table 1. I can check each place one by one until I find pencil.
+OK.
+Act: go to baseball bat 1
+You arrive at the baseball bat (1). You see baseball bat (1), chair (2).
+Act: go to bed 1
+You arrive at the bed (1). You see faucet (1), sink (1), sink basin (1).
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see baseball bat (1), bed (1), cabinet (1, 2, 3, 4), chair (1, 2, 3, 4, 5, 6), dining table (1), drawer (1, 2, 3, 4), dresser (1), painting (1, 2), side table (1), television (1).
+Act: go to cabinet 1
+You arrive at the cabinet (1). The cabinet (1) is closed. You see CD (1), book (1), cabinet (1, 2, 3), drawer (1, 2, 3, 4), dresser (1), house plant (2), statue (3).
+Act: open cabinet 1
+You open cabinet (1). You see CD (1), book (1), cabinet (1, 2, 3), drawer (1, 2, 3, 4), dresser (1), house plant (2), laptop (1), statue (3).
+Act: go to cabinet 2
+You arrive at the cabinet (2). The cabinet (2) is closed. You see CD (1), book (1), cabinet (1, 2, 3), drawer (1, 2, 3, 4), dresser (1), house plant (2), laptop (1), statue (3).
+Act: open cabinet 2
+You open cabinet (2). You see CD (1), book (1), cabinet (1, 2, 3), drawer (1, 2, 3, 4), dresser (1), house plant (2), laptop (1), statue (3).
+Act: go to cabinet 3
+You arrive at the cabinet (3). The cabinet (3) is closed. You see CD (1), book (1), cabinet (1, 2, 3, 4), drawer (1, 2, 3, 4), dresser (1), house plant (2), laptop (1), statue (3), television (1).
+Act: open cabinet 3
+You open cabinet (3). You see CD (1), book (1), cabinet (1, 2, 3, 4), desk lamp (1), drawer (1, 2, 3, 4), dresser (1), house plant (2), laptop (1), statue (3), television (1).
+Act: go to cabinet 4
+You arrive at the cabinet (4). The cabinet (4) is closed. You see CD (1), book (1), cabinet (2, 3, 4), chair (4), desk lamp (1), drawer (2, 3, 4), dresser (1), house plant (2), pencil (1), remote control (1), side table (1), statue (1, 2), television (1).
+Act: open cabinet 4
+You open cabinet (4). You see CD (1), book (1), cabinet (2, 3, 4), chair (4), desk lamp (1), drawer (2, 3, 4), dresser (1), house plant (2), pencil (1), remote control (1), side table (1), statue (1, 2), television (1).
+Think: I find pencil 1. Now, I need to pick it up.
+OK.
+Act: go to pencil 1
+You arrive at the pencil (1). You see alarm clock (1), bowl (1), box (3, 4), cabinet (4), chair (2, 4, 5), dining table (1), key chain (1), mug (1), pencil (1, 2), remote control (1), statue (4), vase (1).
+Act: pick up pencil 1
+You pick up pencil (1). You hold pencil (1).
+Think: Now, I need to find box and put down pencil 1. The box is more likely to appear in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), box (1), cabinet (6), dining table (3), shelf (4, 5, 6, 7), shelving unit (2), television (2). You hold pencil (1).
+Act: go to box 1
+You arrive at the box (1). You see box (1), cabinet (6), dining table (3), laptop (2), plate (2). You hold pencil (1).
+Act: put down pencil 1
+You put pencil (1) in box (1).
+Think: Now, I need to pick up box 1.
+OK.
+Act: pick up box 1
+You pick up box (1). You hold box (1).
+Think: Now, I need to find shelf and put down box 1. The shelf is more likely to appear in bedroom 1.
+OK.
+Act: go to bedroom 1
+No reachable points found inside room bedroom
+Think: I need to find another shelf.
+OK.
+Act: go to shelf 4
+You arrive at the shelf (4). You see TV stand (1), book (3), bowl (3), cabinet (6), candle (1, 2), cell phone (2), credit card (2), dining table (3), house plant (3), key chain (2), laptop (2), newspaper (1), pencil (1), plate (2), remote control (2, 3), shelf (4, 5, 6, 7), shelving unit (2), television (2), vase (3). You hold box (1).
+Act: put down box 1
+Put action failed: There is no valid space to place the object in the target receptacle.
+Think: I need to find another shelf.
+OK.
+Act: go to shelf 5
+You arrive at the shelf (5). You see TV stand (1), book (3), bowl (3), cabinet (6), candle (1, 2), cell phone (2), credit card (2), dining table (3), house plant (3), key chain (2), laptop (2), newspaper (1), pencil (1), plate (2), remote control (2, 3), shelf (4, 5, 6, 7), shelving unit (2), television (2), vase (3). You hold box (1).
+Act: put down box 1
+You put box (1) in shelf (5).
+Think: Now I complete the task.
+OK.
+Act: done

@@ -1,0 +1,41 @@
+Your task is to: Hold a pencil and switch on the desk lamp.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a living room (1). Looking quickly around the room, you see cabinet (1), dining table (3), garbage can (2), painting (4), room decor (1), shelf (1, 2, 3), shelving unit (1), sofa (1).
+Think: To solve the task, I need to find and pick up pencil, then find and turn on desk lamp.
+OK.
+Think: First, I need to find and pick up pencil.
+OK.
+Query: find_objects({'label': 'pencil'})
+Info: 
+Think: I have not seen pencil yet. Now I need to check where to search. First, I will search living room 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'living room 1'})
+Info: cabinet 1, dining table 3, garbage can 2, shelf (1, 2, 3), sofa 1
+Think: In living room 1, the pencil is likely to appear in/on cabinet 1, dining table 3, garbage can 2, shelf (1, 2, 3), sofa 1. I can check each place one by one until I find pencil.
+OK.
+Act: go to cabinet 1
+You arrive at the cabinet (1). The cabinet (1) is closed. You see painting (2).
+Act: open drawer 1
+You open drawer (1). You see painting (2).
+Act: go to dining table 1
+You arrive at the dining table (1). You see basket ball (1), book (1), chair (1, 2, 3, 4), dining table (1), house plant (2), pencil (1), vase (1).
+Think: I find pencil 1. Now, I need to pick it up.
+OK.
+Act: go to pencil 1
+You arrive at the pencil (1). You see basket ball (1), book (1), chair (2, 3), dining table (1), house plant (2), pencil (1), vase (1).
+Act: pick up pencil 1
+You pick up pencil (1). You hold pencil (1).
+Think: Now, I need to find and turn on desk lamp.
+OK.
+Query: find_objects({'label': 'desk lamp'})
+Info: [{'name_id_nl': 'desk lamp 1', 'node_type': 'object', 'properties': ['toggleable'], 'states': []}]
+Think: Desk lamp 1 is in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see cabinet (1), dining table (3), garbage can (2), painting (4), room decor (1), shelf (1, 2, 3), shelving unit (1), sofa (1). You hold pencil (1).
+Act: go to desk lamp 1
+You arrive at the desk lamp (1). You see book (3), bowl (1), candle (1), cell phone (1), desk lamp (1), dining table (3), garbage can (2), house plant (3), key chain (2), laptop (2), painting (4), remote control (2). You hold pencil (1).
+Act: turn on desk lamp 1
+You turn on desk lamp (1). You hold pencil (1).
+Think: Now I complete the task.
+OK.
+Act: done

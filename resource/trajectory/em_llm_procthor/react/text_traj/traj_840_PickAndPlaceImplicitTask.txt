@@ -1,0 +1,45 @@
+Your task is to: Remove all objects from the side table and place them in the dresser.
+You are in the house, and there are 1 rooms: bedroom (1). You are in the middle of a bedroom (1). Looking quickly around the room, you see basket ball (1), bed (1), drawer (1, 2, 3, 4), dresser (1), garbage can (1), painting (1, 2), side table (1), television (1).
+Think: To solve the task, I need to find side table and check what is on top of it. Then, I need to move everything on side table to dresser.
+OK.
+Think: First, I need to find side table. The side table is more likely to appear in bedroom 1.
+OK.
+Act: go to side table 1
+You arrive at the side table (1). You see alarm clock (1), bed (1), cloth (1), drawer (4), painting (2), pencil (1), remote control (1), side table (1).
+Think: Now, I need to move alarm clock 1, cloth 1, pencil 1, remote control 1 to dresser.
+OK.
+Act: go to alarm clock 1
+You arrive at the alarm clock (1). You see alarm clock (1), bed (1), cloth (1), drawer (4), painting (2), pencil (1), remote control (1), side table (1).
+Act: pick up alarm clock 1
+You pick up alarm clock (1). You hold alarm clock (1).
+Act: go to dresser 1
+You arrive at the dresser (1). You see basket ball (1), bed (1), cell phone (1), credit card (1), drawer (1, 2, 3), dresser (1), pencil (2), pillow (1, 2), remote control (1), statue (1), television (1). You hold alarm clock (1).
+Act: put down alarm clock 1
+You put alarm clock (1) in dresser (1).
+Act: go to cloth 1
+You arrive at the cloth (1). You see cloth (1), drawer (4), garbage can (1), painting (2), pencil (1), remote control (1), side table (1).
+Act: pick up cloth 1
+You pick up cloth (1). You hold cloth (1).
+Act: go to dresser 1
+You arrive at the dresser (1). You see alarm clock (1), basket ball (1), bed (1), cell phone (1), credit card (1), drawer (1, 2, 3), dresser (1), pencil (2), pillow (1, 2), remote control (1), statue (1), television (1). You hold cloth (1).
+Act: put down cloth 1
+You put cloth (1) in dresser (1).
+Act: go to pencil 1
+You arrive at the pencil (1). You see drawer (4), painting (2), pencil (1), remote control (1), side table (1).
+Act: pick up pencil 1
+You pick up pencil (1). You hold pencil (1).
+Act: go to dresser 1
+You arrive at the dresser (1). You see alarm clock (1), basket ball (1), bed (1), cell phone (1), cloth (1), credit card (1), drawer (1, 2, 3), dresser (1), pencil (2), pillow (1, 2), remote control (1), statue (1), television (1). You hold pencil (1).
+Act: put down pencil 1
+You put pencil (1) in dresser (1).
+Act: go to remote control 1
+You arrive at the remote control (1). You see basket ball (1), bed (1), drawer (4), painting (2), pillow (1, 2), remote control (1), side table (1).
+Act: pick up remote control 1
+You pick up remote control (1). You hold remote control (1).
+Act: go to dresser 1
+You arrive at the dresser (1). You see alarm clock (1), basket ball (1), bed (1), cell phone (1), cloth (1), credit card (1), drawer (1, 2, 3), dresser (1), pencil (1, 2), pillow (1, 2), statue (1), television (1). You hold remote control (1).
+Act: put down remote control 1
+You put remote control (1) in dresser (1).
+Think: Now I complete the task.
+OK.
+Act: done

@@ -1,0 +1,69 @@
+Your task is to: Pick up a pencil and put it in the drawer.
+You are in the house, and there are 1 rooms: bedroom (1). You are in the middle of a bedroom (1). Looking quickly around the room, you see bed (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), painting (1, 2).
+Think: To solve the task, I need to find and pick up pencil, find and open drawer, put down pencil in drawer.
+OK.
+Think: First, I need to find and pick up pencil.
+OK.
+Query: find_objects({'label': 'pencil'})
+Info: 
+Think: I have not seen pencil yet. Now I need to check where to search. First, I will search bedroom 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'bedroom 1'})
+Info: bed 1, drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser 1
+Think: In bedroom 1, the pencil is likely to appear in/on bed 1, drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser 1. I can check each place one by one until I find pencil.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see bed (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), painting (1, 2).
+Act: go to bed 1
+You arrive at the bed (1). You see baseball bat (1), bed (1), house plant (1), pillow (1).
+Think: I need to check whether I see pencil.
+OK.
+Query: find_objects({'label': 'pencil'})
+Info: 
+Think: I need to check if there's any place in bedroom 1 that I haven't visited.
+OK.
+Query: get_child_node_names({'parent_node_id': 'bedroom 1', 'child_node_attrs': {'visited': False}})
+Info: drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser 1
+Think: In bedroom 1, I have not visited drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser 1. I can check each place one by one until I find pencil.
+OK.
+Act: go to drawer 1
+You arrive at the drawer (1). The drawer (1) is closed. You see drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), painting (1, 2), pencil (1).
+Act: open drawer 1
+You open drawer (1). You see drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), painting (1, 2), pencil (1).
+Act: go to drawer 2
+You arrive at the drawer (2). The drawer (2) is closed. You see drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), painting (1, 2), pencil (1).
+Act: open drawer 2
+You open drawer (2). You see drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), painting (1, 2), pencil (1).
+Act: go to drawer 3
+You arrive at the drawer (3). The drawer (3) is closed. You see drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), painting (1, 2), pencil (1).
+Act: open drawer 3
+You open drawer (3). You see drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), painting (1, 2), pencil (1).
+Think: I need to check whether I see pencil.
+OK.
+Query: find_objects({'label': 'pencil'})
+Info: [{'name_id_nl': 'pencil 1', 'node_type': 'object', 'properties': ['pickupable'], 'states': []}]
+Query: get_edges_for_node({'node_id': 'pencil 1'})
+Info: [('pencil 1', 'dresser 1', 'ON'), ('pencil 1', 'drawer 1', 'CLOSE'), ('pencil 1', 'drawer 2', 'CLOSE'), ('pencil 1', 'drawer 10', 'CLOSE'), ('pencil 1', 'drawer 9', 'CLOSE'), ('pencil 1', 'drawer 8', 'CLOSE'), ('pencil 1', 'drawer 7', 'CLOSE'), ('pencil 1', 'drawer 6', 'CLOSE'), ('pencil 1', 'drawer 5', 'CLOSE'), ('pencil 1', 'drawer 4', 'CLOSE'), ('pencil 1', 'drawer 3', 'CLOSE'), ('pencil 1', 'painting 2', 'CLOSE'), ('pencil 1', 'user 1', 'CLOSE'), ('pencil 1', 'bedroom 1', 'INSIDE'), ('drawer 1', 'pencil 1', 'CLOSE'), ('drawer 2', 'pencil 1', 'CLOSE'), ('drawer 10', 'pencil 1', 'CLOSE'), ('drawer 9', 'pencil 1', 'CLOSE'), ('drawer 8', 'pencil 1', 'CLOSE'), ('drawer 7', 'pencil 1', 'CLOSE'), ('drawer 6', 'pencil 1', 'CLOSE'), ('drawer 5', 'pencil 1', 'CLOSE'), ('drawer 4', 'pencil 1', 'CLOSE'), ('drawer 3', 'pencil 1', 'CLOSE'), ('painting 2', 'pencil 1', 'CLOSE'), ('user 1', 'pencil 1', 'CLOSE')]
+Think: Pencil 1 is on dresser 1.
+OK.
+Act: go to dresser 1
+You arrive at the dresser (1). You see drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), painting (2), pencil (1).
+Act: go to pencil 1
+You arrive at the pencil (1). You see drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), painting (2), pencil (1).
+Act: pick up pencil 1
+You pick up pencil (1). You hold pencil (1).
+Think: Now, I need to find and open drawer.
+OK.
+Query: find_objects({'label': 'drawer'})
+Info: [{'name_id_nl': 'drawer 1', 'node_type': 'asset', 'properties': ['openable'], 'states': ['isOpen'], 'room': 'bedroom 1'}, {'name_id_nl': 'drawer 2', 'node_type': 'asset', 'properties': ['openable'], 'states': ['isOpen'], 'room': 'bedroom 1'}, {'name_id_nl': 'drawer 10', 'node_type': 'asset', 'properties': ['openable'], 'states': [], 'room': 'bedroom 1'}, {'name_id_nl': 'drawer 9', 'node_type': 'asset', 'properties': ['openable'], 'states': [], 'room': 'bedroom 1'}, {'name_id_nl': 'drawer 8', 'node_type': 'asset', 'properties': ['openable'], 'states': [], 'room': 'bedroom 1'}, {'name_id_nl': 'drawer 7', 'node_type': 'asset', 'properties': ['openable'], 'states': [], 'room': 'bedroom 1'}, {'name_id_nl': 'drawer 6', 'node_type': 'asset', 'properties': ['openable'], 'states': [], 'room': 'bedroom 1'}, {'name_id_nl': 'drawer 5', 'node_type': 'asset', 'properties': ['openable'], 'states': [], 'room': 'bedroom 1'}, {'name_id_nl': 'drawer 4', 'node_type': 'asset', 'properties': ['openable'], 'states': [], 'room': 'bedroom 1'}, {'name_id_nl': 'drawer 3', 'node_type': 'asset', 'properties': ['openable'], 'states': ['isOpen'], 'room': 'bedroom 1'}]
+Think: Drawer 1 is in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see bed (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), painting (1, 2). You hold pencil (1).
+Act: go to drawer 1
+You arrive at the drawer (1). The drawer (1) is open. You see drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), painting (1, 2). You hold pencil (1).
+Act: put down pencil 1
+You put pencil (1) in drawer (1).
+Think: Now I complete the task.
+OK.
+Act: done

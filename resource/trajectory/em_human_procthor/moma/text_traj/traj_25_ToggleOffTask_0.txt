@@ -1,0 +1,8 @@
+Your task is to: Make sure to turn off any candles, televisions, and floor lamps that are still on.
+You are in the house, and there are 2 rooms: kitchen (1), living room (1). You are in the middle of a kitchen (1). Looking quickly around the room, you see countertop (1), fridge (1), house plant (1), painting (1, 2, 3). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- kitchen 1: [(countertop 1), (fridge 1), house plant 1, painting 1, painting 2, painting 3, pepper shaker 1]
+- (living room 1): [(box 1), (box 2), cart 1, (chair 1), (dining table 1), floor lamp 1, painting 4, (shelf 2), (shelf 1), (shelf 3), (shelf 4), (shelf 5), (shelf 6), (TV stand 1)]
+You have not taken any actions yet.
+What is the best next action to complete the task as efficiently as possible?
+Think: To solve the task, I need to go through every room, check for candle, television, and floor lamp, and turn them off if they are turned on. First, I need to check kitchen 1.
+Act: go to kitchen 1

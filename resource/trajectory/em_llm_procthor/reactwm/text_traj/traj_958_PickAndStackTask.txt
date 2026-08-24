@@ -1,0 +1,51 @@
+Your task is to: Place a box containing a remote control on the shelf.
+You are in the house, and there are 2 rooms: bathroom (1), bedroom (1). You are in the middle of a bathroom (1). Looking quickly around the room, you see garbage can (1), painting (3, 4), plunger (1), sink (1), sink basin (1), toilet (1).
+Think: To solve the task, I need to find and pick up remote control, put it in box, pick up and place box on shelf.
+OK.
+Think: First, I need to find and pick up remote control.
+OK.
+Query: recall location of remote control
+You have not seen remote control before.
+Think: I have not seen remote control yet. The remote control is more likely to appear in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see baseball bat (1), bed (1, 2), desk (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), painting (1, 2), shelf (1, 2, 3, 4).
+Think: In bedroom 1, the remote control is likely to appear in/on bed (1, 2), box (1, 2), desk 1, drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser 1, house plant 1. I can check each place one by one until I find remote control.
+OK.
+Act: go to bed 1
+You arrive at the bed (1). You see CD (1), basket ball (1), bed (1), box (1), desk (1), shelf (1), tissue box (1).
+Act: go to bed 2
+You arrive at the bed (2). You see bed (2), pillow (1, 2), remote control (1), teddy bear (1).
+Think: I find remote control 1. Now, I need to pick it up.
+OK.
+Act: go to remote control 1
+You arrive at the remote control (1). You see bed (2), desk lamp (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), painting (1), pillow (1, 2), remote control (1), statue (1), teddy bear (1).
+Act: pick up remote control 1
+You pick up remote control (1). You hold remote control (1).
+Think: Now, I need to find box and put down remote control 1.
+OK.
+Query: recall location of box
+You saw box 1 in bedroom 1.
+Think: Box 1 is in bedroom 1.
+OK.
+Act: go to box 1
+You arrive at the box (1). You see CD (1), alarm clock (1), box (1), desk (1), shelf (1, 2, 3, 4), tissue box (1). You hold remote control (1).
+Act: put down remote control 1
+You put remote control (1) in box (1).
+Think: Now, I need to pick up box 1.
+OK.
+Act: pick up box 1
+You pick up box (1). You hold box (1).
+Think: Now, I need to find shelf and put down box 1.
+OK.
+Query: recall location of shelf
+You saw shelf 1 in bedroom 1. You saw shelf 2 in bedroom 1. You saw shelf 3 in bedroom 1. You saw shelf 4 in bedroom 1.
+Think: Shelf 1 is in bedroom 1.
+OK.
+Act: go to shelf 1
+You arrive at the shelf (1). You see CD (1), alarm clock (1), desk (1), remote control (1), shelf (1, 2, 3, 4), tissue box (1). You hold box (1).
+Act: put down box 1
+You put box (1) in shelf (1).
+Think: Now I complete the task.
+OK.
+Act: done

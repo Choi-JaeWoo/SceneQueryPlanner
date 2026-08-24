@@ -1,0 +1,10 @@
+Your task is to: Clean the spoon and place it in the cabinet.
+You move to the kitchen (1). Looking quickly around the room, you see cabinet (5), chair (4, 5, 6), countertop (1), dining table (2), fridge (1), painting (1, 2, 3), shelf (1, 2, 3), shelving unit (1), stool (1), television (2). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- (bathroom 1): [(sink 1), plunger 1, (sink basin 1), (toilet 1), (garbage can 1), faucet 1]
+- (bedroom 1): [(dresser 1), (drawer 3), (drawer 4), (drawer 1), (cabinet 2), (chair 1), (dining table 1), (cabinet 4), (chair 2), (cabinet 1), (chair 3), dog bed 1, (bed 1), television 1, (box 2), (drawer 2), (side table 1), (cabinet 3)]
+- kitchen 1: [painting 1, television 2, painting 3, painting 2, shelving unit 1, bowl 2, butter knife 2, butter knife 1, (cabinet 5), cell phone 5, (chair 5), (chair 6), (chair 4), (countertop 1), (dining table 2), (fridge 1), ladle 2, ladle 1, lettuce 2, pencil 3, salt shaker 1, (shelf 1), (shelf 2), (shelf 3), spoon 1, spray bottle 2, statue 1, (stool 1), wine bottle 1]
+- (living room 1): [(sofa 1), (shelf 4), painting 4, (garbage can 2), (chair 10), (TV stand 1), (box 1), (chair 8), (chair 7), house plant 1, (chair 9), (dining table 3)]
+Your 1 previous actions were: go to kitchen 1 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I move to kitchen 1. I find spoon 1. Now, I need to move toward spoon 1 to pick it up.
+Act: go to spoon 1

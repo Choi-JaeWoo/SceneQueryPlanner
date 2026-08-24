@@ -1,0 +1,57 @@
+Your task is to: Take everything from the countertop and put it on the diningtable.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a bedroom (1). Looking quickly around the room, you see TV stand (1), armchair (1), bed (1), chair (1, 2, 3), dining table (1), drawer (1, 2, 3), dresser (1), house plant (1), painting (1, 2, 3), shelf (1, 2, 3, 4, 5, 6), sofa (1).
+Think: To solve the task, I need to find countertop and check what is on top of it. Then, I need to move everything on countertop to dining table.
+OK.
+Think: First, I need to find countertop.
+OK.
+Query: find_objects({'label': 'countertop'})
+Info: [{'name_id_nl': 'countertop 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'kitchen 1'}]
+Think: I find countertop 1 in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see chair (4, 5, 6), countertop (1), dining table (2), fridge (1), garbage bag (1), garbage can (2), painting (4), stool (1).
+Act: go to countertop 1
+You arrive at the countertop (1). You see countertop (1), knife (1), pan (1), spoon (1).
+Think: Now, I need to check what is on top of countertop 1.
+OK.
+Query: get_edges_for_node({'node_id': 'countertop 1', 'relation': 'ON'})
+Info: [('knife 1', 'countertop 1', 'ON'), ('pan 1', 'countertop 1', 'ON'), ('spoon 1', 'countertop 1', 'ON')]
+Think: Now, I need to move knife 1, pan 1, spoon 1 to dining table.
+OK.
+Act: go to knife 1
+You arrive at the knife (1). You see countertop (1), knife (1), pan (1), spoon (1).
+Act: pick up knife 1
+You pick up knife (1). You hold knife (1).
+Think: Now, I need to find dining table.
+OK.
+Query: find_objects({'label': 'dining table'})
+Info: [{'name_id_nl': 'dining table 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'bedroom 1'}, {'name_id_nl': 'dining table 3', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}, {'name_id_nl': 'dining table 2', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'kitchen 1'}]
+Think: I find dining table 2.
+OK.
+Act: go to dining table 2
+You arrive at the dining table (2). You see bowl (1), cell phone (1), chair (4, 5, 6), dining table (2), fridge (1), house plant (2), plate (1). You hold knife (1).
+Act: put down knife 1
+You put knife (1) in dining table (2).
+Act: go to pan 1
+You arrive at the pan (1). You see countertop (1), pan (1), spoon (1).
+Act: pick up pan 1
+You pick up pan (1). You hold pan (1).
+Act: go to dining table 2
+You arrive at the dining table (2). You see bowl (1), cell phone (1), chair (4, 5, 6), dining table (2), fridge (1), house plant (2), knife (1), plate (1). You hold pan (1).
+Act: put down pan 1
+You put pan (1) on dining table (2).
+Act: go to spoon 1
+You arrive at the spoon (1). You see countertop (1), spoon (1).
+Act: pick up spoon 1
+You pick up spoon (1). You hold spoon (1).
+Act: go to dining table 2
+You arrive at the dining table (2). You see bowl (1), cell phone (1), chair (4, 5, 6), dining table (2), fridge (1), house plant (2), knife (1), pan (1), plate (1). You hold spoon (1).
+Act: put down spoon 1
+You put spoon (1) in dining table (2).
+Think: Now I need to check what's left on countertop 1.
+OK.
+Query: get_edges_for_node({'node_id': 'countertop 1', 'relation': 'ON'})
+Info: 
+Think: Now I complete the task.
+OK.
+Act: done

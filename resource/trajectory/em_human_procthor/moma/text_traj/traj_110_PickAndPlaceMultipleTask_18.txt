@@ -1,0 +1,10 @@
+Your task is to: Collect a pencil and a book and place them on the countertop.
+You arrive at the bed (1). You see bed (1), pillow (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- bathroom 1: [(garbage can 1), painting 2, (toilet 1), painting 3, plunger 1, painting 4, (sink basin 1), (sink 1), faucet 1]
+- bedroom 1: [painting 1, basket ball 1, baseball bat 1, cell phone 1, cell phone 2, statue 1, statue 2, television 1, drawer 1, (chair 1), (bed 2), (desk 1), (side table 1), pillow 1, (drawer 2), (dresser 1), bed 1, (drawer 3)]
+- (kitchen 1): [(dining table 1), (fridge 1), (countertop 1), (chair 2)]
+- living room 1: [house plant 1, book 2, bowl 1, plate 1, television 2, box 1, dining table 2, pillow 2, sofa 1]
+Your 5 previous actions were: go to sofa 1 (success), go to bedroom 1 (success), go to drawer 1 (success), open drawer 1 (success), go to bed 1 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I need to check unexplored areas in bedroom 1 to find pencil. Now, I need to check bed 2.
+Act: go to bed 2

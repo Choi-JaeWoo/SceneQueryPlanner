@@ -1,0 +1,231 @@
+Your task is to: Please put a cupcake and some juice in a glass on the coffee table.
+You are in the house, and there are 5 rooms: bathroom 1, bedroom (1, 2), kitchen 1, living room 1. You are in the middle of a kitchen 1. Looking quickly around the room, you see bench (1, 2, 3, 4), bookshelf (1, 2), chair 1, dishwasher 1, faucet 1, fridge 1, kitchen cabinet (1, 2, 3, 4, 5, 6, 7, 8), kitchen counter (1, 3), kitchen table (1, 2), microwave oven 1, sink 1, stove 1, toaster 1.
+Think: To solve the task, I need to find and pick up cupcake, find coffee table and put down cupcake, find and pick up juice, find coffee table and put down juice, find and pick up glass, find coffee table and put down glass.
+OK.
+Think: First, I need to find and pick up cupcake. The cupcake is more likely to appear in kitchen 1.
+OK.
+Act: go to kitchen cabinet 1
+You arrive at the kitchen cabinet 1. The kitchen cabinet 1 is closed. You see bananas (1, 2), bowl 7, cooking pot 1, cutlery knife (1, 2), faucet 1, frying pan 1, kitchen cabinet (1, 2, 8), kitchen counter 3, minced meat 1, salmon 1, sink 1, stove 1.
+Act: open kitchen cabinet 1
+You open kitchen cabinet 1. You see bananas (1, 2), bowl 7, cooking pot 1, cutlery knife (1, 2), faucet 1, frying pan 1, kitchen cabinet (1, 2), kitchen counter 3, minced meat 1, salmon 1, sink 1, stove 1
+Act: go to kitchen cabinet 2
+You arrive at the kitchen cabinet 2. The kitchen cabinet 2 is closed. You see cooking pot 1, cutlery knife (1, 2), faucet 1, kitchen cabinet (1, 2, 3), kitchen counter 3, milk (1, 2), minced meat 1, salmon 1, sink 1, stove 1.
+Act: open kitchen cabinet 2
+You open kitchen cabinet 2. You see cooking pot 1, cutlery knife (1, 2), faucet 1, frying pan 1, kitchen cabinet (1, 2, 3), kitchen counter 3, milk (1, 2), minced meat 1, salmon 1, sink 1, stove 1
+Act: go to kitchen cabinet 3
+You arrive at the kitchen cabinet 3. The kitchen cabinet 3 is closed. You see cutlery knife (1, 2), cutlets 1, faucet 1, kitchen cabinet (1, 2, 3, 4), kitchen counter 3, microwave oven 1, milk (1, 2), minced meat 1, salmon 1, sink 1.
+Act: open kitchen cabinet 3
+You open kitchen cabinet 3. You see cupcake 1, cutlery knife (1, 2), cutlets 1, faucet 1, kitchen cabinet (1, 2, 3, 4), kitchen counter 3, microwave oven 1, milk (1, 2), minced meat 1, salmon 1, sink 1
+Think: I find cupcake 1. Now, I need to pick it up.
+OK.
+Act: pick up cupcake 1
+You pick up cupcake 1. You hold cupcake 1.
+Think: Now I need to find coffee table and put down cupcake 1.
+OK.
+Act: go to living room 1
+You move to the living room 1. Looking quickly around the room, you see bookshelf (3, 4), coffee table 1, sofa 1, tv 1. You hold cupcake 1.
+Act: go to coffee table 1
+You arrive at the coffee table 1. You see coffee table 1, cupcake 1. You hold cupcake 1.
+Act: put down cupcake 1
+You put cupcake 1 on coffee table 1.
+Think: Now I need to find and pick up juice.
+OK.
+Think: I have not seen juice yet. In kitchen 1, the juice is likely to appear in/on kitchen cabinet (4, 5, 6, 7, 8), kitchen counter (1, 2, 3). I can check each place one by one until I find juice.
+OK.
+Act: go to kitchen 1
+You move to the kitchen 1. Looking quickly around the room, you see bench (1, 2, 3, 4), bookshelf (1, 2), chair 1, dishwasher 1, faucet 1, fridge 1, kitchen cabinet (1, 2, 3, 4, 5, 6, 7, 8), kitchen counter (1, 3), kitchen table (1, 2), microwave oven 1, sink 1, stove 1, toaster 1.
+Act: go to kitchen cabinet 4
+You arrive at the kitchen cabinet 4. The kitchen cabinet 4 is closed. You see bowl (1, 2, 3, 4, 5), cutlets 1, faucet 1, kitchen cabinet (2, 3, 4), kitchen counter (1, 3), microwave oven 1, milk (1, 2), minced meat 1, sink 1.
+Act: open kitchen cabinet 4
+You open kitchen cabinet 4. You see bowl (1, 2, 3, 4, 5), cutlets 1, faucet 1, kitchen cabinet (2, 3, 4), kitchen counter (1, 3), microwave oven 1, milk (1, 2), minced meat 1, sink 1
+Act: go to kitchen cabinet 5
+You arrive at the kitchen cabinet 5. The kitchen cabinet 5 is closed. You see chair 1, coffee pot 1, dishwasher 1, fridge 1, kitchen cabinet (5, 6), toaster 1.
+Act: open kitchen cabinet 5
+You open kitchen cabinet 5. You see chair 1, coffee pot 1, dishwasher 1, fridge 1, kitchen cabinet (5, 6), toaster 1
+Act: go to kitchen cabinet 6
+You arrive at the kitchen cabinet 6. The kitchen cabinet 6 is closed. You see coffee pot 1, dishwasher 1, fridge 1, kitchen cabinet (5, 6, 7), toaster 1.
+Act: open kitchen cabinet 6
+You open kitchen cabinet 6. You see coffee pot 1, dishwasher 1, fridge 1, kitchen cabinet (5, 6, 7), toaster 1
+Act: go to kitchen cabinet 7
+You arrive at the kitchen cabinet 7. The kitchen cabinet 7 is closed. You see bananas (1, 2), bowl 7, coffee pot 1, dishwasher 1, kitchen cabinet (5, 6, 7, 8), toaster 1.
+Act: open kitchen cabinet 7
+You open kitchen cabinet 7. You see bananas (1, 2), bowl 7, coffee pot 1, dishwasher 1, kitchen cabinet (5, 6, 7, 8), toaster 1
+Act: go to kitchen cabinet 8
+You arrive at the kitchen cabinet 8. The kitchen cabinet 8 is closed. You see bananas (1, 2), bowl 7, coffee pot 1, cooking pot 1, dishwasher 1, frying pan 1, kitchen cabinet (6, 7, 8), stove 1, toaster 1.
+Act: open kitchen cabinet 8
+You open kitchen cabinet 8. You see bananas (1, 2), bowl 7, coffee pot 1, cooking pot 1, dishwasher 1, frying pan 1, kitchen cabinet (6, 7, 8), pudding 1, stove 1, toaster 1
+Act: go to kitchen counter 1
+You arrive at the kitchen counter 1. You see bowl (1, 2, 3, 4, 5), cutlets 1, kitchen cabinet (3, 4), kitchen counter (1, 3), microwave oven 1, milk (1, 2).
+Act: go to kitchen counter 3
+You arrive at the kitchen counter 3. You see cutlets 1, faucet 1, kitchen cabinet (1, 2, 3, 4), kitchen counter 3, microwave oven 1, milk (1, 2), minced meat 1, salmon 1, sink 1.
+Act: go to kitchen counter 1
+You arrive at the kitchen counter 1. You see bowl (1, 2, 3, 4, 5), cutlets 1, kitchen cabinet (3, 4), kitchen counter (1, 3), microwave oven 1, milk (1, 2).
+Think: I cannot find juice in kitchen 1. The juice is likely to appear in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room 1. Looking quickly around the room, you see bookshelf (3, 4), coffee table 1, sofa 1, tv 1.
+Think: In living room 1, the juice is likely to appear in/on coffee table 1.
+OK.
+Act: go to coffee table 1
+You arrive at the coffee table 1. You see coffee table 1, cupcake 1.
+Think: I cannot find juice in living room 1. The juice is likely to appear in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom 1. Looking quickly around the room, you see bed 1, bookshelf 5, chair 2, desk 1, nightstand 1.
+Think: In bedroom 1, the juice is likely to appear in/on bed 1, bookshelf 5, chair 2, desk 1, nightstand 1.
+OK.
+Act: go to bed 1
+You arrive at the bed 1. You see bed 1, nightstand 1.
+Act: go to bookshelf 5
+You arrive at the bookshelf 5. The bookshelf 5 is closed. You see bookshelf 5, box 3.
+Act: open bookshelf 5
+You can't open bookshelf (5) because of low-level controller problem.
+Act: go to chair 2
+You arrive at the chair 2. You see bookshelf 5, chair 2, desk 1, folder (2, 3), plate 11, pound cake 1.
+Act: go to desk 1
+You arrive at the desk 1. You see bookshelf 5, chair 2, desk 1, folder (2, 3), plate 11, pound cake 1.
+Act: go to nightstand 1
+You arrive at the nightstand 1. The nightstand 1 is closed. You see bed 1, nightstand 1.
+Act: open nightstand 1
+You can't open nightstand (1) because of low-level controller problem.
+Think: I cannot find juice in bedroom 1. The juice is likely to appear in bedroom 2.
+OK.
+Act: go to bedroom 2
+You move to the bedroom 2. Looking quickly around the room, you see bed 2, bookshelf 6, cabinet 1, chair 3, closet 1, computer 1, desk 2, garbage can 1, nightstand 2.
+Think: In bedroom 2, the juice is likely to appear in/on bed 2, bookshelf 6, cabinet 1, chair 3, closet 1, computer 1, desk 2, garbage can 1, nightstand 2.
+OK.
+Act: go to bed 2
+You arrive at the bed 2. You see bed 2.
+Act: go to bookshelf 6
+You arrive at the bookshelf 6. The bookshelf 6 is closed. You see bookshelf 6.
+Act: open bookshelf 6
+You can't open bookshelf (6) because of low-level controller problem.
+Act: go to cabinet 1
+You arrive at the cabinet 1. The cabinet 1 is closed. You see cabinet 1.
+Act: open cabinet 1
+You open cabinet 1. You see book 3, cabinet 1, cupcake 2, juice 1, pudding 2
+Think: I find juice 1. Now, I need to pick it up.
+OK.
+Act: pick up juice 1
+You pick up juice 1. You hold juice 1.
+Think: Now I need to find coffee table and put down juice 1.
+OK.
+Act: go to living room 1
+You move to the living room 1. Looking quickly around the room, you see bookshelf (3, 4), coffee table 1, sofa 1, tv 1. You hold juice 1.
+Act: go to coffee table 1
+You arrive at the coffee table 1. You see coffee table 1, cupcake 1, juice 1. You hold juice 1.
+Act: put down juice 1
+You put juice 1 on coffee table 1.
+Think: Now I need to find and pick up glass.
+OK.
+Think: I have not seen glass yet. In kitchen 1, the glass is likely to appear in/on kitchen cabinet (1, 2, 3, 4, 5, 6, 7, 8), kitchen counter (1, 2, 3). I can check each place one by one until I find glass.
+OK.
+Act: go to kitchen 1
+You move to the kitchen 1. Looking quickly around the room, you see bench (1, 2, 3, 4), bookshelf (1, 2), chair 1, dishwasher 1, faucet 1, fridge 1, kitchen cabinet (1, 2, 3, 4, 5, 6, 7, 8), kitchen counter (1, 3), kitchen table (1, 2), microwave oven 1, sink 1, stove 1, toaster 1.
+Act: go to kitchen cabinet 1
+You arrive at the kitchen cabinet 1. The kitchen cabinet 1 is open. You see bananas (1, 2), bowl 7, cooking pot 1, cutlery knife (1, 2), faucet 1, frying pan 1, kitchen cabinet (1, 2, 8), kitchen counter 3, minced meat 1, pudding 1, salmon 1, sink 1, stove 1.
+Act: go to kitchen cabinet 2
+You arrive at the kitchen cabinet 2. The kitchen cabinet 2 is open. You see cooking pot 1, cutlery knife (1, 2), faucet 1, kitchen cabinet (1, 2, 3), kitchen counter 3, milk (1, 2), minced meat 1, salmon 1, sink 1, stove 1.
+Act: go to kitchen cabinet 3
+You arrive at the kitchen cabinet 3. The kitchen cabinet 3 is open. You see cutlery knife (1, 2), cutlets 1, faucet 1, kitchen cabinet (1, 2, 3, 4), kitchen counter 3, microwave oven 1, milk (1, 2), minced meat 1, salmon 1, sink 1.
+Act: go to kitchen cabinet 4
+You arrive at the kitchen cabinet 4. The kitchen cabinet 4 is open. You see bowl (1, 2, 3, 4, 5), cutlets 1, faucet 1, kitchen cabinet (2, 3, 4), kitchen counter (1, 3), microwave oven 1, milk (1, 2), minced meat 1, sink 1.
+Act: go to kitchen cabinet 5
+You arrive at the kitchen cabinet 5. The kitchen cabinet 5 is open. You see chair 1, coffee pot 1, dishwasher 1, fridge 1, kitchen cabinet (5, 6), toaster 1.
+Act: go to kitchen cabinet 6
+You arrive at the kitchen cabinet 6. The kitchen cabinet 6 is open. You see coffee pot 1, dishwasher 1, fridge 1, kitchen cabinet (5, 6, 7), toaster 1.
+Act: go to kitchen cabinet 7
+You arrive at the kitchen cabinet 7. The kitchen cabinet 7 is open. You see bananas (1, 2), bowl 7, coffee pot 1, dishwasher 1, kitchen cabinet (5, 6, 7, 8), pudding 1, toaster 1.
+Act: go to kitchen cabinet 8
+You arrive at the kitchen cabinet 8. The kitchen cabinet 8 is open. You see bananas (1, 2), bowl 7, coffee pot 1, cooking pot 1, dishwasher 1, frying pan 1, kitchen cabinet (6, 7, 8), pudding 1, stove 1, toaster 1.
+Act: go to kitchen counter 1
+You arrive at the kitchen counter 1. You see bowl (1, 2, 3, 4, 5), cutlets 1, kitchen cabinet (3, 4), kitchen counter (1, 3), microwave oven 1, milk (1, 2).
+Act: go to kitchen counter 3
+You arrive at the kitchen counter 3. You see cutlets 1, faucet 1, kitchen cabinet (1, 2, 3, 4), kitchen counter 3, microwave oven 1, milk (1, 2), minced meat 1, salmon 1, sink 1.
+Act: go to kitchen counter 1
+You arrive at the kitchen counter 1. You see bowl (1, 2, 3, 4, 5), cutlets 1, kitchen cabinet (3, 4), kitchen counter (1, 3), microwave oven 1, milk (1, 2).
+Think: I cannot find glass in kitchen 1. The glass is likely to appear in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room 1. Looking quickly around the room, you see bookshelf (3, 4), coffee table 1, sofa 1, tv 1.
+Think: In living room 1, the glass is likely to appear in/on coffee table 1.
+OK.
+Act: go to coffee table 1
+You arrive at the coffee table 1. You see coffee table 1, cupcake 1, juice 1.
+Think: I cannot find glass in living room 1. The glass is likely to appear in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom 1. Looking quickly around the room, you see bed 1, bookshelf 5, chair 2, desk 1, nightstand 1.
+Think: In bedroom 1, the glass is likely to appear in/on bed 1, bookshelf 5, chair 2, desk 1, nightstand 1.
+OK.
+Act: go to bed 1
+You arrive at the bed 1. You see bed 1, nightstand 1.
+Act: go to bookshelf 5
+You arrive at the bookshelf 5. The bookshelf 5 is closed. You see bookshelf 5, box 3.
+Act: open bookshelf 5
+You can't open bookshelf (5) because of low-level controller problem.
+Act: go to chair 2
+You arrive at the chair 2. You see bookshelf 5, chair 2, desk 1, folder (2, 3), plate 11, pound cake 1.
+Act: go to desk 1
+You arrive at the desk 1. You see bookshelf 5, chair 2, desk 1, folder (2, 3), plate 11, pound cake 1.
+Act: go to nightstand 1
+You arrive at the nightstand 1. The nightstand 1 is closed. You see bed 1, nightstand 1.
+Act: open nightstand 1
+You can't open nightstand (1) because of low-level controller problem.
+Think: I cannot find glass in bedroom 1. The glass is likely to appear in bedroom 2.
+OK.
+Act: go to bedroom 2
+You move to the bedroom 2. Looking quickly around the room, you see bed 2, bookshelf 6, cabinet 1, chair 3, closet 1, computer 1, desk 2, garbage can 1, nightstand 2.
+Think: In bedroom 2, the glass is likely to appear in/on bed 2, bookshelf 6, cabinet 1, chair 3, closet 1, computer 1, desk 2, garbage can 1, nightstand 2.
+OK.
+Act: go to bed 2
+You arrive at the bed 2. You see bed 2.
+Act: go to bookshelf 6
+You arrive at the bookshelf 6. The bookshelf 6 is closed. You see bookshelf 6.
+Act: open bookshelf 6
+You can't open bookshelf (6) because of low-level controller problem.
+Act: go to cabinet 1
+You arrive at the cabinet 1. The cabinet 1 is open. You see book 3, cabinet 1, cupcake 2, light switch 5, pudding 2.
+Act: go to chair 3
+You arrive at the chair 3. You see chair 3, desk 2.
+Act: go to closet 1
+You arrive at the closet 1. The closet 1 is closed. You see closet 1.
+Act: open closet 1
+You can't open closet (1) because of low-level controller problem.
+Act: go to computer 1
+You arrive at the computer 1. You see chair 3, computer 1, desk 2, mug 1, plate 13.
+Act: go to desk 2
+You arrive at the desk 2. You see chair 3, computer 1, desk 2, mug 1, plate 13.
+Act: go to garbage can 1
+You arrive at the garbage can 1. The garbage can 1 is closed. You see closet 1, garbage can 1.
+Act: open garbage can 1
+You can't open garbage can (1) because of low-level controller problem.
+Act: go to nightstand 2
+You arrive at the nightstand 2. The nightstand 2 is closed. You see bed 2, nightstand 2.
+Act: open nightstand 2
+You can't open nightstand (2) because of low-level controller problem.
+Think: I cannot find glass in bedroom 2. The glass is likely to appear in bathroom 1.
+OK.
+Act: go to bathroom 1
+You move to the bathroom 1. Looking quickly around the room, you see bathroom cabinet 1, bathroom counter 1, faucet 2, sink 2, toilet 1, towel rack (1, 2, 3), washing machine 1.
+Think: In bathroom 1, the glass is likely to appear in/on bathroom cabinet 1, bathroom counter 1, faucet 2, sink 2, toilet 1, towel rack (1, 2, 3), washing machine 1.
+OK.
+Act: go to bathroom cabinet 1
+You arrive at the bathroom cabinet 1. The bathroom cabinet 1 is closed. You see bar soap 1, bathroom cabinet 1, bathroom counter 1, face cream 2, faucet 2, sink 2, water glass 9.
+Act: open bathroom cabinet 1
+You open bathroom cabinet 1. You see bar soap 1, bathroom cabinet 1, bathroom counter 1, face cream 2, faucet 2, sink 2, water glass 9
+Think: I find water glass 9. Now, I need to pick it up.
+OK.
+Act: pick up water glass 9
+You pick up water glass 9. You hold water glass 9.
+Think: Now I need to find coffee table and put down water glass 9.
+OK.
+Act: go to living room 1
+You move to the living room 1. Looking quickly around the room, you see bookshelf (3, 4), coffee table 1, sofa 1, tv 1. You hold water glass 9.
+Act: go to coffee table 1
+You arrive at the coffee table 1. You see coffee table 1, cupcake 1, juice 1, water glass 9. You hold water glass 9.
+Act: put down water glass 9
+You put water glass 9 on coffee table 1.
+Think: Now I complete the task.
+OK.
+Act: done

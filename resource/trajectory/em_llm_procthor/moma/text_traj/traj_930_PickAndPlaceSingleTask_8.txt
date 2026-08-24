@@ -1,0 +1,11 @@
+Your task is to: Place a book inside the box.
+You arrive at the book (1). The book (1) is closed. You see baseball bat (1), bed (1), book (1), garbage can (1), pillow (1), teddy bear (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- (bathroom 1): [faucet 1, (garbage can 2), plunger 1, (sink 1), (sink basin 1), (toilet 1), (washing machine 1)]
+- bedroom 1: [house plant 1, television 1, baseball bat 1, bed 1, book 1, bowl 1, cell phone 2, cell phone 1, desk 1, desk lamp 1, (drawer 1), (drawer 2), (drawer 3), (dresser 1), dumbbell 1, (garbage can 1), key chain 1, pillow 1, tabletop decor 1, teddy bear 1]
+- (bedroom 2): [(bed 2), (box 2), (box 1), (cabinet 1), (chair 1), (chair 4), (chair 6), (chair 2), (chair 5), (chair 3), (desk 2), (dining table 1), (drawer 4), (drawer 5), (drawer 6), (drawer 7), (drawer 8), (drawer 9), (dresser 2), painting 1, (shelf 1), (shelf 2), (shelf 3), shelving unit 1]
+- kitchen 1: [butter knife 1, (cabinet 2), (countertop 1), fork 1, (fridge 1), house plant 2, painting 2, painting 3, pan 1, paper towel roll 1, (shelf 5), (shelf 6), (shelf 4), shelving unit 2, toaster 1]
+- (living room 1): [(dining table 2), dog bed 1, floor lamp 1, house plant 3, painting 4, (side table 1), television 2]
+Your 4 previous actions were: go to bedroom 1 (success), go to bed 1 (success), go to desk 1 (success), go to book 1 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I arrive at book 1. I need to open book 1 to place it inside box 1.
+Act: open book 1

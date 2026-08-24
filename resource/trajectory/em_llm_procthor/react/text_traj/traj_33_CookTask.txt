@@ -1,0 +1,51 @@
+Your task is to: Make a mug of coffee using the coffee machine and place it on the dining table.
+You are in the house, and there are 3 rooms: bedroom (1), kitchen (1), living room (1). You are in the middle of a bedroom (1). Looking quickly around the room, you see bed (1, 2), box (1, 2), cabinet (1, 2, 3, 4), drawer (1, 2, 3, 4), dresser (1), painting (1, 2), safe (1), stool (1).
+Think: To solve the task, I need to find and put mug in coffee machine, turn on coffee machine, and put mug on dining table.
+OK.
+Think: First, I need to find and pick up mug. The mug is more likely to appear in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see chair (1, 2, 3), countertop (1), dining table (1), fridge (1), garbage can (1), painting (3).
+Think: In kitchen 1, the mug is likely to appear in/on countertop 1, dining table 1. I can check each place one by one until I find mug.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see bottle (1, 2), cell phone (1), countertop (1), dish sponge (1), mug (1), pepper shaker (1), salt shaker (1), soap bottle (1), spatula (1, 2, 3), tomato (1), vase (2).
+Act: go to dining table 1
+You arrive at the dining table (1). You see apple (1), bowl (1), bread (1), chair (1, 2, 3), coffee machine (1), dining table (1), fork (1), knife (1), mug (1), painting (3), plate (1), potato (1), tomato (1), vase (2).
+Think: I find mug 1. Now, I need to pick it up.
+OK.
+Act: go to mug 1
+You arrive at the mug (1). You see apple (1), bowl (1), bread (1), chair (1), coffee machine (1), dining table (1), fork (1), knife (1), mug (1), plate (1), potato (1), tomato (1), vase (2).
+Act: pick up mug 1
+You pick up mug (1). You hold mug (1).
+Think: Now, I need to find coffee machine.
+OK.
+Act: go to coffee machine 1
+You arrive at the coffee machine (1). You see apple (1), bowl (1), bread (1), cell phone (1), chair (1, 3), coffee machine (1), dining table (1), fork (1), knife (1), plate (1), potato (1), soap bottle (1), spatula (3), tomato (1), vase (2). You hold mug (1).
+Think: Now, I need to put down mug 1 in coffee machine 1.
+OK.
+Act: put down mug 1
+You put mug (1) in coffee machine (1).
+Think: Now, I need to turn on coffee machine 1 to brew the coffee.
+OK.
+Act: turn on coffee machine 1
+You turn on coffee machine (1).
+Think: Now, I need to turn off coffee machine 1 and pick up mug 1.
+OK.
+Act: turn off coffee machine 1
+You turn off coffee machine (1).
+Act: pick up mug 1
+Pick up action failed: The target object is not within the visible range.
+Act: go to mug 1
+You arrive at the mug (1). You see apple (1), bowl (1), bread (1), chair (1, 3), coffee machine (1), dining table (1), fork (1), knife (1), mug (1), plate (1), potato (1), tomato (1), vase (2).
+Act: pick up mug 1
+You pick up mug (1). You hold mug (1).
+Think: Now, I need to put down mug 1 on dining table 1.
+OK.
+Act: go to dining table 1
+You arrive at the dining table (1). You see apple (1), bowl (1), bread (1), chair (1, 2, 3), coffee machine (1), dining table (1), fork (1), knife (1), painting (3), plate (1), potato (1), tomato (1), vase (2). You hold mug (1).
+Act: put down mug 1
+You put mug (1) in dining table (1).
+Think: Now I complete task.
+OK.
+Act: done

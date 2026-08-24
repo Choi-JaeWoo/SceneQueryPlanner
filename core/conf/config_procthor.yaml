@@ -1,0 +1,46 @@
+task_planner: reactstrq
+dataset_type: procthor
+name: ${dataset_type}-${task_planner}
+
+hydra:
+  run:
+    dir: outputs/${name}/${now:%Y-%m-%d}_${now:%H-%M-%S}
+
+dataset:
+  collect_dir: 'resource/trajectory/collect_human_procthor/reactstrq'
+
+procthor:
+  x_display: '0'
+  vis_log: False
+  eval_set:
+    - 'dataset/ProcThor_PickAndPlaceSingleTask.json' 
+    - 'dataset/ProcThor_PickAndPlaceMultipleTask.json' 
+    - 'dataset/ProcThor_PickAndPlaceImplicitTask.json' 
+    - 'dataset/ProcThor_LookAtObjInLightTask.json' 
+    - 'dataset/ProcThor_PickHeatThenPlaceInRecepTask.json' 
+    - 'dataset/ProcThor_PickCoolThenPlaceInRecepTask.json' 
+    - 'dataset/ProcThor_ToggleOffTask.json' 
+    - 'dataset/ProcThor_PickCleanThenPlaceInRecepTask.json' 
+    - 'dataset/ProcThor_PickAndStackTask.json' 
+    - 'dataset/ProcThor_CookTask.json' 
+  random_seed_for_eval_subset: 1
+  filtered_sim_objs: ['alarmclock', 'aluminumfoil', 'apple', 'applesliced', 'armchair', 'baseballbat', 'basketball', 'bathtub', 'bathtubbasin', 'bed', 'blinds', 'book', 'boots', 'bottle', 'bowl', 'box', 'bread', 'breadsliced', 'butterknife', 'cabinet', 'candle', 'cart', 'cd', 'cellphone', 'chair', 'cloth', 'coffeemachine', 'coffeetable', 'countertop', 'creditcard', 'cup', 'curtains', 'desk', 'desklamp', 'desktop', 'diningtable', 'dishsponge', 'dogbed', 'drawer', 'dresser', 'dumbbell', 'egg', 'eggcracked', 'faucet', 'floorlamp', 'footstool', 'fork', 'fridge', 'garbagebag', 'garbagecan', 'handtowel', 'handtowelholder', 'houseplant', 'kettle', 'keychain', 'knife', 'ladle', 'laptop', 'laundryhamper', 'lettuce', 'lettucesliced', 'lightswitch', 'microwave', 'mirror', 'mug', 'newspaper', 'ottoman', 'painting', 'pan', 'papertowelroll', 'pen', 'pencil', 'peppershaker', 'pillow', 'plate', 'plunger', 'poster', 'pot', 'potato', 'potatosliced', 'remotecontrol', 'roomdecor', 'safe', 'saltshaker', 'scrubbrush', 'shelf', 'shelvingunit', 'showercurtain', 'showerdoor', 'showerhead', 'sidetable', 'sink', 'sinkbasin', 'soapbar', 'soapbottle', 'sofa', 'spatula', 'spoon', 'spraybottle', 'statue', 'stool', 'stoveburner', 'stoveknob', 'tabletopdecor', 'targetcircle', 'teddybear', 'television', 'tennisracket', 'tissuebox', 'toaster', 'toilet', 'toiletpaper', 'toiletpaperhanger', 'tomato', 'tomatosliced', 'towel', 'towelholder', 'tvstand', 'vacuumcleaner', 'vase', 'watch', 'wateringcan', 'winebottle', 'kitchen', 'livingroom', 'bedroom', 'bathroom', 'clothesdryer']
+  sim_receps: ['armchair', 'bathtub', 'bathtubbasin', 'bed', 'bowl', 'box', 'cabinet', 'coffeemachine', 'coffeetable', 'countertop', 'cup', 'desk', 'diningtable', 'drawer', 'dresser', 'fridge', 'garbagecan', 'handtowelholder', 'laundryhamper', 'microwave', 'mug', 'ottoman', 'pan', 'plate', 'pot', 'safe', 'shelf', 'sidetable', 'sink', 'sinkbasin', 'sofa', 'stoveburner', 'toaster', 'toilet', 'toiletpaperhanger', 'towelholder', 'tvstand', 'washingmachine', 'chair', 'stool']
+  sim_receps_for_sg: ['armchair', 'bathtub', 'bathtubbasin', 'bed', 'box', 'cabinet', 'coffeetable', 'countertop', 'desk', 'diningtable', 'drawer', 'dresser', 'fridge', 'garbagecan', 'handtowelholder', 'laundryhamper', 'ottoman', 'safe', 'shelf', 'sidetable', 'sink', 'sinkbasin', 'sofa', 'stoveburner', 'toilet', 'toiletpaperhanger', 'towelholder', 'tvstand', 'washingmachine', 'chair', 'stool']
+  obj_dict_sim2nl: 'resource/procthor_obj_dict_sim2nl.json'
+  obj_dict_nl2sim: 'resource/procthor_obj_dict_nl2sim.json'
+
+llm_agent:
+  model_name: 'meta-llama/Llama-3.1-70B'
+  initial_step: 0
+  max_decision_step: 99
+  use_accelerate_device_map: True
+  load_in_8bit: False
+  hf_auth_token: ${oc.env:HF_TOKEN,null}
+  openai_api_key: ${oc.env:OPENAI_API_KEY,null}
+  random_seed: 0
+  retrieval_type: 'similarity'
+  use_guidance: True
+  tool_select_type: 'select'
+  em_dir: 'resource/trajectory/em_llm_procthor/reactstrq'
+  sys_prompt_path: 'resource/sys_prompt/procthor/reactstrq.txt'

@@ -1,0 +1,10 @@
+Your task is to: Pick up a book and put it on the countertop.
+You put book (1) in countertop (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- (bathroom 1): [faucet 1, (garbage can 2), painting 4, painting 3, plunger 1, (sink 1), (sink basin 1), (toilet 1)]
+- (bedroom 1): [basket ball 1, (bed 1), (drawer 3), (drawer 1), (drawer 2), (dresser 1), (garbage can 1), house plant 1, painting 1, painting 2, (safe 1), (shelf 4), (TV stand 1)]
+- kitchen 1: [tomato 1, book 2, bowl 1, fork 1, garbage bag 1, plate 1, pot 1, apple 1, book 1, (chair 1), coffee machine 1, countertop 1, (dining table 1), dish sponge 1, (fridge 1), house plant 2, mug 2, pepper shaker 1, salt shaker 1, soap bottle 1, spray bottle 1, tomato 2]
+- (living room 1): [(box 1), (cabinet 1), (chair 3), (chair 2), (chair 4), (chair 5), (dining table 2), floor lamp 1, (shelf 5), (shelf 3), (shelf 2), (shelf 1), shelving unit 1, (sofa 1), (TV stand 2)]
+Your 5 previous actions were: go to book 1 (success), pick up book 1 (success), go to kitchen 1 (success), go to countertop 1 (success), put down book 1 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I put book 1 in countertop 1. Now I complete the task.
+Act: done

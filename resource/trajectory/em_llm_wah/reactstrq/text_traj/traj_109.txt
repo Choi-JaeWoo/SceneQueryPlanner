@@ -1,0 +1,49 @@
+Your task is to: Put 1 wine glass on the kitchen table.
+You are in the house, and there are 5 rooms: bathroom 1, bedroom (1, 2), kitchen 1, living room 1. You are in the middle of a kitchen 1. Looking quickly around the room, you see bench (1, 2, 3, 4), bookshelf (1, 2), chair 1, dishwasher 1, faucet 1, fridge 1, kitchen cabinet (1, 2, 3, 4, 5, 6, 7, 8), kitchen counter (1, 3), kitchen table (1, 2), microwave oven 1, sink 1, stove 1, toaster 1.
+Think: To solve the task I need to find and pick up wine glass, find kitchen table and put down wine glass.
+OK.
+Think: First, I need to find and pick up wine glass.
+OK.
+Query: find_objects({'label': 'wine glass'})
+Info: [{'name_id_nl': 'wine glass 2', 'node_type': 'object', 'properties': ['GRABBABLE', 'RECIPIENT', 'POURABLE', 'MOVABLE'], 'states': []}, {'name_id_nl': 'wine glass 1', 'node_type': 'object', 'properties': ['GRABBABLE', 'RECIPIENT', 'POURABLE', 'MOVABLE'], 'states': []}]
+Think: Wine glass 2 and wine glass 1 are in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen 1. Looking quickly around the room, you see bench (1, 2, 3, 4), bookshelf (1, 2), chair 1, dishwasher 1, faucet 1, fridge 1, kitchen cabinet (1, 2, 3, 4, 5, 6, 7, 8), kitchen counter (1, 3), kitchen table (1, 2), microwave oven 1, sink 1, stove 1, toaster 1.
+Act: go to kitchen table 1
+You arrive at the kitchen table 1. You see bench 2, condiment bottle (1, 2), condiment shaker (3, 4), cutlery knife (3, 6), juice 2, kitchen table 1.
+Act: go to kitchen table 2
+You arrive at the kitchen table 2. You see bench 3, condiment bottle (3, 4), condiment shaker (1, 2), juice 1, kitchen table 2.
+Think: I can't find wine glass in kitchen 1. Let's check one last time.
+OK.
+Query: find_objects({'label': 'wine glass'})
+Info: [{'name_id_nl': 'wine glass 2', 'node_type': 'object', 'properties': ['GRABBABLE', 'RECIPIENT', 'POURABLE', 'MOVABLE'], 'states': []}, {'name_id_nl': 'wine glass 1', 'node_type': 'object', 'properties': ['GRABBABLE', 'RECIPIENT', 'POURABLE', 'MOVABLE'], 'states': []}]
+Think: Now, I will search living room 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'living room 1', 'child_node_attrs': {'visited': False}})
+Info: bookshelf (3, 4), coffee table 1, light switch 2, sofa 1, tv 1
+Think: In living room 1, the wine glass is likely to appear in/on coffee table 1. I can check each place one by one until I find it.
+OK.
+Act: go to living room 1
+You move to the living room 1. Looking quickly around the room, you see bookshelf (3, 4), coffee table 1, sofa 1, tv 1.
+Act: go to coffee table 1
+You arrive at the coffee table 1. You see coffee table 1, cupcake (1, 2, 3), water glass 3, wine glass 3.
+Think: I find wine glass 3. Now, I need to pick it up.
+OK.
+Act: pick up wine glass 3
+You pick up wine glass 3. You hold wine glass 3.
+Think: Now I need to find kitchen table and put down wine glass 3.
+OK.
+Query: find_objects({'label': 'kitchen table'})
+Info: [{'name_id_nl': 'kitchen table 1', 'node_type': 'asset', 'properties': ['SURFACES', 'MOVABLE'], 'states': [], 'room': 'kitchen 1'}, {'name_id_nl': 'kitchen table 2', 'node_type': 'asset', 'properties': ['SURFACES', 'MOVABLE'], 'states': [], 'room': 'kitchen 1'}]
+Think: Kitchen table 1 and kitchen table 2 are in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen 1. Looking quickly around the room, you see bench (1, 2, 3, 4), bookshelf (1, 2), chair 1, dishwasher 1, faucet 1, fridge 1, kitchen cabinet (1, 2, 3, 4, 5, 6, 7, 8), kitchen counter (1, 3), kitchen table (1, 2), microwave oven 1, sink 1, stove 1, toaster 1. You hold wine glass 3.
+Act: go to kitchen table 1
+You arrive at the kitchen table 1. You see bench 2, condiment bottle (1, 2), condiment shaker (3, 4), cutlery knife (3, 6), juice 2, kitchen table 1, wine glass 3. You hold wine glass 3.
+Act: put down wine glass 3
+You put wine glass 3 on kitchen table 1.
+Think: Now I complete task.
+OK.
+Act: done

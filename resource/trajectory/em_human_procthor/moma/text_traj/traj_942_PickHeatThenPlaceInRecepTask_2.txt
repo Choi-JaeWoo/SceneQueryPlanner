@@ -1,0 +1,13 @@
+Your task is to: Heat a bread and place it on the countertop.
+You move to the kitchen (1). Looking quickly around the room, you see chair (1), countertop (1), dining table (1), fridge (1), painting (1, 2), television (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- (bathroom 1): [faucet 1, (garbage can 1), painting 3, painting 4, plunger 1, (sink 1), (sink basin 1), (toilet 1)]
+- (bedroom 1): [basket ball 1, (bed 1), (drawer 1), (drawer 2), (drawer 3), (drawer 6), (drawer 5), (drawer 4), (dresser 1)]
+- (bedroom 2): [baseball bat 1, basket ball 2, (bed 2), (chair 4), (desk 1), (drawer 7), (drawer 8), (drawer 9), (drawer 10), (drawer 11), (drawer 12), (dresser 2), house plant 1, (shelf 1), (shelf 2)]
+- (bedroom 3): [(bed 3), (chair 5), (dining table 3), (drawer 21), (drawer 22), (drawer 20), (drawer 18), (drawer 17), (drawer 16), (drawer 15), (drawer 19), (drawer 14), (drawer 13), (dresser 3)]
+- kitchen 1: [painting 1, painting 2, television 1, (chair 1), (fridge 1), (dining table 1), (countertop 1)]
+- (living room 1): [(box 2), (chair 2), (chair 3), (dining table 2), (shelf 3), (shelf 4), (shelf 5), (shelf 6), (shelf 8), (shelf 7), (TV stand 1)]
+- living room 2: [(box 1), newspaper 1, (shelf 9), (sofa 1), (TV stand 2)]
+Your 1 previous actions were: go to kitchen 1 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I move to kitchen 1. I need to check unexplored areas in kitchen 1 to find microwave or toaster. Now, I need to check dining table 1.
+Act: go to dining table 1

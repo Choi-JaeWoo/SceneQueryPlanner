@@ -1,0 +1,59 @@
+Your task is to: Put a mug with a pen inside it on the shelf.
+You are in the house, and there are 1 rooms: bedroom (1). You are in the middle of a bedroom (1). Looking quickly around the room, you see basket ball (1), bed (1), chair (1), credit card (1), desk (1), dog bed (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), painting (1, 2, 3, 4), shelf (1, 2, 3, 4).
+Think: To solve the task, I need to find and pick up pen, put it in mug, pick up and place mug on shelf.
+OK.
+Think: First, I need to find and pick up pen.
+OK.
+Query: recall location of pen
+You have not seen pen before.
+Think: I have not seen pen yet. The pen is more likely to appear in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see basket ball (1), bed (1), chair (1), credit card (1), desk (1), dog bed (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), painting (1, 2, 3, 4), shelf (1, 2, 3, 4).
+Think: In bedroom 1, the pen is likely to appear in/on basket ball 1, bed 1, chair 1, desk 1, dog bed 1, drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser 1. I can check each place one by one until I find pen.
+OK.
+Act: go to basket ball 1
+You arrive at the basket ball (1). You see basket ball (1), dog bed (1).
+Act: go to bed 1
+You arrive at the bed (1). You see bed (1), book (1), chair (1), drawer (3, 12), painting (4), pillow (1).
+Act: go to chair 1
+You arrive at the chair (1). You see chair (1), credit card (1), desk (1), mug (1), painting (1, 2), shelf (1, 2, 3, 4), statue (1), tabletop decor (1).
+Act: go to desk 1
+You arrive at the desk (1). You see book (1), chair (1), credit card (1), desk (1), mug (1), pillow (1), shelf (1, 2, 3, 4), statue (1), tabletop decor (1).
+Act: go to dog bed 1
+You arrive at the dog bed (1). You see basket ball (1), dog bed (1), drawer (1, 2, 5, 6, 7, 8), pen (1).
+Think: I find pen 1. Now, I need to pick it up.
+OK.
+Act: go to pen 1
+You arrive at the pen (1). You see dog bed (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), painting (3), pen (1).
+Act: pick up pen 1
+You pick up pen (1). You hold pen (1).
+Think: Now, I need to find mug and put down pen 1.
+OK.
+Query: recall location of mug
+You saw mug 1 near desk 1 in bedroom 1.
+Think: Mug 1 is near desk 1 in bedroom 1.
+OK.
+Act: go to desk 1
+You arrive at the desk (1). You see book (1), chair (1), credit card (1), desk (1), mug (1), pillow (1), shelf (1, 2, 3, 4), statue (1), tabletop decor (1). You hold pen (1).
+Act: go to mug 1
+You arrive at the mug (1). You see chair (1), credit card (1), desk (1), mug (1), painting (1, 2), shelf (1, 2, 3, 4), statue (1), tabletop decor (1). You hold pen (1).
+Act: put down pen 1
+You put pen (1) in mug (1).
+Think: Now, I need to pick up mug 1.
+OK.
+Act: pick up mug 1
+You pick up mug (1). You hold mug (1).
+Think: Now, I need to find shelf and put down mug 1.
+OK.
+Query: recall location of shelf
+You saw shelf 1 in bedroom 1. You saw shelf 4 in bedroom 1. You saw shelf 3 in bedroom 1. You saw shelf 2 in bedroom 1.
+Think: Shelf 1 is in bedroom 1.
+OK.
+Act: go to shelf 1
+You arrive at the shelf (1). You see chair (1), credit card (1), desk (1), painting (1, 2), pen (1), shelf (1, 2, 3, 4), statue (1), tabletop decor (1). You hold mug (1).
+Act: put down mug 1
+You put mug (1) in shelf (1).
+Think: Now I complete the task.
+OK.
+Act: done

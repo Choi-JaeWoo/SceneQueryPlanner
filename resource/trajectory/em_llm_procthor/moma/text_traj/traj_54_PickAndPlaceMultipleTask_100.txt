@@ -1,0 +1,2 @@
+Your task is to: Collect a pen and a pencil and place them on the countertop.
+Max decision steps reached.

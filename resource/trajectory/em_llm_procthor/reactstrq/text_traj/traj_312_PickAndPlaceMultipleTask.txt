@@ -1,0 +1,75 @@
+Your task is to: Place a book and a vase together on the diningtable.
+You are in the house, and there are 2 rooms: bathroom (1), bedroom (1). You are in the middle of a bathroom (1). Looking quickly around the room, you see garbage can (1), painting (3, 4), plunger (1), sink (1), sink basin (1), spray bottle (1), toilet (1), toilet paper (1).
+Think: To solve the task, I need to find book and vase, and then place them together on diningtable.
+OK.
+Think: First, I need to find book.
+OK.
+Query: find_objects({'label': 'book'})
+Info: 
+Think: I have not seen book yet. Now I need to check where to search. First, I will search bedroom 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'bedroom 1'})
+Info: bed 1, cabinet (1, 2, 3, 4), chair (1, 2, 3), desk 1, dining table 1, drawer (1, 2, 3, 4), dresser 1, shelf (1, 2)
+Think: In bedroom 1, the book is likely to appear in/on bed 1, cabinet (1, 2, 3, 4), chair (1, 2, 3), desk 1, dining table 1, drawer (1, 2, 3, 4), dresser 1, shelf (1, 2). I can check each place one by one until I find book.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see bed (1), cabinet (1, 2, 3, 4), chair (1, 2, 3), desk (1), dining table (1), drawer (1, 2, 3, 4), dresser (1), painting (1, 2), shelf (1, 2), television (1).
+Act: go to bed 1
+You arrive at the bed (1). You see bed (1), cabinet (4), cell phone (1), drawer (3, 4), laptop (1), pillow (1, 2), statue (1).
+Think: I have not seen book yet. Now I need to check where to search. First, I will search cabinet (1, 2, 3, 4).
+OK.
+Act: go to cabinet 1
+You arrive at the cabinet (1). The cabinet (1) is closed. You see book (1), cabinet (1, 2, 3), drawer (1, 2, 3), dresser (1), vase (1), watch (2).
+Think: Since cabinet 1 is closed, I need to open it to check if book is inside.
+OK.
+Act: open cabinet 1
+You open cabinet (1). You see book (1), cabinet (1, 2, 3), drawer (1, 2, 3), dresser (1), vase (1), watch (2).
+Think: I find book 1. Now, I need to pick it up.
+OK.
+Act: pick up book 1
+You pick up book (1). You hold book (1).
+Think: Now, I need to find vase.
+OK.
+Query: find_objects({'label': 'vase'})
+Info: [{'name_id_nl': 'vase 1', 'node_type': 'object', 'properties': ['breakable', 'pickupable'], 'states': []}]
+Think: I find vase 1.
+OK.
+Act: go to vase 1
+You arrive at the vase (1). You see cabinet (1, 2, 3, 4), chair (2), drawer (1, 2, 3, 4), dresser (1), statue (1), vase (1), watch (2). You hold book (1).
+Act: pick up vase 1
+Pick up action failed: Robot is currently holding book
+Think: I need to put down book 1 to pick up vase 1.
+OK.
+Act: put down book 1
+You put book (1) in cabinet (1).
+Act: pick up vase 1
+You pick up vase (1). You hold vase (1).
+Think: Now, I need to find diningtable.
+OK.
+Query: find_objects({'label': 'diningtable'})
+Info: 
+Think: I have not seen diningtable yet. Now I need to check where to search. First, I will search bedroom 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'bedroom 1'})
+Info: bed 1, cabinet (1, 2, 3, 4), chair (1, 2, 3), desk 1, dining table 1, drawer (1, 2, 3, 4), dresser 1, shelf (1, 2)
+Think: In bedroom 1, the diningtable is likely to appear in/on bed 1, cabinet (1, 2, 3, 4), chair (1, 2, 3), desk 1, dining table 1, drawer (1, 2, 3, 4), dresser 1, shelf (1, 2). I can check each place one by one until I find diningtable.
+OK.
+Act: go to dining table 1
+You arrive at the dining table (1). You see basket ball (1), book (1), cabinet (1, 2, 3), cell phone (2), chair (1, 2), dining table (1), drawer (1, 2, 3), remote control (1), watch (1). You hold vase (1).
+Think: Now, I need to put down vase 1.
+OK.
+Act: put down vase 1
+You put vase (1) in dining table (1).
+Act: go to book 1
+You arrive at the book (1). The book (1) is closed. You see book (1), cabinet (1, 2, 3, 4), chair (2), drawer (1, 2, 3, 4), dresser (1), remote control (1), watch (1, 2).
+Act: pick up book 1
+You pick up book (1). You hold book (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see basket ball (1), cabinet (1, 2, 3), cell phone (2), chair (1, 2), dining table (1), drawer (1, 2, 3), remote control (1), vase (1), watch (1). You hold book (1).
+Think: Now, I need to put down book 1.
+OK.
+Act: put down book 1
+You put book (1) in dining table (1).
+Think: Now I complete task.
+OK.
+Act: done

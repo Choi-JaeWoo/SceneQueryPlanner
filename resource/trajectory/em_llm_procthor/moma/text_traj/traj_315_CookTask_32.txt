@@ -1,0 +1,12 @@
+Your task is to: With the coffee machine, prepare coffee in a mug and then put it on the countertop.
+You arrive at the coffee machine (1). You see book (3), butter knife (1), coffee machine (1), credit card (2), egg (3), fridge (1), house plant (3), ladle (1), wine bottle (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- (bathroom 1): [(sink basin 1), painting 3, (toilet 1), (sink 1), (garbage can 1), painting 2, faucet 1, plunger 1]
+- bathroom 2: [(sink basin 2), (toilet 2), faucet 2, (sink 2), (garbage can 2)]
+- (bedroom 1): [(box 1), (shelf 7), (drawer 3), (dresser 1), (side table 1), (TV stand 1), (shelf 8), painting 1, (drawer 1), (bed 2), (bed 1), (shelf 6), (drawer 7), (drawer 2), (shelf 9), (shelf 5), (shelf 4)]
+- (bedroom 2): [(dresser 2), (drawer 6), baseball bat 1, (drawer 5), (drawer 4), painting 4, (bed 3)]
+- kitchen 1: [shelving unit 1, statue 2, bowl 2, dish sponge 1, mug 1, pan 1, pencil 3, pepper shaker 1, soap bottle 1, statue 1, toaster 1, book 3, butter knife 1, (cabinet 1), (chair 1), coffee machine 1, countertop 1, credit card 2, egg 3, (fridge 1), house plant 3, ladle 1, (shelf 1), (shelf 2), (shelf 3), wine bottle 1]
+- (living room 1): [(chair 2), floor lamp 1, (dining table 1), television 2, house plant 1]
+Your 5 previous actions were: go to kitchen 1 (success), go to countertop 1 (success), put down mug 1 (success), go to kitchen 1 (success), go to coffee machine 1 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I arrive at coffee machine 1. I hold mug 1. Now, I need to put down mug 1 to brew coffee.
+Act: put down mug 1

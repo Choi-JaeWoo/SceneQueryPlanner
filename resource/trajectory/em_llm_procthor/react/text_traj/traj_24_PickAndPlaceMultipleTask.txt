@@ -1,0 +1,45 @@
+Your task is to: Put a book and a credit card away in the drawer.
+You are in the house, and there are 1 rooms: living room (1). You are in the middle of a living room (1). Looking quickly around the room, you see TV stand (1), dining table (1), drawer (1, 2, 3), dresser (1), floor lamp (1), painting (1), shelf (1, 2, 3, 4, 5, 6, 7, 8), side table (1), sofa (1).
+Think: To solve the task, I need to find and pick up book, then put it in drawer. And I need to find and pick up credit card, then put it in drawer.
+OK.
+Think: First, I need to find and pick up book. The book is more likely to appear in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), dining table (1), drawer (1, 2, 3), dresser (1), floor lamp (1), painting (1), shelf (1, 2, 3, 4, 5, 6, 7, 8), side table (1), sofa (1).
+Think: In living room 1, the book is likely to appear in/on TV stand 1, dining table 1, drawer (1, 2, 3), dresser 1, floor lamp 1, shelf (1, 2, 3, 4, 5, 6, 7, 8), side table 1. I can check each place one by one until I find book.
+OK.
+Act: go to TV stand 1
+You arrive at the TV stand (1). You see TV stand (1), cell phone (1), house plant (1), laptop (1), plate (1), remote control (1, 2), shelf (1, 2, 3, 4, 5, 6, 7, 8), side table (1), television (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see book (1), candle (1, 2), credit card (1), desk lamp (1), dining table (1), drawer (1, 2, 3), dresser (1), floor lamp (1), newspaper (1), painting (1), statue (1), vase (1), watch (1).
+Think: I find book 1. Now, I need to pick it up.
+OK.
+Act: go to book 1
+You arrive at the book (1). The book (1) is closed. You see book (1), candle (1, 2), credit card (1), desk lamp (1), dining table (1), drawer (1, 2, 3), dresser (1), floor lamp (1), newspaper (1), painting (1), statue (1), vase (1), watch (1).
+Act: pick up book 1
+You pick up book (1). You hold book (1).
+Think: Now, I need to find drawer and put down book 1.
+OK.
+Act: go to drawer 1
+You arrive at the drawer (1). The drawer (1) is closed. You see candle (1, 2), credit card (1), desk lamp (1), dining table (1), drawer (1, 2, 3), dresser (1), floor lamp (1), newspaper (1), painting (1), statue (1), vase (1), watch (1). You hold book (1).
+Act: open drawer 1
+You open drawer (1). You see candle (1, 2), credit card (1), desk lamp (1), dining table (1), drawer (1, 2, 3), dresser (1), floor lamp (1), newspaper (1), painting (1), statue (1), vase (1), watch (1). You hold book (1).
+Act: put down book 1
+You put book (1) in drawer (1).
+Think: Now, I need to find and pick up credit card.
+OK.
+Think: I find credit card 1. Now, I need to pick it up.
+OK.
+Act: go to credit card 1
+You arrive at the credit card (1). You see book (1), candle (1, 2), credit card (1), desk lamp (1), dining table (1), drawer (1, 2, 3), dresser (1), floor lamp (1), newspaper (1), painting (1), statue (1), vase (1), watch (1).
+Act: pick up credit card 1
+You pick up credit card (1). You hold credit card (1).
+Think: Now, I need to find drawer and put down credit card 1.
+OK.
+Act: go to drawer 1
+You arrive at the drawer (1). The drawer (1) is open. You see book (1), candle (1, 2), desk lamp (1), dining table (1), drawer (1, 2, 3), dresser (1), floor lamp (1), newspaper (1), painting (1), statue (1), vase (1), watch (1). You hold credit card (1).
+Act: put down credit card 1
+You put credit card (1) in drawer (1).
+Think: Now I complete the task.
+OK.
+Act: done

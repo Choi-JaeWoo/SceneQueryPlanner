@@ -1,0 +1,57 @@
+Your task is to: Put the egg on the dining table after it has been heated.
+You are in the house, and there are 5 rooms: bathroom (1), bedroom (1, 2), kitchen (1), living room (1). You are in the middle of a kitchen (1). Looking quickly around the room, you see cabinet (1, 2, 3), chair (1, 2, 3, 4), countertop (1), credit card (1), dining table (1), fridge (1), shelf (3, 4, 5, 6, 7, 8, 9, 10, 11), shelving unit (1, 2, 3), side table (1).
+Think: To solve the task, I need to find and pick up egg, find microwave and put down egg, turn on microwave to heat egg and turn off microwave, pick up heated egg and put it down on dining table.
+OK.
+Think: First, I need to find and pick up egg. The egg is more likely to appear in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see cabinet (1, 2, 3), chair (1, 2, 3, 4), countertop (1), credit card (1), dining table (1), fridge (1), shelf (3, 4, 5, 6, 7, 8, 9, 10, 11), shelving unit (1, 2, 3), side table (1).
+Think: In kitchen 1, the egg is likely to appear in/on countertop 1, fridge 1. I can check each place one by one until I find egg.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see countertop (1), egg (1), fridge (1), kettle (1), ladle (1), lettuce (1, 2), microwave (1), mug (1), paper towel roll (1), pen (2), pencil (1), pepper shaker (1), soap bottle (1), wine bottle (2).
+Act: go to fridge 1
+You arrive at the fridge (1). The fridge (1) is closed. You see countertop (1), fridge (1), wine bottle (2).
+Act: open fridge 1
+You open fridge (1). You see countertop (1), egg (2), fridge (1), potato (1), tomato (1), wine bottle (2).
+Think: I find egg 1. Now, I need to pick it up.
+OK.
+Act: go to egg 1
+You arrive at the egg (1). You see egg (1), kettle (1), ladle (1), microwave (1), mug (1), paper towel roll (1), pen (2), pencil (1), pepper shaker (1), soap bottle (1), wine bottle (2).
+Act: pick up egg 1
+You pick up egg (1). You hold egg (1).
+Think: Now, I need to find microwave.
+OK.
+Act: go to microwave 1
+You arrive at the microwave (1). The microwave (1) is closed. You see kettle (1), ladle (1), microwave (1), mug (1), paper towel roll (1), pen (2), pencil (1), pepper shaker (1), soap bottle (1), wine bottle (2). You hold egg (1).
+Think: Since microwave 1 is closed, I need to open it to put down egg 1.
+OK.
+Act: open microwave 1
+You open microwave (1). You see kettle (1), ladle (1), microwave (1), mug (1), paper towel roll (1), pen (2), pencil (1), pepper shaker (1), soap bottle (1), wine bottle (2). You hold egg (1).
+Act: put down egg 1
+You put egg (1) in microwave (1).
+Think: Now, I need to close microwave 1, turn it on briefly, and then turn it off.
+OK.
+Act: close microwave 1
+You close microwave (1).
+Act: turn on microwave 1
+You turn on microwave (1).
+Act: turn off microwave 1
+You turn off microwave (1).
+Think: Now, I need to open microwave 1 and pick up egg 1.
+OK.
+Act: open microwave 1
+You open microwave (1). You see egg (1), kettle (1), ladle (1), microwave (1), mug (1), paper towel roll (1), pen (2), pencil (1), pepper shaker (1), soap bottle (1), wine bottle (2).
+Act: pick up egg 1
+You pick up egg (1). You hold egg (1).
+Think: Now, I need to find dining table. The dining table is more likely to appear in kitchen 1.
+OK.
+Act: go to dining table 1
+You arrive at the dining table (1). You see apple (1), bowl (1), butter knife (2), cabinet (3), chair (1, 2, 3, 4), credit card (1), dining table (1), fork (2), house plant (3), kettle (2), lettuce (2), pan (1), pen (1), shelf (9, 10, 11), shelving unit (3), statue (2, 3), toaster (1), wine bottle (1). You hold egg (1).
+Think: Now, I need to put down egg 1.
+OK.
+Act: put down egg 1
+You put egg (1) in dining table (1).
+Think: Now I complete task.
+OK.
+Act: done

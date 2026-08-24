@@ -1,0 +1,17 @@
+Your task is to: 1. find all of: 1 pudding, 1 apple, and 1 juice and remember their location.
+2. remove all that are already in the fridge.
+3. grab as much as you can hold by going to remembered locations
+4. go to the fridge.
+5. open it.
+6. put what you are holding into the fridge.
+7. close it
+8. if any elements aren't yet in the fridge go to step 3.
+You put juice 1 in fridge 1. You hold pudding 1. Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- bathroom 1: [(bathroom cabinet 1), (bathroom counter 1), (faucet 1), (light switch 1), (sink 1), (toilet 1), (towel rack 1), (towel rack 2), (towel rack 3), (washing machine 1)]
+- bedroom 1: [(bed 1), bookshelf 1, (chair 1), (chair 2), Chinese food 1, (closet 1), (coffee table 1), (light switch 2), (nightstand 1), wine 1]
+- kitchen 1: [(bench 1), (bench 2), (bookshelf 2), chips 1, (clock 1), (coffee pot 2), condiment shaker 1, cutlery fork 1, cutlery fork 2, cutlery knife 1, cutlery knife 2, cutting board 2, (faucet 2), fridge 1, frying pan 1, (kitchen counter 1), (kitchen table 1), (light switch 3), (microwave oven 1), mug 2, (oven tray 1), plate 2, plate 3, (plate 4), pudding 1, salad 1, (sink 2), (slice of bread 1), (slice of bread 2), (stove 1), (toaster 1), (tv 1), water glass 2, water glass 3, wine 2]
+- (living room 1): [(bookshelf 3), (cabinet 1), (chair 3), (closet 2), (coffee table 2), (computer 1), (desk 1), (light switch 4), (pants 5), (pants 6), (pants 7), (shirt 3), (shirt 4), (sofa 1), (tv 2)]
+Your 30 previous actions were: go to bedroom 1 (success), go to bookshelf 1 (success), open bookshelf 1 (fail), go to bookshelf 1 (success), open bookshelf 1 (fail), go to bookshelf 1 (success), open bookshelf 1 (fail), go to bookshelf 1 (success), open bookshelf 1 (fail), go to bookshelf 1 (success), open bookshelf 1 (fail), go to bookshelf 1 (success), open bookshelf 1 (fail), go to bookshelf 1 (success), open bookshelf 1 (fail), go to kitchen 1 (success), pick up apple 1 (success), go to fridge 1 (success), open fridge 1 (success), put down apple 1 (success), go to bedroom 1 (success), go to pudding 1 (success), pick up pudding 1 (success), go to kitchen 1 (success), go to bedroom 1 (success), go to juice 1 (success), pick up juice 1 (success), go to kitchen 1 (success), go to fridge 1 (success), put down juice 1 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I put juice 1 in fridge 1. Now, I need to put down pudding 1.
+Act: put down pudding 1

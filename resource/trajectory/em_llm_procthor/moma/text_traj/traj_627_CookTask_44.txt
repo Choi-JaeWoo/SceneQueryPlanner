@@ -1,0 +1,9 @@
+Your task is to: Make a mug of coffee with the coffee machine and place it on the countertop.
+You move to the kitchen (1). Looking quickly around the room, you see cabinet (1), chair (2, 3), countertop (1), dining table (1), fridge (1), house plant (2), painting (4), shelf (1, 2, 3), shelving unit (1), stool (1). You hold mug (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- (bedroom 1): [(box 1), (drawer 3), (drawer 6), (dresser 1), (side table 1), painting 3, (drawer 5), television 1, painting 1, (drawer 1), (drawer 4), (bed 2), (bed 1), house plant 1, (drawer 2), (garbage can 1), painting 2, (chair 1)]
+- kitchen 1: [shelving unit 1, painting 4, house plant 2, butter knife 2, coffee machine 1, kettle 2, kettle 1, lettuce 1, pen 2, soap bottle 1, spatula 1, spray bottle 1, statue 3, vase 1, wine bottle 1, apple 1, book 6, bottle 1, bottle 2, bowl 1, butter knife 1, (cabinet 1), (chair 3), (chair 2), countertop 1, credit card 1, (dining table 1), fork 1, (fridge 1), knife 1, ladle 1, mug 1, salt shaker 1, (shelf 2), (shelf 1), (shelf 3), statue 2, (stool 1), tomato 1]
+- living room 1: [(shelf 7), (dining table 2), (chair 5), floor lamp 1, (chair 7), (TV stand 1), (armchair 1), (shelf 8), (chair 6), (chair 4), (shelf 6), (sofa 1), (box 2), (shelf 9), (shelf 5), (shelf 4)]
+Your 5 previous actions were: pick up mug 1 (fail), go to kitchen 1 (success), go to mug 1 (success), pick up mug 1 (success), go to kitchen 1 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I move to kitchen 1. I hold mug 1. Now, I need to move toward coffee machine 1 to put down mug 1.
+Act: go to coffee machine 1

@@ -1,0 +1,57 @@
+Your task is to: Put a pillow and a book on the armchair.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a bedroom (1). Looking quickly around the room, you see bed (1), chair (1), dining table (1), drawer (1, 2, 3), dresser (1), garbage can (1), painting (1, 2).
+Think: To solve the task, I need to find and pick up pillow, put it on armchair. And I need to find and pick up book, put it on armchair.
+OK.
+Think: First, I need to find and pick up pillow.
+OK.
+Query: recall location of pillow
+You have not seen pillow before.
+Think: I have not seen pillow yet. The pillow is more likely to appear in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see bed (1), chair (1), dining table (1), drawer (1, 2, 3), dresser (1), garbage can (1), painting (1, 2).
+Think: In bedroom 1, the pillow is likely to appear in/on bed 1, chair 1, dining table 1, drawer (1, 2, 3), dresser 1, garbage can 1. I can check each place one by one until I find pillow.
+OK.
+Act: go to bed 1
+You arrive at the bed (1). You see alarm clock (1), bed (1), book (1), cell phone (1), drawer (1, 2, 3), dresser (1), mug (1), pillow (1), teddy bear (1).
+Act: go to pillow 1
+You arrive at the pillow (1). You see alarm clock (1), bed (1), book (1), cell phone (1), drawer (1, 2, 3), dresser (1), mug (1), pillow (1), teddy bear (1).
+Act: pick up pillow 1
+You pick up pillow (1). You hold pillow (1).
+Think: Now, I need to find armchair and put down pillow 1.
+OK.
+Query: recall location of armchair
+You saw armchair 1 in living room 1.
+Think: Armchair 1 is in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see armchair (1), cart (1), chair (2), dining table (2), house plant (1), sofa (1), television (1). You hold pillow (1).
+Act: go to armchair 1
+You arrive at the armchair (1). You see armchair (1), book (2), dining table (2), house plant (1), plate (1), television (1). You hold pillow (1).
+Act: put down pillow 1
+You put pillow (1) in armchair (1).
+Think: Now, I need to find and pick up book.
+OK.
+Query: recall location of book
+You saw book 1 near bed 1 in bedroom 1. You saw book 2 near armchair 1 in living room 1.
+Think: Book 1 is near bed 1 in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see bed (1), chair (1), dining table (1), drawer (1, 2, 3), dresser (1), garbage can (1), painting (1, 2).
+Act: go to bed 1
+You arrive at the bed (1). You see alarm clock (1), bed (1), book (1), cell phone (1), drawer (1, 2, 3), dresser (1), mug (1), teddy bear (1).
+Act: go to book 1
+You arrive at the book (1). The book (1) is closed. You see alarm clock (1), book (1), cell phone (1), drawer (1, 2, 3), dresser (1), mug (1).
+Act: pick up book 1
+You pick up book (1). You hold book (1).
+Think: Now, I need to find armchair and put down book 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see armchair (1), cart (1), chair (2), dining table (2), house plant (1), sofa (1), television (1). You hold book (1).
+Act: go to armchair 1
+You arrive at the armchair (1). You see armchair (1), book (2), dining table (2), house plant (1), pillow (1), plate (1), television (1). You hold book (1).
+Act: put down book 1
+You put book (1) in armchair (1).
+Think: Now I complete the task.
+OK.
+Act: done

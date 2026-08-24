@@ -1,0 +1,10 @@
+Your task is to: Put a pillow and a book on the armchair.
+You put book (2) in armchair (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- (bathroom 1): [(sink basin 1), (side table 1), painting 3, (shelf 1), painting 4, (toilet 1), (sink 1), (shelf 2), faucet 1, (garbage can 2), plunger 1]
+- bedroom 1: [painting 1, painting 2, desk lamp 1, statue 1, vase 1, watch 1, alarm clock 1, book 1, cell phone 1, mug 1, pillow 1, teddy bear 1, bed 1, chair 1, dining table 1, drawer 2, drawer 1, drawer 3, dresser 1, garbage can 1]
+- kitchen 1: [garbage bag 1, lettuce 2, bread 2, bread 1, butter knife 1, butter knife 2, cell phone 2, cup 1, cup 2, dish sponge 1, house plant 2, lettuce 1, microwave 1, pot 1, potato 1, soap bottle 1, spatula 1, spoon 1, countertop 1, fridge 1, pencil 1]
+- living room 1: [bowl 1, cart 1, armchair 1, book 2, (chair 2), (dining table 2), house plant 1, plate 1, (sofa 1), television 1]
+Your 5 previous actions were: go to book 2 (success), pick up book 2 (success), go to living room 1 (success), go to armchair 1 (success), put down book 2 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I put book 2 in armchair 1. Now, I need to move toward pillow 1 to pick it up.
+Act: go to pillow 2

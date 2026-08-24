@@ -1,0 +1,47 @@
+Your task is to: Examine a book under the illumination of the floor lamp.
+You are in the house, and there are 2 rooms: kitchen (1), living room (1). You are in the middle of a living room (1). Looking quickly around the room, you see TV stand (1), box (1), dining table (1), floor lamp (1), painting (3, 4), shelf (1, 2, 3, 4, 5, 6), sofa (1).
+Think: To solve the task, I need to find and pick up book, find and turn on floor lamp, examine book under the illumination of floor lamp.
+OK.
+Think: First, I need to find and pick up book. The book is more likely to appear in living room 1.
+OK.
+Act: go to TV stand 1
+You arrive at the TV stand (1). You see TV stand (1), box (2), candle (2), credit card (1), pencil (2), plate (1), shelf (1, 2, 3, 4, 5, 6), statue (2), television (1), vase (1).
+Act: go to box 1
+You arrive at the box (1). The box (1) is open. You see box (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see candle (1), dining table (1), key chain (1), newspaper (1), painting (3, 4), remote control (2), statue (3).
+Act: go to floor lamp 1
+You arrive at the floor lamp (1). You see box (2), floor lamp (1), shelf (1, 2, 3).
+Act: go to painting 3
+You arrive at the painting (3). You see box (1), candle (1), dining table (1), key chain (1), newspaper (1), painting (3), remote control (2), statue (3).
+Act: go to painting 4
+You arrive at the painting (4). You see candle (1), dining table (1), key chain (1), newspaper (1), painting (4), remote control (2), statue (3).
+Act: go to shelf 1
+You arrive at the shelf (1). You see TV stand (1), box (2), candle (2), credit card (1), floor lamp (1), plate (1), shelf (1, 2, 3, 4, 5, 6), statue (2), television (1), vase (1).
+Act: go to shelf 2
+You arrive at the shelf (2). You see TV stand (1), box (2), candle (2), credit card (1), floor lamp (1), plate (1), shelf (1, 2, 3, 4, 5, 6), statue (2), television (1), vase (1).
+Act: go to shelf 3
+You arrive at the shelf (3). You see TV stand (1), box (2), candle (2), credit card (1), floor lamp (1), plate (1), shelf (1, 2, 3, 4, 5, 6), statue (2), television (1), vase (1).
+Act: go to shelf 4
+You arrive at the shelf (4). You see TV stand (1), box (2), candle (2), credit card (1), plate (1), shelf (1, 2, 3, 4, 5, 6), statue (2), television (1), vase (1).
+Act: go to shelf 5
+You arrive at the shelf (5). You see TV stand (1), box (2), candle (2), credit card (1), plate (1), shelf (1, 2, 3, 4, 5, 6), statue (2), television (1), vase (1).
+Act: go to shelf 6
+You arrive at the shelf (6). You see TV stand (1), box (2), candle (2), credit card (1), plate (1), shelf (1, 2, 3, 4, 5, 6), statue (2), television (1), vase (1).
+Act: go to sofa 1
+You arrive at the sofa (1). You see book (1), pencil (2), pillow (1), remote control (1), sofa (1).
+Think: I find book 1. Now, I need to pick it up.
+OK.
+Act: go to book 1
+You arrive at the book (1). The book (1) is closed. You see book (1), pencil (2), pillow (1), remote control (1), sofa (1).
+Act: pick up book 1
+You pick up book (1). You hold book (1).
+Think: Now I need to find and turn on floor lamp. The floor lamp is more likely to appear in living room 1.
+OK.
+Act: go to floor lamp 1
+You arrive at the floor lamp (1). You see box (2), floor lamp (1), shelf (1, 2, 3). You hold book (1).
+Act: turn on floor lamp 1
+You turn on floor lamp (1). You hold book (1).
+Think: Now I complete the task.
+OK.
+Act: done

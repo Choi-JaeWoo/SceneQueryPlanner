@@ -1,0 +1,23 @@
+Your task is to: Transfer everything from the sofa to the dining table.
+You are in the house, and there are 5 rooms: bathroom (1), bedroom (1, 2), kitchen (1), living room (1). You are in the middle of a bedroom (2). Looking quickly around the room, you see TV stand (2), bed (2), cabinet (1, 2, 3, 4), credit card (3), dog bed (2), drawer (4, 5, 6, 7), dresser (2), garbage can (3), shelf (2, 3, 4, 5, 6, 7).
+Think: To solve the task, I need to find sofa and check what is on top of it. Then, I need to move everything on sofa to dining table.
+OK.
+Think: First, I need to find sofa. The sofa is more likely to appear in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), armchair (1), dining table (1), floor lamp (1), painting (3), shelf (1), sofa (1).
+Act: go to sofa 1
+You arrive at the sofa (1). You see remote control (1), sofa (1).
+Think: Now, I need to move remote control 1 to dining table.
+OK.
+Act: go to remote control 1
+You arrive at the remote control (1). You see remote control (1), sofa (1).
+Act: pick up remote control 1
+You pick up remote control (1). You hold remote control (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see armchair (1), bowl (1), credit card (1), dining table (1), house plant (2), painting (3), plate (1), remote control (2, 3). You hold remote control (1).
+Act: put down remote control 1
+You put remote control (1) in dining table (1).
+Think: Now I complete the task.
+OK.
+Act: done

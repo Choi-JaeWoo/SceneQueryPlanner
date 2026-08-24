@@ -1,0 +1,2 @@
+Your task is to: Collect the fork and plate. Take both items to the kitchen table. Place fork and plate onto the kitchen table.
+Max decision steps reached.

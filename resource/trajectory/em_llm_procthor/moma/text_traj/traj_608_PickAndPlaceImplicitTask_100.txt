@@ -1,0 +1,2 @@
+Your task is to: Move all the objects from the side table to the dining table.
+Max decision steps reached.

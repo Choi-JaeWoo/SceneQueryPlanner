@@ -1,0 +1,79 @@
+Your task is to: Make sure all active televisions and cell phones are turned off.
+You are in the house, and there are 1 rooms: bedroom (1). You are in the middle of a bedroom (1). Looking quickly around the room, you see TV stand (1), bed (1), box (1), dog bed (1), drawer (1, 2, 3), dresser (1), painting (1, 2, 3), shelf (1, 2, 3, 4, 5, 6).
+Think: To solve the task, I need to go through every room, check for television and cell phone, and turn them off if they are turned on.
+OK.
+Think: First, I need to check bedroom 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'bedroom 1'})
+Info: TV stand 1, bed 1, box 1, drawer (1, 2, 3), dresser 1, shelf (1, 2, 3, 4, 5, 6)
+Think: In bedroom 1, I can check TV stand 1, bed 1, box 1, drawer (1, 2, 3), dresser 1, shelf (1, 2, 3, 4, 5, 6) by one until I find television or cell phone.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see TV stand (1), bed (1), box (1), dog bed (1), drawer (1, 2, 3), dresser (1), painting (1, 2, 3), shelf (1, 2, 3, 4, 5, 6).
+Act: go to TV stand 1
+You arrive at the TV stand (1). You see TV stand (1), cell phone (1), house plant (1), painting (3), shelf (1, 2, 3, 4, 5, 6), television (1).
+Think: I find television 1. Now I need to check if television 1 is toggled on.
+OK.
+Query: read_node({'node_id': 'television 1', 'attrs': 'isToggled'})
+Info: {'isToggled': True}
+Think: Television 1 is toggled on. Now I need to turn it off.
+OK.
+Act: go to television 1
+You arrive at the television (1). You see TV stand (1), cell phone (1), house plant (1), painting (3), shelf (1, 2, 3, 4, 5, 6), television (1).
+Act: turn off television 1
+You turn off television (1).
+Think: I find cell phone 1. Now I need to check if cell phone 1 is toggled on.
+OK.
+Query: read_node({'node_id': 'cell phone 1', 'attrs': 'isToggled'})
+Info: {'isToggled': True}
+Think: Cell phone 1 is toggled on. Now I need to turn it off.
+OK.
+Act: go to cell phone 1
+You arrive at the cell phone (1). You see TV stand (1), cell phone (1), house plant (1), painting (3), shelf (1, 2, 3, 4, 5, 6), television (1).
+Act: turn off cell phone 1
+You turn off cell phone (1).
+Act: go to bed 1
+You arrive at the bed (1). You see baseball bat (1), bed (1), book (2, 3), box (1), dog bed (1), painting (1), pillow (1).
+Act: go to box 1
+You arrive at the box (1). The box (1) is closed. You see book (2, 3), box (1), dog bed (1), painting (2).
+Act: open box 1
+You open box (1). You see book (2, 3), box (1), dog bed (1), painting (2).
+Act: go to drawer 1
+You arrive at the drawer (1). The drawer (1) is closed. You see book (1), drawer (1, 2, 3), dresser (1), key chain (1), pencil (1), vase (1).
+Act: open drawer 1
+You open drawer (1). You see book (1), drawer (1, 2, 3), dresser (1), key chain (1), pencil (1), vase (1).
+Act: go to drawer 2
+You arrive at the drawer (2). The drawer (2) is closed. You see book (1), drawer (1, 2, 3), dresser (1), key chain (1), pencil (1), vase (1).
+Act: open drawer 2
+You open drawer (2). You see book (1), drawer (1, 2, 3), dresser (1), key chain (1), pencil (1), vase (1).
+Act: go to drawer 3
+You arrive at the drawer (3). The drawer (3) is closed. You see book (1), drawer (1, 2, 3), dresser (1), key chain (1), pencil (1), vase (1).
+Act: open drawer 3
+You open drawer (3). You see book (1), drawer (1, 2, 3), dresser (1), key chain (1), pencil (1), vase (1).
+Act: go to dresser 1
+You arrive at the dresser (1). You see book (1), drawer (1, 2, 3), dresser (1), key chain (1), pencil (1), vase (1).
+Act: go to shelf 1
+You arrive at the shelf (1). You see TV stand (1), cell phone (1), house plant (1), painting (3), shelf (1, 2, 3, 4, 5, 6), television (1).
+Act: go to shelf 2
+You arrive at the shelf (2). You see TV stand (1), cell phone (1), house plant (1), painting (3), shelf (1, 2, 3, 4, 5, 6), television (1).
+Act: go to shelf 3
+You arrive at the shelf (3). You see TV stand (1), cell phone (1), house plant (1), painting (3), shelf (1, 2, 3, 4, 5, 6), television (1).
+Act: go to shelf 4
+You arrive at the shelf (4). You see TV stand (1), cell phone (1), house plant (1), painting (3), shelf (1, 2, 3, 4, 5, 6), television (1).
+Act: go to shelf 5
+You arrive at the shelf (5). You see TV stand (1), cell phone (1), house plant (1), painting (3), shelf (1, 2, 3, 4, 5, 6), television (1).
+Act: go to shelf 6
+You arrive at the shelf (6). You see TV stand (1), cell phone (1), house plant (1), painting (3), shelf (1, 2, 3, 4, 5, 6), television (1).
+Think: I need to check if there is any place I do not visit in bedroom 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'bedroom 1', 'child_node_attrs': {'visited': False}})
+Info: 
+Think: Now, I need to check whether any televisions, cell phones that are turned on are still remaining.
+OK.
+Query: find_objects({'label': 'television', 'attrs': {'isToggled': True}})
+Info: 
+Query: find_objects({'label': 'cell phone', 'attrs': {'isToggled': True}})
+Info: 
+Think: Now I complete the task.
+OK.
+Act: done

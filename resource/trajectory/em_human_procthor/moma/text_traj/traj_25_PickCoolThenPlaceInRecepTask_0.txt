@@ -1,0 +1,8 @@
+Your task is to: Place a cold bowl on the countertop.
+You are in the house, and there are 2 rooms: kitchen (1), living room (1). You are in the middle of a kitchen (1). Looking quickly around the room, you see countertop (1), fridge (1), house plant (1), painting (1, 2, 3). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- kitchen 1: [(countertop 1), (fridge 1), house plant 1, painting 1, painting 2, painting 3, pepper shaker 1]
+- (living room 1): [(box 1), (box 2), cart 1, (chair 1), (dining table 1), floor lamp 1, painting 4, (shelf 2), (shelf 1), (shelf 3), (shelf 4), (shelf 5), (shelf 6), (TV stand 1)]
+You have not taken any actions yet.
+What is the best next action to complete the task as efficiently as possible?
+Think: First, I need to find and pick up bowl. The bowl is more likely to appear in living room 1.
+Act: go to living room 1

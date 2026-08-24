@@ -1,0 +1,65 @@
+Your task is to: Clean the fork and place it in the cabinet.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a bedroom (1). Looking quickly around the room, you see baseball bat (1), basket ball (1), bed (1, 2), cabinet (1, 2, 3, 4), chair (1), desk (1), dining table (1), drawer (1, 2, 3, 4), dresser (1), shelf (1, 2), television (1).
+Think: To solve the task, I need to find and pick up fork, put it in sink basin and turn on faucet, pick up and put down fork in cabinet.
+OK.
+Think: First, I need to find and pick up fork.
+OK.
+Query: recall location of fork
+You have not seen fork before.
+Think: I have not seen fork yet. The fork is more likely to appear in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see countertop (1), drawer (5), fridge (1), garbage bag (1), garbage can (2), painting (1), side table (1).
+Think: In kitchen 1, the fork is likely to appear in/on countertop 1, drawer 5, fridge 1, garbage bag 1, garbage can 2, side table 1. I can check each place one by one until I find fork.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see countertop (1), drawer (5), fork (1), house plant (2), kettle (1, 2, 3), ladle (1), lettuce (2), mug (2), pan (1), side table (1), spray bottle (2), statue (1, 2), toaster (1).
+Think: I find fork 1. Now, I need to pick it up.
+OK.
+Act: go to fork 1
+You arrive at the fork (1). You see fork (1), house plant (2), kettle (1, 2, 3), ladle (1), lettuce (2), pan (1), spray bottle (2), statue (2), toaster (1).
+Act: pick up fork 1
+You pick up fork (1). You hold fork (1).
+Think: Now, I need to find sink basin.
+OK.
+Query: recall location of sink basin
+You saw sink basin 1 in bathroom 1.
+Think: Sink basin 1 is in bathroom 1.
+OK.
+Act: go to bathroom 1
+You move to the bathroom (1). Looking quickly around the room, you see garbage can (1), plunger (1), sink (1), sink basin (1), toilet (1). You hold fork (1).
+Act: go to sink basin 1
+You arrive at the sink basin (1). You see faucet (1), sink (1), sink basin (1). You hold fork (1).
+Think: Now, I need to put down fork 1.
+OK.
+Act: put down fork 1
+You put fork (1) in sink basin (1).
+Think: Now, I need to turn on faucet 1 briefly and turn off to wash fork 1.
+OK.
+Act: turn on faucet 1
+You turn on faucet (1).
+Act: turn off faucet 1
+You turn off faucet (1).
+Think: Now, I need to pick up fork 1 and find cabinet.
+OK.
+Act: pick up fork 1
+You pick up fork (1). You hold fork (1).
+Think: Now, I need to find cabinet and put down fork 1.
+OK.
+Query: recall location of cabinet
+You saw cabinet 2 in bedroom 1. You saw cabinet 1 in bedroom 1. You saw cabinet 3 in bedroom 1. You saw cabinet 4 in bedroom 1.
+Think: Cabinet 2 is in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see baseball bat (1), basket ball (1), bed (1, 2), cabinet (1, 2, 3, 4), chair (1), desk (1), dining table (1), drawer (1, 2, 3, 4), dresser (1), shelf (1, 2), television (1). You hold fork (1).
+Act: go to cabinet 2
+You arrive at the cabinet (2). The cabinet (2) is closed. You see book (1, 2), cabinet (1, 2, 3, 4), drawer (1, 2, 3, 4), dresser (1), mug (1), vase (1). You hold fork (1).
+Think: Since cabinet 2 is closed, I need to open it to put down fork 1.
+OK.
+Act: open cabinet 2
+You open cabinet (2). You see book (1, 2), cabinet (1, 2, 3, 4), drawer (1, 2, 3, 4), dresser (1), mug (1), vase (1). You hold fork (1).
+Act: put down fork 1
+You put fork (1) in cabinet (2).
+Think: Now I complete the task.
+OK.
+Act: done

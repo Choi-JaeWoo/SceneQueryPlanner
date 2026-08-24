@@ -1,0 +1,8 @@
+Your task is to: View the pencil under the glow of a lit candle.
+You are in the house, and there are 2 rooms: bathroom (1), bedroom (1). You are in the middle of a bathroom (1). Looking quickly around the room, you see drawer (4), garbage can (1), painting (3, 4), plunger (1), side table (1), sink (1), sink basin (1), toilet (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- bathroom 1: [(drawer 4), faucet 1, (garbage can 1), painting 4, painting 3, plunger 1, (side table 1), (sink 1), (sink basin 1), (toilet 1)]
+- (bedroom 1): [baseball bat 1, (bed 1), (box 1), (drawer 2), (drawer 3), (drawer 1), (dresser 1), house plant 1, painting 2, painting 1, television 1]
+You have not taken any actions yet.
+What is the best next action to complete the task as efficiently as possible?
+Think: First, I need to find and pick up pencil. The pencil is more likely to appear in bedroom 1.
+Act: go to bedroom 1

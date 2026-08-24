@@ -1,0 +1,47 @@
+Your task is to: Please put this fork in the dishwasher and start it
+You are in the house, and there are 5 rooms: bathroom 1, bedroom (1, 2), kitchen 1, living room 1. You are in the middle of a living room 1. Looking quickly around the room, you see bookshelf (3, 4), coffee table 1, sofa 1, tv 1.
+Think: To solve the task I need to find and open dishwasher, find and pick up cutlery fork, find dishwasher and put down cutlery fork, close and turn on dishwasher.
+OK.
+Think: First, I need to find dishwasher.
+OK.
+Query: find_objects({'label': 'dishwasher'})
+Info: [{'name_id_nl': 'dishwasher 1', 'node_type': 'asset', 'properties': ['CAN_OPEN', 'HAS_SWITCH', 'CONTAINERS'], 'states': ['CLOSED', 'OFF'], 'room': 'kitchen 1'}]
+Think: Dishwasher 1 is in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen 1. Looking quickly around the room, you see bench (1, 2, 3, 4), bookshelf (1, 2), chair 1, dishwasher 1, faucet 1, fridge 1, kitchen cabinet (1, 2, 3, 4, 5, 6, 7, 8), kitchen counter 2, kitchen table (1, 2), microwave oven 1, sink 1, stove 1, toaster 1.
+Act: go to dishwasher 1
+You arrive at the dishwasher 1. The dishwasher 1 is closed. You see bananas (1, 2), bench 4, bowl 7, coffee pot 1, dishwasher 1, kitchen cabinet (6, 7), toaster 1.
+Act: open dishwasher 1
+You open dishwasher 1. You see bananas (1, 2), bench 4, bowl 7, coffee pot 1, dishwasher 1, kitchen cabinet (6, 7), kitchen counter 1, toaster 1
+Think: Now I need to find and pick up cutlery fork.
+OK.
+Query: find_objects({'label': 'cutlery fork'})
+Info: [{'name_id_nl': 'cutlery fork 1', 'node_type': 'object', 'properties': ['GRABBABLE', 'MOVABLE'], 'states': []}]
+Query: get_edges_for_node({'node_id': 'cutlery fork 1'})
+Info: [('cutlery fork 1', 'living room 1', 'INSIDE'), ('cutlery fork 1', 'coffee table 1', 'ON'), ('cutlery fork 1', 'tv 1', 'FACING')]
+Think: Cutlery fork 1 is on coffee table 1.
+OK.
+Act: go to living room 1
+You move to the living room 1. Looking quickly around the room, you see bookshelf (3, 4), coffee table 1, sofa 1, tv 1.
+Act: go to coffee table 1
+You arrive at the coffee table 1. You see coffee table 1, cupcake (1, 2, 3), cutlery fork 1, water glass 3, wine glass 2.
+Act: pick up cutlery fork 1
+You pick up cutlery fork 1. You hold cutlery fork 1.
+Think: Now I need to find dishwasher and put down cutlery fork 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen 1. Looking quickly around the room, you see bench (1, 2, 3, 4), bookshelf (1, 2), chair 1, dishwasher 1, faucet 1, fridge 1, kitchen cabinet (1, 2, 3, 4, 5, 6, 7, 8), kitchen counter (1, 2), kitchen table (1, 2), microwave oven 1, sink 1, stove 1, toaster 1. You hold cutlery fork 1.
+Act: go to dishwasher 1
+You arrive at the dishwasher 1. The dishwasher 1 is open. You see bananas (1, 2), bench 4, bowl 7, coffee pot 1, cutlery fork 1, dishwasher 1, kitchen cabinet (6, 7), kitchen counter 1, toaster 1. You hold cutlery fork 1.
+Act: put down cutlery fork 1
+You put cutlery fork 1 in dishwasher 1.
+Think: Now I need to close and turn on dishwasher.
+OK.
+Act: close dishwasher 1
+You close dishwasher 1.
+Act: turn on dishwasher 1
+You turn on dishwasher 1.
+Think: Now I complete the task.
+OK.
+Act: done

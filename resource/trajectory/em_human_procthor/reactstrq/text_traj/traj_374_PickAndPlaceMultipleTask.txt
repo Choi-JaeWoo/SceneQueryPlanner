@@ -1,0 +1,77 @@
+Your task is to: Collect a pen and a sliced potato and place them on the countertop.
+You are in the house, and there are 1 rooms: kitchen (1). You are in the middle of a kitchen (1). Looking quickly around the room, you see chair (1, 2), countertop (1), dining table (1), fridge (1), house plant (1), painting (1, 2, 3), toaster (1).
+Think: To solve the task, I need to find and pick up pen, find countertop and put down pen, find and pick up knife or butter knife, find and slice potato, put down knife or butter knife and pick up sliced potato, find countertop and put down sliced potato.
+OK.
+Think: First, I need to find and pick up pen.
+OK.
+Query: find_objects({'label': 'pen'})
+Info: 
+Think: I have not seen pen yet. Now I need to check where to search.
+OK.
+Query: get_child_node_names({'parent_node_id': 'kitchen 1'})
+Info: chair (1, 2), countertop 1, dining table 1, fridge 1
+Think: In kitchen 1, pen is likely to appear in/on countertop 1, dining table 1. I can check each place one by one until I find pen.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see butter knife (1, 2), countertop (1), house plant (1), kettle (1), salt shaker (1), soap bottle (1), spatula (1), toaster (1), vase (1), wine bottle (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see chair (1, 2), dining table (1), mug (1), painting (3), pen (1), plate (1), potato (1).
+Think: I find pen 1. Now, I need to pick it up.
+OK.
+Act: go to pen 1
+You arrive at the pen (1). You see chair (1, 2), dining table (1), mug (1), painting (3), pen (1), plate (1), potato (1).
+Act: pick up pen 1
+You pick up pen (1). You hold pen (1).
+Think: Now, I need to find countertop.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see butter knife (1, 2), countertop (1), house plant (1), kettle (1), salt shaker (1), soap bottle (1), spatula (1), toaster (1), vase (1), wine bottle (1). You hold pen (1).
+Think: Now, I need to put down pen 1.
+OK.
+Act: put down pen 1
+You put pen (1) in countertop (1).
+Think: Now, I need to find knife or butter knife and pick it up.
+OK.
+Query: find_objects({'label': 'knife'})
+Info: 
+Query: find_objects({'label': 'butter knife'})
+Info: [{'name_id_nl': 'butter knife 1', 'node_type': 'object', 'properties': ['pickupable'], 'states': []}, {'name_id_nl': 'butter knife 2', 'node_type': 'object', 'properties': ['pickupable'], 'states': []}]
+Query: get_edges_for_node({'node_id': 'butter knife 1'})
+Info: [('butter knife 1', 'countertop 1', 'ON'), ('butter knife 1', 'kettle 1', 'CLOSE'), ('butter knife 1', 'pen 1', 'CLOSE'), ('butter knife 1', 'salt shaker 1', 'CLOSE'), ('butter knife 1', 'soap bottle 1', 'CLOSE'), ('butter knife 1', 'spatula 1', 'CLOSE'), ('butter knife 1', 'toaster 1', 'CLOSE'), ('butter knife 1', 'vase 1', 'CLOSE'), ('butter knife 1', 'wine bottle 1', 'CLOSE'), ('butter knife 1', 'user 1', 'CLOSE'), ('butter knife 1', 'kitchen 1', 'INSIDE'), ('kettle 1', 'butter knife 1', 'CLOSE'), ('pen 1', 'butter knife 1', 'CLOSE'), ('salt shaker 1', 'butter knife 1', 'CLOSE'), ('soap bottle 1', 'butter knife 1', 'CLOSE'), ('spatula 1', 'butter knife 1', 'CLOSE'), ('toaster 1', 'butter knife 1', 'CLOSE'), ('vase 1', 'butter knife 1', 'CLOSE'), ('wine bottle 1', 'butter knife 1', 'CLOSE'), ('user 1', 'butter knife 1', 'CLOSE')]
+Think: Butter knife 1 is on countertop 1.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see butter knife (1, 2), countertop (1), house plant (1), kettle (1), pen (1), salt shaker (1), soap bottle (1), spatula (1), toaster (1), vase (1), wine bottle (1).
+Act: go to butter knife 1
+You arrive at the butter knife (1). You see butter knife (1, 2), kettle (1), pen (1), salt shaker (1), soap bottle (1), spatula (1), toaster (1), vase (1), wine bottle (1).
+Act: pick up butter knife 1
+You pick up butter knife (1). You hold butter knife (1).
+Think: Now, I need to find and slice potato.
+OK.
+Query: find_objects({'label': 'potato'})
+Info: [{'name_id_nl': 'potato 1', 'node_type': 'object', 'properties': ['cookable', 'sliceable', 'pickupable'], 'states': []}]
+Query: get_edges_for_node({'node_id': 'potato 1'})
+Info: [('potato 1', 'dining table 1', 'ON'), ('potato 1', 'chair 2', 'CLOSE'), ('potato 1', 'chair 1', 'CLOSE'), ('potato 1', 'mug 1', 'CLOSE'), ('potato 1', 'plate 1', 'CLOSE'), ('potato 1', 'kitchen 1', 'INSIDE'), ('chair 2', 'potato 1', 'CLOSE'), ('chair 1', 'potato 1', 'CLOSE'), ('mug 1', 'potato 1', 'CLOSE'), ('plate 1', 'potato 1', 'CLOSE')]
+Think: Potato 1 is on dining table 1
+OK.
+Act: go to dining table 1
+You arrive at the dining table (1). You see chair (1, 2), dining table (1), mug (1), painting (3), plate (1), potato (1). You hold butter knife (1).
+Act: go to potato 1
+You arrive at the potato (1). You see chair (1, 2), dining table (1), mug (1), painting (2), plate (1), potato (1). You hold butter knife (1).
+Act: slice potato 1
+You slice potato (1). You see chair (1, 2), dining table (1), mug (1), painting (2), plate (1), sliced potato (1). You hold butter knife (1).
+Think: Now, I need to put down butter knife 1 to pick up sliced potato 1.
+OK.
+Act: put down butter knife 1
+You put butter knife (1) in dining table (1).
+Act: pick up sliced potato 1
+You pick up sliced potato (1). You hold sliced potato (1).
+Think: Now, I need to find countertop and put down sliced potato 1.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see butter knife (2), countertop (1), house plant (1), kettle (1), pen (1), salt shaker (1), soap bottle (1), spatula (1), toaster (1), vase (1), wine bottle (1). You hold sliced potato (1).
+Act: put down sliced potato 1
+You put sliced potato (1) in countertop (1).
+Think: Now I complete task.
+OK.
+Act: done

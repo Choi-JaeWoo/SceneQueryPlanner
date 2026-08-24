@@ -1,0 +1,63 @@
+Your task is to: Pick up a pencil and put it in the drawer.
+You are in the house, and there are 3 rooms: bedroom (1), kitchen (1), living room (1). You are in the middle of a kitchen (1). Looking quickly around the room, you see chair (1), countertop (1), dining table (1), fridge (1), stool (1), television (1).
+Think: To solve the task, I need to find and pick up pencil, find and open drawer, put down pencil in drawer.
+OK.
+Think: First, I need to find and pick up pencil.
+OK.
+Query: find_objects({'label': 'pencil'})
+Info: 
+Think: I have not seen pencil yet. Now I need to check where to search. First, I will search bedroom 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'bedroom 1'})
+Info: bed 1, desk 1, drawer (1, 2, 3, 4, 5, 6), dresser 1
+Think: In bedroom 1, the pencil is likely to appear in/on bed 1, desk 1, drawer (1, 2, 3, 4, 5, 6), dresser 1. I can check each place one by one until I find pencil.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see baseball bat (1), bed (1), desk (1), drawer (1, 2, 3, 4, 5, 6), dresser (1), dumbbell (1), painting (1, 2).
+Act: go to bed 1
+You arrive at the bed (1). You see bed (1), laptop (1), pillow (1).
+Act: go to desk 1
+You arrive at the desk (1). You see CD (1), baseball bat (1), book (1, 2), desk (1), drawer (1, 2, 3, 4, 5, 6), dresser (1), dumbbell (1), house plant (1), key chain (1), painting (1), pencil (1, 2).
+Think: I find pencil 1. Now, I need to pick it up.
+OK.
+Act: go to pencil 1
+You arrive at the pencil (1). You see CD (1), baseball bat (1), book (1, 2), desk (1), drawer (1, 2, 3, 4, 5, 6), dresser (1), dumbbell (1), house plant (1), key chain (1), painting (1), pencil (1, 2).
+Act: pick up pencil 1
+You pick up pencil (1). You hold pencil (1).
+Think: Now, I need to find and open drawer.
+OK.
+Query: find_objects({'label': 'drawer'})
+Info: [{'name_id_nl': 'drawer 6', 'node_type': 'asset', 'properties': ['openable'], 'states': [], 'room': 'bedroom 1'}, {'name_id_nl': 'drawer 5', 'node_type': 'asset', 'properties': ['openable'], 'states': [], 'room': 'bedroom 1'}, {'name_id_nl': 'drawer 4', 'node_type': 'asset', 'properties': ['openable'], 'states': [], 'room': 'bedroom 1'}, {'name_id_nl': 'drawer 3', 'node_type': 'asset', 'properties': ['openable'], 'states': [], 'room': 'bedroom 1'}, {'name_id_nl': 'drawer 2', 'node_type': 'asset', 'properties': ['openable'], 'states': [], 'room': 'bedroom 1'}, {'name_id_nl': 'drawer 1', 'node_type': 'asset', 'properties': ['openable'], 'states': [], 'room': 'bedroom 1'}]
+Think: Drawer 6 is in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see baseball bat (1), bed (1), desk (1), drawer (1, 2, 3, 4, 5, 6), dresser (1), dumbbell (1), painting (1, 2). You hold pencil (1).
+Act: go to drawer 6
+You arrive at the drawer (6). The drawer (6) is closed. You see CD (1), baseball bat (1), book (1, 2), desk (1), drawer (1, 2, 3, 4, 5, 6), dresser (1), dumbbell (1), house plant (1), key chain (1), pencil (2). You hold pencil (1).
+Act: open drawer 6
+You open drawer (6). You see CD (1), baseball bat (1), book (1, 2), desk (1), drawer (1, 2, 3, 4, 5, 6), dresser (1), dumbbell (1), house plant (1), key chain (1), pencil (2). You hold pencil (1).
+Act: go to drawer 5
+You arrive at the drawer (5). The drawer (5) is closed. You see CD (1), baseball bat (1), book (1, 2), desk (1), drawer (1, 2, 3, 4, 5, 6), dresser (1), dumbbell (1), house plant (1), key chain (1), pencil (2). You hold pencil (1).
+Act: open drawer 5
+You open drawer (5). You see CD (1), baseball bat (1), book (1, 2), desk (1), drawer (1, 2, 3, 4, 5, 6), dresser (1), dumbbell (1), house plant (1), key chain (1), pencil (2). You hold pencil (1).
+Act: go to drawer 4
+You arrive at the drawer (4). The drawer (4) is closed. You see CD (1), baseball bat (1), book (1, 2), desk (1), drawer (1, 2, 3, 4, 5, 6), dresser (1), dumbbell (1), house plant (1), key chain (1), pencil (2). You hold pencil (1).
+Act: open drawer 4
+You open drawer (4). You see CD (1), baseball bat (1), book (1, 2), desk (1), drawer (1, 2, 3, 4, 5, 6), dresser (1), dumbbell (1), house plant (1), key chain (1), pencil (2). You hold pencil (1).
+Act: go to drawer 3
+You arrive at the drawer (3). The drawer (3) is closed. You see CD (1), baseball bat (1), book (1, 2), desk (1), drawer (1, 2, 3, 4, 5, 6), dresser (1), dumbbell (1), house plant (1), key chain (1), pencil (2). You hold pencil (1).
+Act: open drawer 3
+You open drawer (3). You see CD (1), baseball bat (1), book (1, 2), desk (1), drawer (1, 2, 3, 4, 5, 6), dresser (1), dumbbell (1), house plant (1), key chain (1), pencil (2). You hold pencil (1).
+Act: go to drawer 2
+You arrive at the drawer (2). The drawer (2) is closed. You see CD (1), baseball bat (1), book (1, 2), desk (1), drawer (1, 2, 3, 4, 5, 6), dresser (1), dumbbell (1), house plant (1), key chain (1), pencil (2). You hold pencil (1).
+Act: open drawer 2
+You open drawer (2). You see CD (1), baseball bat (1), book (1, 2), desk (1), drawer (1, 2, 3, 4, 5, 6), dresser (1), dumbbell (1), house plant (1), key chain (1), pencil (2). You hold pencil (1).
+Act: go to drawer 1
+You arrive at the drawer (1). The drawer (1) is closed. You see CD (1), baseball bat (1), book (1, 2), desk (1), drawer (1, 2, 3, 4, 5, 6), dresser (1), dumbbell (1), house plant (1), key chain (1), pencil (2). You hold pencil (1).
+Act: open drawer 1
+You open drawer (1). You see CD (1), baseball bat (1), book (1, 2), desk (1), drawer (1, 2, 3, 4, 5, 6), dresser (1), dumbbell (1), house plant (1), key chain (1), pencil (2). You hold pencil (1).
+Act: put down pencil 1
+You put pencil (1) in drawer (1).
+Think: Now I complete the task.
+OK.
+Act: done

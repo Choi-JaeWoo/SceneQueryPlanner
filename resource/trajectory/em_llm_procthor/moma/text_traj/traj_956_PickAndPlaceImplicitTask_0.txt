@@ -1,0 +1,8 @@
+Your task is to: Move all the objects from the sofa to the dining table.
+You are in the house, and there are 2 rooms: kitchen (1), living room (1). You are in the middle of a kitchen (1). Looking quickly around the room, you see cabinet (1, 2), countertop (1), fridge (1), garbage bag (1), garbage can (1), painting (1, 2), shelf (1, 2, 3, 4, 5, 6), shelving unit (1, 2), television (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- kitchen 1: [(cabinet 2), (cabinet 1), (countertop 1), egg 2, egg 3, (fridge 1), garbage bag 1, (garbage can 1), painting 2, painting 1, potato 1, (shelf 1), (shelf 2), (shelf 6), (shelf 4), (shelf 5), (shelf 3), shelving unit 1, shelving unit 2, spray bottle 1, television 1, tomato 1]
+- (living room 1): [(box 1), (chair 4), (chair 1), (chair 3), (chair 2), (dining table 1), house plant 1, painting 3, painting 4, (shelf 12), (shelf 11), (shelf 10), (shelf 7), (shelf 8), (shelf 9), (side table 1), (sofa 1), (TV stand 1)]
+You have not taken any actions yet.
+What is the best next action to complete the task as efficiently as possible?
+Think: I need to find sofa and check what is on top of it. Sofa 1 is in living room 1.
+Act: go to living room 1

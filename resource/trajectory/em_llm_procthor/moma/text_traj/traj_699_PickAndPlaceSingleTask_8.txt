@@ -1,0 +1,12 @@
+Your task is to: Pick up a book and put it on the countertop.
+You arrive at the bed (2). You see TV stand (1), bed (2), book (3), desk lamp (2), pillow (1, 2), shelf (1, 2, 3, 4, 5, 6), television (2), vase (2). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- (bathroom 1): [faucet 1, (garbage can 1), plunger 1, (sink 1), (sink basin 1), (toilet 1)]
+- (bathroom 2): [faucet 2, (garbage can 2), plunger 2, (sink 2), (sink basin 2), (toilet 2)]
+- (bedroom 1): [baseball bat 1, (bed 1), (chair 5), (chair 6), (chair 4), (chair 3), (chair 2), (chair 1), (dining table 1), (drawer 1), (drawer 2), (drawer 3), (dresser 1), television 1]
+- bedroom 2: [floor lamp 1, painting 2, painting 1, basket ball 1, dog bed 1, desk lamp 1, house plant 2, statue 2, (armchair 1), bed 2, book 3, cabinet 1, (cabinet 2), (cabinet 4), (cabinet 3), (chair 7), (desk 1), desk lamp 2, (drawer 6), (drawer 7), (drawer 5), (drawer 4), (dresser 2), pillow 1, pillow 2, (shelf 3), (shelf 4), (shelf 2), (shelf 5), (shelf 1), (shelf 6), television 2, (TV stand 1), vase 2]
+- kitchen 1: [(chair 8), (countertop 1), (dining table 2), (fridge 1), (stool 1)]
+- (living room 1): [(chair 10), (chair 9), (dining table 3), (drawer 8), (drawer 10), (drawer 9), (drawer 11), (drawer 13), (drawer 12), (dresser 3), painting 3, painting 4, (shelf 7), (sofa 1), (TV stand 2)]
+Your 4 previous actions were: go to bedroom 2 (success), go to cabinet 1 (success), open cabinet 1 (success), go to bed 2 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I need to check unexplored areas in bedroom 2 to find book. Now, I need to check shelf 1.
+Act: go to shelf 1

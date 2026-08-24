@@ -1,0 +1,193 @@
+Your task is to: Put a pencil, a baseball bat, and a remote control on the countertop, all at once.
+You are in the house, and there are 5 rooms: bathroom (1), bedroom (1, 2), kitchen (1), living room (1). You are in the middle of a bedroom (2). Looking quickly around the room, you see TV stand (2), armchair (1), baseball bat (1), bed (2), chair (3, 4, 5, 6), desk (1), dining table (2), drawer (5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16), dresser (2), floor lamp (1), painting (1, 2), shelf (2, 3, 4, 5, 6, 7).
+Think: To solve the task, I need to find and pick up pencil, then put it on countertop. And I need to find and pick up baseball bat, then put it on countertop. And I need to find and pick up remote control, then put it on countertop.
+OK.
+Think: First, I need to find and pick up pencil.
+OK.
+Query: recall location of pencil
+You have not seen pencil before.
+Think: I have not seen pencil yet. The pencil is more likely to appear in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see dining table (3), floor lamp (2), painting (3, 4), sofa (1), television (3).
+Think: In living room 1, the pencil is likely to appear in/on dining table 3, sofa 1. I can check each place one by one until I find pencil.
+OK.
+Act: go to dining table 3
+You arrive at the dining table (3). You see bowl (3), desk lamp (3), dining table (3), house plant (4), laptop (2), painting (3, 4), pencil (3), sofa (1), statue (4), television (3), vase (3), watch (4).
+Act: go to sofa 1
+You arrive at the sofa (1). You see laptop (2), painting (4), sofa (1).
+Think: There is no pencil in living room 1. I need to move to bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see TV stand (1), bed (1), cabinet (1, 2, 3, 4), chair (1, 2), dining table (1), drawer (1, 2, 3, 4), dresser (1), shelf (1), side table (1).
+Think: In bedroom 1, the pencil is likely to appear in/on bed 1, cabinet (1, 2, 3, 4), chair (1, 2), dining table 1, drawer (1, 2, 3, 4), dresser 1, side table 1. I can check each place one by one until I find pencil.
+OK.
+Act: go to bed 1
+You arrive at the bed (1). You see bed (1), chair (2), dining table (1), house plant (2), key chain (1), mug (1), pillow (1), remote control (2), vase (1).
+Act: go to cabinet 1
+You arrive at the cabinet (1). The cabinet (1) is closed. You see baseball bat (2), cabinet (1, 2, 3), desk lamp (1, 2), drawer (1, 2, 3), dresser (1), mug (1), pencil (1, 2), remote control (1).
+Act: go to cabinet 2
+You arrive at the cabinet (2). The cabinet (2) is closed. You see cabinet (1, 2, 3, 4), chair (1), desk lamp (1, 2), drawer (1, 2, 3, 4), dresser (1), house plant (2), key chain (1), mug (1).
+Act: go to cabinet 3
+You arrive at the cabinet (3). The cabinet (3) is closed. You see cabinet (1, 2, 3, 4), chair (1), desk lamp (1, 2), drawer (1, 2, 3, 4), dresser (1), house plant (2), key chain (1), mug (1).
+Act: go to cabinet 4
+You arrive at the cabinet (4). The cabinet (4) is closed. You see cabinet (2, 3, 4), chair (1), desk lamp (1, 2), drawer (2, 3, 4), dresser (1), house plant (2), key chain (1), remote control (2).
+Act: go to chair 1
+You arrive at the chair (1). You see cabinet (2, 3, 4), chair (1), desk lamp (1, 2), dining table (1), drawer (2, 3, 4), dresser (1), house plant (2), key chain (1), mug (1), remote control (2), vase (1).
+Act: go to chair 2
+You arrive at the chair (2). You see bed (1), chair (2), dining table (1), house plant (2), key chain (1), mug (1), pillow (1), remote control (2), vase (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see bed (1), chair (1, 2), dining table (1), house plant (2), key chain (1), mug (1), pillow (1), remote control (2), vase (1).
+Act: go to drawer 1
+You arrive at the drawer (1). The drawer (1) is closed. You see baseball bat (2), cabinet (1, 2, 3), desk lamp (1, 2), drawer (1, 2, 3, 4), dresser (1), mug (1).
+Act: go to drawer 2
+You arrive at the drawer (2). The drawer (2) is closed. You see baseball bat (2), cabinet (1, 2, 3), desk lamp (1, 2), drawer (1, 2, 3, 4), dresser (1), mug (1).
+Act: go to drawer 3
+You arrive at the drawer (3). The drawer (3) is closed. You see cabinet (1, 2, 3, 4), chair (1), desk lamp (1, 2), drawer (1, 2, 3, 4), dresser (1), house plant (2), key chain (1), mug (1), remote control (2).
+Act: go to drawer 4
+You arrive at the drawer (4). The drawer (4) is closed. You see cabinet (1, 2, 3, 4), chair (1), desk lamp (1, 2), drawer (1, 2, 3, 4), dresser (1), house plant (2), key chain (1), mug (1), remote control (2).
+Act: go to dresser 1
+You arrive at the dresser (1). You see laundry hamper (1).
+Act: go to bedroom 2
+You move to the bedroom (2). Looking quickly around the room, you see TV stand (2), armchair (1), baseball bat (1), bed (2), chair (3, 4, 5, 6), desk (1), dining table (2), drawer (5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16), dresser (2), floor lamp (1), painting (1, 2), shelf (2, 3, 4, 5, 6, 7).
+Think: In bedroom 2, the pencil is likely to appear in/on bed 2, chair (3, 4, 5, 6), desk 1, dining table 2, drawer (5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16), dresser 2. I can check each place one by one until I find pencil.
+OK.
+Act: go to bed 2
+You arrive at the bed (2). You see baseball bat (1), bed (2), pillow (2).
+Act: go to chair 3
+You arrive at the chair (3). You see CD (1), chair (3), desk (1), laptop (1), remote control (4), vase (2), watch (2).
+Act: go to chair 4
+You arrive at the chair (4). You see book (1), chair (4, 5, 6), dining table (2), floor lamp (1), house plant (3), remote control (5), statue (2), watch (3).
+Act: go to chair 5
+You arrive at the chair (5). You see book (1, 3), chair (4, 5, 6), dining table (2), drawer (6, 7, 8, 10, 11, 12, 13, 14, 15, 16), dresser (2), house plant (3), remote control (5), statue (1, 2), watch (3).
+Act: go to chair 6
+You arrive at the chair (6). You see book (1), chair (4, 5, 6), dining table (2), drawer (5, 6, 9, 10, 11, 12, 13, 14, 15), dresser (2), house plant (3), remote control (5), statue (1, 2), watch (3).
+Act: go to desk 1
+You arrive at the desk (1). You see CD (1), bowl (2), chair (3), desk (1), laptop (1), remote control (3, 4), vase (2), watch (2).
+Act: go to dining table 2
+You arrive at the dining table (2). You see book (1), chair (4, 5, 6), dining table (2), house plant (3), remote control (5), statue (2), watch (3).
+Act: go to drawer 5
+You arrive at the drawer (5). The drawer (5) is closed. You see book (3), chair (5), drawer (5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16), dresser (2), house plant (3), painting (1), remote control (5), statue (1, 2), watch (3).
+Act: go to drawer 6
+You arrive at the drawer (6). The drawer (6) is closed. You see book (3), chair (5), drawer (5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16), dresser (2), house plant (3), painting (1), remote control (5), statue (1, 2), watch (3).
+Act: go to drawer 7
+You arrive at the drawer (7). The drawer (7) is closed. You see book (3), chair (5), drawer (5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16), dresser (2), house plant (3), painting (1, 2), statue (1, 2), watch (3).
+Act: go to drawer 8
+You arrive at the drawer (8). The drawer (8) is closed. You see book (3), chair (5), drawer (5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16), dresser (2), house plant (3), painting (1, 2), statue (1, 2), watch (3).
+Act: go to drawer 9
+You arrive at the drawer (9). The drawer (9) is closed. You see book (3), chair (5, 6), dining table (2), drawer (5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16), dresser (2), house plant (3), painting (1), remote control (5), statue (1, 2), watch (3).
+Act: go to drawer 10
+You arrive at the drawer (10). The drawer (10) is closed. You see book (3), chair (5, 6), dining table (2), drawer (5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16), dresser (2), house plant (3), painting (1), remote control (5), statue (1, 2), watch (3).
+Act: go to drawer 11
+You arrive at the drawer (11). The drawer (11) is closed. You see book (3), chair (5, 6), dining table (2), drawer (5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16), dresser (2), house plant (3), painting (1), remote control (5), statue (1, 2), watch (3).
+Act: go to drawer 12
+You arrive at the drawer (12). The drawer (12) is closed. You see book (3), chair (5), drawer (5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16), dresser (2), house plant (3), painting (1), remote control (5), statue (1, 2).
+Act: go to drawer 13
+You arrive at the drawer (13). The drawer (13) is closed. You see book (3), chair (5), drawer (5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16), dresser (2), house plant (3), painting (1), remote control (5), statue (1, 2), watch (3).
+Act: go to drawer 14
+You arrive at the drawer (14). The drawer (14) is closed. You see book (3), chair (5), drawer (5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16), dresser (2), house plant (3), painting (1), remote control (5), statue (1, 2), watch (3).
+Act: go to drawer 15
+You arrive at the drawer (15). The drawer (15) is closed. You see book (3), chair (5), drawer (5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16), dresser (2), house plant (3), painting (1), remote control (5), statue (1, 2), watch (3).
+Act: go to drawer 16
+You arrive at the drawer (16). The drawer (16) is closed. You see baseball bat (1), book (3), drawer (7, 8, 10, 11, 12, 13, 14, 15, 16), dresser (2), painting (1, 2), statue (1).
+Act: go to dresser 2
+You arrive at the dresser (2). You see book (3), chair (5), drawer (5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16), dresser (2), house plant (3), painting (1), remote control (5), statue (1, 2), watch (3).
+Think: There is no pencil in bedroom 2. I need to move to kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see countertop (1), fridge (1), garbage bag (1), house plant (1), stool (1).
+Think: In kitchen 1, the pencil is likely to appear in/on countertop 1, fridge 1. I can check each place one by one until I find pencil.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see TV stand (1), bowl (1), shelf (1), television (1), watch (1).
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see countertop (1), fridge (1), garbage bag (1), house plant (1), stool (1).
+Act: go to fridge 1
+You arrive at the fridge (1). The fridge (1) is closed. You see fridge (1).
+Think: There is no pencil in kitchen 1. I need to move to bathroom 1.
+OK.
+Act: go to bathroom 1
+You move to the bathroom (1). Looking quickly around the room, you see garbage can (1), laundry hamper (1), plunger (1), sink (1), sink basin (1), toilet (1).
+Think: In bathroom 1, the pencil is likely to appear in/on garbage can 1, laundry hamper 1, sink 1, toilet 1. I can check each place one by one until I find pencil.
+OK.
+Act: go to garbage can 1
+You arrive at the garbage can (1). You see faucet (1), garbage can (1), sink (1), sink basin (1), toilet paper (1).
+Act: go to laundry hamper 1
+You arrive at the laundry hamper (1). The laundry hamper (1) is closed. You see laundry hamper (1), plunger (1).
+Act: go to sink 1
+You arrive at the sink (1). You see faucet (1), garbage can (1), sink (1), sink basin (1), toilet paper (1).
+Act: go to toilet 1
+You arrive at the toilet (1). The toilet (1) is closed. You see CD (1), chair (3), remote control (4), vase (2).
+Think: There is no pencil in bathroom 1. I need to move to living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see dining table (3), floor lamp (2), painting (3, 4), sofa (1), television (3).
+Think: In living room 1, the pencil is likely to appear in/on dining table 3, sofa 1. I can check each place one by one until I find pencil.
+OK.
+Act: go to dining table 3
+You arrive at the dining table (3). You see bowl (3), desk lamp (3), dining table (3), house plant (4), laptop (2), painting (3, 4), pencil (3), sofa (1), statue (4), television (3), vase (3), watch (4).
+Think: I find pencil 3. Now, I need to pick it up.
+OK.
+Act: go to pencil 3
+You arrive at the pencil (3). You see bowl (3), desk lamp (3), dining table (3), house plant (4), laptop (2), painting (3, 4), pencil (3), sofa (1), statue (4), television (3), vase (3), watch (4).
+Act: pick up pencil 3
+You pick up pencil (3). You hold pencil (3).
+Think: Now, I need to find countertop and put down pencil 3.
+OK.
+Query: recall location of countertop
+You saw countertop 1 in kitchen 1.
+Think: Countertop 1 is in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see countertop (1), fridge (1), garbage bag (1), house plant (1), stool (1). You hold pencil (3).
+Act: go to countertop 1
+You arrive at the countertop (1). You see TV stand (1), bowl (1), shelf (1), television (1), watch (1). You hold pencil (3).
+Act: put down pencil 3
+You put pencil (3) in countertop (1).
+Think: Now, I need to find and pick up baseball bat.
+OK.
+Query: recall location of baseball bat
+You saw baseball bat 2 near drawer 2 in bedroom 1. You saw baseball bat 1 near drawer 16 in bedroom 2.
+Think: Baseball bat 1 is near drawer 16 in bedroom 2.
+OK.
+Act: go to bedroom 2
+You move to the bedroom (2). Looking quickly around the room, you see TV stand (2), armchair (1), baseball bat (1), bed (2), chair (3, 4, 5, 6), desk (1), dining table (2), drawer (5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16), dresser (2), floor lamp (1), painting (1, 2), shelf (2, 3, 4, 5, 6, 7).
+Act: go to drawer 16
+You arrive at the drawer (16). The drawer (16) is closed. You see baseball bat (1), book (3), drawer (7, 8, 10, 11, 12, 13, 14, 15, 16), dresser (2), painting (1, 2), statue (1).
+Act: go to baseball bat 1
+You arrive at the baseball bat (1). You see baseball bat (1), book (3), drawer (7, 8, 13, 14, 15, 16), painting (1, 2), statue (1).
+Act: pick up baseball bat 1
+You pick up baseball bat (1). You hold baseball bat (1).
+Think: Now, I need to find countertop and put down baseball bat 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see countertop (1), fridge (1), garbage bag (1), house plant (1), stool (1). You hold baseball bat (1).
+Act: go to countertop 1
+You arrive at the countertop (1). You see TV stand (1), bowl (1), shelf (1), television (1), watch (1). You hold baseball bat (1).
+Act: put down baseball bat 1
+You put baseball bat (1) in countertop (1).
+Think: Now, I need to find and pick up remote control.
+OK.
+Query: recall location of remote control
+You saw remote control 2 near drawer 4 in bedroom 1. You saw remote control 1 near cabinet 1 in bedroom 1. You saw remote control 4 near toilet 1 in bedroom 2. You saw remote control 5 near dresser 2 in bedroom 2. You saw remote control 3 near desk 1 in bedroom 2.
+Think: Remote control 5 is near dresser 2 in bedroom 2.
+OK.
+Act: go to bedroom 2
+You move to the bedroom (2). Looking quickly around the room, you see TV stand (2), armchair (1), bed (2), chair (3, 4, 5, 6), desk (1), dining table (2), drawer (5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16), dresser (2), floor lamp (1), painting (1, 2), shelf (2, 3, 4, 5, 6, 7).
+Act: go to dresser 2
+You arrive at the dresser (2). You see book (3), chair (5), drawer (5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16), dresser (2), house plant (3), painting (1), remote control (5), statue (1, 2), watch (3).
+Act: go to remote control 5
+You arrive at the remote control (5). You see book (1), chair (4, 5, 6), dining table (2), house plant (3), remote control (5), statue (2), watch (3).
+Act: pick up remote control 5
+You pick up remote control (5). You hold remote control (5).
+Think: Now, I need to find countertop and put down remote control 5.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see countertop (1), fridge (1), garbage bag (1), house plant (1), stool (1). You hold remote control (5).
+Act: go to countertop 1
+You arrive at the countertop (1). You see TV stand (1), bowl (1), shelf (1), television (1), watch (1). You hold remote control (5).
+Act: put down remote control 5
+You put remote control (5) in countertop (1).
+Think: Now I complete the task.
+OK.
+Act: done

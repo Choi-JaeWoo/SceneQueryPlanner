@@ -1,0 +1,2 @@
+Your task is to: Set a fork on a plate and then place the plate on the countertop.
+Max decision steps reached.

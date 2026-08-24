@@ -1,0 +1,101 @@
+Your task is to: take a fork, a wine glass, and a water glass and place them on the table
+You are in the house, and there are 4 rooms: bathroom 1, bedroom 1, kitchen 1, living room 1. You are in the middle of a kitchen 1. Looking quickly around the room, you see bookshelf 1, chair (2, 3, 4, 5), dishwasher 1, faucet 1, fridge 1, kitchen cabinet (1, 2, 3, 4, 5, 6, 7, 8), kitchen counter 1, kitchen table 1, microwave oven 1, sink 1, sofa 2, stove 1, toaster 1, tv 2.
+Think: To solve the task I need to find and pick up cutlery fork, find kitchen table and put down cutlery fork, find and pick up wine glass, find kitchen table and put down wine glass, find and pick up water glass, find kitchen table and put down water glass.
+OK.
+Think: First, I need to find and pick up cutlery fork.
+OK.
+Query: find_objects({'label': 'cutlery fork'})
+Info: 
+Think: I have not seen cutlery fork yet. Now I need to check where to search. First, I will search kitchen 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'kitchen 1', 'child_node_attrs': {'visited': False}})
+Info: bookshelf 1, bowl 1, chair (2, 3, 4, 5), dishwasher 1, faucet 1, fridge 1, kitchen cabinet (1, 2, 3, 4, 5, 6, 7, 8), kitchen counter 1, kitchen table 1, light switch 2, microwave oven 1, oven tray 1, sink 1, slice of bread (1, 2), sofa 2, stove 1, toaster 1, tv 2
+Think: In kitchen 1, the cutlery fork is likely to appear in/on chair (2, 3, 4, 5), dishwasher 1, fridge 1, kitchen cabinet (1, 2, 3, 4, 5, 6, 7, 8), kitchen counter 1, kitchen table 1, sink 1. I can check each place one by one until I find cutlery fork.
+OK.
+Act: go to chair 2
+You arrive at the chair 2. You see chair (2, 3, 5), chocolate syrup 1, coffee pot 1, cooking pot 1, cupcake (2, 3), kitchen counter 1, kitchen table 1, mug (2, 3), stove 1.
+Act: go to chair 3
+You arrive at the chair 3. You see chair (2, 3), coffee pot 1, kitchen counter 1, kitchen table 1, pie 1.
+Act: go to chair 4
+You arrive at the chair 4. You see bananas (1, 2), bowl 2, chair (4, 5), coffee pot 1, condiment shaker (1, 2), cupcake (2, 3), dishwashing liquid 1, fridge 1, kitchen cabinet (5, 6), kitchen counter 1, kitchen table 1, mug (2, 3), pie 1, pudding 1, sink 1.
+Act: go to chair 5
+You arrive at the chair 5. You see bananas (1, 2), bowl 2, cell phone 2, chair (4, 5), coffee pot 1, condiment shaker (1, 2), cupcake (2, 3), dishwashing liquid 1, faucet 1, fridge 1, kitchen cabinet (5, 6, 7), kitchen counter 1, kitchen table 1, mug (2, 3), pie 1, pudding 1, sink 1, washing sponge 1.
+Act: go to dishwasher 1
+You arrive at the dishwasher 1. The dishwasher 1 is closed. You see cell phone 2, cereal 1, chair (2, 5), chocolate syrup 1, coffee pot 1, cupcake (2, 3), cutlets 1, dishwasher 1, kitchen cabinet (2, 3), kitchen counter 1, kitchen table 1, microwave oven 1, minced meat 1, mug (2, 3).
+Act: open dishwasher 1
+You open dishwasher 1. You see cell phone 2, cereal 1, chair (2, 5), chocolate syrup 1, coffee pot 1, cupcake (2, 3), cutlery fork 1, cutlets 1, dishwasher 1, kitchen cabinet (2, 3), kitchen counter 1, kitchen table 1, microwave oven 1, minced meat 1, mug (2, 3), wine glass 3
+Think: I find cutlery fork 1. Now, I need to pick it up.
+OK.
+Act: pick up cutlery fork 1
+You pick up cutlery fork 1. You hold cutlery fork 1.
+Think: Now, I need to find kitchen table and put down cutlery fork 1.
+OK.
+Query: find_objects({'label': 'kitchen table'})
+Info: [{'name_id_nl': 'kitchen table 1', 'node_type': 'asset', 'properties': ['SURFACES', 'MOVABLE'], 'states': [], 'room': 'kitchen 1'}]
+Think: Kitchen table 1 is in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen 1. Looking quickly around the room, you see bookshelf 1, chair (2, 3, 4, 5), dishwasher 1, faucet 1, fridge 1, kitchen cabinet (1, 2, 3, 4, 5, 6, 7, 8), kitchen counter 1, kitchen table 1, microwave oven 1, sink 1, sofa 2, stove 1, toaster 1, tv 2. You hold cutlery fork 1.
+Act: go to kitchen table 1
+You arrive at the kitchen table 1. You see bananas (1, 2), bowl 2, chair (4, 5), coffee pot 1, condiment shaker (1, 2), cupcake (2, 3), cutlery fork 1, fridge 1, kitchen cabinet 5, kitchen counter 1, kitchen table 1, mug (2, 3), pie 1, pudding 1. You hold cutlery fork 1.
+Act: put down cutlery fork 1
+You put cutlery fork 1 on kitchen table 1.
+Think: Now, I need to find and pick up wine glass.
+OK.
+Query: find_objects({'label': 'wine glass'})
+Info: [{'name_id_nl': 'wine glass 1', 'node_type': 'object', 'properties': ['GRABBABLE', 'RECIPIENT', 'POURABLE', 'MOVABLE'], 'states': []}, {'name_id_nl': 'wine glass 2', 'node_type': 'object', 'properties': ['GRABBABLE', 'RECIPIENT', 'POURABLE', 'MOVABLE'], 'states': []}, {'name_id_nl': 'wine glass 3', 'node_type': 'object', 'properties': ['GRABBABLE', 'RECIPIENT', 'POURABLE', 'MOVABLE'], 'states': []}]
+Think: Wine glass 1, wine glass 2, wine glass 3 are in kitchen 1.
+OK.
+Act: go to wine glass 3
+You arrive at the wine glass 3. You see cereal 1, chair (2, 5), chocolate syrup 1, coffee pot 1, cooking pot 1, cupcake (2, 3), cutlets 1, dishwasher 1, kitchen cabinet (2, 3, 4), kitchen counter 1, kitchen table 1, microwave oven 1, minced meat 1, mug 2, wine glass 3.
+Think: I find wine glass 3. Now, I need to pick it up.
+OK.
+Act: pick up wine glass 3
+You pick up wine glass 3. You hold wine glass 3.
+Think: Now, I need to find kitchen table and put down wine glass 3.
+OK.
+Query: find_objects({'label': 'kitchen table'})
+Info: [{'name_id_nl': 'kitchen table 1', 'node_type': 'asset', 'properties': ['SURFACES', 'MOVABLE'], 'states': [], 'room': 'kitchen 1'}]
+Think: Kitchen table 1 is in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen 1. Looking quickly around the room, you see bookshelf 1, chair (2, 3, 4, 5), dishwasher 1, faucet 1, fridge 1, kitchen cabinet (1, 2, 3, 4, 5, 6, 7, 8), kitchen counter 1, kitchen table 1, microwave oven 1, sink 1, sofa 2, stove 1, toaster 1, tv 2. You hold wine glass 3.
+Act: go to kitchen table 1
+You arrive at the kitchen table 1. You see bananas (1, 2), bowl 2, chair (4, 5), coffee pot 1, condiment shaker (1, 2), cupcake (2, 3), cutlery fork 1, fridge 1, kitchen cabinet 5, kitchen counter 1, kitchen table 1, mug (2, 3), pie 1, pudding 1, wine glass 3. You hold wine glass 3.
+Act: put down wine glass 3
+You put wine glass 3 on kitchen table 1.
+Think: Now, I need to find and pick up water glass.
+OK.
+Query: find_objects({'label': 'water glass'})
+Info: [{'name_id_nl': 'water glass 1', 'node_type': 'object', 'properties': ['GRABBABLE', 'RECIPIENT', 'POURABLE', 'MOVABLE'], 'states': []}, {'name_id_nl': 'water glass 2', 'node_type': 'object', 'properties': ['GRABBABLE', 'RECIPIENT', 'POURABLE', 'MOVABLE'], 'states': []}]
+Think: Water glass 1, water glass 2 are in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen 1. Looking quickly around the room, you see bookshelf 1, chair (2, 3, 4, 5), dishwasher 1, faucet 1, fridge 1, kitchen cabinet (1, 2, 3, 4, 5, 6, 7, 8), kitchen counter 1, kitchen table 1, microwave oven 1, sink 1, sofa 2, stove 1, toaster 1, tv 2.
+Act: go to kitchen table 1
+You arrive at the kitchen table 1. You see bananas (1, 2), bowl 2, chair (4, 5), coffee pot 1, condiment shaker (1, 2), cupcake (2, 3), cutlery fork 1, fridge 1, kitchen cabinet 5, kitchen counter 1, kitchen table 1, mug (2, 3), pie 1, pudding 1, wine glass 3.
+Act: go to fridge 1
+You arrive at the fridge 1. The fridge 1 is closed. You see bananas (1, 2), bowl 2, chair (4, 5), coffee pot 1, condiment shaker (1, 2), cupcake (2, 3), cutlery fork 1, fridge 1, kitchen cabinet 5, kitchen counter 1, kitchen table 1, mug (2, 3), pie 1, pudding 1, sofa 2, wine glass 3.
+Act: open fridge 1
+You open fridge 1. You see bananas (1, 2), bowl 2, chair (4, 5), coffee pot 1, condiment shaker (1, 2), cupcake (2, 3), cutlery fork 1, fridge 1, kitchen cabinet 5, kitchen counter 1, kitchen table 1, mug (2, 3), pie 1, plate 1, pudding 1, sofa 2, water glass (1, 2), wine glass (1, 2, 3)
+Act: go to water glass 1
+You arrive at the water glass 1. You see bananas (1, 2), bowl 2, chair (4, 5), coffee pot 1, condiment shaker (1, 2), cupcake (2, 3), cutlery fork 1, dishwashing liquid 1, faucet 1, fridge 1, kitchen cabinet (5, 6), kitchen counter 1, kitchen table 1, mug (2, 3), pie 1, plate 1, pudding 1, sink 1, water glass (1, 2), wine glass (1, 2, 3).
+Think: I find water glass 1. Now, I need to pick it up.
+OK.
+Act: pick up water glass 1
+You pick up water glass 1. You hold water glass 1.
+Think: Now, I need to find kitchen table and put down water glass 1.
+OK.
+Query: find_objects({'label': 'kitchen table'})
+Info: [{'name_id_nl': 'kitchen table 1', 'node_type': 'asset', 'properties': ['SURFACES', 'MOVABLE'], 'states': [], 'room': 'kitchen 1'}]
+Think: Kitchen table 1 is in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen 1. Looking quickly around the room, you see bookshelf 1, chair (2, 3, 4, 5), dishwasher 1, faucet 1, fridge 1, kitchen cabinet (1, 2, 3, 4, 5, 6, 7, 8), kitchen counter 1, kitchen table 1, microwave oven 1, sink 1, sofa 2, stove 1, toaster 1, tv 2. You hold water glass 1.
+Act: go to kitchen table 1
+You arrive at the kitchen table 1. You see bananas (1, 2), bowl 2, chair (4, 5), coffee pot 1, condiment shaker (1, 2), cupcake (2, 3), cutlery fork 1, fridge 1, kitchen cabinet 5, kitchen counter 1, kitchen table 1, mug (2, 3), pie 1, plate 1, pudding 1, water glass (1, 2), wine glass (1, 2, 3). You hold water glass 1.
+Act: put down water glass 1
+You put water glass 1 on kitchen table 1.
+Think: Now I complete task.
+OK.
+Act: done

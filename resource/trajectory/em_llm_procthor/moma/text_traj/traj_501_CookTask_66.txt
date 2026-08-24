@@ -1,0 +1,14 @@
+Your task is to: Using the coffee machine, fill a mug with coffee and put it on the coffee table.
+You move to the bedroom (3). Looking quickly around the room, you see TV stand (4), basket ball (1), bed (3), coffee table (1), drawer (16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27), dresser (4), safe (1), shelf (14, 15, 16, 17, 18, 19). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- (bathroom 1): [faucet 1, (garbage can 1), painting 4, painting 3, plunger 1, (sink 1), (sink basin 1), (toilet 1)]
+- (bathroom 2): [faucet 2, plunger 2, mug 1, (garbage can 4), (sink 2), (sink basin 2), (toilet 2)]
+- (bedroom 1): [baseball bat 1, (bed 1), (box 2), (box 1), (chair 7), (chair 6), (chair 4), (chair 5), (dining table 4), (drawer 7), (drawer 8), (drawer 9), (drawer 6), (drawer 5), (drawer 4), (dresser 2), (garbage can 2)]
+- (bedroom 2): [(armchair 1), baseball bat 2, (bed 2), (box 3), (drawer 15), (drawer 14), (drawer 13), (drawer 12), (drawer 11), (drawer 10), (dresser 3), floor lamp 1, (garbage can 3), (shelf 13), (TV stand 3)]
+- bedroom 3: [basket ball 1, (bed 3), (box 4), coffee table 1, (drawer 19), (drawer 18), (drawer 27), (drawer 26), (drawer 25), (drawer 24), (drawer 23), (drawer 22), (drawer 20), (drawer 17), (drawer 16), (drawer 21), (dresser 4), pen 5, (safe 1), (shelf 15), (shelf 14), (shelf 19), (shelf 18), (shelf 16), (shelf 17), tissue box 2, (TV stand 4)]
+- kitchen 1: [apple 1, kettle 1, toaster 1, bottle 1, cup 1, fork 1, pencil 1, plate 1, vase 1, television 1, painting 2, statue 1, painting 1, pan 1, pen 1, potato 1, salt shaker 1, soap bottle 1, (countertop 1), (fridge 1), coffee machine 1, garbage bag 1, (dining table 1), book 1, (chair 1)]
+- living room 1: [(chair 2), (dining table 2), (drawer 1), (drawer 3), (drawer 2), (dresser 1), house plant 1, (shelf 1), (shelf 2), (shelf 3), (shelf 4), (shelf 6), (shelf 5), (sofa 1), (TV stand 1)]
+- (living room 2): [(chair 3), (dining table 3), dog bed 1, (shelf 12), (shelf 11), (shelf 10), (shelf 9), (shelf 8), (shelf 7), (TV stand 2)]
+Your 5 previous actions were: turn off coffee machine 1 (success), pick up cup 1 (fail), pick up cup 1 (fail), go to kitchen 1 (success), go to bedroom 3 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I move to bedroom 3. I hold cup 1, which is filled with coffee. Now, I need to put down cup 1 on coffee table 1.
+Act: go to coffee table 1

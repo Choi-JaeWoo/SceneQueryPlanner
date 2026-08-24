@@ -1,0 +1,47 @@
+Your task is to: Put the 1 plate on the kitchen table
+You are in the house, and there are 4 rooms: bathroom 1, bedroom 1, kitchen 1, living room 1. You are in the middle of a bedroom 1. Looking quickly around the room, you see bed 1, bookshelf 2, cabinet 1, chair 1, coffee table 1, computer 1, desk 1, nightstand (1, 2), sofa 1.
+Think: To solve the task I need to find and pick up plate, find kitchen table and put down plate.
+OK.
+Think: First, I need to find and pick up plate.
+OK.
+Query: find_objects({'label': 'plate'})
+Info: 
+Think: I have not seen plate yet. Now I need to check where to search. First, I will search kitchen 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'kitchen 1', 'child_node_attrs': {'visited': False}})
+Info: bench (1, 2), bookshelf 1, coffee pot 1, dishwasher 1, faucet 2, fridge 1, kitchen cabinet (1, 2, 3, 4, 5, 6, 7, 8), kitchen counter (1, 2, 3), kitchen table 1, light switch 2, microwave oven 1, oven tray 1, sink 2, slice of bread (1, 2), stove 1, toaster 1
+Think: In kitchen 1, the plate is likely to appear in/on bench (1, 2), dishwasher 1, fridge 1, kitchen cabinet (1, 2, 3, 4, 5, 6, 7, 8), kitchen counter (1, 2, 3), kitchen table 1, sink 2. I can check each place one by one until I find plate.
+OK.
+Act: go to kitchen 1
+You move to the kitchen 1. Looking quickly around the room, you see bench (1, 2), bookshelf 1, dishwasher 1, faucet 2, fridge 1, garbage can 1, kitchen cabinet (1, 2, 3, 4, 5, 6, 7, 8), kitchen counter (1, 3), kitchen table 1, microwave oven 1, sink 2, stove 1, toaster 1.
+Act: go to bench 1
+You arrive at the bench 1. You see apple (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11), bench 1, bowl 6, condiment shaker (1, 2), kitchen table 1.
+Act: go to bench 2
+You arrive at the bench 2. You see apple (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11), bench 2, book 1, bowl 6, cell phone 1, condiment shaker (1, 2), kitchen table 1.
+Act: go to dishwasher 1
+You arrive at the dishwasher 1. The dishwasher 1 is closed. You see coffee pot 1, dishwasher 1, kitchen cabinet (6, 7), microwave oven 1, toaster 1.
+Act: open dishwasher 1
+You open dishwasher 1. You see coffee pot 1, dishwasher 1, kitchen cabinet (6, 7), kitchen counter 2, microwave oven 1, toaster 1
+Act: go to fridge 1
+You arrive at the fridge 1. The fridge 1 is closed. You see bench 1, fridge 1, kitchen table 1.
+Act: open fridge 1
+You open fridge 1. You see bench 1, fridge 1, kitchen table 1, plate 1
+Think: I find plate 1. Now, I need to pick it up.
+OK.
+Act: pick up plate 1
+You pick up plate 1. You hold plate 1.
+Think: Now, I need to find kitchen table and put down plate 1.
+OK.
+Query: find_objects({'label': 'kitchen table'})
+Info: [{'name_id_nl': 'kitchen table 1', 'node_type': 'asset', 'properties': ['SURFACES', 'MOVABLE'], 'states': [], 'room': 'kitchen 1'}]
+Think: Kitchen table 1 is in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen 1. Looking quickly around the room, you see bench (1, 2), bookshelf 1, dishwasher 1, faucet 2, fridge 1, garbage can 1, kitchen cabinet (1, 2, 3, 4, 5, 6, 7, 8), kitchen counter (1, 2, 3), kitchen table 1, microwave oven 1, sink 2, stove 1, toaster 1. You hold plate 1.
+Act: go to kitchen table 1
+You arrive at the kitchen table 1. You see apple (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11), bench 2, book 1, bowl 6, cell phone 1, condiment shaker (1, 2), kitchen table 1, plate 1. You hold plate 1.
+Act: put down plate 1
+You put plate 1 on kitchen table 1.
+Think: Now I complete task.
+OK.
+Act: done

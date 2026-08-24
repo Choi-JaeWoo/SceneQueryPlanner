@@ -1,0 +1,83 @@
+Your task is to: Move all the objects from the dining table to the countertop.
+You are in the house, and there are 2 rooms: kitchen (1), living room (1). You are in the middle of a living room (1). Looking quickly around the room, you see TV stand (1), box (1), dining table (1), drawer (1, 2), garbage can (1), house plant (2), painting (3, 4), shelf (1, 2, 3, 4, 5, 6), side table (1), sofa (1).
+Think: To solve the task, I need to find dining table and check what is on top of it. Then, I need to move everything on dining table to countertop.
+OK.
+Think: First, I need to find dining table.
+OK.
+Query: find_objects({'label': 'dining table'})
+Info: [{'name_id_nl': 'dining table 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}]
+Think: I find dining table 1.
+OK.
+Act: go to dining table 1
+You arrive at the dining table (1). You see TV stand (1), book (1), bowl (1), candle (1), credit card (1), dining table (1), key chain (1), newspaper (1), painting (3), plate (1), shelf (1, 2, 3, 4, 5, 6), statue (1), television (1), watch (2).
+Think: Now, I need to check what is on top of dining table 1.
+OK.
+Query: get_edges_for_node({'node_id': 'dining table 1', 'relation': 'ON'})
+Info: [('book 1', 'dining table 1', 'ON'), ('bowl 1', 'dining table 1', 'ON'), ('candle 1', 'dining table 1', 'ON'), ('credit card 1', 'dining table 1', 'ON')]
+Think: Now, I need to move book 1, bowl 1, candle 1, credit card 1 to countertop.
+OK.
+Act: go to book 1
+You arrive at the book (1). The book (1) is closed. You see TV stand (1), book (1), bowl (1), candle (1), credit card (1), dining table (1), key chain (1), newspaper (1), painting (3), plate (1), shelf (1, 2, 3, 4, 5, 6), statue (1), television (1), watch (2).
+Act: pick up book 1
+You pick up book (1). You hold book (1).
+Think: Now, I need to find countertop.
+OK.
+Query: find_objects({'label': 'countertop'})
+Info: [{'name_id_nl': 'countertop 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'kitchen 1'}]
+Think: I find countertop 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see countertop (1), fridge (1), house plant (1), painting (1, 2). You hold book (1).
+Act: go to countertop 1
+You arrive at the countertop (1). You see apple (1), bottle (1), countertop (1), cup (1), dish sponge (1), house plant (1), kettle (1), lettuce (1), pen (1), pepper shaker (1), salt shaker (1), soap bottle (1), spatula (1), spoon (1), wine bottle (1, 2). You hold book (1).
+Act: put down book 1
+You put book (1) in countertop (1).
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), box (1), dining table (1), drawer (1, 2), garbage can (1), house plant (2), painting (3, 4), shelf (1, 2, 3, 4, 5, 6), side table (1), sofa (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see TV stand (1), bowl (1), candle (1), credit card (1), dining table (1), key chain (1), newspaper (1), painting (3), plate (1), shelf (1, 2, 3, 4, 5, 6), statue (1), television (1), watch (2).
+Act: go to bowl 1
+You arrive at the bowl (1). You see bowl (1), candle (1), credit card (1), dining table (1), garbage can (1), key chain (1), painting (3), shelf (1, 2, 3), watch (2).
+Act: pick up bowl 1
+You pick up bowl (1). You hold bowl (1).
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see countertop (1), fridge (1), house plant (1), painting (1, 2). You hold bowl (1).
+Act: go to countertop 1
+You arrive at the countertop (1). You see apple (1), book (1), bottle (1), countertop (1), cup (1), dish sponge (1), house plant (1), kettle (1), lettuce (1), pen (1), pepper shaker (1), salt shaker (1), soap bottle (1), spatula (1), spoon (1), wine bottle (1, 2). You hold bowl (1).
+Act: put down bowl 1
+You put bowl (1) in countertop (1).
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), box (1), dining table (1), drawer (1, 2), garbage can (1), house plant (2), painting (3, 4), shelf (1, 2, 3, 4, 5, 6), side table (1), sofa (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see TV stand (1), candle (1), credit card (1), dining table (1), key chain (1), newspaper (1), painting (3), plate (1), shelf (1, 2, 3, 4, 5, 6), statue (1), television (1), watch (2).
+Act: go to candle 1
+You arrive at the candle (1). You see TV stand (1), candle (1), credit card (1), dining table (1), key chain (1), newspaper (1), painting (3), plate (1), shelf (1, 2, 3, 4, 5, 6), statue (1), television (1), watch (2).
+Act: pick up candle 1
+You pick up candle (1). You hold candle (1).
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see countertop (1), fridge (1), house plant (1), painting (1, 2). You hold candle (1).
+Act: go to countertop 1
+You arrive at the countertop (1). You see apple (1), book (1), bottle (1), bowl (1), countertop (1), cup (1), dish sponge (1), house plant (1), kettle (1), lettuce (1), pen (1), pepper shaker (1), salt shaker (1), soap bottle (1), spatula (1), spoon (1), wine bottle (1, 2). You hold candle (1).
+Act: put down candle 1
+You put candle (1) in countertop (1).
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), box (1), dining table (1), drawer (1, 2), garbage can (1), house plant (2), painting (3, 4), shelf (1, 2, 3, 4, 5, 6), side table (1), sofa (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see TV stand (1), credit card (1), dining table (1), key chain (1), newspaper (1), painting (3), plate (1), shelf (1, 2, 3, 4, 5, 6), statue (1), television (1), watch (2).
+Act: go to credit card 1
+You arrive at the credit card (1). You see TV stand (1), credit card (1), dining table (1), key chain (1), newspaper (1), painting (3), plate (1), shelf (1, 2, 3, 4, 5, 6), statue (1), television (1), watch (2).
+Act: pick up credit card 1
+You pick up credit card (1). You hold credit card (1).
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see countertop (1), fridge (1), house plant (1), painting (1, 2). You hold credit card (1).
+Act: go to countertop 1
+You arrive at the countertop (1). You see apple (1), book (1), bottle (1), bowl (1), candle (1), countertop (1), cup (1), dish sponge (1), house plant (1), kettle (1), lettuce (1), pen (1), pepper shaker (1), salt shaker (1), soap bottle (1), spatula (1), spoon (1), wine bottle (1, 2). You hold credit card (1).
+Act: put down credit card 1
+You put credit card (1) in countertop (1).
+Think: Now I need to check what's left on dining table 1.
+OK.
+Query: get_edges_for_node({'node_id': 'dining table 1', 'relation': 'ON'})
+Info: 
+Think: Now I complete the task.
+OK.
+Act: done

@@ -1,0 +1,105 @@
+Your task is to: Toast a slice of bread using a toaster and then place the toasted bread on the countertop.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a bathroom (1). Looking quickly around the room, you see garbage can (1), laundry hamper (1), sink (1), sink basin (1), toilet (1).
+Think: To solve the task, I need to find and pick up knife or butter knife, find and slice bread, put down knife or butter knife and pick up sliced bread, put sliced bread in toaster and turn on toaster, pick up sliced bread and put it on countertop.
+OK.
+Think: First, I need to find and pick up knife or butter knife.
+OK.
+Query: find_objects({'label': 'knife'})
+Info: 
+Query: find_objects({'label': 'butter knife'})
+Info: 
+Think: I have not seen knife or butter knife yet. Now I need to check where to search. First, I will search kitchen 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'kitchen 1'})
+Info: cabinet 1, chair (2, 3, 4, 5), countertop 1, dining table 2, fridge 1, shelf (1, 2, 3)
+Think: In kitchen 1, the knife or butter knife is likely to appear in/on cabinet 1, chair (2, 3, 4, 5), countertop 1, dining table 2, fridge 1, shelf (1, 2, 3). I can check each place one by one until I find knife or butter knife.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see cabinet (1), chair (2, 3, 4, 5), countertop (1), dining table (2), fridge (1), shelf (1, 2, 3), shelving unit (1).
+Act: go to cabinet 1
+You arrive at the cabinet (1). The cabinet (1) is closed. You see bowl (2), butter knife (1), cabinet (1), cell phone (2), dish sponge (1), shelf (1, 2, 3), shelving unit (1), spoon (1).
+Act: open cabinet 1
+You open cabinet (1). You see bowl (2), butter knife (1), cabinet (1), cell phone (2), dish sponge (1), shelf (1, 2, 3), shelving unit (1), spoon (1), spray bottle (1).
+Act: go to chair 2
+You arrive at the chair (2). You see book (2), bottle (1), chair (2, 3, 4, 5), credit card (2), dining table (2), fork (1), vase (1).
+Act: go to chair 3
+You arrive at the chair (3). You see book (2), bottle (1), chair (2, 3, 4, 5), credit card (2), dining table (2), fork (1), vase (1).
+Act: go to chair 4
+You arrive at the chair (4). You see book (2), bottle (1), chair (2, 3, 4, 5), credit card (2), dining table (2), fork (1), vase (1).
+Act: go to chair 5
+You arrive at the chair (5). You see book (2), bottle (1), chair (2, 3, 4, 5), credit card (2), dining table (2), fork (1), vase (1).
+Act: go to countertop 1
+You arrive at the countertop (1). You see bowl (2), bread (1), butter knife (1, 2), cabinet (1), cell phone (2), countertop (1), dish sponge (1), egg (1), kettle (1), lettuce (1), pepper shaker (1), shelf (1, 2, 3), shelving unit (1), soap bottle (1), spoon (1), spray bottle (1), toaster (1).
+Act: go to dining table 2
+You arrive at the dining table (2). You see book (2), bottle (1), chair (2, 3, 4, 5), credit card (2), dining table (2), fork (1), vase (1).
+Act: go to fridge 1
+You arrive at the fridge (1). The fridge (1) is closed. You see fridge (1).
+Act: open fridge 1
+You open fridge (1). You see egg (2, 3, 4), fridge (1).
+Act: go to shelf 1
+You arrive at the shelf (1). You see bowl (2), butter knife (1), cabinet (1), cell phone (2), dish sponge (1), shelf (1, 2, 3), shelving unit (1), spoon (1), spray bottle (1).
+Act: go to shelf 2
+You arrive at the shelf (2). You see bowl (2), butter knife (1), cabinet (1), cell phone (2), dish sponge (1), shelf (1, 2, 3), shelving unit (1), spoon (1), spray bottle (1).
+Act: go to shelf 3
+You arrive at the shelf (3). You see bowl (2), cabinet (1), shelf (1, 2, 3), shelving unit (1), spray bottle (1).
+Think: I need to check whether I see knife or butter knife.
+OK.
+Query: find_objects({'label': 'knife'})
+Info: 
+Query: find_objects({'label': 'butter knife'})
+Info: [{'name_id_nl': 'butter knife 1', 'node_type': 'object', 'properties': ['pickupable'], 'states': []}, {'name_id_nl': 'butter knife 2', 'node_type': 'object', 'properties': ['pickupable'], 'states': []}]
+Query: get_edges_for_node({'node_id': 'butter knife 1'})
+Info: [('butter knife 1', 'bread 1', 'CLOSE'), ('butter knife 1', 'butter knife 2', 'CLOSE'), ('butter knife 1', 'egg 1', 'CLOSE'), ('butter knife 1', 'kettle 1', 'CLOSE'), ('butter knife 1', 'lettuce 1', 'CLOSE'), ('butter knife 1', 'pepper shaker 1', 'CLOSE'), ('butter knife 1', 'soap bottle 1', 'CLOSE'), ('butter knife 1', 'toaster 1', 'CLOSE'), ('butter knife 1', 'countertop 1', 'ON'), ('butter knife 1', 'bowl 2', 'CLOSE'), ('butter knife 1', 'cell phone 2', 'CLOSE'), ('butter knife 1', 'dish sponge 1', 'CLOSE'), ('butter knife 1', 'spoon 1', 'CLOSE'), ('butter knife 1', 'kitchen 1', 'INSIDE'), ('bread 1', 'butter knife 1', 'CLOSE'), ('butter knife 2', 'butter knife 1', 'CLOSE'), ('egg 1', 'butter knife 1', 'CLOSE'), ('kettle 1', 'butter knife 1', 'CLOSE'), ('lettuce 1', 'butter knife 1', 'CLOSE'), ('pepper shaker 1', 'butter knife 1', 'CLOSE'), ('soap bottle 1', 'butter knife 1', 'CLOSE'), ('toaster 1', 'butter knife 1', 'CLOSE'), ('bowl 2', 'butter knife 1', 'CLOSE'), ('cell phone 2', 'butter knife 1', 'CLOSE'), ('dish sponge 1', 'butter knife 1', 'CLOSE'), ('spoon 1', 'butter knife 1', 'CLOSE')]
+Think: Butter knife 1 is on countertop 1.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see bowl (2), bread (1), butter knife (1, 2), cabinet (1), cell phone (2), countertop (1), dish sponge (1), egg (1), kettle (1), lettuce (1), pepper shaker (1), shelf (1, 2, 3), shelving unit (1), soap bottle (1), spoon (1), spray bottle (1), toaster (1).
+Act: go to butter knife 1
+You arrive at the butter knife (1). You see bowl (2), bread (1), butter knife (1, 2), cabinet (1), cell phone (2), countertop (1), dish sponge (1), egg (1), kettle (1), lettuce (1), pepper shaker (1), shelf (1, 2, 3), shelving unit (1), soap bottle (1), spoon (1), spray bottle (1), toaster (1).
+Act: pick up butter knife 1
+You pick up butter knife (1). You hold butter knife (1).
+Think: Now, I need to find and slice bread.
+OK.
+Query: find_objects({'label': 'bread'})
+Info: [{'name_id_nl': 'bread 1', 'node_type': 'object', 'properties': ['sliceable', 'pickupable'], 'states': []}]
+Query: get_edges_for_node({'node_id': 'bread 1'})
+Info: [('bread 1', 'countertop 1', 'ON'), ('bread 1', 'bowl 2', 'CLOSE'), ('bread 1', 'butter knife 2', 'CLOSE'), ('bread 1', 'butter knife 1', 'CLOSE'), ('bread 1', 'cell phone 2', 'CLOSE'), ('bread 1', 'dish sponge 1', 'CLOSE'), ('bread 1', 'egg 1', 'CLOSE'), ('bread 1', 'kettle 1', 'CLOSE'), ('bread 1', 'lettuce 1', 'CLOSE'), ('bread 1', 'pepper shaker 1', 'CLOSE'), ('bread 1', 'soap bottle 1', 'CLOSE'), ('bread 1', 'spoon 1', 'CLOSE'), ('bread 1', 'toaster 1', 'CLOSE'), ('bread 1', 'user 1', 'CLOSE'), ('bread 1', 'kitchen 1', 'INSIDE'), ('bowl 2', 'bread 1', 'CLOSE'), ('butter knife 2', 'bread 1', 'CLOSE'), ('butter knife 1', 'bread 1', 'CLOSE'), ('cell phone 2', 'bread 1', 'CLOSE'), ('dish sponge 1', 'bread 1', 'CLOSE'), ('egg 1', 'bread 1', 'CLOSE'), ('kettle 1', 'bread 1', 'CLOSE'), ('lettuce 1', 'bread 1', 'CLOSE'), ('pepper shaker 1', 'bread 1', 'CLOSE'), ('soap bottle 1', 'bread 1', 'CLOSE'), ('spoon 1', 'bread 1', 'CLOSE'), ('toaster 1', 'bread 1', 'CLOSE'), ('user 1', 'bread 1', 'CLOSE')]
+Think: Bread 1 is on countertop 1.
+OK.
+Act: go to bread 1
+You arrive at the bread (1). You see bowl (2), bread (1), butter knife (2), cabinet (1), cell phone (2), countertop (1), dish sponge (1), egg (1), kettle (1), lettuce (1), pepper shaker (1), shelf (1, 2), shelving unit (1), soap bottle (1), spoon (1), spray bottle (1), toaster (1). You hold butter knife (1).
+Act: slice bread 1
+You slice bread (1). You see bowl (2), butter knife (2), cabinet (1), cell phone (2), countertop (1), dish sponge (1), egg (1), kettle (1), lettuce (1), pepper shaker (1), shelf (1, 2), shelving unit (1), sliced bread (1), soap bottle (1), spoon (1), spray bottle (1), toaster (1). You hold butter knife (1).
+Think: Now, I need to put down butter knife 1 and pick up sliced bread 1.
+OK.
+Act: put down butter knife 1
+You put butter knife (1) in countertop (1).
+Act: pick up sliced bread 1
+You pick up sliced bread (1). You hold sliced bread (1).
+Think: Now, I need to find toaster and put down sliced bread 1.
+OK.
+Act: go to toaster 1
+You arrive at the toaster (1). You see bowl (2), butter knife (1, 2), cabinet (1), cell phone (2), countertop (1), dish sponge (1), egg (1), kettle (1), lettuce (1), pepper shaker (1), shelf (1, 2), shelving unit (1), soap bottle (1), spoon (1), spray bottle (1), toaster (1). You hold sliced bread (1).
+Act: put down sliced bread 1
+You put sliced bread (1) in toaster (1).
+Act: turn on toaster 1
+You turn on toaster (1).
+Think: Now, I need to turn off toaster 1 and pick up sliced bread 1.
+OK.
+Act: turn off toaster 1
+You turn off toaster (1).
+Act: pick up sliced bread 1
+You pick up sliced bread (1). You hold sliced bread (1).
+Think: Now, I need to find countertop.
+OK.
+Query: find_objects({'label': 'countertop'})
+Info: [{'name_id_nl': 'countertop 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'kitchen 1'}]
+Act: go to countertop 1
+You arrive at the countertop (1). You see bowl (2), butter knife (1, 2), cabinet (1), cell phone (2), countertop (1), dish sponge (1), egg (1), kettle (1), lettuce (1), pepper shaker (1), shelf (1, 2, 3), shelving unit (1), soap bottle (1), spoon (1), spray bottle (1), toaster (1). You hold sliced bread (1).
+Think: Now I need to put down sliced bread 1.
+OK.
+Act: put down sliced bread 1
+You put sliced bread (1) in countertop (1).
+Think: Now I complete task.
+OK.
+Act: done

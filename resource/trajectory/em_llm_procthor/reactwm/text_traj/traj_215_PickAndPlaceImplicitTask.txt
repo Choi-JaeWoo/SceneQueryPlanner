@@ -1,0 +1,77 @@
+Your task is to: Relocate everything from the TV stand to the dining table.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a living room (1). Looking quickly around the room, you see TV stand (1), drawer (21), garbage can (1), shelf (3, 4, 5, 6, 7, 8), side table (2), sofa (1).
+Think: To solve the task, I need to find TV stand and check what is on top of it. Then, I need to move everything on TV stand to dining table.
+OK.
+Think: First, I need to find TV stand.
+OK.
+Query: recall location of TV stand
+You saw TV stand 1 in living room 1.
+Think: TV stand 1 is in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), drawer (21), garbage can (1), shelf (3, 4, 5, 6, 7, 8), side table (2), sofa (1).
+Act: go to TV stand 1
+You arrive at the TV stand (1). You see TV stand (1), book (2), candle (1), remote control (1, 2), shelf (3, 4, 5, 6, 7, 8), television (3).
+Think: Now, I need to move book (2), candle (1), remote control (1, 2) to dining table.
+OK.
+Act: go to book 2
+You arrive at the book (2). The book (2) is closed. You see TV stand (1), book (2), candle (1), remote control (1, 2), shelf (3, 4, 5, 6, 7, 8), television (3).
+Act: pick up book 2
+You pick up book (2). You hold book (2).
+Think: Now, I need to find dining table.
+OK.
+Query: recall location of dining table
+You saw dining table 1 in bedroom 1.
+Think: Dining table 1 is in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see armchair (1, 2), baseball bat (1), bed (1), chair (1), dining table (1), dog bed (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), floor lamp (1, 2), painting (1, 2), safe (1), television (1). You hold book (2).
+Act: go to dining table 1
+You arrive at the dining table (1). You see armchair (2), chair (1), dining table (1), laptop (1), mug (1), pen (1). You hold book (2).
+Act: put down book 2
+You put book (2) in dining table (1).
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), drawer (21), garbage can (1), shelf (3, 4, 5, 6, 7, 8), side table (2), sofa (1).
+Act: go to TV stand 1
+You arrive at the TV stand (1). You see TV stand (1), candle (1), remote control (1, 2), shelf (3, 4, 5, 6, 7, 8), television (3).
+Act: go to candle 1
+You arrive at the candle (1). You see TV stand (1), candle (1), remote control (1, 2), shelf (3, 4, 5, 6, 7, 8), television (3).
+Act: pick up candle 1
+You pick up candle (1). You hold candle (1).
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see armchair (1, 2), baseball bat (1), bed (1), chair (1), dining table (1), dog bed (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), floor lamp (1, 2), painting (1, 2), safe (1), television (1). You hold candle (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see armchair (2), book (2), chair (1), dining table (1), laptop (1), mug (1), pen (1). You hold candle (1).
+Act: put down candle 1
+You put candle (1) in dining table (1).
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), drawer (21), garbage can (1), shelf (3, 4, 5, 6, 7, 8), side table (2), sofa (1).
+Act: go to TV stand 1
+You arrive at the TV stand (1). You see TV stand (1), remote control (1, 2), shelf (3, 4, 5, 6, 7, 8), television (3).
+Act: go to remote control 1
+You arrive at the remote control (1). You see TV stand (1), remote control (1, 2), shelf (3, 4, 5, 6, 7, 8), television (3).
+Act: pick up remote control 1
+You pick up remote control (1). You hold remote control (1).
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see armchair (1, 2), baseball bat (1), bed (1), chair (1), dining table (1), dog bed (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), floor lamp (1, 2), painting (1, 2), safe (1), television (1). You hold remote control (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see armchair (2), book (2), candle (1), chair (1), dining table (1), laptop (1), mug (1), pen (1). You hold remote control (1).
+Act: put down remote control 1
+You put remote control (1) in dining table (1).
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), drawer (21), garbage can (1), shelf (3, 4, 5, 6, 7, 8), side table (2), sofa (1).
+Act: go to TV stand 1
+You arrive at the TV stand (1). You see TV stand (1), remote control (2), shelf (3, 4, 5, 6, 7, 8), television (3).
+Act: go to remote control 2
+You arrive at the remote control (2). You see TV stand (1), remote control (2), shelf (3, 4, 5, 6, 7, 8), television (3).
+Act: pick up remote control 2
+You pick up remote control (2). You hold remote control (2).
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see armchair (1, 2), baseball bat (1), bed (1), chair (1), dining table (1), dog bed (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), floor lamp (1, 2), painting (1, 2), safe (1), television (1). You hold remote control (2).
+Act: go to dining table 1
+You arrive at the dining table (1). You see armchair (2), book (2), candle (1), chair (1), dining table (1), laptop (1), mug (1), pen (1), remote control (1). You hold remote control (2).
+Act: put down remote control 2
+You put remote control (2) in dining table (1).
+Think: Now I complete the task.
+OK.
+Act: done

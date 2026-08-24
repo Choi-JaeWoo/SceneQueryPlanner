@@ -1,0 +1,2 @@
+Your task is to: Put a soap bar and a spray bottle into the garbage can.
+Max decision steps reached.

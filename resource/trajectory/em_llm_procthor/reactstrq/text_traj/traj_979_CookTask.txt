@@ -1,0 +1,61 @@
+Your task is to: Use the coffee machine to brew coffee into a mug and then place it on the countertop.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a kitchen (1). Looking quickly around the room, you see countertop (1), fridge (1), painting (1, 2, 3, 4).
+Think: To solve the task, I need to find and put mug in coffee machine, turn on coffee machine, and put mug on countertop.
+OK.
+Think: First, I need to find and pick up mug.
+OK.
+Query: find_objects({'label': 'mug'})
+Info: 
+Think: I have not seen mug yet. Now I need to check where to search. First, I will search kitchen 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'kitchen 1'})
+Info: countertop 1, fridge 1
+Think: In kitchen 1, the mug is likely to appear in/on countertop 1, fridge 1. I can check each place one by one until I find mug.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see book (5), bottle (1), bowl (1), coffee machine (1), countertop (1), cup (1), dish sponge (2), house plant (3), kettle (1), knife (1), mug (2), painting (3), pan (1), pepper shaker (1), salt shaker (1), soap bottle (1), spoon (1), toaster (1), wine bottle (1).
+Act: go to fridge 1
+You arrive at the fridge (1). The fridge (1) is closed. You see fridge (1).
+Act: open fridge 1
+You open fridge (1). You see apple (1), fridge (1), potato (1), tomato (1).
+Think: I find mug 2. Now, I need to pick it up.
+OK.
+Act: go to mug 2
+You arrive at the mug (2). You see bottle (1), bowl (1), coffee machine (1), countertop (1), cup (1), dish sponge (2), kettle (1), mug (2), painting (4), pepper shaker (1), salt shaker (1), soap bottle (1), toaster (1).
+Act: pick up mug 2
+You pick up mug (2). You hold mug (2).
+Think: Now, I need to find coffee machine.
+OK.
+Query: find_objects({'label': 'coffee machine'})
+Info: [{'name_id_nl': 'coffee machine 1', 'node_type': 'object', 'properties': ['toggleable', 'isHeatSource'], 'states': []}]
+Query: get_edges_for_node({'node_id': 'coffee machine 1'})
+Info: [('coffee machine 1', 'book 5', 'CLOSE'), ('coffee machine 1', 'knife 1', 'CLOSE'), ('coffee machine 1', 'pan 1', 'CLOSE'), ('coffee machine 1', 'wine bottle 1', 'CLOSE'), ('coffee machine 1', 'bottle 1', 'CLOSE'), ('coffee machine 1', 'bowl 1', 'CLOSE'), ('coffee machine 1', 'cup 1', 'CLOSE'), ('coffee machine 1', 'dish sponge 2', 'CLOSE'), ('coffee machine 1', 'kettle 1', 'CLOSE'), ('coffee machine 1', 'mug 2', 'CLOSE'), ('coffee machine 1', 'pepper shaker 1', 'CLOSE'), ('coffee machine 1', 'salt shaker 1', 'CLOSE'), ('coffee machine 1', 'soap bottle 1', 'CLOSE'), ('coffee machine 1', 'toaster 1', 'CLOSE'), ('coffee machine 1', 'user 1', 'CLOSE'), ('coffee machine 1', 'kitchen 1', 'INSIDE'), ('book 5', 'coffee machine 1', 'CLOSE'), ('knife 1', 'coffee machine 1', 'CLOSE'), ('pan 1', 'coffee machine 1', 'CLOSE'), ('wine bottle 1', 'coffee machine 1', 'CLOSE'), ('bottle 1', 'coffee machine 1', 'CLOSE'), ('bowl 1', 'coffee machine 1', 'CLOSE'), ('cup 1', 'coffee machine 1', 'CLOSE'), ('dish sponge 2', 'coffee machine 1', 'CLOSE'), ('kettle 1', 'coffee machine 1', 'CLOSE'), ('mug 2', 'coffee machine 1', 'CLOSE'), ('pepper shaker 1', 'coffee machine 1', 'CLOSE'), ('salt shaker 1', 'coffee machine 1', 'CLOSE'), ('soap bottle 1', 'coffee machine 1', 'CLOSE'), ('toaster 1', 'coffee machine 1', 'CLOSE'), ('user 1', 'coffee machine 1', 'CLOSE')]
+Think: Coffee machine 1 is on countertop 1.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see book (5), bottle (1), bowl (1), coffee machine (1), countertop (1), cup (1), dish sponge (2), house plant (3), kettle (1), knife (1), painting (3), pan (1), pepper shaker (1), salt shaker (1), soap bottle (1), spoon (1), toaster (1), wine bottle (1). You hold mug (2).
+Act: go to coffee machine 1
+You arrive at the coffee machine (1). You see book (5), bottle (1), bowl (1), coffee machine (1), cup (1), dish sponge (2), house plant (3), kettle (1), knife (1), pan (1), pepper shaker (1), salt shaker (1), soap bottle (1), spoon (1), toaster (1), wine bottle (1). You hold mug (2).
+Think: Now, I need to put down mug 2 in coffee machine 1.
+OK.
+Act: put down mug 2
+You put mug (2) in coffee machine (1).
+Think: Now, I need to turn on coffee machine 1 to brew the coffee.
+OK.
+Act: turn on coffee machine 1
+You turn on coffee machine (1).
+Think: Now, I need to turn off coffee machine 1 and pick up mug 2.
+OK.
+Act: turn off coffee machine 1
+You turn off coffee machine (1).
+Act: pick up mug 2
+You pick up mug (2). You hold mug (2).
+Think: Now, I need to put down mug 2 on countertop 1.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see book (5), bottle (1), bowl (1), coffee machine (1), countertop (1), cup (1), dish sponge (2), house plant (3), kettle (1), knife (1), painting (3), pan (1), pepper shaker (1), salt shaker (1), soap bottle (1), spoon (1), toaster (1), wine bottle (1). You hold mug (2).
+Act: put down mug 2
+You put mug (2) in countertop (1).
+Think: Now I complete task.
+OK.
+Act: done

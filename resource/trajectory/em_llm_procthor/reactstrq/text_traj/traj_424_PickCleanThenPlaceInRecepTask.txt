@@ -1,0 +1,59 @@
+Your task is to: Wash the candle and then put it in the sink basin.
+You are in the house, and there are 2 rooms: bathroom (1), bedroom (1). You are in the middle of a bedroom (1). Looking quickly around the room, you see armchair (1, 2), bed (1), chair (1, 2), desk (1), dining table (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9), dresser (1), floor lamp (1, 2), painting (1).
+Think: To solve the task, I need to find and pick up candle, put it in sink basin and turn on faucet, pick up and put down candle in sink basin.
+OK.
+Think: First, I need to find and pick up candle.
+OK.
+Query: find_objects({'label': 'candle'})
+Info: 
+Think: I have not seen candle yet. Now I need to check where to search. First, I will search bathroom 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'bathroom 1'})
+Info: drawer (10, 11, 12), dresser 2, garbage can 1, sink 1, sink basin 1, toilet 1
+Think: In bathroom 1, the candle is likely to appear in/on drawer 10, drawer 11, drawer 12, dresser 2, garbage can 1, sink 1, sink basin 1, toilet 1. I can check each place one by one until I find candle.
+OK.
+Act: go to bathroom 1
+You move to the bathroom (1). Looking quickly around the room, you see drawer (10, 11, 12), dresser (2), garbage can (1), painting (2, 3), plunger (1), sink (1), sink basin (1), toilet (1).
+Act: go to drawer 10
+You arrive at the drawer (10). The drawer (10) is closed. You see candle (1), drawer (10, 11, 12), dresser (2), garbage can (1), house plant (2), painting (3), plunger (1), spray bottle (1).
+Act: open drawer 10
+You open drawer (10). You see candle (1), drawer (10, 11, 12), dresser (2), garbage can (1), house plant (2), painting (3), plunger (1), spray bottle (1).
+Act: go to candle 1
+You arrive at the candle (1). You see candle (1), drawer (10, 11, 12), dresser (2), garbage can (1), house plant (2), painting (3), plunger (1), spray bottle (1).
+Act: pick up candle 1
+You pick up candle (1). You hold candle (1).
+Think: Now, I need to find sink basin.
+OK.
+Query: find_objects({'label': 'sink basin'})
+Info: [{'name_id_nl': 'sink basin 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'bathroom 1'}]
+Think: Sink basin 1 is in bathroom 1.
+OK.
+Act: go to bathroom 1
+You move to the bathroom (1). Looking quickly around the room, you see drawer (10, 11, 12), dresser (2), garbage can (1), painting (2, 3), plunger (1), sink (1), sink basin (1), toilet (1). You hold candle (1).
+Act: go to sink basin 1
+You arrive at the sink basin (1). You see drawer (10, 11), faucet (1), house plant (2), sink (1), sink basin (1). You hold candle (1).
+Act: put down candle 1
+You put candle (1) in sink basin (1).
+Think: Now, I need to turn on faucet 1 briefly and turn off to wash candle 1.
+OK.
+Act: turn on faucet 1
+You turn on faucet (1).
+Act: turn off faucet 1
+You turn off faucet (1).
+Think: Now, I need to pick up candle 1 and find sink basin.
+OK.
+Act: pick up candle 1
+You pick up candle (1). You hold candle (1).
+Query: find_objects({'label': 'sink basin'})
+Info: [{'name_id_nl': 'sink basin 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'bathroom 1'}]
+Think: Sink basin 1 is in bathroom 1.
+OK.
+Act: go to bathroom 1
+You move to the bathroom (1). Looking quickly around the room, you see drawer (10, 11, 12), dresser (2), garbage can (1), painting (2, 3), plunger (1), sink (1), sink basin (1), toilet (1). You hold candle (1).
+Act: go to sink basin 1
+You arrive at the sink basin (1). You see drawer (10, 11), faucet (1), house plant (2), sink (1), sink basin (1). You hold candle (1).
+Act: put down candle 1
+You put candle (1) in sink basin (1).
+Think: Now I complete the task.
+OK.
+Act: done

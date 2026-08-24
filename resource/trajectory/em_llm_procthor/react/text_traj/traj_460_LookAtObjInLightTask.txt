@@ -1,0 +1,49 @@
+Your task is to: Examine a pillow in the light of the candle.
+You are in the house, and there are 5 rooms: bathroom (1), bedroom (1, 2), kitchen (1), living room (1). You are in the middle of a bedroom (1). Looking quickly around the room, you see bed (1), television (1).
+Think: To solve the task, I need to find and pick up pillow, find and turn on candle to examine pillow.
+OK.
+Think: First, I need to find and pick up pillow. The pillow is more likely to appear in bedroom 1.
+OK.
+Act: go to bed 1
+You arrive at the bed (1). You see bed (1), laptop (1), pillow (1), teddy bear (1).
+Think: I find pillow 1. Now, I need to pick it up.
+OK.
+Act: go to pillow 1
+You arrive at the pillow (1). You see bed (1), laptop (1), pillow (1), teddy bear (1).
+Act: pick up pillow 1
+You pick up pillow (1). You hold pillow (1).
+Think: Now I need to find and turn on candle. The candle is more likely to appear in bedroom 2.
+OK.
+Act: go to bedroom 2
+You move to the bedroom (2). Looking quickly around the room, you see bed (2), painting (1). You hold pillow (1).
+Act: go to bed 2
+You arrive at the bed (2). You see baseball bat (1), bed (2), book (1), box (1), pillow (2, 3), remote control (1), tennis racket (1). You hold pillow (1).
+Think: In bedroom 2, the candle is likely to appear in/on bed 2. I can check each place one by one until I find candle.
+OK.
+Act: go to pillow 2
+You arrive at the pillow (2). You see baseball bat (1), bed (2), book (1), box (1), pillow (2, 3), remote control (1), tennis racket (1). You hold pillow (1).
+Act: go to pillow 3
+You arrive at the pillow (3). You see baseball bat (1), bed (2), book (1), box (1), pillow (2, 3), remote control (1), tennis racket (1). You hold pillow (1).
+Think: In bedroom 2, I visit all places. Now I need to search bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see bed (1), television (1). You hold pillow (1).
+Act: go to bed 1
+You arrive at the bed (1). You see bed (1), laptop (1), teddy bear (1). You hold pillow (1).
+Think: In bedroom 1, I visit all places. Now I need to search bathroom 1.
+OK.
+Act: go to bathroom 1
+You move to the bathroom (1). Looking quickly around the room, you see toilet (1). You hold pillow (1).
+Act: go to toilet 1
+You arrive at the toilet (1). The toilet (1) is closed. You see candle (1), toilet (1), toilet paper (1). You hold pillow (1).
+Act: open toilet 1
+You open toilet (1). You see candle (1), toilet (1), toilet paper (1). You hold pillow (1).
+Think: I find candle 1. Now, I need to turn it on.
+OK.
+Act: go to candle 1
+You arrive at the candle (1). You see candle (1), toilet (1), toilet paper (1). You hold pillow (1).
+Act: turn on candle 1
+You turn on candle (1). You hold pillow (1).
+Think: Now I complete the task.
+OK.
+Act: done

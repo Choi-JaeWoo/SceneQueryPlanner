@@ -1,0 +1,10 @@
+Your task is to: Collect a pencil and a book and place them on the countertop.
+You arrive at the countertop (1). You see apple (1), bottle (1), bread (1), chair (2), countertop (1), dining table (1), dish sponge (1), house plant (3), kettle (1), knife (1), ladle (1), pen (1, 2), pencil (2), pepper shaker (1), potato (1, 4), salt shaker (1), soap bottle (1), spatula (1), spray bottle (1), statue (4), tomato (1, 2). You hold book (2). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- bathroom 1: [(garbage can 1), painting 2, (toilet 1), painting 3, plunger 1, painting 4, (sink basin 1), (sink 1), faucet 1]
+- bedroom 1: [cell phone 1, cell phone 2, statue 1, statue 2, television 1, pillow 1, basket ball 1, alarm clock 1, baseball bat 1, bed 1, bed 2, (chair 1), credit card 1, (desk 1), drawer 1, (drawer 2), (drawer 3), (dresser 1), painting 1, (side table 1), teddy bear 1, vase 1]
+- kitchen 1: [apple 1, book 2, bottle 1, bread 1, (chair 2), countertop 1, (dining table 1), dish sponge 1, (fridge 1), house plant 3, kettle 1, knife 1, ladle 1, pen 1, pen 2, pencil 2, pepper shaker 1, potato 4, potato 1, salt shaker 1, soap bottle 1, spatula 1, spray bottle 1, statue 4, tomato 1, tomato 2]
+- living room 1: [house plant 1, pillow 2, bowl 1, box 1, dining table 2, plate 1, sofa 1, television 2]
+Your 5 previous actions were: go to living room 1 (success), go to book 2 (success), pick up book 2 (success), go to kitchen 1 (success), go to countertop 1 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I arrive at countertop 1. I hold book 2. Now, I need to put down book 2.
+Act: put down book 2

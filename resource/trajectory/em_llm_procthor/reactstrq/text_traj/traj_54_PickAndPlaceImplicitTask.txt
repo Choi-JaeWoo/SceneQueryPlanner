@@ -1,0 +1,87 @@
+Your task is to: Move all the objects from the countertop to the diningtable.
+You are in the house, and there are 1 rooms: kitchen (1). You are in the middle of a kitchen (1). Looking quickly around the room, you see chair (1, 2, 3, 4, 5, 6), countertop (1), dining table (1), fridge (1), garbage can (1), painting (1, 2, 3), stool (1), television (1).
+Think: To solve the task, I need to find countertop and check what is on top of it. Then, I need to move everything on countertop to dining table.
+OK.
+Think: First, I need to find countertop.
+OK.
+Query: find_objects({'label': 'countertop'})
+Info: [{'name_id_nl': 'countertop 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'kitchen 1'}]
+Think: I find countertop 1.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see apple (1), cell phone (1), chair (2, 3, 4), countertop (1), credit card (1), dining table (1), house plant (1), knife (1), lettuce (1), mug (1), painting (2), pan (1), pencil (1), pepper shaker (1), plate (1), spatula (1), spray bottle (1).
+Think: Now, I need to check what is on top of countertop 1.
+OK.
+Query: get_edges_for_node({'node_id': 'countertop 1', 'relation': 'ON'})
+Info: [('cell phone 1', 'countertop 1', 'ON'), ('credit card 1', 'countertop 1', 'ON'), ('knife 1', 'countertop 1', 'ON'), ('lettuce 1', 'countertop 1', 'ON'), ('pan 1', 'countertop 1', 'ON'), ('pepper shaker 1', 'countertop 1', 'ON'), ('spatula 1', 'countertop 1', 'ON')]
+Think: Now, I need to move cell phone 1, credit card 1, knife 1, lettuce 1, pan 1, pepper shaker 1, spatula 1 to dining table.
+OK.
+Act: go to cell phone 1
+You arrive at the cell phone (1). You see apple (1), cell phone (1), chair (2, 3, 4), countertop (1), credit card (1), dining table (1), house plant (1), knife (1), lettuce (1), mug (1), painting (2), pan (1), pencil (1), pepper shaker (1), plate (1), spatula (1), spray bottle (1).
+Act: pick up cell phone 1
+You pick up cell phone (1). You hold cell phone (1).
+Think: Now, I need to find dining table.
+OK.
+Query: find_objects({'label': 'dining table'})
+Info: [{'name_id_nl': 'dining table 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'kitchen 1'}]
+Think: I find dining table 1.
+OK.
+Act: go to dining table 1
+You arrive at the dining table (1). You see apple (1), chair (1, 2, 3, 4, 5), dining table (1), house plant (1), mug (1), pen (1), pencil (1), plate (1), spray bottle (1), vase (1). You hold cell phone (1).
+Act: put down cell phone 1
+You put cell phone (1) in dining table (1).
+Act: go to credit card 1
+You arrive at the credit card (1). You see apple (1), chair (2, 3, 4), countertop (1), credit card (1), house plant (1), knife (1), lettuce (1), painting (2), pan (1), pencil (1), pepper shaker (1), spatula (1), spray bottle (1).
+Act: pick up credit card 1
+You pick up credit card (1). You hold credit card (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see apple (1), cell phone (1), chair (1, 2, 3, 4, 5), dining table (1), house plant (1), mug (1), pen (1), pencil (1), plate (1), spray bottle (1), vase (1). You hold credit card (1).
+Act: put down credit card 1
+You put credit card (1) in dining table (1).
+Act: go to knife 1
+You arrive at the knife (1). You see apple (1), chair (2, 3, 4), countertop (1), house plant (1), knife (1), lettuce (1), painting (2), pan (1), pencil (1), pepper shaker (1), spatula (1), spray bottle (1).
+Act: pick up knife 1
+You pick up knife (1). You hold knife (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see apple (1), cell phone (1), chair (1, 2, 3, 4, 5), credit card (1), dining table (1), house plant (1), mug (1), pen (1), pencil (1), plate (1), spray bottle (1), vase (1). You hold knife (1).
+Act: put down knife 1
+You put knife (1) in dining table (1).
+Act: go to lettuce 1
+You arrive at the lettuce (1). You see apple (1), chair (2, 3, 4), countertop (1), house plant (1), lettuce (1), painting (2), pan (1), pencil (1), pepper shaker (1), spatula (1), spray bottle (1).
+Act: pick up lettuce 1
+You pick up lettuce (1). You hold lettuce (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see apple (1), cell phone (1), chair (1, 2, 3, 4, 5), credit card (1), dining table (1), house plant (1), knife (1), mug (1), pen (1), pencil (1), plate (1), spray bottle (1), vase (1). You hold lettuce (1).
+Act: put down lettuce 1
+You put lettuce (1) in dining table (1).
+Act: go to pan 1
+You arrive at the pan (1). You see apple (1), chair (2, 3, 4), countertop (1), house plant (1), painting (2), pan (1), pencil (1), pepper shaker (1), spatula (1), spray bottle (1).
+Act: pick up pan 1
+You pick up pan (1). You hold pan (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see apple (1), cell phone (1), chair (1, 2, 3, 4, 5), credit card (1), dining table (1), house plant (1), knife (1), lettuce (1), mug (1), pen (1), pencil (1), plate (1), spray bottle (1), vase (1). You hold pan (1).
+Act: put down pan 1
+You put pan (1) on dining table (1).
+Act: go to pepper shaker 1
+You arrive at the pepper shaker (1). You see apple (1), chair (2, 3, 4), countertop (1), dining table (1), house plant (1), mug (1), painting (2), pencil (1), pepper shaker (1), plate (1), spatula (1), spray bottle (1).
+Act: pick up pepper shaker 1
+You pick up pepper shaker (1). You hold pepper shaker (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see apple (1), cell phone (1), chair (1, 2, 3, 4, 5), credit card (1), dining table (1), house plant (1), knife (1), lettuce (1), mug (1), pan (1), pen (1), pencil (1), plate (1), spray bottle (1), vase (1). You hold pepper shaker (1).
+Act: put down pepper shaker 1
+You put pepper shaker (1) in dining table (1).
+Act: go to spatula 1
+You arrive at the spatula (1). You see apple (1), chair (2, 3, 4), countertop (1), house plant (1), painting (2), pencil (1), spatula (1), spray bottle (1).
+Act: pick up spatula 1
+You pick up spatula (1). You hold spatula (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see apple (1), cell phone (1), chair (1, 2, 3, 4, 5), credit card (1), dining table (1), house plant (1), knife (1), lettuce (1), mug (1), pan (1), pen (1), pencil (1), pepper shaker (1), plate (1), spray bottle (1), vase (1). You hold spatula (1).
+Act: put down spatula 1
+You put spatula (1) in dining table (1).
+Think: Now I need to check what's left on countertop 1.
+OK.
+Query: get_edges_for_node({'node_id': 'countertop 1', 'relation': 'ON'})
+Info: 
+Think: Now I complete the task.
+OK.
+Act: done

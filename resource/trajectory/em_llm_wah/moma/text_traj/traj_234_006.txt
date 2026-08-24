@@ -1,0 +1,10 @@
+Your task is to: bring 1 cutlery fork on the table
+You can't open bookshelf (1) because of low-level controller problem. Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- bathroom 1: [bar soap 1, (bathroom cabinet 1), (bathroom counter 1), (closet 3), (closet 4), face cream 4, (faucet 2), (light switch 4), (pants 10), (pants 8), (pants 9), (shirt 6), (shirt 7), (sink 2), (toilet 1), (towel rack 1), (towel rack 2), (washing machine 1)]
+- (bedroom 1): [(bed 1), (cabinet 1), (chair 6), (closet 2), (light switch 3), (nightstand 2), (pants 6), (pants 7), (shirt 4), (shirt 5), (sofa 3)]
+- kitchen 1: [bookshelf 1, (bowl 1), (chair 2), (chair 3), (chair 4), (chair 5), coffee pot 1, cupcake 2, cupcake 3, (dishwasher 1), (faucet 1), (fridge 1), (kitchen cabinet 1), (kitchen cabinet 2), (kitchen cabinet 3), (kitchen cabinet 4), (kitchen cabinet 5), (kitchen cabinet 6), (kitchen cabinet 7), (kitchen cabinet 8), (kitchen counter 1), (kitchen table 1), (light switch 2), (microwave oven 1), mug 2, mug 3, (oven tray 1), pie 1, pudding 1, (sink 1), (slice of bread 1), (slice of bread 2), (sofa 2), (stove 1), (toaster 1), (tv 2)]
+- (living room 1): [(chair 1), (closet 1), (computer 1), (desk 1), (light switch 1), (nightstand 1), (pants 1), (pants 2), (pants 3), (pants 4), (pants 5), (remote control 1), (shirt 1), (shirt 2), (shirt 3), (sofa 1), (tv 1)]
+Your 3 previous actions were: go to kitchen 1 (success), go to bookshelf 1 (success), open bookshelf 1 (fail)
+What is the best next action to complete the task as efficiently as possible?
+Think: I cannot open bookshelf 1. I can check bookshelf 2.
+Act: go to bookshelf 1

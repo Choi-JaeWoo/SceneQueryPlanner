@@ -1,0 +1,7 @@
+Your task is to: Take a pillow and set it down on the armchair.
+You arrive at the chair (1). You see bowl (1), box (2), chair (1, 4, 5), dining table (1), pencil (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- living room 1: [house plant 1, painting 2, credit card 1, remote control 1, floor lamp 2, pillow 1, floor lamp 1, painting 1, statue 1, armchair 1, armchair 3, armchair 2, bowl 1, box 2, box 1, chair 4, chair 1, (chair 5), (chair 3), (chair 2), (dining table 1), newspaper 1, pencil 1, (shelf 2), (shelf 3), (shelf 4), (shelf 5), (shelf 1), (shelf 6), (sofa 1), (TV stand 1)]
+Your 5 previous actions were: go to armchair 3 (success), go to box 2 (success), go to box 1 (success), go to chair 4 (success), go to chair 1 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I arrive at chair 1. I need to check unexplored areas in living room 1 to find pillow. Now, I need to check chair 5.
+Act: go to chair 5

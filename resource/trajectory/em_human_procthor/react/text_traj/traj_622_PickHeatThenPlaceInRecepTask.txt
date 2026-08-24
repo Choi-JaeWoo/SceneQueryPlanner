@@ -1,0 +1,55 @@
+Your task is to: Heat an lettuce and place it on the dining table.
+You are in the house, and there are 3 rooms: bedroom (1), kitchen (1), living room (1). You are in the middle of a living room (1). Looking quickly around the room, you see armchair (1), box (1), cart (1), dining table (1), floor lamp (1), painting (3, 4), sofa (1), television (1).
+Think: To solve the task, I need to find and pick up lettuce, find microwave and put down lettuce, turn on microwave to heat lettuce and turn off microwave, pick up heated lettuce and put it down on dining table.
+OK.
+Think: First, I need to find and pick up lettuce. The lettuce is more likely to appear in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see coffee machine (1), countertop (1), fridge (1), garbage bag (1), microwave (1).
+Think: In kitchen 1, the lettuce is likely to appear in/on countertop 1, fridge 1. I can check each place one by one until I find lettuce.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see coffee machine (1), countertop (1), lettuce (1), microwave (1), mug (1), salt shaker (1), soap bottle (1), spoon (1), spray bottle (1).
+Think: I find lettuce 1. Now, I need to pick it up.
+OK.
+Act: go to lettuce 1
+You arrive at the lettuce (1). You see coffee machine (1), countertop (1), lettuce (1), microwave (1), mug (1), salt shaker (1), soap bottle (1), spoon (1), spray bottle (1).
+Act: pick up lettuce 1
+You pick up lettuce (1). You hold lettuce (1).
+Think: Now, I need to find microwave 1.
+OK.
+Act: go to microwave 1
+You arrive at the microwave (1). The microwave (1) is closed. You see microwave (1), salt shaker (1), soap bottle (1), spoon (1), spray bottle (1). You hold lettuce (1).
+Think: Since microwave 1 is closed, I need to open it to put down lettuce 1.
+OK.
+Act: open microwave 1
+You open microwave (1). You see microwave (1), salt shaker (1), soap bottle (1), spoon (1), spray bottle (1). You hold lettuce (1).
+Act: put down lettuce 1
+You put lettuce (1) in microwave (1).
+Think: Now, I need to close microwave 1, turn it on briefly, and then turn it off.
+OK.
+Act: close microwave 1
+You close microwave (1).
+Act: turn on microwave 1
+You turn on microwave (1).
+Act: turn off microwave 1
+You turn off microwave (1).
+Think: Now, I need to open microwave 1 and pick up lettuce 1.
+OK.
+Act: open microwave 1
+You open microwave (1). You see lettuce (1), microwave (1), salt shaker (1), soap bottle (1), spoon (1), spray bottle (1).
+Act: pick up lettuce 1
+You pick up lettuce (1). You hold lettuce (1).
+Think: Now, I need to find dining table. The dining table is more likely to appear in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see armchair (1), box (1), cart (1), dining table (1), floor lamp (1), painting (3, 4), sofa (1), television (1). You hold lettuce (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see bowl (2), cart (1), dining table (1), laptop (2), painting (3), plate (1), remote control (2), statue (1, 2). You hold lettuce (1).
+Think: Now, I need to put down lettuce 1.
+OK.
+Act: put down lettuce 1
+You put lettuce (1) in dining table (1).
+Think: Now I complete task.
+OK.
+Act: done

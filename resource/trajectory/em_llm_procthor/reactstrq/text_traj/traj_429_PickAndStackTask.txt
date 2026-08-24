@@ -1,0 +1,59 @@
+Your task is to: Set a box that contains a candle onto the armchair.
+You are in the house, and there are 8 rooms: bathroom (1, 2), bedroom (1, 2, 3), kitchen (1), living room (1, 2). You are in the middle of a bathroom (1). Looking quickly around the room, you see garbage can (3), plunger (1), toilet (1).
+Think: To solve the task, I need to find and pick up candle, put it in box, pick up and place box on armchair.
+OK.
+Think: First, I need to find and pick up candle.
+OK.
+Query: find_objects({'label': 'candle'})
+Info: [{'name_id_nl': 'candle 1', 'node_type': 'object', 'properties': ['toggleable', 'pickupable'], 'states': []}]
+Query: get_edges_for_node({'node_id': 'candle 1'})
+Info: [('candle 1', 'bathroom 1', 'INSIDE'), ('candle 1', 'garbage can 3', 'INSIDE'), ('candle 1', 'plunger 1', 'CLOSE'), ('candle 1', 'user 1', 'CLOSE'), ('plunger 1', 'candle 1', 'CLOSE'), ('user 1', 'candle 1', 'CLOSE')]
+Think: Candle 1 is in garbage can 3.
+OK.
+Act: go to garbage can 3
+You arrive at the garbage can (3). You see candle (1), garbage can (3), plunger (1).
+Act: go to candle 1
+You arrive at the candle (1). You see candle (1), garbage can (3), plunger (1).
+Act: pick up candle 1
+You pick up candle (1). You hold candle (1).
+Think: Now, I need to find box and put down candle 1.
+OK.
+Query: find_objects({'label': 'box'})
+Info: [{'name_id_nl': 'box 1', 'node_type': 'asset', 'properties': ['openable', 'pickupable'], 'states': [], 'room': 'living room 2'}, {'name_id_nl': 'box 4', 'node_type': 'asset', 'properties': ['openable', 'pickupable'], 'states': [], 'room': 'bedroom 2'}, {'name_id_nl': 'box 2', 'node_type': 'asset', 'properties': ['openable', 'pickupable'], 'states': ['isOpen'], 'room': 'bedroom 3'}, {'name_id_nl': 'box 3', 'node_type': 'asset', 'properties': ['openable', 'pickupable'], 'states': ['isOpen'], 'room': 'living room 2'}]
+Think: I find box 1.
+OK.
+Act: go to living room 2
+You move to the living room (2). Looking quickly around the room, you see box (1), cabinet (6), cart (2), chair (1, 2, 3, 4), dining table (2), garbage can (2), house plant (1), shelf (6, 7, 8), shelving unit (2), television (3). You hold candle (1).
+Act: go to box 1
+You arrive at the box (1). The box (1) is closed. You see box (1, 3), cabinet (6), chair (1), dining table (2), pencil (2), remote control (2), shelf (6, 7, 8), shelving unit (2). You hold candle (1).
+Act: open box 1
+You open box (1). You see box (1, 3), cabinet (6), chair (1), dining table (2), pencil (2), remote control (2), shelf (6, 7, 8), shelving unit (2). You hold candle (1).
+Act: put down candle 1
+You put candle (1) in box (1).
+Think: Now, I need to pick up box 1.
+OK.
+Act: pick up box 1
+You pick up box (1). You hold box (1).
+Think: Now, I need to find armchair and put down box 1.
+OK.
+Query: find_objects({'label': 'armchair'})
+Info: [{'name_id_nl': 'armchair 3', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'bedroom 2'}, {'name_id_nl': 'armchair 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}, {'name_id_nl': 'armchair 2', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}]
+Think: Armchair 3 is in bedroom 2.
+OK.
+Act: go to bedroom 2
+You move to the bedroom (2). Looking quickly around the room, you see armchair (3), baseball bat (2), bed (2), candle (1), desk (2), drawer (8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 34), dresser (2), floor lamp (3), painting (1), shelf (1, 2), side table (3). You hold box (1).
+Act: go to armchair 3
+You arrive at the armchair (3). You see armchair (3), box (4), candle (1), floor lamp (3). You hold box (1).
+Act: put down box 1
+Put action failed: There is no valid space to place the object in the target receptacle.
+Think: I need to find another armchair. I see armchair 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), armchair (1, 2), candle (1), cart (1), dining table (1), floor lamp (1, 2), shelf (9, 10, 11, 12, 13, 14), sofa (1). You hold box (1).
+Act: go to armchair 1
+You arrive at the armchair (1). You see armchair (1), candle (1), floor lamp (1), pillow (4). You hold box (1).
+Act: put down box 1
+You put box (1) in armchair (1).
+Think: Now I complete the task.
+OK.
+Act: done

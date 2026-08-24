@@ -1,0 +1,2 @@
+Your task is to: Pick up a pencil and put it in the drawer.
+Max decision steps reached.

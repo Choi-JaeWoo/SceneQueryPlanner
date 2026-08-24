@@ -1,0 +1,2103 @@
+[
+  {
+    "env_id": 10,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Put the book next to the microwave."
+    ],
+    "task_goal": {
+      "on_book_countertop": 1
+    }
+  },
+  {
+    "env_id": 19,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Put the wooden item near the watch onto the countertop to keep its surface from getting scratched."
+    ],
+    "task_goal": {
+      "on_pencil_countertop": 1
+    }
+  },
+  {
+    "env_id": 30,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Put the wooden item from the dresser into the box to prevent it from rotting."
+    ],
+    "task_goal": {
+      "in_pencil_box": 1
+    }
+  },
+  {
+    "env_id": 39,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Place the pencil next to the kettle to keep everything in one place."
+    ],
+    "task_goal": {
+      "on_pencil_countertop": 1
+    }
+  },
+  {
+    "env_id": 54,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Place the pencil next to the cell phone so I can find them both easily."
+    ],
+    "task_goal": {
+      "on_pencil_countertop": 1
+    }
+  },
+  {
+    "env_id": 71,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Move the fabric item near the toilet paper into the sink basin to rinse it."
+    ],
+    "task_goal": {
+      "in_cloth_sinkbasin": 1
+    }
+  },
+  {
+    "env_id": 104,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Place the openable item on the dining table to make it easier to access what's inside."
+    ],
+    "task_goal": {
+      "on_book_diningtable": 1
+    }
+  },
+  {
+    "env_id": 108,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Place the item from the chair onto the countertop so it's off the seat."
+    ],
+    "task_goal": {
+      "on_baseballbat_countertop": 1
+    }
+  },
+  {
+    "env_id": 116,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Put the object made of wood from the desk into the box to prevent it from getting scratched."
+    ],
+    "task_goal": {
+      "in_pencil_box": 1
+    }
+  },
+  {
+    "env_id": 123,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Put the item made of paper from the dresser onto the shelf."
+    ],
+    "task_goal": {
+      "on_book_shelf": 1
+    }
+  },
+  {
+    "env_id": 134,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Move the book to the spot with the alarm clock so it's easy to find when I wake up."
+    ],
+    "task_goal": {
+      "on_book_coffeetable": 1
+    }
+  },
+  {
+    "env_id": 174,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Put the book next to the toaster so it's within reach during breakfast."
+    ],
+    "task_goal": {
+      "on_book_countertop": 1
+    }
+  },
+  {
+    "env_id": 243,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Place the baseball bat next to the bottle in the same container so everything's stored in one place."
+    ],
+    "task_goal": {
+      "on_baseballbat_countertop": 1
+    }
+  },
+  {
+    "env_id": 255,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Put the item made of metal and plastic from the dresser onto the countertop."
+    ],
+    "task_goal": {
+      "on_keychain_countertop": 1
+    }
+  },
+  {
+    "env_id": 267,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Move the item made of wood from the dining table onto the countertop."
+    ],
+    "task_goal": {
+      "on_pencil_countertop": 1
+    }
+  },
+  {
+    "env_id": 269,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Put the cookable item from the countertop onto the bowl so I can start cooking."
+    ],
+    "task_goal": {
+      "in_potato_bowl": 1
+    }
+  },
+  {
+    "env_id": 277,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Put the object made of rubber and wood into the cabinet so I can store it safely."
+    ],
+    "task_goal": {
+      "in_plunger_cabinet": 1
+    }
+  },
+  {
+    "env_id": 284,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Slice the ingredient from the cold-source container and put it on the bowl so I can make a salad."
+    ],
+    "task_goal": {
+      "in_potato_bowl": 1,
+      "isSliced_potato": 1
+    }
+  },
+  {
+    "env_id": 386,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Throw the ingredient that's sliceable but not cookable from the countertop into the garbage can so I don't accidentally try to use it."
+    ],
+    "task_goal": {
+      "in_apple_garbagecan": 1
+    }
+  },
+  {
+    "env_id": 538,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Move the toggleable item from the dining table onto the armchair so I can use it."
+    ],
+    "task_goal": {
+      "on_laptop_armchair": 1
+    }
+  },
+  {
+    "env_id": 563,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Move the item made of metal and glass near the ladle into the garbage can so I can get rid of what's broken or unusable."
+    ],
+    "task_goal": {
+      "in_soapbottle_garbagecan": 1
+    }
+  },
+  {
+    "env_id": 564,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Move the baseball bat to the receptacle that has the toaster."
+    ],
+    "task_goal": {
+      "on_baseballbat_countertop": 1
+    }
+  },
+  {
+    "env_id": 594,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Grab the fabric thing from the sofa and put it on the armchair so I have space to sit."
+    ],
+    "task_goal": {
+      "on_pillow_armchair": 1
+    }
+  },
+  {
+    "env_id": 648,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Move the item made of plastic from the dining table into the drawer."
+    ],
+    "task_goal": {
+      "in_creditcard_drawer": 1
+    }
+  },
+  {
+    "env_id": 728,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Throw the item made of paper into the garbage can so I don't accidentally reuse it."
+    ],
+    "task_goal": {
+      "in_toiletpaper_garbagecan": 1
+    }
+  },
+  {
+    "env_id": 755,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Put the openable object from the countertop onto the armchair so I can open it easily while sitting."
+    ],
+    "task_goal": {
+      "on_book_armchair": 1
+    }
+  },
+  {
+    "env_id": 756,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Move the baseball bat to the location with the statue."
+    ],
+    "task_goal": {
+      "on_baseballbat_countertop": 1
+    }
+  },
+  {
+    "env_id": 794,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Place the wooden item near the box into the box to keep it safe."
+    ],
+    "task_goal": {
+      "in_pencil_box": 1
+    }
+  },
+  {
+    "env_id": 802,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Move the item that is openable but not toggleable from the dresser onto the countertop."
+    ],
+    "task_goal": {
+      "on_book_countertop": 1
+    }
+  },
+  {
+    "env_id": 811,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Move the openable object from the bed onto the armchair."
+    ],
+    "task_goal": {
+      "on_book_armchair": 1
+    }
+  },
+  {
+    "env_id": 818,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Place the toggleable object that's near the watch onto the armchair so I can use it easily while sitting."
+    ],
+    "task_goal": {
+      "on_cellphone_armchair": 1
+    }
+  },
+  {
+    "env_id": 852,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Move the openable object from the dining table onto the countertop."
+    ],
+    "task_goal": {
+      "on_book_countertop": 1
+    }
+  },
+  {
+    "env_id": 861,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Move the openable object from the desk to the receptacle that has the toaster."
+    ],
+    "task_goal": {
+      "on_book_countertop": 1
+    }
+  },
+  {
+    "env_id": 889,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Place the metal and plastic item from the TV stand on the armchair to keep it within reach."
+    ],
+    "task_goal": {
+      "on_remotecontrol_armchair": 1
+    }
+  },
+  {
+    "env_id": 908,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Place the pencil next to the potato so I can compare their sizes."
+    ],
+    "task_goal": {
+      "on_pencil_countertop": 1
+    }
+  },
+  {
+    "env_id": 924,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Place the item from the sofa on the armchair to clear the seat."
+    ],
+    "task_goal": {
+      "on_laptop_armchair": 1
+    }
+  },
+  {
+    "env_id": 943,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Place the pencil next to the bowl so I can use it to label the contents."
+    ],
+    "task_goal": {
+      "on_pencil_countertop": 1
+    }
+  },
+  {
+    "env_id": 952,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Move the object made of wood from the TV stand onto the shelf."
+    ],
+    "task_goal": {
+      "on_pencil_shelf": 1
+    }
+  },
+  {
+    "env_id": 981,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Slice the apple and put it into the receptacle that is a cold source to keep it fresh."
+    ],
+    "task_goal": {
+      "in_apple_fridge": 1,
+      "isSliced_apple": 1
+    }
+  },
+  {
+    "env_id": 998,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Put the pencil next to the bread."
+    ],
+    "task_goal": {
+      "on_pencil_countertop": 1
+    }
+  },
+  {
+    "env_id": 999,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Place the book next to the apple."
+    ],
+    "task_goal": {
+      "on_book_countertop": 1
+    }
+  },
+  {
+    "env_id": 24,
+    "mode": "PickAndPlaceMultipleTask",
+    "instruction": [
+      "Move two items from the dresser-one made of paper and one made of plastic-into the drawer."
+    ],
+    "task_goal": {
+      "in_book_drawer": 1,
+      "in_creditcard_drawer": 1
+    }
+  },
+  {
+    "env_id": 54,
+    "mode": "PickAndPlaceMultipleTask",
+    "instruction": [
+      "Pick up two items from the dining table-one made of plastic and metal, and one made of wood-and move them onto the countertop."
+    ],
+    "task_goal": {
+      "on_pen_countertop": 1,
+      "on_pencil_countertop": 1
+    }
+  },
+  {
+    "env_id": 116,
+    "mode": "PickAndPlaceMultipleTask",
+    "instruction": [
+      "Put the pencil and pen into the receptacle that is openable and pickupable to keep them organized and easy to carry."
+    ],
+    "task_goal": {
+      "in_pencil_box": 1,
+      "in_pen_box": 1
+    }
+  },
+  {
+    "env_id": 199,
+    "mode": "PickAndPlaceMultipleTask",
+    "instruction": [
+      "Put the pencil, book, and remote control next to the salt shaker."
+    ],
+    "task_goal": {
+      "on_pencil_countertop": 1,
+      "on_book_countertop": 1,
+      "on_remotecontrol_countertop": 1
+    }
+  },
+  {
+    "env_id": 230,
+    "mode": "PickAndPlaceMultipleTask",
+    "instruction": [
+      "Move the pencil, pen, and book to the location with the vase."
+    ],
+    "task_goal": {
+      "on_pencil_desk": 1,
+      "on_pen_desk": 1,
+      "on_book_desk": 1
+    }
+  },
+  {
+    "env_id": 282,
+    "mode": "PickAndPlaceMultipleTask",
+    "instruction": [
+      "Move the book and pencil to the receptacle that has the microwave."
+    ],
+    "task_goal": {
+      "on_book_countertop": 1,
+      "on_pencil_countertop": 1
+    }
+  },
+  {
+    "env_id": 374,
+    "mode": "PickAndPlaceMultipleTask",
+    "instruction": [
+      "Slice the sliceable ingredient from the dining table and put it onto the countertop. Also, place the item made of plastic and metal from the dining table onto the countertop."
+    ],
+    "task_goal": {
+      "on_pen_countertop": 1,
+      "on_potato_countertop": 1,
+      "isSliced_potato": 1
+    }
+  },
+  {
+    "env_id": 422,
+    "mode": "PickAndPlaceMultipleTask",
+    "instruction": [
+      "Move all objects from the countertop that contain glass as a material onto the shelf to prevent them from breaking."
+    ],
+    "task_goal": {
+      "on_bottle_shelf": 1,
+      "on_soapbottle_shelf": 1
+    }
+  },
+  {
+    "env_id": 476,
+    "mode": "PickAndPlaceMultipleTask",
+    "instruction": [
+      "Pick up the toggleable item from the dining table and the item made of paper from the TV stand, and put them onto the armchair so I can use them together."
+    ],
+    "task_goal": {
+      "on_laptop_armchair": 1,
+      "on_newspaper_armchair": 1
+    }
+  },
+  {
+    "env_id": 563,
+    "mode": "PickAndPlaceMultipleTask",
+    "instruction": [
+      "Slice all sliceable food ingredients from the dining table and throw them into the garbage can."
+    ],
+    "task_goal": {
+      "in_apple_garbagecan": 1,
+      "in_tomato_garbagecan": 1,
+      "isSliced_apple": 1,
+      "isSliced_tomato": 1
+    }
+  },
+  {
+    "env_id": 626,
+    "mode": "PickAndPlaceMultipleTask",
+    "instruction": [
+      "Put the book and pencil beside the ladle so I can take a picture of all three together."
+    ],
+    "task_goal": {
+      "on_book_countertop": 1,
+      "on_pencil_countertop": 1
+    }
+  },
+  {
+    "env_id": 809,
+    "mode": "PickAndPlaceMultipleTask",
+    "instruction": [
+      "Place a book, a slice of tomato, and a sliced bread next to the fork."
+    ],
+    "task_goal": {
+      "on_book_countertop": 1,
+      "on_tomato_countertop": 1,
+      "on_bread_countertop": 1,
+      "isSliced_bread": 1,
+      "isSliced_tomato": 1
+    }
+  },
+  {
+    "env_id": 888,
+    "mode": "PickAndPlaceMultipleTask",
+    "instruction": [
+      "Place a pencil, a cell phone, and a remote control onto the furniture that has the soap bottle."
+    ],
+    "task_goal": {
+      "on_pencil_countertop": 1,
+      "on_cellphone_countertop": 1,
+      "on_remotecontrol_countertop": 1
+    }
+  },
+  {
+    "env_id": 949,
+    "mode": "PickAndPlaceMultipleTask",
+    "instruction": [
+      "Move the book and pen to the location with the bowl."
+    ],
+    "task_goal": {
+      "on_book_countertop": 1,
+      "on_pen_countertop": 1
+    }
+  },
+  {
+    "env_id": 951,
+    "mode": "PickAndPlaceMultipleTask",
+    "instruction": [
+      "Place the book and remote control at the location with the credit card."
+    ],
+    "task_goal": {
+      "on_book_sidetable": 1,
+      "on_remotecontrol_sidetable": 1
+    }
+  },
+  {
+    "env_id": 0,
+    "mode": "PickAndPlaceImplicitTask",
+    "instruction": [
+      "Move all items on the countertop to the receptacle that has the potato."
+    ],
+    "task_goal": {
+      "empty_countertop": 1,
+      "moveTo_diningtable": 1
+    }
+  },
+  {
+    "env_id": 54,
+    "mode": "PickAndPlaceImplicitTask",
+    "instruction": [
+      "Pick up each object on the countertop and put it at the location with the plate."
+    ],
+    "task_goal": {
+      "empty_countertop": 1,
+      "moveTo_diningtable": 1
+    }
+  },
+  {
+    "env_id": 76,
+    "mode": "PickAndPlaceImplicitTask",
+    "instruction": [
+      "Relocate all objects from the receptacle that has the key chain to the desk."
+    ],
+    "task_goal": {
+      "empty_dresser": 1,
+      "moveTo_desk": 1
+    }
+  },
+  {
+    "env_id": 96,
+    "mode": "PickAndPlaceImplicitTask",
+    "instruction": [
+      "Clear all items from the furniture that includes the alarm clock and move them to the dresser."
+    ],
+    "task_goal": {
+      "empty_desk": 1,
+      "moveTo_dresser": 1
+    }
+  },
+  {
+    "env_id": 116,
+    "mode": "PickAndPlaceImplicitTask",
+    "instruction": [
+      "Place all items from the bed next to the mug."
+    ],
+    "task_goal": {
+      "empty_dresser": 1,
+      "moveTo_desk": 1
+    }
+  },
+  {
+    "env_id": 194,
+    "mode": "PickAndPlaceImplicitTask",
+    "instruction": [
+      "Move the items from the side table to the location that includes the apple."
+    ],
+    "task_goal": {
+      "empty_sidetable": 1,
+      "moveTo_countertop": 1
+    }
+  },
+  {
+    "env_id": 206,
+    "mode": "PickAndPlaceImplicitTask",
+    "instruction": [
+      "Transfer all items from the side table to the furniture that has the pen."
+    ],
+    "task_goal": {
+      "empty_sidetable": 1,
+      "moveTo_diningtable": 1
+    }
+  },
+  {
+    "env_id": 284,
+    "mode": "PickAndPlaceImplicitTask",
+    "instruction": [
+      "Pick up all objects from the receptacle that contains the mug and place them onto the countertop."
+    ],
+    "task_goal": {
+      "empty_coffeetable": 1,
+      "moveTo_countertop": 1
+    }
+  },
+  {
+    "env_id": 288,
+    "mode": "PickAndPlaceImplicitTask",
+    "instruction": [
+      "Move all items from the receptacle made of wood and fabric onto the dining table."
+    ],
+    "task_goal": {
+      "empty_bed": 1,
+      "moveTo_diningtable": 1
+    }
+  },
+  {
+    "env_id": 292,
+    "mode": "PickAndPlaceImplicitTask",
+    "instruction": [
+      "Relocate all items from the side table into the receptacle made of wood and fabric."
+    ],
+    "task_goal": {
+      "empty_sidetable": 1,
+      "moveTo_bed": 1
+    }
+  },
+  {
+    "env_id": 327,
+    "mode": "PickAndPlaceImplicitTask",
+    "instruction": [
+      "Clear the furniture that has the safe, and place all items from it onto the bed."
+    ],
+    "task_goal": {
+      "empty_dresser": 1,
+      "moveTo_bed": 1
+    }
+  },
+  {
+    "env_id": 516,
+    "mode": "PickAndPlaceImplicitTask",
+    "instruction": [
+      "Move all the objects from the countertop to the location with the apple."
+    ],
+    "task_goal": {
+      "empty_countertop": 1,
+      "moveTo_diningtable": 1
+    }
+  },
+  {
+    "env_id": 581,
+    "mode": "PickAndPlaceImplicitTask",
+    "instruction": [
+      "Clear the furniture that contains the book by moving all items from it onto the dining table."
+    ],
+    "task_goal": {
+      "empty_dresser": 1,
+      "moveTo_diningtable": 1
+    }
+  },
+  {
+    "env_id": 629,
+    "mode": "PickAndPlaceImplicitTask",
+    "instruction": [
+      "Move all items from the receptacle that is a cold source onto the dining table."
+    ],
+    "task_goal": {
+      "empty_fridge": 1,
+      "moveTo_diningtable": 1
+    }
+  },
+  {
+    "env_id": 668,
+    "mode": "PickAndPlaceImplicitTask",
+    "instruction": [
+      "Remove everything from the sofa and place it on the furniture that contains the key chain."
+    ],
+    "task_goal": {
+      "empty_sofa": 1,
+      "moveTo_diningtable": 1
+    }
+  },
+  {
+    "env_id": 822,
+    "mode": "PickAndPlaceImplicitTask",
+    "instruction": [
+      "Clear all items from the receptacle that contains the watch and move them onto the TV stand."
+    ],
+    "task_goal": {
+      "empty_dresser": 1,
+      "moveTo_tvstand": 1
+    }
+  },
+  {
+    "env_id": 908,
+    "mode": "PickAndPlaceImplicitTask",
+    "instruction": [
+      "Move all items from the furniture that contains the butter knife onto the dining table."
+    ],
+    "task_goal": {
+      "empty_countertop": 1,
+      "moveTo_diningtable": 1
+    }
+  },
+  {
+    "env_id": 933,
+    "mode": "PickAndPlaceImplicitTask",
+    "instruction": [
+      "Move all objects from the location that contains the tissue box onto the dining table."
+    ],
+    "task_goal": {
+      "empty_dresser": 1,
+      "moveTo_diningtable": 1
+    }
+  },
+  {
+    "env_id": 938,
+    "mode": "PickAndPlaceImplicitTask",
+    "instruction": [
+      "Put everything from the sofa onto the location with the newspaper."
+    ],
+    "task_goal": {
+      "empty_sofa": 1,
+      "moveTo_diningtable": 1
+    }
+  },
+  {
+    "env_id": 946,
+    "mode": "PickAndPlaceImplicitTask",
+    "instruction": [
+      "Clear everything from the location with the statue and move it to the dresser."
+    ],
+    "task_goal": {
+      "empty_coffeetable": 1,
+      "moveTo_dresser": 1
+    }
+  },
+  {
+    "env_id": 964,
+    "mode": "PickAndPlaceImplicitTask",
+    "instruction": [
+      "Clear the location with the television by moving all items from it onto the dining table."
+    ],
+    "task_goal": {
+      "empty_tvstand": 1,
+      "moveTo_diningtable": 1
+    }
+  },
+  {
+    "env_id": 13,
+    "mode": "LookAtObjInLightTask",
+    "instruction": [
+      "Pick up the spoon, light the wax item from the dining table, and take a close look at the spoon to inspect its surface."
+    ],
+    "task_goal": {
+      "isToggled_candle": 1,
+      "isPickedUp_spoon": 1,
+      "visible_candle": 1
+    }
+  },
+  {
+    "env_id": 39,
+    "mode": "LookAtObjInLightTask",
+    "instruction": [
+      "Turn on the light source that is close to the bowl and closely observe the pencil to examine its markings clearly."
+    ],
+    "task_goal": {
+      "isToggled_desklamp": 1,
+      "isPickedUp_pencil": 1,
+      "visible_desklamp": 1
+    }
+  },
+  {
+    "env_id": 113,
+    "mode": "LookAtObjInLightTask",
+    "instruction": [
+      "Turn on the desk lamp while holding the object that is close to the laptop."
+    ],
+    "task_goal": {
+      "isToggled_desklamp": 1,
+      "isPickedUp_remotecontrol": 1,
+      "visible_desklamp": 1
+    }
+  },
+  {
+    "env_id": 119,
+    "mode": "LookAtObjInLightTask",
+    "instruction": [
+      "Examine the book under the light by turning on the light source on the side table."
+    ],
+    "task_goal": {
+      "isToggled_desklamp": 1,
+      "isPickedUp_book": 1,
+      "visible_desklamp": 1
+    }
+  },
+  {
+    "env_id": 246,
+    "mode": "LookAtObjInLightTask",
+    "instruction": [
+      "Hold a pen and turn on the lamp that is close to the pencil to examine it."
+    ],
+    "task_goal": {
+      "isToggled_desklamp": 1,
+      "isPickedUp_pen": 1,
+      "visible_desklamp": 1
+    }
+  },
+  {
+    "env_id": 274,
+    "mode": "LookAtObjInLightTask",
+    "instruction": [
+      "Hold the item made of paper from the dresser and turn on the desk lamp to check what's written on it."
+    ],
+    "task_goal": {
+      "isToggled_desklamp": 1,
+      "isPickedUp_book": 1,
+      "visible_desklamp": 1
+    }
+  },
+  {
+    "env_id": 305,
+    "mode": "LookAtObjInLightTask",
+    "instruction": [
+      "Turn on the desk lamp and look at the toggleable object from the bed to inspect its controls."
+    ],
+    "task_goal": {
+      "isToggled_desklamp": 1,
+      "isPickedUp_cellphone": 1,
+      "visible_desklamp": 1
+    }
+  },
+  {
+    "env_id": 311,
+    "mode": "LookAtObjInLightTask",
+    "instruction": [
+      "Hold a baseball bat and turn on the toggleable lamp that is close to the credit card for a closer look."
+    ],
+    "task_goal": {
+      "isToggled_desklamp": 1,
+      "isPickedUp_baseballbat": 1,
+      "visible_desklamp": 1
+    }
+  },
+  {
+    "env_id": 483,
+    "mode": "LookAtObjInLightTask",
+    "instruction": [
+      "Turn on the lamp on the TV stand while holding a pencil."
+    ],
+    "task_goal": {
+      "isToggled_desklamp": 1,
+      "isPickedUp_pencil": 1,
+      "visible_desklamp": 1
+    }
+  },
+  {
+    "env_id": 538,
+    "mode": "LookAtObjInLightTask",
+    "instruction": [
+      "Turn on the floor lamp while holding the item made only of metal from the bed."
+    ],
+    "task_goal": {
+      "isToggled_floorlamp": 1,
+      "isPickedUp_baseballbat": 1,
+      "visible_floorlamp": 1
+    }
+  },
+  {
+    "env_id": 604,
+    "mode": "LookAtObjInLightTask",
+    "instruction": [
+      "Turn on the object on the side table while holding a remote control."
+    ],
+    "task_goal": {
+      "isToggled_desklamp": 1,
+      "isPickedUp_remotecontrol": 1,
+      "visible_desklamp": 1
+    }
+  },
+  {
+    "env_id": 679,
+    "mode": "LookAtObjInLightTask",
+    "instruction": [
+      "Examine the remote control under the light of the lamp that is close to the candle."
+    ],
+    "task_goal": {
+      "isToggled_desklamp": 1,
+      "isPickedUp_remotecontrol": 1,
+      "visible_desklamp": 1
+    }
+  },
+  {
+    "env_id": 789,
+    "mode": "LookAtObjInLightTask",
+    "instruction": [
+      "Hold a pencil and turn on the lamp made of metal to examine it."
+    ],
+    "task_goal": {
+      "isToggled_floorlamp": 1,
+      "isPickedUp_pencil": 1,
+      "visible_floorlamp": 1
+    }
+  },
+  {
+    "env_id": 832,
+    "mode": "LookAtObjInLightTask",
+    "instruction": [
+      "View the item made of paper from the dining table by the light of the wax item from the dining table."
+    ],
+    "task_goal": {
+      "isToggled_candle": 1,
+      "isPickedUp_book": 1,
+      "visible_candle": 1
+    }
+  },
+  {
+    "env_id": 861,
+    "mode": "LookAtObjInLightTask",
+    "instruction": [
+      "View the book by turning on the lamp that is close to the cell phone."
+    ],
+    "task_goal": {
+      "isToggled_desklamp": 1,
+      "isPickedUp_book": 1,
+      "visible_desklamp": 1
+    }
+  },
+  {
+    "env_id": 924,
+    "mode": "LookAtObjInLightTask",
+    "instruction": [
+      "Turn on the desk lamp while holding a receptacle made of paper."
+    ],
+    "task_goal": {
+      "isToggled_desklamp": 1,
+      "isPickedUp_box": 1,
+      "visible_desklamp": 1
+    }
+  },
+  {
+    "env_id": 940,
+    "mode": "LookAtObjInLightTask",
+    "instruction": [
+      "Turn on the lamp made of metal while holding a book."
+    ],
+    "task_goal": {
+      "isToggled_floorlamp": 1,
+      "isPickedUp_book": 1,
+      "visible_floorlamp": 1
+    }
+  },
+  {
+    "env_id": 961,
+    "mode": "LookAtObjInLightTask",
+    "instruction": [
+      "Examine a book with the lamp made of metal illuminated."
+    ],
+    "task_goal": {
+      "isToggled_floorlamp": 1,
+      "isPickedUp_book": 1,
+      "visible_floorlamp": 1
+    }
+  },
+  {
+    "env_id": 987,
+    "mode": "LookAtObjInLightTask",
+    "instruction": [
+      "Examine the book by turning on the toggleable item made of wax."
+    ],
+    "task_goal": {
+      "isToggled_candle": 1,
+      "isPickedUp_book": 1,
+      "visible_candle": 1
+    }
+  },
+  {
+    "env_id": 37,
+    "mode": "PickHeatThenPlaceInRecepTask",
+    "instruction": [
+      "Slice the sliceable food from the countertop, heat it, and place it back onto the countertop to get it ready for serving."
+    ],
+    "task_goal": {
+      "temperatureHot_bread": 1,
+      "on_bread_countertop": 1,
+      "isSliced_bread": 1,
+      "on_temperatureHot_bread_countertop": 1
+    }
+  },
+  {
+    "env_id": 70,
+    "mode": "PickHeatThenPlaceInRecepTask",
+    "instruction": [
+      "Warm the apple and then put it next to the potato."
+    ],
+    "task_goal": {
+      "temperatureHot_apple": 1,
+      "on_apple_diningtable": 1,
+      "on_temperatureHot_apple_diningtable": 1
+    }
+  },
+  {
+    "env_id": 138,
+    "mode": "PickHeatThenPlaceInRecepTask",
+    "instruction": [
+      "Warm the breakable food from the fridge and carefully place it in the bowl so it doesn't crack or break during handling."
+    ],
+    "task_goal": {
+      "temperatureHot_egg": 1,
+      "in_egg_bowl": 1,
+      "in_temperatureHot_egg_bowl": 1
+    }
+  },
+  {
+    "env_id": 160,
+    "mode": "PickHeatThenPlaceInRecepTask",
+    "instruction": [
+      "Warm the cookable item from the countertop and put it back onto the countertop to prepare it for serving."
+    ],
+    "task_goal": {
+      "temperatureHot_potato": 1,
+      "on_potato_countertop": 1,
+      "on_temperatureHot_potato_countertop": 1
+    }
+  },
+  {
+    "env_id": 322,
+    "mode": "PickHeatThenPlaceInRecepTask",
+    "instruction": [
+      "Heat a sliced apple and place it in the ceramic container on the side table."
+    ],
+    "task_goal": {
+      "temperatureHot_apple": 1,
+      "in_apple_bowl": 1,
+      "isSliced_apple": 1,
+      "in_temperatureHot_apple_bowl": 1
+    }
+  },
+  {
+    "env_id": 350,
+    "mode": "PickHeatThenPlaceInRecepTask",
+    "instruction": [
+      "Take the object from the cold-source receptacle, warm it slightly, and place it on the countertop so it's ready to be served."
+    ],
+    "task_goal": {
+      "temperatureHot_egg": 1,
+      "on_egg_countertop": 1,
+      "on_temperatureHot_egg_countertop": 1
+    }
+  },
+  {
+    "env_id": 386,
+    "mode": "PickHeatThenPlaceInRecepTask",
+    "instruction": [
+      "Put the bread back in its original location after it has been heated."
+    ],
+    "task_goal": {
+      "temperatureHot_bread": 1,
+      "on_bread_countertop": 1,
+      "on_temperatureHot_bread_countertop": 1
+    }
+  },
+  {
+    "env_id": 418,
+    "mode": "PickHeatThenPlaceInRecepTask",
+    "instruction": [
+      "Put the bread back in its original location after you have heated it."
+    ],
+    "task_goal": {
+      "temperatureHot_bread": 1,
+      "on_bread_countertop": 1,
+      "on_temperatureHot_bread_countertop": 1
+    }
+  },
+  {
+    "env_id": 471,
+    "mode": "PickHeatThenPlaceInRecepTask",
+    "instruction": [
+      "Heat the cookable item on the countertop and place it in the bowl to make it easier to eat."
+    ],
+    "task_goal": {
+      "temperatureHot_potato": 1,
+      "in_potato_bowl": 1,
+      "in_temperatureHot_potato_bowl": 1
+    }
+  },
+  {
+    "env_id": 503,
+    "mode": "PickHeatThenPlaceInRecepTask",
+    "instruction": [
+      "Warm the bread and then put it at the location with the bottle."
+    ],
+    "task_goal": {
+      "temperatureHot_bread": 1,
+      "on_bread_countertop": 1,
+      "on_temperatureHot_bread_countertop": 1
+    }
+  },
+  {
+    "env_id": 508,
+    "mode": "PickHeatThenPlaceInRecepTask",
+    "instruction": [
+      "Warm the sliceable and breakable object from the countertop and then place it in the bowl to prepare it without damaging its shape."
+    ],
+    "task_goal": {
+      "temperatureHot_egg": 1,
+      "in_egg_bowl": 1,
+      "in_temperatureHot_egg_bowl": 1
+    }
+  },
+  {
+    "env_id": 622,
+    "mode": "PickHeatThenPlaceInRecepTask",
+    "instruction": [
+      "After warming the sliceable item on the countertop, place it on the dining table to make slicing easier during preparation."
+    ],
+    "task_goal": {
+      "temperatureHot_lettuce": 1,
+      "on_lettuce_diningtable": 1,
+      "on_temperatureHot_lettuce_diningtable": 1
+    }
+  },
+  {
+    "env_id": 644,
+    "mode": "PickHeatThenPlaceInRecepTask",
+    "instruction": [
+      "Place a heated slice of tomato onto the receptacle that has the cup."
+    ],
+    "task_goal": {
+      "temperatureHot_tomato": 1,
+      "on_tomato_diningtable": 1,
+      "isSliced_tomato": 1,
+      "on_temperatureHot_tomato_diningtable": 1
+    }
+  },
+  {
+    "env_id": 653,
+    "mode": "PickHeatThenPlaceInRecepTask",
+    "instruction": [
+      "Warm the bread and then put it back in the location where the bread was originally."
+    ],
+    "task_goal": {
+      "temperatureHot_bread": 1,
+      "on_bread_countertop": 1,
+      "on_temperatureHot_bread_countertop": 1
+    }
+  },
+  {
+    "env_id": 672,
+    "mode": "PickHeatThenPlaceInRecepTask",
+    "instruction": [
+      "Warm the sliced bread and then put it next to the soap bottle."
+    ],
+    "task_goal": {
+      "temperatureHot_bread": 1,
+      "on_bread_countertop": 1,
+      "isSliced_bread": 1,
+      "on_temperatureHot_bread_countertop": 1
+    }
+  },
+  {
+    "env_id": 743,
+    "mode": "PickHeatThenPlaceInRecepTask",
+    "instruction": [
+      "Heat the food that is close to the bowl and place it on the countertop."
+    ],
+    "task_goal": {
+      "temperatureHot_bread": 1,
+      "on_bread_countertop": 1,
+      "on_temperatureHot_bread_countertop": 1
+    }
+  },
+  {
+    "env_id": 746,
+    "mode": "PickHeatThenPlaceInRecepTask",
+    "instruction": [
+      "Place the heated bread slice near the knife."
+    ],
+    "task_goal": {
+      "temperatureHot_bread": 1,
+      "on_bread_countertop": 1,
+      "isSliced_bread": 1,
+      "on_temperatureHot_bread_countertop": 1
+    }
+  },
+  {
+    "env_id": 756,
+    "mode": "PickHeatThenPlaceInRecepTask",
+    "instruction": [
+      "Warm the bread and then put it back in the location where the bread was originally."
+    ],
+    "task_goal": {
+      "temperatureHot_bread": 1,
+      "on_bread_countertop": 1,
+      "on_temperatureHot_bread_countertop": 1
+    }
+  },
+  {
+    "env_id": 834,
+    "mode": "PickHeatThenPlaceInRecepTask",
+    "instruction": [
+      "Heat an apple and place it next to the cell phone."
+    ],
+    "task_goal": {
+      "temperatureHot_apple": 1,
+      "on_apple_countertop": 1,
+      "on_temperatureHot_apple_countertop": 1
+    }
+  },
+  {
+    "env_id": 844,
+    "mode": "PickHeatThenPlaceInRecepTask",
+    "instruction": [
+      "Warm up the food from the cold-source container and place it in the bowl to bring it to a proper temperature for eating."
+    ],
+    "task_goal": {
+      "temperatureHot_egg": 1,
+      "in_egg_bowl": 1,
+      "in_temperatureHot_egg_bowl": 1
+    }
+  },
+  {
+    "env_id": 923,
+    "mode": "PickHeatThenPlaceInRecepTask",
+    "instruction": [
+      "Put the apple on the furniture that has the microwave once it's been heated."
+    ],
+    "task_goal": {
+      "temperatureHot_apple": 1,
+      "on_apple_countertop": 1,
+      "on_temperatureHot_apple_countertop": 1
+    }
+  },
+  {
+    "env_id": 937,
+    "mode": "PickHeatThenPlaceInRecepTask",
+    "instruction": [
+      "Place a heated apple next to the desk lamp."
+    ],
+    "task_goal": {
+      "temperatureHot_apple": 1,
+      "in_apple_diningtable": 1,
+      "in_temperatureHot_apple_diningtable": 1
+    }
+  },
+  {
+    "env_id": 988,
+    "mode": "PickHeatThenPlaceInRecepTask",
+    "instruction": [
+      "Heat a sliced bread and place it back in its original location."
+    ],
+    "task_goal": {
+      "temperatureHot_bread": 1,
+      "on_bread_countertop": 1,
+      "isSliced_bread": 1,
+      "on_temperatureHot_bread_countertop": 1
+    }
+  },
+  {
+    "env_id": 55,
+    "mode": "PickCoolThenPlaceInRecepTask",
+    "instruction": [
+      "Chill the lettuce in the fridge, then transfer it to the furniture that has the salt shaker."
+    ],
+    "task_goal": {
+      "temperatureCold_lettuce": 1,
+      "on_lettuce_countertop": 1,
+      "on_temperatureCold_lettuce_countertop": 1
+    }
+  },
+  {
+    "env_id": 130,
+    "mode": "PickCoolThenPlaceInRecepTask",
+    "instruction": [
+      "First, place the pan in the fridge to cool, then move it to the furniture that has the toaster."
+    ],
+    "task_goal": {
+      "temperatureCold_pan": 1,
+      "on_pan_countertop": 1,
+      "on_temperatureCold_pan_countertop": 1
+    }
+  },
+  {
+    "env_id": 211,
+    "mode": "PickCoolThenPlaceInRecepTask",
+    "instruction": [
+      "Put the apple in the fridge first, then take it out and place it back in the location where the apple was originally."
+    ],
+    "task_goal": {
+      "temperatureCold_apple": 1,
+      "on_apple_countertop": 1,
+      "on_temperatureCold_apple_countertop": 1
+    }
+  },
+  {
+    "env_id": 239,
+    "mode": "PickCoolThenPlaceInRecepTask",
+    "instruction": [
+      "Put the bottle in the fridge first, then take it out and place it next to the butter knife."
+    ],
+    "task_goal": {
+      "temperatureCold_bottle": 1,
+      "on_bottle_countertop": 1,
+      "on_temperatureCold_bottle_countertop": 1
+    }
+  },
+  {
+    "env_id": 288,
+    "mode": "PickCoolThenPlaceInRecepTask",
+    "instruction": [
+      "Chill a slice of apple in the fridge, then transfer it to the location where the apple was originally."
+    ],
+    "task_goal": {
+      "temperatureCold_apple": 1,
+      "on_apple_countertop": 1,
+      "isSliced_apple": 1,
+      "on_temperatureCold_apple_countertop": 1
+    }
+  },
+  {
+    "env_id": 306,
+    "mode": "PickCoolThenPlaceInRecepTask",
+    "instruction": [
+      "Chill the spoon in the cold-source furniture, then move it to the dining table so it's at the right temperature for dessert."
+    ],
+    "task_goal": {
+      "temperatureCold_spoon": 1,
+      "on_spoon_diningtable": 1,
+      "on_temperatureCold_spoon_diningtable": 1
+    }
+  },
+  {
+    "env_id": 358,
+    "mode": "PickCoolThenPlaceInRecepTask",
+    "instruction": [
+      "Set a cold bottle down next to the ladle."
+    ],
+    "task_goal": {
+      "temperatureCold_bottle": 1,
+      "on_bottle_countertop": 1,
+      "on_temperatureCold_bottle_countertop": 1
+    }
+  },
+  {
+    "env_id": 446,
+    "mode": "PickCoolThenPlaceInRecepTask",
+    "instruction": [
+      "Put the slice of potato in the fridge first, then transfer it to the location where the potato was originally."
+    ],
+    "task_goal": {
+      "temperatureCold_potato": 1,
+      "on_potato_countertop": 1,
+      "isSliced_potato": 1,
+      "on_temperatureCold_potato_countertop": 1
+    }
+  },
+  {
+    "env_id": 477,
+    "mode": "PickCoolThenPlaceInRecepTask",
+    "instruction": [
+      "First, chill the bottle in the fridge, and then move it next to the fork."
+    ],
+    "task_goal": {
+      "temperatureCold_bottle": 1,
+      "on_bottle_countertop": 1,
+      "on_temperatureCold_bottle_countertop": 1
+    }
+  },
+  {
+    "env_id": 508,
+    "mode": "PickCoolThenPlaceInRecepTask",
+    "instruction": [
+      "Store the glass object from the side table in the fridge temporarily, before placing it on the countertop."
+    ],
+    "task_goal": {
+      "temperatureCold_bottle": 1,
+      "on_bottle_countertop": 1,
+      "on_temperatureCold_bottle_countertop": 1
+    }
+  },
+  {
+    "env_id": 514,
+    "mode": "PickCoolThenPlaceInRecepTask",
+    "instruction": [
+      "Cool the apple in the cold-source container, then place it on the countertop to keep its texture crisp before preparation."
+    ],
+    "task_goal": {
+      "temperatureCold_apple": 1,
+      "on_apple_countertop": 1,
+      "on_temperatureCold_apple_countertop": 1
+    }
+  },
+  {
+    "env_id": 591,
+    "mode": "PickCoolThenPlaceInRecepTask",
+    "instruction": [
+      "Place an apple in the fridge to cool, and afterwards move it to the location with the coffee machine."
+    ],
+    "task_goal": {
+      "temperatureCold_apple": 1,
+      "on_apple_countertop": 1,
+      "on_temperatureCold_apple_countertop": 1
+    }
+  },
+  {
+    "env_id": 615,
+    "mode": "PickCoolThenPlaceInRecepTask",
+    "instruction": [
+      "Chill an apple slice in the fridge, then transfer it next to the egg."
+    ],
+    "task_goal": {
+      "temperatureCold_apple": 1,
+      "on_apple_countertop": 1,
+      "isSliced_apple": 1,
+      "on_temperatureCold_apple_countertop": 1
+    }
+  },
+  {
+    "env_id": 706,
+    "mode": "PickCoolThenPlaceInRecepTask",
+    "instruction": [
+      "Chill the apple in the cold-source receptacle, then move it to the one containing the butter knife."
+    ],
+    "task_goal": {
+      "temperatureCold_apple": 1,
+      "on_apple_countertop": 1,
+      "on_temperatureCold_apple_countertop": 1
+    }
+  },
+  {
+    "env_id": 711,
+    "mode": "PickCoolThenPlaceInRecepTask",
+    "instruction": [
+      "Put the item made of glass from the countertop in the fridge first, then take it out and set it on the countertop."
+    ],
+    "task_goal": {
+      "temperatureCold_winebottle": 1,
+      "on_winebottle_countertop": 1,
+      "on_temperatureCold_winebottle_countertop": 1
+    }
+  },
+  {
+    "env_id": 785,
+    "mode": "PickCoolThenPlaceInRecepTask",
+    "instruction": [
+      "Place a cold apple slice next to the cell phone."
+    ],
+    "task_goal": {
+      "temperatureCold_apple": 1,
+      "on_apple_countertop": 1,
+      "isSliced_apple": 1,
+      "on_temperatureCold_apple_countertop": 1
+    }
+  },
+  {
+    "env_id": 813,
+    "mode": "PickCoolThenPlaceInRecepTask",
+    "instruction": [
+      "Chill an apple in the fridge, then transfer it onto the receptacle that contains the kettle."
+    ],
+    "task_goal": {
+      "temperatureCold_apple": 1,
+      "on_apple_countertop": 1,
+      "on_temperatureCold_apple_countertop": 1
+    }
+  },
+  {
+    "env_id": 833,
+    "mode": "PickCoolThenPlaceInRecepTask",
+    "instruction": [
+      "Chill the bottle in the cooling furniture first, then place it on the countertop to keep it at the right temperature for serving."
+    ],
+    "task_goal": {
+      "temperatureCold_bottle": 1,
+      "on_bottle_countertop": 1,
+      "on_temperatureCold_bottle_countertop": 1
+    }
+  },
+  {
+    "env_id": 852,
+    "mode": "PickCoolThenPlaceInRecepTask",
+    "instruction": [
+      "Place a mug in the fridge to cool, then remove it and put it at the location that contains the statue."
+    ],
+    "task_goal": {
+      "temperatureCold_mug": 1,
+      "on_mug_sidetable": 1,
+      "on_temperatureCold_mug_sidetable": 1
+    }
+  },
+  {
+    "env_id": 84,
+    "mode": "PickCleanThenPlaceInRecepTask",
+    "instruction": [
+      "Clean the item made of metal and plastic that is close to the toaster and place it on the shelf."
+    ],
+    "task_goal": {
+      "isClean_knife": 1,
+      "in_knife_shelf": 1,
+      "in_isClean_knife_shelf": 1
+    }
+  },
+  {
+    "env_id": 98,
+    "mode": "PickCleanThenPlaceInRecepTask",
+    "instruction": [
+      "Wash the pencil and then set it down next to the bread."
+    ],
+    "task_goal": {
+      "isClean_pencil": 1,
+      "on_pencil_countertop": 1,
+      "on_isClean_pencil_countertop": 1
+    }
+  },
+  {
+    "env_id": 110,
+    "mode": "PickCleanThenPlaceInRecepTask",
+    "instruction": [
+      "Wash the sponge object on the countertop and then put it in the sink basin."
+    ],
+    "task_goal": {
+      "isClean_dishsponge": 1,
+      "in_dishsponge_sinkbasin": 1,
+      "in_isClean_dishsponge_sinkbasin": 1
+    }
+  },
+  {
+    "env_id": 123,
+    "mode": "PickCleanThenPlaceInRecepTask",
+    "instruction": [
+      "Clean the sponge on the countertop and place it on the shelf."
+    ],
+    "task_goal": {
+      "isClean_dishsponge": 1,
+      "in_dishsponge_shelf": 1,
+      "in_isClean_dishsponge_shelf": 1
+    }
+  },
+  {
+    "env_id": 164,
+    "mode": "PickCleanThenPlaceInRecepTask",
+    "instruction": [
+      "After cleaning the knife, set it down onto the receptacle that has the bottle."
+    ],
+    "task_goal": {
+      "isClean_knife": 1,
+      "on_knife_countertop": 1,
+      "on_isClean_knife_countertop": 1
+    }
+  },
+  {
+    "env_id": 211,
+    "mode": "PickCleanThenPlaceInRecepTask",
+    "instruction": [
+      "Clean the pen and place it next to the cup."
+    ],
+    "task_goal": {
+      "isClean_pen": 1,
+      "on_pen_countertop": 1,
+      "on_isClean_pen_countertop": 1
+    }
+  },
+  {
+    "env_id": 224,
+    "mode": "PickCleanThenPlaceInRecepTask",
+    "instruction": [
+      "Wash the item made of sponge from the countertop and store it in the cabinet."
+    ],
+    "task_goal": {
+      "isClean_dishsponge": 1,
+      "in_dishsponge_cabinet": 1,
+      "in_isClean_dishsponge_cabinet": 1
+    }
+  },
+  {
+    "env_id": 367,
+    "mode": "PickCleanThenPlaceInRecepTask",
+    "instruction": [
+      "After you've cleaned the spoon, store it in the cold source to keep it chilled for serving cold desserts."
+    ],
+    "task_goal": {
+      "isClean_spoon": 1,
+      "in_spoon_fridge": 1,
+      "in_isClean_spoon_fridge": 1
+    }
+  },
+  {
+    "env_id": 405,
+    "mode": "PickCleanThenPlaceInRecepTask",
+    "instruction": [
+      "Wash the knife and then put it on the furniture that has the coffee machine."
+    ],
+    "task_goal": {
+      "isClean_knife": 1,
+      "on_knife_countertop": 1,
+      "on_isClean_knife_countertop": 1
+    }
+  },
+  {
+    "env_id": 568,
+    "mode": "PickCleanThenPlaceInRecepTask",
+    "instruction": [
+      "Clean the item that is close to the ladle, made of metal and not breakable, and place it in the cabinet."
+    ],
+    "task_goal": {
+      "isClean_spoon": 1,
+      "in_spoon_cabinet": 1,
+      "in_isClean_spoon_cabinet": 1
+    }
+  },
+  {
+    "env_id": 678,
+    "mode": "PickCleanThenPlaceInRecepTask",
+    "instruction": [
+      "Clean the breakable and sliceable food from the countertop and place it on the shelf so it stays intact until it's ready to be prepared."
+    ],
+    "task_goal": {
+      "isClean_egg": 1,
+      "in_egg_shelf": 1,
+      "in_isClean_egg_shelf": 1
+    }
+  },
+  {
+    "env_id": 1,
+    "mode": "PickAndStackTask",
+    "instruction": [
+      "Put a bowl with a sliced potato in it onto the receptacle that has the book."
+    ],
+    "task_goal": {
+      "stack_potato_bowl_diningtable": 1,
+      "isSliced_potato": 1,
+      "on_potato_bowl": 1,
+      "on_bowl_diningtable": 1
+    }
+  },
+  {
+    "env_id": 47,
+    "mode": "PickAndStackTask",
+    "instruction": [
+      "Place a pan containing the item that is close to the knife on the countertop."
+    ],
+    "task_goal": {
+      "stack_fork_pan_countertop": 1,
+      "on_fork_pan": 1,
+      "on_pan_countertop": 1
+    }
+  },
+  {
+    "env_id": 90,
+    "mode": "PickAndStackTask",
+    "instruction": [
+      "Slice the food on the dining table, place it on a plate, and put the plate on the countertop so it's ready to be served."
+    ],
+    "task_goal": {
+      "stack_tomato_plate_countertop": 1,
+      "isSliced_tomato": 1,
+      "on_tomato_plate": 1,
+      "on_plate_countertop": 1
+    }
+  },
+  {
+    "env_id": 212,
+    "mode": "PickAndStackTask",
+    "instruction": [
+      "Place a box containing a remote control on the furniture that has the book."
+    ],
+    "task_goal": {
+      "stack_remotecontrol_box_countertop": 1,
+      "on_remotecontrol_box": 1,
+      "on_box_countertop": 1
+    }
+  },
+  {
+    "env_id": 267,
+    "mode": "PickAndStackTask",
+    "instruction": [
+      "Take the cookable item from the cold container, slice it, place it in a bowl, and put the bowl on the counter to get ready."
+    ],
+    "task_goal": {
+      "stack_potato_bowl_countertop": 1,
+      "isSliced_potato": 1,
+      "on_potato_bowl": 1,
+      "on_bowl_countertop": 1
+    }
+  },
+  {
+    "env_id": 268,
+    "mode": "PickAndStackTask",
+    "instruction": [
+      "Place the box that holds the item made of wax from the bathroom onto the shelf."
+    ],
+    "task_goal": {
+      "stack_candle_box_shelf": 1,
+      "on_candle_box": 1,
+      "on_box_shelf": 1
+    }
+  },
+  {
+    "env_id": 269,
+    "mode": "PickAndStackTask",
+    "instruction": [
+      "Put a bowl with the cookable food that is close to the dish sponge in it on the countertop."
+    ],
+    "task_goal": {
+      "stack_potato_bowl_countertop": 1,
+      "on_potato_bowl": 1,
+      "on_bowl_countertop": 1
+    }
+  },
+  {
+    "env_id": 329,
+    "mode": "PickAndStackTask",
+    "instruction": [
+      "Put a knife on a plate, then place the plate on top of the receptacle with the ladle to group them for later use."
+    ],
+    "task_goal": {
+      "stack_knife_plate_countertop": 1,
+      "on_knife_plate": 1,
+      "on_plate_countertop": 1
+    }
+  },
+  {
+    "env_id": 330,
+    "mode": "PickAndStackTask",
+    "instruction": [
+      "Put a box with the toggleable item from the bed inside it onto the dining table."
+    ],
+    "task_goal": {
+      "stack_cellphone_box_diningtable": 1,
+      "on_cellphone_box": 1,
+      "on_box_diningtable": 1
+    }
+  },
+  {
+    "env_id": 429,
+    "mode": "PickAndStackTask",
+    "instruction": [
+      "Put a box with an item made of wax inside it onto the armchair."
+    ],
+    "task_goal": {
+      "stack_candle_box_armchair": 1,
+      "on_candle_box": 1,
+      "on_box_armchair": 1
+    }
+  },
+  {
+    "env_id": 502,
+    "mode": "PickAndStackTask",
+    "instruction": [
+      "Place the box with the paper item found near the CD on the bed for temporary storage."
+    ],
+    "task_goal": {
+      "stack_book_box_bed": 1,
+      "on_book_box": 1,
+      "on_box_bed": 1
+    }
+  },
+  {
+    "env_id": 537,
+    "mode": "PickAndStackTask",
+    "instruction": [
+      "Place the pencil in a box, then put the box at the location with the credit card."
+    ],
+    "task_goal": {
+      "stack_pencil_box_diningtable": 1,
+      "on_pencil_box": 1,
+      "on_box_diningtable": 1
+    }
+  },
+  {
+    "env_id": 538,
+    "mode": "PickAndStackTask",
+    "instruction": [
+      "Move the paper item from the side table into a box and place the box on the armchair so it's easier to reach later."
+    ],
+    "task_goal": {
+      "stack_tissuebox_box_armchair": 1,
+      "on_tissuebox_box": 1,
+      "on_box_armchair": 1
+    }
+  },
+  {
+    "env_id": 550,
+    "mode": "PickAndStackTask",
+    "instruction": [
+      "Place the pencil inside a box, then put the box onto the furniture that has the microwave."
+    ],
+    "task_goal": {
+      "stack_pencil_box_countertop": 1,
+      "on_pencil_box": 1,
+      "on_box_countertop": 1
+    }
+  },
+  {
+    "env_id": 624,
+    "mode": "PickAndStackTask",
+    "instruction": [
+      "Place the pencil inside a box, then put the box next to the apple."
+    ],
+    "task_goal": {
+      "stack_pencil_box_countertop": 1,
+      "on_pencil_box": 1,
+      "on_box_countertop": 1
+    }
+  },
+  {
+    "env_id": 651,
+    "mode": "PickAndStackTask",
+    "instruction": [
+      "Put the wooden item near the CD into a box, and place the box on the shelf to keep it organized."
+    ],
+    "task_goal": {
+      "stack_pencil_box_shelf": 1,
+      "on_pencil_box": 1,
+      "on_box_shelf": 1
+    }
+  },
+  {
+    "env_id": 669,
+    "mode": "PickAndStackTask",
+    "instruction": [
+      "Set the item made of wax in a box and then place the box on the sofa."
+    ],
+    "task_goal": {
+      "stack_candle_box_sofa": 1,
+      "on_candle_box": 1,
+      "on_box_sofa": 1
+    }
+  },
+  {
+    "env_id": 739,
+    "mode": "PickAndStackTask",
+    "instruction": [
+      "Insert the pencil into the paper receptacle you can open and carry, then place it on the bed to organize your items."
+    ],
+    "task_goal": {
+      "stack_pencil_box_bed": 1,
+      "on_pencil_box": 1,
+      "on_box_bed": 1
+    }
+  },
+  {
+    "env_id": 791,
+    "mode": "PickAndStackTask",
+    "instruction": [
+      "Place the cookable item from the countertop in a bowl and set the bowl back on the countertop to prepare for cooking."
+    ],
+    "task_goal": {
+      "stack_potato_bowl_countertop": 1,
+      "on_potato_bowl": 1,
+      "on_bowl_countertop": 1
+    }
+  },
+  {
+    "env_id": 808,
+    "mode": "PickAndStackTask",
+    "instruction": [
+      "Place the toggleable item from the bed in a box and set the box on the sofa to keep it close at hand."
+    ],
+    "task_goal": {
+      "stack_cellphone_box_sofa": 1,
+      "on_cellphone_box": 1,
+      "on_box_sofa": 1
+    }
+  },
+  {
+    "env_id": 31,
+    "mode": "CookTask",
+    "instruction": [
+      "Cook a breakable food from the cold storage in the microwave and place it on the countertop to serve."
+    ],
+    "task_goal": {
+      "isCooked_egg": 1,
+      "on_egg_countertop": 1
+    }
+  },
+  {
+    "env_id": 236,
+    "mode": "CookTask",
+    "instruction": [
+      "Slice the food that is close to a butter knife, toast it using the toaster, and place it on the dining table."
+    ],
+    "task_goal": {
+      "isCooked_breadsliced": 1,
+      "on_breadsliced_diningtable": 1
+    }
+  },
+  {
+    "env_id": 250,
+    "mode": "CookTask",
+    "instruction": [
+      "Use the coffee machine to brew coffee into a mug, and then place the mug next to the bottle."
+    ],
+    "task_goal": {
+      "fillLiquid_coffee_mug": 1,
+      "on_mug_countertop": 1
+    }
+  },
+  {
+    "env_id": 284,
+    "mode": "CookTask",
+    "instruction": [
+      "Use a heat source that can be toggled and opened to cook the potato, and move it to the countertop for easy access."
+    ],
+    "task_goal": {
+      "isCooked_potato": 1,
+      "on_potato_countertop": 1
+    }
+  },
+  {
+    "env_id": 322,
+    "mode": "CookTask",
+    "instruction": [
+      "Use the microwave to cook a potato, then put it onto the furniture where the bread is located."
+    ],
+    "task_goal": {
+      "isCooked_potato": 1,
+      "on_potato_countertop": 1
+    }
+  },
+  {
+    "env_id": 328,
+    "mode": "CookTask",
+    "instruction": [
+      "After cooking a breakable food from the fridge in the microwave, set it down on the countertop."
+    ],
+    "task_goal": {
+      "isCooked_egg": 1,
+      "on_egg_countertop": 1
+    }
+  },
+  {
+    "env_id": 508,
+    "mode": "CookTask",
+    "instruction": [
+      "Cook a potato using a microwave and cook an egg using a microwave, then place the cooked food onto the receptacle where the wine bottle is located."
+    ],
+    "task_goal": {
+      "isCooked_potato": 1,
+      "isCooked_egg": 1,
+      "on_potato_countertop": 1,
+      "on_egg_countertop": 1
+    }
+  },
+  {
+    "env_id": 526,
+    "mode": "CookTask",
+    "instruction": [
+      "Use the microwave to cook a breakable food, then put it on the countertop."
+    ],
+    "task_goal": {
+      "isCooked_egg": 1,
+      "on_egg_countertop": 1
+    }
+  },
+  {
+    "env_id": 585,
+    "mode": "CookTask",
+    "instruction": [
+      "Use the coffee machine to brew coffee into a mug, and then place the mug next to the fork."
+    ],
+    "task_goal": {
+      "fillLiquid_coffee_mug": 1,
+      "on_mug_countertop": 1
+    }
+  },
+  {
+    "env_id": 672,
+    "mode": "CookTask",
+    "instruction": [
+      "Use the toaster to toast a slice of bread, then put it onto the receptacle where three butter knifes are located."
+    ],
+    "task_goal": {
+      "isCooked_breadsliced": 1,
+      "on_breadsliced_countertop": 1
+    }
+  },
+  {
+    "env_id": 744,
+    "mode": "CookTask",
+    "instruction": [
+      "Use a ceramic item from the desk to make coffee with the coffee machine, and serve it on the countertop."
+    ],
+    "task_goal": {
+      "fillLiquid_coffee_mug": 1,
+      "on_mug_countertop": 1
+    }
+  },
+  {
+    "env_id": 800,
+    "mode": "CookTask",
+    "instruction": [
+      "Using the coffee machine, fill a mug with coffee and set it on a receptacle made of wood and plastic."
+    ],
+    "task_goal": {
+      "fillLiquid_coffee_mug": 1,
+      "on_mug_tvstand": 1
+    }
+  },
+  {
+    "env_id": 824,
+    "mode": "CookTask",
+    "instruction": [
+      "Use the toaster to make toast, then put the slice of bread onto the receptacle where the paper towel roll is located."
+    ],
+    "task_goal": {
+      "isCooked_breadsliced": 1,
+      "on_breadsliced_sidetable": 1
+    }
+  },
+  {
+    "env_id": 884,
+    "mode": "CookTask",
+    "instruction": [
+      "Toast a slice of bread using a toaster and then place the toasted bread next to the mug."
+    ],
+    "task_goal": {
+      "isCooked_breadsliced": 1,
+      "on_breadsliced_countertop": 1
+    }
+  },
+  {
+    "env_id": 979,
+    "mode": "CookTask",
+    "instruction": [
+      "Make a mug of coffee with the coffee machine and place it onto the furniture where the wine bottle is located."
+    ],
+    "task_goal": {
+      "fillLiquid_coffee_mug": 1,
+      "on_mug_countertop": 1
+    }
+  }
+]

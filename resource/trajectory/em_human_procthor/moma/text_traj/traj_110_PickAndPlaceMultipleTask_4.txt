@@ -1,0 +1,10 @@
+Your task is to: Collect a pencil and a book and place them on the countertop.
+You arrive at the box (1). The box (1) is closed. You see book (2), bowl (1), box (1), dining table (2), plate (1), television (2). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- bathroom 1: [(garbage can 1), painting 2, (toilet 1), painting 3, plunger 1, painting 4, (sink basin 1), (sink 1), faucet 1]
+- (bedroom 1): [(chair 1), (bed 2), (drawer 3), (drawer 1), (side table 1), (desk 1), television 1, (dresser 1), (drawer 2), (bed 1), basket ball 1, painting 1]
+- (kitchen 1): [(dining table 1), (fridge 1), (countertop 1), (chair 2)]
+- living room 1: [house plant 1, book 2, bowl 1, box 1, (dining table 2), plate 1, (sofa 1), television 2]
+Your 2 previous actions were: go to living room 1 (success), go to box 1 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I arrive at box 1. Since box 1 is closed, I need to open it to check if there's a pencil inside.
+Act: open box 1

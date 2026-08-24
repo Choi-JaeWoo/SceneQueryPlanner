@@ -1,0 +1,12 @@
+Your task is to: Hold a pencil and turn on the floor lamp to examine it.
+You are in the house, and there are 6 rooms: bathroom (1, 2), bedroom (1, 2), kitchen (1), living room (1). You are in the middle of a bedroom (1). Looking quickly around the room, you see bed (1), chair (1), dining table (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), garbage can (1), house plant (1), television (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- (bathroom 1): [faucet 1, (garbage can 2), plunger 1, (sink 1), (sink basin 1), (toilet 1)]
+- (bathroom 2): [candle 2, (toilet 2)]
+- bedroom 1: [(bed 1), (chair 1), (dining table 1), (drawer 1), (drawer 4), (drawer 2), (drawer 5), (drawer 6), (drawer 8), (drawer 10), (drawer 11), (drawer 9), (drawer 12), (drawer 3), (drawer 7), (dresser 1), (garbage can 1), house plant 1, laptop 1, mug 1, pencil 1, remote control 2, television 1]
+- (bedroom 2): [(armchair 1), (bed 2), (box 2), (box 1), (chair 2), (desk 1), (drawer 13), (drawer 15), (drawer 16), (drawer 17), (drawer 18), (drawer 14), (dresser 2), floor lamp 1, (garbage can 3), painting 2, painting 4, painting 3, painting 1, (shelf 2), (shelf 3), (shelf 4), (shelf 1)]
+- (kitchen 1): [(countertop 1), (fridge 1), house plant 2]
+- (living room 1): [(dining table 2), (drawer 21), (drawer 19), (drawer 20), (dresser 3), television 2]
+You have not taken any actions yet.
+What is the best next action to complete the task as efficiently as possible?
+Think: First, I need to find and pick up pencil. The pencil is more likely to appear in bedroom 1.
+Act: go to bedroom 1

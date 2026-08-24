@@ -1,0 +1,8 @@
+Your task is to: Examine a spoon by the light emitted from a candle.
+You move to the kitchen (1). Looking quickly around the room, you see cabinet (1), countertop (1), fridge (1), painting (1), shelf (1, 2, 3), shelving unit (1), stool (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- kitchen 1: [painting 1, shelving unit 1, (cabinet 1), (countertop 1), (fridge 1), (shelf 3), (shelf 2), (shelf 1), (stool 1)]
+- living room 1: [boots 1, (dining table 1), painting 4, painting 3, painting 2, (shelf 4), (shelf 6), (shelf 7), (shelf 8), (shelf 9), (shelf 5), (sofa 1), (TV stand 1)]
+Your 1 previous actions were: go to kitchen 1 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I move to kitchen 1. I need to check unexplored areas in kitchen 1 to find candle and spoon. Now, I need to check cabinet 1.
+Act: go to cabinet 1

@@ -1,0 +1,10 @@
+Your task is to: Clean the spoon and place it in the cabinet.
+You pick up spoon (1). You hold spoon (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- bathroom 1: [plunger 1, clothes dryer 1, painting 4, (drawer 10), (drawer 9), (drawer 8), (drawer 7), (drawer 5), (drawer 6), (dresser 2), faucet 1, (garbage can 2), painting 3, (sink 1), sink basin 1, spoon 1, (toilet 1)]
+- (bedroom 1): [painting 1, (drawer 1), (bed 1), (dresser 1), (cabinet 2), (cabinet 3), (chair 1), (cabinet 4), (box 1), dog bed 1, painting 2, (drawer 2), (drawer 4), (chair 2), (dining table 1), television 1, (chair 3), (cabinet 1), (garbage can 1), (drawer 3)]
+- kitchen 1: [house plant 1, apple 1, bowl 1, butter knife 1, butter knife 2, coffee machine 1, countertop 1, credit card 2, cup 1, (fridge 1), knife 2, knife 1, ladle 1, pan 1, pepper shaker 1, potato 1, salt shaker 1, soap bottle 1, spatula 1, spray bottle 2, statue 2, (stool 1), toaster 1]
+- (living room 1): [(shelf 2), (shelf 4), (shelf 6), (shelf 3), (shelf 1), (dining table 2), (TV stand 1), (shelf 5)]
+Your 5 previous actions were: go to sink basin 1 (success), put down spoon 1 (success), turn on faucet 1 (success), turn off faucet 1 (success), pick up spoon 1 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I pick up spoon 1. Now, I need to find cabinet to put down spoon 1. Cabinet 1 is in bedroom 1.
+Act: go to bedroom 1

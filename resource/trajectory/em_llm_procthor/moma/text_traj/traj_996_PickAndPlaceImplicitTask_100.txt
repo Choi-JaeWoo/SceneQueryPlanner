@@ -1,0 +1,2 @@
+Your task is to: Remove all the objects from the cabinet and put them on the dining table.
+Max decision steps reached.

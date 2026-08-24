@@ -1,0 +1,8 @@
+Your task is to: Move all the objects from the dresser to the dining table.
+You arrive at the chair (2). You see CD (1), book (1), bowl (1), chair (1, 2), dining table (1), house plant (1), key chain (2), remote control (1, 3), tennis racket (1), vase (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- bathroom 1: [faucet 1, painting 2, painting 1, plunger 1, (garbage can 1), (sink 1), (sink basin 1), (toilet 1)]
+- bedroom 1: [floor lamp 1, floor lamp 2, pillow 2, pillow 1, desk lamp 1, dog bed 1, television 1, armchair 1, armchair 2, bed 1, book 1, bowl 1, box 1, (box 2), CD 1, chair 1, chair 2, (chair 4), (chair 3), dining table 1, (drawer 8), (drawer 7), (drawer 6), (drawer 3), (drawer 4), (drawer 2), (drawer 5), (drawer 9), drawer 1, (drawer 10), dresser 1, house plant 1, key chain 2, remote control 1, remote control 3, tennis racket 1, vase 1]
+Your 5 previous actions were: go to drawer 1 (success), open drawer 1 (success), go to chair 2 (success), go to dining table 1 (success), go to chair 2 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I arrive at chair 2. I need to move key chain 2 to dining table 1. Now, I need to move toward key chain 2 to pick it up.
+Act: go to key chain 2

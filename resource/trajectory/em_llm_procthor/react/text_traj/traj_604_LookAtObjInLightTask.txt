@@ -1,0 +1,77 @@
+Your task is to: Turn on the desk lamp while holding a remote control.
+You are in the house, and there are 3 rooms: bedroom (1), kitchen (1), living room (1). You are in the middle of a bedroom (1). Looking quickly around the room, you see baseball bat (1), bed (1), drawer (1, 2, 3, 7), dresser (1), house plant (1), side table (1), television (1).
+Think: To solve the task, I need to find and pick up remote control, find and turn on desk lamp.
+OK.
+Think: First, I need to find and pick up remote control. The remote control is more likely to appear in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), chair (1), dining table (1), drawer (4, 5, 6), dresser (2), floor lamp (1), painting (2, 3, 4), shelf (1, 2, 3, 4, 5, 6), sofa (1).
+Think: In living room 1, the remote control is likely to appear in/on TV stand 1, chair 1, dining table 1, drawer (4, 5, 6), dresser 2, floor lamp 1, shelf (1, 2, 3, 4, 5, 6), sofa 1. I can check each place one by one until I find remote control.
+OK.
+Act: go to TV stand 1
+You arrive at the TV stand (1). You see TV stand (1), dining table (1), floor lamp (1), remote control (2, 3, 4), shelf (1, 2, 3, 4, 5, 6), statue (1), television (2).
+Think: I find remote control (2, 3, 4). Now, I need to pick it up.
+OK.
+Act: go to remote control 2
+You arrive at the remote control (2). You see TV stand (1), bowl (1), desk lamp (2), dining table (1), remote control (2, 3, 4), shelf (1, 2, 3, 4, 5, 6), statue (1), television (2).
+Act: pick up remote control 2
+You pick up remote control (2). You hold remote control (2).
+Act: go to remote control 3
+You arrive at the remote control (3). You see TV stand (1), dining table (1), floor lamp (1), remote control (3, 4), shelf (1, 2, 3, 4, 5, 6), statue (1), television (2). You hold remote control (2).
+Act: pick up remote control 3
+Pick up action failed: Robot is currently holding remotecontrol
+Act: go to remote control 4
+You arrive at the remote control (4). You see TV stand (1), dining table (1), floor lamp (1), remote control (3, 4), shelf (1, 2, 3, 4, 5, 6), statue (1), television (2). You hold remote control (2).
+Act: pick up remote control 4
+Pick up action failed: Robot is currently holding remotecontrol
+Act: go to chair 1
+You arrive at the chair (1). You see bowl (1), chair (1), desk lamp (2), dining table (1), drawer (4, 5), statue (1). You hold remote control (2).
+Act: go to dining table 1
+You arrive at the dining table (1). You see TV stand (1), bowl (1), chair (1), desk lamp (2), dining table (1), remote control (3, 4), shelf (1, 2, 3, 4, 5, 6), statue (1), television (2). You hold remote control (2).
+Act: go to drawer 4
+You arrive at the drawer (4). The drawer (4) is closed. You see candle (1), drawer (4, 5, 6), dresser (2), house plant (3), painting (2, 3), pillow (2), sofa (1). You hold remote control (2).
+Act: open drawer 4
+You open drawer (4). You see candle (1), drawer (4, 5, 6), dresser (2), house plant (3), painting (2, 3), pillow (2), sofa (1). You hold remote control (2).
+Act: go to drawer 5
+You arrive at the drawer (5). The drawer (5) is closed. You see candle (1), drawer (4, 5, 6), dresser (2), house plant (3), painting (2), pillow (2), sofa (1). You hold remote control (2).
+Act: open drawer 5
+You open drawer (5). You see candle (1), drawer (4, 5, 6), dresser (2), house plant (3), painting (2), pillow (2), sofa (1). You hold remote control (2).
+Act: go to drawer 6
+You arrive at the drawer (6). The drawer (6) is closed. You see candle (1), drawer (4, 5, 6), dresser (2), house plant (3), painting (2, 3), pillow (2), sofa (1). You hold remote control (2).
+Act: open drawer 6
+You open drawer (6). You see candle (1), drawer (4, 5, 6), dresser (2), house plant (3), painting (2, 3), pillow (2), sofa (1). You hold remote control (2).
+Act: go to dresser 2
+You arrive at the dresser (2). You see candle (1), drawer (4, 5, 6), dresser (2), house plant (3), painting (2), pillow (2), sofa (1). You hold remote control (2).
+Act: go to floor lamp 1
+You arrive at the floor lamp (1). You see TV stand (1), floor lamp (1), remote control (3, 4), shelf (1, 2, 3, 4, 5, 6), statue (1), television (2). You hold remote control (2).
+Act: go to shelf 1
+You arrive at the shelf (1). You see TV stand (1), bowl (1), desk lamp (2), dining table (1), remote control (3, 4), shelf (1, 2, 3, 4, 5, 6), statue (1), television (2). You hold remote control (2).
+Act: go to shelf 2
+You arrive at the shelf (2). You see TV stand (1), bowl (1), desk lamp (2), dining table (1), remote control (3, 4), shelf (1, 2, 3, 4, 5, 6), statue (1), television (2). You hold remote control (2).
+Act: go to shelf 3
+You arrive at the shelf (3). You see TV stand (1), bowl (1), desk lamp (2), dining table (1), remote control (3, 4), shelf (1, 2, 3, 4, 5, 6), statue (1), television (2). You hold remote control (2).
+Act: go to shelf 4
+You arrive at the shelf (4). You see TV stand (1), dining table (1), floor lamp (1), remote control (3, 4), shelf (1, 2, 3, 4, 5, 6), statue (1), television (2). You hold remote control (2).
+Act: go to shelf 5
+You arrive at the shelf (5). You see TV stand (1), dining table (1), floor lamp (1), remote control (3, 4), shelf (1, 2, 3, 4, 5, 6), statue (1), television (2). You hold remote control (2).
+Act: go to shelf 6
+You arrive at the shelf (6). You see TV stand (1), dining table (1), floor lamp (1), remote control (3, 4), shelf (1, 2, 3, 4, 5, 6), statue (1), television (2). You hold remote control (2).
+Act: go to sofa 1
+You arrive at the sofa (1). You see candle (1), drawer (4, 5, 6), dresser (2), house plant (3), painting (2, 3, 4), pillow (2), sofa (1). You hold remote control (2).
+Think: Now I need to find and turn on desk lamp. The desk lamp is more likely to appear in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see baseball bat (1), bed (1), drawer (1, 2, 3, 7), dresser (1), house plant (1), side table (1), television (1). You hold remote control (2).
+Think: In bedroom 1, the desk lamp is likely to appear in/on baseball bat 1, bed 1, drawer (1, 2, 3, 7), dresser 1, house plant 1, side table 1, television 1. I can check each place one by one until I find desk lamp.
+OK.
+Act: go to baseball bat 1
+You arrive at the baseball bat (1). You see baseball bat (1), bed (1), desk lamp (1), drawer (7), pillow (1), side table (1). You hold remote control (2).
+Think: I find desk lamp 1. Now, I need to turn it on.
+OK.
+Act: go to desk lamp 1
+You arrive at the desk lamp (1). You see baseball bat (1), desk lamp (1), drawer (1, 2, 3, 7), remote control (1), side table (1). You hold remote control (2).
+Act: turn on desk lamp 1
+You turn on desk lamp (1). You hold remote control (2).
+Think: Now I complete the task.
+OK.
+Act: done

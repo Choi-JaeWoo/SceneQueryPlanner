@@ -1,0 +1,41 @@
+Your task is to: Turn on the desk lamp while holding a pencil.
+You are in the house, and there are 7 rooms: bathroom (1), bedroom (1, 2, 3), kitchen (1), living room (1, 2). You are in the middle of a bedroom (3). Looking quickly around the room, you see armchair (1), bed (3), coffee table (1), drawer (17, 18, 19, 20, 21, 22), dresser (4), floor lamp (1), television (4).
+Think: To solve the task, I need to find and pick up pencil, find and turn on desk lamp.
+OK.
+Think: First, I need to find and pick up pencil. The pencil is more likely to appear in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see bed (1), chair (10), dining table (4), dog bed (2), drawer (11, 12, 13), dresser (2), painting (3, 4), television (3).
+Think: In bedroom 1, the pencil is likely to appear in/on bed 1, chair 10, dining table 4, dog bed 2, dresser 2. I can check each place one by one until I find pencil.
+OK.
+Act: go to bed 1
+You arrive at the bed (1). You see basket ball (1), bed (1), box (3), pillow (1, 2), tennis racket (1).
+Act: go to chair 10
+You arrive at the chair (10). You see newspaper (1), pillow (7), sofa (1).
+Act: go to dining table 2
+You arrive at the dining table (2). You see TV stand (1), book (4), bowl (2), box (2), cell phone (2), chair (6, 7, 8, 9), credit card (2), dining table (2), house plant (1), key chain (1, 2, 3), laptop (1), pen (1), pencil (3), plate (2), shelf (4, 5, 6, 7, 8, 9), statue (1), television (1), watch (1).
+Think: I find pencil 3. Now, I need to pick it up.
+OK.
+Act: go to pencil 3
+You arrive at the pencil (3). You see bowl (2), chair (6, 7, 8), dining table (2), house plant (1), key chain (3), pen (1), pencil (3), plate (2), statue (1).
+Act: pick up pencil 3
+You pick up pencil (3). You hold pencil (3).
+Think: Now I need to find and turn on desk lamp. The desk lamp is more likely to appear in bedroom 2.
+OK.
+Act: go to bedroom 2
+You move to the bedroom (2). Looking quickly around the room, you see baseball bat (1), bed (2), box (1), chair (11), dining table (5), drawer (14, 15, 16), dresser (3), garbage can (4). You hold pencil (3).
+Think: In bedroom 2, the desk lamp is likely to appear in/on bed 2, chair 11, dining table 5, dresser 3, garbage can 4. I can check each place one by one until I find desk lamp.
+OK.
+Act: go to bed 2
+You arrive at the bed (2). You see bed (2), book (7), box (1), laptop (4), pillow (3, 4). You hold pencil (3).
+Act: go to chair 11
+You arrive at the chair (11). You see alarm clock (1), book (8), cell phone (4), chair (11), desk lamp (2), dining table (5), drawer (14, 15, 16), dresser (3), house plant (4), mug (3), pencil (7, 8), tissue box (2), vase (3). You hold pencil (3).
+Think: I find desk lamp 2. Now, I need to turn it on.
+OK.
+Act: go to desk lamp 2
+You arrive at the desk lamp (2). You see alarm clock (1), book (8), cell phone (4), chair (11), desk lamp (2), dining table (5), drawer (14, 15, 16), dresser (3), house plant (4), mug (3), pencil (7, 8), tissue box (2), vase (3). You hold pencil (3).
+Act: turn on desk lamp 2
+You turn on desk lamp (2). You hold pencil (3).
+Think: Now I complete the task.
+OK.
+Act: done

@@ -1,0 +1,8 @@
+Your task is to: Move all the objects from the side table to the dining table.
+You arrive at the dining table (2). You see book (2, 3, 5), bowl (2), chair (2, 3, 4, 5), dining table (2), house plant (1), key chain (1), newspaper (1), watch (1). You hold remote control (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- (kitchen 1): [(countertop 1), television 1, painting 1, (stool 1), (dining table 1), (fridge 1), painting 2, (chair 1)]
+- living room 1: [book 4, credit card 1, floor lamp 1, pencil 2, pencil 3, pillow 1, remote control 2, television 2, vase 2, painting 4, desk lamp 1, painting 3, book 3, book 2, book 5, bowl 2, chair 3, chair 2, chair 4, chair 5, dining table 2, house plant 1, key chain 1, newspaper 1, remote control 1, shelf 2, shelf 3, shelf 6, shelf 5, shelf 4, shelf 1, side table 1, sofa 1, TV stand 1, watch 1]
+Your 5 previous actions were: put down watch 1 (success), go to side table 1 (success), go to remote control 1 (success), pick up remote control 1 (success), go to dining table 2 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I arrive at dining table 2. I hold remote control 1. Now, I need to put down remote control 1.
+Act: put down remote control 1

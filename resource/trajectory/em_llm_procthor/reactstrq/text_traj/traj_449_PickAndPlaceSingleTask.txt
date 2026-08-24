@@ -1,0 +1,45 @@
+Your task is to: Place a pencil on the shelf.
+You are in the house, and there are 2 rooms: kitchen (1), living room (1). You are in the middle of a living room (1). Looking quickly around the room, you see armchair (1), cart (1), dining table (2), floor lamp (1), painting (4), sofa (1), television (2).
+Think: To solve the task, I need to find and pick up pencil, find and open shelf, put down pencil on shelf.
+OK.
+Think: First, I need to find and pick up pencil.
+OK.
+Query: find_objects({'label': 'pencil'})
+Info: 
+Think: I have not seen pencil yet. Now I need to check where to search. First, I will search living room 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'living room 1'})
+Info: armchair 1, dining table 2, sofa 1
+Think: In living room 1, the pencil is likely to appear in/on armchair 1, dining table 2, sofa 1. I can check each place one by one until I find pencil.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see armchair (1), cart (1), dining table (2), floor lamp (1), painting (4), sofa (1), television (2).
+Act: go to armchair 1
+You arrive at the armchair (1). You see armchair (1), cart (1), floor lamp (1).
+Think: I need to check whether I see pencil.
+OK.
+Query: find_objects({'label': 'pencil'})
+Info: 
+Think: I have not seen pencil yet. Now I need to keep searching.
+OK.
+Act: go to dining table 2
+You arrive at the dining table (2). You see cell phone (1), dining table (2), key chain (1), laptop (1), pencil (2), television (2).
+Act: go to pencil 2
+You arrive at the pencil (2). You see cell phone (1), dining table (2), key chain (1), laptop (1), pencil (2), television (2).
+Act: pick up pencil 2
+You pick up pencil (2). You hold pencil (2).
+Think: Now, I need to find and open shelf.
+OK.
+Query: find_objects({'label': 'shelf'})
+Info: [{'name_id_nl': 'shelf 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'kitchen 1'}, {'name_id_nl': 'shelf 2', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'kitchen 1'}, {'name_id_nl': 'shelf 3', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'kitchen 1'}]
+Think: Shelf 1 is in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see cabinet (1), chair (1), countertop (1), dining table (1), fridge (1), garbage can (1), painting (1, 2, 3), shelf (1, 2, 3), shelving unit (1), television (1). You hold pencil (2).
+Act: go to shelf 1
+You arrive at the shelf (1). You see cabinet (1), shelf (1, 2, 3), shelving unit (1), television (1). You hold pencil (2).
+Act: put down pencil 2
+You put pencil (2) in shelf (1).
+Think: Now I complete the task.
+OK.
+Act: done

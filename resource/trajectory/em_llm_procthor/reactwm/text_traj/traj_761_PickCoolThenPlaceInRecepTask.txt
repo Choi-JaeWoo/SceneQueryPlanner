@@ -1,0 +1,61 @@
+Your task is to: Chill a bowl in the fridge, then place it on the countertop afterwards.
+You are in the house, and there are 3 rooms: bedroom (1), kitchen (1), living room (1). You are in the middle of a bedroom (1). Looking quickly around the room, you see bed (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), garbage can (1), television (1).
+Think: To solve the task, I need to find and pick up bowl, find fridge, put down bowl in fridge briefly and pick up bowl, find countertop and put down bowl.
+OK.
+Think: First, I need to find and pick up bowl.
+OK.
+Query: recall location of bowl
+You have not seen bowl before.
+Think: I have not seen bowl yet. The bowl is more likely to appear in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see cabinet (1), countertop (1), fridge (1), house plant (1), painting (1, 2, 3), shelf (1, 2, 3), shelving unit (1).
+Think: In kitchen 1, the bowl is likely to appear in/on countertop 1, fridge 1. I can check each place one by one until I find bowl.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see bowl (1), countertop (1), painting (3), paper towel roll (1), spray bottle (1).
+Think: I find bowl 1. Now, I need to pick it up.
+OK.
+Act: go to bowl 1
+You arrive at the bowl (1). You see bowl (1), countertop (1), painting (3), paper towel roll (1), spray bottle (1).
+Act: pick up bowl 1
+You pick up bowl (1). You hold bowl (1).
+Think: Now, I need to find fridge.
+OK.
+Query: recall location of fridge
+You saw fridge 1 in kitchen 1.
+Think: Fridge 1 is in kitchen 1.
+OK.
+Act: go to fridge 1
+You arrive at the fridge (1). The fridge (1) is closed. You see fridge (1). You hold bowl (1).
+Think: Since fridge 1 is closed, I need to open it to put down bowl 1.
+OK.
+Act: open fridge 1
+You open fridge (1). You see fridge (1). You hold bowl (1).
+Act: put down bowl 1
+You put bowl (1) in fridge (1).
+Think: To make bowl 1 cold, I need to briefly close fridge 1 and then open it again.
+OK.
+Act: close fridge 1
+You close fridge (1).
+Act: open fridge 1
+You open fridge (1). You see bowl (1), fridge (1).
+Think: Now I need to pick up bowl 1 and find countertop.
+OK.
+Act: go to bowl 1
+You arrive at the bowl (1). You see bowl (1), fridge (1), painting (2).
+Act: pick up bowl 1
+You pick up bowl (1). You hold bowl (1).
+Think: Now, I need to find countertop and put down bowl 1.
+OK.
+Query: recall location of countertop
+You saw countertop 1 in kitchen 1.
+Think: Countertop 1 is in kitchen 1.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see countertop (1), painting (3), paper towel roll (1), spray bottle (1). You hold bowl (1).
+Act: put down bowl 1
+You put bowl (1) in countertop (1).
+Think: Now I complete task.
+OK.
+Act: done

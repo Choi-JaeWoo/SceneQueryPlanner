@@ -1,0 +1,2 @@
+Your task is to: Place a baseball bat, a basket ball, and a teddy bear together on the countertop.
+Max decision steps reached.

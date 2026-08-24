@@ -1,0 +1,2 @@
+Your task is to: Put one cutlery fork and a plate in the dishwasher and turn the dishwasher on.
+Max decision steps reached.

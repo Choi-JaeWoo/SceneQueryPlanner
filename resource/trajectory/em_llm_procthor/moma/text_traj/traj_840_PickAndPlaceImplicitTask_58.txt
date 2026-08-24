@@ -1,0 +1,7 @@
+Your task is to: Remove all objects from the side table and place them in the dresser.
+You arrive at the remote control (1). You see basket ball (1), bed (1), drawer (4), painting (2), pillow (1, 2), remote control (1), side table (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- bedroom 1: [painting 1, alarm clock 1, cell phone 1, cloth 1, credit card 1, pencil 1, pencil 2, statue 1, television 1, basket ball 1, bed 1, drawer 3, drawer 1, drawer 2, drawer 4, dresser 1, garbage can 1, painting 2, pillow 1, pillow 2, remote control 1, side table 1]
+Your 5 previous actions were: pick up cloth 1 (success), go to dresser 1 (success), put down cloth 1 (success), go to side table 1 (success), go to remote control 1 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I arrive at remote control 1. Now, I need to pick up remote control 1.
+Act: pick up remote control 1

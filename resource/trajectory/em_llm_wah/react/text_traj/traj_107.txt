@@ -1,0 +1,199 @@
+Your task is to: Put a pudding and a cupcake and a juice on the coffee table
+You are in the house, and there are 4 rooms: bathroom 1, bedroom 1, kitchen 1, living room 1. You are in the middle of a living room 1. Looking quickly around the room, you see bookshelf 3, chair 2, closet 1, coffee table 2, computer 2, desk 2, sofa 2, tv 1.
+Think: To solve the task, I need to find and pick up pudding, find and pick up cupcake, find and pick up juice, find coffee table and put down pudding, find coffee table and put down cupcake, find coffee table and put down juice.
+OK.
+Think: First, I need to find and pick up pudding. The pudding is more likely to appear in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen 1. Looking quickly around the room, you see bench (1, 2), bookshelf 1, dishwasher 1, faucet 2, fridge 1, garbage can 1, kitchen cabinet (1, 2, 3, 4, 5, 6, 7, 8), kitchen counter (1, 3), kitchen table 1, microwave oven 1, sink 2, stove 1, toaster 1.
+Think: In kitchen 1, the pudding is likely to appear in/on dishwasher 1, fridge 1, kitchen cabinet (1, 2, 3, 4, 5, 6, 7, 8), kitchen counter (1, 2, 3), kitchen table 1. I can check each place one by one until I find it.
+OK.
+Act: go to dishwasher 1
+You arrive at the dishwasher 1. The dishwasher 1 is closed. You see coffee pot 1, dishwasher 1, kitchen cabinet (6, 7), microwave oven 1, toaster 1.
+Act: open dishwasher 1
+You open dishwasher 1. You see coffee pot 1, dishwasher 1, kitchen cabinet (6, 7), kitchen counter 2, microwave oven 1, toaster 1
+Act: go to fridge 1
+You arrive at the fridge 1. The fridge 1 is closed. You see bench 1, fridge 1, kitchen table 1.
+Act: open fridge 1
+You open fridge 1. You see bench 1, cupcake 1, fridge 1, kitchen table 1, pudding 1
+Think: I find pudding 1. Now, I need to pick it up.
+OK.
+Act: pick up pudding 1
+You pick up pudding 1. You hold pudding 1.
+Think: Now, I need to find and pick up cupcake. In kitchen 1, the cupcake is likely to appear in/on dishwasher 1, fridge 1, kitchen cabinet (1, 2, 3, 4, 5, 6, 7, 8), kitchen counter (1, 2, 3), kitchen table 1. I can check each place one by one until I find cupcake.
+OK.
+Act: go to kitchen cabinet 1
+You arrive at the kitchen cabinet 1. The kitchen cabinet 1 is closed. You see chicken 1, cooking pot 1, cutlery knife (1, 2), cutlets 1, dishwashing liquid 1, faucet 2, frying pan 1, kitchen cabinet (1, 2, 8), kitchen counter (1, 2), pudding 1, sink 2, stove 1. You hold pudding 1.
+Act: open kitchen cabinet 1
+You open kitchen cabinet 1. You see chicken 1, cooking pot 1, cutlery knife (1, 2), cutlets 1, dishwashing liquid 1, faucet 2, frying pan 1, kitchen cabinet (1, 2, 8), kitchen counter (1, 2), pudding 1, sink 2, stove 1 You hold pudding 1.
+Act: go to kitchen cabinet 2
+You arrive at the kitchen cabinet 2. The kitchen cabinet 2 is closed. You see bowl (1, 2, 3, 4, 5), chicken 1, cooking pot 1, cutlery knife (1, 2), cutlets 1, dishwashing liquid 1, faucet 2, kitchen cabinet (1, 2, 3), kitchen counter 1, pudding 1, sink 2, stove 1. You hold pudding 1.
+Act: open kitchen cabinet 2
+You open kitchen cabinet 2. You see bowl (1, 2, 3, 4, 5), chicken 1, cooking pot 1, cutlery knife (1, 2), cutlets 1, dishwashing liquid 1, faucet 2, kitchen cabinet (1, 2, 3), kitchen counter 1, pudding 1, sink 2, stove 1 You hold pudding 1.
+Act: go to kitchen cabinet 3
+You arrive at the kitchen cabinet 3. The kitchen cabinet 3 is closed. You see bowl (1, 2, 3, 4, 5), chicken 1, cutlery knife (1, 2), cutlets 1, dishwashing liquid 1, faucet 2, kitchen cabinet (1, 2, 3, 4), kitchen counter 1, plate (1, 2, 3, 4), pudding 1, sink 2. You hold pudding 1.
+Act: open kitchen cabinet 3
+You open kitchen cabinet 3. You see bowl (1, 2, 3, 4, 5), chicken 1, cutlery knife (1, 2), cutlets 1, dishwashing liquid 1, faucet 2, kitchen cabinet (1, 2, 3, 4), kitchen counter 1, plate (1, 2, 3, 4), pudding 1, sink 2 You hold pudding 1.
+Act: go to kitchen cabinet 4
+You arrive at the kitchen cabinet 4. The kitchen cabinet 4 is closed. You see bowl (1, 2, 3, 4, 5), cupcake 1, dishwashing liquid 1, faucet 2, fridge 1, kitchen cabinet (2, 3, 4), kitchen counter (1, 3), plate (1, 2, 3, 4), pudding 1, sink 2. You hold pudding 1.
+Act: open kitchen cabinet 4
+You open kitchen cabinet 4. You see bowl (1, 2, 3, 4, 5), cupcake 1, dishwashing liquid 1, faucet 2, fridge 1, kitchen cabinet (2, 3, 4), kitchen counter (1, 3), plate (1, 2, 3, 4), pudding 1, sink 2 You hold pudding 1.
+Act: go to kitchen cabinet 5
+You arrive at the kitchen cabinet 5. The kitchen cabinet 5 is closed. You see coffee pot 1, dishwasher 1, kitchen cabinet (5, 6), kitchen counter 2, microwave oven 1, pudding 1. You hold pudding 1.
+Act: open kitchen cabinet 5
+You open kitchen cabinet 5. You see coffee pot 1, dishwasher 1, juice 1, kitchen cabinet (5, 6), kitchen counter 2, microwave oven 1, pudding (1, 2) You hold pudding 1.
+Think: I find cupcake 1. Now, I need to pick it up.
+OK.
+Act: pick up cupcake 1
+You can't pick up cupcake 1 because it's not close to you.
+Act: go to cupcake 1
+You arrive at the cupcake 1. You see cupcake 1, fridge 1, light switch 2, pudding 1. You hold pudding 1.
+Act: pick up cupcake 1
+You pick up cupcake 1. You hold cupcake 1, pudding 1.
+Think: Now, I need to find and pick up juice. In kitchen 1, the juice is likely to appear in/on dishwasher 1, fridge 1, kitchen cabinet (1, 2, 3, 4, 5, 6, 7, 8), kitchen counter (1, 2, 3), kitchen table 1. I can check each place one by one until I find juice.
+OK.
+Act: go to kitchen cabinet 6
+You arrive at the kitchen cabinet 6. The kitchen cabinet 6 is closed. You see coffee pot 1, cupcake 1, dishwasher 1, juice 1, kitchen cabinet (5, 6, 7), kitchen counter 2, microwave oven 1, pudding (1, 2), toaster 1. You hold cupcake 1, pudding 1.
+Act: open kitchen cabinet 6
+You can't open kitchen cabinet 6 because you don't have an empty hand.
+Act: put down cupcake 1
+You can't put cupcake 1 in kitchen cabinet 6 because the kitchen cabinet is closed.
+Act: put down pudding 1
+You can't put pudding 1 in kitchen cabinet 6 because the kitchen cabinet is closed.
+Act: go to kitchen cabinet 7
+You arrive at the kitchen cabinet 7. The kitchen cabinet 7 is closed. You see coffee pot 1, cupcake 1, dishwasher 1, juice 1, kitchen cabinet (5, 6, 7, 8), kitchen counter 2, microwave oven 1, pudding (1, 2), toaster 1. You hold cupcake 1, pudding 1.
+Act: open kitchen cabinet 7
+You can't open kitchen cabinet 7 because you don't have an empty hand.
+Act: go to kitchen cabinet 8
+You arrive at the kitchen cabinet 8. The kitchen cabinet 8 is closed. You see cooking pot 1, cupcake 1, dishwasher 1, frying pan 1, kitchen cabinet (6, 7, 8), kitchen counter 2, microwave oven 1, pudding 1, stove 1, toaster 1. You hold cupcake 1, pudding 1.
+Act: open kitchen cabinet 8
+You can't open kitchen cabinet 8 because you don't have an empty hand.
+Act: go to kitchen counter 1
+You arrive at the kitchen counter 1. You see bowl (1, 2, 3, 4, 5), chicken 1, cupcake 1, cutlets 1, dishwashing liquid 1, faucet 2, fridge 1, kitchen cabinet (1, 2, 3), kitchen counter 1, plate (1, 2, 3, 4), pudding 1, sink 2. You hold cupcake 1, pudding 1.
+Act: go to kitchen counter 2
+You arrive at the kitchen counter 2. You see coffee pot 1, cupcake 1, dishwasher 1, juice 1, kitchen cabinet (5, 6), kitchen counter 2, microwave oven 1, pudding (1, 2). You hold cupcake 1, pudding 1.
+Act: go to kitchen counter 3
+You arrive at the kitchen counter 3. You see bowl (1, 2, 3, 4, 5), cupcake 1, fridge 1, kitchen cabinet (3, 4), kitchen counter (1, 3), light switch 2, plate (1, 2, 3, 4), pudding 1. You hold cupcake 1, pudding 1.
+Think: I cannot find juice in kitchen 1. The juice is likely to appear in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room 1. Looking quickly around the room, you see bookshelf 3, chair 2, closet 1, coffee table 2, computer 2, desk 2, sofa 2, tv 1. You hold cupcake 1, pudding 1.
+Think: In living room 1, the juice is likely to appear in/on chair 2, coffee table 2, desk 2.
+OK.
+Act: go to chair 2
+You arrive at the chair 2. You see chair 2, computer 2, cupcake 1, desk 2, pudding 1. You hold cupcake 1, pudding 1.
+Act: go to coffee table 2
+You arrive at the coffee table 2. You see coffee table 2, cupcake 1, pudding 1, sofa 2. You hold cupcake 1, pudding 1.
+Act: go to desk 2
+You arrive at the desk 2. You see chair 2, computer 2, cupcake 1, desk 2, pudding 1. You hold cupcake 1, pudding 1.
+Think: I cannot find juice in living room 1. The juice is likely to appear in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom 1. Looking quickly around the room, you see bed 1, bookshelf 2, cabinet 1, chair 1, coffee table 1, computer 1, desk 1, nightstand (1, 2), sofa 1. You hold cupcake 1, pudding 1.
+Think: In bedroom 1, the juice is likely to appear in/on bed 1, bookshelf 2, cabinet 1, chair 1, coffee table 1, computer 1, desk 1, nightstand (1, 2), sofa 1.
+OK.
+Act: go to bed 1
+You arrive at the bed 1. You see bed 1, cupcake 1, nightstand 1, pudding 1. You hold cupcake 1, pudding 1.
+Act: go to bookshelf 2
+You arrive at the bookshelf 2. The bookshelf 2 is closed. You see bookshelf 2, cabinet 1, cell phone 2, cupcake 1, light switch 3, pudding 1. You hold cupcake 1, pudding 1.
+Act: open bookshelf 2
+You can't open bookshelf 2 because you don't have an empty hand.
+Act: go to cabinet 1
+You arrive at the cabinet 1. The cabinet 1 is closed. You see bookshelf 2, cabinet 1, cell phone 2, cupcake 1, pudding 1. You hold cupcake 1, pudding 1.
+Act: open cabinet 1
+You can't open cabinet 1 because you don't have an empty hand.
+Act: go to chair 1
+You arrive at the chair 1. You see chair 1, cupcake 1, pudding 1. You hold cupcake 1, pudding 1.
+Act: go to coffee table 1
+You arrive at the coffee table 1. You see bananas 1, bowl 7, coffee table 1, cupcake 1, lime 1, mug 1, plum (1, 2), pudding 1, water glass 2. You hold cupcake 1, pudding 1.
+Act: go to computer 1
+You arrive at the computer 1. You see chair 1, computer 1, cupcake 1, desk 1, pudding 1. You hold cupcake 1, pudding 1.
+Act: go to desk 1
+You arrive at the desk 1. You see chair 1, computer 1, cupcake 1, desk 1, pudding 1. You hold cupcake 1, pudding 1.
+Act: go to nightstand 1
+You arrive at the nightstand 1. The nightstand 1 is closed. You see bed 1, cupcake 1, nightstand 1, pudding 1. You hold cupcake 1, pudding 1.
+Act: open nightstand 1
+You can't open nightstand 1 because you don't have an empty hand.
+Act: go to nightstand 2
+You arrive at the nightstand 2. The nightstand 2 is closed. You see bed 1, chair 1, cupcake 1, face cream 2, nightstand 2, pudding 1. You hold cupcake 1, pudding 1.
+Act: open nightstand 2
+You can't open nightstand 2 because you don't have an empty hand.
+Act: go to sofa 1
+You arrive at the sofa 1. You see bananas 1, bowl 7, coffee table 1, cupcake 1, lime 1, mug 1, plum (1, 2), pudding 1, sofa 1, water glass 2. You hold cupcake 1, pudding 1.
+Think: I cannot find juice in bedroom 1. The juice is likely to appear in bathroom 1.
+OK.
+Act: go to bathroom 1
+You move to the bathroom 1. Looking quickly around the room, you see bathroom cabinet 1, bathroom counter 1, faucet 1, sink 1, toilet 1, washing machine 1. You hold cupcake 1, pudding 1.
+Think: In bathroom 1, the juice is likely to appear in/on bathroom cabinet 1, bathroom counter 1, faucet 1, sink 1, toilet 1, washing machine 1.
+OK.
+Act: go to bathroom cabinet 1
+You arrive at the bathroom cabinet 1. The bathroom cabinet 1 is closed. You see bar soap 1, bathroom cabinet 1, bathroom counter 1, cupcake 1, face cream 1, faucet 1, pudding 1, sink 1, water glass 1. You hold cupcake 1, pudding 1.
+Act: open bathroom cabinet 1
+You can't open bathroom cabinet 1 because you don't have an empty hand.
+Act: go to bathroom counter 1
+You arrive at the bathroom counter 1. You see bathroom cabinet 1, bathroom counter 1, cupcake 1, face cream 1, faucet 1, pudding 1, sink 1, water glass 1. You hold cupcake 1, pudding 1.
+Act: go to faucet 1
+You arrive at the faucet 1. You see bar soap 1, bathroom cabinet 1, bathroom counter 1, cupcake 1, face cream 1, faucet 1, pudding 1, sink 1, water glass 1. You hold cupcake 1, pudding 1.
+Act: go to sink 1
+You arrive at the sink 1. You see bar soap 1, bathroom cabinet 1, bathroom counter 1, cupcake 1, face cream 1, faucet 1, pudding 1, sink 1, water glass 1. You hold cupcake 1, pudding 1.
+Act: go to toilet 1
+You arrive at the toilet 1. The toilet 1 is closed. You see cupcake 1, light switch 1, pudding 1, toilet 1. You hold cupcake 1, pudding 1.
+Act: open toilet 1
+You can't open toilet 1 because you don't have an empty hand.
+Act: go to washing machine 1
+You arrive at the washing machine 1. The washing machine 1 is closed. You see bar soap 1, bathroom cabinet 1, bathroom counter 1, cupcake 1, pudding 1, washing machine 1. You hold cupcake 1, pudding 1.
+Act: open washing machine 1
+You can't open washing machine 1 because you don't have an empty hand.
+Think: I cannot find juice in bathroom 1. The juice is likely to appear in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen 1. Looking quickly around the room, you see bench (1, 2), bookshelf 1, dishwasher 1, faucet 2, fridge 1, garbage can 1, kitchen cabinet (1, 2, 3, 4, 5, 6, 7, 8), kitchen counter (1, 2, 3), kitchen table 1, microwave oven 1, sink 2, stove 1, toaster 1. You hold cupcake 1, pudding 1.
+Think: In kitchen 1, the juice is likely to appear in/on dishwasher 1, fridge 1, kitchen cabinet (1, 2, 3, 4, 5, 6, 7, 8), kitchen counter (1, 2, 3), kitchen table 1. I can check each place one by one until I find juice.
+OK.
+Act: go to dishwasher 1
+You arrive at the dishwasher 1. The dishwasher 1 is open. You see coffee pot 1, cupcake 1, dishwasher 1, kitchen cabinet (5, 6, 7), kitchen counter 2, microwave oven 1, pudding (1, 2), toaster 1. You hold cupcake 1, pudding 1.
+Act: go to fridge 1
+You arrive at the fridge 1. The fridge 1 is open. You see bench 1, cupcake 1, fridge 1, kitchen table 1, pudding 1. You hold cupcake 1, pudding 1.
+Act: go to kitchen cabinet 1
+You arrive at the kitchen cabinet 1. The kitchen cabinet 1 is open. You see chicken 1, cooking pot 1, cupcake 1, cutlery knife (1, 2), cutlets 1, dishwashing liquid 1, faucet 2, frying pan 1, kitchen cabinet (1, 2, 8), kitchen counter (1, 2), pudding 1, sink 2, stove 1. You hold cupcake 1, pudding 1.
+Act: go to kitchen cabinet 2
+You arrive at the kitchen cabinet 2. The kitchen cabinet 2 is open. You see bowl (1, 2, 3, 4, 5), chicken 1, cooking pot 1, cupcake 1, cutlery knife (1, 2), cutlets 1, dishwashing liquid 1, faucet 2, kitchen cabinet (1, 2, 3), kitchen counter 1, pudding 1, sink 2, stove 1. You hold cupcake 1, pudding 1.
+Act: go to kitchen cabinet 3
+You arrive at the kitchen cabinet 3. The kitchen cabinet 3 is open. You see bowl (1, 2, 3, 4, 5), chicken 1, cupcake 1, cutlery knife (1, 2), cutlets 1, dishwashing liquid 1, faucet 2, kitchen cabinet (1, 2, 3, 4), kitchen counter 1, plate (1, 2, 3, 4), pudding 1, sink 2. You hold cupcake 1, pudding 1.
+Act: go to kitchen cabinet 4
+You arrive at the kitchen cabinet 4. The kitchen cabinet 4 is open. You see bowl (1, 2, 3, 4, 5), cupcake 1, dishwashing liquid 1, faucet 2, fridge 1, kitchen cabinet (2, 3, 4), kitchen counter (1, 3), plate (1, 2, 3, 4), pudding 1, sink 2. You hold cupcake 1, pudding 1.
+Act: go to kitchen cabinet 5
+You arrive at the kitchen cabinet 5. The kitchen cabinet 5 is open. You see coffee pot 1, cupcake 1, dishwasher 1, juice 1, kitchen cabinet (5, 6), kitchen counter 2, microwave oven 1, pudding (1, 2). You hold cupcake 1, pudding 1.
+Think: I find juice 1. Now, I need to pick it up.
+OK.
+Act: pick up juice 1
+You can't pick up juice 1 because you don't have an empty hand.
+Act: put down cupcake 1
+You put cupcake 1 in kitchen cabinet 5. You hold pudding 1.
+Act: pick up juice 1
+You pick up juice 1. You hold juice 1, pudding 1.
+Think: Now, I need to find coffee table and put down pudding, find coffee table and put down cupcake, find coffee table and put down juice.
+OK.
+Act: go to living room 1
+You move to the living room 1. Looking quickly around the room, you see bookshelf 3, chair 2, closet 1, coffee table 2, computer 2, desk 2, sofa 2, tv 1. You hold juice 1, pudding 1.
+Act: go to coffee table 2
+You arrive at the coffee table 2. You see coffee table 2, juice 1, pudding 1, sofa 2. You hold juice 1, pudding 1.
+Act: put down pudding 1
+You put pudding 1 on coffee table 2. You hold juice 1.
+Act: go to kitchen 1
+You move to the kitchen 1. Looking quickly around the room, you see bench (1, 2), bookshelf 1, dishwasher 1, faucet 2, fridge 1, garbage can 1, kitchen cabinet (1, 2, 3, 4, 5, 6, 7, 8), kitchen counter (1, 2, 3), kitchen table 1, microwave oven 1, sink 2, stove 1, toaster 1. You hold juice 1.
+Act: go to kitchen cabinet 5
+You arrive at the kitchen cabinet 5. The kitchen cabinet 5 is open. You see coffee pot 1, cupcake 1, dishwasher 1, juice 1, kitchen cabinet (5, 6), kitchen counter 2, microwave oven 1, pudding 2. You hold juice 1.
+Act: pick up cupcake 1
+You pick up cupcake 1. You hold cupcake 1, juice 1.
+Act: go to living room 1
+You move to the living room 1. Looking quickly around the room, you see bookshelf 3, chair 2, closet 1, coffee table 2, computer 2, desk 2, sofa 2, tv 1. You hold cupcake 1, juice 1.
+Act: go to coffee table 2
+You arrive at the coffee table 2. You see coffee table 2, cupcake 1, juice 1, pudding 1, sofa 2. You hold cupcake 1, juice 1.
+Act: put down cupcake 1
+You put cupcake 1 on coffee table 2. You hold juice 1.
+Act: put down juice 1
+You put juice 1 on coffee table 2.
+Think: Now I complete the task.
+OK.
+Act: done

@@ -1,0 +1,114 @@
+Your task is to: Place the cloth in the sink basin after you have cleaned it.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a bathroom (1). Looking quickly around the room, you see garbage can (1), plunger (1), sink (1), sink basin (1), toilet (1).
+Think: To solve the task, I need to find and pick up cloth, put it in sink basin and turn on faucet, pick up and put down cloth in sink basin.
+OK.
+Think: First, I need to find and pick up cloth. The cloth is more likely to appear in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see bed (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), painting (1, 2, 3), television (1).
+Think: In bedroom 1, the cloth is likely to appear in/on bed 1, drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser 1. I can check each place one by one until I find cloth.
+OK.
+Act: go to bed 1
+You arrive at the bed (1). You see CD (1), baseball bat (1), basket ball (1), bed (1), book (1, 2), bowl (1), cell phone (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), laptop (1), pillow (1), watch (1).
+Act: go to drawer 1
+You arrive at the drawer (1). The drawer (1) is closed. You see CD (1), baseball bat (1), basket ball (1), bed (1), book (1, 2), bowl (1), cell phone (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), laptop (1), pillow (1), watch (1).
+Act: open drawer 1
+You open drawer (1). You see CD (1), baseball bat (1), basket ball (1), bed (1), book (1, 2), bowl (1), cell phone (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), laptop (1), pen (1), pillow (1), watch (1).
+Act: go to drawer 2
+You arrive at the drawer (2). The drawer (2) is closed. You see CD (1), baseball bat (1), basket ball (1), bed (1), book (1, 2), bowl (1), cell phone (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), laptop (1), pen (1), pillow (1), watch (1).
+Act: open drawer 2
+You open drawer (2). You see CD (1), baseball bat (1), basket ball (1), bed (1), book (1, 2), bowl (1), cell phone (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), laptop (1), pen (1), pillow (1), watch (1).
+Act: go to drawer 3
+You arrive at the drawer (3). The drawer (3) is closed. You see CD (1), baseball bat (1), basket ball (1), bed (1), book (1, 2), bowl (1), cell phone (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), laptop (1), pen (1), pillow (1), watch (1).
+Act: open drawer 3
+You open drawer (3). You see CD (1), baseball bat (1), basket ball (1), bed (1), book (1, 2), bowl (1), cell phone (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), laptop (1), pen (1), pillow (1), watch (1).
+Act: go to drawer 4
+You arrive at the drawer (4). The drawer (4) is closed. You see CD (1), baseball bat (1), basket ball (1), bed (1), book (1, 2), bowl (1), cell phone (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), laptop (1), pen (1), pillow (1), watch (1).
+Act: open drawer 4
+You open drawer (4). You see CD (1), baseball bat (1), basket ball (1), bed (1), book (1, 2), bowl (1), cell phone (1), credit card (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), laptop (1), pen (1), pillow (1), remote control (1), watch (1).
+Act: go to drawer 5
+You arrive at the drawer (5). The drawer (5) is closed. You see CD (1), baseball bat (1), basket ball (1), bed (1), book (1, 2), bowl (1), cell phone (1), credit card (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), laptop (1), pen (1), pillow (1), remote control (1), watch (1).
+Act: open drawer 5
+You open drawer (5). You see CD (1), baseball bat (1), basket ball (1), bed (1), book (1, 2), bowl (1), cell phone (1), credit card (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), laptop (1), pen (1), pillow (1), remote control (1), watch (1).
+Act: go to drawer 6
+You arrive at the drawer (6). The drawer (6) is closed. You see CD (1), basket ball (1), book (1, 2), bowl (1), cell phone (1), credit card (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), pen (1), remote control (1), watch (1).
+Act: open drawer 6
+You open drawer (6). You see CD (1), basket ball (1), book (1, 2), bowl (1), cell phone (1), credit card (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), pen (1), remote control (1), watch (1).
+Act: go to drawer 7
+You arrive at the drawer (7). The drawer (7) is closed. You see CD (1), basket ball (1), book (1, 2), bowl (1), cell phone (1), credit card (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), pen (1), remote control (1), watch (1).
+Act: open drawer 7
+You open drawer (7). You see CD (1), basket ball (1), book (1, 2), bowl (1), cell phone (1), credit card (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), pen (1), remote control (1), watch (1).
+Act: go to drawer 8
+You arrive at the drawer (8). The drawer (8) is closed. You see CD (1), basket ball (1), book (1, 2), bowl (1), cell phone (1), credit card (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), pen (1), remote control (1), watch (1).
+Act: open drawer 8
+You open drawer (8). You see CD (1), basket ball (1), book (1, 2), bowl (1), cell phone (1), credit card (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), pen (1), remote control (1), watch (1).
+Act: go to drawer 9
+You arrive at the drawer (9). The drawer (9) is closed. You see CD (1), basket ball (1), book (1, 2), bowl (1), cell phone (1), credit card (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), pen (1), remote control (1), watch (1).
+Act: open drawer 9
+You open drawer (9). You see CD (1), basket ball (1), book (1, 2), bowl (1), cell phone (1), credit card (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), pen (1), remote control (1), watch (1).
+Act: go to drawer 10
+You arrive at the drawer (10). The drawer (10) is closed. You see CD (1), basket ball (1), book (1, 2), bowl (1), cell phone (1), credit card (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), pen (1), remote control (1), watch (1).
+Act: open drawer 10
+You open drawer (10). You see CD (1), basket ball (1), book (1, 2), bowl (1), cell phone (1), credit card (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), pen (1), remote control (1), watch (1).
+Act: go to dresser 1
+You arrive at the dresser (1). You see CD (1), basket ball (1), bed (1), book (1, 2), bowl (1), cell phone (1), credit card (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), pen (1), pillow (1), remote control (1), watch (1).
+Think: There is no cloth in bedroom 1. I need to move to kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see countertop (1), fridge (1), house plant (2), painting (4).
+Think: In kitchen 1, the cloth is likely to appear in/on countertop 1, fridge 1. I can check each place one by one until I find cloth.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see bottle (1), bread (1), butter knife (1, 2), cell phone (2, 3), coffee machine (1), countertop (1), cup (1), egg (2), fork (1, 2), microwave (1), painting (4), paper towel roll (1), pepper shaker (1), spoon (1), spray bottle (2), wine bottle (1).
+Act: go to fridge 1
+You arrive at the fridge (1). The fridge (1) is closed. You see fridge (1), painting (4).
+Act: open fridge 1
+You open fridge (1). You see egg (1), fridge (1), lettuce (1), painting (4).
+Think: There is no cloth in kitchen 1. I need to move to living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), box (1), dining table (1), drawer (11, 12), shelf (1), side table (1), sofa (1).
+Think: In living room 1, the cloth is likely to appear in/on box 1, dining table 1, drawer (11, 12), shelf 1, side table 1, sofa 1. I can check each place one by one until I find cloth.
+OK.
+Act: go to box 1
+You arrive at the box (1). The box (1) is closed. You see faucet (1), plunger (1), sink (1), sink basin (1).
+Act: open toilet 1
+You open toilet (1). You see cloth (1), faucet (1), plunger (1), sink (1), sink basin (1), spray bottle (1), toilet paper (1).
+Think: I find cloth 1. Now, I need to pick it up.
+OK.
+Act: go to cloth 1
+You arrive at the cloth (1). You see cloth (1), sink basin (1), spray bottle (1), toilet (1), toilet paper (1).
+Act: pick up cloth 1
+You pick up cloth (1). You hold cloth (1).
+Think: Now, I need to find sink basin. The sink basin is more likely to appear in bathroom 1.
+OK.
+Act: go to bathroom 1
+(controller) Teleport to room bathroom failed: InvalidOperationException: Cannot teleport due to hand object collision.. trace:   at UnityStandardAssets.Characters.FirstPerson.PhysicsRemoteFPSAgentController.TeleportFull (UnityEngine.Vector3 position, UnityEngine.Vector3 rotation, System.Single horizon, System.Boolean standing, System.Boolean forceAction) [0x0017e] in <40d6a6c54fa349fab67f7470c3432f83>:0 
+  at UnityStandardAssets.Characters.FirstPerson.PhysicsRemoteFPSAgentController.TeleportFull (System.Single x, System.Single y, System.Single z, UnityEngine.Vector3 rotation, System.Single horizon, System.Boolean standing, System.Boolean forceAction) [0x00009] in <40d6a6c54fa349fab67f7470c3432f83>:0 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00032] in <695d1cc93cca45069c528c15c9fdd749>:0 
+Act: go to sink basin 1
+You arrive at the sink basin (1). You see faucet (1), plunger (1), sink (1), sink basin (1). You hold cloth (1).
+Think: Now, I need to put down cloth 1.
+OK.
+Act: put down cloth 1
+You put cloth (1) in sink basin (1).
+Think: Now, I need to turn on faucet 1 briefly and turn off to wash cloth 1.
+OK.
+Act: turn on faucet 1
+You turn on faucet (1).
+Act: turn off faucet 1
+You turn off faucet (1).
+Think: Now, I need to pick up cloth 1 and find sink basin.
+OK.
+Act: pick up cloth 1
+You pick up cloth (1). You hold cloth (1).
+Act: go to sink basin 1
+You arrive at the sink basin (1). You see faucet (1), plunger (1), sink (1), sink basin (1). You hold cloth (1).
+Think: Now, I need to put down cloth 1.
+OK.
+Act: put down cloth 1
+You put cloth (1) in sink basin (1).
+Think: Now I complete the task.
+OK.
+Act: done

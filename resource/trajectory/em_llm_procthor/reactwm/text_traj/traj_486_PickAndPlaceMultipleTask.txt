@@ -1,0 +1,47 @@
+Your task is to: Collect a key chain and a cell phone and place them in the box.
+You are in the house, and there are 1 rooms: living room (1). You are in the middle of a living room (1). Looking quickly around the room, you see box (1), dining table (1), house plant (1), painting (1, 2), television (1).
+Think: To solve the task, I need to find and pick up key chain, then put it in box. And I need to find and pick up cell phone, then put it in box.
+OK.
+Think: First, I need to find and pick up key chain.
+OK.
+Query: recall location of key chain
+You have not seen key chain before.
+Think: I have not seen key chain yet. The key chain is more likely to appear in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see box (1), dining table (1), house plant (1), painting (1, 2), television (1).
+Think: In living room 1, the key chain is likely to appear in/on box 1, dining table 1, house plant 1, painting (1, 2), television 1. I can check each place one by one until I find key chain.
+OK.
+Act: go to box 1
+You arrive at the box (1). You see box (1), candle (1), cell phone (1), house plant (1), key chain (1), newspaper (1), painting (2), plate (1), television (1).
+Think: I find key chain 1. Now, I need to pick it up.
+OK.
+Act: go to key chain 1
+You arrive at the key chain (1). You see bowl (1), box (1, 2), candle (1), cell phone (1), dining table (1), house plant (1), key chain (1), laptop (1), newspaper (1), painting (2), plate (1), television (1).
+Act: pick up key chain 1
+You pick up key chain (1). You hold key chain (1).
+Think: Now, I need to find box and put down key chain 1.
+OK.
+Act: go to box 1
+You arrive at the box (1). You see box (1), candle (1), cell phone (1), house plant (1), newspaper (1), painting (2), plate (1), television (1). You hold key chain (1).
+Act: put down key chain 1
+You put key chain (1) in box (1).
+Think: Now, I need to find and pick up cell phone.
+OK.
+Query: recall location of cell phone
+You saw cell phone 1 near box 1 in living room 1.
+Think: Cell phone 1 is near box 1 in living room 1.
+OK.
+Act: go to cell phone 1
+You arrive at the cell phone (1). You see bowl (1), box (1, 2), candle (1), cell phone (1), dining table (1), house plant (1), key chain (1), laptop (1), newspaper (1), painting (2), plate (1), television (1).
+Act: pick up cell phone 1
+You pick up cell phone (1). You hold cell phone (1).
+Think: Now, I need to find box and put down cell phone 1.
+OK.
+Act: go to box 1
+You arrive at the box (1). You see box (1), candle (1), house plant (1), key chain (1), newspaper (1), painting (2), plate (1), television (1). You hold cell phone (1).
+Act: put down cell phone 1
+You put cell phone (1) in box (1).
+Think: Now I complete the task.
+OK.
+Act: done

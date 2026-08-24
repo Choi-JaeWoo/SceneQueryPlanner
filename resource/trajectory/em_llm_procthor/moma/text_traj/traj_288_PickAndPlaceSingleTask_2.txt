@@ -1,0 +1,9 @@
+Your task is to: Pick up a pencil and put it in the drawer.
+You move to the bedroom (1). Looking quickly around the room, you see baseball bat (1), bed (1), desk (1), drawer (1, 2, 3, 4, 5, 6), dresser (1), dumbbell (1), painting (1, 2). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- bedroom 1: [baseball bat 1, painting 1, painting 2, (bed 1), (desk 1), (drawer 6), (drawer 5), (drawer 4), (drawer 3), (drawer 2), (drawer 1), (dresser 1), key chain 1]
+- kitchen 1: [(chair 1), (countertop 1), cup 2, (dining table 1), (fridge 1), knife 2, mug 1, (stool 1), television 1]
+- (living room 1): [(box 1), (dining table 2), painting 4, painting 3, television 2]
+Your 1 previous actions were: go to bedroom 1 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I arrive at bedroom 1. I need to check unexplored areas in bedroom 1 to find pencil. Now, I need to check bed 1.
+Act: go to bed 1

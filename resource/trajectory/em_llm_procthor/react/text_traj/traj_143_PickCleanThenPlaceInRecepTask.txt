@@ -1,0 +1,99 @@
+Your task is to: Clean the egg and place it on the shelf.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a living room (1). Looking quickly around the room, you see TV stand (2), chair (1), dining table (2), drawer (15, 16, 17), garbage can (2), room decor (1), shelf (7, 8, 9, 10, 11, 12), side table (2, 3).
+Think: To solve the task, I need to find and pick up egg, find sink basin and put down egg, turn on faucet to wash egg, pick up egg and put it down on shelf.
+OK.
+Think: First, I need to find and pick up egg. The egg is more likely to appear in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see countertop (1), dining table (1), drawer (13, 14), fridge (1), house plant (1), side table (1).
+Think: In kitchen 1, the egg is likely to appear in/on countertop 1, dining table 1, drawer 13, drawer 14, fridge 1, house plant 1, side table 1. I can check each place one by one until I find egg.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see garbage can (1), painting (4), plunger (1), spray bottle (1), toilet (1), toilet paper (1).
+Act: go to toilet 1
+You arrive at the toilet (1). The toilet (1) is closed. You see garbage can (1), painting (4), spray bottle (1), toilet (1), toilet paper (1).
+Act: open toilet 1
+You open toilet (1). You see garbage can (1), painting (4), spray bottle (1), toilet (1), toilet paper (1).
+Act: go to toilet paper 1
+You arrive at the toilet paper (1). You see garbage can (1), painting (4), plunger (1), spray bottle (1), toilet (1), toilet paper (1).
+Act: go to plunger 1
+You arrive at the plunger (1). You see garbage can (1), plunger (1), spray bottle (1), toilet (1), toilet paper (1).
+Act: go to spray bottle 1
+You arrive at the spray bottle (1). You see garbage can (1), painting (4), plunger (1), spray bottle (1), toilet (1), toilet paper (1).
+Act: go to painting 4
+You arrive at the painting (4). You see garbage can (1), painting (4), plunger (1), spray bottle (1), toilet (1), toilet paper (1).
+Act: go to garbage can 1
+You arrive at the garbage can (1). You see garbage can (1), painting (4), plunger (1), spray bottle (1), toilet (1), toilet paper (1).
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see countertop (1), dining table (1), drawer (13, 14), fridge (1), house plant (1), side table (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see apple (1), dining table (1), dish sponge (1), drawer (13, 14), knife (1), lettuce (1), mug (1), paper towel roll (1), pencil (3), pepper shaker (1), plate (1), soap bottle (1), spoon (3), spray bottle (2), wine bottle (1).
+Act: go to drawer 13
+You arrive at the drawer (13). The drawer (13) is closed. You see apple (1), dining table (1), dish sponge (1), drawer (13, 14), knife (1), lettuce (1), mug (1), paper towel roll (1), pencil (3), pepper shaker (1), plate (1), side table (1), soap bottle (1), spoon (3), spray bottle (2), wine bottle (1).
+Act: open drawer 13
+You open drawer (13). You see apple (1), dining table (1), dish sponge (1), drawer (13, 14), knife (1), lettuce (1), mug (1), paper towel roll (1), pen (1), pencil (3), pepper shaker (1), plate (1), side table (1), soap bottle (1), spoon (3), spray bottle (2), wine bottle (1).
+Act: go to drawer 14
+You arrive at the drawer (14). The drawer (14) is closed. You see apple (1), dining table (1), dish sponge (1), drawer (13, 14), knife (1), lettuce (1), mug (1), paper towel roll (1), pen (1), pencil (3), pepper shaker (1), plate (1), side table (1), soap bottle (1), spoon (3), spray bottle (2), wine bottle (1).
+Act: open drawer 14
+You open drawer (14). You see apple (1), dining table (1), dish sponge (1), drawer (13, 14), knife (1), lettuce (1), mug (1), paper towel roll (1), pen (1), pencil (3), pepper shaker (1), plate (1), side table (1), soap bottle (1), spoon (3), spray bottle (2), wine bottle (1).
+Act: go to fridge 1
+You arrive at the fridge (1). The fridge (1) is closed. You see dining table (1), fridge (1), knife (1), lettuce (1), pencil (3), plate (1), spoon (3), wine bottle (1).
+Act: open fridge 1
+You open fridge (1). You see dining table (1), egg (3, 4), fridge (1), knife (1), lettuce (1, 2, 3), pencil (3), plate (1), potato (1), spoon (3), wine bottle (1).
+Think: I find egg 3. Now, I need to pick it up.
+OK.
+Act: go to egg 3
+You arrive at the egg (3). You see egg (3, 4), fridge (1), lettuce (2, 3), potato (1).
+Act: pick up egg 3
+Pick up action failed: The target object is not within the visible range.
+Think: I need to find another egg.
+OK.
+Act: go to egg 4
+You arrive at the egg (4). You see dining table (1), egg (3, 4), fridge (1), knife (1), lettuce (1, 2, 3), mug (1), pencil (3), plate (1), potato (1), spoon (3), wine bottle (1).
+Act: pick up egg 4
+Pick up action failed: The target object is not within the visible range.
+Think: I need to find another egg.
+OK.
+Act: go to house plant 1
+You arrive at the house plant (1). You see butter knife (1), egg (1), house plant (1), pencil (4), salt shaker (1), spoon (1).
+Think: I find egg 1. Now, I need to pick it up.
+OK.
+Act: go to egg 1
+You arrive at the egg (1). You see butter knife (1), cell phone (2), coffee machine (1), countertop (1), egg (1, 2), fork (1), house plant (1), lettuce (4), pencil (4), salt shaker (1), spoon (1, 2).
+Act: pick up egg 1
+You pick up egg (1). You hold egg (1).
+Think: Now, I need to find sink basin. The sink basin is more likely to appear in bathroom 1.
+OK.
+Act: go to bathroom 1
+You move to the bathroom (1). Looking quickly around the room, you see garbage can (1), painting (3, 4), plunger (1), sink (1), sink basin (1), toilet (1). You hold egg (1).
+Act: go to sink basin 1
+You arrive at the sink basin (1). You see faucet (1), painting (3), sink (1), sink basin (1). You hold egg (1).
+Think: Now, I need to put down egg 1.
+OK.
+Act: put down egg 1
+You put egg (1) in sink basin (1).
+Think: Now, I need to turn on faucet 1 briefly and turn off to wash egg 1.
+OK.
+Act: turn on faucet 1
+You turn on faucet (1).
+Act: turn off faucet 1
+You turn off faucet (1).
+Think: Now, I need to pick up egg 1 and find shelf.
+OK.
+Act: pick up egg 1
+You pick up egg (1). You hold egg (1).
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see countertop (1), dining table (1), drawer (13, 14), fridge (1), house plant (1), pen (1), side table (1). You hold egg (1).
+Act: go to side table 1
+You arrive at the side table (1). You see apple (1), dining table (1), dish sponge (1), drawer (13, 14), knife (1), lettuce (1), mug (1), paper towel roll (1), pen (1), pencil (3), pepper shaker (1), plate (1), side table (1), soap bottle (1), spoon (3), spray bottle (2), wine bottle (1). You hold egg (1).
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see countertop (1), dining table (1), drawer (13, 14), fridge (1), house plant (1), pen (1), side table (1). You hold egg (1).
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (2), chair (1), dining table (2), drawer (15, 16, 17), garbage can (2), room decor (1), shelf (7, 8, 9, 10, 11, 12), side table (2, 3). You hold egg (1).
+Act: go to shelf 7
+You arrive at the shelf (7). You see TV stand (2), book (3), bowl (2), cell phone (4), house plant (3), key chain (1), remote control (3, 4), room decor (1), shelf (7, 8, 9, 10, 11, 12), statue (2, 3), television (2). You hold egg (1).
+Act: put down egg 1
+You put egg (1) in shelf (7).
+Think: Now I complete task.
+OK.
+Act: done

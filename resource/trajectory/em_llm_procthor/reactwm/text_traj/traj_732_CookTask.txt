@@ -1,0 +1,55 @@
+Your task is to: Use the coffee machine to brew coffee into a mug and then place the mug on the countertop.
+You are in the house, and there are 6 rooms: bathroom (1, 2), bedroom (1, 2), kitchen (1), living room (1). You are in the middle of a bathroom (2). Looking quickly around the room, you see garbage can (3), painting (4), plunger (2), sink (2), sink basin (2), toilet (2), toilet paper (2).
+Think: To solve the task, I need to find and put mug in coffee machine, turn on coffee machine, and put mug on countertop.
+OK.
+Think: First, I need to find and pick up mug.
+OK.
+Query: recall location of mug
+You have not seen mug before.
+Think: I have not seen mug yet. The mug is more likely to appear in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see cabinet (1), chair (7, 8, 9, 10, 11, 12), countertop (1), dining table (2), fridge (1), shelf (1, 2, 3), shelving unit (1), side table (1).
+Think: In kitchen 1, the mug is likely to appear in/on countertop 1, dining table 2. I can check each place one by one until I find mug.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see apple (1), coffee machine (1), countertop (1), pepper shaker (1), plate (1), potato (2), soap bottle (2), spatula (1).
+Act: go to dining table 2
+You arrive at the dining table (2). You see bottle (1), chair (7, 8, 9, 10, 11, 12), cup (2), dining table (2), house plant (2), mug (2), pan (1), pot (1), wine bottle (1).
+Think: I find mug 2. Now, I need to pick it up.
+OK.
+Act: go to mug 2
+You arrive at the mug (2). You see bottle (1), chair (7, 8, 9, 10, 11), cup (2), dining table (2), house plant (2), mug (2), pan (1), pot (1), wine bottle (1).
+Act: pick up mug 2
+You pick up mug (2). You hold mug (2).
+Think: Now, I need to find coffee machine.
+OK.
+Query: recall location of coffee machine
+You saw coffee machine 1 near countertop 1 in kitchen 1.
+Think: Coffee machine 1 is near countertop 1 in kitchen 1.
+OK.
+Act: go to coffee machine 1
+You arrive at the coffee machine (1). You see apple (1), coffee machine (1), countertop (1), pepper shaker (1), plate (1), potato (2), soap bottle (2), spatula (1). You hold mug (2).
+Think: Now, I need to put down mug 2 in coffee machine 1.
+OK.
+Act: put down mug 2
+You put mug (2) in coffee machine (1).
+Think: Now, I need to turn on coffee machine 1 to brew the coffee.
+OK.
+Act: turn on coffee machine 1
+You turn on coffee machine (1).
+Think: Now, I need to turn off coffee machine 1 and pick up mug 2.
+OK.
+Act: turn off coffee machine 1
+You turn off coffee machine (1).
+Act: pick up mug 2
+You pick up mug (2). You hold mug (2).
+Think: Now, I need to put down mug 2 on countertop 1.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see apple (1), coffee machine (1), countertop (1), pepper shaker (1), plate (1), potato (2), soap bottle (2), spatula (1). You hold mug (2).
+Act: put down mug 2
+You put mug (2) in countertop (1).
+Think: Now I complete task.
+OK.
+Act: done

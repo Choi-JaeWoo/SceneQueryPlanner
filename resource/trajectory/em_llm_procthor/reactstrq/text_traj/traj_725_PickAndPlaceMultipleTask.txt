@@ -1,0 +1,73 @@
+Your task is to: Gather a pencil and a book, then set them on the diningtable.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a bathroom (1). Looking quickly around the room, you see garbage can (1), plunger (1), sink (1), sink basin (1), toilet (1), washing machine (1).
+Think: To solve the task, I need to find and pick up pencil, then put it on diningtable. And I need to find and pick up book, then put it on diningtable.
+OK.
+Think: First, I need to find and pick up pencil.
+OK.
+Query: find_objects({'label': 'pencil'})
+Info: 
+Think: I have not seen pencil yet. Now I need to check where to search. First, I will search living room 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'living room 1'})
+Info: TV stand 1, box (2, 3), dining table 1, shelf 4, sofa 1
+Think: In living room 1, the pencil is likely to appear in/on TV stand 1, box (2, 3), dining table 1, shelf 4, sofa 1. I can check each place one by one until I find pencil.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), dining table (1), dog bed (2), floor lamp (1), house plant (2), shelf (4), sofa (1).
+Act: go to TV stand 1
+You arrive at the TV stand (1). You see TV stand (1), book (1), box (3), dog bed (2), pencil (1, 2), shelf (4), sofa (1), television (1).
+Act: go to box 2
+You arrive at the box (2). The box (2) is open. You see bowl (1), box (2), dining table (1), laptop (1), newspaper (1), plate (2).
+Act: go to box 3
+You arrive at the box (3). The box (3) is closed. You see TV stand (1), book (1), box (3), dog bed (2), pencil (1, 2), shelf (4), sofa (1), television (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see bowl (1), box (2), dining table (1), dog bed (2), laptop (1), newspaper (1), plate (2).
+Act: go to shelf 4
+You arrive at the shelf (4). You see TV stand (1), book (1), box (3), dog bed (2), pencil (1, 2), shelf (4), sofa (1), television (1).
+Act: go to sofa 1
+You arrive at the sofa (1). You see TV stand (1), book (1), box (3), dog bed (2), floor lamp (1), pencil (1, 2), shelf (4), sofa (1), television (1).
+Think: I need to check whether I see pencil.
+OK.
+Query: find_objects({'label': 'pencil'})
+Info: [{'name_id_nl': 'pencil 2', 'node_type': 'object', 'properties': ['pickupable'], 'states': []}, {'name_id_nl': 'pencil 1', 'node_type': 'object', 'properties': ['pickupable'], 'states': []}]
+Query: get_edges_for_node({'node_id': 'pencil 2'})
+Info: [('pencil 2', 'shelf 4', 'ON'), ('pencil 2', 'book 1', 'CLOSE'), ('pencil 2', 'box 3', 'CLOSE'), ('pencil 2', 'pencil 1', 'CLOSE'), ('pencil 2', 'sofa 1', 'CLOSE'), ('pencil 2', 'television 1', 'CLOSE'), ('pencil 2', 'TV stand 1', 'CLOSE'), ('pencil 2', 'user 1', 'CLOSE'), ('pencil 2', 'living room 1', 'INSIDE'), ('book 1', 'pencil 2', 'CLOSE'), ('box 3', 'pencil 2', 'CLOSE'), ('pencil 1', 'pencil 2', 'CLOSE'), ('sofa 1', 'pencil 2', 'CLOSE'), ('television 1', 'pencil 2', 'CLOSE'), ('TV stand 1', 'pencil 2', 'CLOSE'), ('user 1', 'pencil 2', 'CLOSE')]
+Query: get_edges_for_node({'node_id': 'pencil 1'})
+Info: [('pencil 1', 'sofa 1', 'ON'), ('pencil 1', 'book 1', 'CLOSE'), ('pencil 1', 'box 3', 'CLOSE'), ('pencil 1', 'floor lamp 1', 'CLOSE'), ('pencil 1', 'pencil 2', 'CLOSE'), ('pencil 1', 'shelf 4', 'CLOSE'), ('pencil 1', 'television 1', 'CLOSE'), ('pencil 1', 'TV stand 1', 'CLOSE'), ('pencil 1', 'user 1', 'CLOSE'), ('pencil 1', 'living room 1', 'INSIDE'), ('book 1', 'pencil 1', 'CLOSE'), ('box 3', 'pencil 1', 'CLOSE'), ('floor lamp 1', 'pencil 1', 'CLOSE'), ('pencil 2', 'pencil 1', 'CLOSE'), ('shelf 4', 'pencil 1', 'CLOSE'), ('television 1', 'pencil 1', 'CLOSE'), ('TV stand 1', 'pencil 1', 'CLOSE'), ('user 1', 'pencil 1', 'CLOSE')]
+Think: Pencil 1 is on sofa 1 in living room 1. Pencil 2 is on shelf 4 in living room 1.
+OK.
+Act: go to sofa 1
+You arrive at the sofa (1). You see TV stand (1), book (1), box (3), dog bed (2), floor lamp (1), pencil (1, 2), shelf (4), sofa (1), television (1).
+Act: go to pencil 1
+You arrive at the pencil (1). You see TV stand (1), book (1), box (3), dog bed (2), floor lamp (1), pencil (1, 2), shelf (4), sofa (1), television (1).
+Act: pick up pencil 1
+You pick up pencil (1). You hold pencil (1).
+Think: Now, I need to find diningtable and put down pencil 1.
+OK.
+Act: go to dining table 1
+You arrive at the dining table (1). You see bowl (1), box (2), dining table (1), dog bed (2), laptop (1), newspaper (1), plate (2). You hold pencil (1).
+Act: put down pencil 1
+You put pencil (1) in dining table (1).
+Think: Now, I need to find and pick up book.
+OK.
+Query: find_objects({'label': 'book'})
+Info: [{'name_id_nl': 'book 1', 'node_type': 'object', 'properties': ['openable', 'pickupable'], 'states': []}]
+Query: get_edges_for_node({'node_id': 'book 1'})
+Info: [('book 1', 'sofa 1', 'ON'), ('book 1', 'box 3', 'CLOSE'), ('book 1', 'floor lamp 1', 'CLOSE'), ('book 1', 'pencil 2', 'CLOSE'), ('book 1', 'shelf 4', 'CLOSE'), ('book 1', 'television 1', 'CLOSE'), ('book 1', 'TV stand 1', 'CLOSE'), ('book 1', 'living room 1', 'INSIDE'), ('box 3', 'book 1', 'CLOSE'), ('floor lamp 1', 'book 1', 'CLOSE'), ('pencil 2', 'book 1', 'CLOSE'), ('shelf 4', 'book 1', 'CLOSE'), ('television 1', 'book 1', 'CLOSE'), ('TV stand 1', 'book 1', 'CLOSE')]
+Think: Book 1 is on sofa 1 in living room 1.
+OK.
+Act: go to sofa 1
+You arrive at the sofa (1). You see TV stand (1), book (1), box (3), dog bed (2), floor lamp (1), pencil (2), shelf (4), sofa (1), television (1).
+Act: go to book 1
+You arrive at the book (1). The book (1) is closed. You see TV stand (1), book (1), box (3), dog bed (2), floor lamp (1), pencil (2), shelf (4), sofa (1), television (1).
+Act: pick up book 1
+You pick up book (1). You hold book (1).
+Think: Now, I need to find diningtable and put down book 1.
+OK.
+Act: go to dining table 1
+You arrive at the dining table (1). You see bowl (1), box (2), dining table (1), dog bed (2), laptop (1), newspaper (1), pencil (1), plate (2). You hold book (1).
+Act: put down book 1
+You put book (1) in dining table (1).
+Think: Now I complete the task.
+OK.
+Act: done

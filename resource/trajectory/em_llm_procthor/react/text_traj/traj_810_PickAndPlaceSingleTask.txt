@@ -1,0 +1,27 @@
+Your task is to: Position a book on the countertop after lifting it.
+You are in the house, and there are 2 rooms: kitchen (1), living room (1). You are in the middle of a living room (1). Looking quickly around the room, you see TV stand (1), box (1), cart (1), dining table (2), dog bed (1), painting (3, 4), shelf (1), sofa (1).
+Think: To solve the task, I need to find and pick up book, then put it on countertop.
+OK.
+Think: First, I need to find and pick up book. The book is more likely to appear in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see chair (1), countertop (1), dining table (1), fridge (1), garbage can (1), painting (1, 2), television (1).
+Think: In kitchen 1, the book is likely to appear in/on chair 1, countertop 1, dining table 1, fridge 1, garbage can 1. I can check each place one by one until I find book.
+OK.
+Act: go to chair 1
+You arrive at the chair (1). You see book (1), chair (1), dining table (1), knife (1), pen (1), plate (1), toaster (1), wine bottle (1).
+Think: I find book 1. Now, I need to pick it up.
+OK.
+Act: go to book 1
+You arrive at the book (1). The book (1) is closed. You see book (1), bottle (1), bowl (1), chair (1), dining table (1), house plant (1), knife (1), mug (1), pan (1), pen (1), pepper shaker (1), potato (1), toaster (1), wine bottle (1).
+Act: pick up book 1
+You pick up book (1). You hold book (1).
+Think: Now, I need to find countertop and put down book 1.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see bottle (1), bowl (1), butter knife (1), coffee machine (1), countertop (1), cup (1), house plant (1), ladle (1, 2), mug (1), pan (1), pepper shaker (1), potato (1), soap bottle (1), spray bottle (1). You hold book (1).
+Act: put down book 1
+You put book (1) in countertop (1).
+Think: Now I complete the task.
+OK.
+Act: done

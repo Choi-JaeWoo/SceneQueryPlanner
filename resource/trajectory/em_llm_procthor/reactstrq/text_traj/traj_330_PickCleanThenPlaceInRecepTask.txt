@@ -1,0 +1,93 @@
+Your task is to: Clean the spoon and place it in the cabinet.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a bathroom (1). Looking quickly around the room, you see drawer (11, 12, 13, 14, 15, 16), dresser (2), garbage can (1), plunger (1), sink (1), sink basin (1), toilet (1), toilet paper (1).
+Think: To solve the task, I need to find and pick up spoon, put it in sink basin and turn on faucet, pick up and put down spoon in cabinet.
+OK.
+Think: First, I need to find and pick up spoon.
+OK.
+Query: find_objects({'label': 'spoon'})
+Info: 
+Think: I have not seen spoon yet. Now I need to check where to search. First, I will search kitchen 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'kitchen 1'})
+Info: chair (1, 2, 3, 4, 5, 6), countertop 1, dining table 1, fridge 1
+Think: In kitchen 1, the spoon is likely to appear in/on chair (1, 2, 3, 4, 5, 6), countertop 1, dining table 1, fridge 1. I can check each place one by one until I find spoon.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see chair (1, 2, 3, 4, 5, 6), countertop (1), dining table (1), fridge (1), house plant (2).
+Act: go to chair 1
+You arrive at the chair (1). You see book (2), cell phone (3), chair (1, 5, 6), dining table (1), mug (1), pen (2), plate (1), spoon (1), vase (2).
+Act: go to chair 2
+You arrive at the chair (2). You see book (3), butter knife (1), chair (2, 3, 4), pencil (1), spoon (1).
+Act: go to chair 3
+You arrive at the chair (3). You see book (3), butter knife (1), cell phone (3), chair (2, 3, 6), dining table (1), fridge (1), mug (1), pen (2), pencil (1), spoon (1), vase (2).
+Act: go to chair 4
+You arrive at the chair (4). You see book (2, 3), butter knife (1), cell phone (3), chair (1, 2, 4, 5), dining table (1), mug (1), pen (2), pencil (1), plate (1), spoon (1), vase (2).
+Act: go to chair 5
+You arrive at the chair (5). You see book (2, 3), butter knife (1), cell phone (3), chair (1, 4, 5), dining table (1), mug (1), pencil (1), plate (1), spoon (1).
+Act: go to chair 6
+You arrive at the chair (6). You see television (1).
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see chair (1, 2, 3, 4, 5, 6), countertop (1), dining table (1), fridge (1), house plant (2).
+Act: go to countertop 1
+You arrive at the countertop (1). You see coffee machine (1), countertop (1), credit card (2), pepper shaker (1), soap bottle (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see book (2, 3), butter knife (1), cell phone (3), chair (1, 2, 4, 5), dining table (1), mug (1), pen (2), pencil (1), plate (1), spoon (1), vase (2).
+Act: go to fridge 1
+You arrive at the fridge (1). The fridge (1) is closed. You see fridge (1).
+Act: open fridge 1
+You open fridge (1). You see apple (1), egg (1, 2), fridge (1), lettuce (1).
+Think: I need to check whether I see spoon.
+OK.
+Query: find_objects({'label': 'spoon'})
+Info: [{'name_id_nl': 'spoon 1', 'node_type': 'object', 'properties': ['pickupable'], 'states': []}]
+Query: get_edges_for_node({'node_id': 'spoon 1'})
+Info: [('spoon 1', 'dining table 1', 'ON'), ('spoon 1', 'book 2', 'CLOSE'), ('spoon 1', 'book 3', 'CLOSE'), ('spoon 1', 'butter knife 1', 'CLOSE'), ('spoon 1', 'cell phone 3', 'CLOSE'), ('spoon 1', 'chair 4', 'CLOSE'), ('spoon 1', 'chair 5', 'CLOSE'), ('spoon 1', 'chair 6', 'CLOSE'), ('spoon 1', 'chair 2', 'CLOSE'), ('spoon 1', 'chair 1', 'CLOSE'), ('spoon 1', 'chair 3', 'CLOSE'), ('spoon 1', 'mug 1', 'CLOSE'), ('spoon 1', 'pen 2', 'CLOSE'), ('spoon 1', 'pencil 1', 'CLOSE'), ('spoon 1', 'plate 1', 'CLOSE'), ('spoon 1', 'vase 2', 'CLOSE'), ('spoon 1', 'kitchen 1', 'INSIDE'), ('book 2', 'spoon 1', 'CLOSE'), ('book 3', 'spoon 1', 'CLOSE'), ('butter knife 1', 'spoon 1', 'CLOSE'), ('cell phone 3', 'spoon 1', 'CLOSE'), ('chair 4', 'spoon 1', 'CLOSE'), ('chair 5', 'spoon 1', 'CLOSE'), ('chair 6', 'spoon 1', 'CLOSE'), ('chair 2', 'spoon 1', 'CLOSE'), ('chair 1', 'spoon 1', 'CLOSE'), ('chair 3', 'spoon 1', 'CLOSE'), ('mug 1', 'spoon 1', 'CLOSE'), ('pen 2', 'spoon 1', 'CLOSE'), ('pencil 1', 'spoon 1', 'CLOSE'), ('plate 1', 'spoon 1', 'CLOSE'), ('vase 2', 'spoon 1', 'CLOSE')]
+Think: Spoon 1 is on dining table 1 in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see chair (1, 2, 3, 4, 5, 6), countertop (1), dining table (1), fridge (1), house plant (2).
+Act: go to dining table 1
+You arrive at the dining table (1). You see book (2, 3), butter knife (1), cell phone (3), chair (1, 2, 4, 5), dining table (1), mug (1), pen (2), pencil (1), plate (1), spoon (1), vase (2).
+Act: go to spoon 1
+You arrive at the spoon (1). You see book (2, 3), butter knife (1), cell phone (3), chair (1, 2, 4, 5), dining table (1), mug (1), pen (2), pencil (1), plate (1), spoon (1), vase (2).
+Act: pick up spoon 1
+You pick up spoon (1). You hold spoon (1).
+Think: Now, I need to find sink basin.
+OK.
+Query: find_objects({'label': 'sink basin'})
+Info: [{'name_id_nl': 'sink basin 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'bathroom 1'}]
+Think: Sink basin 1 is in bathroom 1.
+OK.
+Act: go to bathroom 1
+You move to the bathroom (1). Looking quickly around the room, you see drawer (11, 12, 13, 14, 15, 16), dresser (2), garbage can (1), plunger (1), sink (1), sink basin (1), toilet (1), toilet paper (1). You hold spoon (1).
+Act: go to sink basin 1
+You arrive at the sink basin (1). You see dish sponge (1), drawer (11, 12, 13, 14, 15, 16), dresser (2), faucet (1), sink (1), sink basin (1), soap bar (1), spray bottle (1), tissue box (1), toilet (1). You hold spoon (1).
+Act: put down spoon 1
+You put spoon (1) in sink basin (1).
+Think: Now, I need to turn on faucet 1 briefly and turn off to wash spoon 1.
+OK.
+Act: turn on faucet 1
+You turn on faucet (1).
+Act: turn off faucet 1
+You turn off faucet (1).
+Think: Now, I need to pick up spoon 1 and find cabinet.
+OK.
+Act: pick up spoon 1
+You pick up spoon (1). You hold spoon (1).
+Query: find_objects({'label': 'cabinet'})
+Info: [{'name_id_nl': 'cabinet 1', 'node_type': 'asset', 'properties': ['openable'], 'states': [], 'room': 'living room 1'}]
+Think: Cabinet 1 is in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see cabinet (1), dining table (2), painting (1, 2, 3, 4), shelf (1, 2, 3), shelving unit (1), sofa (1), television (2). You hold spoon (1).
+Act: go to cabinet 1
+You arrive at the cabinet (1). The cabinet (1) is closed. You see book (4), cabinet (1), pencil (2), plate (2), shelf (1, 2, 3), shelving unit (1), statue (1), vase (3). You hold spoon (1).
+Think: Since cabinet 1 is closed, I need to open it to put down spoon 1.
+OK.
+Act: open cabinet 1
+You open cabinet (1). You see book (4), box (1), cabinet (1), pencil (2), plate (2), shelf (1, 2, 3), shelving unit (1), statue (1), vase (3). You hold spoon (1).
+Act: put down spoon 1
+You put spoon (1) in cabinet (1).
+Think: Now I complete the task.
+OK.
+Act: done

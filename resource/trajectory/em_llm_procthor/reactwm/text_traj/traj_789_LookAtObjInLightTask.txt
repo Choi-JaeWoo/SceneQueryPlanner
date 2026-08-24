@@ -1,0 +1,65 @@
+Your task is to: Hold a pencil and turn on the floor lamp to examine it.
+You are in the house, and there are 6 rooms: bathroom (1, 2), bedroom (1, 2), kitchen (1), living room (1). You are in the middle of a bedroom (1). Looking quickly around the room, you see bed (1), chair (1), dining table (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), garbage can (1), house plant (1), television (1).
+Think: To solve the task, I need to find and pick up pencil, find and turn on floor lamp, examine pencil under the light of floor lamp.
+OK.
+Think: First, I need to find and pick up pencil.
+OK.
+Query: recall location of pencil
+You have not seen pencil before.
+Think: I have not seen pencil yet. The pencil is more likely to appear in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see bed (1), chair (1), dining table (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), garbage can (1), house plant (1), television (1).
+Think: In bedroom 1, the pencil is likely to appear in/on bed 1, chair 1, dining table 1, drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser 1, garbage can 1, house plant 1. I can check each place one by one until I find pencil.
+OK.
+Act: go to bed 1
+You arrive at the bed (1). You see bed (1), book (1), bowl (1), cell phone (2), house plant (1), laptop (1), pencil (1), pillow (1, 2), remote control (2), tennis racket (1).
+Think: I find pencil 1. Now, I need to pick it up.
+OK.
+Act: go to pencil 1
+You arrive at the pencil (1). You see book (1), bowl (1), cell phone (1, 2), chair (1), dining table (1), laptop (1), mug (1), pencil (1), remote control (2).
+Act: pick up pencil 1
+You pick up pencil (1). You hold pencil (1).
+Think: Now I need to find and turn on floor lamp.
+OK.
+Query: recall location of floor lamp
+You have not seen floor lamp before.
+Think: I have not seen floor lamp yet. The floor lamp is more likely to appear in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see dining table (2), drawer (19, 20, 21), dresser (3), television (2). You hold pencil (1).
+Think: In living room 1, the floor lamp is likely to appear in/on dining table 2, drawer (19, 20, 21), dresser 3. I can check each place one by one until I find floor lamp.
+OK.
+Act: go to dining table 2
+You arrive at the dining table (2). You see bowl (3), candle (3), cell phone (4), dining table (2), newspaper (1), pen (4), plate (1). You hold pencil (1).
+Act: go to drawer 19
+You arrive at the drawer (19). The drawer (19) is closed. You see candle (3), credit card (4), dining table (2), drawer (19, 20, 21), dresser (3), key chain (2), newspaper (1), pen (4, 5), pencil (7), plate (1), television (2), vase (2). You hold pencil (1).
+Act: open drawer 19
+You open drawer (19). You see candle (3), credit card (4), dining table (2), drawer (19, 20, 21), dresser (3), key chain (2), newspaper (1), pen (4, 5), pencil (7), plate (1), television (2), vase (2). You hold pencil (1).
+Act: go to drawer 20
+You arrive at the drawer (20). The drawer (20) is closed. You see bowl (3), candle (3), cell phone (4), credit card (4), dining table (2), drawer (19, 20, 21), dresser (3), key chain (2), newspaper (1), pen (4, 5), pencil (7), plate (1), television (2), vase (2). You hold pencil (1).
+Act: open drawer 20
+You open drawer (20). You see bowl (3), candle (3), cell phone (4), credit card (4), dining table (2), drawer (19, 20, 21), dresser (3), key chain (2), newspaper (1), pen (4, 5), pencil (7), plate (1), television (2), vase (2). You hold pencil (1).
+Act: go to drawer 21
+You arrive at the drawer (21). The drawer (21) is closed. You see bowl (3), candle (3), cell phone (4), credit card (4), dining table (2), drawer (19, 20, 21), dresser (3), key chain (2), newspaper (1), pen (4, 5), pencil (7), plate (1), television (2), vase (2). You hold pencil (1).
+Act: open drawer 21
+You open drawer (21). You see bowl (3), candle (3), cell phone (4), credit card (4), dining table (2), drawer (19, 20, 21), dresser (3), key chain (2), newspaper (1), pen (4, 5), pencil (7), plate (1), television (2), vase (2). You hold pencil (1).
+Act: go to dresser 3
+You arrive at the dresser (3). You see credit card (4), drawer (19, 20, 21), dresser (3), key chain (2), pen (5), pencil (7), television (2), vase (2). You hold pencil (1).
+Think: In living room 1, I visit all places. Now I need to search bedroom 2.
+OK.
+Act: go to bedroom 2
+You move to the bedroom (2). Looking quickly around the room, you see armchair (1), bed (2), box (1), chair (2), desk (1), drawer (13, 14, 15, 16, 17, 18), dresser (2), floor lamp (1), garbage can (3), painting (1, 2, 3, 4), shelf (1, 2, 3, 4). You hold pencil (1).
+Think: In bedroom 2, the floor lamp is likely to appear in/on armchair 1, bed 2, box 1, chair 2, desk 1, drawer (13, 14, 15, 16, 17, 18), dresser 2, garbage can 3, painting (1, 2, 3, 4), shelf (1, 2, 3, 4). I can check each place one by one until I find floor lamp.
+OK.
+Act: go to armchair 1
+You arrive at the armchair (1). You see armchair (1), drawer (13, 14, 15, 16, 17, 18), floor lamp (1), house plant (3), tissue box (1), vase (1). You hold pencil (1).
+Think: I find floor lamp 1. Now, I need to turn it on.
+OK.
+Act: go to floor lamp 1
+You arrive at the floor lamp (1). You see box (2), floor lamp (1), garbage can (3), painting (4), pillow (4). You hold pencil (1).
+Act: turn on floor lamp 1
+You turn on floor lamp (1). You hold pencil (1).
+Think: Now I complete the task.
+OK.
+Act: done

@@ -1,0 +1,153 @@
+Your task is to: Please get me a pudding, a cupcake and one cup of juice and put it on the coffee table.
+You are in the house, and there are 4 rooms: bathroom 1, bedroom 1, kitchen 1, living room 1. You are in the middle of a living room 1. Looking quickly around the room, you see bookshelf 3, cabinet 1, chair 3, closet 2, coffee table 2, computer 1, desk 1, sofa 1.
+Think: To solve the task, I need to find and pick up pudding, find and pick up cupcake, find and pick up cup of juice, find coffee table and put down pudding, find coffee table and put down cupcake, find coffee table and put down cup of juice.
+OK.
+Think: First, I need to find and pick up pudding.
+OK.
+Query: find_objects({'label': 'pudding'})
+Info: 
+Think: I have not seen pudding yet. Now, I need to check where to search. First, I will search kitchen 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'kitchen 1', 'child_node_attrs': {'visited': False}})
+Info: bench (1, 2), bookshelf 2, clock 1, coffee pot 2, faucet 2, fridge 1, kitchen counter 1, kitchen table 1, light switch 3, microwave oven 1, oven tray 1, plate 4, sink 2, slice of bread (1, 2), stove 1, toaster 1, tv 1
+Think: In kitchen 1, the pudding is likely to appear in/on fridge 1, kitchen counter 1, kitchen table 1. I can check each place one by one until I find it.
+OK.
+Act: go to kitchen 1
+You move to the kitchen 1. Looking quickly around the room, you see bench (1, 2), bookshelf 2, faucet 2, fridge 1, kitchen counter 1, kitchen table 1, microwave oven 1, sink 2, stove 1, toaster 1, tv 1.
+Act: go to fridge 1
+You arrive at the fridge 1. The fridge 1 is closed. You see bench 2, book 1, coffee pot 2, cupcake 2, cutting board 2, fridge 1, frying pan 1, kitchen counter 1, microwave oven 1, stove 1.
+Act: open fridge 1
+You open fridge 1. You see bench 2, book 1, coffee pot 2, cupcake (1, 2), cutting board 2, dishwashing liquid 1, fridge 1, frying pan 1, kitchen counter 1, microwave oven 1, pudding 1, stove 1, wine 1
+Act: go to kitchen counter 1
+You arrive at the kitchen counter 1. You see bench 2, book (1, 2), bucket 1, carrot 1, coffee pot 2, cupcake 2, cutting board 2, faucet 2, kitchen counter 1, microwave oven 1, milk (1, 2), sink 2, toaster 1, washing sponge 1.
+Act: go to kitchen table 1
+You arrive at the kitchen table 1. You see bench (1, 2), book (1, 2, 3), chips 1, condiment shaker 1, cupcake 2, cutlery fork (1, 2), cutlery knife (1, 2), kitchen table 1, light switch 3, mug 2, plate (2, 3), salad 1, water glass (2, 3).
+Think: There is no pudding in kitchen 1. Now, I will search living room 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'living room 1', 'child_node_attrs': {'visited': False}})
+Info: bookshelf 3, cabinet 1, chair 3, closet 2, coffee table 2, computer 1, desk 1, light switch 4, pants (5, 6, 7), shirt (3, 4), sofa 1
+Think: In living room 1, the pudding is likely to appear in/on coffee table 2, desk 1.
+OK.
+Act: go to living room 1
+You move to the living room 1. Looking quickly around the room, you see bookshelf 3, cabinet 1, chair 3, closet 2, coffee table 2, computer 1, desk 1, sofa 1.
+Act: go to coffee table 2
+You arrive at the coffee table 2. You see coffee table 2, sofa 1.
+Act: go to desk 1
+You arrive at the desk 1. You see chair 3, computer 1, desk 1, mug 3.
+Think: There is no pudding in living room 1. Now, I will search bedroom 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'bedroom 1', 'child_node_attrs': {'visited': False}})
+Info: bed 1, bookshelf 1, chair (1, 2), closet 1, coffee table 1, light switch 2, nightstand 1
+Think: In bedroom 1, the pudding is likely to appear in/on bed 1, coffee table 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom 1. Looking quickly around the room, you see bed 1, bookshelf 1, chair (1, 2), closet 1, coffee table 1, nightstand 1.
+Act: go to bed 1
+You arrive at the bed 1. You see bed 1, nightstand 1.
+Act: go to coffee table 1
+You arrive at the coffee table 1. You see Chinese food 1, bed 1, coffee table 1.
+Think: There is no pudding in bedroom 1. Now, I will search bathroom 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'bathroom 1', 'child_node_attrs': {'visited': False}})
+Info: bathroom cabinet 1, bathroom counter 1, faucet 1, light switch 1, sink 1, toilet 1, towel rack (1, 2, 3), washing machine 1
+Think: In bathroom 1, the pudding is likely to appear in/on bathroom cabinet 1, bathroom counter 1.
+OK.
+Act: go to bathroom 1
+You move to the bathroom 1. Looking quickly around the room, you see bathroom cabinet 1, bathroom counter 1, faucet 1, sink 1, toilet 1, towel rack (1, 2, 3), washing machine 1.
+Act: go to bathroom cabinet 1
+You arrive at the bathroom cabinet 1. The bathroom cabinet 1 is closed. You see bathroom cabinet 1, bathroom counter 1, faucet 1, sink 1, towel rack 1, water glass 1.
+Act: open bathroom cabinet 1
+You open bathroom cabinet 1. You see bathroom cabinet 1, bathroom counter 1, faucet 1, sink 1, towel rack 1, water glass 1
+Act: go to bathroom counter 1
+You arrive at the bathroom counter 1. You see bathroom cabinet 1, bathroom counter 1, face cream 1, faucet 1, plate 1, sink 1, towel rack 3, washing machine 1, water glass 1.
+Think: There is no pudding in bathroom 1. Now, I will search kitchen 1 again.
+OK.
+Act: go to kitchen 1
+You move to the kitchen 1. Looking quickly around the room, you see bench (1, 2), bookshelf 2, faucet 2, fridge 1, kitchen counter 1, kitchen table 1, microwave oven 1, sink 2, stove 1, toaster 1, tv 1.
+Act: go to fridge 1
+You arrive at the fridge 1. The fridge 1 is open. You see bench 2, book 1, coffee pot 2, cupcake (1, 2), cutting board 2, dishwashing liquid 1, fridge 1, frying pan 1, kitchen counter 1, microwave oven 1, pudding 1, stove 1, wine 1.
+Act: pick up pudding 1
+You pick up pudding 1. You hold pudding 1.
+Think: Now I need to find coffee table and put down pudding 1.
+OK.
+Query: find_objects({'label': 'coffee table'})
+Info: [{'name_id_nl': 'coffee table 1', 'node_type': 'asset', 'properties': ['SURFACES', 'MOVABLE'], 'states': [], 'room': 'bedroom 1'}, {'name_id_nl': 'coffee table 2', 'node_type': 'asset', 'properties': ['SURFACES', 'MOVABLE'], 'states': [], 'room': 'living room 1'}]
+Think: Coffee table 1 is in bedroom 1, and coffee table 2 is in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room 1. Looking quickly around the room, you see bookshelf 3, cabinet 1, chair 3, closet 2, coffee table 2, computer 1, desk 1, sofa 1. You hold pudding 1.
+Act: go to coffee table 2
+You arrive at the coffee table 2. You see coffee table 2, pudding 1, sofa 1. You hold pudding 1.
+Act: put down pudding 1
+You put pudding 1 on coffee table 2.
+Think: Now, I need to find and pick up cupcake.
+OK.
+Query: find_objects({'label': 'cupcake'})
+Info: [{'name_id_nl': 'cupcake 2', 'node_type': 'object', 'properties': ['GRABBABLE', 'EATABLE', 'MOVABLE'], 'states': []}, {'name_id_nl': 'cupcake 1', 'node_type': 'object', 'properties': ['GRABBABLE', 'EATABLE', 'MOVABLE'], 'states': []}]
+Query: get_edges_for_node({'node_id': 'cupcake 2'})
+Info: [('cupcake 2', 'kitchen 1', 'INSIDE'), ('cupcake 2', 'bench 2', 'CLOSESEST')]
+Query: get_edges_for_node({'node_id': 'cupcake 1'})
+Info: [('cupcake 1', 'kitchen 1', 'INSIDE'), ('cupcake 1', 'fridge 1', 'INSIDE')]
+Think: Cupcake 2 is close to bench 2 in kitchen 1, and cupcake 1 is in fridge 1 in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen 1. Looking quickly around the room, you see bench (1, 2), bookshelf 2, faucet 2, fridge 1, kitchen counter 1, kitchen table 1, microwave oven 1, sink 2, stove 1, toaster 1, tv 1.
+Act: go to bench 2
+You arrive at the bench 2. You see bench 2, book (1, 2), chips 1, condiment shaker 1, cupcake 2, cutlery fork 2, cutlery knife 2, kitchen table 1, mug 2, plate 3, salad 1, water glass (2, 3).
+Act: pick up cupcake 2
+You pick up cupcake 2. You hold cupcake 2.
+Think: Now I need to find coffee table and put down cupcake 2.
+OK.
+Act: go to living room 1
+You move to the living room 1. Looking quickly around the room, you see bookshelf 3, cabinet 1, chair 3, closet 2, coffee table 2, computer 1, desk 1, sofa 1. You hold cupcake 2.
+Act: go to coffee table 2
+You arrive at the coffee table 2. You see coffee table 2, cupcake 2, pudding 1, sofa 1. You hold cupcake 2.
+Act: put down cupcake 2
+You put cupcake 2 on coffee table 2.
+Think: Now, I need to find and pick up cup of juice.
+OK.
+Query: find_objects({'label': 'cup of juice'})
+Info: 
+Think: I have not seen cup of juice yet. Now, I need to check where to search. First, I will search kitchen 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'kitchen 1', 'child_node_attrs': {'visited': False}})
+Info: bench 1, bookshelf 2, clock 1, coffee pot 2, faucet 2, light switch 3, microwave oven 1, oven tray 1, plate 4, sink 2, slice of bread (1, 2), stove 1, toaster 1, tv 1
+Think: In kitchen 1, the cup of juice is likely to appear in/on bench 1, microwave oven 1, sink 2, stove 1. I can check each place one by one until I find it.
+OK.
+Act: go to kitchen 1
+You move to the kitchen 1. Looking quickly around the room, you see bench (1, 2), bookshelf 2, faucet 2, fridge 1, kitchen counter 1, kitchen table 1, microwave oven 1, sink 2, stove 1, toaster 1, tv 1.
+Act: go to bench 1
+You arrive at the bench 1. You see bench 1, book 3, chips 1, condiment shaker 1, cutlery fork 1, cutlery knife 1, kitchen table 1, mug 2, plate 2, salad 1, water glass (2, 3).
+Act: go to microwave oven 1
+You arrive at the microwave oven 1. The microwave oven 1 is closed. You see bench 2, book (1, 2), coffee pot 2, cupcake 1, cutting board 2, dishwashing liquid 1, faucet 2, fridge 1, frying pan 1, kitchen counter 1, microwave oven 1, milk 1, sink 2, wine 1.
+Act: open microwave oven 1
+You open microwave oven 1. You see bench 2, book (1, 2), coffee pot 2, cupcake 1, cutting board 2, dishwashing liquid 1, faucet 2, fridge 1, frying pan 1, kitchen counter 1, microwave oven 1, milk 1, plate 4, sink 2, wine 1
+Act: go to sink 2
+You arrive at the sink 2. You see bucket 1, carrot 1, coffee pot 2, cutting board 2, faucet 2, kitchen counter 1, microwave oven 1, milk (1, 2), plate 4, sink 2, toaster 1, washing sponge 1.
+Act: go to stove 1
+You arrive at the stove 1. The stove 1 is closed. You see bench 2, book (1, 2), coffee pot 2, cupcake 1, cutting board 2, dishwashing liquid 1, fridge 1, frying pan 1, kitchen counter 1, microwave oven 1, plate 4, stove 1, wine 1.
+Act: open stove 1
+You open stove 1. You see bench 2, book (1, 2), coffee pot 2, cupcake 1, cutting board 2, dishwashing liquid 1, fridge 1, frying pan 1, kitchen counter 1, microwave oven 1, oven tray 1, plate 4, stove 1, wine 1
+Think: There is no cup of juice in kitchen 1. Now, I will search living room 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'living room 1', 'child_node_attrs': {'visited': False}})
+Info: bookshelf 3, cabinet 1, chair 3, closet 2, computer 1, light switch 4, pants (5, 6, 7), shirt (3, 4), sofa 1
+Think: In living room 1, the cup of juice is likely to appear in/on cabinet 1, computer 1, sofa 1.
+OK.
+Act: go to living room 1
+You move to the living room 1. Looking quickly around the room, you see bookshelf 3, cabinet 1, chair 3, closet 2, coffee table 2, computer 1, desk 1, sofa 1.
+Act: go to cabinet 1
+You arrive at the cabinet 1. The cabinet 1 is closed. You see box 1, cabinet 1.
+Act: open cabinet 1
+You open cabinet 1. You see box 1, cabinet 1, cupcake 3, juice 1, pudding 2, wine 2
+Act: pick up juice 1
+You pick up juice 1. You hold juice 1.
+Think: Now I need to find coffee table and put down juice 1.
+OK.
+Act: go to coffee table 2
+You arrive at the coffee table 2. You see coffee table 2, cupcake 2, juice 1, pudding 1, sofa 1. You hold juice 1.
+Act: put down juice 1
+You put juice 1 on coffee table 2.
+Think: Now I complete the task.
+OK.
+Act: done

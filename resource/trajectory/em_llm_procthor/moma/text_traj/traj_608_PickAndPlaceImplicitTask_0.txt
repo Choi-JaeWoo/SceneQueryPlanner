@@ -1,0 +1,8 @@
+Your task is to: Move all the objects from the side table to the dining table.
+You are in the house, and there are 2 rooms: kitchen (1), living room (1). You are in the middle of a living room (1). Looking quickly around the room, you see TV stand (1), chair (2, 3, 4, 5), dining table (2), floor lamp (1), painting (3, 4), shelf (1, 2, 3, 4, 5, 6), side table (1), sofa (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- (kitchen 1): [(countertop 1), television 1, painting 1, (stool 1), (dining table 1), (fridge 1), painting 2, (chair 1)]
+- living room 1: [(dining table 2), (chair 3), (chair 5), (chair 2), floor lamp 1, pencil 3, (side table 1), painting 3, (TV stand 1), (shelf 1), (chair 4), (shelf 3), painting 4, (shelf 6), book 4, (sofa 1), credit card 1, pillow 1, (shelf 2), (shelf 5), (shelf 4)]
+You have not taken any actions yet.
+What is the best next action to complete the task as efficiently as possible?
+Think: I need to find side table and check what is on top of it. Side table 1 is in living room 1.
+Act: go to living room 1

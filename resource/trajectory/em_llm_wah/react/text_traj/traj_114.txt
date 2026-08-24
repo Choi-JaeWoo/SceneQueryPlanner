@@ -1,0 +1,87 @@
+Your task is to: Please take a pancake a cupcake and a fruit juice and put them on the kitchen table
+You are in the house, and there are 4 rooms: bathroom 1, bedroom 1, kitchen 1, living room 1. You are in the middle of a bedroom 1. Looking quickly around the room, you see bed 1, bookshelf 1, chair (1, 2), closet 1, coffee table 1, nightstand 1.
+Think: To solve the task, I need to find and pick up pancake, find and pick up cupcake, find and pick up fruit juice, find kitchen table and put down pancake, find kitchen table and put down cupcake, find kitchen table and put down fruit juice.
+OK.
+Think: First, I need to find and pick up pancake. The pancake is more likely to appear in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen 1. Looking quickly around the room, you see bench (1, 2), bookshelf 2, faucet 2, fridge 1, kitchen counter 1, kitchen table 1, microwave oven 1, sink 2, stove 1, toaster 1, tv 1.
+Think: In kitchen 1, the pancake is likely to appear in/on fridge 1, kitchen counter 1, kitchen table 1. I can check each place one by one until I find it.
+OK.
+Act: go to fridge 1
+You arrive at the fridge 1. The fridge 1 is closed. You see bench 2, cupcake 2, cutting board 2, fridge 1, frying pan 1, kitchen counter 1, microwave oven 1, stove 1.
+Act: open fridge 1
+You open fridge 1. You see bench 2, cupcake 2, cutting board 2, dishwashing liquid 1, fridge 1, frying pan 1, juice (1, 2), kitchen counter 1, microwave oven 1, pancake 1, stove 1, wine 1
+Think: I find pancake 1. Now, I need to pick it up.
+OK.
+Act: pick up pancake 1
+You pick up pancake 1. You hold pancake 1.
+Think: Now I need to find and pick up cupcake.
+OK.
+Think: I have not seen cupcake yet. In kitchen 1, the cupcake is likely to appear in/on fridge 1, kitchen counter 1, kitchen table 1. I can check each place one by one until I find cupcake.
+OK.
+Act: go to kitchen counter 1
+You arrive at the kitchen counter 1. You see bench 2, bucket 1, carrot 1, cupcake 2, cutting board 2, faucet 2, kitchen counter 1, microwave oven 1, milk (1, 2), pancake 1, pound cake 1, sink 2, toaster 1, washing sponge 1. You hold pancake 1.
+Act: go to kitchen table 1
+You arrive at the kitchen table 1. You see apple 2, bench (1, 2), chips 1, condiment shaker 1, cupcake 2, kitchen table 1, light switch 3, mug 2, pancake 1, pound cake 1, salad 1. You hold pancake 1.
+Think: I cannot find cupcake in kitchen 1. The cupcake is likely to appear in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room 1. Looking quickly around the room, you see bookshelf 3, cabinet 1, chair 3, closet 2, coffee table 2, computer 1, desk 1, sofa 1, tv 2. You hold pancake 1.
+Think: In living room 1, the cupcake is likely to appear in/on chair 3, coffee table 2, desk 1.
+OK.
+Act: go to chair 3
+You arrive at the chair 3. You see chair 3, computer 1, desk 1, mug 3, pancake 1. You hold pancake 1.
+Act: go to coffee table 2
+You arrive at the coffee table 2. You see cell phone 2, coffee table 2, cupcake 3, pancake 1, tv 2. You hold pancake 1.
+Think: I find cupcake 3. Now, I need to pick it up.
+OK.
+Act: pick up cupcake 3
+You pick up cupcake 3. You hold cupcake 3, pancake 1.
+Think: Now I need to find and pick up fruit juice.
+OK.
+Think: I have not seen fruit juice yet. In living room 1, the fruit juice is likely to appear in/on chair 3, coffee table 2, desk 1. I can check each place one by one until I find fruit juice.
+OK.
+Act: go to desk 1
+You arrive at the desk 1. You see chair 3, computer 1, cupcake 3, desk 1, mug 3, pancake 1. You hold cupcake 3, pancake 1.
+Think: I cannot find fruit juice in living room 1. The fruit juice is likely to appear in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen 1. Looking quickly around the room, you see bench (1, 2), bookshelf 2, faucet 2, fridge 1, kitchen counter 1, kitchen table 1, microwave oven 1, sink 2, stove 1, toaster 1, tv 1. You hold cupcake 3, pancake 1.
+Think: In kitchen 1, the fruit juice is likely to appear in/on fridge 1, kitchen counter 1, kitchen table 1. I can check each place one by one until I find fruit juice.
+OK.
+Act: go to fridge 1
+You arrive at the fridge 1. The fridge 1 is open. You see bench 2, cupcake (2, 3), cutting board 2, dishwashing liquid 1, fridge 1, frying pan 1, juice (1, 2), kitchen counter 1, microwave oven 1, pancake 1, stove 1, wine 1. You hold cupcake 3, pancake 1.
+Think: I find juice 1. Now, I need to pick it up.
+OK.
+Act: pick up juice 1
+You can't pick up juice 1 because you don't have an empty hand.
+Think: I need to put down cupcake 3 or pancake 1 to pick up juice 1.
+OK.
+Act: put down cupcake 3
+You put cupcake 3 in fridge 1. You hold pancake 1.
+Act: pick up juice 1
+You pick up juice 1. You hold juice 1, pancake 1.
+Think: Now I need to find kitchen table and put down pancake 1.
+OK.
+Act: go to kitchen table 1
+You arrive at the kitchen table 1. You see apple 2, bench (1, 2), chips 1, condiment shaker 1, cupcake 2, juice 1, kitchen table 1, light switch 3, mug 2, pancake 1, pound cake 1, salad 1. You hold juice 1, pancake 1.
+Act: put down pancake 1
+You put pancake 1 on kitchen table 1. You hold juice 1.
+Think: Now I need to find kitchen table and put down cupcake 3.
+OK.
+Act: go to fridge 1
+You arrive at the fridge 1. The fridge 1 is open. You see bench 2, cupcake (2, 3), cutting board 2, dishwashing liquid 1, fridge 1, frying pan 1, juice (1, 2), kitchen counter 1, microwave oven 1, stove 1, wine 1. You hold juice 1.
+Act: pick up cupcake 3
+You pick up cupcake 3. You hold cupcake 3, juice 1.
+Act: go to kitchen table 1
+You arrive at the kitchen table 1. You see apple 2, bench (1, 2), chips 1, condiment shaker 1, cupcake (2, 3), juice 1, kitchen table 1, light switch 3, mug 2, pancake 1, pound cake 1, salad 1. You hold cupcake 3, juice 1.
+Act: put down cupcake 3
+You put cupcake 3 on kitchen table 1. You hold juice 1.
+Think: Now I need to find kitchen table and put down juice 1.
+OK.
+Act: put down juice 1
+You put juice 1 on kitchen table 1.
+Think: Now I complete the task.
+OK.
+Act: done

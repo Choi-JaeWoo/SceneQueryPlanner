@@ -1,0 +1,47 @@
+Your task is to: Hold the remote control and switch on the desklamp.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a bedroom (1). Looking quickly around the room, you see basket ball (1), bed (1, 2), chair (1, 2), dining table (1), drawer (1, 2, 3), dresser (1).
+Think: To solve the task, I need to find and pick up remote control, find and turn on desklamp.
+OK.
+Think: First, I need to find and pick up remote control.
+OK.
+Query: recall location of remote control
+You have not seen remote control before.
+Think: I have not seen remote control yet. The remote control is more likely to appear in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see cabinet (2), dining table (3), floor lamp (1), garbage can (2), painting (3, 4), shelf (4, 5, 6), shelving unit (2), sofa (1), television (2).
+Think: In living room 1, the remote control is likely to appear in/on cabinet 2, dining table 3, floor lamp 1, garbage can 2, painting (3, 4), shelf (4, 5, 6), shelving unit 2, sofa 1, television 2. I can check each place one by one until I find remote control.
+OK.
+Act: go to cabinet 2
+You arrive at the cabinet (2). The cabinet (2) is closed. You see cabinet (2), floor lamp (1), house plant (2), pen (4), plate (2), shelf (4, 5, 6), shelving unit (2), vase (1).
+Act: open cabinet 2
+You open cabinet (2). You see cabinet (2), floor lamp (1), house plant (2), pen (4), plate (2), shelf (4, 5, 6), shelving unit (2), vase (1).
+Act: go to floor lamp 1
+You arrive at the floor lamp (1). You see cabinet (2), floor lamp (1), painting (4), remote control (5, 6), shelf (4, 5, 6), shelving unit (2), sofa (1).
+Think: I find remote control 5. Now, I need to pick it up.
+OK.
+Act: go to remote control 5
+You arrive at the remote control (5). You see floor lamp (1), painting (4), remote control (5, 6), sofa (1).
+Act: pick up remote control 5
+You pick up remote control (5). You hold remote control (5).
+Think: Now I need to find and turn on desklamp.
+OK.
+Query: recall location of desklamp
+You have not seen desklamp before.
+Think: I have not seen desklamp yet. The desklamp is more likely to appear in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see basket ball (1), bed (1, 2), chair (1, 2), dining table (1), drawer (1, 2, 3), dresser (1). You hold remote control (5).
+Think: In bedroom 1, the desklamp is likely to appear in/on basket ball 1, bed (1, 2), chair (1, 2), dining table 1, drawer (1, 2, 3), dresser 1. I can check each place one by one until I find desklamp.
+OK.
+Act: go to basket ball 1
+You arrive at the basket ball (1). You see basket ball (1), bowl (1), chair (1, 2), desk lamp (1), dining table (1), key chain (1), pen (1, 2, 3), remote control (1). You hold remote control (5).
+Think: I find desklamp 1. Now, I need to turn it on.
+OK.
+Act: go to desk lamp 1
+You arrive at the desk lamp (1). You see basket ball (1), bowl (1), chair (1, 2), desk lamp (1), dining table (1), key chain (1), pen (1, 2, 3), remote control (1). You hold remote control (5).
+Act: turn on desk lamp 1
+You turn on desk lamp (1). You hold remote control (5).
+Think: Now I complete the task.
+OK.
+Act: done

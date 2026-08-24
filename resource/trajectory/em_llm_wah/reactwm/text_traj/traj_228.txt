@@ -1,0 +1,112 @@
+Your task is to: I need one glass of wine, one glass of water and one plate.
+Bring them on the kitchen table.
+You are in the house, and there are 4 rooms: bathroom 1, bedroom 1, kitchen 1, living room 1. You are in the middle of a bedroom 1. Looking quickly around the room, you see bed 1, bookshelf 1, chair (1, 2), closet 1, coffee table 1, nightstand 1.
+Think: To solve the task I need to find and pick up wine glass, find kitchen table and put down wine glass, find and pick up water glass, find kitchen table and put down water glass, find and pick up plate, find kitchen table and put down plate.
+OK.
+Think: First, I need to find and pick up wine glass.
+OK.
+Query: recall location of wine glass
+You have not seen wine glass before.
+Think: I have not seen wine glass yet. The wine glass is more likely to appear in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen 1. Looking quickly around the room, you see bench (1, 2), bookshelf 2, faucet 2, fridge 1, kitchen counter 1, kitchen table 1, microwave oven 1, sink 2, stove 1, toaster 1, tv 1.
+Think: In kitchen 1, the wine glass is likely to appear in/on bench (1, 2), fridge 1, kitchen counter 1, kitchen table 1, sink 2. I can check each place one by one until I find wine glass.
+OK.
+Act: go to bench 1
+You arrive at the bench 1. You see bench 1, chips 1, condiment shaker 1, kitchen table 1, mug 2, salad 1.
+Act: go to bench 2
+You arrive at the bench 2. You see bench 2, chips 1, condiment shaker 1, kitchen table 1, mug 2, salad 1, wine glass 1.
+Think: I find wine glass 1. Now, I need to pick it up.
+OK.
+Act: pick up wine glass 1
+You pick up wine glass 1. You hold wine glass 1.
+Think: Now, I need to find kitchen table and put down wine glass 1.
+OK.
+Act: go to kitchen table 1
+You arrive at the kitchen table 1. You see bench (1, 2), chips 1, condiment shaker 1, kitchen table 1, light switch 3, mug 2, salad 1, wine glass 1. You hold wine glass 1.
+Act: put down wine glass 1
+You put wine glass 1 on kitchen table 1.
+Think: Now, I need to find and pick up water glass.
+OK.
+Query: recall location of water glass
+You have not seen water glass before.
+Think: I have not seen water glass yet. The water glass is more likely to appear in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen 1. Looking quickly around the room, you see bench (1, 2), bookshelf 2, faucet 2, fridge 1, kitchen counter 1, kitchen table 1, microwave oven 1, sink 2, stove 1, toaster 1, tv 1.
+Think: In kitchen 1, the water glass is likely to appear in/on bench (1, 2), fridge 1, kitchen counter 1, kitchen table 1, sink 2. I can check each place one by one until I find water glass.
+OK.
+Act: go to bench 1
+You arrive at the bench 1. You see bench 1, chips 1, condiment shaker 1, kitchen table 1, mug 2, salad 1, wine glass 1.
+Act: go to bench 2
+You arrive at the bench 2. You see bench 2, chips 1, condiment shaker 1, kitchen table 1, mug 2, salad 1, wine glass 1.
+Act: go to fridge 1
+You arrive at the fridge 1. The fridge 1 is closed. You see bench 2, coffee pot 2, cutting board 2, fridge 1, frying pan 1, kitchen counter 1, microwave oven 1, stove 1.
+Act: open fridge 1
+You open fridge 1. You see bench 2, coffee pot 2, cutting board 2, dishwashing liquid 1, fridge 1, frying pan 1, kitchen counter 1, microwave oven 1, plate 1, stove 1
+Act: go to kitchen counter 1
+You arrive at the kitchen counter 1. You see bench 2, bucket 1, carrot 1, coffee pot 2, cutting board 2, faucet 2, kitchen counter 1, microwave oven 1, milk (1, 2), sink 2, toaster 1, washing sponge 1.
+Act: go to kitchen table 1
+You arrive at the kitchen table 1. You see bench (1, 2), chips 1, condiment shaker 1, kitchen table 1, light switch 3, mug 2, salad 1, wine glass 1.
+Act: go to sink 2
+You arrive at the sink 2. You see bucket 1, carrot 1, coffee pot 2, cutting board 2, faucet 2, kitchen counter 1, microwave oven 1, milk (1, 2), sink 2, toaster 1, washing sponge 1.
+Think: I cannot find the water glass in kitchen 1. The water glass is likely to appear in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room 1. Looking quickly around the room, you see bookshelf 3, cabinet 1, chair 3, closet 2, coffee table 2, computer 1, desk 1, sofa 1, tv 2.
+Think: In living room 1, the water glass is likely to appear in/on chair 3, coffee table 2, desk 1. I can check each place one by one until I find it.
+OK.
+Act: go to chair 3
+You arrive at the chair 3. You see chair 3, computer 1, desk 1, mug 3.
+Act: go to coffee table 2
+You arrive at the coffee table 2. You see cell phone 2, coffee table 2, tv 2.
+Act: go to desk 1
+You arrive at the desk 1. You see chair 3, computer 1, desk 1, mug 3.
+Think: I cannot find the water glass in living room 1. The water glass is likely to appear in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom 1. Looking quickly around the room, you see bed 1, bookshelf 1, chair (1, 2), closet 1, coffee table 1, nightstand 1.
+Think: In bedroom 1, the water glass is likely to appear in/on chair (1, 2), coffee table 1. I can check each place one by one until I find it.
+OK.
+Act: go to chair 1
+You arrive at the chair 1. You see chair 1.
+Act: go to chair 2
+You arrive at the chair 2. You see chair 2.
+Act: go to coffee table 1
+You arrive at the coffee table 1. You see Chinese food 1, bed 1, coffee table 1, water glass 1.
+Think: I find water glass 1. Now, I need to pick it up.
+OK.
+Act: pick up water glass 1
+You pick up water glass 1. You hold water glass 1.
+Think: Now I need to find kitchen table and put down water glass 1.
+OK.
+Query: recall location of kitchen table
+You saw kitchen table 1 near kitchen table 1 in kitchen 1.
+Act: go to kitchen 1
+You move to the kitchen 1. Looking quickly around the room, you see bench (1, 2), bookshelf 2, faucet 2, fridge 1, kitchen counter 1, kitchen table 1, microwave oven 1, sink 2, stove 1, toaster 1, tv 1. You hold water glass 1.
+Act: go to kitchen table 1
+You arrive at the kitchen table 1. You see bench (1, 2), chips 1, condiment shaker 1, kitchen table 1, light switch 3, mug 2, salad 1, water glass 1, wine glass 1. You hold water glass 1.
+Act: put down water glass 1
+You put water glass 1 on kitchen table 1.
+Think: Now, I need to find and pick up plate.
+OK.
+Query: recall location of plate
+You saw plate 1 near fridge 1 in kitchen 1.
+Act: go to kitchen 1
+You move to the kitchen 1. Looking quickly around the room, you see bench (1, 2), bookshelf 2, faucet 2, fridge 1, kitchen counter 1, kitchen table 1, microwave oven 1, sink 2, stove 1, toaster 1, tv 1.
+Act: go to fridge 1
+You arrive at the fridge 1. The fridge 1 is open. You see bench 2, coffee pot 2, cutting board 2, dishwashing liquid 1, fridge 1, frying pan 1, kitchen counter 1, microwave oven 1, plate 1, stove 1.
+Think: I find plate 1. Now, I need to pick it up.
+OK.
+Act: pick up plate 1
+You pick up plate 1. You hold plate 1.
+Think: Now I need to find kitchen table and put down plate 1.
+OK.
+Act: go to kitchen table 1
+You arrive at the kitchen table 1. You see bench (1, 2), chips 1, condiment shaker 1, kitchen table 1, light switch 3, mug 2, plate 1, salad 1, water glass 1, wine glass 1. You hold plate 1.
+Act: put down plate 1
+You put plate 1 on kitchen table 1.
+Think: Now I complete task.
+OK.
+Act: done

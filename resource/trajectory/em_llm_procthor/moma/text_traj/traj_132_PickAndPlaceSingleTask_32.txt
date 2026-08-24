@@ -1,0 +1,10 @@
+Your task is to: Pick up a book and put it on the countertop.
+You move to the kitchen (1). Looking quickly around the room, you see cabinet (1), chair (3), countertop (1), dining table (2), fridge (1), garbage can (3), house plant (1), shelf (1, 2, 3), shelving unit (1). You hold book (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- (bathroom 1): [(drawer 9), (drawer 7), (drawer 8), (dresser 2), faucet 1, (garbage can 2), plunger 1, (sink 1), (sink basin 1), (toilet 1), (washing machine 1)]
+- bedroom 1: [painting 2, pencil 1, vase 1, credit card 1, desk lamp 1, mug 1, pillow 1, pillow 2, remote control 1, tennis racket 1, cell phone 1, house plant 2, painting 1, alarm clock 1, baseball bat 1, bed 1, bed 2, book 2, bowl 1, (box 1), (chair 2), (chair 1), (dining table 1), drawer 6, drawer 10, drawer 5, (drawer 4), (drawer 3), (drawer 2), (drawer 1), (dresser 1), (garbage can 1), laptop 1, remote control 2, (side table 1), statue 1]
+- kitchen 1: [house plant 1, shelving unit 1, apple 1, book 1, bottle 1, bread 4, bread 2, (cabinet 1), cell phone 2, (chair 3), (countertop 1), credit card 2, (dining table 2), fork 1, (fridge 1), (garbage can 3), ladle 1, ladle 2, lettuce 1, microwave 1, mug 2, paper towel roll 1, (shelf 3), (shelf 2), (shelf 1)]
+- (living room 1): [(box 2), cart 1, (chair 7), (chair 6), (chair 5), (chair 4), (dining table 3), (garbage can 4), painting 3, painting 4, (shelf 4), (sofa 1), (TV stand 1)]
+Your 5 previous actions were: go to book 1 (success), open book 1 (success), close book 1 (success), pick up book 1 (success), go to kitchen 1 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I move to kitchen 1. I hold book 1. Now, I need to move toward countertop 1 to put down book 1.
+Act: go to countertop 1

@@ -1,0 +1,16 @@
+Your task is to: Using the coffee machine, fill a mug with coffee and set it on a receptacle made of wood and plastic.
+You pick up mug (2). You hold mug (2). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- (bathroom 1): [faucet 1, (garbage can 1), painting 4, plunger 1, (sink 1), (sink basin 1), spray bottle 1, (toilet 1)]
+- (bathroom 2): [faucet 2, (garbage can 2), plunger 2, (sink 2), (sink basin 2), (toilet 2)]
+- (bathroom 3): [faucet 3, (garbage can 4), plunger 3, (sink 3), (sink basin 3), (toilet 3), (washing machine 1)]
+- (bathroom 4): [faucet 4, (garbage can 5), plunger 4, (sink 4), (sink basin 4), (toilet 4)]
+- (bedroom 1): [(armchair 1), baseball bat 1, (bed 1), (chair 1), (dining table 1), (drawer 7), (drawer 6), (drawer 15), (drawer 14), (drawer 12), (drawer 11), (drawer 10), (drawer 9), (drawer 8), (drawer 5), (drawer 4), (drawer 13), (dresser 1), floor lamp 1, painting 2, painting 1, painting 3, (safe 1)]
+- (bedroom 2): [(bed 2), (drawer 20), (drawer 19), (drawer 23), (drawer 21), (drawer 28), (drawer 27), (drawer 26), (drawer 25), (drawer 24), (drawer 22), (dresser 3)]
+- (bedroom 3): [baseball bat 3, (bed 3), (desk 1), (drawer 30), (drawer 29), (drawer 3), (drawer 34), (drawer 35), (drawer 36), (drawer 37), (drawer 38), (drawer 1), (drawer 2), (drawer 31), (drawer 32), (drawer 33), (dresser 4), (garbage can 3)]
+- bedroom 4: [basket ball 1, (bed 4), CD 4, credit card 2, desk lamp 2, dog bed 1, (drawer 39), (drawer 40), (drawer 41), (dresser 5), television 2]
+- kitchen 1: [house plant 1, apple 1, shelving unit 2, salt shaker 1, spray bottle 2, book 2, book 3, book 1, bowl 1, bread 1, butter knife 1, (cabinet 1), (cabinet 2), cell phone 3, coffee machine 1, countertop 1, cup 1, dish sponge 1, egg 2, (fridge 1), knife 1, knife 2, mug 2, pepper shaker 1, (shelf 2), (shelf 3), (shelf 4), (shelf 5), (shelf 6), (shelf 1), shelving unit 1, soap bottle 1, spatula 1, statue 2]
+- (living room 1): [(box 1), (drawer 16), (drawer 17), (drawer 18), (dresser 2), (shelf 7), (sofa 1), (TV stand 1)]
+Your 4 previous actions were: go to kitchen 1 (success), go to countertop 1 (success), go to mug 2 (success), pick up mug 2 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I pick up mug 2. Now, I need to find coffee machine. I find coffee machine 1. Now, I need to move toward coffee machine 1.
+Act: go to coffee machine 1

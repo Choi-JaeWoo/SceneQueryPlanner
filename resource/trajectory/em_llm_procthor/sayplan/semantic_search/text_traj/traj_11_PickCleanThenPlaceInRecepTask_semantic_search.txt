@@ -1,0 +1,6 @@
+Your task is to: Place the spoon in the cabinet after you have cleaned it.
+3D Scene Graph: {nodes: {agent: [{id: user 1, location: kitchen 1}], room: [{id: kitchen 1}, {id: bathroom 1}, {id: bedroom 1}, {id: living room 1}], asset: [], object: []}, links: [user 1↔kitchen 1]}
+Memory: []
+chain-of-thought: i have found the spoon, cabinet, sink basin, and faucet on the graph -> search complete -> i will switch to planning mode -> generate plan to clean the spoon and place it in the cabinet
+reasoning: I will generate a task plan using the identified subgraph
+command: done

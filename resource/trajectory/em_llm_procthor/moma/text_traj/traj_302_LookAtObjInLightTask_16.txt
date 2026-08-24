@@ -1,0 +1,11 @@
+Your task is to: Hold a pencil and illuminate it with the candle.
+You open drawer (3). You see credit card (3), desk (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9), pen (1, 2, 3), pencil (2, 3), remote control (2), shelf (1, 2, 3, 4, 5, 6), vase (2), watch (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- bathroom 1: [faucet 1, (garbage can 1), plunger 1, (sink 1), (sink basin 1), (toilet 1)]
+- bedroom 1: [baseball bat 1, house plant 2, pillow 2, pillow 1, bowl 3, cell phone 2, key chain 2, statue 2, bed 1, chair 5, (chair 6), (chair 7), credit card 3, (desk 1), (dining table 3), drawer 2, drawer 3, (drawer 4), (drawer 5), (drawer 14), (drawer 6), (drawer 7), (drawer 8), (drawer 9), (drawer 15), (drawer 1), (drawer 13), (drawer 12), (drawer 11), (drawer 10), (dresser 1), pen 3, pen 2, pen 1, pencil 2, pencil 3, remote control 2, (shelf 5), (shelf 4), (shelf 3), (shelf 1), (shelf 6), (shelf 2), vase 2, watch 1]
+- (bedroom 2): [basket ball 1, (bed 2), (box 3), (chair 8), (dining table 4), (drawer 17), (drawer 18), (drawer 19), (drawer 20), (drawer 21), (drawer 22), (drawer 23), (drawer 24), (drawer 25), (drawer 16), (dresser 2), (garbage can 2), painting 1, painting 2, painting 3, painting 4, television 2]
+- (kitchen 1): [(chair 1), (chair 3), (chair 2), (countertop 1), (dining table 1), garbage bag 1]
+- (living room 1): [(box 1), (box 2), (chair 4), (dining table 2), dog bed 1, house plant 1, (shelf 7), (sofa 1), (TV stand 1)]
+Your 5 previous actions were: go to chair 5 (success), go to drawer 2 (success), open drawer 2 (success), go to drawer 3 (success), open drawer 3 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I open drawer 3. I need to check unexplored areas in bedroom 1 to find pencil. Now, I need to check drawer 4.
+Act: go to drawer 4

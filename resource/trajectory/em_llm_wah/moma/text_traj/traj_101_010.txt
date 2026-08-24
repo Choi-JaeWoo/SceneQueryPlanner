@@ -1,0 +1,11 @@
+Your task is to: Put 1 juice and 1 pound cake in the fridge.
+You arrive at the bench 2. You see bench 2, condiment bottle (1, 2), condiment shaker (3, 4), cutlery fork (1, 8), cutlery knife (3, 10), kitchen table 1, plate (1, 8), water glass (1, 4, 5, 8). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- (bathroom 1): [(bathroom cabinet 1), (bathroom counter 1), (faucet 2), (light switch 4), (sink 2), (toilet 1), (towel rack 1), (towel rack 2), (towel rack 3), (washing machine 1)]
+- (bedroom 1): [(bed 1), (bookshelf 5), (chair 2), (desk 1), (light switch 3), (nightstand 1)]
+- (bedroom 2): [(bed 2), (bookshelf 6), (cabinet 1), (chair 3), (closet 1), (computer 1), (desk 2), (light switch 5), (nightstand 2)]
+- kitchen 1: [bench 1, bench 2, (bench 3), (bench 4), (bookshelf 1), (bookshelf 2), (bowl 6), (chair 1), (coffee pot 1), condiment bottle 1, condiment bottle 2, condiment bottle 4, condiment shaker 1, condiment shaker 2, condiment shaker 3, condiment shaker 4, cutlery fork 1, cutlery fork 3, cutlery fork 4, cutlery fork 5, cutlery fork 6, cutlery fork 8, cutlery knife 10, cutlery knife 3, cutlery knife 5, cutlery knife 6, cutlery knife 7, cutlery knife 8, (dishwasher 1), (faucet 1), fridge 1, juice 1, (kitchen cabinet 1), (kitchen cabinet 2), (kitchen cabinet 3), (kitchen cabinet 4), (kitchen cabinet 5), (kitchen cabinet 6), (kitchen cabinet 7), (kitchen cabinet 8), (kitchen counter 1), (kitchen counter 2), (kitchen counter 3), (kitchen table 1), (kitchen table 2), (light switch 1), (microwave oven 1), (oven tray 1), plate 1, plate 3, plate 4, plate 5, plate 6, plate 8, (sink 1), (slice of bread 1), (slice of bread 2), (stove 1), (toaster 1), water glass 1, water glass 3, water glass 4, water glass 5, water glass 6, water glass 8]
+- living room 1: [book 11, book 8, (bookshelf 3), (bookshelf 4), (coffee table 1), (light switch 2), (sofa 1), (tv 1)]
+Your 5 previous actions were: go to kitchen 1 (success), go to fridge 1 (success), open fridge 1 (success), go to bench 1 (success), go to bench 2 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I find juice 1. Now, I need to pick it up.
+Act: pick up juice 1

@@ -1,0 +1,47 @@
+Your task is to: Remove everything from the side table and put it on the dining table.
+You are in the house, and there are 2 rooms: kitchen (1), living room (1). You are in the middle of a living room (1). Looking quickly around the room, you see box (1), cabinet (2), dining table (2), drawer (1, 2, 3, 4, 5), dresser (1), floor lamp (1), painting (4), shelf (4, 5, 6), shelving unit (2), side table (1), television (1).
+Think: To solve the task, I need to find side table and check what is on top of it. Then, I need to move everything on side table to dining table.
+OK.
+Think: First, I need to find side table.
+OK.
+Query: find_objects({'label': 'side table'})
+Info: [{'name_id_nl': 'side table 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}]
+Think: I find side table 1.
+OK.
+Act: go to side table 1
+You arrive at the side table (1). You see book (2), cabinet (2), drawer (4, 5), newspaper (1), remote control (1, 2), shelf (4, 5, 6), shelving unit (2), side table (1).
+Think: Now, I need to check what is on top of side table 1.
+OK.
+Query: get_edges_for_node({'node_id': 'side table 1', 'relation': 'ON'})
+Info: [('newspaper 1', 'side table 1', 'ON'), ('remote control 1', 'side table 1', 'ON')]
+Think: Now, I need to move newspaper 1, remote control 1 to dining table.
+OK.
+Act: go to newspaper 1
+You arrive at the newspaper (1). You see book (2), cabinet (2), drawer (4, 5), newspaper (1), remote control (1, 2), shelf (4, 5, 6), shelving unit (2), side table (1).
+Act: pick up newspaper 1
+You pick up newspaper (1). You hold newspaper (1).
+Think: Now, I need to find dining table.
+OK.
+Query: find_objects({'label': 'dining table'})
+Info: [{'name_id_nl': 'dining table 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'kitchen 1'}, {'name_id_nl': 'dining table 2', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}]
+Think: I find dining table 2.
+OK.
+Act: go to dining table 2
+You arrive at the dining table (2). You see book (2), bowl (2), cabinet (2), dining table (2), house plant (1), painting (4), remote control (2), shelf (4, 5, 6), shelving unit (2), television (1). You hold newspaper (1).
+Act: put down newspaper 1
+You put newspaper (1) in dining table (2).
+Act: go to remote control 1
+You arrive at the remote control (1). You see book (2), cabinet (2), drawer (4, 5), newspaper (1), remote control (1, 2), shelf (4, 5, 6), shelving unit (2), side table (1).
+Act: pick up remote control 1
+You pick up remote control (1). You hold remote control (1).
+Act: go to dining table 2
+You arrive at the dining table (2). You see book (2), bowl (2), cabinet (2), dining table (2), house plant (1), newspaper (1), painting (4), remote control (2), shelf (4, 5, 6), shelving unit (2), television (1). You hold remote control (1).
+Act: put down remote control 1
+You put remote control (1) in dining table (2).
+Think: Now I need to check what's left on side table 1.
+OK.
+Query: get_edges_for_node({'node_id': 'side table 1', 'relation': 'ON'})
+Info: 
+Think: Now I complete the task.
+OK.
+Act: done

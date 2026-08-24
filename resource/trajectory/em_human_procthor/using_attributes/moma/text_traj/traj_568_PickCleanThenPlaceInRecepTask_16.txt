@@ -1,0 +1,12 @@
+Your task is to: Clean the item that is close to the ladle, made of metal and not breakable, and place it in the cabinet.
+You put spoon (1) in sink basin (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- bathroom 1: [painting 3, (drawer 13), (drawer 14), (drawer 15), (drawer 11), (drawer 12), (drawer 10), (dresser 2), faucet 1, painting 2, (sink 1), sink basin 1, spoon 1, (toilet 1)]
+- (bathroom 2): [faucet 2, (garbage can 1), plunger 1, (sink 2), (sink basin 2), (toilet 2)]
+- (bedroom 1): [baseball bat 1, (bed 1), (box 2), (box 1), (desk 1), (drawer 4), (drawer 5), (drawer 6), (drawer 7), (drawer 8), (drawer 1), (drawer 9), (drawer 3), (drawer 2), (dresser 1), painting 1]
+- (bedroom 2): [(bed 2), (box 3), (drawer 27), (drawer 18), (drawer 17), (drawer 19), (drawer 24), (drawer 23), (drawer 22), (drawer 16), (drawer 21), (drawer 20), (drawer 25), (drawer 26), (dresser 3), house plant 1, painting 4, (safe 1)]
+- kitchen 1: [apple 1, egg 2, egg 1, lettuce 1, spray bottle 1, tomato 1, kettle 1, kettle 2, shelving unit 2, vase 2, book 2, cabinet 1, (cabinet 2), cell phone 3, (chair 1), (countertop 1), credit card 1, (fridge 1), ladle 1, pepper shaker 1, (shelf 6), (shelf 5), (shelf 4), (shelf 1), (shelf 3), (shelf 2), shelving unit 1, soap bottle 1, spatula 1, statue 3, toaster 1]
+- (living room 1): [(drawer 28), (shelf 12), (shelf 10), (shelf 9), (shelf 8), (shelf 7), (shelf 11), (side table 1), (TV stand 1)]
+Your 5 previous actions were: go to spoon 1 (success), pick up spoon 1 (success), go to bathroom 1 (success), go to sink basin 1 (success), put down spoon 1 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I put spoon 1 in sink basin 1. Now, I need to turn on faucet 1 to clean spoon 1.
+Act: turn on faucet 1

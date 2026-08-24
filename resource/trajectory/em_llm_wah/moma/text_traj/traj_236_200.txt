@@ -1,0 +1,2 @@
+Your task is to: Hey robot, please bring one wine glass and one water glass from the cabinet and place them on the kitchen table.
+Max decision steps reached.

@@ -1,0 +1,173 @@
+Your task is to: put a pudding, juice and glass of wine in the coffee table
+You are in the house, and there are 4 rooms: bathroom 1, bedroom 1, kitchen 1, living room 1. You are in the middle of a kitchen 1. Looking quickly around the room, you see bench (1, 2), bookshelf 2, faucet 2, fridge 1, kitchen counter 1, kitchen table 1, microwave oven 1, sink 2, stove 1, toaster 1, tv 1.
+Think: To solve the task, I need to find and pick up pudding, find coffee table and put down pudding, find and pick up juice, find coffee table and put down juice, find and pick up glass of wine, find coffee table and put down glass of wine.
+OK.
+Think: First, I need to find and pick up pudding. The pudding is more likely to appear in fridge 1.
+OK.
+Act: go to fridge 1
+You arrive at the fridge 1. The fridge 1 is closed. You see bench 2, book (1, 3), coffee pot 2, cutting board 2, fridge 1, frying pan 1, kitchen counter 1, microwave oven 1, stove 1.
+Act: open fridge 1
+You open fridge 1. You see apple 1, bench 2, book (1, 3), coffee pot 2, cupcake (1, 3), cutting board 2, dishwashing liquid 1, fridge 1, frying pan 1, kitchen counter 1, microwave oven 1, pudding 1, stove 1
+Think: I find pudding 1. Now, I need to pick it up.
+OK.
+Act: pick up pudding 1
+You pick up pudding 1. You hold pudding 1.
+Think: Now I need to find coffee table and put down pudding 1.
+OK.
+Think: I have not seen coffee table yet. The coffee table is likely to appear in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room 1. Looking quickly around the room, you see bookshelf 3, cabinet 1, chair 3, closet 2, coffee table 2, computer 1, desk 1, sofa 1. You hold pudding 1.
+Act: go to coffee table 2
+You arrive at the coffee table 2. You see coffee table 2, pudding 1, sofa 1. You hold pudding 1.
+Act: put down pudding 1
+You put pudding 1 on coffee table 2.
+Think: Now I need to find and pick up juice.
+OK.
+Think: I have not seen juice yet. In living room 1, the juice is likely to appear in/on coffee table 2, sofa 1.
+OK.
+Act: go to coffee table 2
+You arrive at the coffee table 2. You see coffee table 2, pudding 1, sofa 1.
+Act: go to sofa 1
+You arrive at the sofa 1. You see remote control 1, sofa 1.
+Think: I cannot find juice in living room 1. The juice is likely to appear in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen 1. Looking quickly around the room, you see bench (1, 2), bookshelf 2, faucet 2, fridge 1, kitchen counter 1, kitchen table 1, microwave oven 1, sink 2, stove 1, toaster 1, tv 1.
+Think: In kitchen 1, the juice is likely to appear in/on bench (1, 2), fridge 1, kitchen counter 1, kitchen table 1.
+OK.
+Act: go to bench 1
+You arrive at the bench 1. You see bench 1, book 2, chips 1, condiment shaker 1, cupcake 2, cutlery fork 1, cutlery knife 1, juice 1, kitchen table 1, mug 2, plate 2, salad 1, water glass (2, 3).
+Act: go to bench 2
+You arrive at the bench 2. You see bench 2, book (1, 3), chips 1, condiment shaker 1, cutlery fork 2, cutlery knife 2, kitchen table 1, mug 2, plate 3, salad 1, water glass (2, 3).
+Act: go to fridge 1
+You arrive at the fridge 1. The fridge 1 is open. You see apple 1, bench 2, book (1, 3), coffee pot 2, cupcake (1, 3), cutting board 2, dishwashing liquid 1, fridge 1, frying pan 1, kitchen counter 1, microwave oven 1, stove 1.
+Act: go to kitchen counter 1
+You arrive at the kitchen counter 1. You see bench 2, book (1, 3), bucket 1, carrot 1, coffee pot 2, cutting board 2, faucet 2, kitchen counter 1, microwave oven 1, milk (1, 2), sink 2, toaster 1, washing sponge 1.
+Think: I cannot find juice in kitchen 1. The juice is likely to appear in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom 1. Looking quickly around the room, you see bed 1, bookshelf 1, chair (1, 2), closet 1, coffee table 1, nightstand 1.
+Think: In bedroom 1, the juice is likely to appear in/on bed 1, bookshelf 1, chair (1, 2), closet 1, coffee table 1, nightstand 1.
+OK.
+Act: go to bed 1
+You arrive at the bed 1. You see bed 1, nightstand 1.
+Act: go to bookshelf 1
+You arrive at the bookshelf 1. The bookshelf 1 is closed. You see bookshelf 1.
+Act: open bookshelf 1
+You can't open bookshelf (1) because of low-level controller problem.
+Act: go to chair 1
+You arrive at the chair 1. You see chair 1.
+Act: go to chair 2
+You arrive at the chair 2. You see chair 2.
+Act: go to closet 1
+You arrive at the closet 1. The closet 1 is closed. You see closet 1.
+Act: open closet 1
+You can't open closet (1) because of low-level controller problem.
+Act: go to coffee table 1
+You arrive at the coffee table 1. You see Chinese food 1, bed 1, coffee table 1.
+Act: go to nightstand 1
+You arrive at the nightstand 1. The nightstand 1 is closed. You see bed 1, nightstand 1.
+Act: open nightstand 1
+You can't open nightstand (1) because of low-level controller problem.
+Think: I cannot find juice in bedroom 1. The juice is likely to appear in bathroom 1.
+OK.
+Act: go to bathroom 1
+You move to the bathroom 1. Looking quickly around the room, you see bathroom cabinet 1, bathroom counter 1, faucet 1, sink 1, toilet 1, towel rack (1, 2, 3), washing machine 1.
+Think: In bathroom 1, the juice is likely to appear in/on bathroom cabinet 1, bathroom counter 1, faucet 1, sink 1, toilet 1, towel rack (1, 2, 3), washing machine 1.
+OK.
+Act: go to bathroom cabinet 1
+You arrive at the bathroom cabinet 1. The bathroom cabinet 1 is closed. You see bathroom cabinet 1, bathroom counter 1, faucet 1, sink 1, towel rack 1, water glass 1.
+Act: open bathroom cabinet 1
+You open bathroom cabinet 1. You see bathroom cabinet 1, bathroom counter 1, faucet 1, sink 1, towel rack 1, water glass 1
+Act: go to bathroom counter 1
+You arrive at the bathroom counter 1. You see bathroom cabinet 1, bathroom counter 1, face cream 1, faucet 1, plate 1, sink 1, towel rack 3, washing machine 1, water glass 1.
+Act: go to faucet 1
+You arrive at the faucet 1. You see bathroom cabinet 1, bathroom counter 1, faucet 1, sink 1, water glass 1.
+Act: go to sink 1
+You can't go to sink (1) because of low-level controller problem.
+Act: go to toilet 1
+You arrive at the toilet 1. The toilet 1 is closed. You see toilet 1, toilet paper 1.
+Act: open toilet 1
+You can't open toilet (1) because of low-level controller problem.
+Act: go to towel rack 1
+You arrive at the towel rack 1. You see light switch 1, towel rack 1.
+Act: go to towel rack 2
+You arrive at the towel rack 2. You see towel rack 2, washing machine 1.
+Act: go to towel rack 3
+You arrive at the towel rack 3. You see bathroom counter 1, face cream 1, plate 1, towel rack 3, washing machine 1.
+Act: go to washing machine 1
+You arrive at the washing machine 1. The washing machine 1 is closed. You see plate 1, towel rack 2, washing machine 1.
+Act: open washing machine 1
+You can't open washing machine (1) because of low-level controller problem.
+Think: I cannot find juice in bathroom 1. The juice is likely to appear in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room 1. Looking quickly around the room, you see bookshelf 3, cabinet 1, chair 3, closet 2, coffee table 2, computer 1, desk 1, sofa 1.
+Think: In living room 1, the juice is likely to appear in/on bookshelf 3, cabinet 1, chair 3, closet 2, coffee table 2, computer 1, desk 1, sofa 1.
+OK.
+Act: go to bookshelf 3
+You arrive at the bookshelf 3. The bookshelf 3 is closed. You see bookshelf 3, box 1.
+Act: open bookshelf 3
+You can't open bookshelf (3) because of low-level controller problem.
+Act: go to cabinet 1
+You arrive at the cabinet 1. The cabinet 1 is closed. You see box 1, cabinet 1.
+Act: open cabinet 1
+You open cabinet 1. You see apple (2, 3), box 1, cabinet 1, pudding (2, 3), wine 1
+Act: go to chair 3
+You arrive at the chair 3. You see chair 3, computer 1, desk 1, mug 3.
+Act: go to closet 2
+You arrive at the closet 2. The closet 2 is closed. You see closet 2.
+Act: open closet 2
+You can't open closet (2) because of low-level controller problem.
+Act: go to coffee table 2
+You arrive at the coffee table 2. You see coffee table 2, pudding 1, sofa 1.
+Act: go to computer 1
+You arrive at the computer 1. You see chair 3, computer 1, desk 1, mug 3.
+Act: go to desk 1
+You arrive at the desk 1. You see chair 3, computer 1, desk 1, mug 3.
+Act: go to sofa 1
+You arrive at the sofa 1. You see remote control 1, sofa 1.
+Think: I cannot find juice in living room 1. The juice is likely to appear in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen 1. Looking quickly around the room, you see bench (1, 2), bookshelf 2, faucet 2, fridge 1, kitchen counter 1, kitchen table 1, microwave oven 1, sink 2, stove 1, toaster 1, tv 1.
+Think: In kitchen 1, the juice is likely to appear in/on bench (1, 2), fridge 1, kitchen counter 1, kitchen table 1.
+OK.
+Act: go to bench 1
+You arrive at the bench 1. You see bench 1, book 2, chips 1, condiment shaker 1, cupcake 2, cutlery fork 1, cutlery knife 1, juice 1, kitchen table 1, mug 2, plate 2, salad 1, water glass (2, 3).
+Think: I find juice 1. Now, I need to pick it up.
+OK.
+Act: pick up juice 1
+You pick up juice 1. You hold juice 1.
+Think: Now I need to find coffee table and put down juice 1.
+OK.
+Act: go to living room 1
+You move to the living room 1. Looking quickly around the room, you see bookshelf 3, cabinet 1, chair 3, closet 2, coffee table 2, computer 1, desk 1, sofa 1. You hold juice 1.
+Act: go to coffee table 2
+You arrive at the coffee table 2. You see coffee table 2, juice 1, pudding 1, sofa 1. You hold juice 1.
+Act: put down juice 1
+You put juice 1 on coffee table 2.
+Think: Now I need to find and pick up glass of wine.
+OK.
+Think: I have not seen glass of wine yet. In living room 1, the glass of wine is likely to appear in/on bookshelf 3, cabinet 1, chair 3, closet 2, coffee table 2, computer 1, desk 1, sofa 1.
+OK.
+Act: go to bookshelf 3
+You arrive at the bookshelf 3. The bookshelf 3 is closed. You see bookshelf 3, box 1.
+Act: open bookshelf 3
+You can't open bookshelf (3) because of low-level controller problem.
+Act: go to cabinet 1
+You arrive at the cabinet 1. The cabinet 1 is open. You see apple (2, 3), box 1, cabinet 1, pudding 3, wine 1.
+Think: I find wine 1. Now, I need to pick it up.
+OK.
+Act: pick up wine 1
+You pick up wine 1. You hold wine 1.
+Think: Now I need to find coffee table and put down wine 1.
+OK.
+Act: go to coffee table 2
+You arrive at the coffee table 2. You see coffee table 2, juice 1, pudding 1, sofa 1, wine 1. You hold wine 1.
+Act: put down wine 1
+You put wine 1 on coffee table 2.
+Think: Now I complete the task.
+OK.
+Act: done

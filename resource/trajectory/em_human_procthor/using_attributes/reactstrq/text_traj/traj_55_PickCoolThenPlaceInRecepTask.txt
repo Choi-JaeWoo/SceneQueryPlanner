@@ -1,0 +1,65 @@
+Your task is to: Chill the lettuce in the fridge, then transfer it to the furniture that has the salt shaker.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a bathroom (1). Looking quickly around the room, you see plunger (1), sink (1), sink basin (1), spray bottle (1), toilet (1).
+Think: To solve the task, I need to find and pick up lettuce, find fridge and put down lettuce, close fridge briefly and open it again, pick up lettuce, find salt shaker and check the receptacle where salt shaker is located, and then place lettuce in that recaptacle.
+OK.
+Think: First, I need to find and pick up lettuce.
+OK.
+Query: find_objects({'label': 'lettuce'})
+Info: 
+Think: I have not seen lettuce yet. Now I need to check where to search. First, I will search kitchen 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'kitchen 1'})
+Info: countertop 1, fridge 1, garbage can 2, stool 1
+Think: In kitchen 1, the lettuce is likely to appear in/on countertop 1, fridge 1, garbage can 2, stool 1. I can check each place one by one until I find lettuce.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see countertop (1), fridge (1), garbage can (2), painting (1), stool (1), television (2).
+Act: go to countertop 1
+You arrive at the countertop (1). You see cell phone (1, 2), countertop (1), fork (1), fridge (1), lettuce (1), pencil (2), potato (1), salt shaker (1), soap bottle (1), spray bottle (2), wine bottle (1).
+Think: I find lettuce 1. Now, I need to pick it up.
+OK.
+Act: go to lettuce 1
+You arrive at the lettuce (1). You see cell phone (1, 2), countertop (1), fork (1), fridge (1), lettuce (1), pencil (2), potato (1), salt shaker (1), soap bottle (1), spray bottle (2), wine bottle (1).
+Act: pick up lettuce 1
+You pick up lettuce (1). You hold lettuce (1).
+Think: Now, I need to find fridge.
+OK.
+Act: go to fridge 1
+You arrive at the fridge (1). The fridge (1) is closed. You see cell phone (1, 2), countertop (1), fork (1), fridge (1), potato (1), wine bottle (1). You hold lettuce (1).
+Think: Since fridge 1 is closed, I need to open it to put down lettuce 1.
+OK.
+Act: open fridge 1
+You open fridge (1). You see cell phone (1, 2), countertop (1), fork (1), fridge (1), potato (1), wine bottle (1). You hold lettuce (1).
+Act: put down lettuce 1
+You put lettuce (1) in fridge (1).
+Think: To make lettuce 1 cold, I need to briefly close fridge 1 and then open it again.
+OK.
+Act: close fridge 1
+You close fridge (1).
+Act: open fridge 1
+You open fridge (1). You see cell phone (1, 2), countertop (1), fork (1), fridge (1), lettuce (1), potato (1), wine bottle (1).
+Think: Now I need to pick up lettuce 1.
+OK.
+Act: pick up lettuce 1
+Pick up action failed: lettuce (1) is not within the visible range.
+Think: I need to move toward lettuce 1 so I can see it clearly.
+OK.
+Act: go to lettuce 1
+You arrive at the lettuce (1). You see cell phone (1, 2), countertop (1), fork (1), fridge (1), lettuce (1), pencil (2), potato (1), salt shaker (1), soap bottle (1), spray bottle (2), wine bottle (1).
+Act: pick up lettuce 1
+You pick up lettuce (1). You hold lettuce (1).
+Think: Now, I need to find salt shaker and check the receptacle where salt shaker is located.
+OK.
+Query: find_objects({'label': 'salt shaker'})
+Info: [{'name_id_nl': 'salt shaker 1', 'node_type': 'object', 'properties': ['pickupable'], 'states': []}]
+Query: get_edges_for_node({'node_id': 'salt shaker 1'})
+Info: [('salt shaker 1', 'countertop 1', 'ON'), ('salt shaker 1', 'cell phone 1', 'CLOSE'), ('salt shaker 1', 'cell phone 2', 'CLOSE'), ('salt shaker 1', 'fork 1', 'CLOSE'), ('salt shaker 1', 'fridge 1', 'CLOSE'), ('salt shaker 1', 'lettuce 1', 'CLOSE'), ('salt shaker 1', 'pencil 2', 'CLOSE'), ('salt shaker 1', 'potato 1', 'CLOSE'), ('salt shaker 1', 'soap bottle 1', 'CLOSE'), ('salt shaker 1', 'spray bottle 2', 'CLOSE'), ('salt shaker 1', 'wine bottle 1', 'CLOSE'), ('salt shaker 1', 'user 1', 'CLOSE'), ('salt shaker 1', 'kitchen 1', 'INSIDE'), ('cell phone 1', 'salt shaker 1', 'CLOSE'), ('cell phone 2', 'salt shaker 1', 'CLOSE'), ('fork 1', 'salt shaker 1', 'CLOSE'), ('fridge 1', 'salt shaker 1', 'CLOSE'), ('lettuce 1', 'salt shaker 1', 'CLOSE'), ('pencil 2', 'salt shaker 1', 'CLOSE'), ('potato 1', 'salt shaker 1', 'CLOSE'), ('soap bottle 1', 'salt shaker 1', 'CLOSE'), ('spray bottle 2', 'salt shaker 1', 'CLOSE'), ('wine bottle 1', 'salt shaker 1', 'CLOSE'), ('user 1', 'salt shaker 1', 'CLOSE')]
+Think: Salt shaker 1 is on countertop 1. Now, I need to move to countertop 1 and put down lettuce 1.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see cell phone (1, 2), countertop (1), fork (1), fridge (1), pencil (2), potato (1), salt shaker (1), soap bottle (1), spray bottle (2), wine bottle (1). You hold lettuce (1).
+Act: put down lettuce 1
+You put lettuce (1) in countertop (1).
+Think: Now I complete the task.
+OK.
+Act: done

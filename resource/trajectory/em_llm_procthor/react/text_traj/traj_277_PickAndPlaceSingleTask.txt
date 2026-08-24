@@ -1,0 +1,37 @@
+Your task is to: Put the plunger away in the cabinet.
+You are in the house, and there are 2 rooms: bathroom (1), bedroom (1). You are in the middle of a bathroom (1). Looking quickly around the room, you see garbage can (2), painting (3, 4), plunger (1), sink (1), sink basin (1), toilet (1).
+Think: To solve the task, I need to find and pick up plunger, find cabinet and put down plunger.
+OK.
+Think: First, I need to find and pick up plunger. The plunger is more likely to appear in bathroom 1.
+OK.
+Act: go to bathroom 1
+You move to the bathroom (1). Looking quickly around the room, you see garbage can (2), painting (3, 4), plunger (1), sink (1), sink basin (1), toilet (1).
+Think: In bathroom 1, the plunger is likely to appear in/on garbage can 2, sink 1, toilet 1. I can check each place one by one until I find plunger.
+OK.
+Act: go to garbage can 2
+You arrive at the garbage can (2). You see garbage can (2).
+Act: go to sink 1
+You arrive at the sink (1). You see faucet (1), painting (3, 4), plunger (1), sink (1), sink basin (1), soap bottle (1), toilet (1), toilet paper (1).
+Act: go to toilet 1
+You arrive at the toilet (1). The toilet (1) is closed. You see faucet (1), painting (3, 4), plunger (1), sink (1), sink basin (1), soap bottle (1), toilet (1), toilet paper (1).
+Think: I find plunger 1. Now, I need to pick it up.
+OK.
+Act: go to plunger 1
+You arrive at the plunger (1). You see faucet (1), painting (3, 4), plunger (1), sink (1), sink basin (1), toilet (1), toilet paper (1).
+Act: pick up plunger 1
+You pick up plunger (1). You hold plunger (1).
+Think: Now, I need to find cabinet. The cabinet is more likely to appear in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see bed (1), cabinet (1, 2, 3, 4), chair (1), desk (1), drawer (1, 2, 3, 4), dresser (1), garbage can (1), painting (1, 2). You hold plunger (1).
+Act: go to cabinet 1
+You arrive at the cabinet (1). The cabinet (1) is closed. You see CD (1), baseball bat (1), book (1, 2), cabinet (1, 2, 3), chair (1), desk (1), desk lamp (1), drawer (1, 2, 3, 4), dresser (1), house plant (1), painting (1, 2), pen (2, 3), remote control (2). You hold plunger (1).
+Think: Since cabinet 1 is closed, I need to open it to put down plunger 1.
+OK.
+Act: open cabinet 1
+You open cabinet (1). You see CD (1), baseball bat (1), book (1, 2), cabinet (1, 2, 3), chair (1), desk (1), desk lamp (1), drawer (1, 2, 3, 4), dresser (1), house plant (1), painting (1, 2), pen (2, 3), remote control (2). You hold plunger (1).
+Act: put down plunger 1
+You put plunger (1) in cabinet (1).
+Think: Now I complete task.
+OK.
+Act: done

@@ -1,0 +1,31 @@
+Your task is to: Put a box with a tissue box inside it on the armchair.
+You are in the house, and there are 1 rooms: bedroom (1). You are in the middle of a bedroom (1). Looking quickly around the room, you see armchair (1), bed (1), box (1), chair (1, 2), dining table (1), drawer (1, 2, 3), dresser (1), floor lamp (1), painting (1, 2, 3), side table (1), television (1).
+Think: To solve the task, I need to find and pick up tissue box, put it in box, pick up and place box on armchair.
+OK.
+Think: First, I need to find and pick up tissue box. The tissue box is more likely to appear in bedroom 1.
+OK.
+Act: go to tissue box 1
+You arrive at the tissue box (1). You see bowl (1), drawer (1, 2, 3), dresser (1), house plant (1), painting (2), side table (1), tissue box (1).
+Act: pick up tissue box 1
+You pick up tissue box (1). You hold tissue box (1).
+Think: Now, I need to find box and put down tissue box 1.
+OK.
+Act: go to box 1
+You arrive at the box (1). The box (1) is closed. You see baseball bat (1), box (1), floor lamp (1), television (1). You hold tissue box (1).
+Act: open box 1
+You open box (1). You see baseball bat (1), box (1), floor lamp (1), television (1). You hold tissue box (1).
+Act: put down tissue box 1
+You put tissue box (1) in box (1).
+Think: Now, I need to pick up box 1.
+OK.
+Act: pick up box 1
+You pick up box (1). You hold box (1).
+Think: Now, I need to find armchair and put down box 1.
+OK.
+Act: go to armchair 1
+You arrive at the armchair (1). You see armchair (1), floor lamp (1), tissue box (1). You hold box (1).
+Act: put down box 1
+You put box (1) in armchair (1).
+Think: Now I complete the task.
+OK.
+Act: done

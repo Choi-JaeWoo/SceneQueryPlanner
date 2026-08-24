@@ -1,0 +1,51 @@
+Your task is to: Remove all items from the dresser and put them in the drawer.
+You are in the house, and there are 2 rooms: bathroom (1), bedroom (1). You are in the middle of a bedroom (1). Looking quickly around the room, you see baseball bat (1), basket ball (1), bed (1), drawer (1, 2, 3), dresser (1), house plant (1), painting (1, 2), television (1).
+Think: To solve the task, I need to find dresser and check what is on top of it. Then, I need to move everything on dresser to drawer.
+OK.
+Think: First, I need to find dresser.
+OK.
+Query: find_objects({'label': 'dresser'})
+Info: [{'name_id_nl': 'dresser 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'bedroom 1'}]
+Think: I find dresser 1.
+OK.
+Act: go to dresser 1
+You arrive at the dresser (1). You see CD (1), drawer (1, 2, 3), dresser (1), pen (1).
+Think: Now, I need to check what is on top of dresser 1.
+OK.
+Query: get_edges_for_node({'node_id': 'dresser 1', 'relation': 'ON'})
+Info: [('CD 1', 'dresser 1', 'ON'), ('pen 1', 'dresser 1', 'ON')]
+Think: Now, I need to move CD 1, pen 1 to drawer.
+OK.
+Act: go to CD 1
+You arrive at the CD (1). You see CD (1), drawer (1, 2, 3), dresser (1), pen (1).
+Act: pick up CD 1
+You pick up CD (1). You hold CD (1).
+Think: Now, I need to find drawer.
+OK.
+Query: find_objects({'label': 'drawer'})
+Info: [{'name_id_nl': 'drawer 1', 'node_type': 'asset', 'properties': ['openable'], 'states': [], 'room': 'bedroom 1'}, {'name_id_nl': 'drawer 2', 'node_type': 'asset', 'properties': ['openable'], 'states': [], 'room': 'bedroom 1'}, {'name_id_nl': 'drawer 3', 'node_type': 'asset', 'properties': ['openable'], 'states': [], 'room': 'bedroom 1'}]
+Think: Drawer 1 is in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see baseball bat (1), basket ball (1), bed (1), drawer (1, 2, 3), dresser (1), house plant (1), painting (1, 2), television (1). You hold CD (1).
+Act: go to drawer 1
+You arrive at the drawer (1). The drawer (1) is closed. You see drawer (1, 2, 3), dresser (1), pen (1). You hold CD (1).
+Act: open drawer 1
+You open drawer (1). You see drawer (1, 2, 3), dresser (1), pen (1). You hold CD (1).
+Act: put down CD 1
+You put CD (1) in drawer (1).
+Act: go to pen 1
+You arrive at the pen (1). You see CD (1), drawer (1, 2, 3), dresser (1), pen (1).
+Act: pick up pen 1
+You pick up pen (1). You hold pen (1).
+Act: go to drawer 1
+You arrive at the drawer (1). The drawer (1) is open. You see CD (1), drawer (1, 2, 3), dresser (1). You hold pen (1).
+Act: put down pen 1
+You put pen (1) in drawer (1).
+Think: Now I need to check what's left on dresser 1.
+OK.
+Query: get_edges_for_node({'node_id': 'dresser 1', 'relation': 'ON'})
+Info: 
+Think: Now I complete the task.
+OK.
+Act: done

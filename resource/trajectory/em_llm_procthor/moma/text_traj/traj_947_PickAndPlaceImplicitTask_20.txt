@@ -1,0 +1,8 @@
+Your task is to: Transfer all the objects from the side table to the dresser.
+You move to the bathroom (1). Looking quickly around the room, you see drawer (4), garbage can (1), painting (3, 4), plunger (1), side table (1), sink (1), sink basin (1), toilet (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- bathroom 1: [candle 1, dish sponge 1, painting 4, paper towel roll 1, toilet paper 1, faucet 1, house plant 2, spray bottle 1, drawer 4, garbage can 1, painting 3, plunger 1, side table 1, sink 1, sink basin 1, toilet 1]
+- (bedroom 1): [baseball bat 1, painting 1, television 1, (box 1), (drawer 2), (drawer 3), (drawer 1), painting 2, (dresser 1), (bed 1), house plant 1]
+Your 5 previous actions were: go to side table 1 (success), go to drawer 4 (success), open drawer 4 (success), go to garbage can 1 (success), go to bathroom 1 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I move to bathroom 1. I need to check unexplored areas in bathroom 1 to find side table. Now, I need to check side table 1.
+Act: go to side table 1

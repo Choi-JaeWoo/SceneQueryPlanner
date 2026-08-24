@@ -1,0 +1,37 @@
+Your task is to: Pick up a book and put it on the side table.
+You are in the house, and there are 5 rooms: bathroom (1), bedroom (1, 2), kitchen (1), living room (1). You are in the middle of a kitchen (1). Looking quickly around the room, you see chair (1, 2, 3), countertop (1), dining table (1), garbage bag (1).
+Think: To solve the task, I need to find and pick up book, then put it on side table.
+OK.
+Think: First, I need to find and pick up book.
+OK.
+Query: recall location of book
+You have not seen book before.
+Think: I have not seen book yet. The book is more likely to appear in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), armchair (1), dining table (2), dog bed (1), painting (1), shelf (13), sofa (1), stool (1).
+Think: In living room 1, the book is likely to appear in/on TV stand 1, armchair 1, dining table 2, dog bed 1, shelf (13), sofa 1, stool 1. I can check each place one by one until I find book.
+OK.
+Act: go to TV stand 1
+You arrive at the TV stand (1). You see TV stand (1), book (1), candle (2), credit card (1), desk lamp (1), newspaper (1), shelf (13), television (1).
+Think: I find book 1. Now, I need to pick it up.
+OK.
+Act: go to book 1
+You arrive at the book (1). The book (1) is closed. You see TV stand (1), book (1), candle (2), credit card (1), desk lamp (1), newspaper (1), shelf (13), television (1).
+Act: pick up book 1
+You pick up book (1). You hold book (1).
+Think: Now, I need to find side table and put down book 1.
+OK.
+Query: recall location of side table
+You saw side table 1 in bedroom 2.
+Think: Side table 1 is in bedroom 2.
+OK.
+Act: go to bedroom 2
+You move to the bedroom (2). Looking quickly around the room, you see armchair (2), baseball bat (1), bed (2), box (1), desk (2), drawer (10, 11, 12, 13, 14, 15, 16, 17, 18, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41), dresser (2), dumbbell (1), floor lamp (1), painting (3, 4), shelf (7, 8, 9, 10, 11, 12), side table (1). You hold book (1).
+Act: go to side table 1
+You arrive at the side table (1). You see box (1), drawer (41), mug (3), pen (1), side table (1), vase (3). You hold book (1).
+Act: put down book 1
+You put book (1) in side table (1).
+Think: Now I complete the task.
+OK.
+Act: done

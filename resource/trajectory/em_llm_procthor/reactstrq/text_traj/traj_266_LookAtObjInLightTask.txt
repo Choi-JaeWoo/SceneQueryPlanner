@@ -1,0 +1,53 @@
+Your task is to: Turn on the desklamp while holding a pencil.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a kitchen (1). Looking quickly around the room, you see chair (5), countertop (1), dining table (2), fridge (1), painting (3), television (1).
+Think: To solve the task, I need to find and pick up pencil, find and turn on desklamp.
+OK.
+Think: First, I need to find and pick up pencil.
+OK.
+Query: find_objects({'label': 'pencil'})
+Info: 
+Think: I have not seen pencil yet. Now I need to check where to search. First, I will search bedroom 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'bedroom 1'})
+Info: bed 1, chair (1, 2, 3, 4), dining table 1, drawer (1, 2, 3), dresser 1, sofa 1
+Think: In bedroom 1, the pencil is likely to appear in/on bed 1, chair (1, 2, 3, 4), dining table 1, drawer (1, 2, 3), dresser 1, sofa 1. I can check each place one by one until I find pencil.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see bed (1), chair (1, 2, 3, 4), dining table (1), drawer (1, 2, 3), dresser (1), painting (1, 2), sofa (1).
+Act: go to bed 1
+You arrive at the bed (1). You see alarm clock (1), bed (1), book (1, 2), cell phone (1), laptop (1), pillow (1), tennis racket (1).
+Act: go to chair 1
+You arrive at the chair (1). You see CD (1), book (3, 4, 5), chair (1, 4), dining table (1).
+Act: go to chair 2
+You arrive at the chair (2). You see book (3), chair (2, 3), pencil (1).
+Think: I find pencil 1. Now, I need to pick it up.
+OK.
+Act: go to pencil 1
+You arrive at the pencil (1). You see CD (1), book (3, 4, 5), chair (2, 3), dining table (1), pencil (1).
+Act: pick up pencil 1
+You pick up pencil (1). You hold pencil (1).
+Think: Now I need to find and turn on desklamp.
+OK.
+Query: find_objects({'label': 'desklamp'})
+Info: 
+Think: I have not seen desklamp yet. Now I need to check where to search. First, I will search living room 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'living room 1'})
+Info: chair (6, 7, 8, 9, 10), dining table 3, garbage can 2, sofa 2
+Think: In living room 1, the desklamp is likely to appear in/on chair (6, 7, 8, 9, 10), dining table 3, garbage can 2, sofa 2. I can check each place one by one until I find desklamp.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see chair (6, 7, 8, 9, 10), dining table (3), garbage can (2), painting (4), sofa (2), television (2). You hold pencil (1).
+Act: go to chair 6
+You arrive at the chair (6). You see bowl (1), chair (6, 9, 10), garbage can (2), painting (4), statue (2). You hold pencil (1).
+Act: go to chair 7
+You arrive at the chair (7). You see chair (7, 8), desk lamp (1), dining table (3), pencil (2). You hold pencil (1).
+Think: I find desk lamp 1. Now, I need to turn it on.
+OK.
+Act: go to desk lamp 1
+You arrive at the desk lamp (1). You see chair (7, 8), desk lamp (1), dining table (3), pencil (2). You hold pencil (1).
+Act: turn on desk lamp 1
+You turn on desk lamp (1). You hold pencil (1).
+Think: Now I complete the task.
+OK.
+Act: done

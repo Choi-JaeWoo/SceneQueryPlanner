@@ -1,0 +1,9 @@
+Your task is to: Shut down all active candles and faucets.
+3D Scene Graph: {nodes: {agent: [{id: user 1, location: bathroom 1}], room: [{id: bathroom 1}], asset: [{id: sink basin 1, location: bathroom 1}, {id: sink 1, location: bathroom 1}, {id: toilet 1, location: bathroom 1}], object: [{id: faucet 1, location: bathroom 1}, {id: painting 1, location: bathroom 1}, {id: painting 2, location: bathroom 1}, {id: cloth 1, location: bathroom 1}, {id: candle 1, location: bathroom 1}, {id: toilet paper 1, location: bathroom 1}]}, links: [user 1↔bathroom 1, user 1↔bathroom 1, user 1↔painting 2, sink basin 1↔bathroom 1, sink basin 1↔faucet 1, faucet 1↔sink basin 1, faucet 1↔sink 1, painting 1↔sink basin 1, painting 2↔user 1, painting 2↔toilet 1, cloth 1↔toilet 1, candle 1↔toilet 1, toilet paper 1↔toilet 1, sink 1↔bathroom 1, toilet 1↔bathroom 1]}
+Memory: ['bathroom 1']
+chain-of-thought: i have found the candle and faucet on the graph -> search complete -> i will switch to planning mode -> generate plan to shut down all active candles and faucets
+reasoning: I will generate a task plan using the identified subgraph
+plan: [go to bathroom 1, go to candle 1, turn off candle 1, go to candle 2, turn off candle 2, go to faucet 1, turn off faucet 1]
+Scene Graph Simulator: Invalid action: go to candle 2.
+plan: [go to bathroom 1, go to candle 1, turn off candle 1, go to faucet 1, turn off faucet 1]
+Scene Graph Simulator: Plan Verified

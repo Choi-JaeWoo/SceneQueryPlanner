@@ -1,0 +1,948 @@
+[
+  {
+    "env_id": 870,
+    "mode": "ToggleOffTask",
+    "instruction": [
+      "Toggle off all laptops, faucets, and floor lamps that are currently on.",
+      "Switch off all the laptops, faucets, and floor lamps that are currently in use.",
+      "Make sure to turn off any laptops, faucets, and floor lamps that are currently on.",
+      "Shut down all active laptops, faucets, and floor lamps."
+    ],
+    "task_goal": {
+      "toggleOff_laptop": 1,
+      "toggleOff_faucet": 1,
+      "toggleOff_floorlamp": 1
+    },
+    "init_state": [
+      "Faucet|3|1|1",
+      "Laptop|surface|2|0"
+    ]
+  },
+  {
+    "env_id": 279,
+    "mode": "ToggleOffTask",
+    "instruction": [
+      "Toggle off all cell phones and coffee machines that are currently on.",
+      "Switch off any cell phones and coffee machines that are currently in use.",
+      "Make sure all cell phones and coffee machines that are on have been turned off.",
+      "Power down all active cell phones and coffee machines."
+    ],
+    "task_goal": {
+      "toggleOff_cellphone": 1,
+      "toggleOff_coffeemachine": 1
+    },
+    "init_state": [
+      "CellPhone|surface|2|8",
+      "CoffeeMachine|surface|2|4"
+    ]
+  },
+  {
+    "env_id": 520,
+    "mode": "ToggleOffTask",
+    "instruction": [
+      "Toggle off all laptops, toasters, and coffee machines that are currently on.",
+      "Switch off any laptops, toasters, and coffee machines that are currently in use.",
+      "Make sure all running laptops, toasters, and coffee machines are turned off.",
+      "Shut down all laptops, toasters, and coffee machines that are currently powered on."
+    ],
+    "task_goal": {
+      "toggleOff_laptop": 1,
+      "toggleOff_toaster": 1,
+      "toggleOff_coffeemachine": 1
+    },
+    "init_state": [
+      "Toaster|surface|2|1",
+      "Laptop|surface|3|36",
+      "CoffeeMachine|surface|2|8"
+    ]
+  },
+  {
+    "env_id": 508,
+    "mode": "ToggleOffTask",
+    "instruction": [
+      "Toggle off all faucets, televisions, and cell phones that are currently on.",
+      "Switch off all the faucets, televisions, and cell phones that are currently in use.",
+      "Make sure to turn off any faucets, televisions, and cell phones that are currently on.",
+      "Shut down all running faucets, televisions, and cell phones."
+    ],
+    "task_goal": {
+      "toggleOff_faucet": 1,
+      "toggleOff_television": 1,
+      "toggleOff_cellphone": 1
+    },
+    "init_state": [
+      "CellPhone|surface|6|28",
+      "Faucet|5|1|1",
+      "Television|4|5"
+    ]
+  },
+  {
+    "env_id": 788,
+    "mode": "ToggleOffTask",
+    "instruction": [
+      "Toggle off all cell phones that are currently on.",
+      "Switch off any cell phones that are currently in use.",
+      "Turn off all cell phones that are presently powered on.",
+      "Shut down every cell phone that is currently turned on."
+    ],
+    "task_goal": {
+      "toggleOff_cellphone": 1
+    },
+    "init_state": [
+      "CellPhone|surface|2|24"
+    ]
+  },
+  {
+    "env_id": 840,
+    "mode": "ToggleOffTask",
+    "instruction": [
+      "Toggle off all televisions and cell phones that are currently on.",
+      "Switch off any televisions and cell phones that are currently in use.",
+      "Make sure all active televisions and cell phones are turned off.",
+      "Power down all televisions and cell phones that are currently on."
+    ],
+    "task_goal": {
+      "toggleOff_television": 1,
+      "toggleOff_cellphone": 1
+    },
+    "init_state": [
+      "Television|2|5",
+      "CellPhone|surface|2|6"
+    ]
+  },
+  {
+    "env_id": 655,
+    "mode": "ToggleOffTask",
+    "instruction": [
+      "Toggle off all candles, faucets, cell phones, and floor lamps that are currently on.",
+      "Switch off any candles, faucets, cell phones, and floor lamps that are currently in use.",
+      "Make sure to turn off all the candles, faucets, cell phones, and floor lamps that are currently on.",
+      "Power down all active candles, faucets, cell phones, and floor lamps."
+    ],
+    "task_goal": {
+      "toggleOff_candle": 1,
+      "toggleOff_faucet": 1,
+      "toggleOff_cellphone": 1,
+      "toggleOff_floorlamp": 1
+    },
+    "init_state": [
+      "CellPhone|surface|2|0",
+      "Candle|surface|3|13",
+      "Faucet|3|1|1"
+    ]
+  },
+  {
+    "env_id": 594,
+    "mode": "ToggleOffTask",
+    "instruction": [
+      "Toggle off all televisions and floor lamps that are currently on.",
+      "Switch off any floor lamps and televisions that are currently in use.",
+      "Make sure all televisions and floor lamps have been turned off.",
+      "Power down all active televisions and floor lamps."
+    ],
+    "task_goal": {
+      "toggleOff_television": 1,
+      "toggleOff_floorlamp": 1
+    },
+    "init_state": [
+      "FloorLamp|2|4|1",
+      "Television|2|0|3",
+      "FloorLamp|2|5|1"
+    ]
+  },
+  {
+    "env_id": 152,
+    "mode": "ToggleOffTask",
+    "instruction": [
+      "Toggle off all candles and faucets that are currently on.",
+      "Switch off any lit candles and running faucets.",
+      "Make sure all candles and faucets that are currently on have been turned off.",
+      "Turn off all the candles and faucets that are currently in use."
+    ],
+    "task_goal": {
+      "toggleOff_candle": 1,
+      "toggleOff_faucet": 1
+    },
+    "init_state": [
+      "Candle|surface|2|1",
+      "Faucet|2|1|1"
+    ]
+  },
+  {
+    "env_id": 323,
+    "mode": "ToggleOffTask",
+    "instruction": [
+      "Toggle off all televisions and cell phones that are currently on.",
+      "Switch off any televisions and cell phones that are currently in use.",
+      "Make sure all running televisions and cell phones are turned off.",
+      "Power down all active televisions and cell phones."
+    ],
+    "task_goal": {
+      "toggleOff_television": 1,
+      "toggleOff_cellphone": 1
+    },
+    "init_state": [
+      "Television|2|5",
+      "CellPhone|surface|2|19"
+    ]
+  },
+  {
+    "env_id": 284,
+    "mode": "ToggleOffTask",
+    "instruction": [
+      "Toggle off all desk lamps, laptops, and televisions that are currently on.",
+      "Switch off any desk lamps, laptops, and televisions that are currently in use.",
+      "Make sure to turn off all desk lamps, laptops, and televisions that are presently on.",
+      "Shut down all active desk lamps, laptops, and televisions."
+    ],
+    "task_goal": {
+      "toggleOff_desklamp": 1,
+      "toggleOff_laptop": 1,
+      "toggleOff_television": 1
+    },
+    "init_state": [
+      "Laptop|surface|2|23",
+      "Television|2|5"
+    ]
+  },
+  {
+    "env_id": 926,
+    "mode": "ToggleOffTask",
+    "instruction": [
+      "Toggle off all candles, faucets, and televisions that are currently on.",
+      "Switch off any candles, faucets, and televisions that are currently in use.",
+      "Make sure to turn off all the candles, faucets, and TVs that are currently on.",
+      "Shut down all active candles, faucets, and televisions."
+    ],
+    "task_goal": {
+      "toggleOff_candle": 1,
+      "toggleOff_faucet": 1,
+      "toggleOff_television": 1
+    },
+    "init_state": [
+      "Television|2|3",
+      "Candle|surface|3|10",
+      "Faucet|3|1|1"
+    ]
+  },
+  {
+    "env_id": 316,
+    "mode": "ToggleOffTask",
+    "instruction": [
+      "Toggle off all televisions, cell phones, and coffee machines that are currently on.",
+      "Switch off all televisions, cell phones, and coffee machines that are currently in use.",
+      "Turn off any active televisions, cell phones, and coffee machines at this time.",
+      "Make sure to shut down all operating televisions, cell phones, and coffee machines."
+    ],
+    "task_goal": {
+      "toggleOff_television": 1,
+      "toggleOff_cellphone": 1,
+      "toggleOff_coffeemachine": 1
+    },
+    "init_state": [
+      "CoffeeMachine|surface|6|2",
+      "Television|7|0|1",
+      "CellPhone|surface|2|25"
+    ]
+  },
+  {
+    "env_id": 956,
+    "mode": "ToggleOffTask",
+    "instruction": [
+      "Toggle off all desk lamps, televisions, and cell phones that are currently on.",
+      "Switch off any desk lamps, televisions, and cell phones that are currently in use.",
+      "Make sure to turn off all desk lamps, televisions, and cell phones that are currently on.",
+      "Power down all active desk lamps, televisions, and cell phones."
+    ],
+    "task_goal": {
+      "toggleOff_desklamp": 1,
+      "toggleOff_television": 1,
+      "toggleOff_cellphone": 1
+    },
+    "init_state": [
+      "CellPhone|surface|3|23",
+      "Television|3|0|2"
+    ]
+  },
+  {
+    "env_id": 342,
+    "mode": "ToggleOffTask",
+    "instruction": [
+      "Toggle off all televisions that are currently on.",
+      "Switch off any television that is currently in use.",
+      "Make sure all currently active televisions are turned off.",
+      "Turn off every television that is presently on."
+    ],
+    "task_goal": {
+      "toggleOff_television": 1
+    },
+    "init_state": [
+      "Television|2|6"
+    ]
+  },
+  {
+    "env_id": 632,
+    "mode": "ToggleOffTask",
+    "instruction": [
+      "Toggle off all desk lamps, toasters, televisions, and cell phones that are currently on.",
+      "Switch off any desk lamps, toasters, televisions, and cell phones that are currently in use.",
+      "Make sure to turn off all desk lamps, toasters, televisions, and cell phones that are presently on.",
+      "Power down all active desk lamps, toasters, televisions, and cell phones."
+    ],
+    "task_goal": {
+      "toggleOff_desklamp": 1,
+      "toggleOff_toaster": 1,
+      "toggleOff_television": 1,
+      "toggleOff_cellphone": 1
+    },
+    "init_state": [
+      "CellPhone|surface|3|14",
+      "Television|8|2",
+      "Toaster|surface|2|5"
+    ]
+  },
+  {
+    "env_id": 299,
+    "mode": "ToggleOffTask",
+    "instruction": [
+      "Toggle off all candles, laptops, and cell phones that are currently on.",
+      "Switch off any lit candles, active laptops, and cell phones that are currently in use.",
+      "Make sure all the candles, laptops, and cell phones that are on have been turned off.",
+      "Power down all currently active candles, laptops, and cell phones."
+    ],
+    "task_goal": {
+      "toggleOff_candle": 1,
+      "toggleOff_laptop": 1,
+      "toggleOff_cellphone": 1
+    },
+    "init_state": [
+      "Laptop|surface|4|0",
+      "CellPhone|surface|4|5",
+      "Candle|surface|7|42"
+    ]
+  },
+  {
+    "env_id": 755,
+    "mode": "ToggleOffTask",
+    "instruction": [
+      "Toggle off all televisions and cell phones that are currently on.",
+      "Switch off any televisions and cell phones that are currently in use.",
+      "Turn off all active televisions and cell phones at this time.",
+      "Disable all televisions and cell phones that are presently turned on."
+    ],
+    "task_goal": {
+      "toggleOff_television": 1,
+      "toggleOff_cellphone": 1
+    },
+    "init_state": [
+      "Television|4|2|3",
+      "Television|7|0|1",
+      "CellPhone|surface|4|10"
+    ]
+  },
+  {
+    "env_id": 900,
+    "mode": "ToggleOffTask",
+    "instruction": [
+      "Toggle off all desk lamps, laptops, and televisions that are currently on.",
+      "Switch off any desk lamps, laptops, and televisions that are currently in use.",
+      "Make sure to turn off all desk lamps, laptops, and televisions that are currently on.",
+      "Shut down all active desk lamps, laptops, and televisions."
+    ],
+    "task_goal": {
+      "toggleOff_desklamp": 1,
+      "toggleOff_laptop": 1,
+      "toggleOff_television": 1
+    },
+    "init_state": [
+      "Laptop|surface|8|42",
+      "Television|6|5",
+      "Television|4|0|2"
+    ]
+  },
+  {
+    "env_id": 944,
+    "mode": "ToggleOffTask",
+    "instruction": [
+      "Toggle off all candles and televisions that are currently on.",
+      "Switch off any lit candles and active televisions.",
+      "Make sure all the candles and TVs that are on have been turned off.",
+      "Turn off all currently burning candles and operating televisions."
+    ],
+    "task_goal": {
+      "toggleOff_candle": 1,
+      "toggleOff_television": 1
+    },
+    "init_state": [
+      "Television|5|2|1",
+      "Candle|surface|4|26",
+      "Television|6|5"
+    ]
+  },
+  {
+    "env_id": 227,
+    "mode": "ToggleOffTask",
+    "instruction": [
+      "Toggle off all desk lamps, laptops, and cell phones that are currently on.",
+      "Switch off all the desk lamps, laptops, and cell phones that are currently in use.",
+      "Turn off every desk lamp, laptop, and cell phone that is currently turned on.",
+      "Make sure to shut down all desk lamps, laptops, and cell phones that are currently operating."
+    ],
+    "task_goal": {
+      "toggleOff_desklamp": 1,
+      "toggleOff_laptop": 1,
+      "toggleOff_cellphone": 1
+    },
+    "init_state": [
+      "Laptop|surface|2|14",
+      "DeskLamp|surface|2|11",
+      "CellPhone|surface|2|0"
+    ]
+  },
+  {
+    "env_id": 904,
+    "mode": "ToggleOffTask",
+    "instruction": [
+      "Toggle off all faucets, televisions, and cell phones that are currently on.",
+      "Switch off any faucets, televisions, and cell phones that are currently in use.",
+      "Make sure to turn off all the faucets, televisions, and cell phones that are currently on.",
+      "Shut down all running faucets, televisions, and cell phones."
+    ],
+    "task_goal": {
+      "toggleOff_faucet": 1,
+      "toggleOff_television": 1,
+      "toggleOff_cellphone": 1
+    },
+    "init_state": [
+      "Faucet|5|1|1",
+      "CellPhone|surface|4|3",
+      "Television|4|4"
+    ]
+  },
+  {
+    "env_id": 149,
+    "mode": "ToggleOffTask",
+    "instruction": [
+      "Toggle off all faucets, televisions, and laptops that are currently on.",
+      "Switch off any faucets, televisions, and laptops that are currently in use.",
+      "Make sure to turn off all running faucets, televisions, and laptops.",
+      "Power down all active faucets, televisions, and laptops."
+    ],
+    "task_goal": {
+      "toggleOff_faucet": 1,
+      "toggleOff_television": 1,
+      "toggleOff_laptop": 1
+    },
+    "init_state": [
+      "Television|2|2|1",
+      "Laptop|surface|2|3",
+      "Faucet|3|1|1"
+    ]
+  },
+  {
+    "env_id": 164,
+    "mode": "ToggleOffTask",
+    "instruction": [
+      "Toggle off all candles, cell phones, and floor lamps that are currently on.",
+      "Switch off all the candles, cell phones, and floor lamps that are currently in use.",
+      "Make sure to turn off any lit candles, active cell phones, and floor lamps that are on.",
+      "Ensure that all candles, cell phones, and floor lamps currently in operation are powered down."
+    ],
+    "task_goal": {
+      "toggleOff_candle": 1,
+      "toggleOff_cellphone": 1,
+      "toggleOff_floorlamp": 1
+    },
+    "init_state": [
+      "Candle|surface|5|7",
+      "CellPhone|surface|6|23",
+      "Candle|surface|7|34"
+    ]
+  },
+  {
+    "env_id": 485,
+    "mode": "ToggleOffTask",
+    "instruction": [
+      "Toggle off all candles, laptops, and coffee machines that are currently on.",
+      "Switch off all the candles, laptops, and coffee machines that are currently in use.",
+      "Make sure to turn off any candles, laptops, and coffee machines that are currently operating.",
+      "Shut down all candles, laptops, and coffee machines that are presently turned on."
+    ],
+    "task_goal": {
+      "toggleOff_candle": 1,
+      "toggleOff_laptop": 1,
+      "toggleOff_coffeemachine": 1
+    },
+    "init_state": [
+      "CoffeeMachine|surface|2|9",
+      "Laptop|surface|3|18",
+      "Candle|surface|3|17"
+    ]
+  },
+  {
+    "env_id": 417,
+    "mode": "ToggleOffTask",
+    "instruction": [
+      "Toggle off all desk lamps and faucets that are currently on.",
+      "Switch off any desk lamps and faucets that are currently in use.",
+      "Make sure to turn off all the desk lamps and faucets that are on.",
+      "Shut down all currently active desk lamps and faucets."
+    ],
+    "task_goal": {
+      "toggleOff_desklamp": 1,
+      "toggleOff_faucet": 1
+    },
+    "init_state": [
+      "Faucet|3|1|1"
+    ]
+  },
+  {
+    "env_id": 685,
+    "mode": "ToggleOffTask",
+    "instruction": [
+      "Toggle off all laptops, faucets, and floor lamps that are currently on.",
+      "Switch off all laptops, faucets, and floor lamps that are currently in use.",
+      "Make sure to turn off any laptops, faucets, and floor lamps that are currently on.",
+      "Power down all running laptops, faucets, and floor lamps."
+    ],
+    "task_goal": {
+      "toggleOff_laptop": 1,
+      "toggleOff_faucet": 1,
+      "toggleOff_floorlamp": 1
+    },
+    "init_state": [
+      "Faucet|3|1|1",
+      "FloorLamp|2|2|1",
+      "Laptop|surface|2|4"
+    ]
+  },
+  {
+    "env_id": 449,
+    "mode": "ToggleOffTask",
+    "instruction": [
+      "Toggle off all laptops, cell phones, and coffee machines that are currently on.",
+      "Switch off any laptops, cell phones, and coffee machines that are currently in use.",
+      "Make sure to turn off all running laptops, cell phones, and coffee machines.",
+      "Power down all laptops, cell phones, and coffee machines that are currently turned on."
+    ],
+    "task_goal": {
+      "toggleOff_laptop": 1,
+      "toggleOff_cellphone": 1,
+      "toggleOff_coffeemachine": 1
+    },
+    "init_state": [
+      "CellPhone|surface|3|25",
+      "CoffeeMachine|surface|2|8",
+      "Laptop|surface|3|28"
+    ]
+  },
+  {
+    "env_id": 255,
+    "mode": "ToggleOffTask",
+    "instruction": [
+      "Toggle off all candles and televisions that are currently on.",
+      "Switch off any lit candles and active televisions.",
+      "Ensure all candles and televisions that are currently on have been turned off.",
+      "Power down all the candles and televisions that are presently in use."
+    ],
+    "task_goal": {
+      "toggleOff_candle": 1,
+      "toggleOff_television": 1
+    },
+    "init_state": [
+      "Television|3|0|2",
+      "Television|2|5",
+      "Candle|surface|3|23"
+    ]
+  },
+  {
+    "env_id": 665,
+    "mode": "ToggleOffTask",
+    "instruction": [
+      "Toggle off all televisions that are currently on.",
+      "Switch off any television that is currently in use.",
+      "Make sure all currently active televisions are turned off.",
+      "Turn off every television that is presently on."
+    ],
+    "task_goal": {
+      "toggleOff_television": 1
+    },
+    "init_state": [
+      "Television|2|5"
+    ]
+  },
+  {
+    "env_id": 264,
+    "mode": "ToggleOffTask",
+    "instruction": [
+      "Toggle off all televisions and cell phones that are currently on.",
+      "Switch off any televisions and cell phones that are currently in use.",
+      "Make sure all active televisions and cell phones are turned off.",
+      "Power down all televisions and cell phones that are currently turned on."
+    ],
+    "task_goal": {
+      "toggleOff_television": 1,
+      "toggleOff_cellphone": 1
+    },
+    "init_state": [
+      "CellPhone|surface|3|14",
+      "Television|3|0|2",
+      "CellPhone|surface|3|13"
+    ]
+  },
+  {
+    "env_id": 966,
+    "mode": "ToggleOffTask",
+    "instruction": [
+      "Toggle off all candles and faucets that are currently on.",
+      "Switch off any lit candles and running faucets.",
+      "Make sure all the candles and faucets that are currently on have been turned off.",
+      "Shut down all active candles and faucets."
+    ],
+    "task_goal": {
+      "toggleOff_candle": 1,
+      "toggleOff_faucet": 1
+    },
+    "init_state": [
+      "Faucet|2|1|1",
+      "Candle|surface|2|0"
+    ]
+  },
+  {
+    "env_id": 385,
+    "mode": "ToggleOffTask",
+    "instruction": [
+      "Toggle off all faucets that are currently on.",
+      "Switch off any faucet that is currently in use.",
+      "Make sure all running faucets are turned off.",
+      "Turn off every faucet that is currently on."
+    ],
+    "task_goal": {
+      "toggleOff_faucet": 1
+    },
+    "init_state": [
+      "Faucet|2|1|1"
+    ]
+  },
+  {
+    "env_id": 737,
+    "mode": "ToggleOffTask",
+    "instruction": [
+      "Toggle off all faucets that are currently on.",
+      "Turn off any faucets that are currently in use.",
+      "Switch off all running faucets.",
+      "Make sure to shut off every faucet that is on."
+    ],
+    "task_goal": {
+      "toggleOff_faucet": 1
+    },
+    "init_state": [
+      "Faucet|2|1|1"
+    ]
+  },
+  {
+    "env_id": 533,
+    "mode": "ToggleOffTask",
+    "instruction": [
+      "Toggle off all laptops, televisions, and toasters that are currently on.",
+      "Switch off all laptops, televisions, and toasters that are currently in use.",
+      "Make sure to turn off any laptops, televisions, and toasters that are currently on.",
+      "Power down all active laptops, televisions, and toasters."
+    ],
+    "task_goal": {
+      "toggleOff_laptop": 1,
+      "toggleOff_television": 1,
+      "toggleOff_toaster": 1
+    },
+    "init_state": [
+      "Toaster|surface|2|3",
+      "Laptop|surface|3|15",
+      "Television|3|0|1"
+    ]
+  },
+  {
+    "env_id": 209,
+    "mode": "ToggleOffTask",
+    "instruction": [
+      "Toggle off all candles and faucets that are currently on.",
+      "Switch off any lit candles and running faucets.",
+      "Make sure all the candles and faucets that are on have been turned off.",
+      "Turn off all currently active candles and faucets."
+    ],
+    "task_goal": {
+      "toggleOff_candle": 1,
+      "toggleOff_faucet": 1
+    },
+    "init_state": [
+      "Candle|surface|2|1",
+      "Faucet|2|1|1"
+    ]
+  },
+  {
+    "env_id": 786,
+    "mode": "ToggleOffTask",
+    "instruction": [
+      "Toggle off all desk lamps, televisions, and toasters that are currently on.",
+      "Switch off any active desk lamps, televisions, and toasters.",
+      "Turn off all desk lamps, televisions, and toasters that are currently in use.",
+      "Shut down all running desk lamps, televisions, and toasters."
+    ],
+    "task_goal": {
+      "toggleOff_desklamp": 1,
+      "toggleOff_television": 1,
+      "toggleOff_toaster": 1
+    },
+    "init_state": [
+      "DeskLamp|surface|2|17",
+      "Toaster|surface|6|3",
+      "Television|7|0|1"
+    ]
+  },
+  {
+    "env_id": 852,
+    "mode": "ToggleOffTask",
+    "instruction": [
+      "Toggle off all televisions, cell phones, and coffee machines that are currently on.",
+      "Switch off any televisions, cell phones, and coffee machines that are currently in use.",
+      "Make sure to turn off all active televisions, cell phones, and coffee machines.",
+      "Power down every television, cell phone, and coffee machine that is currently turned on."
+    ],
+    "task_goal": {
+      "toggleOff_television": 1,
+      "toggleOff_cellphone": 1,
+      "toggleOff_coffeemachine": 1
+    },
+    "init_state": [
+      "Television|7|3",
+      "CellPhone|surface|6|9",
+      "CoffeeMachine|surface|6|12"
+    ]
+  },
+  {
+    "env_id": 280,
+    "mode": "ToggleOffTask",
+    "instruction": [
+      "Toggle off all televisions that are currently on.",
+      "Switch off any television that is currently in use.",
+      "Turn off all televisions that are currently turned on.",
+      "Shut down every television that is presently operating."
+    ],
+    "task_goal": {
+      "toggleOff_television": 1
+    },
+    "init_state": [
+      "Television|2|4"
+    ]
+  },
+  {
+    "env_id": 136,
+    "mode": "ToggleOffTask",
+    "instruction": [
+      "Toggle off all desk lamps, faucets, televisions, and laptops that are currently on.",
+      "Switch off all desk lamps, faucets, televisions, and laptops that are currently in use.",
+      "Make sure to turn off every desk lamp, faucet, television, and laptop that is currently on.",
+      "Shut down all active desk lamps, faucets, televisions, and laptops."
+    ],
+    "task_goal": {
+      "toggleOff_desklamp": 1,
+      "toggleOff_faucet": 1,
+      "toggleOff_television": 1,
+      "toggleOff_laptop": 1
+    },
+    "init_state": [
+      "Television|2|3|2",
+      "Faucet|3|1|1",
+      "Laptop|surface|2|5"
+    ]
+  },
+  {
+    "env_id": 64,
+    "mode": "ToggleOffTask",
+    "instruction": [
+      "Toggle off all televisions and toasters that are currently on.",
+      "Turn off any televisions and toasters that are currently in use.",
+      "Switch off all active televisions and toasters.",
+      "Make sure to shut down all televisions and toasters that are currently on."
+    ],
+    "task_goal": {
+      "toggleOff_television": 1,
+      "toggleOff_toaster": 1
+    },
+    "init_state": [
+      "Toaster|surface|2|11",
+      "Television|2|6"
+    ]
+  },
+  {
+    "env_id": 940,
+    "mode": "ToggleOffTask",
+    "instruction": [
+      "Toggle off all laptops and televisions that are currently on.",
+      "Switch off all laptops and televisions that are currently in use.",
+      "Make sure to turn off any laptops and televisions that are currently on.",
+      "Shut down all active laptops and televisions."
+    ],
+    "task_goal": {
+      "toggleOff_laptop": 1,
+      "toggleOff_television": 1
+    },
+    "init_state": [
+      "Laptop|surface|4|1",
+      "Television|7|0|2",
+      "Television|4|6"
+    ]
+  },
+  {
+    "env_id": 797,
+    "mode": "ToggleOffTask",
+    "instruction": [
+      "Toggle off all laptops, televisions, and cell phones that are currently on.",
+      "Switch off any laptops, televisions, and cell phones that are currently in use.",
+      "Make sure to turn off all laptops, televisions, and cell phones that are currently powered on.",
+      "Shut down all running laptops, televisions, and cell phones."
+    ],
+    "task_goal": {
+      "toggleOff_laptop": 1,
+      "toggleOff_television": 1,
+      "toggleOff_cellphone": 1
+    },
+    "init_state": [
+      "Television|2|4",
+      "CellPhone|surface|2|7",
+      "Laptop|surface|2|0"
+    ]
+  },
+  {
+    "env_id": 744,
+    "mode": "ToggleOffTask",
+    "instruction": [
+      "Toggle off all desk lamps, floor lamps, and televisions that are currently on.",
+      "Switch off any desk lamps, floor lamps, and televisions that are currently in use.",
+      "Turn off all the desk lamps, floor lamps, and TVs that are presently on.",
+      "Make sure to shut down all desk lamps, floor lamps, and televisions that are currently operating."
+    ],
+    "task_goal": {
+      "toggleOff_desklamp": 1,
+      "toggleOff_floorlamp": 1,
+      "toggleOff_television": 1
+    },
+    "init_state": [
+      "Television|7|0|2"
+    ]
+  },
+  {
+    "env_id": 186,
+    "mode": "ToggleOffTask",
+    "instruction": [
+      "Toggle off all laptops, televisions, and toasters that are currently on.",
+      "Switch off all laptops, televisions, and toasters that are currently in use.",
+      "Make sure to turn off any laptops, televisions, and toasters that are currently on.",
+      "Power down all active laptops, televisions, and toasters."
+    ],
+    "task_goal": {
+      "toggleOff_laptop": 1,
+      "toggleOff_television": 1,
+      "toggleOff_toaster": 1
+    },
+    "init_state": [
+      "Toaster|surface|6|2",
+      "Laptop|surface|7|30",
+      "Television|2|2|1"
+    ]
+  },
+  {
+    "env_id": 76,
+    "mode": "ToggleOffTask",
+    "instruction": [
+      "Toggle off all desk lamps, televisions, and cell phones that are currently on.",
+      "Switch off all the desk lamps, televisions, and cell phones that are currently in use.",
+      "Turn off any desk lamps, televisions, and cell phones that are presently on.",
+      "Make sure to shut down all desk lamps, televisions, and cell phones that are currently active."
+    ],
+    "task_goal": {
+      "toggleOff_desklamp": 1,
+      "toggleOff_television": 1,
+      "toggleOff_cellphone": 1
+    },
+    "init_state": [
+      "CellPhone|surface|2|11",
+      "Television|2|7"
+    ]
+  },
+  {
+    "env_id": 696,
+    "mode": "ToggleOffTask",
+    "instruction": [
+      "Toggle off all microwaves and televisions that are currently on.",
+      "Switch off any microwaves and televisions that are currently in use.",
+      "Make sure all running microwaves and televisions are turned off.",
+      "Power down all active microwaves and televisions."
+    ],
+    "task_goal": {
+      "toggleOff_microwave": 1,
+      "toggleOff_television": 1
+    },
+    "init_state": [
+      "Television|2|6",
+      "Microwave|surface|2|7"
+    ]
+  },
+  {
+    "env_id": 723,
+    "mode": "ToggleOffTask",
+    "instruction": [
+      "Toggle off all laptops, televisions, and coffee machines that are currently on.",
+      "Switch off any laptops, televisions, and coffee machines that are currently in use.",
+      "Make sure to turn off all running laptops, televisions, and coffee machines.",
+      "Power down all laptops, televisions, and coffee machines that are presently on."
+    ],
+    "task_goal": {
+      "toggleOff_laptop": 1,
+      "toggleOff_television": 1,
+      "toggleOff_coffeemachine": 1
+    },
+    "init_state": [
+      "CoffeeMachine|surface|6|4",
+      "Laptop|surface|2|18",
+      "Television|7|0|1"
+    ]
+  },
+  {
+    "env_id": 194,
+    "mode": "ToggleOffTask",
+    "instruction": [
+      "Toggle off all desk lamps, faucets, and televisions that are currently on.",
+      "Switch off any desk lamps, faucets, and televisions that are currently in use.",
+      "Make sure to turn off all desk lamps, faucets, and televisions that are currently on.",
+      "Shut down all active desk lamps, faucets, and televisions."
+    ],
+    "task_goal": {
+      "toggleOff_desklamp": 1,
+      "toggleOff_faucet": 1,
+      "toggleOff_television": 1
+    },
+    "init_state": [
+      "Faucet|3|1|1",
+      "Television|6|5"
+    ]
+  },
+  {
+    "env_id": 357,
+    "mode": "ToggleOffTask",
+    "instruction": [
+      "Toggle off all laptops, televisions, and floor lamps that are currently on.",
+      "Switch off all laptops, televisions, and floor lamps that are currently in use.",
+      "Make sure to turn off any laptops, televisions, and floor lamps that are currently on.",
+      "Shut down all running laptops, televisions, and floor lamps."
+    ],
+    "task_goal": {
+      "toggleOff_laptop": 1,
+      "toggleOff_television": 1,
+      "toggleOff_floorlamp": 1
+    },
+    "init_state": [
+      "Television|2|6",
+      "Laptop|surface|2|1"
+    ]
+  }
+]

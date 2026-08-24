@@ -1,0 +1,47 @@
+Your task is to: Put a box with a pencil inside it on the shelf.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a living room (1). Looking quickly around the room, you see TV stand (1), dining table (2), dog bed (1), painting (3, 4), shelf (4), sofa (1).
+Think: To solve the task, I need to find and pick up pencil, put it in box, pick up and place box on shelf.
+OK.
+Think: First, I need to find and pick up pencil.
+OK.
+Query: find_objects({'label': 'pencil'})
+Info: [{'name_id_nl': 'pencil 1', 'node_type': 'object', 'properties': ['pickupable'], 'states': []}]
+Query: get_edges_for_node({'node_id': 'pencil 1'})
+Info: [('pencil 1', 'living room 1', 'INSIDE'), ('pencil 1', 'dining table 2', 'ON'), ('pencil 1', 'box 2', 'CLOSE'), ('pencil 1', 'candle 2', 'CLOSE'), ('pencil 1', 'laptop 2', 'CLOSE'), ('pencil 1', 'remote control 2', 'CLOSE'), ('pencil 1', 'statue 1', 'CLOSE'), ('pencil 1', 'user 1', 'CLOSE'), ('box 2', 'pencil 1', 'CLOSE'), ('candle 2', 'pencil 1', 'CLOSE'), ('laptop 2', 'pencil 1', 'CLOSE'), ('remote control 2', 'pencil 1', 'CLOSE'), ('statue 1', 'pencil 1', 'CLOSE'), ('user 1', 'pencil 1', 'CLOSE')]
+Think: Pencil 1 is on dining table 2.
+OK.
+Act: go to dining table 2
+You arrive at the dining table (2). You see bowl (2), box (2), candle (2), dining table (2), laptop (2), pencil (1), remote control (1, 2, 3), statue (1), watch (2).
+Act: go to pencil 1
+You arrive at the pencil (1). You see bowl (2), box (2), candle (2), dining table (2), laptop (2), pencil (1), remote control (1, 2, 3), statue (1), watch (2).
+Act: pick up pencil 1
+You pick up pencil (1). You hold pencil (1).
+Think: Now, I need to find box.
+OK.
+Query: find_objects({'label': 'box'})
+Info: [{'name_id_nl': 'box 1', 'node_type': 'asset', 'properties': ['pickupable'], 'states': [], 'room': 'bedroom 1'}, {'name_id_nl': 'box 2', 'node_type': 'asset', 'properties': ['openable', 'pickupable'], 'states': ['isOpen'], 'room': 'living room 1'}]
+Think: I find box 2.
+OK.
+Act: go to box 2
+You arrive at the box (2). The box (2) is open. You see bowl (2), box (2), candle (2), dining table (2), laptop (2), remote control (1, 2, 3), statue (1), watch (2). You hold pencil (1).
+Think: Now, I need to put down pencil 1 and pick up box 2.
+OK.
+Act: put down pencil 1
+You put pencil (1) in box (2).
+Act: pick up box 2
+You pick up box (2). You hold box (2).
+Think: Now, I need to find shelf and put down box 2.
+OK.
+Query: find_objects({'label': 'shelf'})
+Info: [{'name_id_nl': 'shelf 4', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}, {'name_id_nl': 'shelf 2', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'kitchen 1'}, {'name_id_nl': 'shelf 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'kitchen 1'}, {'name_id_nl': 'shelf 3', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'kitchen 1'}]
+Think: Shelf 4 is in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), dining table (2), dog bed (1), painting (3, 4), pencil (1), shelf (4), sofa (1). You hold box (2).
+Act: go to shelf 4
+You arrive at the shelf (4). You see TV stand (1), book (2), candle (1), pencil (1), shelf (4), television (1), watch (1). You hold box (2).
+Act: put down box 2
+You put box (2) in shelf (4).
+Think: Now I complete task.
+OK.
+Act: done

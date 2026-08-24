@@ -1,0 +1,65 @@
+Your task is to: Examine a spoon by the light emitted from a candle.
+You are in the house, and there are 2 rooms: kitchen (1), living room (1). You are in the middle of a living room (1). Looking quickly around the room, you see TV stand (1), boots (1), dining table (1), painting (2, 3, 4), shelf (4, 5, 6, 7, 8, 9), sofa (1).
+Think: To solve the task, I need to find and pick up spoon, find and turn on candle to examine spoon.
+OK.
+Think: First, I need to find and pick up spoon.
+OK.
+Query: recall location of spoon
+You have not seen spoon before.
+Think: I have not seen spoon yet. The spoon is more likely to appear in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see cabinet (1), countertop (1), fridge (1), painting (1), shelf (1, 2, 3), shelving unit (1), stool (1).
+Think: In kitchen 1, the spoon is likely to appear in/on cabinet 1, countertop 1, fridge 1, shelf (1, 2, 3), shelving unit 1. I can check each place one by one until I find spoon.
+OK.
+Act: go to cabinet 1
+You arrive at the cabinet (1). The cabinet (1) is closed. You see cabinet (1), countertop (1), fridge (1), shelf (1, 2, 3), shelving unit (1), soap bottle (1), spoon (1).
+Think: I find spoon 1. Now, I need to pick it up.
+OK.
+Act: open cabinet 1
+You open cabinet (1). You see cabinet (1), countertop (1), fridge (1), shelf (1, 2, 3), shelving unit (1), soap bottle (1), spoon (1), spray bottle (1).
+Act: go to spoon 1
+You arrive at the spoon (1). You see cabinet (1), countertop (1), mug (1), shelf (1, 2, 3), shelving unit (1), soap bottle (1), spoon (1), spray bottle (1), vase (1), wine bottle (1).
+Act: pick up spoon 1
+You pick up spoon (1). You hold spoon (1).
+Think: Now I need to find and turn on candle.
+OK.
+Query: recall location of candle
+You have not seen candle before.
+Think: I have not seen candle yet. The candle is more likely to appear in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see cabinet (1), countertop (1), fridge (1), painting (1), shelf (1, 2, 3), shelving unit (1), stool (1). You hold spoon (1).
+Think: In kitchen 1, the candle is likely to appear in/on cabinet 1, countertop 1, fridge 1, shelf (1, 2, 3), shelving unit 1. I can check each place one by one until I find candle.
+OK.
+Act: go to cabinet 1
+You arrive at the cabinet (1). The cabinet (1) is open. You see cabinet (1), fridge (1), shelf (1, 2, 3), shelving unit (1), spray bottle (1). You hold spoon (1).
+Act: go to fridge 1
+You arrive at the fridge (1). The fridge (1) is closed. You see cabinet (1), fridge (1), shelf (1, 2, 3), shelving unit (1), spray bottle (1). You hold spoon (1).
+Act: open fridge 1
+You open fridge (1). You see cabinet (1), fridge (1), shelf (1, 2, 3), shelving unit (1), spray bottle (1). You hold spoon (1).
+Act: go to shelf 1
+You arrive at the shelf (1). You see cabinet (1), fridge (1), shelf (1, 2, 3), shelving unit (1), spray bottle (1). You hold spoon (1).
+Act: go to shelf 2
+You arrive at the shelf (2). You see cabinet (1), fridge (1), shelf (1, 2, 3), shelving unit (1), spray bottle (1). You hold spoon (1).
+Act: go to shelf 3
+You arrive at the shelf (3). You see cabinet (1), countertop (1), fridge (1), mug (1), shelf (1, 2, 3), shelving unit (1), soap bottle (1), spray bottle (1), wine bottle (1). You hold spoon (1).
+Act: go to shelving unit 1
+You arrive at the shelving unit (1). You see cabinet (1), countertop (1), mug (1), shelf (1, 2, 3), shelving unit (1), soap bottle (1), spray bottle (1), vase (1), wine bottle (1). You hold spoon (1).
+Think: In kitchen 1, I visit all places. Now I need to search living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), boots (1), dining table (1), painting (2, 3, 4), shelf (4, 5, 6, 7, 8, 9), sofa (1). You hold spoon (1).
+Think: In living room 1, the candle is likely to appear in/on TV stand 1, dining table 1, shelf (4, 5, 6, 7, 8, 9), sofa 1. I can check each place one by one until I find candle.
+OK.
+Act: go to TV stand 1
+You arrive at the TV stand (1). You see TV stand (1), candle (1), shelf (4, 5, 6, 7, 8, 9), statue (1), television (1). You hold spoon (1).
+Think: I find candle 1. Now, I need to turn it on.
+OK.
+Act: go to candle 1
+You arrive at the candle (1). You see TV stand (1), candle (1), shelf (4, 5, 6, 7, 8, 9), statue (1), television (1). You hold spoon (1).
+Act: turn on candle 1
+You turn on candle (1). You hold spoon (1).
+Think: Now I complete the task.
+OK.
+Act: done

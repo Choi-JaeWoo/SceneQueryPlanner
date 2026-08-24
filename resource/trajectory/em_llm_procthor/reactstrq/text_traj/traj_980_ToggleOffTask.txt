@@ -1,0 +1,111 @@
+Your task is to: Switch off any faucets and cell phones that are currently in use.
+You are in the house, and there are 2 rooms: bathroom (1), bedroom (1). You are in the middle of a bedroom (1). Looking quickly around the room, you see baseball bat (1), bed (1), box (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), garbage can (1), house plant (1), painting (1).
+Think: To solve the task, I need to go through every room, check for faucet and cell phone, and turn them off if they are turned on.
+OK.
+Think: First, I need to check bedroom 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'bedroom 1'})
+Info: bed 1, box 1, drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser 1, garbage can 1
+Think: In bedroom 1, I can check bed 1, box 1, drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser 1, garbage can 1 until I find faucet or cell phone.
+OK.
+Act: go to bed 1
+You arrive at the bed (1). You see baseball bat (1), bed (1), pillow (1), remote control (1).
+Act: go to box 1
+You arrive at the box (1). The box (1) is open. You see box (1).
+Act: go to drawer 1
+You arrive at the drawer (1). The drawer (1) is closed. You see book (1), cell phone (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), garbage can (1), house plant (1), mug (1), painting (1), pen (1), tissue box (1), vase (1).
+Act: open drawer 1
+You open drawer (1). You see book (1), cell phone (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), garbage can (1), house plant (1), mug (1), painting (1), pen (1), tissue box (1), vase (1).
+Think: I find cell phone 1. Now I need to check if cell phone 1 is toggled on.
+OK.
+Query: read_node({'node_id': 'cell phone 1', 'attrs': 'isToggled'})
+Info: {'isToggled': True}
+Think: Cell phone 1 is toggled on. Now I need to turn it off.
+OK.
+Act: go to cell phone 1
+You arrive at the cell phone (1). You see book (1), cell phone (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), garbage can (1), house plant (1), mug (1), painting (1), pen (1), tissue box (1), vase (1).
+Act: turn off cell phone 1
+You turn off cell phone (1).
+Act: go to drawer 2
+You arrive at the drawer (2). The drawer (2) is closed. You see book (1), cell phone (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), garbage can (1), house plant (1), mug (1), painting (1), pen (1), tissue box (1), vase (1).
+Act: open drawer 2
+You open drawer (2). You see book (1), cell phone (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), garbage can (1), house plant (1), mug (1), painting (1), pen (1), tissue box (1), vase (1).
+Act: go to drawer 3
+You arrive at the drawer (3). The drawer (3) is closed. You see book (1), cell phone (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), garbage can (1), house plant (1), mug (1), painting (1), pen (1), tissue box (1), vase (1).
+Act: open drawer 3
+You open drawer (3). You see book (1), cell phone (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), garbage can (1), house plant (1), mug (1), painting (1), pen (1), tissue box (1), vase (1).
+Act: go to drawer 4
+You arrive at the drawer (4). The drawer (4) is closed. You see book (1), cell phone (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), garbage can (1), house plant (1), mug (1), painting (1), pen (1), tissue box (1), vase (1).
+Act: open drawer 4
+You open drawer (4). You see book (1), bowl (1), cell phone (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), garbage can (1), house plant (1), mug (1), painting (1), pen (1), tissue box (1), vase (1).
+Act: go to drawer 5
+You arrive at the drawer (5). The drawer (5) is closed. You see book (1), bowl (1), cell phone (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), garbage can (1), house plant (1), mug (1), painting (1), pen (1), tissue box (1), vase (1).
+Act: open drawer 5
+You open drawer (5). You see book (1), bowl (1), cell phone (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), garbage can (1), house plant (1), mug (1), painting (1), pen (1), tissue box (1), vase (1).
+Act: go to drawer 6
+You arrive at the drawer (6). The drawer (6) is closed. You see book (1), bowl (1), cell phone (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), mug (1), pen (1), tissue box (1), vase (1).
+Act: open drawer 6
+You open drawer (6). You see CD (1), book (1), bowl (1), cell phone (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), mug (1), pen (1), tissue box (1), vase (1).
+Act: go to drawer 7
+You arrive at the drawer (7). The drawer (7) is closed. You see CD (1), book (1), bowl (1), cell phone (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), mug (1), pen (1), tissue box (1), vase (1).
+Act: open drawer 7
+You open drawer (7). You see CD (1), book (1), bowl (1), cell phone (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), mug (1), pen (1), tissue box (1), vase (1).
+Act: go to drawer 8
+You arrive at the drawer (8). The drawer (8) is closed. You see CD (1), book (1), bowl (1), cell phone (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), mug (1), pen (1), tissue box (1), vase (1).
+Act: open drawer 8
+You open drawer (8). You see CD (1), book (1), bowl (1), cell phone (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), mug (1), pen (1), remote control (2), tissue box (1), vase (1).
+Act: go to drawer 9
+You arrive at the drawer (9). The drawer (9) is closed. You see CD (1), book (1), bowl (1), cell phone (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), mug (1), pen (1), remote control (2), tissue box (1), vase (1).
+Act: open drawer 9
+You open drawer (9). You see CD (1), book (1), bowl (1), cell phone (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), mug (1), pen (1), remote control (2), tissue box (1), vase (1).
+Act: go to drawer 10
+You arrive at the drawer (10). The drawer (10) is closed. You see CD (1), book (1), bowl (1), cell phone (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), mug (1), pen (1), remote control (2), tissue box (1), vase (1).
+Act: open drawer 10
+You open drawer (10). You see CD (1), book (1), bowl (1), cell phone (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), mug (1), pen (1), remote control (2), tissue box (1), vase (1).
+Act: go to dresser 1
+You arrive at the dresser (1). You see CD (1), book (1), bowl (1), cell phone (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), garbage can (1), house plant (1), mug (1), painting (1), pen (1), remote control (2), tissue box (1), vase (1).
+Act: go to garbage can 1
+You arrive at the garbage can (1). You see garbage can (1), house plant (1), painting (1), pillow (1).
+Think: I need to check if there is any place I do not visit in bedroom 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'bedroom 1', 'child_node_attrs': {'visited': False}})
+Info: 
+Think: It seems there are no more objects to turn off in bedroom 1, so I should go to bathroom 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'bathroom 1'})
+Info: sink 1, sink basin 1, toilet 1, washing machine 1
+Think: In bathroom 1, I can check sink 1, sink basin 1, toilet 1, washing machine 1 until I find faucet or cell phone.
+OK.
+Act: go to bathroom 1
+You move to the bathroom (1). Looking quickly around the room, you see painting (2, 3), sink (1), sink basin (1), spray bottle (1), toilet (1), toilet paper (1), washing machine (1).
+Act: go to sink 1
+You arrive at the sink (1). You see faucet (1), painting (2, 3), sink (1), sink basin (1), soap bar (1), spray bottle (1), toilet paper (1).
+Think: I find faucet 1. Now I need to check if faucet 1 is toggled on.
+OK.
+Query: read_node({'node_id': 'faucet 1', 'attrs': 'isToggled'})
+Info: {'isToggled': True}
+Think: Faucet 1 is toggled on. Now I need to turn it off.
+OK.
+Act: go to faucet 1
+You arrive at the faucet (1). You see faucet (1), painting (2, 3), sink (1), sink basin (1), soap bar (1), spray bottle (1), toilet paper (1).
+Act: turn off faucet 1
+You turn off faucet (1).
+Act: go to sink basin 1
+You arrive at the sink basin (1). You see faucet (1), painting (2, 3), sink (1), sink basin (1), soap bar (1), spray bottle (1), toilet paper (1).
+Act: go to toilet 1
+You arrive at the toilet (1). The toilet (1) is closed. You see sink basin (1), soap bar (1), spray bottle (1), toilet (1), toilet paper (1), washing machine (1).
+Act: go to washing machine 1
+You arrive at the washing machine (1). You see washing machine (1).
+Think: I need to check if there is any place I do not visit in bathroom 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'bathroom 1', 'child_node_attrs': {'visited': False}})
+Info: 
+Think: Now, I need to check whether any faucets, cell phones that are turned on are still remaining.
+OK.
+Query: find_objects({'label': 'faucet', 'attrs': {'isToggled': True}})
+Info: 
+Query: find_objects({'label': 'cell phone', 'attrs': {'isToggled': True}})
+Info: 
+Think: Now I complete the task.
+OK.
+Act: done

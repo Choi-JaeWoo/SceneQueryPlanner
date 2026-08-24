@@ -1,0 +1,7 @@
+Your task is to: Put a soap bar and a spray bottle into the garbage can.
+You arrive at the soap bar (1). You see garbage can (1), painting (1), soap bar (1), spray bottle (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- bathroom 1: [faucet 1, toilet paper 1, garbage can 1, painting 1, sink 1, sink basin 1, soap bar 1, spray bottle 1, toilet 1]
+Your 5 previous actions were: go to garbage can 1 (success), go to soap bar 1 (success), pick up soap bar 1 (fail), go to garbage can 1 (success), go to soap bar 1 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I arrive at soap bar 1. Now, I need to pick up soap bar 1.
+Act: pick up soap bar 1

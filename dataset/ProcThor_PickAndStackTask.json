@@ -1,0 +1,759 @@
+[
+  {
+    "env_id": 419,
+    "mode": "PickAndStackTask",
+    "instruction": [
+      "Place a box containing a pencil on the bed.",
+      "Put a box with a pencil inside it on the bed.",
+      "Set a box that holds a pencil onto the bed.",
+      "Place the pencil in a box, then put the box on the bed."
+    ],
+    "task_goal": {
+      "stack_pencil_box_bed": 1,
+      "on_pencil_box": 1,
+      "on_box_bed": 1
+    }
+  },
+  {
+    "env_id": 342,
+    "mode": "PickAndStackTask",
+    "instruction": [
+      "Place a plate containing an egg on the countertop.",
+      "Put a plate with an egg on it on the countertop.",
+      "Set a plate holding an egg onto the countertop.",
+      "Place the egg on a plate and then put the plate on the countertop."
+    ],
+    "task_goal": {
+      "stack_egg_plate_countertop": 1,
+      "on_egg_plate": 1,
+      "on_plate_countertop": 1
+    }
+  },
+  {
+    "env_id": 755,
+    "mode": "PickAndStackTask",
+    "instruction": [
+      "Place a box containing a pencil on the countertop.",
+      "Put a box with a pencil inside it on the countertop.",
+      "Set a pencil in a box and then place the box on the countertop.",
+      "Place the pencil inside a box, then put the box on the countertop."
+    ],
+    "task_goal": {
+      "stack_pencil_box_countertop": 1,
+      "on_pencil_box": 1,
+      "on_box_countertop": 1
+    }
+  },
+  {
+    "env_id": 697,
+    "mode": "PickAndStackTask",
+    "instruction": [
+      "Place a box containing a pencil on the countertop.",
+      "Put a box with a pencil inside it on the countertop.",
+      "Set a box containing a pencil down on the countertop.",
+      "Place the pencil in a box, then put the box on the countertop."
+    ],
+    "task_goal": {
+      "stack_pencil_box_countertop": 1,
+      "on_pencil_box": 1,
+      "on_box_countertop": 1
+    }
+  },
+  {
+    "env_id": 904,
+    "mode": "PickAndStackTask",
+    "instruction": [
+      "Place a bowl containing a dish sponge on the countertop.",
+      "Put a bowl with a dish sponge in it on the countertop.",
+      "Set a bowl holding a dish sponge onto the countertop.",
+      "Place a bowl that contains a dish sponge on the countertop."
+    ],
+    "task_goal": {
+      "stack_dishsponge_bowl_countertop": 1,
+      "on_dishsponge_bowl": 1,
+      "on_bowl_countertop": 1
+    }
+  },
+  {
+    "env_id": 560,
+    "mode": "PickAndStackTask",
+    "instruction": [
+      "Place a box containing a remote control on the countertop.",
+      "Put a box with a remote control inside it on the countertop.",
+      "Set a box that contains a remote control down on the countertop.",
+      "Place the remote control in a box, then put the box on the countertop."
+    ],
+    "task_goal": {
+      "stack_remotecontrol_box_countertop": 1,
+      "on_remotecontrol_box": 1,
+      "on_box_countertop": 1
+    }
+  },
+  {
+    "env_id": 91,
+    "mode": "PickAndStackTask",
+    "instruction": [
+      "Place a plate containing an egg on the dining table.",
+      "Put a plate with an egg on it on the dining table.",
+      "Set a plate holding an egg onto the dining table.",
+      "Place the egg on a plate and then put the plate on the dining table."
+    ],
+    "task_goal": {
+      "stack_egg_plate_diningtable": 1,
+      "on_egg_plate": 1,
+      "on_plate_diningtable": 1
+    }
+  },
+  {
+    "env_id": 996,
+    "mode": "PickAndStackTask",
+    "instruction": [
+      "Place a box containing a book on the countertop.",
+      "Put the book in a box and then set the box on the countertop.",
+      "Set a box that has a book inside it on the countertop.",
+      "Position a box, with a book inside, on the countertop."
+    ],
+    "task_goal": {
+      "stack_book_box_countertop": 1,
+      "on_book_box": 1,
+      "on_box_countertop": 1
+    }
+  },
+  {
+    "env_id": 745,
+    "mode": "PickAndStackTask",
+    "instruction": [
+      "Place a box containing a statue on the dining table.",
+      "Put a box with a statue inside it on the dining table.",
+      "Set a box that contains a statue onto the dining table.",
+      "Place the box holding the statue on the dining table."
+    ],
+    "task_goal": {
+      "stack_statue_box_diningtable": 1,
+      "on_statue_box": 1,
+      "on_box_diningtable": 1
+    }
+  },
+  {
+    "env_id": 541,
+    "mode": "PickAndStackTask",
+    "instruction": [
+      "Place a box containing a credit card on the sofa.",
+      "Put a box with a credit card inside it on the sofa.",
+      "Set a box that contains a credit card down on the sofa.",
+      "Place the box holding your credit card onto the sofa."
+    ],
+    "task_goal": {
+      "stack_creditcard_box_sofa": 1,
+      "on_creditcard_box": 1,
+      "on_box_sofa": 1
+    }
+  },
+  {
+    "env_id": 608,
+    "mode": "PickAndStackTask",
+    "instruction": [
+      "Place a plate containing a spatula on the dining table.",
+      "Put a plate with a spatula on it onto the dining table.",
+      "Set a spatula on a plate and then place the plate on the dining table.",
+      "Put the spatula inside a plate and place the plate on the dining table."
+    ],
+    "task_goal": {
+      "stack_spatula_plate_diningtable": 1,
+      "on_spatula_plate": 1,
+      "on_plate_diningtable": 1
+    }
+  },
+  {
+    "env_id": 250,
+    "mode": "PickAndStackTask",
+    "instruction": [
+      "Place a box containing a pencil on the shelf.",
+      "Put a box with a pencil inside it on the shelf.",
+      "Set a pencil in a box and then place the box on the shelf.",
+      "Place the pencil inside a box, then put the box on the shelf."
+    ],
+    "task_goal": {
+      "stack_pencil_box_shelf": 1,
+      "on_pencil_box": 1,
+      "on_box_shelf": 1
+    }
+  },
+  {
+    "env_id": 955,
+    "mode": "PickAndStackTask",
+    "instruction": [
+      "Place a box containing a remote control on the desk.",
+      "Put a box with a remote control in it on the desk.",
+      "Set a box holding a remote control onto the desk.",
+      "Place the remote control inside a box, then put the box on the desk."
+    ],
+    "task_goal": {
+      "stack_remotecontrol_box_desk": 1,
+      "on_remotecontrol_box": 1,
+      "on_box_desk": 1
+    }
+  },
+  {
+    "env_id": 780,
+    "mode": "PickAndStackTask",
+    "instruction": [
+      "Place a box containing a cell phone on the bed.",
+      "Put a box with a cell phone inside it on the bed.",
+      "Set a box containing a cell phone onto the bed.",
+      "Place the cell phone in a box and then put the box on the bed."
+    ],
+    "task_goal": {
+      "stack_cellphone_box_bed": 1,
+      "on_cellphone_box": 1,
+      "on_box_bed": 1
+    }
+  },
+  {
+    "env_id": 450,
+    "mode": "PickAndStackTask",
+    "instruction": [
+      "Place a box containing a pencil on the countertop.",
+      "Put a box with a pencil inside it on the countertop.",
+      "Set a box that contains a pencil onto the countertop.",
+      "Place the pencil in a box, then put the box on the countertop."
+    ],
+    "task_goal": {
+      "stack_pencil_box_countertop": 1,
+      "on_pencil_box": 1,
+      "on_box_countertop": 1
+    }
+  },
+  {
+    "env_id": 982,
+    "mode": "PickAndStackTask",
+    "instruction": [
+      "Place a box containing a book on the bed.",
+      "Put a box that has a book inside it on the bed.",
+      "Set a box with a book in it onto the bed.",
+      "Place the box, which contains a book, on the bed."
+    ],
+    "task_goal": {
+      "stack_book_box_bed": 1,
+      "on_book_box": 1,
+      "on_box_bed": 1
+    }
+  },
+  {
+    "env_id": 675,
+    "mode": "PickAndStackTask",
+    "instruction": [
+      "Place a box containing a book on the countertop.",
+      "Put the book in a box and then set the box on the countertop.",
+      "Set a box that has a book inside it on the countertop.",
+      "Position a box with a book inside on the countertop."
+    ],
+    "task_goal": {
+      "stack_book_box_countertop": 1,
+      "on_book_box": 1,
+      "on_box_countertop": 1
+    }
+  },
+  {
+    "env_id": 374,
+    "mode": "PickAndStackTask",
+    "instruction": [
+      "Place a plate containing a potato on the countertop.",
+      "Put a plate with a potato on it onto the countertop.",
+      "Set a potato on a plate and then place the plate on the countertop.",
+      "Place the potato inside a plate and put the plate on the countertop."
+    ],
+    "task_goal": {
+      "stack_potato_plate_countertop": 1,
+      "on_potato_plate": 1,
+      "on_plate_countertop": 1
+    }
+  },
+  {
+    "env_id": 669,
+    "mode": "PickAndStackTask",
+    "instruction": [
+      "Place a box containing a candle on the sofa.",
+      "Put a box with a candle inside it on the sofa.",
+      "Set a candle in a box and then place the box on the sofa.",
+      "Place the box that holds the candle onto the sofa."
+    ],
+    "task_goal": {
+      "stack_candle_box_sofa": 1,
+      "on_candle_box": 1,
+      "on_box_sofa": 1
+    }
+  },
+  {
+    "env_id": 791,
+    "mode": "PickAndStackTask",
+    "instruction": [
+      "Place a bowl containing a potato on the countertop.",
+      "Put a bowl with a potato in it on the countertop.",
+      "Set a bowl containing a potato down on the countertop.",
+      "Place the potato inside a bowl, then put the bowl on the countertop."
+    ],
+    "task_goal": {
+      "stack_potato_bowl_countertop": 1,
+      "on_potato_bowl": 1,
+      "on_bowl_countertop": 1
+    }
+  },
+  {
+    "env_id": 803,
+    "mode": "PickAndStackTask",
+    "instruction": [
+      "Place a plate containing a sliced tomato on the countertop.",
+      "Put a plate with a sliced tomato on it on the countertop.",
+      "Set a sliced tomato on a plate and then place the plate on the countertop.",
+      "Place the plate that is holding a sliced tomato onto the countertop."
+    ],
+    "task_goal": {
+      "stack_tomato_plate_countertop": 1,
+      "isSliced_tomato": 1,
+      "on_tomato_plate": 1,
+      "on_plate_countertop": 1
+    }
+  },
+  {
+    "env_id": 556,
+    "mode": "PickAndStackTask",
+    "instruction": [
+      "Place a box containing a pencil on the desk.",
+      "Put a box with a pencil inside it on the desk.",
+      "Set a pencil in a box and then place the box on the desk.",
+      "Place the pencil inside a box, then put the box on the desk."
+    ],
+    "task_goal": {
+      "stack_pencil_box_desk": 1,
+      "on_pencil_box": 1,
+      "on_box_desk": 1
+    }
+  },
+  {
+    "env_id": 90,
+    "mode": "PickAndStackTask",
+    "instruction": [
+      "Place a plate containing a sliced tomato on the countertop.",
+      "Put a plate with a sliced tomato on it on the countertop.",
+      "Set a sliced tomato on a plate and then place the plate on the countertop.",
+      "Place the sliced tomato on a plate and put the plate on the countertop."
+    ],
+    "task_goal": {
+      "stack_tomato_plate_countertop": 1,
+      "isSliced_tomato": 1,
+      "on_tomato_plate": 1,
+      "on_plate_countertop": 1
+    }
+  },
+  {
+    "env_id": 911,
+    "mode": "PickAndStackTask",
+    "instruction": [
+      "Place a plate containing a sliced tomato on the countertop.",
+      "Put a plate with a sliced tomato on it onto the countertop.",
+      "Set a sliced tomato on a plate and then place the plate on the countertop.",
+      "Place the sliced tomato on a plate and set the plate down on the countertop."
+    ],
+    "task_goal": {
+      "stack_tomato_plate_countertop": 1,
+      "isSliced_tomato": 1,
+      "on_tomato_plate": 1,
+      "on_plate_countertop": 1
+    }
+  },
+  {
+    "env_id": 779,
+    "mode": "PickAndStackTask",
+    "instruction": [
+      "Place a box containing a cell phone on the sofa.",
+      "Put a box with a cell phone inside it on the sofa.",
+      "Set a box containing a cell phone down on the sofa.",
+      "Place the cell phone in a box, then put the box on the sofa."
+    ],
+    "task_goal": {
+      "stack_cellphone_box_sofa": 1,
+      "on_cellphone_box": 1,
+      "on_box_sofa": 1
+    }
+  },
+  {
+    "env_id": 330,
+    "mode": "PickAndStackTask",
+    "instruction": [
+      "Place a box containing a cell phone on the dining table.",
+      "Put a box with a cell phone inside it on the dining table.",
+      "Set a box containing a cell phone onto the dining table.",
+      "Place the cell phone in a box, then put the box on the dining table."
+    ],
+    "task_goal": {
+      "stack_cellphone_box_diningtable": 1,
+      "on_cellphone_box": 1,
+      "on_box_diningtable": 1
+    }
+  },
+  {
+    "env_id": 544,
+    "mode": "PickAndStackTask",
+    "instruction": [
+      "Place a box containing a tissue box on the armchair.",
+      "Put a box with a tissue box inside it on the armchair.",
+      "Set a tissue box inside a box, then place the box on the armchair.",
+      "Place the tissue box in a box and put the box on the armchair."
+    ],
+    "task_goal": {
+      "stack_tissuebox_box_armchair": 1,
+      "on_tissuebox_box": 1,
+      "on_box_armchair": 1
+    }
+  },
+  {
+    "env_id": 589,
+    "mode": "PickAndStackTask",
+    "instruction": [
+      "Place a pot containing an apple slice on the countertop.",
+      "Put a pot with an apple slice inside it on the countertop.",
+      "Set a pot that contains an apple slice onto the countertop.",
+      "Place the pot holding an apple slice on the countertop."
+    ],
+    "task_goal": {
+      "stack_apple_pot_countertop": 1,
+      "isSliced_apple": 1,
+      "on_apple_pot": 1,
+      "on_pot_countertop": 1
+    }
+  },
+  {
+    "env_id": 768,
+    "mode": "PickAndStackTask",
+    "instruction": [
+      "Place a box containing a pencil on the bed.",
+      "Put a box with a pencil inside it on the bed.",
+      "Set a box that contains a pencil onto the bed.",
+      "Place the pencil in a box and then put the box on the bed."
+    ],
+    "task_goal": {
+      "stack_pencil_box_bed": 1,
+      "on_pencil_box": 1,
+      "on_box_bed": 1
+    }
+  },
+  {
+    "env_id": 624,
+    "mode": "PickAndStackTask",
+    "instruction": [
+      "Place a box containing a pencil on the countertop.",
+      "Put a box with a pencil inside it on the countertop.",
+      "Set a pencil in a box and then place the box on the countertop.",
+      "Place the pencil inside a box, then put the box on the countertop."
+    ],
+    "task_goal": {
+      "stack_pencil_box_countertop": 1,
+      "on_pencil_box": 1,
+      "on_box_countertop": 1
+    }
+  },
+  {
+    "env_id": 389,
+    "mode": "PickAndStackTask",
+    "instruction": [
+      "Place a box containing a remote control on the countertop.",
+      "Put a box with a remote control in it on the countertop.",
+      "Set a box that contains a remote control on the countertop.",
+      "Place the box holding the remote control onto the countertop."
+    ],
+    "task_goal": {
+      "stack_remotecontrol_box_countertop": 1,
+      "on_remotecontrol_box": 1,
+      "on_box_countertop": 1
+    }
+  },
+  {
+    "env_id": 988,
+    "mode": "PickAndStackTask",
+    "instruction": [
+      "Place a box containing a pencil on the countertop.",
+      "Put a box with a pencil inside it on the countertop.",
+      "Set a box that contains a pencil down on the countertop.",
+      "Place the box, which has a pencil in it, on the countertop."
+    ],
+    "task_goal": {
+      "stack_pencil_box_countertop": 1,
+      "on_pencil_box": 1,
+      "on_box_countertop": 1
+    }
+  },
+  {
+    "env_id": 267,
+    "mode": "PickAndStackTask",
+    "instruction": [
+      "Place a bowl containing a sliced potato on the countertop.",
+      "Put a bowl with a sliced potato in it on the countertop.",
+      "Set a bowl containing a sliced potato down on the countertop.",
+      "Place the sliced potato inside a bowl, then put the bowl on the countertop."
+    ],
+    "task_goal": {
+      "stack_potato_bowl_countertop": 1,
+      "isSliced_potato": 1,
+      "on_potato_bowl": 1,
+      "on_bowl_countertop": 1
+    }
+  },
+  {
+    "env_id": 752,
+    "mode": "PickAndStackTask",
+    "instruction": [
+      "Place a box containing a pencil on the sofa.",
+      "Put a box with a pencil inside it on the sofa.",
+      "Set a box that contains a pencil onto the sofa.",
+      "Place a box holding a pencil on the sofa."
+    ],
+    "task_goal": {
+      "stack_pencil_box_sofa": 1,
+      "on_pencil_box": 1,
+      "on_box_sofa": 1
+    }
+  },
+  {
+    "env_id": 769,
+    "mode": "PickAndStackTask",
+    "instruction": [
+      "Place a box containing a pencil on the bed.",
+      "Put a box with a pencil inside it on the bed.",
+      "Set a pencil in a box and then place the box on the bed.",
+      "Place the pencil inside a box, then put the box on the bed."
+    ],
+    "task_goal": {
+      "stack_pencil_box_bed": 1,
+      "on_pencil_box": 1,
+      "on_box_bed": 1
+    }
+  },
+  {
+    "env_id": 205,
+    "mode": "PickAndStackTask",
+    "instruction": [
+      "Place a plate containing a spoon on the countertop.",
+      "Put a spoon on a plate and then place it on the countertop.",
+      "Set a plate with a spoon on it down on the countertop.",
+      "Place the spoon in a plate, and put the plate on the countertop."
+    ],
+    "task_goal": {
+      "stack_spoon_plate_countertop": 1,
+      "on_spoon_plate": 1,
+      "on_plate_countertop": 1
+    }
+  },
+  {
+    "env_id": 310,
+    "mode": "PickAndStackTask",
+    "instruction": [
+      "Place a box containing a pencil on the sofa.",
+      "Put a box with a pencil inside it on the sofa.",
+      "Set a box that contains a pencil onto the sofa.",
+      "Place the pencil in a box, then put the box on the sofa."
+    ],
+    "task_goal": {
+      "stack_pencil_box_sofa": 1,
+      "on_pencil_box": 1,
+      "on_box_sofa": 1
+    }
+  },
+  {
+    "env_id": 286,
+    "mode": "PickAndStackTask",
+    "instruction": [
+      "Place a box containing a book on the bed.",
+      "Put a box that has a book inside it on the bed.",
+      "Set a box with a book in it onto the bed.",
+      "Place the box, which contains a book, on the bed."
+    ],
+    "task_goal": {
+      "stack_book_box_bed": 1,
+      "on_book_box": 1,
+      "on_box_bed": 1
+    }
+  },
+  {
+    "env_id": 138,
+    "mode": "PickAndStackTask",
+    "instruction": [
+      "Place a plate containing a fork on the countertop.",
+      "Put a plate with a fork on it on the countertop.",
+      "Set a fork on a plate and then place it on the countertop.",
+      "Place a plate that is holding a fork onto the countertop."
+    ],
+    "task_goal": {
+      "stack_fork_plate_countertop": 1,
+      "on_fork_plate": 1,
+      "on_plate_countertop": 1
+    }
+  },
+  {
+    "env_id": 142,
+    "mode": "PickAndStackTask",
+    "instruction": [
+      "Place a plate containing a spoon on the countertop.",
+      "Put a spoon on a plate and then place it on the countertop.",
+      "Set a plate with a spoon in it down on the countertop.",
+      "Place the spoon on the plate, and put the plate on the countertop."
+    ],
+    "task_goal": {
+      "stack_spoon_plate_countertop": 1,
+      "on_spoon_plate": 1,
+      "on_plate_countertop": 1
+    }
+  },
+  {
+    "env_id": 164,
+    "mode": "PickAndStackTask",
+    "instruction": [
+      "Place a plate containing a slice of bread on the dining table.",
+      "Put a plate with a slice of bread on it on the dining table.",
+      "Set a plate holding a slice of bread onto the dining table.",
+      "Place a plate that has a slice of bread on it onto the dining table."
+    ],
+    "task_goal": {
+      "stack_bread_plate_diningtable": 1,
+      "isSliced_bread": 1,
+      "on_bread_plate": 1,
+      "on_plate_diningtable": 1
+    }
+  },
+  {
+    "env_id": 351,
+    "mode": "PickAndStackTask",
+    "instruction": [
+      "Place a plate containing a fork on the countertop.",
+      "Put a plate with a fork on it on the countertop.",
+      "Set a fork on a plate and then place the plate on the countertop.",
+      "Place the fork onto a plate, then put the plate on the countertop."
+    ],
+    "task_goal": {
+      "stack_fork_plate_countertop": 1,
+      "on_fork_plate": 1,
+      "on_plate_countertop": 1
+    }
+  },
+  {
+    "env_id": 931,
+    "mode": "PickAndStackTask",
+    "instruction": [
+      "Place a box containing a key chain on the shelf.",
+      "Put a box with a key chain inside it on the shelf.",
+      "Set a box that contains a key chain onto the shelf.",
+      "Place the box, which has a key chain in it, on the shelf."
+    ],
+    "task_goal": {
+      "stack_keychain_box_shelf": 1,
+      "on_keychain_box": 1,
+      "on_box_shelf": 1
+    }
+  },
+  {
+    "env_id": 686,
+    "mode": "PickAndStackTask",
+    "instruction": [
+      "Place a box containing a pencil on the bed.",
+      "Put a box with a pencil inside it on the bed.",
+      "Set a box that contains a pencil onto the bed.",
+      "Place the pencil in a box and then put the box on the bed."
+    ],
+    "task_goal": {
+      "stack_pencil_box_bed": 1,
+      "on_pencil_box": 1,
+      "on_box_bed": 1
+    }
+  },
+  {
+    "env_id": 296,
+    "mode": "PickAndStackTask",
+    "instruction": [
+      "Place a plate containing a spoon on the countertop.",
+      "Put a spoon on a plate and then place it on the countertop.",
+      "Set a plate with a spoon on it down on the countertop.",
+      "Place the spoon inside a plate, then put the plate on the countertop."
+    ],
+    "task_goal": {
+      "stack_spoon_plate_countertop": 1,
+      "on_spoon_plate": 1,
+      "on_plate_countertop": 1
+    }
+  },
+  {
+    "env_id": 878,
+    "mode": "PickAndStackTask",
+    "instruction": [
+      "Place a box containing a vase on the bed.",
+      "Put a box with a vase inside it on the bed.",
+      "Set a vase in a box and then place the box on the bed.",
+      "Place the vase inside a box, then put the box onto the bed."
+    ],
+    "task_goal": {
+      "stack_vase_box_bed": 1,
+      "on_vase_box": 1,
+      "on_box_bed": 1
+    }
+  },
+  {
+    "env_id": 287,
+    "mode": "PickAndStackTask",
+    "instruction": [
+      "Place a box containing a credit card on the sofa.",
+      "Put a box with a credit card in it on the sofa.",
+      "Set a box containing a credit card down on the sofa.",
+      "Place the credit card inside a box, then put the box on the sofa."
+    ],
+    "task_goal": {
+      "stack_creditcard_box_sofa": 1,
+      "on_creditcard_box": 1,
+      "on_box_sofa": 1
+    }
+  },
+  {
+    "env_id": 550,
+    "mode": "PickAndStackTask",
+    "instruction": [
+      "Place a box containing a pencil on the countertop.",
+      "Put a box with a pencil inside it on the countertop.",
+      "Set a pencil in a box and then place the box on the countertop.",
+      "Place the pencil inside a box, then put the box onto the countertop."
+    ],
+    "task_goal": {
+      "stack_pencil_box_countertop": 1,
+      "on_pencil_box": 1,
+      "on_box_countertop": 1
+    }
+  },
+  {
+    "env_id": 370,
+    "mode": "PickAndStackTask",
+    "instruction": [
+      "Place a plate containing a sliced potato on the countertop.",
+      "Put a plate with a sliced potato on it onto the countertop.",
+      "Set a sliced potato on a plate and then place the plate on the countertop.",
+      "Place the sliced potato inside a plate, then put the plate on the countertop."
+    ],
+    "task_goal": {
+      "stack_potato_plate_countertop": 1,
+      "isSliced_potato": 1,
+      "on_potato_plate": 1,
+      "on_plate_countertop": 1
+    }
+  },
+  {
+    "env_id": 502,
+    "mode": "PickAndStackTask",
+    "instruction": [
+      "Place a box containing a book on the bed.",
+      "Put a box with a book inside it on the bed.",
+      "Set a box that contains a book onto the bed.",
+      "Place the box, which has a book in it, on the bed."
+    ],
+    "task_goal": {
+      "stack_book_box_bed": 1,
+      "on_book_box": 1,
+      "on_box_bed": 1
+    }
+  }
+]

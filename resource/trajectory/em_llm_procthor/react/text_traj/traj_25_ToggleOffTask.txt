@@ -1,0 +1,67 @@
+Your task is to: Ensure that all active candles, televisions, and floorlamps are powered down.
+You are in the house, and there are 2 rooms: kitchen (1), living room (1). You are in the middle of a kitchen (1). Looking quickly around the room, you see countertop (1), fridge (1), house plant (1), painting (1, 2, 3).
+Think: To solve the task, I need to go through every room, check for candle, television, and floor lamp, and turn them off if they are turned on.
+OK.
+Think: First, I need to check kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see countertop (1), fridge (1), house plant (1), painting (1, 2, 3).
+Think: In kitchen 1, I can check countertop 1, fridge 1 by one until I find candle, television, or floor lamp.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see box (1), floor lamp (1).
+Think: I find floor lamp 1. Now, I need to turn it off.
+OK.
+Act: go to floor lamp 1
+You arrive at the floor lamp (1). You see box (1), floor lamp (1).
+Act: turn off floor lamp 1
+You turn off floor lamp (1).
+Act: go to box 1
+You arrive at the box (1). You see bowl (1), box (1, 2), dining table (1), floor lamp (1), vase (1).
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see countertop (1), fridge (1), house plant (1), painting (1, 2, 3).
+Act: go to fridge 1
+You arrive at the fridge (1). The fridge (1) is closed. You see fridge (1), house plant (1), painting (2).
+Act: open fridge 1
+You open fridge (1). You see fridge (1), house plant (1), painting (2).
+Think: It seems there are no more objects to turn off in kitchen 1, so I should go to living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), cart (1), chair (1), dining table (1), floor lamp (1), painting (4), shelf (1, 2, 3, 4, 5, 6).
+Think: In living room 1, I can check TV stand 1, box (1, 2), chair 1, dining table 1, shelf (1, 2, 3, 4, 5, 6) until I find candle, television, or floor lamp.
+OK.
+Act: go to TV stand 1
+You arrive at the TV stand (1). You see TV stand (1), bowl (1), box (1, 2), candle (1), dining table (1), house plant (2), newspaper (1), shelf (1, 2, 3, 4, 5, 6), television (1), vase (1).
+Think: I find television 1. Now, I need to turn it off.
+OK.
+Act: go to television 1
+You arrive at the television (1). You see TV stand (1), bowl (1), box (1, 2), candle (1), dining table (1), house plant (2), newspaper (1), shelf (1, 2, 3, 4, 5, 6), television (1), vase (1).
+Act: turn off television 1
+You turn off television (1).
+Act: go to box 1
+You arrive at the box (1). You see bowl (1), box (1, 2), dining table (1), floor lamp (1), vase (1).
+Act: go to box 2
+You arrive at the box (2). You see TV stand (1), bowl (1), box (1, 2), candle (1), dining table (1), house plant (2), newspaper (1), shelf (1, 2, 3, 4, 5, 6), television (1), vase (1).
+Think: I find candle 1. Now, I need to turn it off.
+OK.
+Act: go to candle 1
+You arrive at the candle (1). You see TV stand (1), bowl (1), box (1, 2), candle (1), dining table (1), house plant (2), newspaper (1), shelf (1, 2, 3, 4, 5, 6), television (1), vase (1).
+Act: turn off candle 1
+You turn off candle (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see bowl (1), box (1, 2), cart (1), dining table (1), newspaper (1), shelf (1, 2, 3, 6), television (1), vase (1).
+Act: go to shelf 1
+You arrive at the shelf (1). You see TV stand (1), bowl (1), box (1, 2), candle (1), cart (1), dining table (1), house plant (2), newspaper (1), shelf (1, 2, 3, 4, 5, 6), television (1), vase (1).
+Act: go to shelf 2
+You arrive at the shelf (2). You see TV stand (1), bowl (1), box (1, 2), candle (1), cart (1), dining table (1), house plant (2), newspaper (1), shelf (1, 2, 3, 4, 5, 6), television (1), vase (1).
+Act: go to shelf 3
+You arrive at the shelf (3). You see TV stand (1), bowl (1), box (1, 2), candle (1), cart (1), dining table (1), house plant (2), newspaper (1), shelf (1, 2, 3, 4, 5, 6), television (1), vase (1).
+Act: go to shelf 4
+You arrive at the shelf (4). You see TV stand (1), bowl (1), box (1, 2), candle (1), dining table (1), house plant (2), newspaper (1), shelf (1, 2, 3, 4, 5, 6), television (1), vase (1).
+Act: go to shelf 5
+You arrive at the shelf (5). You see TV stand (1), bowl (1), box (1, 2), candle (1), dining table (1), house plant (2), newspaper (1), shelf (1, 2, 3, 4, 5, 6), television (1), vase (1).
+Act: go to shelf 6
+You arrive at the shelf (6). You see TV stand (1), bowl (1), box (1, 2), candle (1), dining table (1), house plant (2), newspaper (1), shelf (1, 2, 3, 4, 5, 6), television (1), vase (1).
+Think: Now I complete the task.
+OK.
+Act: done

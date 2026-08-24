@@ -1,0 +1,79 @@
+Your task is to: Turn off all currently burning candles and operating televisions.
+You are in the house, and there are 2 rooms: kitchen (1), living room (1). You are in the middle of a kitchen (1). Looking quickly around the room, you see countertop (1), fridge (1), garbage bag (1), painting (1, 2).
+Think: To solve the task, I need to find and turn off all burning candles and operating televisions.
+OK.
+Think: First, I need to check if I saw candle and television.
+OK.
+Query: recall location of candle
+You have not seen candle before.
+Query: recall location of television
+You have not seen television before.
+Think: I have not seen candle and television yet. I need to check kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see countertop (1), fridge (1), garbage bag (1), painting (1, 2).
+Think: In kitchen 1, I can check countertop 1, fridge 1, garbage bag 1 until I find candle or television.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see TV stand (1), credit card (1), house plant (2), key chain (1), pencil (2), shelf (1, 2, 3, 4, 5, 6), television (1).
+Think: I find television 1. Now, I need to turn it off.
+OK.
+Act: go to television 1
+You arrive at the television (1). You see TV stand (1), credit card (1), house plant (2), key chain (1), pencil (2), shelf (1, 2, 3, 4, 5, 6), television (1).
+Act: turn off television 1
+You turn off television (1).
+Act: go to shelf 1
+You arrive at the shelf (1). You see TV stand (1), credit card (1), house plant (2), key chain (1), pencil (2), shelf (1, 2, 3, 4, 5, 6), television (1).
+Act: go to shelf 2
+You arrive at the shelf (2). You see TV stand (1), credit card (1), house plant (2), key chain (1), pencil (2), shelf (1, 2, 3, 4, 5, 6), television (1).
+Act: go to shelf 3
+You arrive at the shelf (3). You see TV stand (1), credit card (1), house plant (2), key chain (1), pencil (2), shelf (1, 2, 3, 4, 5, 6), television (1).
+Act: go to shelf 4
+You arrive at the shelf (4). You see TV stand (1), credit card (1), house plant (2), key chain (1), pencil (2), shelf (1, 2, 3, 4, 5, 6), television (1).
+Act: go to shelf 5
+You arrive at the shelf (5). You see TV stand (1), credit card (1), house plant (2), key chain (1), pencil (2), shelf (1, 2, 3, 4, 5, 6), television (1).
+Act: go to shelf 6
+You arrive at the shelf (6). You see TV stand (1), credit card (1), house plant (2), key chain (1), pencil (2), shelf (1, 2, 3, 4, 5, 6), television (1).
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see countertop (1), fridge (1), garbage bag (1), painting (1, 2).
+Act: go to fridge 1
+You arrive at the fridge (1). The fridge (1) is closed. You see fridge (1), garbage bag (1), painting (2).
+Act: open fridge 1
+You open fridge (1). You see fridge (1), garbage bag (1), painting (2), potato (2).
+Act: go to garbage bag 1
+You arrive at the garbage bag (1). You see fridge (1), garbage bag (1), potato (2).
+Think: It seems there are no more objects to turn off in kitchen 1, so I should go to living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), box (1), dining table (1), shelf (1, 2, 3, 4, 5, 6), sofa (1).
+Think: In living room 1, I can check TV stand 1, box 1, dining table 1, shelf (1, 2, 3, 4, 5, 6) until I find candle or television.
+OK.
+Act: go to TV stand 1
+You arrive at the TV stand (1). You see TV stand (1), credit card (1), house plant (2), key chain (1), pencil (2), shelf (1, 2, 3, 4, 5, 6), television (1).
+Act: go to box 1
+You arrive at the box (1). The box (1) is closed. You see book (1), box (1), candle (1).
+Act: open box 1
+You open box (1). You see book (1), box (1), candle (1).
+Think: I find candle 1. Now, I need to turn it off.
+OK.
+Act: go to candle 1
+You arrive at the candle (1). You see book (1), box (1), candle (1), dining table (1), plate (2).
+Act: turn off candle 1
+You turn off candle (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see book (1), candle (1), dining table (1), pencil (1), plate (2), sofa (1).
+Act: go to shelf 1
+You arrive at the shelf (1). You see TV stand (1), credit card (1), house plant (2), key chain (1), pencil (2), shelf (1, 2, 3, 4, 5, 6), television (1).
+Act: go to shelf 2
+You arrive at the shelf (2). You see TV stand (1), credit card (1), house plant (2), key chain (1), pencil (2), shelf (1, 2, 3, 4, 5, 6), television (1).
+Act: go to shelf 3
+You arrive at the shelf (3). You see TV stand (1), credit card (1), house plant (2), key chain (1), pencil (2), shelf (1, 2, 3, 4, 5, 6), television (1).
+Act: go to shelf 4
+You arrive at the shelf (4). You see TV stand (1), credit card (1), house plant (2), key chain (1), pencil (2), shelf (1, 2, 3, 4, 5, 6), television (1).
+Act: go to shelf 5
+You arrive at the shelf (5). You see TV stand (1), credit card (1), house plant (2), key chain (1), pencil (2), shelf (1, 2, 3, 4, 5, 6), television (1).
+Act: go to shelf 6
+You arrive at the shelf (6). You see TV stand (1), credit card (1), house plant (2), key chain (1), pencil (2), shelf (1, 2, 3, 4, 5, 6), television (1).
+Think: Now I complete the task.
+OK.
+Act: done

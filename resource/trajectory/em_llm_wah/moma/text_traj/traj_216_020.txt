@@ -1,0 +1,14 @@
+Your task is to: I need you to bring me the following food items and put them on the coffee table:
+- 1 pudding
+- 1 apple
+- 1 cupcake
+- 1 juice
+You can't put pudding (1) in kitchen counter (1) because of low-level controller problem. Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- (bathroom 1): [(bathroom cabinet 1), (bathroom counter 1), (faucet 1), (light switch 1), (sink 1), (toilet 1), (towel rack 1), (towel rack 2), (towel rack 3), (washing machine 1)]
+- (bedroom 1): [(bed 1), (bookshelf 1), (chair 1), (chair 2), (closet 1), (coffee table 1), (light switch 2), (nightstand 1)]
+- kitchen 1: [apple 1, bench 1, bench 2, book 1, book 2, (bookshelf 2), bucket 1, carrot 1, chips 1, (clock 1), coffee pot 2, condiment shaker 1, cupcake 2, cutlery fork 1, cutlery fork 2, cutlery knife 1, cutlery knife 2, cutting board 2, dishwashing liquid 1, (faucet 2), fridge 1, frying pan 1, juice 1, kitchen counter 1, (kitchen table 1), (light switch 3), (microwave oven 1), milk 1, milk 2, mug 2, (oven tray 1), plate 2, plate 3, (plate 4), pudding 1, salad 1, (sink 2), (slice of bread 1), (slice of bread 2), (stove 1), (toaster 1), (tv 1), washing sponge 1, water glass 2, water glass 3, wine 1]
+- living room 1: [(bookshelf 3), (cabinet 1), (chair 3), (closet 2), (coffee table 2), (computer 1), (desk 1), (light switch 4), (pants 5), (pants 6), (pants 7), remote control 1, (shirt 3), (shirt 4), (sofa 1)]
+Your 10 previous actions were: go to kitchen 1 (success), go to bench 1 (success), go to bench 2 (success), go to fridge 1 (success), open fridge 1 (success), pick up pudding 1 (success), go to coffee pot 2 (success), open coffee pot 2 (success), go to kitchen counter 1 (success), put down pudding 1 (fail)
+What is the best next action to complete the task as efficiently as possible?
+Think: I cannot put pudding (1) in kitchen counter (1) because of low-level controller problem. I can try to put it in kitchen table (1).
+Act: go to kitchen table 1

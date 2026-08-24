@@ -1,0 +1,55 @@
+Your task is to: Slice an apple and put it on the countertop.
+You are in the house, and there are 1 rooms: kitchen (1). You are in the middle of a kitchen (1). Looking quickly around the room, you see chair (1, 2), countertop (1), dining table (1), fridge (1), garbage bag (1), house plant (1), painting (1, 2, 3).
+Think: To solve the task, I need to find and pick up knife or butter knife, find and slice apple, put down knife or butter knife and pick up sliced apple, find countertop and put down sliced apple.
+OK.
+Think: First, I need to find and pick up knife or butter knife.
+OK.
+Query: recall location of knife
+You have not seen knife before.
+Query: recall location of butter knife
+You have not seen butter knife before.
+Think: I have not seen knife or butter knife yet. The knife or butter knife is more likely to appear in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see chair (1, 2), countertop (1), dining table (1), fridge (1), garbage bag (1), house plant (1), painting (1, 2, 3).
+Think: In kitchen 1, the knife or butter knife is likely to appear in/on countertop 1, dining table 1, fridge 1. I can check each place one by one until I find knife or butter knife.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see apple (1), butter knife (1), countertop (1), dining table (1), plate (1), pot (1), potato (1), soap bottle (1), spoon (1).
+Think: I find butter knife 1. Now, I need to pick it up.
+OK.
+Act: go to butter knife 1
+You arrive at the butter knife (1). You see butter knife (1), countertop (1), plate (1), pot (1), potato (1), soap bottle (1), spoon (1).
+Act: pick up butter knife 1
+You pick up butter knife (1). You hold butter knife (1).
+Think: Now, I need to find and slice apple.
+OK.
+Query: recall location of apple
+You saw apple 1 near countertop 1 in kitchen 1.
+Think: Apple 1 is near countertop 1 in kitchen 1.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see apple (1), countertop (1), dining table (1), plate (1), pot (1), potato (1), soap bottle (1), spoon (1). You hold butter knife (1).
+Act: go to apple 1
+You arrive at the apple (1). You see apple (1), chair (1), dining table (1). You hold butter knife (1).
+Act: slice apple 1
+You slice apple (1). You see chair (1), dining table (1), sliced apple (1). You hold butter knife (1).
+Think: Now, I need to put down butter knife 1 and pick up sliced apple 1.
+OK.
+Act: put down butter knife 1
+You put butter knife (1) in countertop (1).
+Act: pick up sliced apple 1
+You pick up sliced apple (1). You hold sliced apple (1).
+Think: Now, I need to find countertop and put down sliced apple 1.
+OK.
+Query: recall location of countertop
+You saw countertop 1 in kitchen 1.
+Think: Countertop 1 is in kitchen 1.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see butter knife (1), countertop (1), dining table (1), plate (1), pot (1), potato (1), soap bottle (1), spoon (1). You hold sliced apple (1).
+Act: put down sliced apple 1
+You put sliced apple (1) in countertop (1).
+Think: Now I complete task.
+OK.
+Act: done

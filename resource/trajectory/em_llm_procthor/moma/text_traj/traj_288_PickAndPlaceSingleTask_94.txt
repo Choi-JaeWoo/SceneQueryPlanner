@@ -1,0 +1,9 @@
+Your task is to: Pick up a pencil and put it in the drawer.
+You pick up pencil (1). You hold pencil (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- bedroom 1: [painting 2, laptop 1, pillow 1, painting 1, baseball bat 1, bed 1, book 1, book 2, CD 1, desk 1, drawer 6, drawer 5, drawer 4, drawer 3, drawer 2, drawer 1, dresser 1, dumbbell 1, house plant 1, key chain 1, pencil 2, pencil 1]
+- kitchen 1: [(chair 1), (countertop 1), cup 2, (dining table 1), (fridge 1), knife 2, mug 1, (stool 1), television 1]
+- (living room 1): [(box 1), (dining table 2), painting 4, painting 3, television 2]
+Your 5 previous actions were: go to bedroom 1 (success), go to drawer 1 (success), put down pencil 2 (success), go to drawer 2 (success), pick up pencil 1 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I pick up pencil 1. Now, I need to find drawer to put down pencil 1. Drawer 1 is in bedroom 1.
+Act: go to bedroom 1

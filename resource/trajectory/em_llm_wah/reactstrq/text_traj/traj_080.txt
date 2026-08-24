@@ -1,0 +1,121 @@
+Your task is to: Please prepare a pancake and juice at the kitchen table.
+You are in the house, and there are 4 rooms: bathroom 1, bedroom 1, kitchen 1, living room 1. You are in the middle of a bathroom 1. Looking quickly around the room, you see bathroom cabinet 1, bathroom counter 1, faucet 1, sink 1, toilet 1, washing machine 1.
+Think: To solve the task, I need to find and pick up pancake, find kitchen table and put down pancake, find and pick up juice, find kitchen table and put down juice.
+OK.
+Query: find_objects({'label': 'pancake'})
+Info: 
+Think: I have not seen pancake yet. Now, I need to check where to search. First, I will search kitchen 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'kitchen 1', 'child_node_attrs': {'visited': False}})
+Info: bench (1, 2), bookshelf 1, dishwasher 1, faucet 2, fridge 1, kitchen cabinet (1, 2, 3, 4, 5, 6, 7, 8), kitchen counter (1, 2, 3), kitchen table 1, light switch 2, microwave oven 1, oven tray 1, plate 7, sink 2, slice of bread (1, 2), stove 1, toaster 1
+Think: In kitchen 1, the pancake is likely to appear in/on kitchen cabinet (1, 2, 3, 4, 5, 6, 7, 8), kitchen counter (1, 2, 3). I can check each place one by one until I find pancake.
+OK.
+Act: go to kitchen 1
+You move to the kitchen 1. Looking quickly around the room, you see bench (1, 2), bookshelf 1, dishwasher 1, faucet 2, fridge 1, garbage can 1, kitchen cabinet (1, 2, 3, 4, 5, 6, 7, 8), kitchen counter (1, 3), kitchen table 1, microwave oven 1, sink 2, stove 1, toaster 1.
+Act: go to kitchen cabinet 1
+You arrive at the kitchen cabinet 1. The kitchen cabinet 1 is closed. You see chicken 1, cooking pot 1, cutlery knife (1, 2), cutlets 1, dishwashing liquid 1, faucet 2, frying pan 1, kitchen cabinet (1, 2, 8), kitchen counter 1, sink 2, stove 1.
+Act: open kitchen cabinet 1
+You open kitchen cabinet 1. You see chicken 1, cooking pot 1, cupcake 1, cutlery knife (1, 2), cutlets 1, dishwashing liquid 1, faucet 2, frying pan 1, kitchen cabinet (1, 2, 8), kitchen counter 1, sink 2, stove 1
+Act: go to kitchen cabinet 2
+You arrive at the kitchen cabinet 2. The kitchen cabinet 2 is closed. You see bowl (1, 2, 3, 4, 5), chicken 1, cooking pot 1, cupcake 1, cutlery knife (1, 2), cutlets 1, dishwashing liquid 1, faucet 2, kitchen cabinet (1, 2, 3), kitchen counter 1, sink 2, stove 1.
+Act: open kitchen cabinet 2
+You open kitchen cabinet 2. You see bowl (1, 2, 3, 4, 5), chicken 1, cooking pot 1, cupcake 1, cutlery knife (1, 2), cutlets 1, dishwashing liquid 1, faucet 2, kitchen cabinet (1, 2, 3), kitchen counter 1, sink 2, stove 1
+Act: go to kitchen cabinet 3
+You arrive at the kitchen cabinet 3. The kitchen cabinet 3 is closed. You see bowl (1, 2, 3, 4, 5), chicken 1, cupcake 1, cutlery knife (1, 2), cutlets 1, dishwashing liquid 1, faucet 2, kitchen cabinet (1, 2, 3, 4), kitchen counter 1, plate (1, 2, 3, 4), sink 2.
+Act: open kitchen cabinet 3
+You open kitchen cabinet 3. You see bowl (1, 2, 3, 4, 5), chicken 1, cupcake 1, cutlery knife (1, 2), cutlets 1, dishwashing liquid 1, faucet 2, kitchen cabinet (1, 2, 3, 4), kitchen counter 1, plate (1, 2, 3, 4), sink 2
+Act: go to kitchen cabinet 4
+You arrive at the kitchen cabinet 4. The kitchen cabinet 4 is closed. You see bowl (1, 2, 3, 4, 5), dishwashing liquid 1, faucet 2, fridge 1, kitchen cabinet (2, 3, 4), kitchen counter (1, 3), plate (1, 2, 3, 4), sink 2.
+Act: open kitchen cabinet 4
+You open kitchen cabinet 4. You see bowl (1, 2, 3, 4, 5), dishwashing liquid 1, faucet 2, fridge 1, kitchen cabinet (2, 3, 4), kitchen counter (1, 3), plate (1, 2, 3, 4), sink 2
+Act: go to kitchen cabinet 5
+You arrive at the kitchen cabinet 5. The kitchen cabinet 5 is closed. You see dishwasher 1, kitchen cabinet (5, 6), microwave oven 1.
+Act: open kitchen cabinet 5
+You open kitchen cabinet 5. You see dishwasher 1, kitchen cabinet (5, 6), microwave oven 1
+Act: go to kitchen cabinet 6
+You arrive at the kitchen cabinet 6. The kitchen cabinet 6 is closed. You see dishwasher 1, kitchen cabinet (5, 6, 7), microwave oven 1, toaster 1.
+Act: open kitchen cabinet 6
+You open kitchen cabinet 6. You see dishwasher 1, juice 1, kitchen cabinet (5, 6, 7), microwave oven 1, toaster 1
+Act: go to kitchen cabinet 7
+You arrive at the kitchen cabinet 7. The kitchen cabinet 7 is closed. You see dishwasher 1, juice 1, kitchen cabinet (5, 6, 7, 8), microwave oven 1, toaster 1.
+Act: open kitchen cabinet 7
+You open kitchen cabinet 7. You see dishwasher 1, juice 1, kitchen cabinet (5, 6, 7, 8), microwave oven 1, toaster 1
+Act: go to kitchen cabinet 8
+You arrive at the kitchen cabinet 8. The kitchen cabinet 8 is closed. You see cooking pot 1, dishwasher 1, frying pan 1, juice 1, kitchen cabinet (6, 7, 8), microwave oven 1, stove 1, toaster 1.
+Act: open kitchen cabinet 8
+You open kitchen cabinet 8. You see cooking pot 1, dishwasher 1, frying pan 1, juice 1, kitchen cabinet (6, 7, 8), microwave oven 1, stove 1, toaster 1
+Act: go to kitchen counter 1
+You arrive at the kitchen counter 1. You see bowl (1, 2, 3, 4, 5), chicken 1, cutlets 1, dishwashing liquid 1, faucet 2, fridge 1, kitchen cabinet (1, 2, 3, 4), kitchen counter 1, plate (1, 2, 3, 4), sink 2.
+Act: go to kitchen counter 3
+You arrive at the kitchen counter 3. You see bowl (1, 2, 3, 4, 5), fridge 1, kitchen cabinet (3, 4), kitchen counter (1, 3), light switch 2, plate (1, 2, 3, 4).
+Think: There is no pancake in kitchen 1. Now, I will search living room 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'living room 1', 'child_node_attrs': {'visited': False}})
+Info: bookshelf 3, chair 2, closet 1, coffee table 2, computer 2, desk 2, light switch 4, sofa 2, tv 1
+Think: In living room 1, the pancake is likely to appear in/on chair 2, coffee table 2, desk 2.
+OK.
+Act: go to living room 1
+You move to the living room 1. Looking quickly around the room, you see bookshelf 3, chair 2, closet 1, coffee table 2, computer 2, desk 2, sofa 2, tv 1.
+Act: go to chair 2
+You arrive at the chair 2. You see chair 2, computer 2, desk 2.
+Act: go to coffee table 2
+You arrive at the coffee table 2. You see coffee table 2, sofa 2.
+Act: go to desk 2
+You arrive at the desk 2. You see book 6, chair 2, computer 2, desk 2.
+Think: There is no pancake in living room 1. Now, I will search bedroom 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'bedroom 1', 'child_node_attrs': {'visited': False}})
+Info: bed 1, bookshelf 2, cabinet 1, chair 1, coffee table 1, computer 1, desk 1, light switch 3, nightstand (1, 2), sofa 1
+Think: In bedroom 1, the pancake is likely to appear in/on bed 1, bookshelf 2, cabinet 1, chair 1, coffee table 1, desk 1, nightstand (1, 2), sofa 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom 1. Looking quickly around the room, you see bed 1, bookshelf 2, cabinet 1, chair 1, coffee table 1, computer 1, desk 1, nightstand (1, 2), sofa 1.
+Act: go to bed 1
+You arrive at the bed 1. You see bed 1, nightstand 1.
+Act: go to bookshelf 2
+You arrive at the bookshelf 2. The bookshelf 2 is closed. You see bookshelf 2, cabinet 1, cell phone 2, light switch 3.
+Act: open bookshelf 2
+You can't open bookshelf (2) because of low-level controller problem.
+Act: go to cabinet 1
+You arrive at the cabinet 1. The cabinet 1 is closed. You see bookshelf 2, cabinet 1, cell phone 2.
+Act: open cabinet 1
+You open cabinet 1. You see apple 2, bookshelf 2, cabinet 1, cell phone 2, juice 2, pancake 2, wine 1
+Think: I find pancake 2. Now, I need to pick it up.
+OK.
+Act: pick up pancake 2
+You pick up pancake 2. You hold pancake 2.
+Think: Now I need to find kitchen table and put down pancake 2.
+OK.
+Query: find_objects({'label': 'kitchen table'})
+Info: [{'name_id_nl': 'kitchen table 1', 'node_type': 'asset', 'properties': ['SURFACES', 'MOVABLE'], 'states': [], 'room': 'kitchen 1'}]
+Think: Kitchen table 1 is in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen 1. Looking quickly around the room, you see bench (1, 2), bookshelf 1, dishwasher 1, faucet 2, fridge 1, garbage can 1, kitchen cabinet (1, 2, 3, 4, 5, 6, 7, 8), kitchen counter (1, 3), kitchen table 1, microwave oven 1, sink 2, stove 1, toaster 1. You hold pancake 2.
+Act: go to kitchen table 1
+You arrive at the kitchen table 1. You see bench 2, book 1, bowl 6, cell phone 1, condiment shaker (1, 2), kitchen table 1, pancake 2. You hold pancake 2.
+Act: put down pancake 2
+You put pancake 2 on kitchen table 1.
+Think: Now, I need to find and pick up juice.
+OK.
+Query: find_objects({'label': 'juice'})
+Info: [{'name_id_nl': 'juice 1', 'node_type': 'object', 'properties': ['GRABBABLE', 'DRINKABLE', 'POURABLE', 'MOVABLE'], 'states': []}, {'name_id_nl': 'juice 2', 'node_type': 'object', 'properties': ['GRABBABLE', 'DRINKABLE', 'POURABLE', 'MOVABLE'], 'states': []}]
+Query: get_edges_for_node({'node_id': 'juice 1'})
+Info: [('juice 1', 'kitchen 1', 'INSIDE'), ('juice 1', 'kitchen cabinet 6', 'INSIDE')]
+Query: get_edges_for_node({'node_id': 'juice 2'})
+Info: [('juice 2', 'bedroom 1', 'INSIDE'), ('juice 2', 'cabinet 1', 'ON'), ('juice 2', 'cabinet 1', 'INSIDE'), ('juice 2', 'wine 1', 'ON')]
+Think: Juice 1 is in kitchen cabinet 6 in kitchen 1. Juice 2 is on cabinet 1 in bedroom 1.
+OK.
+Act: go to kitchen cabinet 6
+You arrive at the kitchen cabinet 6. The kitchen cabinet 6 is open. You see dishwasher 1, juice 1, kitchen cabinet (5, 6, 7), microwave oven 1, toaster 1.
+Act: pick up juice 1
+You pick up juice 1. You hold juice 1.
+Think: Now I need to find kitchen table and put down juice 1.
+OK.
+Act: go to kitchen table 1
+You arrive at the kitchen table 1. You see bench 2, book 1, bowl 6, cell phone 1, condiment shaker (1, 2), juice 1, kitchen table 1, pancake 2. You hold juice 1.
+Act: put down juice 1
+You put juice 1 on kitchen table 1.
+Think: Now I complete the task.
+OK.
+Act: done

@@ -1,0 +1,2 @@
+Your task is to: Take all the objects off the toilet and place them on the dining table.
+Max decision steps reached.

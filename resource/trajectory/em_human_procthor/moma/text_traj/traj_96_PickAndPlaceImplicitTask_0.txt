@@ -1,0 +1,7 @@
+Your task is to: Move all the objects from the desk to the dresser.
+You are in the house, and there are 1 rooms: bedroom (1). You are in the middle of a bedroom (1). Looking quickly around the room, you see bed (1), chair (1, 2), desk (1), dining table (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13), dresser (1), painting (1, 2, 3, 4), stool (1), television (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- bedroom 1: [(bed 1), (chair 1), (chair 2), (desk 1), (dining table 1), (drawer 10), (drawer 9), (drawer 1), (drawer 2), (drawer 11), (drawer 8), (drawer 12), (drawer 7), (drawer 6), (drawer 5), (drawer 4), (drawer 3), (drawer 13), (dresser 1), mug 1, painting 1, painting 2, painting 3, painting 4, (stool 1), television 1]
+You have not taken any actions yet.
+What is the best next action to complete the task as efficiently as possible?
+Think: I need to find desk and check what is on top of it. I find desk 1. Now, I need to move toward desk 1 to check what is on top of it.
+Act: go to desk 1

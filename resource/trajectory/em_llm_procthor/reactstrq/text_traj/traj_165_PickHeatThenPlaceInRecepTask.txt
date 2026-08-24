@@ -1,0 +1,115 @@
+Your task is to: Put a heated bread slice on the plate.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a bathroom (1). Looking quickly around the room, you see garbage can (2), painting (4), plunger (1), sink (1), sink basin (1), toilet (1).
+Think: To solve the task, I need to find the bread and use either the microwave or the toaster to heat it.
+OK.
+Think: First, I need to check if there is a microwave or a toaster.
+OK.
+Query: find_objects({'label': 'microwave'})
+Info: 
+Query: find_objects({'label': 'toaster'})
+Info: 
+Think: I have not seen microwave or toaster yet. Now I need to check where to search. First, I will search kitchen 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'kitchen 1'})
+Info: chair (1, 2), countertop 1, dining table 1, fridge 1
+Think: In kitchen 1, the microwave or toaster is likely to appear in/on chair (1, 2), countertop 1, dining table 1, fridge 1. I can check each place one by one until I find microwave or toaster.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see chair (1, 2), countertop (1), dining table (1), fridge (1), house plant (1), television (2).
+Act: go to chair 1
+You arrive at the chair (1). You see bottle (2), bowl (1), cell phone (2, 3), chair (1, 2), dining table (1), plate (1), vase (1).
+Act: go to chair 2
+You arrive at the chair (2). You see bottle (2), bowl (1), cell phone (2, 3), chair (1, 2), dining table (1), plate (1), vase (1).
+Act: go to countertop 1
+You arrive at the countertop (1). You see bottle (1), bread (1), butter knife (1), countertop (1), house plant (1), lettuce (1), microwave (1), pan (1), pen (1), spoon (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see bottle (2), bowl (1), cell phone (2, 3), chair (1, 2), dining table (1), plate (1), vase (1).
+Act: go to fridge 1
+You arrive at the fridge (1). The fridge (1) is closed. You see fridge (1).
+Act: open fridge 1
+You open fridge (1). You see egg (1), fridge (1), lettuce (2).
+Think: I need to check whether I see microwave or toaster.
+OK.
+Query: find_objects({'label': 'microwave'})
+Info: [{'name_id_nl': 'microwave 1', 'node_type': 'object', 'properties': ['toggleable', 'isHeatSource', 'openable'], 'states': []}]
+Query: find_objects({'label': 'toaster'})
+Info: 
+Query: get_edges_for_node({'node_id': 'microwave 1'})
+Info: [('microwave 1', 'countertop 1', 'ON'), ('microwave 1', 'bottle 1', 'CLOSE'), ('microwave 1', 'butter knife 1', 'CLOSE'), ('microwave 1', 'house plant 1', 'CLOSE'), ('microwave 1', 'pan 1', 'CLOSE'), ('microwave 1', 'pen 1', 'CLOSE'), ('microwave 1', 'spoon 1', 'CLOSE'), ('microwave 1', 'kitchen 1', 'INSIDE'), ('bottle 1', 'microwave 1', 'CLOSE'), ('butter knife 1', 'microwave 1', 'CLOSE'), ('house plant 1', 'microwave 1', 'CLOSE'), ('pan 1', 'microwave 1', 'CLOSE'), ('pen 1', 'microwave 1', 'CLOSE'), ('spoon 1', 'microwave 1', 'CLOSE')]
+Think: Microwave 1 is on countertop 1.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see bottle (1), bread (1), butter knife (1), countertop (1), house plant (1), lettuce (1), microwave (1), pan (1), pen (1), spoon (1).
+Act: go to microwave 1
+You arrive at the microwave (1). The microwave (1) is closed. You see butter knife (1), countertop (1), house plant (1), microwave (1), pan (1), pen (1), spoon (1).
+Act: open microwave 1
+You open microwave (1). You see butter knife (1), countertop (1), house plant (1), microwave (1), pan (1), pen (1), spoon (1).
+Think: Now, I need to find knife or butter knife to slice bread.
+OK.
+Query: find_objects({'label': 'knife'})
+Info: 
+Query: find_objects({'label': 'butter knife'})
+Info: [{'name_id_nl': 'butter knife 1', 'node_type': 'object', 'properties': ['pickupable'], 'states': []}]
+Query: get_edges_for_node({'node_id': 'butter knife 1'})
+Info: [('butter knife 1', 'countertop 1', 'ON'), ('butter knife 1', 'microwave 1', 'CLOSE'), ('butter knife 1', 'pan 1', 'CLOSE'), ('butter knife 1', 'pen 1', 'CLOSE'), ('butter knife 1', 'spoon 1', 'CLOSE'), ('butter knife 1', 'user 1', 'CLOSE'), ('butter knife 1', 'kitchen 1', 'INSIDE'), ('microwave 1', 'butter knife 1', 'CLOSE'), ('pan 1', 'butter knife 1', 'CLOSE'), ('pen 1', 'butter knife 1', 'CLOSE'), ('spoon 1', 'butter knife 1', 'CLOSE'), ('user 1', 'butter knife 1', 'CLOSE')]
+Think: Butter knife 1 is on countertop 1.
+OK.
+Act: go to butter knife 1
+You arrive at the butter knife (1). You see butter knife (1), microwave (1), pan (1), pen (1), spoon (1).
+Act: pick up butter knife 1
+You pick up butter knife (1). You hold butter knife (1).
+Think: Now, I need to find bread to slice and put down in microwave.
+OK.
+Query: find_objects({'label': 'bread'})
+Info: [{'name_id_nl': 'bread 1', 'node_type': 'object', 'properties': ['sliceable', 'pickupable'], 'states': []}]
+Query: get_edges_for_node({'node_id': 'bread 1'})
+Info: [('bread 1', 'countertop 1', 'ON'), ('bread 1', 'bottle 1', 'CLOSE'), ('bread 1', 'lettuce 1', 'CLOSE'), ('bread 1', 'kitchen 1', 'INSIDE'), ('bottle 1', 'bread 1', 'CLOSE'), ('lettuce 1', 'bread 1', 'CLOSE')]
+Think: Bread 1 is on countertop 1.
+OK.
+Act: go to bread 1
+You arrive at the bread (1). You see bottle (1), bread (1), lettuce (1), microwave (1), pan (1), pen (1), television (2). You hold butter knife (1).
+Act: slice bread 1
+You slice bread (1). You see bottle (1), lettuce (1), microwave (1), pan (1), pen (1), sliced bread (1), television (2). You hold butter knife (1).
+Think: Now, I need to put down butter knife 1 and pick up sliced bread 1.
+OK.
+Act: put down butter knife 1
+You put butter knife (1) in microwave (1).
+Act: pick up sliced bread 1
+You pick up sliced bread (1). You hold sliced bread (1).
+Think: Now, I need to put down sliced bread 1 in microwave.
+OK.
+Act: put down sliced bread 1
+You put sliced bread (1) in microwave (1).
+Act: close microwave 1
+Close action failed: The target object is not within the visible range.
+Act: go to microwave 1
+You arrive at the microwave (1). The microwave (1) is open. You see bottle (1), butter knife (1), countertop (1), microwave (1), pan (1), pen (1), sliced bread (1), spoon (1), television (2).
+Act: close microwave 1
+You close microwave (1).
+Act: turn on microwave 1
+You turn on microwave (1).
+Think: Now, I need to turn off microwave 1 and pick up sliced bread 1.
+OK.
+Act: turn off microwave 1
+You turn off microwave (1).
+Act: open microwave 1
+You open microwave (1). You see bottle (1), butter knife (1), countertop (1), microwave (1), pan (1), pen (1), sliced bread (1), spoon (1), television (2).
+Act: pick up sliced bread 1
+You pick up sliced bread (1). You hold sliced bread (1).
+Think: Now, I need to find plate.
+OK.
+Query: find_objects({'label': 'plate'})
+Info: [{'name_id_nl': 'plate 1', 'node_type': 'object', 'properties': ['breakable', 'pickupable'], 'states': []}]
+Query: get_edges_for_node({'node_id': 'plate 1'})
+Info: [('plate 1', 'dining table 1', 'ON'), ('plate 1', 'bottle 2', 'CLOSE'), ('plate 1', 'bowl 1', 'CLOSE'), ('plate 1', 'cell phone 2', 'CLOSE'), ('plate 1', 'cell phone 3', 'CLOSE'), ('plate 1', 'chair 1', 'CLOSE'), ('plate 1', 'chair 2', 'CLOSE'), ('plate 1', 'vase 1', 'CLOSE'), ('plate 1', 'kitchen 1', 'INSIDE'), ('bottle 2', 'plate 1', 'CLOSE'), ('bowl 1', 'plate 1', 'CLOSE'), ('cell phone 2', 'plate 1', 'CLOSE'), ('cell phone 3', 'plate 1', 'CLOSE'), ('chair 1', 'plate 1', 'CLOSE'), ('chair 2', 'plate 1', 'CLOSE'), ('vase 1', 'plate 1', 'CLOSE')]
+Think: Plate 1 is on dining table 1.
+OK.
+Act: go to dining table 1
+You arrive at the dining table (1). You see bottle (2), bowl (1), cell phone (2, 3), chair (1, 2), dining table (1), plate (1), vase (1). You hold sliced bread (1).
+Act: go to plate 1
+You arrive at the plate (1). You see bottle (2), bowl (1), cell phone (2, 3), chair (1, 2), dining table (1), plate (1), vase (1). You hold sliced bread (1).
+Act: put down sliced bread 1
+You put sliced bread (1) in plate (1).
+Think: Now I complete task.
+OK.
+Act: done

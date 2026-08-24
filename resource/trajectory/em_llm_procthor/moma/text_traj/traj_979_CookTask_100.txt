@@ -1,0 +1,2 @@
+Your task is to: Use the coffee machine to brew coffee into a mug and then place it on the countertop.
+Max decision steps reached.

@@ -1,0 +1,67 @@
+Your task is to: Collect a soap bar and a toilet paper and place them in the garbage can.
+You are in the house, and there are 1 rooms: bathroom (1). You are in the middle of a bathroom (1). Looking quickly around the room, you see garbage can (1), laundry hamper (1), painting (1, 2), sink (1), sink basin (1), toilet (1).
+Think: To solve the task, I need to find and pick up soap bar, then put it in garbage can. And I need to find and pick up toilet paper, then put it in garbage can.
+OK.
+Think: First, I need to find and pick up soap bar.
+OK.
+Query: find_objects({'label': 'soap bar'})
+Info: 
+Think: I have not seen soap bar yet. Now I need to check where to search. First, I will search bathroom 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'bathroom 1'})
+Info: garbage can 1, laundry hamper 1, sink 1, sink basin 1, toilet 1
+Think: In bathroom 1, the soap bar is likely to appear in/on garbage can 1, laundry hamper 1, sink 1, sink basin 1, toilet 1. I can check each place one by one until I find soap bar.
+OK.
+Act: go to bathroom 1
+You move to the bathroom (1). Looking quickly around the room, you see garbage can (1), laundry hamper (1), painting (1, 2), sink (1), sink basin (1), soap bar (1), toilet (1).
+Act: go to garbage can 1
+You arrive at the garbage can (1). You see garbage can (1).
+Act: go to laundry hamper 1
+You arrive at the laundry hamper (1). The laundry hamper (1) is closed. You see laundry hamper (1).
+Act: go to sink 1
+You arrive at the sink (1). You see faucet (1), sink (1), sink basin (1).
+Act: go to sink basin 1
+You arrive at the sink basin (1). You see faucet (1), sink (1), sink basin (1).
+Act: go to toilet 1
+You arrive at the toilet (1). The toilet (1) is closed. You see painting (1), soap bar (1), toilet (1), toilet paper (1).
+Think: I need to check whether I see soap bar.
+OK.
+Query: find_objects({'label': 'soap bar'})
+Info: [{'name_id_nl': 'soap bar 1', 'node_type': 'object', 'properties': ['pickupable'], 'states': []}]
+Query: get_edges_for_node({'node_id': 'soap bar 1'})
+Info: [('soap bar 1', 'painting 1', 'CLOSE'), ('soap bar 1', 'toilet 1', 'CLOSE'), ('soap bar 1', 'toilet paper 1', 'CLOSE'), ('soap bar 1', 'user 1', 'CLOSE'), ('soap bar 1', 'bathroom 1', 'INSIDE'), ('painting 1', 'soap bar 1', 'CLOSE'), ('toilet 1', 'soap bar 1', 'CLOSE'), ('toilet paper 1', 'soap bar 1', 'CLOSE'), ('user 1', 'soap bar 1', 'CLOSE')]
+Think: Soap bar 1 is in bathroom 1.
+OK.
+Act: go to soap bar 1
+You arrive at the soap bar (1). You see painting (1), soap bar (1), toilet (1), toilet paper (1).
+Act: pick up soap bar 1
+You pick up soap bar (1). You hold soap bar (1).
+Think: Now, I need to find garbage can and put down soap bar 1.
+OK.
+Act: go to garbage can 1
+You arrive at the garbage can (1). You see garbage can (1). You hold soap bar (1).
+Act: put down soap bar 1
+You put soap bar (1) in garbage can (1).
+Think: Now, I need to find and pick up toilet paper.
+OK.
+Query: find_objects({'label': 'toilet paper'})
+Info: [{'name_id_nl': 'toilet paper 1', 'node_type': 'object', 'properties': ['pickupable'], 'states': []}]
+Query: get_edges_for_node({'node_id': 'toilet paper 1'})
+Info: [('toilet paper 1', 'toilet 1', 'ON'), ('toilet paper 1', 'painting 1', 'CLOSE'), ('toilet paper 1', 'bathroom 1', 'INSIDE'), ('painting 1', 'toilet paper 1', 'CLOSE')]
+Think: Toilet paper 1 is on toilet 1 in bathroom 1.
+OK.
+Act: go to toilet 1
+You arrive at the toilet (1). The toilet (1) is closed. You see painting (1), toilet (1), toilet paper (1).
+Act: go to toilet paper 1
+You arrive at the toilet paper (1). You see painting (1), toilet (1), toilet paper (1).
+Act: pick up toilet paper 1
+You pick up toilet paper (1). You hold toilet paper (1).
+Think: Now, I need to find garbage can and put down toilet paper 1.
+OK.
+Act: go to garbage can 1
+You arrive at the garbage can (1). You see garbage can (1), soap bar (1). You hold toilet paper (1).
+Act: put down toilet paper 1
+You put toilet paper (1) in garbage can (1).
+Think: Now I complete the task.
+OK.
+Act: done

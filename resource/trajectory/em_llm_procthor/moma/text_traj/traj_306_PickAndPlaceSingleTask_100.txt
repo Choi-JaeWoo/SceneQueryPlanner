@@ -1,0 +1,2 @@
+Your task is to: Pick up a newspaper and put it in the drawer.
+Max decision steps reached.

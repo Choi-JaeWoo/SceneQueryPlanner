@@ -1,0 +1,115 @@
+Your task is to: Put a pencil, a book, and a vase on the coffee table, arranging them as desired.
+You are in the house, and there are 10 rooms: bathroom (1, 2, 3), bedroom (1, 2, 3), kitchen (1), living room (1, 2, 3). You are in the middle of a bathroom (1). Looking quickly around the room, you see garbage can (1), plunger (1), sink (1), sink basin (1), toilet (1).
+Think: To solve the task, I need to find and pick up pencil, then put it on coffee table. And I need to find and pick up book, then put it on coffee table. And I need to find and pick up vase, then put it on coffee table.
+OK.
+Think: First, I need to find and pick up pencil.
+OK.
+Query: find_objects({'label': 'pencil'})
+Info: 
+Think: I have not seen pencil yet. Now I need to check where to search. First, I will search living room 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'living room 1'})
+Info: TV stand 1, box 2, chair 6, dining table 2, shelf (1, 2, 3, 4, 5, 6), side table 3, sofa 1
+Think: In living room 1, the pencil is likely to appear in/on TV stand 1, box 2, chair 6, dining table 2, shelf (1, 2, 3, 4, 5, 6), side table 3, sofa 1. I can check each place one by one until I find pencil.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), chair (6), dining table (2), shelf (1, 2, 3, 4, 5, 6), side table (3), sofa (1).
+Act: go to TV stand 1
+You arrive at the TV stand (1). You see TV stand (1), shelf (1, 2, 3, 4, 5, 6), television (1), tissue box (2).
+Act: go to box 2
+You arrive at the box (2). The box (2) is closed. You see box (2), pen (1, 2), shelf (4, 5), side table (3), tissue box (2), vase (2).
+Act: go to chair 6
+You arrive at the chair (6). You see candle (3), dish sponge (1), faucet (3), garbage can (4), plunger (3), sink (3), sink basin (3), toilet (3), toilet paper (3).
+Act: go to dish sponge 1
+You arrive at the dish sponge (1). You see chair (6), dining table (2), pencil (4), pillow (2), remote control (1), sofa (1).
+Act: go to dining table 2
+You arrive at the dining table (2). You see chair (6), dining table (2), pencil (4), plate (2).
+Act: go to shelf 1
+You arrive at the shelf (1). You see TV stand (1), shelf (1, 2, 3, 4, 5, 6), television (1), tissue box (2).
+Act: go to shelf 2
+You arrive at the shelf (2). You see TV stand (1), shelf (1, 2, 3, 4, 5, 6), television (1), tissue box (2).
+Act: go to shelf 3
+You arrive at the shelf (3). You see TV stand (1), shelf (1, 2, 3, 4, 5, 6), television (1), tissue box (2).
+Act: go to shelf 4
+You arrive at the shelf (4). You see TV stand (1), box (2), pen (1, 2), shelf (1, 2, 3, 4, 5, 6), side table (3), television (1), tissue box (2), vase (2).
+Act: go to shelf 5
+You arrive at the shelf (5). You see TV stand (1), box (2), pen (1, 2), shelf (1, 2, 3, 4, 5, 6), side table (3), television (1), tissue box (2), vase (2).
+Act: go to shelf 6
+You arrive at the shelf (6). You see TV stand (1), box (2), pen (1, 2), shelf (1, 2, 3, 4, 5, 6), side table (3), television (1), tissue box (2), vase (2).
+Act: go to side table 3
+You arrive at the side table (3). You see box (2), pen (1, 2), shelf (4, 5), side table (3), tissue box (2), vase (2).
+Act: go to sofa 1
+You arrive at the sofa (1). You see chair (6), dining table (2), pencil (4), pillow (2), remote control (1), sofa (1).
+Think: I need to check whether I see pencil.
+OK.
+Query: find_objects({'label': 'pencil'})
+Info: [{'name_id_nl': 'pencil 4', 'node_type': 'object', 'properties': ['pickupable'], 'states': []}]
+Query: get_edges_for_node({'node_id': 'pencil 4'})
+Info: [('pencil 4', 'plate 2', 'CLOSE'), ('pencil 4', 'dining table 2', 'ON'), ('pencil 4', 'chair 6', 'CLOSE'), ('pencil 4', 'user 1', 'CLOSE'), ('pencil 4', 'living room 1', 'INSIDE'), ('plate 2', 'pencil 4', 'CLOSE'), ('chair 6', 'pencil 4', 'CLOSE'), ('user 1', 'pencil 4', 'CLOSE')]
+Think: Pencil 4 is on dining table 2 in living room 1.
+OK.
+Act: go to dining table 2
+You arrive at the dining table (2). You see chair (6), dining table (2), pencil (4), plate (2).
+Act: go to pencil 4
+You arrive at the pencil (4). You see chair (6), dining table (2), pencil (4), plate (2).
+Act: pick up pencil 4
+You pick up pencil (4). You hold pencil (4).
+Think: Now, I need to find coffee table and put down pencil 4.
+OK.
+Act: go to living room 2
+You move to the living room (2). Looking quickly around the room, you see TV stand (2), armchair (1, 2), box (1), coffee table (1), dining table (3), house plant (1), painting (3, 4), shelf (7, 8, 9, 10, 11, 12), sofa (2). You hold pencil (4).
+Act: go to coffee table 1
+You arrive at the coffee table (1). You see coffee table (1), key chain (1), tissue box (3), watch (3). You hold pencil (4).
+Act: put down pencil 4
+You put pencil (4) in coffee table (1).
+Think: Now, I need to find and pick up book.
+OK.
+Query: find_objects({'label': 'book'})
+Info: [{'name_id_nl': 'book 2', 'node_type': 'object', 'properties': ['openable', 'pickupable'], 'states': []}, {'name_id_nl': 'book 3', 'node_type': 'object', 'properties': ['openable', 'pickupable'], 'states': []}]
+Query: get_edges_for_node({'node_id': 'book 2'})
+Info: [('book 2', 'sofa 2', 'ON'), ('book 2', 'armchair 2', 'CLOSE'), ('book 2', 'book 3', 'CLOSE'), ('book 2', 'cell phone 2', 'CLOSE'), ('book 2', 'laptop 2', 'CLOSE'), ('book 2', 'living room 2', 'INSIDE'), ('armchair 2', 'book 2', 'CLOSE'), ('book 3', 'book 2', 'CLOSE'), ('cell phone 2', 'book 2', 'CLOSE'), ('laptop 2', 'book 2', 'CLOSE')]
+Query: get_edges_for_node({'node_id': 'book 3'})
+Info: [('book 3', 'sofa 2', 'ON'), ('book 3', 'armchair 2', 'CLOSE'), ('book 3', 'book 2', 'CLOSE'), ('book 3', 'cell phone 2', 'CLOSE'), ('book 3', 'laptop 2', 'CLOSE'), ('book 3', 'living room 2', 'INSIDE'), ('armchair 2', 'book 3', 'CLOSE'), ('book 2', 'book 3', 'CLOSE'), ('cell phone 2', 'book 3', 'CLOSE'), ('laptop 2', 'book 3', 'CLOSE')]
+Think: Book 2 is on sofa 2 in living room 2. Book 3 is on sofa 2 in living room 2.
+OK.
+Act: go to living room 2
+You move to the living room (2). Looking quickly around the room, you see TV stand (2), armchair (1, 2), box (1), coffee table (1), dining table (3), house plant (1), painting (3, 4), shelf (7, 8, 9, 10, 11, 12), sofa (2).
+Act: go to sofa 2
+You arrive at the sofa (2). You see book (2, 3), cell phone (2), laptop (2), sofa (2).
+Act: go to book 2
+You arrive at the book (2). The book (2) is closed. You see book (2, 3), cell phone (2), laptop (2), sofa (2).
+Act: pick up book 2
+You pick up book (2). You hold book (2).
+Think: Now, I need to find coffee table and put down book 2.
+OK.
+Act: go to coffee table 1
+You arrive at the coffee table (1). You see coffee table (1), key chain (1), pencil (4), tissue box (3), watch (3). You hold book (2).
+Act: put down book 2
+You put book (2) in coffee table (1).
+Think: Now, I need to find and pick up vase.
+OK.
+Query: find_objects({'label': 'vase'})
+Info: [{'name_id_nl': 'vase 2', 'node_type': 'object', 'properties': ['breakable', 'pickupable'], 'states': []}]
+Query: get_edges_for_node({'node_id': 'vase 2'})
+Info: [('vase 2', 'television 1', 'CLOSE'), ('vase 2', 'side table 3', 'ON'), ('vase 2', 'box 2', 'CLOSE'), ('vase 2', 'pen 1', 'CLOSE'), ('vase 2', 'pen 2', 'CLOSE'), ('vase 2', 'shelf 4', 'CLOSE'), ('vase 2', 'shelf 5', 'CLOSE'), ('vase 2', 'shelf 6', 'CLOSE'), ('vase 2', 'tissue box 2', 'CLOSE'), ('vase 2', 'living room 1', 'INSIDE'), ('television 1', 'vase 2', 'CLOSE'), ('box 2', 'vase 2', 'CLOSE'), ('pen 1', 'vase 2', 'CLOSE'), ('pen 2', 'vase 2', 'CLOSE'), ('shelf 4', 'vase 2', 'CLOSE'), ('shelf 5', 'vase 2', 'CLOSE'), ('shelf 6', 'vase 2', 'CLOSE'), ('tissue box 2', 'vase 2', 'CLOSE')]
+Think: Vase 2 is on side table 3 in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), chair (6), dining table (2), shelf (1, 2, 3, 4, 5, 6), side table (3), sofa (1).
+Act: go to side table 3
+You arrive at the side table (3). You see box (2), pen (1, 2), shelf (4, 5), side table (3), tissue box (2), vase (2).
+Act: go to vase 2
+You arrive at the vase (2). You see box (2), pen (1, 2), shelf (4, 5), side table (3), tissue box (2), vase (2).
+Act: pick up vase 2
+You pick up vase (2). You hold vase (2).
+Think: Now, I need to find coffee table and put down vase 2.
+OK.
+Act: go to living room 2
+You move to the living room (2). Looking quickly around the room, you see TV stand (2), armchair (1, 2), box (1), coffee table (1), dining table (3), house plant (1), painting (3, 4), shelf (7, 8, 9, 10, 11, 12), sofa (2). You hold vase (2).
+Act: go to coffee table 1
+You arrive at the coffee table (1). You see book (2), coffee table (1), key chain (1), pencil (4), tissue box (3), watch (3). You hold vase (2).
+Act: put down vase 2
+You put vase (2) in coffee table (1).
+Think: Now I complete the task.
+OK.
+Act: done

@@ -1,0 +1,10 @@
+Your task is to: Put the pudding on the coffee table
+You arrive at the bench 2. You see bench 2, cutlery fork (3, 4), cutlery knife (3, 4), kitchen table 1, pie 1, plate (6, 7), water glass (2, 3, 4, 5), whipped cream 1. Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- (bathroom 1): [(bathroom cabinet 1), (bathroom counter 1), (faucet 1), (light switch 1), (sink 1), (toilet 1), (towel rack 1), (towel rack 2), (towel rack 3), (towel rack 4), (washing machine 1)]
+- bedroom 1: [(bed 1), (bookshelf 1), box 1, (chair 1), (chair 2), (closet 1), (closet 2), (coffee table 1), (computer 1), (desk 1), (garbage can 1), (light switch 2), (nightstand 1), (nightstand 2), (pants 1), (pants 2), (pants 3), (pants 4), (pants 5), (shirt 1), (shirt 2), (shirt 3)]
+- kitchen 1: [bench 1, bench 2, book 1, (bookshelf 2), (clock 1), (coffee pot 1), cutlery fork 1, cutlery fork 2, cutlery fork 3, cutlery fork 4, cutlery knife 1, cutlery knife 2, cutlery knife 3, cutlery knife 4, (faucet 2), (fridge 1), (kitchen cabinet 1), (kitchen cabinet 2), (kitchen cabinet 3), (kitchen cabinet 4), (kitchen counter 1), (kitchen table 1), (light switch 3), (microwave oven 1), (oven tray 1), pie 1, plate 4, plate 5, plate 6, plate 7, (plate 8), (sink 2), (slice of bread 1), (slice of bread 2), (stove 1), (toaster 1), (tv 1), water glass 2, water glass 3, water glass 4, water glass 5, whipped cream 1, wine 1]
+- (living room 1): [(bookshelf 3), (cabinet 1), (chair 3), (closet 3), (coffee table 2), (computer 2), (desk 2), (light switch 4), (pants 10), (pants 6), (pants 7), (pants 8), (pants 9), (shirt 4), (shirt 5), (shirt 6), (sofa 1), (tv 2)]
+Your 3 previous actions were: go to kitchen 1 (success), go to bench 1 (success), go to bench 2 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I cannot find pudding at bench 2. I can check fridge 1.
+Act: go to fridge 1

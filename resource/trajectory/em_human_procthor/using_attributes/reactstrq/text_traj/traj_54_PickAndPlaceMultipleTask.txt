@@ -1,0 +1,77 @@
+Your task is to: Pick up two items from the dining table-one made of plastic and metal, and one made of wood-and move them onto the countertop.
+You are in the house, and there are 1 rooms: kitchen (1). You are in the middle of a kitchen (1). Looking quickly around the room, you see chair (1, 2, 3, 4, 5, 6), countertop (1), dining table (1), fridge (1), garbage can (1), painting (1, 2, 3), stool (1), television (1).
+Think: To solve the task, I need to find dining table and find the item made of plastic and metal from dining table, then pick it up and put it down on countertop. And I need to find dining table and find the item made of wood from dining table, then pick it up and put it down on countertop.
+OK.
+Think: First, I need to find dining table.
+OK.
+Query: find_objects({'label': 'dining table'})
+Info: [{'name_id_nl': 'dining table 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'kitchen 1'}]
+Think: Dining table 1 is in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see chair (1, 2, 3, 4, 5, 6), countertop (1), dining table (1), fridge (1), garbage can (1), painting (1, 2, 3), stool (1), television (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see apple (1), chair (1, 2, 3, 4, 5), dining table (1), house plant (1), mug (1), pen (1), pencil (1), plate (1), spray bottle (1), vase (1).
+Think: Now, I need to find and pick up the item made of plastic and metal from the dining table. First, I need to check what is on top of dining table 1.
+OK.
+Query: get_edges_for_node({'node_id': 'dining table 1', 'relation': 'ON'})
+Info: [('apple 1', 'dining table 1', 'ON'), ('house plant 1', 'dining table 1', 'ON'), ('mug 1', 'dining table 1', 'ON'), ('pen 1', 'dining table 1', 'ON'), ('pencil 1', 'dining table 1', 'ON'), ('plate 1', 'dining table 1', 'ON'), ('spray bottle 1', 'dining table 1', 'ON'), ('vase 1', 'dining table 1', 'ON')]
+Think: Now, I need to check each object to find the item made of plastic and metal.
+OK.
+Query: read_node({'node_id': 'apple 1'})
+Info: {'name_id_nl': 'apple 1', 'salientMaterials': ['Food'], 'properties': ['sliceable', 'pickupable'], 'states': []}
+Query: read_node({'node_id': 'house plant 1'})
+Info: {'name_id_nl': 'house plant 1', 'salientMaterials': ['Ceramic', 'Organic'], 'properties': ['canFillWithLiquid'], 'states': []}
+Query: read_node({'node_id': 'mug 1'})
+Info: {'name_id_nl': 'mug 1', 'salientMaterials': ['Ceramic'], 'properties': ['canFillWithLiquid', 'breakable', 'pickupable'], 'states': []}
+Query: read_node({'node_id': 'pen 1'})
+Info: {'name_id_nl': 'pen 1', 'salientMaterials': ['Plastic', 'Metal'], 'properties': ['pickupable'], 'states': []}
+Think: On dining table 1, the item made of plastic and metal is pen 1. Now, I need to pick it up.
+OK.
+Act: go to pen 1
+You arrive at the pen (1). You see apple (1), chair (1, 2, 3, 4, 5), dining table (1), house plant (1), mug (1), pen (1), pencil (1), plate (1), spray bottle (1), vase (1).
+Act: pick up pen 1
+You pick up pen (1). You hold pen (1).
+Think: Now, I need to find countertop.
+OK.
+Query: find_objects({'label': 'countertop'})
+Info: [{'name_id_nl': 'countertop 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'kitchen 1'}]
+Think: Countertop 1 is in kitchen 1.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see apple (1), cell phone (1), chair (2, 3, 4), countertop (1), credit card (1), dining table (1), house plant (1), knife (1), lettuce (1), mug (1), painting (2), pan (1), pencil (1), pepper shaker (1), plate (1), spatula (1), spray bottle (1). You hold pen (1).
+Act: put down pen 1
+You put pen (1) in countertop (1).
+Think: Now, I need to find dining table.
+OK.
+Act: go to dining table 1
+You arrive at the dining table (1). You see apple (1), chair (1, 2, 3, 4, 5), dining table (1), house plant (1), mug (1), pencil (1), plate (1), spray bottle (1), vase (1).
+Think: Now, I need to find and pick up the item made of wood from the dining table. First, I need to check what is on top of dining table 1.
+OK.
+Query: get_edges_for_node({'node_id': 'dining table 1', 'relation': 'ON'})
+Info: [('apple 1', 'dining table 1', 'ON'), ('house plant 1', 'dining table 1', 'ON'), ('mug 1', 'dining table 1', 'ON'), ('pencil 1', 'dining table 1', 'ON'), ('plate 1', 'dining table 1', 'ON'), ('spray bottle 1', 'dining table 1', 'ON'), ('vase 1', 'dining table 1', 'ON')]
+Think: Now, I need to check each object to find the item made of wood.
+OK.
+Query: read_node({'node_id': 'apple 1'})
+Info: {'name_id_nl': 'apple 1', 'salientMaterials': ['Food'], 'properties': ['sliceable', 'pickupable'], 'states': []}
+Query: read_node({'node_id': 'house plant 1'})
+Info: {'name_id_nl': 'house plant 1', 'salientMaterials': ['Ceramic', 'Organic'], 'properties': ['canFillWithLiquid'], 'states': []}
+Query: read_node({'node_id': 'mug 1'})
+Info: {'name_id_nl': 'mug 1', 'salientMaterials': ['Ceramic'], 'properties': ['canFillWithLiquid', 'breakable', 'pickupable'], 'states': []}
+Query: read_node({'node_id': 'pencil 1'})
+Info: {'name_id_nl': 'pencil 1', 'salientMaterials': ['Wood'], 'properties': ['pickupable'], 'states': []}
+Think: On dining table 1, the item made of wood is pencil 1. Now, I need to pick it up.
+OK.
+Act: go to pencil 1
+You arrive at the pencil (1). You see apple (1), cell phone (1), chair (2, 3, 4), countertop (1), credit card (1), dining table (1), house plant (1), knife (1), lettuce (1), mug (1), pan (1), pen (1), pencil (1), pepper shaker (1), plate (1), spatula (1), spray bottle (1), vase (1).
+Act: pick up pencil 1
+You pick up pencil (1). You hold pencil (1).
+Think: Now, I need to find countertop and put down pencil 1.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see apple (1), cell phone (1), chair (2, 3, 4), countertop (1), credit card (1), dining table (1), house plant (1), knife (1), lettuce (1), mug (1), painting (2), pan (1), pen (1), pepper shaker (1), plate (1), spatula (1), spray bottle (1). You hold pencil (1).
+Act: put down pencil 1
+You put pencil (1) in countertop (1).
+Think: Now I complete the task.
+OK.
+Act: done

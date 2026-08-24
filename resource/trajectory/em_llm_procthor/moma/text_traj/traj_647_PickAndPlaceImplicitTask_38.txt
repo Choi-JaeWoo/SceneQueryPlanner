@@ -1,0 +1,8 @@
+Your task is to: Clear the countertop by moving all objects to the dining table.
+You pick up spoon (1). You hold spoon (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- kitchen 1: [painting 1, garbage bag 1, apple 1, bottle 1, bread 1, house plant 1, lettuce 1, mug 1, painting 2, pen 1, pepper shaker 1, plate 1, statue 1, tomato 1, wine bottle 1, countertop 1, (fridge 1), (garbage can 1), spoon 1, dining table 1, (stool 1), (chair 1), spray bottle 1]
+- living room 1: [(armchair 1), (box 1), cell phone 1, credit card 1, (dining table 2), newspaper 1, painting 3, painting 4, (shelf 1), (sofa 1), television 1, (TV stand 1), vase 1]
+Your 5 previous actions were: go to dining table 1 (success), put down tomato 1 (success), go to countertop 1 (success), go to spoon 1 (success), pick up spoon 1 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I pick up spoon 1. Now, I need to move toward dining table 1 to put down spoon 1.
+Act: go to dining table 1

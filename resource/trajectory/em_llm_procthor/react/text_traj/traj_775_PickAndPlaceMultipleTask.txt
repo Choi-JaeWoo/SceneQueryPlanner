@@ -1,0 +1,143 @@
+Your task is to: Put a pencil, a pen, and a book on the countertop, all at once.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a living room (1). Looking quickly around the room, you see TV stand (1), box (1), dining table (3), painting (4), shelf (1), sofa (1).
+Think: To solve the task, I need to find and pick up pencil, then put it on countertop. And I need to find and pick up pen, then put it on countertop. And I need to find and pick up book, then put it on countertop.
+OK.
+Think: First, I need to find and pick up pencil. The pencil is more likely to appear in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see baseball bat (1), bed (1), boots (1), chair (1, 2, 3), dining table (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1).
+Think: In bedroom 1, the pencil is likely to appear in/on bed 1, chair (1, 2, 3), dining table 1, drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser 1. I can check each place one by one until I find pencil.
+OK.
+Act: go to bed 1
+You arrive at the bed (1). You see bed (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), key chain (1), pillow (1, 2).
+Act: go to chair 1
+You arrive at the chair (1). You see basket ball (1), book (1), bowl (1), chair (1, 2, 3), dining table (1), mug (1), vase (1).
+Act: go to chair 2
+You arrive at the chair (2). You see basket ball (1), book (1), bowl (1), chair (1, 2, 3), dining table (1), mug (1), vase (1).
+Act: go to chair 3
+You arrive at the chair (3). You see basket ball (1), book (1), bowl (1), chair (1, 2, 3), dining table (1), mug (1), vase (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see basket ball (1), book (1), bowl (1), chair (1, 2, 3), dining table (1), mug (1), vase (1).
+Act: go to drawer 1
+You arrive at the drawer (1). The drawer (1) is closed. You see drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), key chain (1), pillow (1).
+Act: open drawer 1
+You open drawer (1). You see drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), key chain (1), pillow (1).
+Act: go to drawer 2
+You arrive at the drawer (2). The drawer (2) is closed. You see drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), key chain (1), pillow (1).
+Act: open drawer 2
+You open drawer (2). You see drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), key chain (1), pillow (1).
+Act: go to drawer 3
+You arrive at the drawer (3). The drawer (3) is closed. You see drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), key chain (1), pillow (1).
+Act: open drawer 3
+You open drawer (3). You see drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), key chain (1), pillow (1).
+Act: go to drawer 4
+You arrive at the drawer (4). The drawer (4) is closed. You see drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), key chain (1), pillow (1).
+Act: open drawer 4
+You open drawer (4). You see drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), key chain (1), pillow (1).
+Act: go to drawer 5
+You arrive at the drawer (5). The drawer (5) is closed. You see drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), key chain (1), pillow (1).
+Act: open drawer 5
+You open drawer (5). You see drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), key chain (1), pillow (1).
+Act: go to drawer 6
+You arrive at the drawer (6). The drawer (6) is closed. You see bed (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), key chain (1), pillow (1, 2).
+Act: open drawer 6
+You open drawer (6). You see bed (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), key chain (1), pillow (1, 2).
+Act: go to drawer 7
+You arrive at the drawer (7). The drawer (7) is closed. You see bed (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), key chain (1), pillow (1, 2).
+Act: open drawer 7
+You open drawer (7). You see bed (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), key chain (1), pillow (1, 2).
+Act: go to drawer 8
+You arrive at the drawer (8). The drawer (8) is closed. You see bed (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), key chain (1), pillow (1, 2).
+Act: open drawer 8
+You open drawer (8). You see bed (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), key chain (1), pillow (1, 2).
+Act: go to drawer 9
+You arrive at the drawer (9). The drawer (9) is closed. You see bed (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), key chain (1), pillow (1, 2).
+Act: open drawer 9
+You open drawer (9). You see bed (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), key chain (1), pillow (1, 2).
+Act: go to drawer 10
+You arrive at the drawer (10). The drawer (10) is closed. You see bed (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), key chain (1), pillow (1, 2).
+Act: open drawer 10
+You open drawer (10). You see bed (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), key chain (1), pillow (1, 2).
+Act: go to dresser 1
+You arrive at the dresser (1). You see bed (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), key chain (1), pillow (1, 2).
+Think: There is no pencil in bedroom 1. I need to move to living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), box (1), dining table (3), painting (4), shelf (1), sofa (1).
+Think: In living room 1, the pencil is likely to appear in/on TV stand 1, box 1, dining table 3, shelf 1, sofa 1. I can check each place one by one until I find pencil.
+OK.
+Act: go to TV stand 1
+You arrive at the TV stand (1). You see TV stand (1), bowl (3), shelf (1), television (1).
+Act: go to box 1
+You arrive at the box (1). The box (1) is closed. You see box (1).
+Act: open box 1
+You open box (1). You see box (1).
+Act: go to dining table 3
+You arrive at the dining table (3). You see candle (1), credit card (1), dining table (3), house plant (2), painting (4), pen (1), pencil (1).
+Think: I find pencil 1. Now, I need to pick it up.
+OK.
+Act: go to pencil 1
+You arrive at the pencil (1). You see candle (1), credit card (1), dining table (3), house plant (2), painting (4), pen (1), pencil (1).
+Act: pick up pencil 1
+You pick up pencil (1). You hold pencil (1).
+Think: Now, I need to find countertop and put down pencil 1. The countertop is more likely to appear in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see chair (4, 5, 6, 7), countertop (1), dining table (2), fridge (1). You hold pencil (1).
+Act: go to countertop 1
+You arrive at the countertop (1). You see apple (1), bread (1), chair (5, 7), countertop (1), dining table (2), dish sponge (1), egg (1), pan (1), plate (1), salt shaker (1), soap bottle (1). You hold pencil (1).
+Act: put down pencil 1
+You put pencil (1) in countertop (1).
+Think: Now, I need to find and pick up pen. The pen is more likely to appear in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), box (1), dining table (3), painting (4), shelf (1), sofa (1).
+Think: In living room 1, the pen is likely to appear in/on TV stand 1, box 1, dining table 3, shelf 1, sofa 1. I can check each place one by one until I find pen.
+OK.
+Act: go to TV stand 1
+You arrive at the TV stand (1). You see TV stand (1), bowl (3), shelf (1), television (1).
+Act: go to box 1
+You arrive at the box (1). The box (1) is open. You see box (1).
+Act: go to dining table 3
+You arrive at the dining table (3). You see candle (1), credit card (1), dining table (3), house plant (2), painting (4), pen (1).
+Think: I find pen 1. Now, I need to pick it up.
+OK.
+Act: go to pen 1
+You arrive at the pen (1). You see candle (1), credit card (1), dining table (3), house plant (2), painting (4), pen (1).
+Act: pick up pen 1
+You pick up pen (1). You hold pen (1).
+Think: Now, I need to find countertop and put down pen 1. The countertop is more likely to appear in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see chair (4, 5, 6, 7), countertop (1), dining table (2), fridge (1). You hold pen (1).
+Act: go to countertop 1
+You arrive at the countertop (1). You see apple (1), bread (1), chair (5, 7), countertop (1), dining table (2), dish sponge (1), egg (1), pan (1), pencil (1), plate (1), salt shaker (1), soap bottle (1). You hold pen (1).
+Act: put down pen 1
+You put pen (1) in countertop (1).
+Think: Now, I need to find and pick up book. The book is more likely to appear in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see baseball bat (1), bed (1), boots (1), chair (1, 2, 3), dining table (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1).
+Think: In bedroom 1, the book is likely to appear in/on bed 1, chair (1, 2, 3), dining table 1, drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser 1. I can check each place one by one until I find book.
+OK.
+Act: go to bed 1
+You arrive at the bed (1). You see bed (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), key chain (1), pillow (1, 2).
+Act: go to chair 1
+You arrive at the chair (1). You see basket ball (1), book (1), bowl (1), chair (1, 2, 3), dining table (1), mug (1), vase (1).
+Think: I find book 1. Now, I need to pick it up.
+OK.
+Act: go to book 1
+You arrive at the book (1). The book (1) is closed. You see basket ball (1), book (1), bowl (1), chair (1, 2, 3), dining table (1), mug (1), vase (1).
+Act: pick up book 1
+You pick up book (1). You hold book (1).
+Think: Now, I need to find countertop and put down book 1. The countertop is more likely to appear in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see chair (4, 5, 6, 7), countertop (1), dining table (2), fridge (1). You hold book (1).
+Act: go to countertop 1
+You arrive at the countertop (1). You see apple (1), bread (1), chair (5, 7), countertop (1), dining table (2), dish sponge (1), egg (1), pan (1), pen (1), pencil (1), plate (1), salt shaker (1), soap bottle (1). You hold book (1).
+Act: put down book 1
+You put book (1) in countertop (1).
+Think: Now I complete the task.
+OK.
+Act: done

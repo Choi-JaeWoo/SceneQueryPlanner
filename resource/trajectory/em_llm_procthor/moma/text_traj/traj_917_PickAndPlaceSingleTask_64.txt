@@ -1,0 +1,11 @@
+Your task is to: Set a baseball bat on the countertop.
+You open drawer (9). You see drawer (7, 8, 9), dresser (2), faucet (1), sink (1), sink basin (1), spray bottle (1), tissue box (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- bathroom 1: [plunger 1, drawer 9, drawer 8, drawer 7, (dresser 2), faucet 1, (garbage can 1), (sink 1), (sink basin 1), spray bottle 1, tissue box 1, (toilet 1), (washing machine 1)]
+- bedroom 1: [vase 1, basket ball 1, statue 2, alarm clock 1, (bed 1), book 1, cell phone 1, (drawer 1), (drawer 3), (drawer 6), (drawer 5), (drawer 4), (drawer 2), (dresser 1), laptop 1, painting 1, remote control 1, (shelf 4), statue 1, television 1, tennis racket 1, (TV stand 1)]
+- bedroom 2: [vase 2, baseball bat 2, baseball bat 1, bed 2, book 3, CD 1, cell phone 3, (chair 1), (drawer 15), (drawer 14), drawer 13, drawer 12, drawer 11, drawer 10, dresser 3, mug 1, pillow 2, tennis racket 2, tissue box 2]
+- kitchen 1: [garbage bag 1, painting 2, painting 3, apple 1, baseball bat 2, book 4, bread 1, butter knife 1, countertop 1, credit card 1, cup 1, egg 3, fork 1, (fridge 1), kettle 1, kettle 2, lettuce 2, lettuce 1, microwave 1, painting 4, paper towel roll 1, soap bottle 1, spray bottle 2]
+- (living room 1): [(cabinet 1), cart 1, (dining table 1), (drawer 17), (drawer 16), (shelf 3), (shelf 2), (shelf 9), (shelf 10), (shelf 8), (shelf 7), (shelf 6), (shelf 5), (shelf 1), shelving unit 1, (side table 1), (TV stand 2)]
+Your 5 previous actions were: open drawer 7 (success), go to drawer 8 (success), open drawer 8 (success), go to drawer 9 (success), open drawer 9 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I open drawer 9. I need to check unexplored areas in bathroom 1 to find baseball bat. Now, I need to check dresser 2.
+Act: go to dresser 2

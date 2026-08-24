@@ -1,0 +1,55 @@
+Your task is to: Clean the dish sponge and place it in the shelf.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a bathroom (1). Looking quickly around the room, you see garbage can (1), plunger (1), sink (1), sink basin (1), toilet (1).
+Think: To solve the task, I need to find and pick up dish sponge, put it in sink basin and turn on faucet, pick up and put down dish sponge in shelf.
+OK.
+Think: First, I need to find and pick up dish sponge.
+OK.
+Query: find_objects({'label': 'dish sponge'})
+Info: [{'name_id_nl': 'dish sponge 1', 'node_type': 'object', 'properties': ['pickupable'], 'states': []}]
+Query: get_edges_for_node({'node_id': 'dish sponge 1'})
+Info: [('dish sponge 1', 'bathroom 1', 'INSIDE'), ('dish sponge 1', 'toilet 1', 'ON'), ('dish sponge 1', 'soap bar 1', 'CLOSE'), ('dish sponge 1', 'spray bottle 1', 'CLOSE'), ('dish sponge 1', 'toilet paper 1', 'CLOSE'), ('dish sponge 1', 'user 1', 'CLOSE'), ('soap bar 1', 'dish sponge 1', 'CLOSE'), ('spray bottle 1', 'dish sponge 1', 'CLOSE'), ('toilet paper 1', 'dish sponge 1', 'CLOSE'), ('user 1', 'dish sponge 1', 'CLOSE')]
+Think: Dish sponge 1 is on toilet 1.
+OK.
+Act: go to toilet 1
+You arrive at the toilet (1). The toilet (1) is closed. You see dish sponge (1), soap bar (1), spray bottle (1), toilet (1), toilet paper (1).
+Act: open toilet 1
+You open toilet (1). You see dish sponge (1), soap bar (1), spray bottle (1), toilet (1), toilet paper (1).
+Act: go to dish sponge 1
+You arrive at the dish sponge (1). You see dish sponge (1), soap bar (1), spray bottle (1), toilet (1), toilet paper (1).
+Act: pick up dish sponge 1
+You pick up dish sponge (1). You hold dish sponge (1).
+Think: Now, I need to find sink basin.
+OK.
+Query: find_objects({'label': 'sink basin'})
+Info: [{'name_id_nl': 'sink basin 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'bathroom 1'}]
+Think: Sink basin 1 is in bathroom 1.
+OK.
+Act: go to bathroom 1
+You move to the bathroom (1). Looking quickly around the room, you see garbage can (1), plunger (1), sink (1), sink basin (1), toilet (1). You hold dish sponge (1).
+Act: go to sink basin 1
+You arrive at the sink basin (1). You see faucet (1), garbage can (1), sink (1), sink basin (1). You hold dish sponge (1).
+Act: put down dish sponge 1
+You put dish sponge (1) in sink basin (1).
+Think: Now, I need to turn on faucet 1 briefly and turn off to wash dish sponge 1.
+OK.
+Act: turn on faucet 1
+You turn on faucet (1).
+Act: turn off faucet 1
+You turn off faucet (1).
+Think: Now, I need to pick up dish sponge 1 and find shelf.
+OK.
+Act: pick up dish sponge 1
+You pick up dish sponge (1). You hold dish sponge (1).
+Query: find_objects({'label': 'shelf'})
+Info: [{'name_id_nl': 'shelf 2', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'bedroom 1'}, {'name_id_nl': 'shelf 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'bedroom 1'}, {'name_id_nl': 'shelf 4', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}, {'name_id_nl': 'shelf 9', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}, {'name_id_nl': 'shelf 3', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'bedroom 1'}, {'name_id_nl': 'shelf 8', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}, {'name_id_nl': 'shelf 5', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}, {'name_id_nl': 'shelf 6', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}, {'name_id_nl': 'shelf 7', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}]
+Think: Shelf 2 is in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see TV stand (1), bed (1), cabinet (1, 2, 3, 4), chair (1, 2, 3, 4), desk (1), dining table (1), drawer (1, 2, 3, 4), dresser (1), shelf (1, 2, 3). You hold dish sponge (1).
+Act: go to shelf 2
+You arrive at the shelf (2). You see CD (1), box (1), desk (1), laptop (1), pen (2), shelf (1, 2), statue (2), tabletop decor (1). You hold dish sponge (1).
+Act: put down dish sponge 1
+You put dish sponge (1) in shelf (2).
+Think: Now I complete the task.
+OK.
+Act: done

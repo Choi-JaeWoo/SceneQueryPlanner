@@ -1,0 +1,57 @@
+Your task is to: Remove everything from the sofa and put it on the dining table.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a bathroom (1). Looking quickly around the room, you see garbage can (2), laundry hamper (1), plunger (1), sink (1), sink basin (1), toilet (1).
+Think: To solve the task, I need to find sofa and check what is on top of it. Then, I need to move everything on sofa to dining table.
+OK.
+Think: First, I need to find sofa.
+OK.
+Query: find_objects({'label': 'sofa'})
+Info: [{'name_id_nl': 'sofa 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}]
+Think: I find sofa 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), dining table (3), drawer (11, 12, 13, 14, 15, 16), dresser (2), floor lamp (1), shelf (9, 10, 11, 12, 13, 14), sofa (1).
+Act: go to sofa 1
+You arrive at the sofa (1). You see book (5), floor lamp (1), newspaper (1), pencil (2), sofa (1).
+Think: Now, I need to check what is on top of sofa 1.
+OK.
+Query: get_edges_for_node({'node_id': 'sofa 1', 'relation': 'ON'})
+Info: [('book 5', 'sofa 1', 'ON'), ('newspaper 1', 'sofa 1', 'ON'), ('pencil 2', 'sofa 1', 'ON')]
+Think: Now, I need to move book 5, newspaper 1, pencil 2 to dining table.
+OK.
+Act: go to book 5
+You arrive at the book (5). The book (5) is closed. You see book (5), floor lamp (1), newspaper (1), pencil (2), sofa (1).
+Act: pick up book 5
+You pick up book (5). You hold book (5).
+Think: Now, I need to find dining table.
+OK.
+Query: find_objects({'label': 'dining table'})
+Info: [{'name_id_nl': 'dining table 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'bedroom 1'}, {'name_id_nl': 'dining table 2', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'kitchen 1'}, {'name_id_nl': 'dining table 3', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}]
+Think: I find dining table 3.
+OK.
+Act: go to dining table 3
+You arrive at the dining table (3). You see dining table (3), key chain (1), laptop (2), newspaper (1), pencil (2), remote control (2), statue (4). You hold book (5).
+Act: put down book 5
+You put book (5) in dining table (3).
+Act: go to newspaper 1
+You arrive at the newspaper (1). You see floor lamp (1), newspaper (1), pencil (2), sofa (1).
+Act: pick up newspaper 1
+You pick up newspaper (1). You hold newspaper (1).
+Act: go to dining table 3
+You arrive at the dining table (3). You see book (5), dining table (3), key chain (1), laptop (2), pencil (2), remote control (2), statue (4). You hold newspaper (1).
+Act: put down newspaper 1
+You put newspaper (1) in dining table (3).
+Act: go to pencil 2
+You arrive at the pencil (2). You see floor lamp (1), pencil (2), sofa (1).
+Act: pick up pencil 2
+You pick up pencil (2). You hold pencil (2).
+Act: go to dining table 3
+You arrive at the dining table (3). You see book (5), dining table (3), key chain (1), laptop (2), newspaper (1), remote control (2), statue (4). You hold pencil (2).
+Act: put down pencil 2
+You put pencil (2) in dining table (3).
+Think: Now I need to check what's left on sofa 1.
+OK.
+Query: get_edges_for_node({'node_id': 'sofa 1', 'relation': 'ON'})
+Info: 
+Think: Now I complete the task.
+OK.
+Act: done

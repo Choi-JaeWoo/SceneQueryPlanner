@@ -1,0 +1,11 @@
+Your task is to: Place a book on the armchair.
+You arrive at the armchair (1). You see TV stand (2), armchair (1), basket ball (1), book (2), floor lamp (1), shelf (2), television (2). You hold book (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- (bathroom 1): [faucet 1, (garbage can 1), plunger 1, (sink 1), (sink basin 1), (toilet 1), (washing machine 1)]
+- bedroom 1: [painting 3, alarm clock 1, credit card 1, painting 4, pen 2, pillow 1, armchair 1, basket ball 1, bed 1, bed 2, book 2, book 1, drawer 1, drawer 2, drawer 6, drawer 4, drawer 5, drawer 3, dresser 1, floor lamp 1, remote control 3, shelf 2, television 2, TV stand 2]
+- (bedroom 2): [(armchair 2), (bed 3), (bed 4), (box 1), (chair 2), (chair 1), (dining table 2), (drawer 8), (drawer 7), (drawer 9), (drawer 10), (drawer 16), (drawer 12), (drawer 18), (drawer 11), (drawer 17), (drawer 13), (drawer 15), (drawer 14), (dresser 2), floor lamp 2, (side table 1), television 3]
+- (kitchen 1): [garbage bag 1, (countertop 1), (fridge 1), soap bottle 1]
+- (living room 1): [(dining table 1), painting 2, painting 1, (shelf 1), (sofa 1), (TV stand 1)]
+Your 5 previous actions were: go to drawer 6 (success), go to shelf 2 (success), go to book 1 (success), pick up book 1 (success), go to armchair 1 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I arrive at armchair 1. I hold book 1. Now, I need to put down book 1.
+Act: put down book 1

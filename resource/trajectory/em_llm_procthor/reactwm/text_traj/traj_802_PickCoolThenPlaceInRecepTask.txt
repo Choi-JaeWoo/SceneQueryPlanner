@@ -1,0 +1,61 @@
+Your task is to: Place a cold bottle on the desk.
+You are in the house, and there are 3 rooms: bedroom (1), kitchen (1), living room (1). You are in the middle of a bedroom (1). Looking quickly around the room, you see bed (1), cabinet (1, 2, 3, 4), chair (1), desk (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13), dresser (1), house plant (1), shelf (1, 2, 3, 4, 5, 6).
+Think: To solve the task, I need to find and pick up bottle, find fridge, put down bottle in fridge briefly and pick up bottle, find desk and put down bottle.
+OK.
+Think: First, I need to find and pick up bottle.
+OK.
+Query: recall location of bottle
+You have not seen bottle before.
+Think: I have not seen bottle yet. The bottle is more likely to appear in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see countertop (1), fridge (1), house plant (2), painting (1, 2).
+Think: In kitchen 1, the bottle is likely to appear in/on countertop 1, fridge 1. I can check each place one by one until I find bottle.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see bottle (1), butter knife (1), countertop (1), cup (1), dish sponge (1), fridge (1), painting (2), pan (1), pot (1), potato (1), spatula (1), spray bottle (1), wine bottle (1).
+Think: I find bottle 1. Now, I need to pick it up.
+OK.
+Act: go to bottle 1
+You arrive at the bottle (1). You see bottle (1), butter knife (1), countertop (1), cup (1), dish sponge (1), fridge (1), painting (2), pan (1), pot (1), potato (1), spatula (1), spray bottle (1), wine bottle (1).
+Act: pick up bottle 1
+You pick up bottle (1). You hold bottle (1).
+Think: Now, I need to find fridge.
+OK.
+Query: recall location of fridge
+You saw fridge 1 in kitchen 1.
+Think: Fridge 1 is in kitchen 1.
+OK.
+Act: go to fridge 1
+You arrive at the fridge (1). The fridge (1) is closed. You see butter knife (1), cup (1), fridge (1), painting (2), pan (1), pot (1), potato (1), spatula (1), spray bottle (1), wine bottle (1). You hold bottle (1).
+Act: open fridge 1
+You open fridge (1). You see butter knife (1), cup (1), egg (1), fridge (1), painting (2), pan (1), pot (1), potato (1), spatula (1), spray bottle (1), wine bottle (1). You hold bottle (1).
+Act: put down bottle 1
+You put bottle (1) in fridge (1).
+Think: To make bottle 1 cold, I need to briefly close fridge 1 and then open it again.
+OK.
+Act: close fridge 1
+You close fridge (1).
+Act: open fridge 1
+You open fridge (1). You see bottle (1), butter knife (1), cup (1), egg (1), fridge (1), painting (2), pan (1), pot (1), potato (1), spatula (1), spray bottle (1), wine bottle (1).
+Think: Now I need to pick up bottle 1 and find desk.
+OK.
+Act: go to bottle 1
+You arrive at the bottle (1). You see bottle (1), egg (1), fridge (1), house plant (2), painting (1), spray bottle (1), wine bottle (1).
+Act: pick up bottle 1
+You pick up bottle (1). You hold bottle (1).
+Think: Now, I need to find desk and put down bottle 1.
+OK.
+Query: recall location of desk
+You saw desk 1 in bedroom 1.
+Think: Desk 1 is in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see bed (1), cabinet (1, 2, 3, 4), chair (1), desk (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13), dresser (1), house plant (1), shelf (1, 2, 3, 4, 5, 6). You hold bottle (1).
+Act: go to desk 1
+You arrive at the desk (1). You see baseball bat (1), bed (1), cell phone (1), chair (1), desk (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9), key chain (1), pillow (2), shelf (1, 2, 3, 4, 5, 6). You hold bottle (1).
+Act: put down bottle 1
+You put bottle (1) in desk (1).
+Think: Now I complete task.
+OK.
+Act: done

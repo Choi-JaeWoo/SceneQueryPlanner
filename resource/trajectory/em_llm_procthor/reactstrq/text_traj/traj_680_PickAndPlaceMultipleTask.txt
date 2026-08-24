@@ -1,0 +1,51 @@
+Your task is to: Put a book and a newspaper side by side on the side table.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a living room (1). Looking quickly around the room, you see TV stand (1), armchair (1), cabinet (2, 3), drawer (11, 12), shelf (6, 7, 8, 9, 10, 11, 12), shelving unit (2, 3), side table (1, 2), sofa (1), stool (2).
+Think: To solve the task, I need to find and pick up book, then put it on side table. And I need to find and pick up newspaper, then put it on side table.
+OK.
+Think: First, I need to find and pick up book.
+OK.
+Query: find_objects({'label': 'book'})
+Info: [{'name_id_nl': 'book 4', 'node_type': 'object', 'properties': ['openable', 'pickupable'], 'states': []}]
+Query: get_edges_for_node({'node_id': 'book 4'})
+Info: [('book 4', 'living room 1', 'INSIDE'), ('book 4', 'shelf 7', 'ON'), ('book 4', 'cabinet 2', 'CLOSE'), ('book 4', 'cabinet 3', 'CLOSE'), ('book 4', 'newspaper 1', 'CLOSE'), ('book 4', 'shelf 8', 'CLOSE'), ('book 4', 'shelf 11', 'CLOSE'), ('book 4', 'shelf 6', 'CLOSE'), ('book 4', 'shelf 10', 'CLOSE'), ('book 4', 'shelf 9', 'CLOSE'), ('book 4', 'shelving unit 2', 'CLOSE'), ('book 4', 'vase 1', 'CLOSE'), ('book 4', 'user 1', 'CLOSE'), ('cabinet 2', 'book 4', 'CLOSE'), ('cabinet 3', 'book 4', 'CLOSE'), ('newspaper 1', 'book 4', 'CLOSE'), ('shelf 8', 'book 4', 'CLOSE'), ('shelf 11', 'book 4', 'CLOSE'), ('shelf 6', 'book 4', 'CLOSE'), ('shelf 10', 'book 4', 'CLOSE'), ('shelf 9', 'book 4', 'CLOSE'), ('shelving unit 2', 'book 4', 'CLOSE'), ('vase 1', 'book 4', 'CLOSE'), ('user 1', 'book 4', 'CLOSE')]
+Think: Book 4 is on shelf 7 in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), armchair (1), cabinet (2, 3), drawer (11, 12), shelf (6, 7, 8, 9, 10, 11, 12), shelving unit (2, 3), side table (1, 2), sofa (1), stool (2).
+Act: go to shelf 7
+You arrive at the shelf (7). You see book (4), cabinet (2, 3), drawer (12), newspaper (1), shelf (6, 7, 8, 9, 10, 11), shelving unit (2, 3), side table (2).
+Act: go to book 4
+You arrive at the book (4). The book (4) is closed. You see book (4), cabinet (2, 3), drawer (12), newspaper (1), shelf (6, 7, 8, 9, 10, 11), shelving unit (2, 3), side table (2).
+Act: pick up book 4
+You pick up book (4). You hold book (4).
+Think: Now, I need to find side table and put down book 4.
+OK.
+Act: go to side table 1
+You arrive at the side table (1). You see apple (1), bowl (1), chair (3, 5), dining table (2), mug (1), potato (1). You hold book (4).
+Act: put down book 4
+You put book (4) in side table (1).
+Think: Now, I need to find and pick up newspaper.
+OK.
+Query: find_objects({'label': 'newspaper'})
+Info: [{'name_id_nl': 'newspaper 1', 'node_type': 'object', 'properties': ['pickupable'], 'states': []}]
+Query: get_edges_for_node({'node_id': 'newspaper 1'})
+Info: [('newspaper 1', 'vase 1', 'CLOSE'), ('newspaper 1', 'shelf 10', 'ON'), ('newspaper 1', 'cabinet 2', 'CLOSE'), ('newspaper 1', 'cabinet 3', 'CLOSE'), ('newspaper 1', 'drawer 11', 'CLOSE'), ('newspaper 1', 'shelf 7', 'CLOSE'), ('newspaper 1', 'shelf 8', 'CLOSE'), ('newspaper 1', 'shelf 11', 'CLOSE'), ('newspaper 1', 'shelf 6', 'CLOSE'), ('newspaper 1', 'shelf 9', 'CLOSE'), ('newspaper 1', 'shelving unit 2', 'CLOSE'), ('newspaper 1', 'shelving unit 3', 'CLOSE'), ('newspaper 1', 'living room 1', 'INSIDE'), ('vase 1', 'newspaper 1', 'CLOSE'), ('cabinet 2', 'newspaper 1', 'CLOSE'), ('cabinet 3', 'newspaper 1', 'CLOSE'), ('drawer 11', 'newspaper 1', 'CLOSE'), ('shelf 7', 'newspaper 1', 'CLOSE'), ('shelf 8', 'newspaper 1', 'CLOSE'), ('shelf 11', 'newspaper 1', 'CLOSE'), ('shelf 6', 'newspaper 1', 'CLOSE'), ('shelf 9', 'newspaper 1', 'CLOSE'), ('shelving unit 2', 'newspaper 1', 'CLOSE'), ('shelving unit 3', 'newspaper 1', 'CLOSE')]
+Think: Newspaper 1 is on shelf 10 in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), armchair (1), cabinet (2, 3), drawer (11, 12), shelf (6, 7, 8, 9, 10, 11, 12), shelving unit (2, 3), side table (1, 2), sofa (1), stool (2).
+Act: go to shelf 10
+You arrive at the shelf (10). You see book (4), cabinet (2, 3), drawer (11, 12), newspaper (1), shelf (6, 7, 8, 9, 10, 11), shelving unit (2, 3), side table (1).
+Act: go to newspaper 1
+You arrive at the newspaper (1). You see book (4), cabinet (2, 3), drawer (11, 12), newspaper (1), shelf (6, 7, 8, 9, 10, 11), shelving unit (2, 3), side table (1).
+Act: pick up newspaper 1
+You pick up newspaper (1). You hold newspaper (1).
+Think: Now, I need to find side table and put down newspaper 1.
+OK.
+Act: go to side table 1
+You arrive at the side table (1). You see apple (1), bowl (1), chair (3, 5), dining table (2), mug (1), potato (1). You hold newspaper (1).
+Act: put down newspaper 1
+You put newspaper (1) in side table (1).
+Think: Now I complete the task.
+OK.
+Act: done

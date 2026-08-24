@@ -1,0 +1,31 @@
+Your task is to: Set a book on the armchair.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a bedroom (1). Looking quickly around the room, you see armchair (1), bed (1, 2), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), floor lamp (1).
+Think: To solve the task, I need to find book and check where it is. Then, I need to move it to armchair.
+OK.
+Think: First, I need to find book.
+OK.
+Query: find_objects({'label': 'book'})
+Info: [{'name_id_nl': 'book 1', 'node_type': 'object', 'properties': ['openable', 'pickupable'], 'states': []}]
+Query: get_edges_for_node({'node_id': 'book 1'})
+Info: [('book 1', 'bedroom 1', 'INSIDE'), ('book 1', 'bed 1', 'ON'), ('book 1', 'user 1', 'CLOSE'), ('user 1', 'book 1', 'CLOSE')]
+Think: Book 1 is on bed 1 in bedroom 1.
+OK.
+Act: go to bed 1
+You arrive at the bed (1). You see bed (1), book (1), pillow (1).
+Act: go to book 1
+You arrive at the book (1). The book (1) is closed. You see bed (1), book (1), pillow (1).
+Act: pick up book 1
+You pick up book (1). You hold book (1).
+Think: Now, I need to find armchair and put down book 1.
+OK.
+Query: find_objects({'label': 'armchair'})
+Info: [{'name_id_nl': 'armchair 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'bedroom 1'}]
+Think: I find armchair 1.
+OK.
+Act: go to armchair 1
+You arrive at the armchair (1). You see armchair (1), floor lamp (1). You hold book (1).
+Act: put down book 1
+You put book (1) in armchair (1).
+Think: Now I complete the task.
+OK.
+Act: done

@@ -1,0 +1,2 @@
+Your task is to: Collect a soap bar and a toilet paper and place them in the garbage can.
+Max decision steps reached.

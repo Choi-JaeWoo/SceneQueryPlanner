@@ -1,0 +1,2 @@
+Your task is to: Place a soap bar in the garbage can.
+Max decision steps reached.

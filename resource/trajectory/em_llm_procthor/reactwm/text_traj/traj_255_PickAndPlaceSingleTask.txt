@@ -1,0 +1,59 @@
+Your task is to: Take the key chain and deposit it into the box.
+You are in the house, and there are 2 rooms: kitchen (1), living room (1). You are in the middle of a living room (1). Looking quickly around the room, you see TV stand (1), armchair (1), dining table (2), dog bed (1), drawer (1, 2, 3, 4, 5, 6), dresser (1), garbage can (1), painting (3, 4), shelf (4), sofa (1).
+Think: To solve the task, I need to find and pick up key chain, then put it in box.
+OK.
+Think: First, I need to find and pick up key chain.
+OK.
+Query: recall location of key chain
+You have not seen key chain before.
+Think: I have not seen key chain yet. The key chain is more likely to appear in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see cabinet (1), chair (1, 2, 3, 4), countertop (1), dining table (1), egg (1), fridge (1), house plant (1), painting (1, 2), shelf (1, 2, 3), shelving unit (1), television (1).
+Think: In kitchen 1, the key chain is likely to appear in/on cabinet 1, chair (1, 2, 3, 4), countertop 1, dining table 1, fridge 1, shelf (1, 2, 3), shelving unit 1. I can check each place one by one until I find key chain.
+OK.
+Act: go to cabinet 1
+You arrive at the cabinet (1). The cabinet (1) is closed. You see cabinet (1), shelf (1, 2, 3), shelving unit (1), statue (1).
+Act: open cabinet 1
+You open cabinet (1). You see cabinet (1), shelf (1, 2, 3), shelving unit (1), statue (1).
+Act: go to chair 1
+You arrive at the chair (1). You see bottle (1), chair (1, 4), mug (1), pan (1), plate (1).
+Act: go to chair 2
+You arrive at the chair (2). You see chair (2, 3), countertop (1), dining table (1), fork (1), pan (1), plate (1), spatula (1), spray bottle (1), television (1).
+Act: go to chair 3
+You arrive at the chair (3). You see chair (2, 3), dining table (1), fork (1), house plant (1), painting (2), pan (1), plate (1), television (1).
+Act: go to chair 4
+You arrive at the chair (4). You see bottle (1), chair (1, 3, 4), dining table (1), fork (1), mug (1), painting (2), pan (1), plate (1).
+Act: go to countertop 1
+You arrive at the countertop (1). You see chair (2), countertop (1), fork (1), pan (1), salt shaker (1), soap bottle (1), spatula (1), spray bottle (1), television (1), toaster (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see bottle (1), chair (1, 2, 3), dining table (1), fork (1), mug (1), pan (1), plate (1), spatula (1).
+Act: go to fridge 1
+You arrive at the fridge (1). The fridge (1) is closed. You see egg (1), fridge (1), painting (1).
+Act: open fridge 1
+You open fridge (1). You see egg (1), fridge (1), painting (1).
+Act: go to shelf 1
+You arrive at the shelf (1). 
+Act: go to shelf 4
+You arrive at the shelf (4). You see TV stand (1), box (1), candle (1), credit card (1), drawer (2), key chain (1), remote control (4), shelf (4), television (2).
+Think: I find key chain 1. Now, I need to pick it up.
+OK.
+Act: go to key chain 1
+You arrive at the key chain (1). You see TV stand (1), box (1), candle (1), credit card (1), drawer (1, 2, 3, 4, 5, 6), dresser (1), key chain (1), remote control (4), shelf (4), television (2), vase (1).
+Act: pick up key chain 1
+You pick up key chain (1). You hold key chain (1).
+Think: Now, I need to find box and put down key chain 1.
+OK.
+Query: recall location of box
+You saw box 1 in living room 1.
+Think: Box 1 is in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), armchair (1), dining table (2), dog bed (1), drawer (1, 2, 3, 4, 5, 6), dresser (1), garbage can (1), painting (3, 4), shelf (4), sofa (1). You hold key chain (1).
+Act: go to box 1
+You arrive at the box (1). The box (1) is open. You see TV stand (1), box (1), credit card (1), remote control (4), shelf (4), television (2). You hold key chain (1).
+Act: put down key chain 1
+You put key chain (1) in box (1).
+Think: Now I complete the task.
+OK.
+Act: done

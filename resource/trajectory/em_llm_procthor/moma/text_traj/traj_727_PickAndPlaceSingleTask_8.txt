@@ -1,0 +1,10 @@
+Your task is to: Pick up a book and put it in the box.
+You open cabinet (1). You see cabinet (1, 2, 3), chair (2), credit card (1), drawer (1, 2, 3), dresser (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- (bathroom 1): [(sink basin 1), painting 1, (sink 1), (toilet 1), (washing machine 1), clothes dryer 1, painting 2, faucet 1, (garbage can 2), plunger 1]
+- bedroom 1: [house plant 1, mug 1, (bed 2), bed 1, book 1, (box 1), cabinet 1, (cabinet 2), (cabinet 3), (cabinet 4), (chair 2), (chair 3), (chair 1), (chair 4), credit card 1, (dining table 1), (drawer 4), (drawer 1), (drawer 2), (drawer 3), (dresser 1), (garbage can 1), (laundry hamper 1), pen 1, television 1, tennis racket 1]
+- kitchen 1: [(countertop 1), (dining table 2), (chair 5), (chair 7), painting 3, (garbage can 3), painting 4, (fridge 1), (chair 6)]
+- (living room 1): [(chair 8), (TV stand 1), (shelf 1), (shelf 3), (shelf 6), (box 2), (chair 9), (dining table 3), (shelf 2), (shelf 5), (shelf 4)]
+Your 4 previous actions were: go to bedroom 1 (success), go to bed 1 (success), go to cabinet 1 (success), open cabinet 1 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I open cabinet 1. I need to check unexplored areas in bedroom 1 to find book. Now, I need to check cabinet 2.
+Act: go to cabinet 2

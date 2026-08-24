@@ -1,0 +1,65 @@
+Your task is to: Wash the spoon and then put it away in the cabinet.
+You are in the house, and there are 10 rooms: bathroom (1, 2, 3), bedroom (1, 2, 3), kitchen (1), living room (1, 2, 3). You are in the middle of a kitchen (1). Looking quickly around the room, you see chair (2, 3, 4, 5), countertop (1), dining table (1), fridge (1), garbage can (2), side table (1).
+Think: To solve the task, I need to find and pick up spoon, put it in sink basin and turn on faucet, pick up and put down spoon in cabinet.
+OK.
+Think: First, I need to find and pick up spoon.
+OK.
+Query: recall location of spoon
+You have not seen spoon before.
+Think: I have not seen spoon yet. The spoon is more likely to appear in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see chair (2, 3, 4, 5), countertop (1), dining table (1), fridge (1), garbage can (2), side table (1).
+Think: In kitchen 1, the spoon is likely to appear in/on chair (2, 3, 4, 5), countertop 1, dining table 1, fridge 1, garbage can 2, side table 1. I can check each place one by one until I find spoon.
+OK.
+Act: go to chair 2
+You arrive at the chair (2). You see apple (1), cell phone (2), chair (2, 5), house plant (1), pan (1), pencil (2), pepper shaker (1), potato (1), salt shaker (1), spoon (1), statue (1), vase (2).
+Think: I find spoon 1. Now, I need to pick it up.
+OK.
+Act: go to spoon 1
+You arrive at the spoon (1). You see apple (1), cell phone (2), chair (2), pan (1), paper towel roll (1), pencil (2), potato (1), salt shaker (1), spoon (1), statue (1), toaster (1).
+Act: pick up spoon 1
+You pick up spoon (1). You hold spoon (1).
+Think: Now, I need to find sink basin.
+OK.
+Query: recall location of sink basin
+You saw sink basin 3 in bathroom 3. You saw sink basin 2 in bathroom 2. You saw sink basin 1 in bathroom 1.
+Think: Sink basin 3 is in bathroom 3.
+OK.
+Act: go to bathroom 3
+You move to the bathroom (3). Looking quickly around the room, you see garbage can (7), plunger (3), sink (3), sink basin (3), spray bottle (2), toilet (3). You hold spoon (1).
+Act: go to sink basin 3
+You arrive at the sink basin (3). You see faucet (3), sink (3), sink basin (3). You hold spoon (1).
+Think: Now, I need to put down spoon 1.
+OK.
+Act: put down spoon 1
+You put spoon (1) in sink basin (3).
+Think: Now, I need to turn on faucet 3 briefly and turn off to wash spoon 1.
+OK.
+Act: turn on faucet 3
+You turn on faucet (3).
+Act: turn off faucet 3
+You turn off faucet (3).
+Think: Now, I need to pick up spoon 1 and find cabinet.
+OK.
+Act: pick up spoon 1
+You pick up spoon (1). You hold spoon (1).
+Think: Now, I need to find cabinet and put down spoon 1.
+OK.
+Query: recall location of cabinet
+You saw cabinet 6 in living room 3. You saw cabinet 5 in living room 3. You saw cabinet 3 in bedroom 1. You saw cabinet 4 in bedroom 1. You saw cabinet 1 in bedroom 1. You saw cabinet 2 in bedroom 1.
+Think: Cabinet 6 is in living room 3.
+OK.
+Act: go to living room 3
+You move to the living room (3). Looking quickly around the room, you see TV stand (3), cabinet (5, 6), drawer (14, 15, 16), dresser (2), garbage can (3), shelf (7, 8, 9, 10, 11, 12, 20), shelving unit (1, 2), sofa (3). You hold spoon (1).
+Act: go to cabinet 6
+You arrive at the cabinet (6). The cabinet (6) is closed. You see cabinet (6), drawer (14, 15, 16), dresser (2), newspaper (2), pen (1), pillow (6), remote control (2), shelf (10, 11, 12), shelving unit (2), vase (3). You hold spoon (1).
+Think: Since cabinet 6 is closed, I need to open it to put down spoon 1.
+OK.
+Act: open cabinet 6
+You open cabinet (6). You see cabinet (6), drawer (14, 15, 16), dresser (2), house plant (3), newspaper (2), pen (1), pillow (6), remote control (2), shelf (10, 11, 12), shelving unit (2), vase (3). You hold spoon (1).
+Act: put down spoon 1
+You put spoon (1) in cabinet (6).
+Think: Now I complete the task.
+OK.
+Act: done

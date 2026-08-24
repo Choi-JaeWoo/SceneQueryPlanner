@@ -1,0 +1,75 @@
+Your task is to: Transfer everything from the side table to the shelf.
+You are in the house, and there are 1 rooms: living room (1). You are in the middle of a living room (1). Looking quickly around the room, you see TV stand (1), cabinet (1), dining table (1), dog bed (1), garbage can (1), shelf (1, 2, 3, 4, 5, 6, 7, 8, 9), shelving unit (1), side table (1), sofa (1).
+Think: To solve the task, I need to find side table and check what is on top of it. Then, I need to move everything on side table to shelf.
+OK.
+Think: First, I need to find side table.
+OK.
+Query: find_objects({'label': 'side table'})
+Info: [{'name_id_nl': 'side table 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}]
+Think: I find side table 1.
+OK.
+Act: go to side table 1
+You arrive at the side table (1). You see book (1), bowl (1), cabinet (1), candle (1), desk lamp (1), dining table (1), house plant (1), key chain (1), newspaper (1), pen (1), pencil (1), shelf (1), side table (1), statue (1), watch (2).
+Think: Now, I need to check what is on top of side table 1.
+OK.
+Query: get_edges_for_node({'node_id': 'side table 1', 'relation': 'ON'})
+Info: [('candle 1', 'side table 1', 'ON'), ('key chain 1', 'side table 1', 'ON'), ('newspaper 1', 'side table 1', 'ON'), ('pen 1', 'side table 1', 'ON'), ('pencil 1', 'side table 1', 'ON')]
+Think: Now, I need to move candle 1, key chain 1, newspaper 1, pen 1, pencil 1 to shelf.
+OK.
+Act: go to candle 1
+You arrive at the candle (1). You see book (1), bowl (1), cabinet (1), candle (1), desk lamp (1), dining table (1), house plant (1), key chain (1), newspaper (1), pen (1), pencil (1), shelf (1), side table (1), statue (1), watch (2).
+Act: pick up candle 1
+You pick up candle (1). You hold candle (1).
+Think: Now, I need to find shelf.
+OK.
+Query: find_objects({'label': 'shelf'})
+Info: [{'name_id_nl': 'shelf 6', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}, {'name_id_nl': 'shelf 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}, {'name_id_nl': 'shelf 9', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}, {'name_id_nl': 'shelf 5', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}, {'name_id_nl': 'shelf 4', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}, {'name_id_nl': 'shelf 8', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}, {'name_id_nl': 'shelf 7', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}, {'name_id_nl': 'shelf 2', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}, {'name_id_nl': 'shelf 3', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}]
+Think: I find shelf 6.
+OK.
+Act: go to shelf 6
+You arrive at the shelf (6). You see TV stand (1), book (2), cell phone (1), laptop (1), remote control (1), shelf (4, 5, 6, 7, 8, 9), television (1), tissue box (1), vase (1), watch (1). You hold candle (1).
+Act: put down candle 1
+Put action failed: There is no valid space to place the object in the target receptacle.
+Act: go to shelf 1
+You arrive at the shelf (1). You see book (1), cabinet (1), key chain (1), newspaper (1), pen (1), pencil (1), shelf (1, 2, 3), shelving unit (1), side table (1). You hold candle (1).
+Act: put down candle 1
+You put candle (1) in shelf (1).
+Act: go to key chain 1
+You arrive at the key chain (1). You see book (1), cabinet (1), candle (1), desk lamp (1), key chain (1), newspaper (1), pen (1), pencil (1), shelf (1, 2, 3), shelving unit (1), side table (1), statue (1).
+Act: pick up key chain 1
+You pick up key chain (1). You hold key chain (1).
+Act: go to shelf 1
+You arrive at the shelf (1). You see book (1), cabinet (1), candle (1), newspaper (1), pen (1), pencil (1), shelf (1, 2, 3), shelving unit (1), side table (1). You hold key chain (1).
+Act: put down key chain 1
+You put key chain (1) in shelf (1).
+Act: go to newspaper 1
+You arrive at the newspaper (1). You see book (1), cabinet (1), candle (1), key chain (1), newspaper (1), pen (1), pencil (1), shelf (1, 2, 3), shelving unit (1), side table (1).
+Act: pick up newspaper 1
+You pick up newspaper (1). You hold newspaper (1).
+Act: go to shelf 1
+You arrive at the shelf (1). You see book (1), cabinet (1), candle (1), key chain (1), pen (1), pencil (1), shelf (1, 2, 3), shelving unit (1), side table (1). You hold newspaper (1).
+Act: put down newspaper 1
+You put newspaper (1) in shelf (1).
+Act: go to pen 1
+You arrive at the pen (1). You see bowl (1), desk lamp (1), dining table (1), house plant (1), pen (1), pencil (1), side table (1), statue (1), watch (2).
+Act: pick up pen 1
+You pick up pen (1). You hold pen (1).
+Act: go to shelf 1
+You arrive at the shelf (1). You see book (1), cabinet (1), candle (1), key chain (1), newspaper (1), pencil (1), shelf (1, 2, 3), shelving unit (1), side table (1). You hold pen (1).
+Act: put down pen 1
+You put pen (1) in shelf (1).
+Act: go to pencil 1
+You arrive at the pencil (1). You see book (1), cabinet (1), candle (1), desk lamp (1), key chain (1), newspaper (1), pen (1), pencil (1), shelf (1, 2, 3), shelving unit (1), side table (1), statue (1).
+Act: pick up pencil 1
+You pick up pencil (1). You hold pencil (1).
+Act: go to shelf 1
+You arrive at the shelf (1). You see book (1), cabinet (1), candle (1), key chain (1), newspaper (1), pen (1), shelf (1, 2, 3), shelving unit (1), side table (1). You hold pencil (1).
+Act: put down pencil 1
+You put pencil (1) in shelf (1).
+Think: Now I need to check what's left on side table 1.
+OK.
+Query: get_edges_for_node({'node_id': 'side table 1', 'relation': 'ON'})
+Info: 
+Think: Now I complete the task.
+OK.
+Act: done

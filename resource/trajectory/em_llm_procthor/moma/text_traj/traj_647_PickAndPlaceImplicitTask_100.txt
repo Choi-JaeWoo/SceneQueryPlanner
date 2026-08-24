@@ -1,0 +1,2 @@
+Your task is to: Clear the countertop by moving all objects to the dining table.
+Max decision steps reached.

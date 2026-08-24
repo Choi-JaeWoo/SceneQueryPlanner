@@ -1,0 +1,59 @@
+Your task is to: Relocate everything from the sofa to the shelf.
+You are in the house, and there are 1 rooms: living room (1). You are in the middle of a living room (1). Looking quickly around the room, you see TV stand (1), box (1), cabinet (1), chair (1, 2, 3, 4), dining table (1), dog bed (1), garbage can (1), painting (1, 2), shelf (1, 2, 3, 4, 5, 6, 7, 8, 9), shelving unit (1), sofa (1).
+Think: To solve the task, I need to find sofa and check what is on top of it. Then, I need to move everything on sofa to shelf.
+OK.
+Think: First, I need to find sofa.
+OK.
+Query: recall location of sofa
+You saw sofa 1 in living room 1.
+Think: Sofa 1 is in living room 1.
+OK.
+Act: go to sofa 1
+You arrive at the sofa (1). You see box (1), cell phone (1), chair (2), key chain (1), newspaper (1), sofa (1).
+Think: Now, I need to move box 1, cell phone 1, key chain 1, newspaper 1 to shelf.
+OK.
+Act: go to box 1
+You arrive at the box (1). The box (1) is closed. You see box (1), cabinet (1), dog bed (1), shelf (1, 2), shelving unit (1).
+Act: pick up box 1
+You pick up box (1). You hold box (1).
+Think: Now, I need to find shelf and put down box 1.
+OK.
+Query: recall location of shelf
+You saw shelf 4 in living room 1. You saw shelf 5 in living room 1. You saw shelf 6 in living room 1. You saw shelf 7 in living room 1. You saw shelf 8 in living room 1. You saw shelf 9 in living room 1. You saw shelf 3 in living room 1. You saw shelf 2 in living room 1. You saw shelf 1 in living room 1.
+Think: Shelf 1 is in living room 1.
+OK.
+Act: go to shelf 1
+You arrive at the shelf (1). You see cabinet (1), dog bed (1), shelf (1, 2, 3), shelving unit (1). You hold box (1).
+Act: put down box 1
+You put box (1) in shelf (1).
+Act: go to cell phone 1
+You arrive at the cell phone (1). You see cell phone (1), chair (2), newspaper (1), sofa (1).
+Act: pick up cell phone 1
+You pick up cell phone (1). You hold cell phone (1).
+Act: go to shelf 1
+You arrive at the shelf (1). You see box (1), cabinet (1), dog bed (1), shelf (1, 2, 3), shelving unit (1). You hold cell phone (1).
+Act: put down cell phone 1
+You put cell phone (1) in shelf (1).
+Act: go to key chain 1
+You arrive at the key chain (1). You see candle (1), cell phone (2), chair (2, 3), dining table (1), key chain (1), newspaper (1), plate (1), sofa (1).
+Act: pick up key chain 1
+You pick up key chain (1). You hold key chain (1).
+Act: go to shelf 1
+You arrive at the shelf (1). You see box (1), cabinet (1), cell phone (1), dog bed (1), shelf (1, 2, 3), shelving unit (1). You hold key chain (1).
+Act: put down key chain 1
+You put key chain (1) in shelf (1).
+Act: go to newspaper 1
+You arrive at the newspaper (1). You see candle (1), chair (2, 3), newspaper (1), sofa (1).
+Act: pick up newspaper 1
+You pick up newspaper (1). You hold newspaper (1).
+Act: go to shelf 1
+You arrive at the shelf (1). You see box (1), cabinet (1), cell phone (1), dog bed (1), key chain (1), shelf (1, 2, 3), shelving unit (1). You hold newspaper (1).
+Act: put down newspaper 1
+Put action failed: There is no valid space to place the object in the target receptacle.
+Act: go to shelf 2
+You arrive at the shelf (2). You see box (1), cabinet (1), cell phone (1), dog bed (1), key chain (1), shelf (1, 2, 3), shelving unit (1). You hold newspaper (1).
+Act: put down newspaper 1
+You put newspaper (1) in shelf (2).
+Think: Now I complete the task.
+OK.
+Act: done

@@ -1,0 +1,69 @@
+Your task is to: Heat a bread and place it on the countertop.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a bathroom (1). Looking quickly around the room, you see garbage can (1), painting (1, 2), plunger (1), sink (1), sink basin (1), toilet (1).
+Think: To solve the task, I need to find the bread and use either the microwave or the toaster to heat it.
+OK.
+Think: First, I need to check if there is a microwave or a toaster. The microwave or toaster is more likely to appear in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see countertop (1), fridge (1), garbage bag (1), house plant (1), painting (3, 4), safe (1), stool (1).
+Think: In kitchen 1, the microwave or toaster is likely to appear in/on countertop 1, fridge 1, garbage bag 1, house plant 1, safe 1, stool 1. I can check each place one by one until I find microwave or toaster.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see book (2), bowl (1), bread (1), butter knife (1), cell phone (4), coffee machine (1), countertop (1), credit card (2), dish sponge (1), fork (1), painting (3, 4), pan (1), pepper shaker (1), plate (1), pot (1), salt shaker (1), soap bottle (1), spoon (1), spray bottle (1), toaster (1), tomato (1).
+Act: go to fridge 1
+You arrive at the fridge (1). The fridge (1) is closed. You see bowl (1), butter knife (1), cell phone (4), coffee machine (1), dish sponge (1), fork (1), fridge (1), painting (3), pepper shaker (1), soap bottle (1), spray bottle (1), toaster (1).
+Act: open fridge 1
+You open fridge (1). You see apple (1), bowl (1), butter knife (1), cell phone (4), coffee machine (1), dish sponge (1), egg (1), fork (1), fridge (1), lettuce (1), painting (3), pepper shaker (1), soap bottle (1), spray bottle (1), toaster (1), tomato (2).
+Act: go to garbage bag 1
+You arrive at the garbage bag (1). You see bowl (1), fork (1), garbage bag (1), pepper shaker (1).
+Act: go to house plant 1
+You arrive at the house plant (1). You see house plant (1), stool (1).
+Act: go to safe 1
+You arrive at the safe (1). The safe (1) is closed. You see credit card (2), pot (1), safe (1), spoon (1), tomato (1).
+Act: open safe 1
+You open safe (1). You see credit card (2), pot (1), safe (1), spoon (1), tomato (1).
+Act: go to stool 1
+You arrive at the stool (1). You see apple (1), bowl (1), egg (1), fridge (1), house plant (1), lettuce (1), pepper shaker (1), stool (1), tomato (2).
+Think: I find toaster 1. Now, I need to find and pick up knife or butter knife to slice bread.
+OK.
+Think: I find knife 1. Now, I need to pick it up.
+OK.
+Act: go to butter knife 1
+You arrive at the butter knife (1). You see book (2), bowl (1), bread (1), butter knife (1), cell phone (4), coffee machine (1), credit card (2), dish sponge (1), fork (1), painting (3), pan (1), pepper shaker (1), plate (1), pot (1), salt shaker (1), soap bottle (1), spoon (1), spray bottle (1), toaster (1), tomato (1).
+Act: pick up butter knife 1
+You pick up butter knife (1). You hold butter knife (1).
+Think: Now, I need to find and slice bread. I find bread 1.
+OK.
+Act: go to bread 1
+You arrive at the bread (1). You see book (2), bowl (1), bread (1), cell phone (4), coffee machine (1), countertop (1), credit card (2), dish sponge (1), fork (1), painting (3, 4), pan (1), pepper shaker (1), plate (1), pot (1), salt shaker (1), soap bottle (1), spoon (1), spray bottle (1), toaster (1), tomato (1). You hold butter knife (1).
+Act: slice bread 1
+You slice bread (1). You see book (2), bowl (1), cell phone (4), coffee machine (1), countertop (1), credit card (2), dish sponge (1), fork (1), painting (3, 4), pan (1), pepper shaker (1), plate (1), pot (1), salt shaker (1), sliced bread (1), soap bottle (1), spoon (1), spray bottle (1), toaster (1), tomato (1). You hold butter knife (1).
+Think: Now, I need to put down butter knife 1 and pick up sliced bread 1.
+OK.
+Act: put down butter knife 1
+You put butter knife (1) in stool (1).
+Act: pick up sliced bread 1
+You pick up sliced bread (1). You hold sliced bread (1).
+Think: Now, I need to find toaster.
+OK.
+Act: go to toaster 1
+You arrive at the toaster (1). You see book (2), bowl (1), cell phone (4), coffee machine (1), countertop (1), credit card (2), dish sponge (1), fork (1), painting (3, 4), pan (1), pepper shaker (1), plate (1), pot (1), salt shaker (1), soap bottle (1), spoon (1), spray bottle (1), toaster (1), tomato (1). You hold sliced bread (1).
+Act: put down sliced bread 1
+You put sliced bread (1) in toaster (1).
+Act: turn on toaster 1
+You turn on toaster (1).
+Think: Now, I need to turn off toaster 1 and pick up sliced bread 1.
+OK.
+Act: turn off toaster 1
+You turn off toaster (1).
+Act: pick up sliced bread 1
+You pick up sliced bread (1). You hold sliced bread (1).
+Think: Now, I need to put down sliced bread 1 on countertop 1.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see book (2), bowl (1), cell phone (4), coffee machine (1), countertop (1), credit card (2), dish sponge (1), fork (1), painting (3, 4), pan (1), pepper shaker (1), plate (1), pot (1), salt shaker (1), soap bottle (1), spoon (1), spray bottle (1), toaster (1), tomato (1). You hold sliced bread (1).
+Act: put down sliced bread 1
+You put sliced bread (1) in countertop (1).
+Think: Now I complete task.
+OK.
+Act: done

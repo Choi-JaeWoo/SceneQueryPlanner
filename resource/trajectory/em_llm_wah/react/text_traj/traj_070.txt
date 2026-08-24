@@ -1,0 +1,95 @@
+Your task is to: Put wine and pudding to the fridge.
+You are in the house, and there are 4 rooms: bathroom 1, bedroom 1, kitchen 1, living room 1. You are in the middle of a bedroom 1. Looking quickly around the room, you see bed 1, bookshelf 2, cabinet 1, chair 1, coffee table 1, computer 1, desk 1, nightstand (1, 2), sofa 1.
+Think: To solve the task, I need to find and pick up wine, find fridge and put down wine, find and pick up pudding, find fridge and put down pudding.
+OK.
+Think: First, I need to find and pick up wine. The wine is more likely to appear in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen 1. Looking quickly around the room, you see bench (1, 2), bookshelf 1, dishwasher 1, faucet 2, fridge 1, garbage can 1, kitchen cabinet (1, 2, 3, 4, 5, 6, 7, 8), kitchen counter (1, 3), kitchen table 1, microwave oven 1, sink 2, stove 1, toaster 1.
+Think: In kitchen 1, the wine is likely to appear in/on dishwasher 1, fridge 1, kitchen cabinet (1, 2, 3, 4, 5, 6, 7, 8), kitchen counter (1, 2, 3), kitchen table 1. I can check each place one by one until I find it.
+OK.
+Act: go to dishwasher 1
+You arrive at the dishwasher 1. The dishwasher 1 is closed. You see coffee pot 1, dishwasher 1, kitchen cabinet (6, 7), microwave oven 1, toaster 1.
+Act: open dishwasher 1
+You open dishwasher 1. You see coffee pot 1, dishwasher 1, kitchen cabinet (6, 7), kitchen counter 2, microwave oven 1, toaster 1
+Act: go to fridge 1
+You arrive at the fridge 1. The fridge 1 is closed. You see bench 1, fridge 1, kitchen table 1.
+Act: open fridge 1
+You open fridge 1. You see bench 1, fridge 1, kitchen table 1
+Act: go to kitchen cabinet 1
+You arrive at the kitchen cabinet 1. The kitchen cabinet 1 is closed. You see chicken 1, cooking pot 1, cutlery knife (1, 2), cutlets 1, dishwashing liquid 1, faucet 2, frying pan 1, kitchen cabinet (1, 2, 8), kitchen counter (1, 2), sink 2, stove 1.
+Act: open kitchen cabinet 1
+You open kitchen cabinet 1. You see chicken 1, cooking pot 1, cutlery knife (1, 2), cutlets 1, dishwashing liquid 1, frying pan 1, kitchen cabinet (1, 2, 8), kitchen counter (1, 2), sink 2, stove 1
+Act: go to kitchen cabinet 2
+You arrive at the kitchen cabinet 2. The kitchen cabinet 2 is closed. You see bowl (1, 2, 3, 4, 5), chicken 1, cooking pot 1, cutlery knife (1, 2), cutlets 1, dishwashing liquid 1, faucet 2, kitchen cabinet (1, 2, 3), kitchen counter 1, sink 2, stove 1.
+Act: open kitchen cabinet 2
+You open kitchen cabinet 2. You see bowl (1, 2, 3, 4, 5), chicken 1, cooking pot 1, cutlery knife (1, 2), cutlets 1, dishwashing liquid 1, faucet 2, kitchen cabinet (1, 2, 3), kitchen counter 1, sink 2, stove 1
+Act: go to kitchen cabinet 3
+You arrive at the kitchen cabinet 3. The kitchen cabinet 3 is closed. You see bowl (1, 2, 3, 4, 5), chicken 1, cutlery knife (1, 2), cutlets 1, dishwashing liquid 1, faucet 2, kitchen cabinet (1, 2, 3, 4), kitchen counter 1, plate (1, 2, 3, 4), sink 2.
+Act: open kitchen cabinet 3
+You open kitchen cabinet 3. You see bowl (1, 2, 3, 4, 5), chicken 1, cutlery knife (1, 2), cutlets 1, dishwashing liquid 1, faucet 2, kitchen cabinet (1, 2, 3, 4), kitchen counter (1, 3), plate (1, 2, 3, 4), sink 2
+Act: go to kitchen cabinet 4
+You arrive at the kitchen cabinet 4. The kitchen cabinet 4 is closed. You see bowl (1, 2, 3, 4, 5), dishwashing liquid 1, faucet 2, fridge 1, kitchen cabinet (2, 3, 4), kitchen counter (1, 3), plate (1, 2, 3, 4), sink 2.
+Act: open kitchen cabinet 4
+You open kitchen cabinet 4. You see bowl (1, 2, 3, 4, 5), dishwashing liquid 1, faucet 2, fridge 1, kitchen cabinet (2, 3, 4), kitchen counter (1, 3), plate (1, 2, 3, 4), sink 2
+Act: go to kitchen cabinet 5
+You arrive at the kitchen cabinet 5. The kitchen cabinet 5 is closed. You see coffee pot 1, dishwasher 1, kitchen cabinet (5, 6), kitchen counter 2, microwave oven 1.
+Act: open kitchen cabinet 5
+You open kitchen cabinet 5. You see coffee pot 1, dishwasher 1, kitchen cabinet (5, 6), kitchen counter 2, microwave oven 1
+Act: go to kitchen cabinet 6
+You arrive at the kitchen cabinet 6. The kitchen cabinet 6 is closed. You see coffee pot 1, dishwasher 1, kitchen cabinet (5, 6, 7), kitchen counter 2, microwave oven 1, toaster 1.
+Act: open kitchen cabinet 6
+You open kitchen cabinet 6. You see coffee pot 1, dishwasher 1, kitchen cabinet (5, 6, 7), kitchen counter 2, microwave oven 1, toaster 1, wine 1
+Think: I find wine 1. Now, I need to pick it up.
+OK.
+Act: pick up wine 1
+You pick up wine 1. You hold wine 1.
+Think: Now I need to find fridge and put down wine 1.
+OK.
+Act: go to fridge 1
+You arrive at the fridge 1. The fridge 1 is open. You see bench 1, fridge 1, kitchen table 1, wine 1. You hold wine 1.
+Act: put down wine 1
+You put wine 1 in fridge 1.
+Think: Now I need to find and pick up pudding.
+OK.
+Think: I have not seen pudding yet. In kitchen 1, the pudding is likely to appear in/on kitchen cabinet (7, 8), kitchen counter (1, 2, 3). I can check each place one by one until I find pudding.
+OK.
+Act: go to kitchen cabinet 7
+You arrive at the kitchen cabinet 7. The kitchen cabinet 7 is closed. You see coffee pot 1, dishwasher 1, kitchen cabinet (5, 6, 7, 8), kitchen counter 2, microwave oven 1, toaster 1.
+Act: open kitchen cabinet 7
+You open kitchen cabinet 7. You see coffee pot 1, dishwasher 1, kitchen cabinet (5, 6, 7, 8), kitchen counter 2, microwave oven 1, pound cake 1, toaster 1
+Act: go to kitchen cabinet 8
+You arrive at the kitchen cabinet 8. The kitchen cabinet 8 is closed. You see cooking pot 1, dishwasher 1, frying pan 1, kitchen cabinet (6, 7, 8), kitchen counter 2, microwave oven 1, pound cake 1, stove 1, toaster 1.
+Act: open kitchen cabinet 8
+You open kitchen cabinet 8. You see cooking pot 1, dishwasher 1, frying pan 1, kitchen cabinet (6, 7, 8), kitchen counter 2, microwave oven 1, pound cake 1, stove 1, toaster 1
+Act: go to kitchen counter 1
+You arrive at the kitchen counter 1. You see bowl (1, 2, 3, 4, 5), chicken 1, cutlets 1, dishwashing liquid 1, faucet 2, fridge 1, kitchen cabinet (1, 2, 3, 4), kitchen counter 1, plate (1, 2, 3, 4), sink 2, wine 1.
+Act: go to kitchen counter 2
+You arrive at the kitchen counter 2. You see coffee pot 1, dishwasher 1, kitchen cabinet (5, 6, 7), kitchen counter 2, microwave oven 1.
+Act: go to kitchen counter 3
+You arrive at the kitchen counter 3. You see bowl (1, 2, 3, 4, 5), fridge 1, kitchen cabinet (3, 4), kitchen counter (1, 3), light switch 2, plate (1, 2, 3, 4), wine 1.
+Think: I cannot find pudding in kitchen 1. The pudding is likely to appear in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room 1. Looking quickly around the room, you see bookshelf 3, chair 2, closet 1, coffee table 2, computer 2, desk 2, sofa 2, tv 1.
+Think: In living room 1, the pudding is likely to appear in/on chair 2, coffee table 2, desk 2.
+OK.
+Act: go to chair 2
+You arrive at the chair 2. You see chair 2, computer 2, desk 2.
+Act: go to coffee table 2
+You arrive at the coffee table 2. You see coffee table 2, juice 2, pudding 3, sofa 2.
+Think: I find pudding 3. Now, I need to pick it up.
+OK.
+Act: pick up pudding 3
+You pick up pudding 3. You hold pudding 3.
+Think: Now I need to find fridge and put down pudding 3.
+OK.
+Act: go to kitchen 1
+You move to the kitchen 1. Looking quickly around the room, you see bench (1, 2), bookshelf 1, dishwasher 1, faucet 2, fridge 1, garbage can 1, kitchen cabinet (1, 2, 3, 4, 5, 6, 7, 8), kitchen counter (1, 2, 3), kitchen table 1, microwave oven 1, sink 2, stove 1, toaster 1. You hold pudding 3.
+Act: go to fridge 1
+You arrive at the fridge 1. The fridge 1 is open. You see bench 1, fridge 1, kitchen table 1, pudding 3, wine 1. You hold pudding 3.
+Act: put down pudding 3
+You put pudding 3 in fridge 1.
+Think: Now I complete the task.
+OK.
+Act: done

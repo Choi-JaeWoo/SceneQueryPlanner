@@ -1,0 +1,25 @@
+Your task is to: Hold the baseball bat and turn on the floor lamp for a closer look.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a bedroom (1). Looking quickly around the room, you see baseball bat (1), bed (1), chair (1), desk (1), dog bed (1), drawer (1, 2, 3, 4, 5, 6), dresser (1), painting (1, 2), shelf (1, 2, 3, 4).
+Think: To solve the task, I need to find and pick up baseball bat, then find and turn on floor lamp.
+OK.
+Think: First, I need to find and pick up baseball bat.
+OK.
+Query: find_objects({'label': 'baseball bat'})
+Info: [{'name_id_nl': 'baseball bat 1', 'node_type': 'object', 'properties': ['pickupable'], 'states': []}]
+Act: go to baseball bat 1
+You arrive at the baseball bat (1). You see baseball bat (1), painting (1).
+Act: pick up baseball bat 1
+You pick up baseball bat (1). You hold baseball bat (1).
+Think: Now, I need to find and turn on floor lamp.
+OK.
+Query: find_objects({'label': 'floor lamp'})
+Info: [{'name_id_nl': 'floor lamp 1', 'node_type': 'object', 'properties': ['toggleable'], 'states': []}]
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), boots (1), box (1), dining table (1), floor lamp (1), house plant (1), painting (4), shelf (5), sofa (1). You hold baseball bat (1).
+Act: go to floor lamp 1
+You arrive at the floor lamp (1). You see floor lamp (1), house plant (1). You hold baseball bat (1).
+Act: turn on floor lamp 1
+You turn on floor lamp (1). You hold baseball bat (1).
+Think: Now I complete the task.
+OK.
+Act: done

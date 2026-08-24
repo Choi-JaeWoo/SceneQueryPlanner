@@ -1,0 +1,85 @@
+Your task is to: Go the fridge and get a pudding.  Put it on the coffee table.  go to the fruit bowl and collect an apple and place it on the coffee table.  Go to the fridge and get a juice and place on the coffee table
+You are in the house, and there are 4 rooms: bathroom 1, bedroom 1, kitchen 1, living room 1. You are in the middle of a kitchen 1. Looking quickly around the room, you see bench (1, 2), bookshelf 2, faucet 2, fridge 1, kitchen counter 1, kitchen table 1, microwave oven 1, sink 2, stove 1, toaster 1, tv 1.
+Think: To solve the task, I need to find and open fridge, find and pick up pudding, find coffee table and put down pudding, find and open fridge, find and pick up juice, find coffee table and put down juice, find and open fridge, find and pick up apple, find coffee table and put down apple.
+OK.
+Think: First, I need to find and open fridge.
+OK.
+Query: find_objects({'label': 'fridge'})
+Info: [{'name_id_nl': 'fridge 1', 'node_type': 'asset', 'properties': ['CAN_OPEN', 'HAS_SWITCH', 'CONTAINERS', 'HAS_PLUG'], 'states': ['CLOSED'], 'room': 'kitchen 1'}]
+Think: Fridge 1 is in kitchen 1
+OK.
+Act: go to fridge 1
+You arrive at the fridge 1. The fridge 1 is closed. You see bench 2, book 1, coffee pot 2, cupcake 1, cutting board 2, fridge 1, frying pan 1, kitchen counter 1, microwave oven 1, stove 1.
+Act: open fridge 1
+You open fridge 1. You see bench 2, book 1, coffee pot 2, cupcake 1, cutting board 2, dishwashing liquid 1, fridge 1, frying pan 1, juice 1, kitchen counter 1, microwave oven 1, pudding (1, 2), stove 1, wine 1
+Think: Now, I need to find and pick up pudding.
+OK.
+Query: find_objects({'label': 'pudding'})
+Info: [{'name_id_nl': 'pudding 1', 'node_type': 'object', 'properties': ['GRABBABLE', 'EATABLE', 'CUTTABLE', 'MOVABLE'], 'states': []}, {'name_id_nl': 'pudding 2', 'node_type': 'object', 'properties': ['GRABBABLE', 'EATABLE', 'CUTTABLE', 'MOVABLE'], 'states': []}]
+Think: Pudding 1 and pudding 2 are in fridge 1.
+OK.
+Act: pick up pudding 1
+You pick up pudding 1. You hold pudding 1.
+Think: Now, I need to find coffee table and put down pudding.
+OK.
+Query: find_objects({'label': 'coffee table'})
+Info: [{'name_id_nl': 'coffee table 1', 'node_type': 'asset', 'properties': ['SURFACES', 'MOVABLE'], 'states': [], 'room': 'bedroom 1'}, {'name_id_nl': 'coffee table 2', 'node_type': 'asset', 'properties': ['SURFACES', 'MOVABLE'], 'states': [], 'room': 'living room 1'}]
+Think: Coffee table 1 is in bedroom 1, and coffee table 2 is in living room 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom 1. Looking quickly around the room, you see bed 1, bookshelf 1, chair (1, 2), closet 1, coffee table 1, nightstand 1. You hold pudding 1.
+Act: go to coffee table 1
+You arrive at the coffee table 1. You see Chinese food 1, bed 1, coffee table 1, pudding 1. You hold pudding 1.
+Act: put down pudding 1
+You put pudding 1 on coffee table 1.
+Think: Now, I need to find and open fridge.
+OK.
+Act: go to kitchen 1
+You move to the kitchen 1. Looking quickly around the room, you see bench (1, 2), bookshelf 2, faucet 2, fridge 1, kitchen counter 1, kitchen table 1, microwave oven 1, sink 2, stove 1, toaster 1, tv 1.
+Act: go to fridge 1
+You arrive at the fridge 1. The fridge 1 is open. You see bench 2, book 1, coffee pot 2, cupcake 1, cutting board 2, dishwashing liquid 1, fridge 1, frying pan 1, juice 1, kitchen counter 1, microwave oven 1, pudding 2, stove 1, wine 1.
+Think: Now, I need to find and pick up juice.
+OK.
+Query: find_objects({'label': 'juice'})
+Info: [{'name_id_nl': 'juice 1', 'node_type': 'object', 'properties': ['GRABBABLE', 'DRINKABLE', 'POURABLE', 'MOVABLE'], 'states': []}]
+Think: Juice 1 is in fridge 1.
+OK.
+Act: pick up juice 1
+You pick up juice 1. You hold juice 1.
+Think: Now, I need to find coffee table and put down juice.
+OK.
+Act: go to bedroom 1
+You move to the bedroom 1. Looking quickly around the room, you see bed 1, bookshelf 1, chair (1, 2), closet 1, coffee table 1, nightstand 1. You hold juice 1.
+Act: go to coffee table 1
+You arrive at the coffee table 1. You see Chinese food 1, bed 1, coffee table 1, juice 1, pudding 1. You hold juice 1.
+Act: put down juice 1
+You put juice 1 on coffee table 1.
+Think: Now, I need to find and open fridge.
+OK.
+Act: go to kitchen 1
+You move to the kitchen 1. Looking quickly around the room, you see bench (1, 2), bookshelf 2, faucet 2, fridge 1, kitchen counter 1, kitchen table 1, microwave oven 1, sink 2, stove 1, toaster 1, tv 1.
+Act: go to fridge 1
+You arrive at the fridge 1. The fridge 1 is open. You see bench 2, book 1, coffee pot 2, cupcake 1, cutting board 2, dishwashing liquid 1, fridge 1, frying pan 1, kitchen counter 1, microwave oven 1, pudding 2, stove 1, wine 1.
+Think: Now, I need to find and pick up apple.
+OK.
+Query: find_objects({'label': 'apple'})
+Info: [{'name_id_nl': 'apple 1', 'node_type': 'object', 'properties': ['GRABBABLE', 'MOVABLE'], 'states': []}]
+Think: Apple 1 is in fridge 1.
+OK.
+Act: pick up apple 1
+You can't pick up apple 1 because it's not close to you.
+Act: go to apple 1
+You arrive at the apple 1. You see apple 1, bench 1, chips 1, condiment shaker 1, cutlery fork 1, cutlery knife 1, kitchen table 1, mug 2, plate 2, salad 1, water glass (2, 3).
+Act: pick up apple 1
+You pick up apple 1. You hold apple 1.
+Think: Now, I need to find coffee table and put down apple.
+OK.
+Act: go to bedroom 1
+You move to the bedroom 1. Looking quickly around the room, you see bed 1, bookshelf 1, chair (1, 2), closet 1, coffee table 1, nightstand 1. You hold apple 1.
+Act: go to coffee table 1
+You arrive at the coffee table 1. You see Chinese food 1, apple 1, bed 1, coffee table 1, juice 1, pudding 1. You hold apple 1.
+Act: put down apple 1
+You put apple 1 on coffee table 1.
+Think: Now I complete task.
+OK.
+Act: done

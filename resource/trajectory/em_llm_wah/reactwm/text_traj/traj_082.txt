@@ -1,0 +1,141 @@
+Your task is to: please serve on the table: 1 cup of coffee, 1 glass of wine, 1 glass of juice and 1 pancake
+You are in the house, and there are 4 rooms: bathroom 1, bedroom 1, kitchen 1, living room 1. You are in the middle of a kitchen 1. Looking quickly around the room, you see bookshelf 1, chair (2, 3, 4, 5), dishwasher 1, faucet 1, fridge 1, kitchen cabinet (1, 2, 3, 4, 5, 6, 7, 8), kitchen counter 1, kitchen table 1, microwave oven 1, sink 1, sofa 2, stove 1, toaster 1, tv 2.
+Think: To solve the task, I need to find and pick up coffee, find and pick up wine, find and pick up juice, find and pick up pancake, find kitchen table and put down coffee, find kitchen table and put down wine, find kitchen table and put down juice, find kitchen table and put down pancake.
+OK.
+Think: First, I need to find and pick up coffee.
+OK.
+Query: recall location of coffee
+You have not seen coffee before.
+Think: I have not seen coffee yet. The coffee is more likely to appear in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen 1. Looking quickly around the room, you see bookshelf 1, chair (2, 3, 4, 5), dishwasher 1, faucet 1, fridge 1, kitchen cabinet (1, 2, 3, 4, 5, 6, 7, 8), kitchen counter 1, kitchen table 1, microwave oven 1, sink 1, sofa 2, stove 1, toaster 1, tv 2.
+Think: In kitchen 1, the coffee is likely to appear in/on dishwasher 1, fridge 1, kitchen cabinet (1, 2, 3, 4, 5, 6, 7, 8), kitchen counter 1, kitchen table 1. I can check each place one by one until I find it.
+OK.
+Act: go to dishwasher 1
+You arrive at the dishwasher 1. The dishwasher 1 is closed. You see cell phone 2, cereal 1, chair (2, 5), chocolate syrup 1, cutlets 1, dishwasher 1, kitchen cabinet (2, 3), kitchen counter 1, kitchen table 1, microwave oven 1, minced meat 1, mug (2, 3).
+Act: open dishwasher 1
+You open dishwasher 1. You see cell phone 2, cereal 1, chair (2, 5), chocolate syrup 1, cutlets 1, dishwasher 1, kitchen cabinet (2, 3), kitchen counter 1, kitchen table 1, microwave oven 1, minced meat 1, mug (2, 3), pancake 1
+Act: go to fridge 1
+You arrive at the fridge 1. The fridge 1 is closed. You see bananas (1, 2), bowl 2, chair (4, 5), condiment shaker (1, 2), fridge 1, kitchen cabinet 5, kitchen counter 1, kitchen table 1, mug (2, 3), pie 1, sofa 2.
+Act: open fridge 1
+You open fridge 1. You see bananas (1, 2), bowl 2, chair (4, 5), condiment shaker (1, 2), cupcake 1, fridge 1, juice 1, kitchen cabinet 5, kitchen counter 1, kitchen table 1, mug (2, 3), pie 1, pudding 1, sofa 2
+Act: go to kitchen cabinet 1
+You arrive at the kitchen cabinet 1. The kitchen cabinet 1 is closed. You see cell phone 2, cereal 1, condiment bottle (1, 2), cutlets 1, dishwasher 1, dishwashing liquid 1, faucet 1, kitchen cabinet (1, 2, 6, 7, 8), kitchen counter 1, microwave oven 1, minced meat 1, pancake 1, sink 1, toaster 1, washing sponge 1.
+Act: open kitchen cabinet 1
+You open kitchen cabinet 1. You see cell phone 2, cereal 1, condiment bottle (1, 2), cutlets 1, dishwasher 1, dishwashing liquid 1, faucet 1, kitchen cabinet (1, 2, 6, 7, 8), kitchen counter 1, microwave oven 1, minced meat 1, pancake (1, 2), sink 1, toaster 1, washing sponge 1
+Act: go to kitchen cabinet 2
+You arrive at the kitchen cabinet 2. The kitchen cabinet 2 is closed. You see cell phone 2, cereal 1, chocolate syrup 1, condiment bottle (1, 2), cutlets 1, dishwasher 1, kitchen cabinet (1, 2, 3, 7, 8), kitchen counter 1, kitchen table 1, microwave oven 1, minced meat 1, pancake (1, 2), sink 1, toaster 1, washing sponge 1.
+Act: open kitchen cabinet 2
+You open kitchen cabinet 2. You see cell phone 2, cereal 1, chocolate syrup 1, condiment bottle (1, 2), cutlets 1, dishwasher 1, kitchen cabinet (1, 2, 3, 7, 8), kitchen counter 1, kitchen table 1, microwave oven 1, minced meat 1, pancake (1, 2), sink 1, toaster 1, washing sponge 1
+Act: go to kitchen cabinet 3
+You arrive at the kitchen cabinet 3. The kitchen cabinet 3 is closed. You see cell phone 2, cereal 1, chocolate syrup 1, condiment bottle (1, 2), cutlets 1, dishwasher 1, kitchen cabinet (1, 2, 3, 4), kitchen counter 1, kitchen table 1, microwave oven 1, minced meat 1, mug 2, pancake (1, 2).
+Act: open kitchen cabinet 3
+You open kitchen cabinet 3. You see cell phone 2, cereal 1, chair 5, chocolate syrup 1, condiment bottle (1, 2), cutlets 1, dishwasher 1, kitchen cabinet (1, 2, 3, 4), kitchen counter 1, kitchen table 1, microwave oven 1, minced meat 1, mug 2, pancake (1, 2)
+Act: go to kitchen cabinet 4
+You arrive at the kitchen cabinet 4. The kitchen cabinet 4 is closed. You see cereal 1, chair 2, chocolate syrup 1, cooking pot 1, cutlets 1, dishwasher 1, kitchen cabinet (2, 3, 4), kitchen counter 1, kitchen table 1, microwave oven 1, minced meat 1, mug 2, pancake 1, stove 1.
+Act: open kitchen cabinet 4
+You open kitchen cabinet 4. You see cereal 1, chair 2, chocolate syrup 1, cooking pot 1, cutlets 1, dishwasher 1, kitchen cabinet (2, 3, 4), kitchen counter 1, kitchen table 1, microwave oven 1, minced meat 1, mug 2, pancake 1, stove 1
+Act: go to kitchen cabinet 5
+You arrive at the kitchen cabinet 5. The kitchen cabinet 5 is closed. You see bananas (1, 2), bowl 2, chair (4, 5), condiment shaker (1, 2), cupcake 1, dishwashing liquid 1, faucet 1, fridge 1, juice 1, kitchen cabinet (5, 6), kitchen counter 1, kitchen table 1, mug (2, 3), pudding 1, sink 1.
+Act: open kitchen cabinet 5
+You open kitchen cabinet 5. You see bananas (1, 2), bowl 2, chair (4, 5), condiment shaker (1, 2), cupcake 1, dishwashing liquid 1, faucet 1, fridge 1, juice 1, kitchen cabinet (5, 6), kitchen counter 1, kitchen table 1, mug (2, 3), pudding 1, sink 1
+Act: go to kitchen cabinet 6
+You arrive at the kitchen cabinet 6. The kitchen cabinet 6 is closed. You see bananas (1, 2), bowl 2, cell phone 2, chair (4, 5), condiment shaker (1, 2), cupcake 1, dishwashing liquid 1, faucet 1, fridge 1, juice 1, kitchen cabinet (5, 6, 7), kitchen counter 1, kitchen table 1, mug (2, 3), pudding 1, sink 1, washing sponge 1.
+Act: open kitchen cabinet 6
+You open kitchen cabinet 6. You see bananas (1, 2), bowl 2, cell phone 2, chair (4, 5), condiment shaker (1, 2), cupcake 1, dishwashing liquid 1, faucet 1, fridge 1, juice 1, kitchen cabinet (5, 6, 7), kitchen counter 1, kitchen table 1, mug (2, 3), pudding 1, sink 1, washing sponge 1, wine 1
+Act: go to kitchen cabinet 7
+You arrive at the kitchen cabinet 7. The kitchen cabinet 7 is closed. You see bananas (1, 2), bowl 2, cell phone 2, chair (4, 5), condiment bottle (1, 2), condiment shaker (1, 2), cutlets 1, dishwashing liquid 1, faucet 1, kitchen cabinet (2, 5, 6, 7, 8), kitchen counter 1, kitchen table 1, minced meat 1, mug (2, 3), sink 1, toaster 1, washing sponge 1, wine 1.
+Act: open kitchen cabinet 7
+You open kitchen cabinet 7. You see bananas (1, 2), bowl 2, cell phone 2, chair (4, 5), coffee pot 1, condiment bottle (1, 2), condiment shaker (1, 2), cutlets 1, dishwashing liquid 1, faucet 1, kitchen cabinet (2, 5, 6, 7, 8), kitchen counter 1, kitchen table 1, minced meat 1, mug (2, 3), sink 1, toaster 1, washing sponge 1, wine 1
+Act: go to kitchen cabinet 8
+You arrive at the kitchen cabinet 8. The kitchen cabinet 8 is closed. You see cell phone 2, cereal 1, chair 5, coffee pot 1, condiment bottle (1, 2), cutlets 1, dishwasher 1, dishwashing liquid 1, faucet 1, kitchen cabinet (1, 2, 3, 6, 7, 8), kitchen counter 1, kitchen table 1, microwave oven 1, minced meat 1, pancake (1, 2), sink 1, toaster 1, washing sponge 1, wine 1.
+Act: open kitchen cabinet 8
+You open kitchen cabinet 8. You see cell phone 2, cereal 1, chair 5, coffee pot (1, 2), condiment bottle (1, 2), cutlets 1, dishwasher 1, dishwashing liquid 1, faucet 1, kitchen cabinet (1, 2, 3, 6, 7, 8), kitchen counter 1, kitchen table 1, microwave oven 1, minced meat 1, pancake (1, 2), sink 1, toaster 1, washing sponge 1, wine 1
+Act: go to kitchen counter 1
+You arrive at the kitchen counter 1. You see cell phone 2, cereal 1, chair 5, coffee pot (1, 2), condiment bottle (1, 2), cutlets 1, dishwasher 1, dishwashing liquid 1, faucet 1, kitchen cabinet (1, 2, 3, 6, 7, 8), kitchen counter 1, kitchen table 1, microwave oven 1, minced meat 1, mug 2, pancake (1, 2), sink 1, toaster 1, washing sponge 1, wine 1.
+Act: go to kitchen table 1
+You arrive at the kitchen table 1. You see bananas (1, 2), bowl 2, chair (4, 5), condiment shaker (1, 2), cupcake 1, fridge 1, juice 1, kitchen cabinet (5, 6), kitchen counter 1, kitchen table 1, mug (2, 3), pie 1, pudding 1.
+Think: I find coffee pot 1. Now, I need to pick it up.
+OK.
+Act: pick up coffee pot 1
+You can't pick up coffee pot 1 because it's not close to you.
+Think: I cannot pick up coffee pot 1 because it's not close to me. I need to go to it.
+OK.
+Act: go to coffee pot 1
+You arrive at the coffee pot 1. The coffee pot 1 is closed. You see cell phone 2, cereal 1, chair 5, coffee pot (1, 2), condiment bottle (1, 2), cutlets 1, dishwasher 1, dishwashing liquid 1, faucet 1, kitchen cabinet (1, 2, 3, 6, 7, 8), kitchen counter 1, kitchen table 1, microwave oven 1, minced meat 1, mug 2, pancake (1, 2), sink 1, toaster 1, washing sponge 1, wine 1.
+Act: pick up coffee pot 1
+You pick up coffee pot 1. You hold coffee pot 1.
+Think: Now I need to find kitchen table and put down coffee pot 1.
+OK.
+Act: go to kitchen table 1
+You arrive at the kitchen table 1. You see bananas (1, 2), bowl 2, chair (4, 5), coffee pot 1, condiment shaker (1, 2), cupcake 1, fridge 1, juice 1, kitchen cabinet (5, 6), kitchen counter 1, kitchen table 1, mug (2, 3), pie 1, pudding 1. You hold coffee pot 1.
+Act: put down coffee pot 1
+You put coffee pot 1 on kitchen table 1.
+Think: Now I need to find and pick up wine.
+OK.
+Query: recall location of wine
+You saw wine 1 near coffee pot 1 in kitchen 1.
+Think: Wine 1 is near coffee pot 1.
+OK.
+Act: go to coffee pot 1
+You arrive at the coffee pot 1. The coffee pot 1 is closed. You see chair (3, 4, 5), coffee pot 1, kitchen counter 1, kitchen table 1, mug 3, pie 1.
+Act: pick up coffee pot 1
+You pick up coffee pot 1. You hold coffee pot 1.
+Act: go to kitchen table 1
+You arrive at the kitchen table 1. You see bananas (1, 2), bowl 2, chair (4, 5), coffee pot 1, condiment shaker (1, 2), cupcake 1, fridge 1, juice 1, kitchen cabinet (5, 6), kitchen counter 1, kitchen table 1, mug (2, 3), pie 1, pudding 1. You hold coffee pot 1.
+Act: put down coffee pot 1
+You put coffee pot 1 on kitchen table 1.
+Act: go to wine 1
+You arrive at the wine 1. You see bananas (1, 2), bowl 2, cell phone 2, chair (4, 5), coffee pot (1, 2), condiment shaker (1, 2), cutlets 1, dishwashing liquid 1, faucet 1, kitchen cabinet (2, 5, 6, 7, 8), kitchen counter 1, kitchen table 1, minced meat 1, mug (2, 3), sink 1, toaster 1, washing sponge 1, wine 1.
+Act: pick up wine 1
+You pick up wine 1. You hold wine 1.
+Think: Now I need to find kitchen table and put down wine 1.
+OK.
+Act: go to kitchen table 1
+You arrive at the kitchen table 1. You see bananas (1, 2), bowl 2, chair (4, 5), coffee pot 1, condiment shaker (1, 2), cupcake 1, fridge 1, juice 1, kitchen cabinet (5, 6), kitchen counter 1, kitchen table 1, mug (2, 3), pie 1, pudding 1, wine 1. You hold wine 1.
+Act: put down wine 1
+You put wine 1 on kitchen table 1.
+Think: Now I need to find and pick up juice.
+OK.
+Query: recall location of juice
+You saw juice 1 near kitchen table 1 in kitchen 1.
+Think: Juice 1 is near kitchen table 1.
+OK.
+Act: go to kitchen table 1
+You arrive at the kitchen table 1. You see bananas (1, 2), bowl 2, chair (4, 5), coffee pot 1, condiment shaker (1, 2), cupcake 1, fridge 1, juice 1, kitchen cabinet (5, 6), kitchen counter 1, kitchen table 1, mug (2, 3), pie 1, pudding 1, wine 1.
+Act: pick up juice 1
+You pick up juice 1. You hold juice 1.
+Think: Now I need to find kitchen table and put down juice 1.
+OK.
+Act: go to kitchen table 1
+You arrive at the kitchen table 1. You see bananas (1, 2), bowl 2, chair (4, 5), coffee pot 1, condiment shaker (1, 2), cupcake 1, fridge 1, juice 1, kitchen cabinet (5, 6), kitchen counter 1, kitchen table 1, mug (2, 3), pie 1, pudding 1, wine 1. You hold juice 1.
+Act: put down juice 1
+You put juice 1 on kitchen table 1.
+Think: Now, I need to find and pick up pancake.
+OK.
+Query: recall location of pancake
+You saw pancake 1 near coffee pot 1 in kitchen 1. You saw pancake 2 near coffee pot 1 in kitchen 1.
+Think: Pancake 1 is near coffee pot 1. Pancake 2 is near coffee pot 1.
+OK.
+Act: go to coffee pot 1
+You arrive at the coffee pot 1. The coffee pot 1 is closed. You see chair (3, 4, 5), coffee pot 1, juice 1, kitchen counter 1, kitchen table 1, mug 3, pie 1, wine 1.
+Act: pick up coffee pot 1
+You pick up coffee pot 1. You hold coffee pot 1.
+Act: go to kitchen table 1
+You arrive at the kitchen table 1. You see bananas (1, 2), bowl 2, chair (4, 5), coffee pot 1, condiment shaker (1, 2), cupcake 1, fridge 1, juice 1, kitchen cabinet (5, 6), kitchen counter 1, kitchen table 1, mug (2, 3), pie 1, pudding 1, wine 1. You hold coffee pot 1.
+Act: put down coffee pot 1
+You put coffee pot 1 on kitchen table 1.
+Act: go to pancake 1
+You arrive at the pancake 1. You see cereal 1, chair (2, 5), chocolate syrup 1, cooking pot 1, cutlets 1, dishwasher 1, kitchen cabinet (2, 3, 4), kitchen counter 1, kitchen table 1, microwave oven 1, minced meat 1, mug 2, pancake 1.
+Act: pick up pancake 1
+You pick up pancake 1. You hold pancake 1.
+Think: Now I need to find kitchen table and put down pancake 1.
+OK.
+Act: go to kitchen table 1
+You arrive at the kitchen table 1. You see bananas (1, 2), bowl 2, chair (4, 5), coffee pot 1, condiment shaker (1, 2), cupcake 1, fridge 1, juice 1, kitchen cabinet (5, 6), kitchen counter 1, kitchen table 1, mug (2, 3), pancake 1, pie 1, pudding 1, wine 1. You hold pancake 1.
+Act: put down pancake 1
+You put pancake 1 on kitchen table 1.
+Think: Now I complete the task.
+OK.
+Act: done

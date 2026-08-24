@@ -1,0 +1,11 @@
+Your task is to: Toast a slice of bread with the toaster and set it down on the side table.
+You arrive at the side table (1). You see CD (1), basket ball (1), book (4), cell phone (2, 3), drawer (1, 2, 3, 4, 5, 6), dresser (1), key chain (2, 3), pen (2), pencil (2, 3), remote control (3), shelf (4, 5), side table (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- (bathroom 1): [clothes dryer 1, faucet 1, plunger 1, (sink 1), (sink basin 1), (toilet 1)]
+- bedroom 1: [house plant 1, television 2, basket ball 1, (bed 1), (bed 2), book 4, (box 1), CD 1, cell phone 4, cell phone 3, cell phone 2, (chair 5), (chair 6), (dining table 3), (drawer 3), (drawer 2), (drawer 4), (drawer 1), (drawer 5), (drawer 6), (dresser 1), key chain 3, key chain 2, pen 2, pencil 3, pencil 2, remote control 3, (shelf 4), (shelf 5), side table 1]
+- bedroom 2: [basket ball 2, (bed 3), (box 3), cell phone 7, cell phone 6, (chair 7), (chair 8), (chair 9), (coffee table 1), (dining table 4), (drawer 15), (drawer 14), (drawer 7), (drawer 16), (drawer 9), (drawer 10), (drawer 8), (drawer 11), (drawer 12), (drawer 13), (dresser 2), (garbage can 2), key chain 4, mug 3, painting 4, painting 3, pen 4, pen 3]
+- kitchen 1: [egg 1, painting 1, painting 2, apple 1, bottle 1, bowl 1, potato 1, spoon 4, plate 1, book 1, book 2, bread 2, bread 1, (chair 1), (chair 2), countertop 1, (dining table 1), (fridge 1), knife 1, lettuce 1, lettuce 2, mug 1, pepper shaker 1, pot 1, salt shaker 1, spoon 1, spoon 2, spoon 3, spray bottle 1, toaster 1, tomato 1, tomato 2]
+- (living room 1): [(box 2), (cabinet 1), (chair 4), (chair 3), (dining table 2), (garbage can 1), (shelf 3), (shelf 2), (shelf 1), shelving unit 1, (sofa 1), television 1]
+Your 5 previous actions were: turn on toaster 1 (success), turn off toaster 1 (success), pick up bread 1 (fail), go to bedroom 1 (success), go to side table 1 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I arrive at side table 1. Now, I need to find bread 1 to toast it.
+Act: go to bedroom 1

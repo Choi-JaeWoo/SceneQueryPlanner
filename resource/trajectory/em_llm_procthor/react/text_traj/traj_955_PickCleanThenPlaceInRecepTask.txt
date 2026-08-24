@@ -1,0 +1,47 @@
+Your task is to: After washing, place the pencil in the sink basin to clean it further.
+You are in the house, and there are 2 rooms: bathroom (1), bedroom (1). You are in the middle of a bedroom (1). Looking quickly around the room, you see bed (1), box (1, 2), chair (1), desk (1), drawer (1, 2, 3), dresser (1), dumbbell (1), garbage can (1), painting (1, 2, 3).
+Think: To solve the task, I need to find and pick up pencil, put it in sink basin and turn on faucet, pick up and put down pencil in sink basin.
+OK.
+Think: First, I need to find and pick up pencil. The pencil is more likely to appear in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see bed (1), box (1, 2), chair (1), desk (1), drawer (1, 2, 3), dresser (1), dumbbell (1), garbage can (1), painting (1, 2, 3).
+Think: In bedroom 1, the pencil is likely to appear in/on bed 1, box (1, 2), chair 1, desk 1, drawer (1, 2, 3), dresser 1. I can check each place one by one until I find pencil.
+OK.
+Act: go to bed 1
+You arrive at the bed (1). You see alarm clock (1), bed (1), book (1), bowl (1), cell phone (1), chair (1), desk (1), dumbbell (1), pencil (1), pillow (1), remote control (1).
+Think: I find pencil 1. Now, I need to pick it up.
+OK.
+Act: go to pencil 1
+You arrive at the pencil (1). You see alarm clock (1), bed (1), book (1), bowl (1), cell phone (1), desk (1), dumbbell (1), painting (2), pencil (1), pillow (1), remote control (1).
+Act: pick up pencil 1
+You pick up pencil (1). You hold pencil (1).
+Think: Now, I need to find sink basin. The sink basin is more likely to appear in bathroom 1.
+OK.
+Act: go to bathroom 1
+You move to the bathroom (1). Looking quickly around the room, you see garbage can (2), painting (4), plunger (1), sink (1), sink basin (1), toilet (1). You hold pencil (1).
+Act: go to sink basin 1
+You arrive at the sink basin (1). You see faucet (1), sink (1), sink basin (1). You hold pencil (1).
+Think: Now, I need to put down pencil 1.
+OK.
+Act: put down pencil 1
+You put pencil (1) in sink basin (1).
+Think: Now, I need to turn on faucet 1 briefly and turn off to wash pencil 1.
+OK.
+Act: turn on faucet 1
+You turn on faucet (1).
+Act: turn off faucet 1
+You turn off faucet (1).
+Think: Now, I need to pick up pencil 1 and find sink basin.
+OK.
+Act: pick up pencil 1
+You pick up pencil (1). You hold pencil (1).
+Act: go to sink basin 1
+You arrive at the sink basin (1). You see faucet (1), sink (1), sink basin (1). You hold pencil (1).
+Think: Now, I need to put down pencil 1.
+OK.
+Act: put down pencil 1
+You put pencil (1) in sink basin (1).
+Think: Now I complete the task.
+OK.
+Act: done

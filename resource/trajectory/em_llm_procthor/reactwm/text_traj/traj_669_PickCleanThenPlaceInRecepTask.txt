@@ -1,0 +1,69 @@
+Your task is to: Clean the spatula and place it in the shelf.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a bathroom (1). Looking quickly around the room, you see garbage can (1), laundry hamper (1), painting (1, 2), plunger (1), sink (1), sink basin (1), toilet (1).
+Think: To solve the task, I need to find and pick up spatula, put it in sink basin and turn on faucet, pick up and put down spatula in shelf.
+OK.
+Think: First, I need to find and pick up spatula.
+OK.
+Query: recall location of spatula
+You have not seen spatula before.
+Think: I have not seen spatula yet. The spatula is more likely to appear in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see cabinet (1), chair (2, 3, 4, 5), countertop (1), dining table (1), egg (1, 2), fridge (1), shelf (1, 2, 3), shelving unit (1).
+Think: In kitchen 1, the spatula is likely to appear in/on cabinet 1, chair (2, 3, 4, 5), countertop 1, dining table 1, shelf (1, 2, 3), shelving unit 1. I can check each place one by one until I find spatula.
+OK.
+Act: go to cabinet 1
+You arrive at the cabinet (1). The cabinet (1) is closed. You see butter knife (1, 2), cabinet (1), lettuce (1), shelf (1, 2, 3), shelving unit (1), spatula (1), spoon (1), wine bottle (1).
+Act: open cabinet 1
+You open cabinet (1). You see apple (1), butter knife (1, 2), cabinet (1), lettuce (1), shelf (1, 2, 3), shelving unit (1), spatula (1), spoon (1), statue (1), wine bottle (1).
+Act: go to countertop 1
+You arrive at the countertop (1). You see apple (1), butter knife (1, 2), cabinet (1), countertop (1), dish sponge (1), knife (1), lettuce (1), pencil (1), pepper shaker (1), shelf (1, 2, 3), shelving unit (1), soap bottle (1), spatula (1, 2), spoon (1), spray bottle (2), statue (1), toaster (1), vase (2), wine bottle (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see book (3, 4), bottle (1), butter knife (3), cell phone (1), chair (2, 4, 5), dining table (1), house plant (2), mug (2), pan (1), pen (1, 2), plate (1), pot (1).
+Act: go to shelf 1
+You arrive at the shelf (1). You see apple (1), butter knife (1, 2), cabinet (1), lettuce (1), shelf (1, 2, 3), shelving unit (1), spatula (1), spoon (1), statue (1), wine bottle (1).
+Think: I find spatula 1. Now, I need to pick it up.
+OK.
+Act: go to spatula 1
+You arrive at the spatula (1). You see apple (1), butter knife (1, 2), cabinet (1), countertop (1), knife (1), lettuce (1), pencil (1), pepper shaker (1), shelf (1, 2, 3), shelving unit (1), soap bottle (1), spatula (1, 2), spoon (1), spray bottle (2), statue (1), vase (2), wine bottle (1).
+Act: pick up spatula 1
+You pick up spatula (1). You hold spatula (1).
+Think: Now, I need to find sink basin.
+OK.
+Query: recall location of sink basin
+You saw sink basin 1 in bathroom 1.
+Think: Sink basin 1 is in bathroom 1.
+OK.
+Act: go to bathroom 1
+You move to the bathroom (1). Looking quickly around the room, you see garbage can (1), laundry hamper (1), painting (1, 2), plunger (1), sink (1), sink basin (1), toilet (1). You hold spatula (1).
+Act: go to sink basin 1
+You arrive at the sink basin (1). You see faucet (1), painting (1), sink (1), sink basin (1). You hold spatula (1).
+Think: Now, I need to put down spatula 1.
+OK.
+Act: put down spatula 1
+You put spatula (1) in sink basin (1).
+Think: Now, I need to turn on faucet 1 briefly and turn off to wash spatula 1.
+OK.
+Act: turn on faucet 1
+You turn on faucet (1).
+Act: turn off faucet 1
+You turn off faucet (1).
+Think: Now, I need to pick up spatula 1 and find shelf.
+OK.
+Act: pick up spatula 1
+You pick up spatula (1). You hold spatula (1).
+Query: recall location of shelf
+You saw shelf 3 in kitchen 1. You saw shelf 6 in living room 1. You saw shelf 7 in living room 1. You saw shelf 4 in living room 1. You saw shelf 5 in living room 1. You saw shelf 1 in kitchen 1. You saw shelf 9 in living room 1. You saw shelf 2 in kitchen 1. You saw shelf 8 in living room 1.
+Think: Shelf 3 is in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see cabinet (1), chair (2, 3, 4, 5), countertop (1), dining table (1), egg (1, 2), fridge (1), shelf (1, 2, 3), shelving unit (1). You hold spatula (1).
+Act: go to shelf 3
+You arrive at the shelf (3). You see apple (1), butter knife (1, 2), cabinet (1), lettuce (1), shelf (1, 2, 3), shelving unit (1), spoon (1), statue (1), wine bottle (1). You hold spatula (1).
+Think: Now, I need to put down spatula 1.
+OK.
+Act: put down spatula 1
+You put spatula (1) in shelf (3).
+Think: Now I complete the task.
+OK.
+Act: done

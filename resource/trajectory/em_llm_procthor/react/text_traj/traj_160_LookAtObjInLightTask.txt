@@ -1,0 +1,23 @@
+Your task is to: With a box in hand, switch on the floor lamp to take a closer look.
+You are in the house, and there are 2 rooms: kitchen (1), living room (1). You are in the middle of a living room (1). Looking quickly around the room, you see TV stand (1), box (1), dining table (1), dog bed (1), floor lamp (1), painting (2, 3), shelf (1, 2, 3, 4, 5, 6), sofa (1).
+Think: To solve the task, I need to find and pick up box, find and turn on floor lamp, examine box under the light of floor lamp.
+OK.
+Think: First, I need to find and pick up box. The box is more likely to appear in living room 1.
+OK.
+Act: go to box 1
+You arrive at the box (1). The box (1) is closed. You see box (1).
+Act: open box 1
+You open box (1). You see box (1).
+Act: go to box 1
+You arrive at the box (1). The box (1) is open. You see box (1).
+Act: pick up box 1
+You pick up box (1). You hold box (1).
+Think: Now I need to find and turn on floor lamp. The floor lamp is more likely to appear in living room 1.
+OK.
+Act: go to floor lamp 1
+You arrive at the floor lamp (1). You see floor lamp (1), pillow (1), sofa (1). You hold box (1).
+Act: turn on floor lamp 1
+You turn on floor lamp (1). You hold box (1).
+Think: Now I complete the task.
+OK.
+Act: done

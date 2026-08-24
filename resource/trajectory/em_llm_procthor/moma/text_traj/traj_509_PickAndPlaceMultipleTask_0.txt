@@ -1,0 +1,7 @@
+Your task is to: Collect a pencil and a book and place them in the drawer.
+You are in the house, and there are 1 rooms: bedroom (1). You are in the middle of a bedroom (1). Looking quickly around the room, you see baseball bat (1), bed (1), drawer (1, 2, 3, 4, 5, 6), dresser (1), garbage can (1), painting (1, 2), side table (1), television (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- bedroom 1: [baseball bat 1, (bed 1), (drawer 3), (drawer 1), (drawer 2), (drawer 4), (drawer 5), (drawer 6), (dresser 1), (garbage can 1), painting 1, painting 2, (side table 1), teddy bear 1, television 1]
+You have not taken any actions yet.
+What is the best next action to complete the task as efficiently as possible?
+Think: First, I need to find and pick up pencil. The pencil is more likely to appear in bedroom 1.
+Act: go to bedroom 1

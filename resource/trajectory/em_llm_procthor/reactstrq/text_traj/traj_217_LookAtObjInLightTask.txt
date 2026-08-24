@@ -1,0 +1,107 @@
+Your task is to: Hold a pencil and switch on the desk lamp.
+You are in the house, and there are 2 rooms: bathroom (1), bedroom (1). You are in the middle of a bedroom (1). Looking quickly around the room, you see TV stand (1), baseball bat (1), basket ball (1), bed (1), chair (1), desk (1), dining table (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), dumbbell (1), painting (1, 2), shelf (1, 2, 3).
+Think: To solve the task, I need to find and pick up pencil, then find and turn on desk lamp.
+OK.
+Think: First, I need to find and pick up pencil.
+OK.
+Query: find_objects({'label': 'pencil'})
+Info: 
+Think: I have not seen pencil yet. Now I need to check where to search. First, I will search bedroom 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'bedroom 1'})
+Info: TV stand 1, bed 1, box 1, chair 1, desk 1, dining table 1, drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser 1, shelf (1, 2, 3)
+Think: In bedroom 1, the pencil is likely to appear in/on TV stand 1, bed 1, box 1, chair 1, desk 1, dining table 1, drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser 1, shelf (1, 2, 3). I can check each place one by one until I find pencil.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see TV stand (1), baseball bat (1), basket ball (1), bed (1), chair (1), desk (1), dining table (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), dumbbell (1), painting (1, 2), shelf (1, 2, 3).
+Act: go to TV stand 1
+You arrive at the TV stand (1). You see TV stand (1), bed (1), book (1, 4), key chain (3), pillow (1), remote control (1), shelf (3), statue (1), television (1), watch (3).
+Act: go to bed 1
+You arrive at the bed (1). You see TV stand (1), bed (1), book (1, 4), key chain (3), pillow (1), remote control (1), shelf (3), statue (1), teddy bear (1), television (1), watch (3).
+Act: go to box 1
+You arrive at the box (1). You see baseball bat (1), book (2, 3), box (1), cell phone (1), desk (1), dumbbell (1), key chain (1, 2), mug (1), pencil (2), shelf (1, 2), watch (2).
+Act: go to chair 1
+You arrive at the chair (1). You see book (3), bowl (1), box (1), cell phone (1), chair (1), desk lamp (2), dining table (1), drawer (1, 2, 5), house plant (1), mug (1), painting (2), pencil (2), remote control (3), statue (2), vase (1).
+Act: go to desk 1
+You arrive at the desk (1). You see baseball bat (1), book (2, 3), box (1), cell phone (1), desk (1), dumbbell (1), key chain (1, 2), mug (1), pencil (2), shelf (1, 2), watch (2).
+Act: go to dining table 1
+You arrive at the dining table (1). You see basket ball (1), bowl (1), cell phone (1), chair (1), dining table (1), statue (2), vase (1).
+Act: go to drawer 1
+You arrive at the drawer (1). The drawer (1) is closed. You see alarm clock (1), book (5, 6), bowl (1), cell phone (1), chair (1), desk lamp (1, 2), dining table (1), drawer (1, 2, 5, 6, 7, 8, 9, 10, 11), dresser (1), house plant (1), painting (2), pencil (1), remote control (3), statue (2), vase (1).
+Act: open drawer 1
+You open drawer (1). You see alarm clock (1), book (5, 6), bowl (1), cell phone (1), chair (1), desk lamp (1, 2), dining table (1), drawer (1, 2, 5, 6, 7, 8, 9, 10, 11), dresser (1), house plant (1), painting (2), pencil (1), remote control (3), statue (2), vase (1).
+Act: go to drawer 2
+You arrive at the drawer (2). The drawer (2) is closed. You see alarm clock (1), book (5, 6), bowl (1), cell phone (1), chair (1), desk lamp (1, 2), dining table (1), drawer (1, 2, 5, 6, 7, 8, 9, 10, 11), dresser (1), house plant (1), painting (2), pencil (1), remote control (3), statue (2), vase (1).
+Act: open drawer 2
+You open drawer (2). You see alarm clock (1), book (5, 6), bowl (1), cell phone (1), chair (1), desk lamp (1, 2), dining table (1), drawer (1, 2, 5, 6, 7, 8, 9, 10, 11), dresser (1), house plant (1), painting (2), pencil (1), remote control (3), statue (2), vase (1).
+Act: go to drawer 3
+You arrive at the drawer (3). The drawer (3) is closed. You see alarm clock (1), book (5, 6), desk lamp (1, 2), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), house plant (1), pencil (1), remote control (2, 3).
+Act: open drawer 3
+You open drawer (3). You see alarm clock (1), book (5, 6), desk lamp (1, 2), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), house plant (1), pencil (1), remote control (2, 3).
+Act: go to drawer 4
+You arrive at the drawer (4). The drawer (4) is closed. You see alarm clock (1), book (5, 6), desk lamp (1), drawer (1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12), dresser (1), house plant (1), pencil (1), remote control (2, 3).
+Act: open drawer 4
+You open drawer (4). You see alarm clock (1), book (5, 6), desk lamp (1), drawer (1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12), dresser (1), house plant (1), pencil (1), remote control (2, 3).
+Act: go to drawer 5
+You arrive at the drawer (5). The drawer (5) is closed. You see alarm clock (1), book (5, 6), bowl (1), cell phone (1), chair (1), desk lamp (1, 2), dining table (1), drawer (1, 2, 5, 6, 7, 8, 9, 10, 11), dresser (1), house plant (1), painting (2), pencil (1), remote control (3), statue (2), vase (1).
+Act: open drawer 5
+You open drawer (5). You see alarm clock (1), book (5, 6), bowl (1), cell phone (1), chair (1), desk lamp (1, 2), dining table (1), drawer (1, 2, 5, 6, 7, 8, 9, 10, 11), dresser (1), house plant (1), painting (2), pencil (1), remote control (3), statue (2), vase (1).
+Act: go to drawer 6
+You arrive at the drawer (6). The drawer (6) is closed. You see alarm clock (1), book (5, 6), bowl (1), desk lamp (1, 2), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), house plant (1), pencil (1), remote control (2, 3).
+Act: open drawer 6
+You open drawer (6). You see alarm clock (1), book (5, 6), bowl (1), desk lamp (1, 2), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), house plant (1), pencil (1), remote control (2, 3).
+Act: go to drawer 7
+You arrive at the drawer (7). The drawer (7) is closed. You see alarm clock (1), book (5, 6), bowl (1), desk lamp (1, 2), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), house plant (1), pencil (1), remote control (2, 3).
+Act: open drawer 7
+You open drawer (7). You see alarm clock (1), book (5, 6), bowl (1), desk lamp (1, 2), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), house plant (1), pencil (1), remote control (2, 3).
+Act: go to drawer 8
+You arrive at the drawer (8). The drawer (8) is closed. You see alarm clock (1), book (5, 6), bowl (1), desk lamp (1, 2), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), house plant (1), pencil (1), remote control (2, 3), vase (1).
+Act: open drawer 8
+You open drawer (8). You see alarm clock (1), book (5, 6), bowl (1), desk lamp (1, 2), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), house plant (1), pencil (1), remote control (2, 3), vase (1).
+Act: go to drawer 9
+You arrive at the drawer (9). The drawer (9) is closed. You see alarm clock (1), book (5, 6), desk lamp (1, 2), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), house plant (1), pencil (1), remote control (2, 3).
+Act: open drawer 9
+You open drawer (9). You see alarm clock (1), book (5, 6), desk lamp (1, 2), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), house plant (1), key chain (4), pencil (1), remote control (2, 3).
+Act: go to drawer 10
+You arrive at the drawer (10). The drawer (10) is closed. You see alarm clock (1), book (5, 6), desk lamp (1, 2), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), house plant (1), key chain (4), pencil (1), remote control (2, 3).
+Act: open drawer 10
+You open drawer (10). You see alarm clock (1), book (5, 6), desk lamp (1, 2), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), house plant (1), key chain (4), pencil (1), remote control (2, 3).
+Act: go to drawer 11
+You arrive at the drawer (11). The drawer (11) is closed. You see alarm clock (1), book (5, 6), desk lamp (1, 2), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), house plant (1), key chain (4), pencil (1), remote control (2, 3).
+Act: open drawer 11
+You open drawer (11). You see alarm clock (1), book (5, 6), desk lamp (1, 2), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), house plant (1), key chain (4), pencil (1), remote control (2, 3), watch (1).
+Act: go to drawer 12
+You arrive at the drawer (12). The drawer (12) is closed. You see alarm clock (1), book (5, 6), desk lamp (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), house plant (1), key chain (4), pencil (1), remote control (2, 3), watch (1).
+Act: open drawer 12
+You open drawer (12). You see alarm clock (1), book (5, 6), credit card (1), desk lamp (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), house plant (1), key chain (4), pencil (1), remote control (2, 3), watch (1).
+Act: go to dresser 1
+You arrive at the dresser (1). You see alarm clock (1), book (5, 6), bowl (1), credit card (1), desk lamp (1, 2), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), house plant (1), key chain (4), pencil (1), remote control (2, 3), watch (1).
+Think: I need to check whether I see pencil.
+OK.
+Query: find_objects({'label': 'pencil'})
+Info: [{'name_id_nl': 'pencil 2', 'node_type': 'object', 'properties': ['pickupable'], 'states': []}, {'name_id_nl': 'pencil 1', 'node_type': 'object', 'properties': ['pickupable'], 'states': []}]
+Query: get_edges_for_node({'node_id': 'pencil 2'})
+Info: [('pencil 2', 'desk 1', 'ON'), ('pencil 2', 'baseball bat 1', 'CLOSE'), ('pencil 2', 'book 2', 'CLOSE'), ('pencil 2', 'book 3', 'CLOSE'), ('pencil 2', 'box 1', 'CLOSE'), ('pencil 2', 'cell phone 1', 'CLOSE'), ('pencil 2', 'dumbbell 1', 'CLOSE'), ('pencil 2', 'key chain 2', 'CLOSE'), ('pencil 2', 'key chain 1', 'CLOSE'), ('pencil 2', 'mug 1', 'CLOSE'), ('pencil 2', 'shelf 1', 'CLOSE'), ('pencil 2', 'shelf 2', 'CLOSE'), ('pencil 2', 'watch 2', 'CLOSE'), ('pencil 2', 'bedroom 1', 'INSIDE'), ('baseball bat 1', 'pencil 2', 'CLOSE'), ('book 2', 'pencil 2', 'CLOSE'), ('book 3', 'pencil 2', 'CLOSE'), ('box 1', 'pencil 2', 'CLOSE'), ('cell phone 1', 'pencil 2', 'CLOSE'), ('dumbbell 1', 'pencil 2', 'CLOSE'), ('key chain 2', 'pencil 2', 'CLOSE'), ('key chain 1', 'pencil 2', 'CLOSE'), ('mug 1', 'pencil 2', 'CLOSE'), ('shelf 1', 'pencil 2', 'CLOSE'), ('shelf 2', 'pencil 2', 'CLOSE'), ('watch 2', 'pencil 2', 'CLOSE')]
+Think: Pencil 2 is on desk 1.
+OK.
+Act: go to desk 1
+You arrive at the desk (1). You see baseball bat (1), book (2, 3), box (1), cell phone (1), desk (1), dumbbell (1), key chain (1, 2), mug (1), pencil (2), shelf (1, 2), watch (2).
+Act: go to pencil 2
+You arrive at the pencil (2). You see baseball bat (1), book (2, 3), box (1), cell phone (1), desk (1), dumbbell (1), key chain (1, 2), mug (1), pencil (2), shelf (1, 2), watch (2).
+Act: pick up pencil 2
+You pick up pencil (2). You hold pencil (2).
+Think: Now, I need to find and turn on desk lamp.
+OK.
+Query: find_objects({'label': 'desk lamp'})
+Info: [{'name_id_nl': 'desk lamp 2', 'node_type': 'object', 'properties': ['toggleable'], 'states': []}, {'name_id_nl': 'desk lamp 1', 'node_type': 'object', 'properties': ['toggleable'], 'states': []}]
+Think: Desk lamp 1 is in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see TV stand (1), baseball bat (1), basket ball (1), bed (1), chair (1), credit card (1), desk (1), dining table (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), dumbbell (1), key chain (4), painting (1, 2), shelf (1, 2, 3), watch (1). You hold pencil (2).
+Act: go to desk lamp 1
+You arrive at the desk lamp (1). You see alarm clock (1), book (5, 6), credit card (1), desk lamp (1, 2), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), house plant (1), key chain (4), pencil (1), remote control (2, 3), watch (1). You hold pencil (2).
+Act: turn on desk lamp 1
+You turn on desk lamp (1). You hold pencil (2).
+Think: Now I complete the task.
+OK.
+Act: done

@@ -1,0 +1,8 @@
+Your task is to: Remove all the objects from the cabinet and put them on the dining table.
+You arrive at the drawer (1). The drawer (1) is closed. You see box (1), candle (1), credit card (1), desk lamp (1), drawer (1, 2, 3), dresser (1), house plant (1), key chain (1), painting (3, 4), pen (2). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- kitchen 1: [book 1, cabinet 1, countertop 1, fork 1, (fridge 1), painting 1, pen 1, plate 1, pot 1, salt shaker 1, (shelf 2), (shelf 3), (shelf 1), shelving unit 1, soap bottle 1, spray bottle 1, statue 1, vase 1, wine bottle 1]
+- living room 1: [painting 2, television 1, apple 1, book 3, book 2, bottle 1, bowl 2, bowl 1, desk lamp 2, pillow 1, remote control 1, box 1, (box 2), candle 1, credit card 1, desk lamp 1, dining table 1, (drawer 3), (drawer 2), drawer 1, (dresser 1), house plant 1, key chain 1, painting 4, painting 3, pen 2, (sofa 1)]
+Your 5 previous actions were: open cabinet 1 (success), go to vase 1 (success), go to living room 1 (success), go to box 1 (success), go to drawer 1 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: Since drawer 1 is closed, I need to open it to check if there's an object inside.
+Act: open drawer 1

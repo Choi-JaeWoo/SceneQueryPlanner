@@ -1,0 +1,53 @@
+Your task is to: Place the box with the paper item found near the CD on the bed for temporary storage.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a bedroom (1). Looking quickly around the room, you see TV stand (1), baseball bat (1), basket ball (1), bed (1), chair (1), dining table (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14), dresser (1), painting (1, 2), shelf (1, 2, 3, 4, 5, 6), side table (1).
+Think: To solve the task, I need to find and pick up the paper item found near CD, put it in box, pick up and place box on bed.
+OK.
+Think: First, I need to find CD and find the paper item found near CD. The CD is more likely to appear in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see TV stand (1), baseball bat (1), basket ball (1), bed (1), chair (1), dining table (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14), dresser (1), painting (1, 2), shelf (1, 2, 3, 4, 5, 6), side table (1).
+Think: In bedroom 1, the CD is likely to appear in/on TV stand 1, bed 1, chair 1, dining table 1, drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14), dresser 1, shelf (1, 2, 3, 4, 5, 6), side table 1. I can check each place one by one until I find CD.
+OK.
+Act: go to TV stand 1
+You arrive at the TV stand (1). You see TV stand (1), pencil (2), remote control (1), shelf (1, 2, 3, 4, 5, 6), television (1), tissue box (1, 2), watch (1).
+Act: go to bed 1
+You arrive at the bed (1). You see bed (1), pillow (1).
+Act: go to chair 1
+You arrive at the chair (1). You see cell phone (1), chair (1), desk lamp (1), dining table (1), mug (1), pencil (1), statue (1), tennis racket (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see CD (1), book (1), cell phone (1, 2, 3), chair (1), credit card (1), desk lamp (1), dining table (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), house plant (1), mug (1), pencil (1), statue (1), tennis racket (1).
+Think: I find CD 1. Now, I need to move to CD 1 to find the paper item found near CD.
+OK.
+Act: go to CD 1
+You arrive at the CD (1). You see CD (1), book (1), cell phone (2, 3), credit card (1), drawer (1, 2, 5, 6, 7, 8, 9, 10, 11), dresser (1), house plant (1), painting (1).
+Think: The paper item found near CD 1 is book 1. Now, I need to pick it up.
+OK.
+Act: go to book 1
+You arrive at the book (1). The book (1) is closed. You see CD (1), book (1), cell phone (2, 3), credit card (1), drawer (1, 2, 5, 6, 7, 8, 9, 10, 11), dresser (1), house plant (1), painting (1).
+Act: pick up book 1
+You pick up book (1). You hold book (1).
+Think: Now, I need to find box and put down book 1. The box is more likely to appear in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see box (1), chair (7), dining table (3), television (2). You hold book (1).
+Act: go to box 1
+You arrive at the box (1). The box (1) is open. You see box (1), statue (2), television (2). You hold book (1).
+Act: put down book 1
+You put book (1) in box (1).
+Think: Now, I need to pick up box 1.
+OK.
+Act: pick up box 1
+You pick up box (1). You hold box (1).
+Think: Now, I need to find bed and put down box 1. The bed is more likely to appear in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see TV stand (1), baseball bat (1), basket ball (1), bed (1), chair (1), dining table (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14), dresser (1), painting (1, 2), shelf (1, 2, 3, 4, 5, 6), side table (1). You hold box (1).
+Act: go to bed 1
+You arrive at the bed (1). You see bed (1), book (1), pillow (1). You hold box (1).
+Think: Now, I need to put down box 1.
+OK.
+Act: put down box 1
+You put box (1) in bed (1).
+Think: Now I complete the task.
+OK.
+Act: done

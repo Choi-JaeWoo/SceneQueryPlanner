@@ -1,0 +1,43 @@
+Your task is to: Take all the objects off the toilet and place them on the dining table.
+You are in the house, and there are 7 rooms: bathroom (1), bedroom (1, 2, 3), kitchen (1), living room (1, 2). You are in the middle of a kitchen (1). Looking quickly around the room, you see chair (1), countertop (1), dining table (1).
+Think: To solve the task, I need to find toilet and check what is on top of it. Then, I need to move everything on toilet to dining table.
+OK.
+Think: First, I need to find toilet.
+OK.
+Query: find_objects({'label': 'toilet'})
+Info: [{'name_id_nl': 'toilet 1', 'node_type': 'asset', 'properties': ['openable'], 'states': [], 'room': 'bathroom 1'}]
+Think: I find toilet 1.
+OK.
+Act: go to bathroom 1
+You move to the bathroom (1). Looking quickly around the room, you see drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), garbage can (2), sink (1), sink basin (1), toilet (1).
+Act: go to toilet 1
+You arrive at the toilet (1). The toilet (1) is closed. You see garbage can (2), toilet (1), toilet paper (1).
+Think: Now, I need to check what is on top of toilet 1.
+OK.
+Query: get_edges_for_node({'node_id': 'toilet 1', 'relation': 'ON'})
+Info: [('toilet paper 1', 'toilet 1', 'ON')]
+Think: Now, I need to move toilet paper 1 to dining table.
+OK.
+Act: go to toilet paper 1
+You arrive at the toilet paper (1). You see garbage can (2), toilet (1), toilet paper (1).
+Act: pick up toilet paper 1
+You pick up toilet paper (1). You hold toilet paper (1).
+Think: Now, I need to find dining table.
+OK.
+Query: find_objects({'label': 'dining table'})
+Info: [{'name_id_nl': 'dining table 4', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'bedroom 2'}, {'name_id_nl': 'dining table 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'kitchen 1'}, {'name_id_nl': 'dining table 2', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}, {'name_id_nl': 'dining table 3', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 2'}]
+Think: I find dining table 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see chair (1), countertop (1), dining table (1). You hold toilet paper (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see apple (1), chair (1), cup (1), dining table (1), fork (1), mug (1), plate (1), salt shaker (1), spray bottle (1), tomato (1), vase (1), wine bottle (1). You hold toilet paper (1).
+Act: put down toilet paper 1
+You put toilet paper (1) in dining table (1).
+Think: Now I need to check what's left on toilet 1.
+OK.
+Query: get_edges_for_node({'node_id': 'toilet 1', 'relation': 'ON'})
+Info: 
+Think: Now I complete the task.
+OK.
+Act: done

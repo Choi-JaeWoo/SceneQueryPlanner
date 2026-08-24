@@ -1,0 +1,101 @@
+Your task is to: Put 1 cupcake, 1 pancake, 1 wine, and 1 pudding on the kitchen table.
+You are in the house, and there are 4 rooms: bathroom 1, bedroom 1, kitchen 1, living room 1. You are in the middle of a bedroom 1. Looking quickly around the room, you see bed 1, bookshelf 1, chair (1, 2), closet 1, coffee table 1, nightstand 1.
+Think: To solve the task, I need to find and pick up cupcake, find kitchen table and put down cupcake, find and pick up pancake, find kitchen table and put down pancake, find and pick up wine, find kitchen table and put down wine, find and pick up pudding, find kitchen table and put down pudding.
+OK.
+Think: First, I need to find and pick up cupcake.
+OK.
+Query: find_objects({'label': 'cupcake'})
+Info: 
+Think: I have not seen cupcake yet. Now I need to check where to search. First, I will search kitchen 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'kitchen 1', 'child_node_attrs': {'visited': False}})
+Info: bench (1, 2), bookshelf 2, clock 1, faucet 2, fridge 1, kitchen counter 1, kitchen table 1, light switch 3, microwave oven 1, oven tray 1, plate 2, sink 2, slice of bread (1, 2), stove 1, toaster 1, tv 1
+Think: In kitchen 1, the cupcake is likely to appear in/on fridge 1, kitchen counter 1, kitchen table 1. I can check each place one by one until I find it.
+OK.
+Act: go to kitchen 1
+You move to the kitchen 1. Looking quickly around the room, you see bench (1, 2), bookshelf 2, faucet 2, fridge 1, kitchen counter 1, kitchen table 1, microwave oven 1, sink 2, stove 1, toaster 1, tv 1.
+Act: go to fridge 1
+You arrive at the fridge 1. The fridge 1 is closed. You see bench 2, cutting board 2, fridge 1, frying pan 1, kitchen counter 1, microwave oven 1, stove 1.
+Act: open fridge 1
+You open fridge 1. You see apple 2, bench 2, cupcake 1, cutting board 2, dishwashing liquid 1, fridge 1, frying pan 1, kitchen counter 1, microwave oven 1, pudding 1, stove 1
+Act: go to kitchen counter 1
+You arrive at the kitchen counter 1. You see bench 2, bucket 1, carrot 1, cutting board 2, faucet 2, kitchen counter 1, microwave oven 1, milk (1, 2), sink 2, toaster 1, washing sponge 1.
+Act: go to kitchen table 1
+You arrive at the kitchen table 1. You see bench (1, 2), chips 1, condiment shaker 1, kitchen table 1, light switch 3, mug 2, salad 1, wine 1.
+Think: I find cupcake 1. Now, I need to pick it up.
+OK.
+Act: pick up cupcake 1
+You can't pick up cupcake 1 because it's not close to you.
+Act: go to cupcake 1
+You arrive at the cupcake 1. You see apple 2, cupcake 1, cutting board 2, dishwashing liquid 1, fridge 1, frying pan 1, kitchen counter 1, microwave oven 1, pudding 1, stove 1.
+Act: pick up cupcake 1
+You pick up cupcake 1. You hold cupcake 1.
+Think: Now I need to find kitchen table and put down cupcake 1.
+OK.
+Act: go to kitchen table 1
+You arrive at the kitchen table 1. You see bench (1, 2), chips 1, condiment shaker 1, cupcake 1, kitchen table 1, light switch 3, mug 2, salad 1, wine 1. You hold cupcake 1.
+Act: put down cupcake 1
+You put cupcake 1 on kitchen table 1.
+Think: Now I need to find and pick up pancake.
+OK.
+Query: find_objects({'label': 'pancake'})
+Info: [{'name_id_nl': 'pancake 1', 'node_type': 'object', 'properties': ['GRABBABLE', 'EATABLE', 'CUTTABLE', 'MOVABLE'], 'states': []}]
+Query: get_edges_for_node({'node_id': 'pancake 1'})
+Info: [('pancake 1', 'bedroom 1', 'INSIDE'), ('pancake 1', 'coffee table 1', 'ON')]
+Think: Pancake 1 is on coffee table 1 in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom 1. Looking quickly around the room, you see bed 1, bookshelf 1, chair (1, 2), closet 1, coffee table 1, nightstand 1.
+Act: go to coffee table 1
+You arrive at the coffee table 1. You see Chinese food 1, apple 1, bed 1, coffee pot (1, 2), coffee table 1, pancake 1.
+Act: pick up pancake 1
+You pick up pancake 1. You hold pancake 1.
+Think: Now I need to find kitchen table and put down pancake 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen 1. Looking quickly around the room, you see bench (1, 2), bookshelf 2, faucet 2, fridge 1, kitchen counter 1, kitchen table 1, microwave oven 1, sink 2, stove 1, toaster 1, tv 1. You hold pancake 1.
+Act: go to kitchen table 1
+You arrive at the kitchen table 1. You see bench (1, 2), chips 1, condiment shaker 1, cupcake 1, kitchen table 1, light switch 3, mug 2, pancake 1, salad 1, wine 1. You hold pancake 1.
+Act: put down pancake 1
+You put pancake 1 on kitchen table 1.
+Think: Now I need to find and pick up wine.
+OK.
+Query: find_objects({'label': 'wine'})
+Info: [{'name_id_nl': 'wine 1', 'node_type': 'object', 'properties': ['GRABBABLE', 'DRINKABLE', 'POURABLE', 'MOVABLE'], 'states': []}]
+Query: get_edges_for_node({'node_id': 'wine 1'})
+Info: [('wine 1', 'kitchen 1', 'INSIDE'), ('wine 1', 'bench 1', 'ON'), ('wine 1', 'tv 1', 'FACING'), ('wine 1', 'user 1', 'CLOSE'), ('user 1', 'wine 1', 'CLOSE')]
+Think: Wine 1 is on bench 1 in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen 1. Looking quickly around the room, you see bench (1, 2), bookshelf 2, faucet 2, fridge 1, kitchen counter 1, kitchen table 1, microwave oven 1, sink 2, stove 1, toaster 1, tv 1.
+Act: go to bench 1
+You arrive at the bench 1. You see bench 1, chips 1, condiment shaker 1, cupcake 1, kitchen table 1, mug 2, salad 1, wine 1.
+Act: pick up wine 1
+You pick up wine 1. You hold wine 1.
+Think: Now I need to find kitchen table and put down wine 1.
+OK.
+Act: go to kitchen table 1
+You arrive at the kitchen table 1. You see bench (1, 2), chips 1, condiment shaker 1, cupcake 1, kitchen table 1, light switch 3, mug 2, pancake 1, salad 1, wine 1. You hold wine 1.
+Act: put down wine 1
+You put wine 1 on kitchen table 1.
+Think: Now I need to find and pick up pudding.
+OK.
+Query: find_objects({'label': 'pudding'})
+Info: [{'name_id_nl': 'pudding 1', 'node_type': 'object', 'properties': ['GRABBABLE', 'EATABLE', 'CUTTABLE', 'MOVABLE'], 'states': []}]
+Query: get_edges_for_node({'node_id': 'pudding 1'})
+Info: [('pudding 1', 'kitchen 1', 'INSIDE'), ('pudding 1', 'fridge 1', 'INSIDE')]
+Think: Pudding 1 is in fridge 1 in kitchen 1.
+OK.
+Act: go to fridge 1
+You arrive at the fridge 1. The fridge 1 is open. You see apple 2, bench 2, cutting board 2, dishwashing liquid 1, fridge 1, frying pan 1, kitchen counter 1, microwave oven 1, pudding 1, stove 1.
+Act: pick up pudding 1
+You pick up pudding 1. You hold pudding 1.
+Think: Now I need to find kitchen table and put down pudding 1.
+OK.
+Act: go to kitchen table 1
+You arrive at the kitchen table 1. You see bench (1, 2), chips 1, condiment shaker 1, cupcake 1, kitchen table 1, light switch 3, mug 2, pancake 1, pudding 1, salad 1, wine 1. You hold pudding 1.
+Act: put down pudding 1
+You put pudding 1 on kitchen table 1.
+Think: Now I complete the task.
+OK.
+Act: done

@@ -1,0 +1,61 @@
+Your task is to: Place the pencil in a box, then put the box at the location with the credit card.
+You are in the house, and there are 5 rooms: bathroom (1), bedroom (1, 2), kitchen (1), living room (1). You are in the middle of a bedroom (2). Looking quickly around the room, you see TV stand (3), armchair (1), basket ball (1), bed (2), box (1), cabinet (1, 2, 3, 4), drawer (7, 8, 9, 10), dresser (2), floor lamp (1), painting (2, 3, 4), shelf (8).
+Think: To solve the task, I need to find and pick up pencil, put it in box, pick up and place box at the location with credit card.
+OK.
+Think: First, I need to find and pick up pencil.
+OK.
+Query: find_objects({'label': 'pencil'})
+Info: 
+Think: I have not seen pencil yet. Now I need to check where to search. First, I will search living room 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'living room 1'})
+Info: TV stand 1, box 2, dining table 1, shelf (1, 2, 3, 4, 5, 6)
+Think: In living room 1, the pencil is likely to appear in/on TV stand 1, dining table 1, shelf (1, 2, 3, 4, 5, 6). I can check each place one by one until I find pencil.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), dining table (1), shelf (1, 2, 3, 4, 5, 6).
+Act: go to TV stand 1
+You arrive at the TV stand (1). You see TV stand (1), bowl (1), box (2), candle (1, 2), house plant (2), shelf (1, 2, 3, 4, 5, 6), television (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see credit card (1), dining table (1), pencil (1), remote control (1), statue (1).
+Think: I find pencil 1. Now, I need to pick it up.
+OK.
+Act: go to pencil 1
+You arrive at the pencil (1). You see credit card (1), dining table (1), pencil (1), remote control (1), statue (1).
+Act: pick up pencil 1
+You pick up pencil (1). You hold pencil (1).
+Think: Now, I need to find box and put down pencil 1.
+OK.
+Query: find_objects({'label': 'box'})
+Info: [{'name_id_nl': 'box 1', 'node_type': 'asset', 'properties': ['openable', 'pickupable'], 'states': ['isOpen'], 'room': 'bedroom 2'}, {'name_id_nl': 'box 3', 'node_type': 'asset', 'properties': ['openable', 'pickupable'], 'states': [], 'room': 'bedroom 1'}, {'name_id_nl': 'box 2', 'node_type': 'asset', 'properties': ['openable', 'pickupable'], 'states': [], 'room': 'living room 1'}]
+Think: Box 2 is in living room 1.
+OK.
+Act: go to box 2
+You arrive at the box (2). The box (2) is closed. You see TV stand (1), bowl (1), box (2), candle (1, 2), house plant (2), shelf (1, 2, 3, 4, 5, 6), television (1). You hold pencil (1).
+Think: Since box 2 is closed, I need to open it to put down pencil 1.
+OK.
+Act: open box 2
+You open box (2). You see TV stand (1), bowl (1), box (2), candle (1, 2), house plant (2), shelf (1, 2, 3, 4, 5, 6), television (1). You hold pencil (1).
+Act: put down pencil 1
+You put pencil (1) in box (2).
+Think: Now, I need to pick up box 2.
+OK.
+Act: pick up box 2
+You pick up box (2). You hold box (2).
+Think: Now, I need to find credit card and check the receptacle where credit card is located.
+OK.
+Query: find_objects({'label': 'credit card'})
+Info: [{'name_id_nl': 'credit card 1', 'node_type': 'object', 'properties': ['pickupable'], 'states': []}]
+Query: get_edges_for_node({'node_id': 'credit card 1'})
+Info: [('credit card 1', 'dining table 1', 'ON'), ('credit card 1', 'remote control 1', 'CLOSE'), ('credit card 1', 'statue 1', 'CLOSE'), ('credit card 1', 'living room 1', 'INSIDE'), ('remote control 1', 'credit card 1', 'CLOSE'), ('statue 1', 'credit card 1', 'CLOSE')]
+Think: Credit card 1 is on dining table 1 in living room 1. Now, I need to move to dining table 1 and put down box 2.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), dining table (1), pencil (1), shelf (1, 2, 3, 4, 5, 6). You hold box (2).
+Act: go to dining table 1
+You arrive at the dining table (1). You see credit card (1), dining table (1), pencil (1), remote control (1), statue (1). You hold box (2).
+Act: put down box 2
+You put box (2) in dining table (1).
+Think: Now I complete the task.
+OK.
+Act: done

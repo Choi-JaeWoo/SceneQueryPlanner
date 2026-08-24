@@ -1,0 +1,51 @@
+Your task is to: pudding and 1juice should always be for brunch and on the coffee table.
+You are in the house, and there are 4 rooms: bathroom 1, bedroom 1, kitchen 1, living room 1. You are in the middle of a kitchen 1. Looking quickly around the room, you see bench (1, 2), bookshelf 2, faucet 2, fridge 1, kitchen counter 1, kitchen table 1, microwave oven 1, sink 2, stove 1, toaster 1, tv 1.
+Think: To solve the task, I need to find and pick up pudding, find and pick up 1juice, find coffee table and put down pudding, find coffee table and put down 1juice.
+OK.
+Think: First, I need to find and pick up pudding. The pudding is more likely to appear in kitchen 1.
+OK.
+Think: In kitchen 1, the pudding is likely to appear in/on bench (1, 2), fridge 1, kitchen counter 1, kitchen table 1, microwave oven 1, sink 2, stove 1, toaster 1. I can check each place one by one until I find pudding.
+OK.
+Act: go to bench 1
+You arrive at the bench 1. You see bench 1, chips 1, condiment shaker 1, cutlery fork 1, cutlery knife 1, kitchen table 1, mug 2, plate 2, salad 1, water glass (2, 3).
+Act: go to bench 2
+You arrive at the bench 2. You see bench 2, chips 1, condiment shaker 1, cutlery fork 2, cutlery knife 2, kitchen table 1, mug 2, plate 3, salad 1, water glass (2, 3).
+Act: go to fridge 1
+You arrive at the fridge 1. The fridge 1 is closed. You see bench 2, coffee pot 2, cutting board 2, fridge 1, frying pan 1, kitchen counter 1, microwave oven 1, stove 1.
+Act: open fridge 1
+You open fridge 1. You see bench 2, coffee pot 2, cutting board 2, dishwashing liquid 1, fridge 1, frying pan 1, juice (1, 2), kitchen counter 1, microwave oven 1, pudding 2, stove 1
+Think: I find pudding 2. Now, I need to pick it up.
+OK.
+Act: pick up pudding 2
+You pick up pudding 2. You hold pudding 2.
+Think: Now, I need to find and pick up 1juice. In kitchen 1, the 1juice is likely to appear in/on bench (1, 2), fridge 1, kitchen counter 1, kitchen table 1, microwave oven 1, sink 2, stove 1, toaster 1. I can check each place one by one until I find 1juice.
+OK.
+Act: go to bench 1
+You arrive at the bench 1. You see bench 1, chips 1, condiment shaker 1, cutlery fork 1, cutlery knife 1, kitchen table 1, mug 2, plate 2, pudding 2, salad 1, water glass (2, 3). You hold pudding 2.
+Act: go to bench 2
+You arrive at the bench 2. You see bench 2, chips 1, condiment shaker 1, cutlery fork 2, cutlery knife 2, kitchen table 1, mug 2, plate 3, pudding 2, salad 1, water glass (2, 3). You hold pudding 2.
+Act: go to fridge 1
+You arrive at the fridge 1. The fridge 1 is open. You see bench 2, coffee pot 2, cutting board 2, dishwashing liquid 1, fridge 1, frying pan 1, juice (1, 2), kitchen counter 1, microwave oven 1, pudding 2, stove 1. You hold pudding 2.
+Think: I find 1juice 1. Now, I need to pick it up.
+OK.
+Act: pick up juice 1
+You pick up juice 1. You hold juice 1, pudding 2.
+Think: Now, I need to find coffee table and put down pudding.
+OK.
+Think: I have not seen coffee table yet. The coffee table is likely to appear in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room 1. Looking quickly around the room, you see bookshelf 3, cabinet 1, chair 3, closet 2, coffee table 2, computer 1, desk 1, sofa 1. You hold juice 1, pudding 2.
+Think: I can see coffee table 2.
+OK.
+Act: go to coffee table 2
+You arrive at the coffee table 2. You see coffee table 2, juice 1, pudding 2, sofa 1. You hold juice 1, pudding 2.
+Act: put down pudding 2
+You put pudding 2 on coffee table 2. You hold juice 1.
+Think: Now, I need to find coffee table and put down 1juice.
+OK.
+Act: put down juice 1
+You put juice 1 on coffee table 2.
+Think: Now I complete the task.
+OK.
+Act: done

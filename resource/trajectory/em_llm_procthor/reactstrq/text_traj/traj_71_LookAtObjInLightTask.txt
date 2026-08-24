@@ -1,0 +1,37 @@
+Your task is to: Examine the cloth with the candle lit.
+You are in the house, and there are 1 rooms: bathroom (1). You are in the middle of a bathroom (1). Looking quickly around the room, you see painting (1, 2), sink (1), sink basin (1), toilet (1).
+Think: To solve the task, I need to find and pick up cloth, find and turn on candle to examine cloth.
+OK.
+Think: First, I need to find and pick up cloth.
+OK.
+Query: find_objects({'label': 'cloth'})
+Info: 
+Think: I have not seen cloth yet. Now I need to check where to search. First, I will search bathroom 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'bathroom 1'})
+Info: sink 1, sink basin 1, toilet 1
+Think: In bathroom 1, the cloth is likely to appear in/on toilet 1, sink 1, sink basin 1. I can check each place one by one until I find cloth.
+OK.
+Act: go to toilet 1
+You arrive at the toilet (1). The toilet (1) is closed. You see candle (1), cloth (1), painting (2), toilet (1), toilet paper (1).
+Act: open toilet 1
+You open toilet (1). You see candle (1), cloth (1), painting (2), toilet (1), toilet paper (1).
+Act: go to cloth 1
+You arrive at the cloth (1). You see candle (1), cloth (1), painting (2), toilet (1), toilet paper (1).
+Act: pick up cloth 1
+You pick up cloth (1). You hold cloth (1).
+Think: Now I need to find and turn on candle.
+OK.
+Query: find_objects({'label': 'candle'})
+Info: [{'name_id_nl': 'candle 1', 'node_type': 'object', 'properties': ['toggleable', 'pickupable'], 'states': []}]
+Query: get_edges_for_node({'node_id': 'candle 1'})
+Info: [('candle 1', 'toilet 1', 'ON'), ('candle 1', 'cloth 1', 'CLOSE'), ('candle 1', 'toilet paper 1', 'CLOSE'), ('candle 1', 'user 1', 'CLOSE'), ('candle 1', 'bathroom 1', 'INSIDE'), ('cloth 1', 'candle 1', 'CLOSE'), ('toilet paper 1', 'candle 1', 'CLOSE'), ('user 1', 'candle 1', 'CLOSE')]
+Think: Candle 1 is on toilet 1.
+OK.
+Act: go to candle 1
+You arrive at the candle (1). You see candle (1), painting (2), toilet (1), toilet paper (1). You hold cloth (1).
+Act: turn on candle 1
+You turn on candle (1). You hold cloth (1).
+Think: Now I complete the task.
+OK.
+Act: done

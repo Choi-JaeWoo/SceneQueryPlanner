@@ -1,0 +1,7 @@
+Your task is to: Collect a key chain and a cell phone and place them in the box.
+You put key chain (1) in box (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- living room 1: [painting 1, bowl 1, laptop 1, (box 2), box 1, candle 1, cell phone 1, (dining table 1), house plant 1, key chain 1, newspaper 1, painting 2, plate 1, television 1]
+Your 5 previous actions were: go to living room 1 (success), go to key chain 1 (success), pick up key chain 1 (success), go to box 1 (success), put down key chain 1 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I put down key chain 1. Now, I need to find cell phone to pick it up. Cell phone 1 is in living room 1.
+Act: go to cell phone 1

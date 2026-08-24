@@ -1,0 +1,95 @@
+Your task is to: Hold the remote control and turn on the floor lamp for illumination.
+You are in the house, and there are 6 rooms: bathroom (1, 2), bedroom (1, 2), kitchen (1), living room (1). You are in the middle of a bathroom (2). Looking quickly around the room, you see garbage can (2), sink (2), sink basin (2), toilet (2).
+Think: To solve the task, I need to find and pick up remote control, find and turn on floor lamp.
+OK.
+Think: First, I need to find and pick up remote control. The remote control is more likely to appear in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see chair (2), dining table (1), floor lamp (1), house plant (1), television (2).
+Think: In living room 1, the remote control is likely to appear in/on chair 2, dining table 1, floor lamp 1, television 2. I can check each place one by one until I find remote control.
+OK.
+Act: go to chair 2
+You arrive at the chair (2). You see book (5, 6), chair (2), dining table (1), floor lamp (1), pen (1), plate (1), statue (3).
+Think: I find remote control 1. Now, I need to pick it up.
+OK.
+Act: go to book 5
+You arrive at the book (5). The book (5) is closed. You see book (5, 6), chair (2), dining table (1), floor lamp (1), pen (1), plate (1), statue (3).
+Act: open book 5
+You open book (5). You see book (5, 6), chair (2), dining table (1), floor lamp (1), pen (1), plate (1), statue (3).
+Act: go to book 6
+You arrive at the book (6). The book (6) is closed. You see book (5, 6), chair (2), dining table (1), floor lamp (1), pen (1), plate (1), statue (3).
+Act: open book 6
+You open book (6). You see book (5, 6), chair (2), dining table (1), floor lamp (1), pen (1), plate (1), statue (3).
+Act: go to pen 1
+You arrive at the pen (1). You see book (5, 6), chair (2), dining table (1), house plant (1), pen (1), plate (1), statue (3).
+Act: go to plate 1
+You arrive at the plate (1). You see book (5, 6), chair (2), dining table (1), house plant (1), pen (1), plate (1), statue (3).
+Act: go to statue 3
+You arrive at the statue (3). You see cabinet (1), shelf (1, 2, 3), shelving unit (1), statue (2).
+Act: go to cabinet 1
+You arrive at the cabinet (1). The cabinet (1) is closed. You see cabinet (1), coffee machine (1), credit card (2), house plant (3), ladle (1), shelf (1, 2, 3), shelving unit (1), statue (2).
+Act: open cabinet 1
+You open cabinet (1). You see book (4), cabinet (1), coffee machine (1), credit card (2), house plant (3), ladle (1), shelf (1, 2, 3), shelving unit (1), spray bottle (3), statue (2).
+Act: go to book 4
+You arrive at the book (4). The book (4) is closed. You see book (4), cabinet (1), coffee machine (1), credit card (2), house plant (3), ladle (1), shelf (1, 2, 3), shelving unit (1), spray bottle (3), statue (2).
+Act: open book 4
+You open book (4). You see book (4), cabinet (1), coffee machine (1), credit card (2), house plant (3), ladle (1), shelf (1, 2, 3), shelving unit (1), spray bottle (3), statue (2).
+Act: go to coffee machine 1
+You arrive at the coffee machine (1). You see book (3, 4), cabinet (1), coffee machine (1), credit card (2), egg (3), fridge (1), house plant (3), ladle (1), shelf (1, 2), spray bottle (3), statue (2), wine bottle (1).
+Act: go to credit card 2
+You arrive at the credit card (2). You see book (3, 4), cabinet (1), coffee machine (1), credit card (2), egg (3), fridge (1), house plant (3), ladle (1), shelf (1, 2), spray bottle (3), statue (2), wine bottle (1).
+Act: go to house plant 3
+You arrive at the house plant (3). You see book (3, 4), cabinet (1), coffee machine (1), credit card (2), egg (3), fridge (1), house plant (3), ladle (1), shelf (1, 2), spray bottle (3), statue (2), wine bottle (1).
+Act: go to ladle 1
+You arrive at the ladle (1). You see book (3), bowl (2), butter knife (1), coffee machine (1), credit card (2), dish sponge (1), house plant (3), ladle (1), mug (1), pencil (3), soap bottle (1), statue (1), toaster (1), wine bottle (1).
+Act: go to shelf 1
+You arrive at the shelf (1). You see book (4), cabinet (1), coffee machine (1), credit card (2), house plant (3), ladle (1), shelf (1, 2, 3), shelving unit (1), spray bottle (3), statue (2).
+Act: go to shelf 2
+You arrive at the shelf (2). You see book (4), cabinet (1), coffee machine (1), credit card (2), house plant (3), ladle (1), shelf (1, 2, 3), shelving unit (1), spray bottle (3), statue (2).
+Act: go to shelf 3
+You arrive at the shelf (3). You see book (4), cabinet (1), coffee machine (1), ladle (1), shelf (1, 2, 3), shelving unit (1), spray bottle (3), statue (2).
+Act: go to shelving unit 1
+You arrive at the shelving unit (1). 
+Act: go to book 2
+You arrive at the book (2). The book (2) is closed. You see CD (2), bed (3), book (2), drawer (4, 5, 6), dresser (2), pencil (2), pillow (2), remote control (5), vase (2).
+Act: open book 2
+You open book (2). You see CD (2), bed (3), book (2), drawer (4, 5, 6), dresser (2), pencil (2), pillow (2), remote control (5), vase (2).
+Act: go to CD 2
+You arrive at the CD (2). You see CD (2), bed (3), book (2), drawer (4, 5, 6), dresser (2), pencil (2), pillow (2), remote control (5), vase (2).
+Act: go to bed 3
+You arrive at the bed (3). You see CD (2), bed (3), book (2), drawer (4, 5, 6), dresser (2), pencil (2), pillow (2), remote control (5), vase (2).
+Act: go to drawer 4
+You arrive at the drawer (4). The drawer (4) is closed. You see CD (2), bed (3), book (2), drawer (4, 5, 6), dresser (2), pencil (2), pillow (2), remote control (5), vase (2).
+Act: open drawer 4
+You open drawer (4). You see CD (2), bed (3), book (2), drawer (4, 5, 6), dresser (2), pencil (2), pillow (2), remote control (5), vase (2).
+Act: go to drawer 5
+You arrive at the drawer (5). The drawer (5) is closed. You see CD (2), bed (3), book (2), drawer (4, 5, 6), dresser (2), pencil (2), pillow (2), remote control (5), vase (2).
+Act: open drawer 5
+You open drawer (5). You see CD (2), bed (3), book (2), drawer (4, 5, 6), dresser (2), pencil (2), pillow (2), remote control (5), vase (2).
+Act: go to drawer 6
+You arrive at the drawer (6). The drawer (6) is closed. You see CD (2), bed (3), book (2), drawer (4, 5, 6), dresser (2), pencil (2), pillow (2), remote control (5), vase (2).
+Act: open drawer 6
+You open drawer (6). You see CD (2), bed (3), book (2), drawer (4, 5, 6), dresser (2), pencil (2), pillow (2), remote control (5), vase (2).
+Act: go to dresser 2
+You arrive at the dresser (2). You see CD (2), bed (3), book (2), drawer (4, 5, 6), dresser (2), pencil (2), pillow (2), remote control (5), vase (2).
+Act: go to pencil 2
+You arrive at the pencil (2). You see CD (2), bed (3), book (2), drawer (4, 5, 6), dresser (2), pencil (2), pillow (2), remote control (5), vase (2).
+Act: go to pillow 2
+You arrive at the pillow (2). You see bed (3), pillow (2), remote control (5).
+Act: go to remote control 5
+You arrive at the remote control (5). You see CD (2), bed (3), book (2), drawer (4, 5, 6), dresser (2), pencil (2), pillow (2), remote control (5), vase (2).
+Act: pick up remote control 5
+You pick up remote control (5). You hold remote control (5).
+Think: Now I need to find and turn on floor lamp. The floor lamp is more likely to appear in living room 1.
+OK.
+Act: go to vase 2
+You arrive at the vase (2). You see book (5, 6), chair (2), dining table (1), pen (1), plate (1), statue (3), television (2). You hold remote control (5).
+Act: go to dining table 1
+You arrive at the dining table (1). You see book (5, 6), chair (2), dining table (1), house plant (1), pen (1), plate (1), statue (3). You hold remote control (5).
+Act: go to floor lamp 1
+You arrive at the floor lamp (1). You see book (5, 6), chair (2), dining table (1), floor lamp (1), pen (1), statue (3). You hold remote control (5).
+Act: turn on floor lamp 1
+You turn on floor lamp (1). You hold remote control (5).
+Think: Now I complete the task.
+OK.
+Act: done

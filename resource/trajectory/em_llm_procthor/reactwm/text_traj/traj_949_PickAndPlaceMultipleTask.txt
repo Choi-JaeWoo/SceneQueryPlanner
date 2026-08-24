@@ -1,0 +1,85 @@
+Your task is to: Place a book and a pen together on the countertop.
+You are in the house, and there are 5 rooms: bathroom (1), bedroom (1, 2), kitchen (1), living room (1). You are in the middle of a living room (1). Looking quickly around the room, you see armchair (1), dining table (1), floor lamp (1), side table (1), sofa (1), television (1).
+Think: To solve the task, I need to find and pick up book, then put it on countertop. And I need to find and pick up pen, then put it on countertop.
+OK.
+Think: First, I need to find and pick up book.
+OK.
+Query: recall location of book
+You have not seen book before.
+Think: I have not seen book yet. The book is more likely to appear in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see bed (1, 2), drawer (1, 2, 3, 4, 5, 6), dresser (1), house plant (1).
+Think: In bedroom 1, the book is likely to appear in/on bed (1, 2), drawer (1, 2, 3, 4, 5, 6), dresser 1. I can check each place one by one until I find book.
+OK.
+Act: go to bed 1
+You arrive at the bed (1). You see alarm clock (1), bed (1, 2), book (1), laptop (1), pillow (1).
+Think: I find book 1. Now, I need to pick it up.
+OK.
+Act: go to book 1
+You arrive at the book (1). The book (1) is closed. You see alarm clock (1), bed (1, 2), book (1), laptop (1), pillow (1).
+Act: pick up book 1
+You pick up book (1). You hold book (1).
+Think: Now, I need to find countertop and put down book 1.
+OK.
+Query: recall location of countertop
+You saw countertop 1 in kitchen 1.
+Think: Countertop 1 is in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see cabinet (1), countertop (1), fridge (1), painting (3, 4), shelf (1, 2, 3), shelving unit (1). You hold book (1).
+Act: go to countertop 1
+You arrive at the countertop (1). You see bowl (1), butter knife (1), coffee machine (1), countertop (1), cup (1), dish sponge (1), house plant (3), pepper shaker (1), soap bottle (1), spray bottle (1). You hold book (1).
+Act: put down book 1
+You put book (1) in countertop (1).
+Think: Now, I need to find and pick up pen.
+OK.
+Query: recall location of pen
+You have not seen pen before.
+Think: I have not seen pen yet. The pen is more likely to appear in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see armchair (1), dining table (1), floor lamp (1), side table (1), sofa (1), television (1).
+Think: In living room 1, the pen is likely to appear in/on armchair 1, dining table 1, side table 1, sofa 1. I can check each place one by one until I find pen.
+OK.
+Act: go to armchair 1
+You arrive at the armchair (1). You see armchair (1), floor lamp (1), laptop (3), newspaper (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see book (4, 5), cell phone (2), dining table (1), pen (2), plate (1), side table (1), vase (2).
+Act: go to side table 1
+You arrive at the side table (1). You see book (4, 5), cell phone (2), dining table (1), floor lamp (1), pen (2), plate (1), side table (1), vase (2).
+Act: go to sofa 1
+You arrive at the sofa (1). You see laptop (3), newspaper (1), sofa (1), television (1).
+Think: There is no pen in living room 1. I need to move to bedroom 2.
+OK.
+Act: go to bedroom 2
+You move to the bedroom (2). Looking quickly around the room, you see baseball bat (1), basket ball (1), bed (3, 4), chair (1), desk (1), dog bed (1), drawer (7, 8, 9, 10, 11, 12), dresser (2), house plant (2), painting (2).
+Think: In bedroom 2, the pen is likely to appear in/on bed (3, 4), chair 1, desk 1, drawer (7, 8, 9, 10, 11, 12), dresser 2. I can check each place one by one until I find pen.
+OK.
+Act: go to bed 3
+You arrive at the bed (3). You see baseball bat (1), bed (3), cell phone (1), credit card (1), desktop (1), pen (1).
+Think: I find pen 1. Now, I need to pick it up.
+OK.
+Act: go to pen 1
+You arrive at the pen (1). You see armchair (1), book (5), cell phone (2), floor lamp (1).
+Act: pick up pen 2
+Pick up action failed: The target object is not within the visible range.
+Act: go to pen 2
+You arrive at the pen (2). You see armchair (1), book (4, 5), cell phone (2), dining table (1), floor lamp (1), pen (2), vase (2).
+Act: pick up pen 2
+You pick up pen (2). You hold pen (2).
+Think: Now, I need to find countertop and put down pen 2.
+OK.
+Query: recall location of countertop
+You saw countertop 1 in kitchen 1.
+Think: Countertop 1 is in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see cabinet (1), countertop (1), fridge (1), painting (3, 4), shelf (1, 2, 3), shelving unit (1). You hold pen (2).
+Act: go to countertop 1
+You arrive at the countertop (1). You see book (1), bowl (1), butter knife (1), coffee machine (1), countertop (1), cup (1), dish sponge (1), house plant (3), pepper shaker (1), soap bottle (1), spray bottle (1). You hold pen (2).
+Act: put down pen 2
+You put pen (2) in countertop (1).
+Think: Now I complete the task.
+OK.
+Act: done

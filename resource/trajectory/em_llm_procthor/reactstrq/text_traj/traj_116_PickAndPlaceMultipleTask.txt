@@ -1,0 +1,71 @@
+Your task is to: Move a pencil and a pen to the box for storage.
+You are in the house, and there are 1 rooms: bedroom (1). You are in the middle of a bedroom (1). Looking quickly around the room, you see bed (1), chair (1), desk (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), painting (1, 2), side table (1).
+Think: To solve the task, I need to find and pick up pencil, find and pick up pen, find and open box, put down pencil and pen in box.
+OK.
+Think: First, I need to find and pick up pencil.
+OK.
+Query: find_objects({'label': 'pencil'})
+Info: 
+Think: I have not seen pencil yet. Now I need to check where to search. First, I will search bedroom 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'bedroom 1'})
+Info: bed 1, box 1, chair 1, desk 1, drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser 1, side table 1
+Think: In bedroom 1, the pencil is likely to appear in/on bed 1, box 1, chair 1, desk 1, drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser 1, side table 1. I can check each place one by one until I find pencil.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see bed (1), chair (1), desk (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), painting (1, 2), side table (1).
+Act: go to bed 1
+You arrive at the bed (1). You see bed (1), box (1), chair (1), credit card (1), desk (1), mug (1), pen (1), pencil (1), pillow (1), tennis racket (1), tissue box (1).
+Think: I find pencil 1. Now, I need to pick it up.
+OK.
+Act: go to pencil 1
+You arrive at the pencil (1). You see bed (1), box (1), chair (1), credit card (1), desk (1), mug (1), pen (1), pencil (1), pillow (1), tennis racket (1), tissue box (1).
+Act: pick up pencil 1
+You pick up pencil (1). You hold pencil (1).
+Think: Now, I need to find and pick up pen.
+OK.
+Query: find_objects({'label': 'pen'})
+Info: [{'name_id_nl': 'pen 1', 'node_type': 'object', 'properties': ['pickupable'], 'states': []}]
+Query: get_edges_for_node({'node_id': 'pen 1'})
+Info: [('pen 1', 'desk 1', 'ON'), ('pen 1', 'bed 1', 'CLOSE'), ('pen 1', 'box 1', 'CLOSE'), ('pen 1', 'chair 1', 'CLOSE'), ('pen 1', 'credit card 1', 'CLOSE'), ('pen 1', 'mug 1', 'CLOSE'), ('pen 1', 'pencil 1', 'CLOSE'), ('pen 1', 'pillow 1', 'CLOSE'), ('pen 1', 'tennis racket 1', 'CLOSE'), ('pen 1', 'tissue box 1', 'CLOSE'), ('pen 1', 'user 1', 'CLOSE'), ('pen 1', 'bedroom 1', 'INSIDE'), ('bed 1', 'pen 1', 'CLOSE'), ('box 1', 'pen 1', 'CLOSE'), ('chair 1', 'pen 1', 'CLOSE'), ('credit card 1', 'pen 1', 'CLOSE'), ('mug 1', 'pen 1', 'CLOSE'), ('pencil 1', 'pen 1', 'CLOSE'), ('pillow 1', 'pen 1', 'CLOSE'), ('tennis racket 1', 'pen 1', 'CLOSE'), ('tissue box 1', 'pen 1', 'CLOSE'), ('user 1', 'pen 1', 'CLOSE')]
+Think: Pen 1 is on desk 1.
+OK.
+Act: go to desk 1
+You arrive at the desk (1). You see bed (1), box (1), chair (1), credit card (1), desk (1), mug (1), pen (1), pillow (1), tennis racket (1), tissue box (1). You hold pencil (1).
+Act: go to pen 1
+You arrive at the pen (1). You see bed (1), box (1), chair (1), credit card (1), desk (1), mug (1), pen (1), pillow (1), tennis racket (1), tissue box (1). You hold pencil (1).
+Act: pick up pen 1
+Pick up action failed: Robot is currently holding pencil
+Think: I need to put down pencil 1 first.
+OK.
+Act: put down pencil 1
+You put pencil (1) in desk (1).
+Act: pick up pen 1
+You pick up pen (1). You hold pen (1).
+Think: Now, I need to find and open box.
+OK.
+Query: find_objects({'label': 'box'})
+Info: [{'name_id_nl': 'box 1', 'node_type': 'asset', 'properties': ['openable', 'pickupable'], 'states': [], 'room': 'bedroom 1'}]
+Think: Box 1 is in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see bed (1), chair (1), desk (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), painting (1, 2), side table (1). You hold pen (1).
+Act: go to box 1
+You arrive at the box (1). The box (1) is closed. You see bed (1), box (1), chair (1), credit card (1), desk (1), mug (1), pencil (1), pillow (1), tennis racket (1), tissue box (1). You hold pen (1).
+Act: open box 1
+You open box (1). You see bed (1), box (1), chair (1), credit card (1), desk (1), mug (1), pencil (1), pillow (1), tennis racket (1), tissue box (1). You hold pen (1).
+Act: put down pen 1
+You put pen (1) in box (1).
+Think: Now, I need to pick up pencil 1.
+OK.
+Act: go to pencil 1
+You arrive at the pencil (1). You see chair (1), credit card (1), desk (1), mug (1), pencil (1), tissue box (1).
+Act: pick up pencil 1
+You pick up pencil (1). You hold pencil (1).
+Act: go to box 1
+You arrive at the box (1). The box (1) is open. You see bed (1), box (1), chair (1), credit card (1), desk (1), mug (1), pen (1), pillow (1), tennis racket (1), tissue box (1). You hold pencil (1).
+Act: put down pencil 1
+You put pencil (1) in box (1).
+Think: Now I complete the task.
+OK.
+Act: done

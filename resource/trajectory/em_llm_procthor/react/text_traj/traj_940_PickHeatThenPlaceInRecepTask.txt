@@ -1,0 +1,63 @@
+Your task is to: Put the bread on the countertop after you have heated it.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a kitchen (1). Looking quickly around the room, you see chair (3, 4), countertop (1), dining table (2), fridge (1), garbage can (2), painting (3, 4), stool (1, 2).
+Think: To solve the task, I need to find the bread and use either the microwave or the toaster to heat it.
+OK.
+Think: First, I need to check if there is a microwave or a toaster. The microwave or toaster is more likely to appear in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see chair (3, 4), countertop (1), dining table (2), fridge (1), garbage can (2), painting (3, 4), stool (1, 2).
+Think: In kitchen 1, the microwave or toaster is likely to appear in/on countertop 1, dining table 2. I can check each place one by one until I find microwave or toaster.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see bowl (2), bread (1), countertop (1), cup (2), egg (4), kettle (1, 2), ladle (1, 2), microwave (1), pot (1), soap bottle (1), spatula (1), statue (2), wine bottle (1, 2).
+Act: go to dining table 2
+You arrive at the dining table (2). You see bottle (1), butter knife (1), chair (3), cup (1), dining table (2), house plant (2), mug (2), pepper shaker (1), spoon (1), statue (1).
+Think: I find microwave 1. Now, I need to find and pick up knife or butter knife to slice bread.
+OK.
+Think: I find butter knife 1. Now, I need to pick it up.
+OK.
+Act: go to butter knife 1
+You arrive at the butter knife (1). You see bottle (1), butter knife (1), chair (3), cup (1), dining table (2), house plant (2), mug (2), pepper shaker (1), spoon (1), statue (1).
+Act: pick up butter knife 1
+You pick up butter knife (1). You hold butter knife (1).
+Think: Now, I need to find and slice bread. I find bread 1.
+OK.
+Act: go to bread 1
+You arrive at the bread (1). You see bread (1), egg (4), kettle (1, 2), ladle (1), pot (1), wine bottle (1). You hold butter knife (1).
+Act: slice bread 1
+You slice bread (1). You see egg (4), kettle (1, 2), ladle (1), pot (1), sliced bread (1), wine bottle (1). You hold butter knife (1).
+Think: Now, I need to put down butter knife 1 and pick up sliced bread 1.
+OK.
+Act: put down butter knife 1
+You put butter knife (1) in dining table (2).
+Act: pick up sliced bread 1
+You pick up sliced bread (1). You hold sliced bread (1).
+Think: Now, I need to find microwave.
+OK.
+Act: go to microwave 1
+You arrive at the microwave (1). The microwave (1) is closed. You see bowl (2), cup (2), egg (4), kettle (1, 2), ladle (2), microwave (1), painting (3), soap bottle (1), spatula (1), statue (2), wine bottle (2). You hold sliced bread (1).
+Act: open microwave 1
+You open microwave (1). You see bowl (2), cup (2), egg (4), kettle (1, 2), ladle (2), microwave (1), painting (3), soap bottle (1), spatula (1), statue (2), wine bottle (2). You hold sliced bread (1).
+Act: put down sliced bread 1
+You put sliced bread (1) in microwave (1).
+Act: close microwave 1
+You close microwave (1).
+Act: turn on microwave 1
+You turn on microwave (1).
+Think: Now, I need to turn off microwave 1 and pick up sliced bread 1.
+OK.
+Act: turn off microwave 1
+You turn off microwave (1).
+Act: open microwave 1
+You open microwave (1). You see bowl (2), cup (2), egg (4), kettle (1, 2), ladle (2), microwave (1), painting (3), sliced bread (1), soap bottle (1), spatula (1), statue (2), wine bottle (2).
+Act: pick up sliced bread 1
+You pick up sliced bread (1). You hold sliced bread (1).
+Think: Now, I need to put down sliced bread 1 on countertop 1.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see bowl (2), countertop (1), cup (2), egg (4), kettle (1, 2), ladle (1, 2), microwave (1), pot (1), soap bottle (1), spatula (1), statue (2), wine bottle (1, 2). You hold sliced bread (1).
+Act: put down sliced bread 1
+You put sliced bread (1) in countertop (1).
+Think: Now I complete task.
+OK.
+Act: done

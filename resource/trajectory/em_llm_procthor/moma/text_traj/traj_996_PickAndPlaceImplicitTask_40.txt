@@ -1,0 +1,8 @@
+Your task is to: Remove all the objects from the cabinet and put them on the dining table.
+You put apple (1) in dining table (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- kitchen 1: [painting 1, book 1, bowl 1, cabinet 1, countertop 1, fork 1, (fridge 1), pen 1, plate 1, pot 1, salt shaker 1, (shelf 2), (shelf 3), (shelf 1), shelving unit 1, soap bottle 1, spray bottle 1, statue 1, vase 1, wine bottle 1]
+- living room 1: [house plant 1, painting 4, painting 3, painting 2, remote control 1, apple 1, book 3, book 2, bottle 1, bowl 2, (box 1), (box 2), desk lamp 2, dining table 1, (drawer 3), (drawer 2), (drawer 1), (dresser 1), pillow 1, (sofa 1), television 1]
+Your 5 previous actions were: go to apple 1 (success), pick up apple 1 (success), go to living room 1 (success), go to dining table 1 (success), put down apple 1 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I put down apple 1. Now, I need to check unexplored areas in kitchen 1 to find objects. Now, I need to check shelf 1.
+Act: go to kitchen 1

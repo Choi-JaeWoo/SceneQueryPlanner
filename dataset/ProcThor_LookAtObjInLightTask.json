@@ -1,0 +1,752 @@
+[
+  {
+    "env_id": 57,
+    "mode": "LookAtObjInLightTask",
+    "instruction": [
+      "Turn on the candle while holding a plunger.",
+      "Examine the plunger with the candle lit.",
+      "Hold a plunger up to the light of a candle.",
+      "View a plunger by the illumination of a candle."
+    ],
+    "task_goal": {
+      "isToggled_candle": 1,
+      "isPickedUp_plunger": 1,
+      "visible_candle": 1
+    }
+  },
+  {
+    "env_id": 685,
+    "mode": "LookAtObjInLightTask",
+    "instruction": [
+      "Turn on the floor lamp while holding a book.",
+      "Examine the book under the floor lamp's light.",
+      "Hold a book and turn on the floor lamp to see it clearly.",
+      "View the book by the illumination of the floor lamp."
+    ],
+    "task_goal": {
+      "isToggled_floorlamp": 1,
+      "isPickedUp_book": 1,
+      "visible_floorlamp": 1
+    }
+  },
+  {
+    "env_id": 490,
+    "mode": "LookAtObjInLightTask",
+    "instruction": [
+      "Turn on the candle while holding a pen.",
+      "Hold a pen and examine it in the candle's light.",
+      "Illuminate a pen by turning on the candle.",
+      "View the pen under the glow of the candle."
+    ],
+    "task_goal": {
+      "isToggled_candle": 1,
+      "isPickedUp_pen": 1,
+      "visible_candle": 1
+    }
+  },
+  {
+    "env_id": 863,
+    "mode": "LookAtObjInLightTask",
+    "instruction": [
+      "Turn on the desk lamp while holding a book.",
+      "Hold a book and turn on the desk lamp to examine it.",
+      "Examine a book under the light of the desk lamp.",
+      "With a book in hand, switch on the desk lamp for a closer look."
+    ],
+    "task_goal": {
+      "isToggled_desklamp": 1,
+      "isPickedUp_book": 1,
+      "visible_desklamp": 1
+    }
+  },
+  {
+    "env_id": 198,
+    "mode": "LookAtObjInLightTask",
+    "instruction": [
+      "Turn on the candle while holding a book.",
+      "Hold the book up to the candle's light.",
+      "Examine the book with the candle lit.",
+      "Illuminate the book by turning on the candle."
+    ],
+    "task_goal": {
+      "isToggled_candle": 1,
+      "isPickedUp_book": 1,
+      "visible_candle": 1
+    }
+  },
+  {
+    "env_id": 844,
+    "mode": "LookAtObjInLightTask",
+    "instruction": [
+      "Turn on the desk lamp while holding a pencil.",
+      "Hold a pencil and turn on the desk lamp for better viewing.",
+      "With a pencil in hand, switch on the desk lamp.",
+      "Examine the pencil under the light provided by the desk lamp."
+    ],
+    "task_goal": {
+      "isToggled_desklamp": 1,
+      "isPickedUp_pencil": 1,
+      "visible_desklamp": 1
+    }
+  },
+  {
+    "env_id": 544,
+    "mode": "LookAtObjInLightTask",
+    "instruction": [
+      "Turn on the candle while holding a box.",
+      "Hold a box and examine it in the candle's light.",
+      "Illuminate a box by turning on the candle.",
+      "View the box under the glow of the lit candle."
+    ],
+    "task_goal": {
+      "isToggled_candle": 1,
+      "isPickedUp_box": 1,
+      "visible_candle": 1
+    }
+  },
+  {
+    "env_id": 828,
+    "mode": "LookAtObjInLightTask",
+    "instruction": [
+      "Turn on the candle while holding a spray bottle.",
+      "Examine the spray bottle in the light of the candle.",
+      "Hold a spray bottle up to the candle's illumination.",
+      "View the spray bottle by the glow of a lit candle."
+    ],
+    "task_goal": {
+      "isToggled_candle": 1,
+      "isPickedUp_spraybottle": 1,
+      "visible_candle": 1
+    }
+  },
+  {
+    "env_id": 861,
+    "mode": "LookAtObjInLightTask",
+    "instruction": [
+      "Turn on the desk lamp while holding a book.",
+      "Hold a book and illuminate it with the desk lamp.",
+      "Examine a book under the light of the desk lamp.",
+      "View the book by turning on the desk lamp."
+    ],
+    "task_goal": {
+      "isToggled_desklamp": 1,
+      "isPickedUp_book": 1,
+      "visible_desklamp": 1
+    }
+  },
+  {
+    "env_id": 125,
+    "mode": "LookAtObjInLightTask",
+    "instruction": [
+      "Turn on the floor lamp while holding a remote control.",
+      "Hold the remote control and turn on the floor lamp to examine it.",
+      "Examine the remote control under the light of the floor lamp.",
+      "While holding the remote control, switch on the floor lamp for a better view."
+    ],
+    "task_goal": {
+      "isToggled_floorlamp": 1,
+      "isPickedUp_remotecontrol": 1,
+      "visible_floorlamp": 1
+    }
+  },
+  {
+    "env_id": 320,
+    "mode": "LookAtObjInLightTask",
+    "instruction": [
+      "Turn on the desk lamp while holding a book.",
+      "Hold a book and turn on the desk lamp to examine it.",
+      "With a book in hand, switch on the desk lamp for better viewing.",
+      "Examine the book under the light by turning on the desk lamp."
+    ],
+    "task_goal": {
+      "isToggled_desklamp": 1,
+      "isPickedUp_book": 1,
+      "visible_desklamp": 1
+    }
+  },
+  {
+    "env_id": 498,
+    "mode": "LookAtObjInLightTask",
+    "instruction": [
+      "Turn on the candle while holding a book.",
+      "Hold the book up to the candle light.",
+      "Examine the book with the candle illuminated.",
+      "View the book by the light of the candle."
+    ],
+    "task_goal": {
+      "isToggled_candle": 1,
+      "isPickedUp_book": 1,
+      "visible_candle": 1
+    }
+  },
+  {
+    "env_id": 769,
+    "mode": "LookAtObjInLightTask",
+    "instruction": [
+      "Turn on the desk lamp while holding a remote control.",
+      "Hold the remote control and switch on the desk lamp.",
+      "Examine the remote control under the light of the desk lamp after turning it on.",
+      "With the remote control in hand, turn on the desk lamp to take a closer look."
+    ],
+    "task_goal": {
+      "isToggled_desklamp": 1,
+      "isPickedUp_remotecontrol": 1,
+      "visible_desklamp": 1
+    }
+  },
+  {
+    "env_id": 416,
+    "mode": "LookAtObjInLightTask",
+    "instruction": [
+      "Turn on the candle while holding a book.",
+      "Hold the book up to the candle light.",
+      "Examine the book with the candle illuminated.",
+      "Illuminate the book by turning on the candle."
+    ],
+    "task_goal": {
+      "isToggled_candle": 1,
+      "isPickedUp_book": 1,
+      "visible_candle": 1
+    }
+  },
+  {
+    "env_id": 109,
+    "mode": "LookAtObjInLightTask",
+    "instruction": [
+      "Turn on the floor lamp while holding a pillow.",
+      "Hold a pillow and examine it under the floor lamp's light.",
+      "While grasping a pillow, switch on the floor lamp for a better view.",
+      "Examine the pillow with the floor lamp turned on for illumination."
+    ],
+    "task_goal": {
+      "isToggled_floorlamp": 1,
+      "isPickedUp_pillow": 1,
+      "visible_floorlamp": 1
+    }
+  },
+  {
+    "env_id": 940,
+    "mode": "LookAtObjInLightTask",
+    "instruction": [
+      "Turn on the floor lamp while holding a book.",
+      "Hold a book and turn on the floor lamp to examine it.",
+      "Examine a book under the illumination of the floor lamp.",
+      "View the book by turning on the floor lamp."
+    ],
+    "task_goal": {
+      "isToggled_floorlamp": 1,
+      "isPickedUp_book": 1,
+      "visible_floorlamp": 1
+    }
+  },
+  {
+    "env_id": 474,
+    "mode": "LookAtObjInLightTask",
+    "instruction": [
+      "Turn on the desk lamp while holding a book.",
+      "Examine the book under the desk lamp's light.",
+      "Hold a book and turn on the desk lamp to view it.",
+      "View the book by illuminating it with the desk lamp."
+    ],
+    "task_goal": {
+      "isToggled_desklamp": 1,
+      "isPickedUp_book": 1,
+      "visible_desklamp": 1
+    }
+  },
+  {
+    "env_id": 421,
+    "mode": "LookAtObjInLightTask",
+    "instruction": [
+      "Turn on the floor lamp while holding a cell phone.",
+      "Hold your cell phone near the floor lamp and turn it on.",
+      "Examine the cell phone under the light of the floor lamp.",
+      "View your cell phone with the floor lamp illuminated."
+    ],
+    "task_goal": {
+      "isToggled_floorlamp": 1,
+      "isPickedUp_cellphone": 1,
+      "visible_floorlamp": 1
+    }
+  },
+  {
+    "env_id": 935,
+    "mode": "LookAtObjInLightTask",
+    "instruction": [
+      "Turn on the desk lamp while holding a pencil.",
+      "Hold a pencil and switch on the desk lamp.",
+      "With a pencil in hand, turn on the desk lamp.",
+      "Examine the pencil under the light of the desk lamp after turning it on."
+    ],
+    "task_goal": {
+      "isToggled_desklamp": 1,
+      "isPickedUp_pencil": 1,
+      "visible_desklamp": 1
+    }
+  },
+  {
+    "env_id": 319,
+    "mode": "LookAtObjInLightTask",
+    "instruction": [
+      "Turn on the candle while holding a book.",
+      "Hold the book up to the candle's light.",
+      "Examine the book with the candle illuminated.",
+      "Illuminate the book by turning on the candle."
+    ],
+    "task_goal": {
+      "isToggled_candle": 1,
+      "isPickedUp_book": 1,
+      "visible_candle": 1
+    }
+  },
+  {
+    "env_id": 740,
+    "mode": "LookAtObjInLightTask",
+    "instruction": [
+      "Turn on the desk lamp while holding a book.",
+      "Hold a book and turn on the desk lamp to examine it.",
+      "Examine a book under the light of the desk lamp.",
+      "With a book in hand, switch on the desk lamp for a closer look."
+    ],
+    "task_goal": {
+      "isToggled_desklamp": 1,
+      "isPickedUp_book": 1,
+      "visible_desklamp": 1
+    }
+  },
+  {
+    "env_id": 73,
+    "mode": "LookAtObjInLightTask",
+    "instruction": [
+      "Turn on the floor lamp while holding a book.",
+      "Hold a book and turn on the floor lamp to examine it.",
+      "Examine a book by the light of the floor lamp after turning it on.",
+      "Turn on the floor lamp and view the book you are holding."
+    ],
+    "task_goal": {
+      "isToggled_floorlamp": 1,
+      "isPickedUp_book": 1,
+      "visible_floorlamp": 1
+    }
+  },
+  {
+    "env_id": 370,
+    "mode": "LookAtObjInLightTask",
+    "instruction": [
+      "Turn on the candle while holding a book.",
+      "Hold the book up to the candle light.",
+      "Examine the book with the candle illuminated.",
+      "View the book by the light of the candle."
+    ],
+    "task_goal": {
+      "isToggled_candle": 1,
+      "isPickedUp_book": 1,
+      "visible_candle": 1
+    }
+  },
+  {
+    "env_id": 361,
+    "mode": "LookAtObjInLightTask",
+    "instruction": [
+      "Turn on the floor lamp while holding a pencil.",
+      "Hold a pencil and turn on the floor lamp to examine it.",
+      "Examine a pencil under the illumination of the floor lamp.",
+      "With a pencil in hand, switch on the floor lamp to take a closer look."
+    ],
+    "task_goal": {
+      "isToggled_floorlamp": 1,
+      "isPickedUp_pencil": 1,
+      "visible_floorlamp": 1
+    }
+  },
+  {
+    "env_id": 698,
+    "mode": "LookAtObjInLightTask",
+    "instruction": [
+      "Turn on the desk lamp while holding a remote control.",
+      "Hold the remote control and turn on the desk lamp.",
+      "Examine the remote control under the light of the desk lamp.",
+      "Illuminate the area with the desk lamp while you're holding the remote control."
+    ],
+    "task_goal": {
+      "isToggled_desklamp": 1,
+      "isPickedUp_remotecontrol": 1,
+      "visible_desklamp": 1
+    }
+  },
+  {
+    "env_id": 810,
+    "mode": "LookAtObjInLightTask",
+    "instruction": [
+      "Turn on the candle while holding a book.",
+      "Hold the book up to the candle's light.",
+      "Examine the book with the candle lit.",
+      "Illuminate the book by turning on the candle."
+    ],
+    "task_goal": {
+      "isToggled_candle": 1,
+      "isPickedUp_book": 1,
+      "visible_candle": 1
+    }
+  },
+  {
+    "env_id": 547,
+    "mode": "LookAtObjInLightTask",
+    "instruction": [
+      "Turn on the candle while holding a book.",
+      "Hold the book up to the candle's light.",
+      "Examine the book with the candle illuminated.",
+      "View the book by the glow of the candle."
+    ],
+    "task_goal": {
+      "isToggled_candle": 1,
+      "isPickedUp_book": 1,
+      "visible_candle": 1
+    }
+  },
+  {
+    "env_id": 541,
+    "mode": "LookAtObjInLightTask",
+    "instruction": [
+      "Turn on the floor lamp while holding a remote control.",
+      "Examine the remote control under the floor lamp's light.",
+      "Hold a remote control and turn on the floor lamp to view it.",
+      "View the remote control by switching on the floor lamp."
+    ],
+    "task_goal": {
+      "isToggled_floorlamp": 1,
+      "isPickedUp_remotecontrol": 1,
+      "visible_floorlamp": 1
+    }
+  },
+  {
+    "env_id": 529,
+    "mode": "LookAtObjInLightTask",
+    "instruction": [
+      "Turn on the desk lamp while holding a remote control.",
+      "Hold the remote control and switch on the desk lamp.",
+      "Examine the remote control under the light of the desk lamp.",
+      "Illuminate the area with the desk lamp while you're holding the remote control."
+    ],
+    "task_goal": {
+      "isToggled_desklamp": 1,
+      "isPickedUp_remotecontrol": 1,
+      "visible_desklamp": 1
+    }
+  },
+  {
+    "env_id": 717,
+    "mode": "LookAtObjInLightTask",
+    "instruction": [
+      "Turn on the floor lamp while holding a book.",
+      "Hold a book and turn on the floor lamp to examine it.",
+      "Examine a book under the light of the floor lamp.",
+      "View the book by turning on the floor lamp."
+    ],
+    "task_goal": {
+      "isToggled_floorlamp": 1,
+      "isPickedUp_book": 1,
+      "visible_floorlamp": 1
+    }
+  },
+  {
+    "env_id": 758,
+    "mode": "LookAtObjInLightTask",
+    "instruction": [
+      "Turn on the desk lamp while holding a pencil.",
+      "Hold a pencil and turn on the desk lamp to examine it.",
+      "With a pencil in hand, switch on the desk lamp.",
+      "Examine the pencil under the light by turning on the desk lamp."
+    ],
+    "task_goal": {
+      "isToggled_desklamp": 1,
+      "isPickedUp_pencil": 1,
+      "visible_desklamp": 1
+    }
+  },
+  {
+    "env_id": 832,
+    "mode": "LookAtObjInLightTask",
+    "instruction": [
+      "Turn on the candle while holding a book.",
+      "Hold the book up to the candle light.",
+      "Examine the book with the candle lit.",
+      "View the book by the light of the candle."
+    ],
+    "task_goal": {
+      "isToggled_candle": 1,
+      "isPickedUp_book": 1,
+      "visible_candle": 1
+    }
+  },
+  {
+    "env_id": 536,
+    "mode": "LookAtObjInLightTask",
+    "instruction": [
+      "Turn on the floor lamp while holding a pencil.",
+      "Hold a pencil and turn on the floor lamp to examine it.",
+      "Examine a pencil under the illumination of the floor lamp.",
+      "With a pencil in hand, switch on the floor lamp for a closer look."
+    ],
+    "task_goal": {
+      "isToggled_floorlamp": 1,
+      "isPickedUp_pencil": 1,
+      "visible_floorlamp": 1
+    }
+  },
+  {
+    "env_id": 192,
+    "mode": "LookAtObjInLightTask",
+    "instruction": [
+      "Turn on the candle while holding an apple.",
+      "Hold an apple and illuminate it with a candle.",
+      "Examine an apple by the light of the candle.",
+      "View the apple while the candle is turned on."
+    ],
+    "task_goal": {
+      "isToggled_candle": 1,
+      "isPickedUp_apple": 1,
+      "visible_candle": 1
+    }
+  },
+  {
+    "env_id": 100,
+    "mode": "LookAtObjInLightTask",
+    "instruction": [
+      "Turn on the desk lamp while holding a pencil.",
+      "Hold a pencil and switch on the desk lamp.",
+      "With a pencil in hand, turn on the desk lamp.",
+      "Examine the pencil under the light by turning on the desk lamp."
+    ],
+    "task_goal": {
+      "isToggled_desklamp": 1,
+      "isPickedUp_pencil": 1,
+      "visible_desklamp": 1
+    }
+  },
+  {
+    "env_id": 86,
+    "mode": "LookAtObjInLightTask",
+    "instruction": [
+      "Turn on the candle while holding a pencil.",
+      "Hold a pencil and examine it in the candle light.",
+      "With a pencil in hand, turn on the candle to see it clearly.",
+      "Illuminate a pencil by switching on the candle."
+    ],
+    "task_goal": {
+      "isToggled_candle": 1,
+      "isPickedUp_pencil": 1,
+      "visible_candle": 1
+    }
+  },
+  {
+    "env_id": 352,
+    "mode": "LookAtObjInLightTask",
+    "instruction": [
+      "Turn on the desk lamp while holding a spoon.",
+      "Hold a spoon and turn on the desk lamp to examine it.",
+      "Examine a spoon under the light of the desk lamp.",
+      "With a spoon in hand, switch on the desk lamp for a closer look."
+    ],
+    "task_goal": {
+      "isToggled_desklamp": 1,
+      "isPickedUp_spoon": 1,
+      "visible_desklamp": 1
+    }
+  },
+  {
+    "env_id": 311,
+    "mode": "LookAtObjInLightTask",
+    "instruction": [
+      "Turn on the desk lamp while holding a baseball bat.",
+      "Examine the baseball bat under the desk lamp's light.",
+      "Hold a baseball bat and turn on the desk lamp for a closer look.",
+      "View the baseball bat with the desk lamp illuminated."
+    ],
+    "task_goal": {
+      "isToggled_desklamp": 1,
+      "isPickedUp_baseballbat": 1,
+      "visible_desklamp": 1
+    }
+  },
+  {
+    "env_id": 679,
+    "mode": "LookAtObjInLightTask",
+    "instruction": [
+      "Turn on the desk lamp while holding a remote control.",
+      "Hold the remote control and switch on the desk lamp.",
+      "Examine the remote control under the light of the desk lamp.",
+      "With the remote control in hand, turn on the desk lamp."
+    ],
+    "task_goal": {
+      "isToggled_desklamp": 1,
+      "isPickedUp_remotecontrol": 1,
+      "visible_desklamp": 1
+    }
+  },
+  {
+    "env_id": 862,
+    "mode": "LookAtObjInLightTask",
+    "instruction": [
+      "Turn on the candle while holding a book.",
+      "Hold the book up to the candle light.",
+      "Examine the book with the candle illuminated.",
+      "View the book by the light of the candle."
+    ],
+    "task_goal": {
+      "isToggled_candle": 1,
+      "isPickedUp_book": 1,
+      "visible_candle": 1
+    }
+  },
+  {
+    "env_id": 433,
+    "mode": "LookAtObjInLightTask",
+    "instruction": [
+      "Turn on the desk lamp while holding a pencil.",
+      "Hold a pencil and switch on the desk lamp.",
+      "With a pencil in hand, turn on the desk lamp.",
+      "Switch on the desk lamp as you're holding a pencil."
+    ],
+    "task_goal": {
+      "isToggled_desklamp": 1,
+      "isPickedUp_pencil": 1,
+      "visible_desklamp": 1
+    }
+  },
+  {
+    "env_id": 341,
+    "mode": "LookAtObjInLightTask",
+    "instruction": [
+      "Turn on the desk lamp while holding a book.",
+      "Hold a book and turn on the desk lamp for a better view.",
+      "Examine the book under the light of the desk lamp.",
+      "Illuminate the book by switching on the desk lamp while you hold it."
+    ],
+    "task_goal": {
+      "isToggled_desklamp": 1,
+      "isPickedUp_book": 1,
+      "visible_desklamp": 1
+    }
+  },
+  {
+    "env_id": 335,
+    "mode": "LookAtObjInLightTask",
+    "instruction": [
+      "Turn on the desk lamp while holding a box.",
+      "Hold a box and turn on the desk lamp for illumination.",
+      "Examine the box under the light of the desk lamp.",
+      "With a box in hand, switch on the desk lamp."
+    ],
+    "task_goal": {
+      "isToggled_desklamp": 1,
+      "isPickedUp_box": 1,
+      "visible_desklamp": 1
+    }
+  },
+  {
+    "env_id": 376,
+    "mode": "LookAtObjInLightTask",
+    "instruction": [
+      "Turn on the desk lamp while holding a cell phone.",
+      "Hold a cell phone and illuminate it with the desk lamp.",
+      "Examine a cell phone under the light of the desk lamp.",
+      "View the cell phone by turning on the desk lamp."
+    ],
+    "task_goal": {
+      "isToggled_desklamp": 1,
+      "isPickedUp_cellphone": 1,
+      "visible_desklamp": 1
+    }
+  },
+  {
+    "env_id": 781,
+    "mode": "LookAtObjInLightTask",
+    "instruction": [
+      "Turn on the desk lamp while holding a book.",
+      "Hold a book and turn on the desk lamp to examine it.",
+      "Examine a book under the light of the desk lamp.",
+      "Illuminate a book by switching on the desk lamp while you hold it."
+    ],
+    "task_goal": {
+      "isToggled_desklamp": 1,
+      "isPickedUp_book": 1,
+      "visible_desklamp": 1
+    }
+  },
+  {
+    "env_id": 924,
+    "mode": "LookAtObjInLightTask",
+    "instruction": [
+      "Turn on the desk lamp while holding a box.",
+      "Hold a box and turn on the desk lamp to examine it.",
+      "Examine a box under the light of the desk lamp.",
+      "With a box in hand, switch on the desk lamp for a closer look."
+    ],
+    "task_goal": {
+      "isToggled_desklamp": 1,
+      "isPickedUp_box": 1,
+      "visible_desklamp": 1
+    }
+  },
+  {
+    "env_id": 181,
+    "mode": "LookAtObjInLightTask",
+    "instruction": [
+      "Turn on the desk lamp while holding a pencil.",
+      "Hold a pencil and turn on the desk lamp for illumination.",
+      "With a pencil in hand, switch on the desk lamp.",
+      "While grasping a pencil, activate the desk lamp."
+    ],
+    "task_goal": {
+      "isToggled_desklamp": 1,
+      "isPickedUp_pencil": 1,
+      "visible_desklamp": 1
+    }
+  },
+  {
+    "env_id": 483,
+    "mode": "LookAtObjInLightTask",
+    "instruction": [
+      "Turn on the desk lamp while holding a pencil.",
+      "Hold a pencil and turn on the desk lamp to examine it.",
+      "With a pencil in hand, switch on the desk lamp for a closer look.",
+      "Examine the pencil you're holding under the light of the desk lamp."
+    ],
+    "task_goal": {
+      "isToggled_desklamp": 1,
+      "isPickedUp_pencil": 1,
+      "visible_desklamp": 1
+    }
+  },
+  {
+    "env_id": 190,
+    "mode": "LookAtObjInLightTask",
+    "instruction": [
+      "Turn on the candle while holding a plunger.",
+      "Hold a plunger and illuminate it with a candle.",
+      "Examine the plunger in the light provided by a candle.",
+      "View the plunger by turning on a nearby candle."
+    ],
+    "task_goal": {
+      "isToggled_candle": 1,
+      "isPickedUp_plunger": 1,
+      "visible_candle": 1
+    }
+  },
+  {
+    "env_id": 468,
+    "mode": "LookAtObjInLightTask",
+    "instruction": [
+      "Turn on the floor lamp while holding a book.",
+      "Hold a book and turn on the floor lamp to examine it.",
+      "Examine a book under the illumination of the floor lamp.",
+      "View the book by the light provided by the floor lamp."
+    ],
+    "task_goal": {
+      "isToggled_floorlamp": 1,
+      "isPickedUp_book": 1,
+      "visible_floorlamp": 1
+    }
+  }
+]

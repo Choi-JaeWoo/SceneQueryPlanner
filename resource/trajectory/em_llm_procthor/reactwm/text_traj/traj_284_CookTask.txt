@@ -1,0 +1,71 @@
+Your task is to: Cook a potato using a microwave and then place it on the countertop.
+You are in the house, and there are 3 rooms: bedroom (1), kitchen (1), living room (1). You are in the middle of a kitchen (1). Looking quickly around the room, you see chair (2, 3, 4), countertop (1), dining table (1), fridge (1), garbage bag (1), garbage can (1), painting (2), stool (1).
+Think: To solve the task, I need to find and pick up potato, put it in microwave and turn it on, turn off microwave and open microwave, pick up and place cooked potato on countertop.
+OK.
+Think: First, I need to find and pick up potato.
+OK.
+Query: recall location of potato
+You have not seen potato before.
+Think: I have not seen potato yet. The potato is more likely to appear in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see chair (2, 3, 4), countertop (1), dining table (1), fridge (1), garbage bag (1), garbage can (1), painting (2), stool (1).
+Think: In kitchen 1, the potato is likely to appear in/on countertop 1, dining table 1, fridge 1, garbage can 1. I can check each place one by one until I find potato.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see countertop (1), credit card (1), fork (1), garbage can (1), house plant (3), kettle (1), knife (1), ladle (1), mug (2), paper towel roll (1), pepper shaker (1), plate (1), stool (1), wine bottle (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see apple (1), bread (1), chair (2, 3, 4), dining table (1), garbage bag (1), microwave (1), pan (1), spray bottle (1).
+Act: go to fridge 1
+You arrive at the fridge (1). The fridge (1) is closed. You see fridge (1).
+Act: open fridge 1
+You open fridge (1). You see fridge (1), potato (1).
+Think: I find potato 1. Now, I need to pick it up.
+OK.
+Act: go to potato 1
+You arrive at the potato (1). You see fridge (1), potato (1).
+Act: pick up potato 1
+You pick up potato (1). You hold potato (1).
+Think: Now, I need to find microwave.
+OK.
+Query: recall location of microwave
+You saw microwave 1 near dining table 1 in kitchen 1.
+Think: Microwave 1 is near dining table 1 in kitchen 1.
+OK.
+Act: go to dining table 1
+You arrive at the dining table (1). You see apple (1), bread (1), chair (2, 3, 4), dining table (1), garbage bag (1), microwave (1), pan (1), spray bottle (1). You hold potato (1).
+Act: go to microwave 1
+You arrive at the microwave (1). The microwave (1) is closed. You see apple (1), bread (1), chair (2, 3, 4), dining table (1), garbage bag (1), microwave (1), pan (1), spray bottle (1). You hold potato (1).
+Think: Now, I need to open microwave 1 and put down potato 1.
+OK.
+Act: open microwave 1
+You open microwave (1). You see apple (1), bread (1), chair (2, 3, 4), dining table (1), garbage bag (1), microwave (1), pan (1), spray bottle (1). You hold potato (1).
+Act: put down potato 1
+You put potato (1) in microwave (1).
+Think: Now, I need to close microwave 1, turn it on briefly, and then turn it off.
+OK.
+Act: close microwave 1
+You close microwave (1).
+Act: turn on microwave 1
+You turn on microwave (1).
+Think: Now, I need to turn off and open microwave 1 to pick up potato 1.
+OK.
+Act: turn off microwave 1
+You turn off microwave (1).
+Act: open microwave 1
+You open microwave (1). You see apple (1), bread (1), chair (2, 3, 4), dining table (1), garbage bag (1), microwave (1), pan (1), potato (1), spray bottle (1).
+Act: pick up potato 1
+You pick up potato (1). You hold potato (1).
+Think: Now, I need to find countertop and put down potato 1.
+OK.
+Query: recall location of countertop
+You saw countertop 1 in kitchen 1.
+Think: Countertop 1 is in kitchen 1.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see countertop (1), credit card (1), fork (1), garbage can (1), house plant (3), kettle (1), knife (1), ladle (1), mug (2), paper towel roll (1), pepper shaker (1), plate (1), stool (1), wine bottle (1). You hold potato (1).
+Act: put down potato 1
+You put potato (1) in countertop (1).
+Think: Now I complete task.
+OK.
+Act: done

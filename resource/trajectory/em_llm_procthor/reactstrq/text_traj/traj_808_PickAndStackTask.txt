@@ -1,0 +1,85 @@
+Your task is to: Place a box containing a cell phone on the sofa.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a bathroom (1). Looking quickly around the room, you see drawer (4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15), dresser (2), garbage can (1), painting (1, 2), plunger (1), sink (1), sink basin (1), toilet (1).
+Think: To solve the task, I need to find and pick up cell phone, put it in box, pick up and place box on sofa.
+OK.
+Think: First, I need to find and pick up cell phone.
+OK.
+Query: find_objects({'label': 'cell phone'})
+Info: 
+Think: I have not seen cell phone yet. Now I need to check where to search. First, I will search bedroom 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'bedroom 1'})
+Info: bed 1, box 1, chair (1, 2, 3), dining table 1, drawer (1, 2, 3), dresser 1
+Think: In bedroom 1, the cell phone is likely to appear in/on bed 1, box 1, chair (1, 2, 3), dining table 1, drawer (1, 2, 3), dresser 1. I can check each place one by one until I find cell phone.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see basket ball (1), bed (1), box (1), chair (1, 2, 3), dining table (1), drawer (1, 2, 3), dresser (1), television (1).
+Act: go to bed 1
+You arrive at the bed (1). You see basket ball (1), bed (1), book (2), cell phone (1), chair (2), pillow (1).
+Act: go to box 1
+You arrive at the box (1). The box (1) is closed. You see basket ball (1), bed (1), book (2), box (1), television (1).
+Act: go to chair 1
+You arrive at the chair (1). You see book (1), bowl (1), chair (1, 2, 3), dining table (1), drawer (1, 2).
+Act: go to chair 2
+You arrive at the chair (2). You see book (1), bowl (1), chair (1, 2, 3), dining table (1), drawer (1, 2, 3), key chain (1).
+Act: go to chair 3
+You arrive at the chair (3). You see book (1), bowl (1), chair (1, 2, 3), dining table (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see basket ball (1), book (1), bowl (1), chair (1, 2, 3), dining table (1).
+Act: go to drawer 1
+You arrive at the drawer (1). The drawer (1) is closed. You see drawer (1, 2, 3), dresser (1), key chain (1), pillow (1).
+Act: open drawer 1
+You open drawer (1). You see drawer (1, 2, 3), dresser (1), key chain (1), pillow (1).
+Act: go to drawer 2
+You arrive at the drawer (2). The drawer (2) is closed. You see cell phone (1), chair (2), drawer (1, 2, 3), dresser (1), key chain (1), pillow (1).
+Act: open drawer 2
+You open drawer (2). You see cell phone (1), chair (2), drawer (1, 2, 3), dresser (1), key chain (1), pillow (1).
+Act: go to drawer 3
+You arrive at the drawer (3). The drawer (3) is closed. You see cell phone (1), chair (2), drawer (1, 2, 3), dresser (1), key chain (1), pillow (1).
+Act: open drawer 3
+You open drawer (3). You see cell phone (1), chair (2), drawer (1, 2, 3), dresser (1), key chain (1), pillow (1).
+Act: go to dresser 1
+You arrive at the dresser (1). You see drawer (1, 2, 3), dresser (1), key chain (1).
+Think: I need to check whether I see cell phone.
+OK.
+Query: find_objects({'label': 'cell phone'})
+Info: [{'name_id_nl': 'cell phone 1', 'node_type': 'object', 'properties': ['toggleable', 'breakable', 'pickupable'], 'states': []}]
+Think: I find cell phone 1.
+OK.
+Act: go to cell phone 1
+You arrive at the cell phone (1). You see bed (1), book (2), cell phone (1), chair (2), drawer (1, 2, 3), pillow (1).
+Act: pick up cell phone 1
+You pick up cell phone (1). You hold cell phone (1).
+Think: Now, I need to find box.
+OK.
+Query: find_objects({'label': 'box'})
+Info: [{'name_id_nl': 'box 1', 'node_type': 'asset', 'properties': ['openable', 'pickupable'], 'states': [], 'room': 'bedroom 1'}]
+Think: Box 1 is in bedroom 1.
+OK.
+Act: go to box 1
+You arrive at the box (1). The box (1) is closed. You see basket ball (1), bed (1), book (2), box (1), television (1). You hold cell phone (1).
+Act: open box 1
+You open box (1). You see basket ball (1), bed (1), book (2), box (1), television (1). You hold cell phone (1).
+Think: Now, I need to put down cell phone 1.
+OK.
+Act: put down cell phone 1
+You put cell phone (1) in box (1).
+Think: Now, I need to pick up box 1 and find sofa.
+OK.
+Act: pick up box 1
+You pick up box (1). You hold box (1).
+Query: find_objects({'label': 'sofa'})
+Info: [{'name_id_nl': 'sofa 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}]
+Think: Sofa 1 is in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), cell phone (1), dining table (2), shelf (1, 2, 3, 4, 5, 6, 7, 8), side table (1), sofa (1). You hold box (1).
+Act: go to sofa 1
+You arrive at the sofa (1). You see cell phone (1), desk lamp (1), laptop (1), shelf (1, 2), side table (1), sofa (1). You hold box (1).
+Think: Now, I need to put down box 1.
+OK.
+Act: put down box 1
+You put box (1) in sofa (1).
+Think: Now I complete task.
+OK.
+Act: done

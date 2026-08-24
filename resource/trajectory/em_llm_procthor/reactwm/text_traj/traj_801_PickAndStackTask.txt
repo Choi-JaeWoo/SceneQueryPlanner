@@ -1,0 +1,57 @@
+Your task is to: Set a pencil in a box and then place the box on the shelf.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a bathroom (1). Looking quickly around the room, you see garbage can (1), plunger (1), sink (1), sink basin (1), toilet (1).
+Think: To solve the task, I need to find and pick up pencil, put it in box, pick up and place box on shelf.
+OK.
+Think: First, I need to find and pick up pencil.
+OK.
+Query: recall location of pencil
+You have not seen pencil before.
+Think: I have not seen pencil yet. The pencil is more likely to appear in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (2), dining table (3), painting (3, 4), shelf (4, 5, 6, 7, 8, 9), sofa (1).
+Think: In living room 1, the pencil is likely to appear in/on dining table 3, sofa 1. I can check each place one by one until I find pencil.
+OK.
+Act: go to dining table 3
+You arrive at the dining table (3). You see book (4), dining table (3), laptop (2), pencil (4), plate (1).
+Act: go to pencil 4
+You arrive at the pencil (4). You see book (4), dining table (3), laptop (2), pencil (4), plate (1).
+Act: pick up pencil 4
+You pick up pencil (4). You hold pencil (4).
+Think: Now, I need to find box and put down pencil 4.
+OK.
+Query: recall location of box
+You saw box 1 in bedroom 1.
+Think: Box 1 is in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see TV stand (1), bed (1), cabinet (1, 2, 3, 4), chair (1, 2, 3, 4), desk (1), dining table (1), drawer (1, 2, 3, 4), dresser (1), shelf (1, 2, 3). You hold pencil (4).
+Act: go to box 1
+You arrive at the box (1). The box (1) is closed. You see CD (1), box (1), desk (1), laptop (1), pen (2), shelf (1, 2), statue (2), tabletop decor (1). You hold pencil (4).
+Act: open box 1
+You open box (1). You see CD (1), box (1), desk (1), laptop (1), pen (2), shelf (1, 2), statue (2), tabletop decor (1). You hold pencil (4).
+Act: put down pencil 4
+You put pencil (4) in box (1).
+Think: Now, I need to pick up box 1.
+OK.
+Act: pick up box 1
+You pick up box (1). You hold box (1).
+Think: Now, I need to find shelf and put down box 1.
+OK.
+Query: recall location of shelf
+You saw shelf 2 in bedroom 1. You saw shelf 1 in bedroom 1. You saw shelf 4 in living room 1. You saw shelf 9 in living room 1. You saw shelf 3 in bedroom 1. You saw shelf 8 in living room 1. You saw shelf 5 in living room 1. You saw shelf 6 in living room 1. You saw shelf 7 in living room 1.
+Think: Shelf 2 is in bedroom 1.
+OK.
+Act: go to shelf 2
+You arrive at the shelf (2). You see CD (1), desk (1), laptop (1), pen (2), pencil (4), shelf (1, 2), statue (2), tabletop decor (1). You hold box (1).
+Act: put down box 1
+Put action failed: There is no valid space to place the object in the target receptacle.
+Think: I need to find another shelf.
+OK.
+Act: go to shelf 3
+You arrive at the shelf (3). You see TV stand (1), bowl (1), cabinet (4), drawer (4), pencil (2, 4), shelf (3), statue (1), television (1), watch (1). You hold box (1).
+Act: put down box 1
+You put box (1) in shelf (3).
+Think: Now I complete the task.
+OK.
+Act: done

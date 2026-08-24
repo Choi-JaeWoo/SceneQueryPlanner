@@ -1,0 +1,7 @@
+Your task is to: Place a bottle in the fridge temporarily, before moving it to the countertop.
+3D Scene Graph: {nodes: {agent: [{id: user 1, location: kitchen 1}], room: [{id: kitchen 1}, {id: bathroom 1}, {id: bedroom 1}, {id: living room 1}], asset: [{id: countertop 1, location: kitchen 1}, {id: fridge 1, location: kitchen 1}], object: [{id: bowl 1, location: kitchen 1}, {id: fork 1, location: kitchen 1}, {id: egg 2, location: kitchen 1}, {id: spatula 1, location: kitchen 1}, {id: salt shaker 1, location: kitchen 1}, {id: bottle 1, location: kitchen 1}, {id: television 2, location: kitchen 1}, {id: egg 1, location: kitchen 1}, {id: house plant 1, location: kitchen 1}]}, links: [user 1↔kitchen 1, user 1↔kitchen 1, bowl 1↔countertop 1, fork 1↔countertop 1, egg 2↔countertop 1, spatula 1↔countertop 1, salt shaker 1↔countertop 1, bottle 1↔countertop 1, countertop 1↔kitchen 1, television 2↔countertop 1, egg 1↔fridge 1, fridge 1↔kitchen 1]}
+Memory: ['kitchen 1']
+chain-of-thought: i have found the countertop, fridge, and bottle on the graph -> search complete -> i will switch to planning mode -> generate plan to place a bottle in the fridge temporarily, before moving it to the countertop
+reasoning: I will generate a task plan using the identified subgraph
+plan: [go to kitchen 1, go to bottle 1, pick up bottle 1, go to fridge 1, open fridge 1, put down bottle 1, close fridge 1, open fridge 1, pick up bottle 1, go to countertop 1, put down bottle 1]
+Scene Graph Simulator: Plan Verified

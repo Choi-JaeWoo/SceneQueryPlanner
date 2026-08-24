@@ -1,0 +1,103 @@
+Your task is to: After cleaning the spoon, store it in the shelf.
+You are in the house, and there are 5 rooms: bathroom (1), bedroom (1, 2), kitchen (1), living room (1). You are in the middle of a living room (1). Looking quickly around the room, you see TV stand (1), painting (3, 4), shelf (4, 5, 6, 7, 8, 9).
+Think: To solve the task, I need to find and pick up spoon, find sink basin and put down spoon, turn on faucet to wash spoon, pick up spoon and find shelf, put down spoon.
+OK.
+Think: First, I need to find and pick up spoon.
+OK.
+Query: recall location of spoon
+You have not seen spoon before.
+Think: I have not seen spoon yet. The spoon is more likely to appear in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see cabinet (1), countertop (1), fridge (1), garbage can (2), house plant (1), shelf (1, 2, 3), shelving unit (1), stool (2).
+Think: In kitchen 1, the spoon is likely to appear in/on cabinet 1, countertop 1, fridge 1, garbage can 2, shelf (1, 2, 3), stool 2. I can check each place one by one until I find spoon.
+OK.
+Act: go to cabinet 1
+You arrive at the cabinet (1). The cabinet (1) is closed. You see cabinet (1), fridge (1), knife (1), shelf (1, 2, 3), shelving unit (1).
+Act: open cabinet 1
+You open cabinet (1). You see apple (1), cabinet (1), fridge (1), knife (1), shelf (1, 2, 3), shelving unit (1).
+Act: go to countertop 1
+You arrive at the countertop (1). You see book (6), bowl (2), countertop (1), credit card (1), cup (1), knife (1), lettuce (1), pen (1), pepper shaker (1), potato (1, 2), salt shaker (1), spoon (1, 2, 3), spray bottle (1), vase (2).
+Act: go to fridge 1
+You arrive at the fridge (1). The fridge (1) is closed. You see fridge (1).
+Act: open fridge 1
+You open fridge (1). You see egg (1), fridge (1).
+Act: go to garbage can 2
+You arrive at the garbage can (2). You see credit card (1), cup (1), garbage can (2), pepper shaker (1), potato (1, 2), salt shaker (1), spoon (1, 2), spray bottle (1), vase (2).
+Act: go to shelf 1
+You arrive at the shelf (1). You see apple (1), cabinet (1), egg (1), fridge (1), knife (1), shelf (1, 2, 3), shelving unit (1), spoon (3).
+Think: I find spoon 3. Now, I need to pick it up.
+OK.
+Act: go to spoon 3
+You arrive at the spoon (3). You see book (6), bowl (2), credit card (1), cup (1), knife (1), lettuce (1), pen (1), pepper shaker (1), potato (1, 2), salt shaker (1), spoon (1, 2, 3), spray bottle (1), vase (2).
+Act: pick up spoon 3
+You pick up spoon (3). You hold spoon (3).
+Think: Now, I need to find sink basin.
+OK.
+Query: recall location of sink basin
+You saw sink basin 1 in bathroom 1.
+Think: Sink basin 1 is in bathroom 1.
+OK.
+Act: go to bathroom 1
+You move to the bathroom (1). Looking quickly around the room, you see garbage can (1), plunger (1), sink (1), sink basin (1), toilet (1). You hold spoon (3).
+Act: go to sink basin 1
+You arrive at the sink basin (1). You see dish sponge (1), faucet (1), sink (1), sink basin (1), toilet (1), toilet paper (1). You hold spoon (3).
+Think: Now, I need to put down spoon 3.
+OK.
+Act: put down spoon 3
+You put spoon (3) in sink basin (1).
+Think: Now, I need to turn on faucet 1 briefly and turn off to wash spoon 3.
+OK.
+Act: turn on faucet 1
+You turn on faucet (1).
+Act: turn off faucet 1
+You turn off faucet (1).
+Think: Now, I need to pick up spoon 3 and find shelf.
+OK.
+Act: pick up spoon 3
+You pick up spoon (3). You hold spoon (3).
+Think: Now, I need to find shelf and put down spoon 3.
+OK.
+Query: recall location of shelf
+You saw shelf 8 in living room 1. You saw shelf 1 in kitchen 1. You saw shelf 2 in kitchen 1. You saw shelf 3 in kitchen 1. You saw shelf 7 in living room 1. You saw shelf 9 in living room 1. You saw shelf 6 in living room 1. You saw shelf 5 in living room 1. You saw shelf 4 in living room 1.
+Think: Shelf 8 is in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), painting (3, 4), shelf (4, 5, 6, 7, 8, 9). You hold spoon (3).
+Act: go to shelf 8
+You arrive at the shelf (8). You see TV stand (1), book (7), laptop (2), painting (3, 4), shelf (4, 5, 6, 7, 8, 9), television (1). You hold spoon (3).
+Act: put down spoon 3
+Put action failed: There is no valid space to place the object in the target receptacle.
+Think: I cannot put down spoon 3 in shelf 8. I need to find another shelf.
+OK.
+Act: go to shelf 7
+You arrive at the shelf (7). You see TV stand (1), book (7), laptop (2), shelf (4, 5, 6, 7, 8, 9), television (1). You hold spoon (3).
+Act: put down spoon 3
+Put action failed: There is no valid space to place the object in the target receptacle.
+Think: I cannot put down spoon 3 in shelf 7. I need to find another shelf.
+OK.
+Act: go to shelf 6
+You arrive at the shelf (6). You see TV stand (1), book (7), laptop (2), painting (3, 4), shelf (4, 5, 6, 7, 8, 9), television (1). You hold spoon (3).
+Act: put down spoon 3
+Put action failed: There is no valid space to place the object in the target receptacle.
+Think: I cannot put down spoon 3 in shelf 6. I need to find another shelf.
+OK.
+Act: go to shelf 5
+You arrive at the shelf (5). You see TV stand (1), book (7), laptop (2), painting (3, 4), shelf (4, 5, 6, 7, 8, 9), television (1). You hold spoon (3).
+Act: put down spoon 3
+Put action failed: There is no valid space to place the object in the target receptacle.
+Think: I cannot put down spoon 3 in shelf 5. I need to find another shelf.
+OK.
+Act: go to shelf 4
+You arrive at the shelf (4). You see TV stand (1), book (7), laptop (2), painting (3, 4), shelf (4, 5, 6, 7, 8, 9), television (1). You hold spoon (3).
+Act: put down spoon 3
+Put action failed: There is no valid space to place the object in the target receptacle.
+Think: I cannot put down spoon 3 in shelf 4. I need to find another shelf.
+OK.
+Act: go to shelf 9
+You arrive at the shelf (9). You see TV stand (1), book (7), laptop (2), painting (3, 4), shelf (4, 5, 6, 7, 8, 9), television (1). You hold spoon (3).
+Act: put down spoon 3
+You put spoon (3) in shelf (9).
+Think: Now I complete task.
+OK.
+Act: done

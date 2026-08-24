@@ -1,0 +1,118 @@
+Your task is to: Use the coffeemachine to brew coffee into a mug and toast a slice of bread using a toaster, then place the coffee and toast on the countertop.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a bedroom (1). Looking quickly around the room, you see bed (1), chair (1, 2, 3, 4), dining table (1), dog bed (1), drawer (1, 2, 3), dresser (1), side table (1).
+Think: To solve the task, I need to find and put mug in coffee machine, turn on coffee machine, and put mug on countertop. And I need to find and pick up knife or butter knife, find and slice bread, put down knife or butter knife and pick up sliced bread, put sliced bread in toaster and turn on toaster, pick up sliced bread and put it on countertop.
+OK.
+Think: First, I need to find and pick up mug.
+OK.
+Query: find_objects({'label': 'mug'})
+Info: 
+Think: I have not seen mug yet. Now I need to check where to search. First, I will search kitchen 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'kitchen 1'})
+Info: chair (5, 6, 7, 8), countertop 1, dining table 2, fridge 1, garbage can 2, stool 1
+Think: In kitchen 1, the mug is likely to appear in/on countertop 1, dining table 2. I can check each place one by one until I find mug.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see chair (5, 6, 7, 8), coffee machine (1), countertop (1), dining table (2), fridge (1), garbage can (2), house plant (1), painting (2, 3, 4), stool (1), television (1), toaster (1).
+Act: go to countertop 1
+You arrive at the countertop (1). You see book (1), bread (2), coffee machine (1), countertop (1), credit card (1), egg (1), fridge (1), paper towel roll (1), potato (2), salt shaker (1), soap bottle (1), spatula (1), television (1), toaster (1), wine bottle (1).
+Act: go to dining table 2
+You arrive at the dining table (2). You see book (2), bottle (1), bread (1), butter knife (1), chair (5, 6), coffee machine (1), credit card (1), dining table (2), lettuce (1), mug (2), paper towel roll (1), pen (2), plate (1), wine bottle (1, 2).
+Think: I find mug 2. Now, I need to pick it up.
+OK.
+Act: go to mug 2
+You arrive at the mug (2). You see book (2), bottle (1), bread (1), butter knife (1), chair (5, 6), coffee machine (1), credit card (1), dining table (2), lettuce (1), mug (2), paper towel roll (1), pen (2), plate (1), wine bottle (1, 2).
+Act: pick up mug 2
+You pick up mug (2). You hold mug (2).
+Think: Now, I need to find coffee machine.
+OK.
+Query: find_objects({'label': 'coffee machine'})
+Info: [{'name_id_nl': 'coffee machine 1', 'node_type': 'object', 'properties': ['toggleable', 'isHeatSource'], 'states': []}]
+Query: get_edges_for_node({'node_id': 'coffee machine 1'})
+Info: [('coffee machine 1', 'salt shaker 1', 'CLOSE'), ('coffee machine 1', 'soap bottle 1', 'CLOSE'), ('coffee machine 1', 'television 1', 'CLOSE'), ('coffee machine 1', 'countertop 1', 'ON'), ('coffee machine 1', 'credit card 1', 'CLOSE'), ('coffee machine 1', 'mug 2', 'CLOSE'), ('coffee machine 1', 'paper towel roll 1', 'CLOSE'), ('coffee machine 1', 'wine bottle 1', 'CLOSE'), ('coffee machine 1', 'user 1', 'CLOSE'), ('coffee machine 1', 'kitchen 1', 'INSIDE'), ('salt shaker 1', 'coffee machine 1', 'CLOSE'), ('soap bottle 1', 'coffee machine 1', 'CLOSE'), ('television 1', 'coffee machine 1', 'CLOSE'), ('credit card 1', 'coffee machine 1', 'CLOSE'), ('mug 2', 'coffee machine 1', 'CLOSE'), ('paper towel roll 1', 'coffee machine 1', 'CLOSE'), ('wine bottle 1', 'coffee machine 1', 'CLOSE'), ('user 1', 'coffee machine 1', 'CLOSE')]
+Think: Coffee machine 1 is on countertop 1.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see book (1), bread (2), coffee machine (1), countertop (1), credit card (1), egg (1), fridge (1), paper towel roll (1), potato (2), salt shaker (1), soap bottle (1), spatula (1), television (1), toaster (1), wine bottle (1). You hold mug (2).
+Act: go to coffee machine 1
+You arrive at the coffee machine (1). You see coffee machine (1), countertop (1), credit card (1), fridge (1), paper towel roll (1), soap bottle (1), television (1), wine bottle (1). You hold mug (2).
+Think: Now, I need to put down mug 2 in coffee machine 1.
+OK.
+Act: put down mug 2
+You put mug (2) in coffee machine (1).
+Think: Now, I need to turn on coffee machine 1 to brew the coffee.
+OK.
+Act: turn on coffee machine 1
+You turn on coffee machine (1).
+Think: Now, I need to turn off coffee machine 1 and pick up mug 2.
+OK.
+Act: turn off coffee machine 1
+You turn off coffee machine (1).
+Act: pick up mug 2
+You pick up mug (2). You hold mug (2).
+Think: Now, I need to put down mug 2 on countertop 1.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see book (1), bread (2), coffee machine (1), countertop (1), credit card (1), egg (1), fridge (1), paper towel roll (1), potato (2), salt shaker (1), soap bottle (1), spatula (1), television (1), toaster (1), wine bottle (1). You hold mug (2).
+Act: put down mug 2
+You put mug (2) in countertop (1).Think: Now, I need to find and pick up knife or butter knife.
+OK.
+Query: find_objects({'label': 'knife'})
+Info: 
+Query: find_objects({'label': 'butter knife'})
+Info: [{'name_id_nl': 'butter knife 1', 'node_type': 'object', 'properties': ['pickupable'], 'states': []}]
+Query: get_edges_for_node({'node_id': 'butter knife 1'})
+Info: [('butter knife 1', 'dining table 2', 'ON'), ('butter knife 1', 'book 2', 'CLOSE'), ('butter knife 1', 'bottle 1', 'CLOSE'), ('butter knife 1', 'bread 1', 'CLOSE'), ('butter knife 1', 'chair 8', 'CLOSE'), ('butter knife 1', 'chair 7', 'CLOSE'), ('butter knife 1', 'chair 5', 'CLOSE'), ('butter knife 1', 'credit card 1', 'CLOSE'), ('butter knife 1', 'lettuce 1', 'CLOSE'), ('butter knife 1', 'pen 2', 'CLOSE'), ('butter knife 1', 'plate 1', 'CLOSE'), ('butter knife 1', 'wine bottle 2', 'CLOSE'), ('butter knife 1', 'wine bottle 1', 'CLOSE'), ('butter knife 1', 'kitchen 1', 'INSIDE'), ('book 2', 'butter knife 1', 'CLOSE'), ('bottle 1', 'butter knife 1', 'CLOSE'), ('bread 1', 'butter knife 1', 'CLOSE'), ('chair 8', 'butter knife 1', 'CLOSE'), ('chair 7', 'butter knife 1', 'CLOSE'), ('chair 5', 'butter knife 1', 'CLOSE'), ('credit card 1', 'butter knife 1', 'CLOSE'), ('lettuce 1', 'butter knife 1', 'CLOSE'), ('pen 2', 'butter knife 1', 'CLOSE'), ('plate 1', 'butter knife 1', 'CLOSE'), ('wine bottle 2', 'butter knife 1', 'CLOSE'), ('wine bottle 1', 'butter knife 1', 'CLOSE')]
+Think: Butter knife 1 is on dining table 2
+OK.
+Act: go to dining table 2
+You arrive at the dining table (2). You see book (2), bottle (1), bread (1), butter knife (1), chair (5, 6), coffee machine (1), credit card (1), dining table (2), lettuce (1), paper towel roll (1), pen (2), plate (1), wine bottle (1, 2).
+Act: go to butter knife 1
+You arrive at the butter knife (1). You see book (2), bottle (1), bread (1), butter knife (1), chair (5, 6), coffee machine (1), credit card (1), dining table (2), lettuce (1), paper towel roll (1), pen (2), plate (1), wine bottle (1, 2).
+Act: pick up butter knife 1
+You pick up butter knife (1). You hold butter knife (1).
+Think: Now, I need to find and slice bread. I see bread 1.
+OK.
+Act: go to bread 1
+You arrive at the bread (1). You see book (2), bottle (1), bread (1), chair (5, 6, 7, 8), dining table (2), lettuce (1), painting (3), pen (2), plate (1), wine bottle (2). You hold butter knife (1).
+Act: slice bread 1
+You slice bread (1). You see book (2), bottle (1), chair (5, 6, 7, 8), dining table (2), lettuce (1), painting (3), pen (2), plate (1), sliced bread (1), wine bottle (2). You hold butter knife (1).
+Think: Now, I need to put down butter knife 1 and pick up sliced bread 1.
+OK.
+Act: put down butter knife 1
+You put butter knife (1) in dining table (2).
+Act: pick up sliced bread 1
+You pick up sliced bread (1). You hold sliced bread (1).
+Think: Now, I need to find toaster.
+OK.
+Query: find_objects({'label': 'toaster'})
+Info: [{'name_id_nl': 'toaster 1', 'node_type': 'object', 'properties': ['toggleable', 'isHeatSource'], 'states': []}]
+Query: get_edges_for_node({'node_id': 'toaster 1'})
+Info: [('toaster 1', 'countertop 1', 'ON'), ('toaster 1', 'book 1', 'CLOSE'), ('toaster 1', 'bread 2', 'CLOSE'), ('toaster 1', 'egg 1', 'CLOSE'), ('toaster 1', 'potato 2', 'CLOSE'), ('toaster 1', 'salt shaker 1', 'CLOSE'), ('toaster 1', 'spatula 1', 'CLOSE'), ('toaster 1', 'kitchen 1', 'INSIDE'), ('book 1', 'toaster 1', 'CLOSE'), ('bread 2', 'toaster 1', 'CLOSE'), ('egg 1', 'toaster 1', 'CLOSE'), ('potato 2', 'toaster 1', 'CLOSE'), ('salt shaker 1', 'toaster 1', 'CLOSE'), ('spatula 1', 'toaster 1', 'CLOSE')]
+Think: Toaster is on countertop 1.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see book (1), bread (2), coffee machine (1), countertop (1), credit card (1), egg (1), fridge (1), mug (2), paper towel roll (1), potato (2), salt shaker (1), soap bottle (1), spatula (1), television (1), toaster (1), wine bottle (1). You hold sliced bread (1).
+Act: go to toaster 1
+You arrive at the toaster (1). You see book (1), bread (2), butter knife (1), credit card (1), egg (1), potato (2), salt shaker (1), spatula (1), toaster (1), wine bottle (1). You hold sliced bread (1).
+Think: Now, I need to put down sliced bread 1 in the toaster 1 and turn on toaster 1.
+OK.
+Act: put down sliced bread 1
+You put sliced bread (1) in toaster (1).
+Act: turn on toaster 1
+You turn on toaster (1).
+Think: Now, I need to turn off toaster 1 and pick up sliced bread 1.
+OK.
+Act: turn off toaster 1
+You turn off toaster (1).
+Act: pick up sliced bread 1
+You pick up sliced bread (1). You hold sliced bread (1).
+Think: Now, I need to put down sliced bread 1 on countertop 1.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see book (1), bread (2), coffee machine (1), countertop (1), credit card (1), egg (1), fridge (1), mug (2), paper towel roll (1), potato (2), salt shaker (1), soap bottle (1), spatula (1), television (1), toaster (1), wine bottle (1). You hold sliced bread (1).
+Act: put down sliced bread 1
+You put sliced bread (1) in countertop (1).
+Think: Now I complete task.
+OK.
+Act: done

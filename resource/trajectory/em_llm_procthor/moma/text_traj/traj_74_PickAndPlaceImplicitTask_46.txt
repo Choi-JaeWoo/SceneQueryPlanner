@@ -1,0 +1,10 @@
+Your task is to: Transfer all items from the countertop to the dining table.
+You arrive at the spray bottle (2). You see countertop (1), spray bottle (2). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- (bathroom 1): [faucet 1, (garbage can 1), painting 3, painting 4, plunger 1, (sink 1), (sink basin 1), spray bottle 1, (toilet 1)]
+- (bedroom 1): [(armchair 1), (armchair 2), baseball bat 1, basket ball 1, (bed 1), (drawer 6), (drawer 5), (drawer 1), (drawer 2), (drawer 3), (drawer 4), (dresser 1), floor lamp 1, floor lamp 2, painting 1, painting 2]
+- kitchen 1: [egg 2, garbage bag 1, bowl 1, cell phone 2, dish sponge 1, house plant 1, mug 1, soap bottle 1, (chair 2), (chair 1), countertop 1, dining table 1, (fridge 1), spray bottle 2]
+- (living room 1): [(armchair 3), (armchair 4), (box 1), (chair 4), (chair 3), (chair 6), (chair 5), (dining table 2), floor lamp 4, floor lamp 5, floor lamp 3, (sofa 1)]
+Your 5 previous actions were: pick up soap bottle 1 (success), go to dining table 1 (success), put down soap bottle 1 (success), go to countertop 1 (success), go to spray bottle 2 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I arrive at spray bottle 2. Now, I need to pick up spray bottle 2.
+Act: pick up spray bottle 2

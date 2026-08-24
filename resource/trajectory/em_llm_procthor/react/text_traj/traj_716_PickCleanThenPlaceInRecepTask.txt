@@ -1,0 +1,51 @@
+Your task is to: Clean the butter knife and place it on the countertop.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a bathroom (1). Looking quickly around the room, you see drawer (4, 5, 6, 7, 8, 9), dresser (2), garbage can (1), plunger (1), sink (1), sink basin (1), spray bottle (1), toilet (1).
+Think: To solve the task, I need to find and pick up butter knife, put it in sink basin and turn on faucet, pick up and put down butter knife on countertop.
+OK.
+Think: First, I need to find and pick up butter knife. The butter knife is more likely to appear in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see chair (8, 9, 10), countertop (1), dining table (2), garbage bag (1).
+Think: In kitchen 1, the butter knife is likely to appear in/on countertop 1, dining table 2. I can check each place one by one until I find butter knife.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see butter knife (1), countertop (1), pot (1), potato (1), salt shaker (1).
+Think: I find butter knife 1. Now, I need to pick it up.
+OK.
+Act: go to butter knife 1
+You arrive at the butter knife (1). You see butter knife (1), countertop (1), pot (1), potato (1), salt shaker (1).
+Act: pick up butter knife 1
+You pick up butter knife (1). You hold butter knife (1).
+Think: Now, I need to find sink basin. The sink basin is more likely to appear in bathroom 1.
+OK.
+Act: go to bathroom 1
+You move to the bathroom (1). Looking quickly around the room, you see drawer (4, 5, 6, 7, 8, 9), dresser (2), garbage can (1), plunger (1), sink (1), sink basin (1), spray bottle (1), toilet (1). You hold butter knife (1).
+Act: go to sink basin 1
+You arrive at the sink basin (1). You see drawer (5, 6, 7, 8, 9), faucet (1), plunger (1), sink (1), sink basin (1). You hold butter knife (1).
+Think: Now, I need to put down butter knife 1.
+OK.
+Act: put down butter knife 1
+You put butter knife (1) in sink basin (1).
+Think: Now, I need to turn on faucet 1 briefly and turn off to wash butter knife 1.
+OK.
+Act: turn on faucet 1
+You turn on faucet (1).
+Act: turn off faucet 1
+You turn off faucet (1).
+Think: Now, I need to pick up butter knife 1 and find countertop.
+OK.
+Act: pick up butter knife 1
+You pick up butter knife (1). You hold butter knife (1).
+Think: Now, I need to find countertop and put down butter knife 1. The countertop is more likely to appear in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see chair (8, 9, 10), countertop (1), dining table (2), garbage bag (1). You hold butter knife (1).
+Act: go to countertop 1
+You arrive at the countertop (1). You see countertop (1), pot (1), potato (1), salt shaker (1). You hold butter knife (1).
+Think: Now I need to put down butter knife 1.
+OK.
+Act: put down butter knife 1
+You put butter knife (1) in countertop (1).
+Think: Now I complete the task.
+OK.
+Act: done

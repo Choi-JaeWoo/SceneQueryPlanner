@@ -1,0 +1,9 @@
+Your task is to: Heat an lettuce and place it on the dining table.
+You move to the kitchen (1). Looking quickly around the room, you see countertop (1), fridge (1), garbage bag (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- (bedroom 1): [baseball bat 1, (bed 1), (desk 1), (drawer 6), (drawer 1), (drawer 2), (drawer 3), (drawer 4), (drawer 7), (drawer 8), (drawer 9), (drawer 10), (drawer 5), (dresser 1), painting 1, painting 2, (safe 1), vacuum cleaner 1]
+- kitchen 1: [coffee machine 1, (countertop 1), (fridge 1), garbage bag 1, lettuce 1, mug 1, spoon 1, spray bottle 1]
+- living room 1: [(armchair 1), (box 1), cart 1, (dining table 1), floor lamp 1, painting 3, painting 4, (sofa 1), television 1]
+Your 1 previous actions were: go to kitchen 1 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I move to kitchen 1. I find lettuce 1. Now, I need to move toward lettuce 1 to pick it up.
+Act: go to lettuce 1

@@ -1,0 +1,69 @@
+Your task is to: Put the egg on the dining table after it has been heated.
+You are in the house, and there are 5 rooms: bathroom (1), bedroom (1, 2), kitchen (1), living room (1). You are in the middle of a kitchen (1). Looking quickly around the room, you see cabinet (1, 2, 3), chair (1, 2, 3, 4), countertop (1), credit card (1), dining table (1), fridge (1), shelf (3, 4, 5, 6, 7, 8, 9, 10, 11), shelving unit (1, 2, 3), side table (1).
+Think: To solve the task, I need to find the egg and use either the microwave or the toaster to heat it.
+OK.
+Think: First, I need to check if there is a microwave or a toaster.
+OK.
+Query: find_objects({'label': 'microwave'})
+Info: [{'name_id_nl': 'microwave 1', 'node_type': 'object', 'properties': ['toggleable', 'isHeatSource', 'openable'], 'states': []}]
+Query: find_objects({'label': 'toaster'})
+Info: 
+Think: I find microwave 1. Now, I need to find knife or butter knife to slice egg.
+OK.
+Query: find_objects({'label': 'knife'})
+Info: 
+Query: find_objects({'label': 'butter knife'})
+Info: 
+Think: I have not seen knife or butter knife yet. Now I need to check where to search. First, I will search kitchen 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'kitchen 1'})
+Info: cabinet (1, 2, 3), chair (1, 2, 3, 4), countertop 1, dining table 1, fridge 1, shelf (3, 4, 5, 6, 7, 8, 9, 10, 11), side table 1
+Think: In kitchen 1, the knife or butter knife is likely to appear in/on countertop 1, dining table 1. I can check each place one by one until I find knife or butter knife.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see countertop (1), egg (1), fridge (1), kettle (1), ladle (1), lettuce (1, 2), microwave (1), mug (1), paper towel roll (1), pen (2), pencil (1), pepper shaker (1), soap bottle (1), wine bottle (2).
+Think: I find egg 1. Now, I need to pick it up.
+OK.
+Act: go to egg 1
+You arrive at the egg (1). You see egg (1), kettle (1), ladle (1), microwave (1), mug (1), paper towel roll (1), pen (2), pencil (1), pepper shaker (1), soap bottle (1), wine bottle (2).
+Act: pick up egg 1
+You pick up egg (1). You hold egg (1).
+Think: Now, I need to find microwave 1.
+OK.
+Act: go to microwave 1
+You arrive at the microwave (1). The microwave (1) is closed. You see kettle (1), ladle (1), microwave (1), mug (1), paper towel roll (1), pen (2), pencil (1), pepper shaker (1), soap bottle (1), wine bottle (2). You hold egg (1).
+Think: Since microwave 1 is closed, I need to open it to put down egg 1.
+OK.
+Act: open microwave 1
+You open microwave (1). You see kettle (1), ladle (1), microwave (1), mug (1), paper towel roll (1), pen (2), pencil (1), pepper shaker (1), soap bottle (1), wine bottle (2). You hold egg (1).
+Act: put down egg 1
+You put egg (1) in microwave (1).
+Think: Now, I need to close microwave 1, turn it on briefly, and then turn it off.
+OK.
+Act: close microwave 1
+You close microwave (1).
+Act: turn on microwave 1
+You turn on microwave (1).
+Act: turn off microwave 1
+You turn off microwave (1).
+Think: Now, I need to open microwave 1 and pick up egg 1.
+OK.
+Act: open microwave 1
+You open microwave (1). You see egg (1), kettle (1), ladle (1), microwave (1), mug (1), paper towel roll (1), pen (2), pencil (1), pepper shaker (1), soap bottle (1), wine bottle (2).
+Act: pick up egg 1
+You pick up egg (1). You hold egg (1).
+Think: Now, I need to find dining table.
+OK.
+Query: find_objects({'label': 'dining table'})
+Info: [{'name_id_nl': 'dining table 3', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'bedroom 1'}, {'name_id_nl': 'dining table 2', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}, {'name_id_nl': 'dining table 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'kitchen 1'}]
+Think: Dining table 1 is in kitchen 1.
+OK.
+Act: go to dining table 1
+You arrive at the dining table (1). You see apple (1), bowl (1), butter knife (2), cabinet (3), chair (1, 2, 3, 4), credit card (1), dining table (1), fork (2), house plant (3), kettle (2), lettuce (2), pan (1), pen (1), shelf (9, 10, 11), shelving unit (3), statue (2, 3), toaster (1), wine bottle (1). You hold egg (1).
+Think: Now, I need to put down egg 1.
+OK.
+Act: put down egg 1
+You put egg (1) in dining table (1).
+Think: Now I complete task.
+OK.
+Act: done

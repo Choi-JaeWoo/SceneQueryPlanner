@@ -1,0 +1,10 @@
+Your task is to: Take a book and set it down on the countertop.
+You arrive at the countertop (1). You see book (3), bread (1), butter knife (1, 2, 3), cabinet (5), cell phone (4), countertop (1), dish sponge (2), egg (4), fridge (1), house plant (3), knife (1), ladle (2), lettuce (1), painting (2), pen (2), pepper shaker (1), potato (1), shelf (1, 2, 3), shelving unit (1), soap bottle (2), spatula (1, 2), spray bottle (2), statue (2). You hold book (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- (bathroom 1): [(sink basin 1), (sink 1), (toilet 1), (garbage can 1), faucet 1, plunger 1]
+- bedroom 1: [television 1, basket ball 1, book 2, bowl 1, cell phone 2, dog bed 1, pen 1, pencil 2, alarm clock 1, pillow 1, teddy bear 1, bed 1, (box 2), cabinet 4, (cabinet 3), (cabinet 1), (cabinet 2), (chair 1), (chair 2), (chair 3), (dining table 1), (drawer 2), (drawer 1), (drawer 4), (drawer 3), (dresser 1), (side table 1)]
+- kitchen 1: [painting 3, painting 1, television 2, bowl 2, cell phone 5, ladle 1, lettuce 2, pencil 3, salt shaker 1, spoon 1, statue 1, wine bottle 1, book 1, book 3, bread 1, butter knife 2, butter knife 1, butter knife 3, (cabinet 5), cell phone 4, (chair 5), (chair 6), (chair 4), countertop 1, (dining table 2), dish sponge 2, egg 4, (fridge 1), house plant 3, knife 1, ladle 2, lettuce 1, painting 2, pen 2, pepper shaker 1, potato 1, (shelf 1), (shelf 2), (shelf 3), shelving unit 1, soap bottle 2, spatula 2, spatula 1, spray bottle 2, statue 2, (stool 1)]
+- (living room 1): [(box 1), (chair 10), (chair 8), (chair 7), (TV stand 1), painting 4, (sofa 1), (chair 9), house plant 1, (dining table 3), (shelf 4), (garbage can 2)]
+Your 5 previous actions were: open cabinet 4 (success), go to book 1 (success), pick up book 1 (success), go to kitchen 1 (success), go to countertop 1 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I arrive at countertop 1. I hold book 1. Now, I need to put down book 1.
+Act: put down book 1

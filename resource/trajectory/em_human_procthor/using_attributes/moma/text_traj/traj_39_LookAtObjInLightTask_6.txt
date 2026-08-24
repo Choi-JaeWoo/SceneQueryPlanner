@@ -1,0 +1,10 @@
+Your task is to: Turn on the light source that is close to the bowl and closely observe the pencil to examine its markings clearly.
+You arrive at the dining table (1). You see book (1), butter knife (1), cell phone (1), chair (1, 2, 3), dining table (1), ladle (1), mug (1), pencil (1, 2), plate (1), pot (1), salt shaker (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- (bathroom 1): [faucet 1, (garbage can 1), (sink 1), (sink basin 1), (toilet 1)]
+- (bedroom 1): [(bed 1), (drawer 4), (drawer 11), (drawer 12), (drawer 10), (drawer 9), (drawer 8), (drawer 7), (drawer 6), (drawer 5), (drawer 2), (drawer 1), (drawer 3), (dresser 1), (safe 1)]
+- kitchen 1: [garbage bag 1, bread 1, fork 2, fork 1, house plant 1, kettle 1, paper towel roll 1, potato 1, soap bottle 1, spoon 1, television 1, toaster 1, vase 2, book 1, butter knife 1, cell phone 1, (chair 3), (chair 2), (chair 1), countertop 1, dining table 1, ladle 1, mug 1, pencil 2, pencil 1, plate 1, pot 1, salt shaker 1]
+- living room 1: [(armchair 1), (cabinet 1), cart 1, (dining table 2), painting 4, painting 2, painting 1, painting 3, (shelf 2), (shelf 1), (shelf 4), (shelf 3), shelving unit 1, (sofa 1), (TV stand 1)]
+Your 3 previous actions were: go to kitchen 1 (success), go to countertop 1 (success), go to dining table 1 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I arrive at dining table 1. I find pencil 1. Now, I need to move toward pencil 1 to pick it up.
+Act: go to pencil 1

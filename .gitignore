@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Hydra / experiment outputs
+outputs/
+multirun/
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+
+# Simulator binaries (downloaded separately; see README)
+virtualhome/simulation/unity_simulator/linux_exec*
+
+# Local paper drafts
+*.pdf
+
+# Credentials
+.env

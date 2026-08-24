@@ -1,0 +1,8 @@
+Your task is to: Pick up the spoon, light the wax item from the dining table, and take a close look at the spoon to inspect its surface.
+You are in the house, and there are 2 rooms: kitchen (1), living room (1). You are in the middle of a living room (1). Looking quickly around the room, you see TV stand (1), box (1), dining table (1), drawer (1, 2), garbage can (1), house plant (2), painting (3, 4), shelf (1, 2, 3, 4, 5, 6), side table (1), sofa (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- (kitchen 1): [(countertop 1), (fridge 1), house plant 1, painting 2, painting 1]
+- living room 1: [(box 1), (dining table 1), (drawer 2), (drawer 1), (garbage can 1), house plant 2, laptop 1, painting 4, painting 3, pencil 1, pillow 1, (shelf 2), (shelf 3), (shelf 4), (shelf 5), (shelf 6), (shelf 1), (side table 1), (sofa 1), (TV stand 1)]
+You have not taken any actions yet.
+What is the best next action to complete the task as efficiently as possible?
+Think: First, I need to find and pick up spoon. The spoon is more likely to appear in kitchen 1.
+Act: go to kitchen 1

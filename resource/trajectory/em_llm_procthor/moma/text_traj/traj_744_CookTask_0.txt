@@ -1,0 +1,10 @@
+Your task is to: Use the coffee machine to brew coffee into a mug and then place the mug on the countertop.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a kitchen (1). Looking quickly around the room, you see chair (3, 4), countertop (1), dining table (2), fridge (1), painting (2, 3, 4), stool (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- (bathroom 1): [(drawer 5), faucet 1, painting 1, plunger 1, (side table 1), (sink 1), (sink basin 1), (toilet 1), (washing machine 1)]
+- (bedroom 1): [baseball bat 1, (bed 1), (cabinet 4), (cabinet 3), (cabinet 1), (cabinet 2), (chair 2), (chair 1), (desk 1), (dining table 1), dog bed 1, (drawer 4), (drawer 3), (drawer 2), (drawer 1), (dresser 1), (safe 1)]
+- kitchen 1: [(chair 3), (chair 4), (countertop 1), (dining table 2), (fridge 1), painting 2, painting 4, painting 3, (stool 1)]
+- (living room 1): [(box 1), cart 1, (dining table 3), floor lamp 1, (shelf 2), (shelf 3), (shelf 4), (shelf 6), (shelf 1), (shelf 5), (sofa 1), (TV stand 1)]
+You have not taken any actions yet.
+What is the best next action to complete the task as efficiently as possible?
+Think: First, I need to find and pick up mug. The mug is more likely to appear in kitchen 1.
+Act: go to kitchen 1

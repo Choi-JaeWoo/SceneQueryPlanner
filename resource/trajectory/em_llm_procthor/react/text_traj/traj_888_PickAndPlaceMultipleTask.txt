@@ -1,0 +1,73 @@
+Your task is to: Place a pencil, a cell phone, and a remote control side by side on the countertop.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a bathroom (1). Looking quickly around the room, you see drawer (14), garbage can (1), painting (3, 4), plunger (1), side table (2), sink (1), sink basin (1), toilet (1).
+Think: To solve the task, I need to find and pick up pencil, then put it on countertop. And I need to find and pick up cell phone, then put it on countertop. And I need to find and pick up remote control, then put it on countertop.
+OK.
+Think: First, I need to find and pick up pencil. The pencil is more likely to appear in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), cart (1), dining table (2), garbage can (2), shelf (7, 8, 9, 10, 11, 12).
+Think: In living room 1, the pencil is likely to appear in/on TV stand 1, cart 1, dining table 2, shelf (7, 8, 9, 10, 11, 12). I can check each place one by one until I find pencil.
+OK.
+Act: go to TV stand 1
+You arrive at the TV stand (1). You see TV stand (1), candle (1), cell phone (3), credit card (2), desk lamp (1), pencil (1, 2), remote control (2), shelf (7, 8, 9, 10, 11, 12), statue (5), television (1).
+Think: I find pencil 1. Now, I need to pick it up.
+OK.
+Act: go to pencil 1
+You arrive at the pencil (1). You see TV stand (1), candle (1), cell phone (3), credit card (2), desk lamp (1), pencil (1, 2), remote control (2), shelf (7, 8, 9, 10, 11, 12), statue (5), television (1).
+Act: pick up pencil 1
+You pick up pencil (1). You hold pencil (1).
+Think: Now, I need to find countertop and put down pencil 1. The countertop is more likely to appear in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see cabinet (1, 2), chair (1), countertop (1), dining table (1), fridge (1), shelf (1, 2, 3, 4, 5, 6), shelving unit (1, 2). You hold pencil (1).
+Act: go to countertop 1
+You arrive at the countertop (1). You see butter knife (1, 2), countertop (1), dish sponge (2), fork (1), mug (1), paper towel roll (2), potato (1, 2), soap bottle (1), spoon (1), tomato (1, 2), vase (1). You hold pencil (1).
+Act: put down pencil 1
+You put pencil (1) in countertop (1).
+Think: Now, I need to find and pick up cell phone. The cell phone is more likely to appear in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), cart (1), dining table (2), garbage can (2), shelf (7, 8, 9, 10, 11, 12).
+Think: In living room 1, the cell phone is likely to appear in/on TV stand 1, cart 1, dining table 2, shelf (7, 8, 9, 10, 11, 12). I can check each place one by one until I find cell phone.
+OK.
+Act: go to TV stand 1
+You arrive at the TV stand (1). You see TV stand (1), candle (1), cell phone (3), credit card (2), desk lamp (1), pencil (2), remote control (2), shelf (7, 8, 9, 10, 11, 12), statue (5), television (1).
+Think: I find cell phone 3. Now, I need to pick it up.
+OK.
+Act: go to cell phone 3
+You arrive at the cell phone (3). You see TV stand (1), candle (1), cell phone (3), credit card (2), desk lamp (1), pencil (2), remote control (2), shelf (7, 8, 9, 10, 11, 12), statue (5), television (1).
+Act: pick up cell phone 3
+You pick up cell phone (3). You hold cell phone (3).
+Think: Now, I need to find countertop and put down cell phone 3. The countertop is more likely to appear in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see cabinet (1, 2), chair (1), countertop (1), dining table (1), fridge (1), shelf (1, 2, 3, 4, 5, 6), shelving unit (1, 2). You hold cell phone (3).
+Act: go to countertop 1
+You arrive at the countertop (1). You see butter knife (1, 2), countertop (1), dish sponge (2), fork (1), mug (1), paper towel roll (2), pencil (1), potato (1, 2), soap bottle (1), spoon (1), tomato (1, 2), vase (1). You hold cell phone (3).
+Act: put down cell phone 3
+You put cell phone (3) in countertop (1).
+Think: Now, I need to find and pick up remote control. The remote control is more likely to appear in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), cart (1), dining table (2), garbage can (2), shelf (7, 8, 9, 10, 11, 12).
+Think: In living room 1, the remote control is likely to appear in/on TV stand 1, cart 1, dining table 2, shelf (7, 8, 9, 10, 11, 12). I can check each place one by one until I find remote control.
+OK.
+Act: go to TV stand 1
+You arrive at the TV stand (1). You see TV stand (1), candle (1), credit card (2), desk lamp (1), pencil (2), remote control (2), shelf (7, 8, 9, 10, 11, 12), statue (5), television (1).
+Think: I find remote control 2. Now, I need to pick it up.
+OK.
+Act: go to remote control 2
+You arrive at the remote control (2). You see TV stand (1), candle (1), credit card (2), desk lamp (1), pencil (2), remote control (2), shelf (7, 8, 9, 10, 11, 12), statue (5), television (1).
+Act: pick up remote control 2
+You pick up remote control (2). You hold remote control (2).
+Think: Now, I need to find countertop and put down remote control 2. The countertop is more likely to appear in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see cabinet (1, 2), chair (1), countertop (1), dining table (1), fridge (1), shelf (1, 2, 3, 4, 5, 6), shelving unit (1, 2). You hold remote control (2).
+Act: go to countertop 1
+You arrive at the countertop (1). You see butter knife (1, 2), cell phone (3), countertop (1), dish sponge (2), fork (1), mug (1), paper towel roll (2), pencil (1), potato (1, 2), soap bottle (1), spoon (1), tomato (1, 2), vase (1). You hold remote control (2).
+Act: put down remote control 2
+You put remote control (2) in countertop (1).
+Think: Now I complete the task.
+OK.
+Act: done

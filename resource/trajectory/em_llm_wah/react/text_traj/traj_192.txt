@@ -1,0 +1,39 @@
+Your task is to: Please open the dishwasher.  Put the wine glass in the dishwasher.  Set the dishwasher off on the normal cycle.
+You are in the house, and there are 5 rooms: bathroom 1, bedroom (1, 2), kitchen 1, living room 1. You are in the middle of a bedroom 2. Looking quickly around the room, you see bed 2, bookshelf 6, cabinet 1, chair 3, closet 1, computer 1, desk 2, garbage can 1, nightstand 2.
+Think: To solve the task I need to find and open dishwasher, find and pick up wine glass, find dishwasher and put down wine glass, close and turn on dishwasher.
+OK.
+Think: First, I need to find dishwasher. The dishwasher is more likely to appear in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen 1. Looking quickly around the room, you see bench (1, 2, 3, 4), bookshelf (1, 2), chair 1, dishwasher 1, faucet 1, fridge 1, kitchen cabinet (1, 2, 3, 4, 5, 6, 7, 8), kitchen counter 2, kitchen table (1, 2), microwave oven 1, sink 1, stove 1, toaster 1.
+Act: go to dishwasher 1
+You arrive at the dishwasher 1. The dishwasher 1 is closed. You see bananas (1, 2), bench 4, bowl 7, coffee pot 1, dishwasher 1, kitchen cabinet (6, 7), toaster 1, wine glass 2.
+Act: open dishwasher 1
+You open dishwasher 1. You see bananas (1, 2), bench 4, bowl 7, coffee pot 1, dishwasher 1, kitchen cabinet (6, 7), kitchen counter 1, toaster 1, wine glass 2
+Think: Now I need to find and pick up wine glass. The wine glass is likely to appear in/on bench (1, 2, 3, 4), chair 1, dishwasher 1, fridge 1, kitchen cabinet (1, 2, 3, 4, 5, 6, 7, 8), kitchen counter (1, 2), kitchen table (1, 2), microwave oven 1. I can check each place one by one until I find it.
+OK.
+Act: go to bench 1
+You arrive at the bench 1. You see bench 1, condiment bottle (1, 2), condiment shaker (3, 4), cutlery knife (6, 7), juice 2, kitchen table 1.
+Act: go to bench 2
+You arrive at the bench 2. You see bench 2, condiment bottle (1, 2), condiment shaker (3, 4), cutlery knife (3, 10), juice 2, kitchen table 1.
+Act: go to bench 3
+You arrive at the bench 3. You see bench 3, condiment bottle (3, 4), condiment shaker (1, 2), cutlery knife (4, 5), juice 1, kitchen table 2.
+Act: go to bench 4
+You arrive at the bench 4. You see bench 4, condiment bottle (3, 4), condiment shaker (1, 2), cutlery knife (8, 9), juice 1, kitchen table 2, wine glass 2.
+Act: pick up wine glass 2
+You pick up wine glass 2. You hold wine glass 2.
+Think: Now I need to find dishwasher and put down wine glass 2.
+OK.
+Act: go to dishwasher 1
+You arrive at the dishwasher 1. The dishwasher 1 is open. You see bananas (1, 2), bench 4, bowl 7, coffee pot 1, dishwasher 1, kitchen cabinet (6, 7), kitchen counter 1, toaster 1, wine glass 2. You hold wine glass 2.
+Act: put down wine glass 2
+You put wine glass 2 in dishwasher 1.
+Think: Now I need to close and turn on dishwasher.
+OK.
+Act: close dishwasher 1
+You close dishwasher 1.
+Act: turn on dishwasher 1
+You turn on dishwasher 1.
+Think: Now I complete the task.
+OK.
+Act: done

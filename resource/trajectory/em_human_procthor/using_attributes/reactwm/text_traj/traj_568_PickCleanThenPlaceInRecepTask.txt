@@ -1,0 +1,69 @@
+Your task is to: Clean the item that is close to the ladle, made of metal and not breakable, and place it in the cabinet.
+You are in the house, and there are 6 rooms: bathroom (1, 2), bedroom (1, 2), kitchen (1), living room (1). You are in the middle of a kitchen (1). Looking quickly around the room, you see cabinet (1, 2), chair (1), countertop (1), fridge (1), shelf (1, 2, 3, 4, 5, 6), shelving unit (1, 2).
+Think: To solve the task, I need to find and pick up the item that is close to ladle, made of metal and not breakable, find sink basin and put it down, turn on faucet to wash the item made of metal and not breakable, pick it up and put it down in cabinet.
+OK.
+Think: First, I need to find ladle and find the item that is close to ladle and made of metal and not breakable.
+OK.
+Query: recall location of ladle
+You have not seen ladle before.
+Think: I have not seen ladle yet. The ladle is more likely to appear in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see cabinet (1, 2), chair (1), countertop (1), fridge (1), shelf (1, 2, 3, 4, 5, 6), shelving unit (1, 2).
+Think: In kitchen 1, the ladle is likely to appear in/on cabinet (1, 2), countertop 1, shelf (1, 2, 3, 4, 5, 6), shelving unit (1, 2). I can check each place one by one until I find ladle.
+OK.
+Act: go to cabinet 1
+You arrive at the cabinet (1). The cabinet (1) is closed. You see book (2), cabinet (1), cell phone (3), countertop (1), credit card (1), fridge (1), ladle (1), pepper shaker (1), shelf (1, 2, 3), shelving unit (1), soap bottle (1), spatula (1), spoon (1), statue (3), toaster (1).
+Think: I find ladle 1. Now, I need to move to ladle 1 to find the item that is close to ladle 1, made of metal and not breakable.
+OK.
+Act: go to ladle 1
+You arrive at the ladle (1). You see book (2), cabinet (1), cell phone (3), countertop (1), credit card (1), fridge (1), ladle (1), pepper shaker (1), shelf (1, 2, 3), shelving unit (1), soap bottle (1), spatula (1), spoon (1), statue (3), toaster (1).
+Think: The item that is close to ladle 1 and made of metal and not breakable is spoon 1. Now, I need to pick it up.
+OK.
+Act: go to spoon 1
+You arrive at the spoon (1). You see book (2), cabinet (1), cell phone (3), countertop (1), credit card (1), fridge (1), ladle (1), pepper shaker (1), shelf (1, 2, 3), shelving unit (1), soap bottle (1), spatula (1), spoon (1), statue (3), toaster (1).
+Act: pick up spoon 1
+You pick up spoon (1). You hold spoon (1).
+Think: Now, I need to find sink basin.
+OK.
+Query: recall location of sink basin
+You saw sink basin 1 in bathroom 1. You saw sink basin 2 in bathroom 2.
+Think: Sink basin 1 is in bathroom 1.
+OK.
+Act: go to bathroom 1
+You move to the bathroom (1). Looking quickly around the room, you see drawer (10, 11, 12, 13, 14, 15), dresser (2), painting (2, 3), sink (1), sink basin (1), toilet (1). You hold spoon (1).
+Act: go to sink basin 1
+You arrive at the sink basin (1). You see faucet (1), painting (2), sink (1), sink basin (1). You hold spoon (1).
+Think: Now, I need to put down spoon 1.
+OK.
+Act: put down spoon 1
+You put spoon (1) in sink basin (1).
+Think: Now, I need to turn on faucet 1 briefly and turn off to wash spoon 1.
+OK.
+Act: turn on faucet 1
+You turn on faucet (1).
+Act: turn off faucet 1
+You turn off faucet (1).
+Think: Now, I need to pick up spoon 1 and find cabinet.
+OK.
+Act: pick up spoon 1
+You pick up spoon (1). You hold spoon (1).
+Think: Now, I need to find cabinet and put down spoon 1.
+OK.
+Query: recall location of cabinet
+You saw cabinet 1 in kitchen 1. You saw cabinet 2 in kitchen 1.
+Think: Cabinet 1 is in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see cabinet (1, 2), chair (1), countertop (1), fridge (1), shelf (1, 2, 3, 4, 5, 6), shelving unit (1, 2). You hold spoon (1).
+Act: go to cabinet 1
+You arrive at the cabinet (1). The cabinet (1) is closed. You see book (2), cabinet (1), cell phone (3), countertop (1), credit card (1), fridge (1), ladle (1), pepper shaker (1), shelf (1, 2, 3), shelving unit (1), soap bottle (1), spatula (1), statue (3), toaster (1). You hold spoon (1).
+Think: Since cabinet 1 is closed, I need to open it to put down spoon 1.
+OK.
+Act: open cabinet 1
+You open cabinet (1). You see book (2), cabinet (1), cell phone (3), countertop (1), credit card (1), fridge (1), ladle (1), pepper shaker (1), shelf (1, 2, 3), shelving unit (1), soap bottle (1), spatula (1), spray bottle (1), statue (3), toaster (1). You hold spoon (1).
+Act: put down spoon 1
+You put spoon (1) in cabinet (1).
+Think: Now I complete the task.
+OK.
+Act: done

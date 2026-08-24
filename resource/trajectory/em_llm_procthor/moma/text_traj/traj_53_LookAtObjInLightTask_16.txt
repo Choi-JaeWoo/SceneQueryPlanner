@@ -1,0 +1,11 @@
+Your task is to: With a pencil in hand, switch on the desk lamp for a closer look.
+You pick up pencil (1). You hold pencil (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- bathroom 1: [(sink basin 1), painting 1, (toilet 1), (sink 1), (garbage can 1), painting 2, faucet 1, plunger 1]
+- bedroom 1: [cell phone 3, painting 4, pillow 4, remote control 4, teddy bear 1, book 3, book 4, book 5, painting 3, bed 1, (box 1), chair 13, chair 12, chair 11, chair 10, (dining table 3), (drawer 7), (drawer 3), (drawer 8), (drawer 1), (drawer 9), (drawer 10), (drawer 11), (drawer 12), (drawer 6), (drawer 4), (drawer 5), (drawer 2), (dresser 1), pen 2, statue 2, watch 1]
+- (bedroom 2): [(dresser 2), floor lamp 1, (dining table 4), (drawer 14), (drawer 19), baseball bat 1, (drawer 15), (drawer 16), (armchair 1), (drawer 18), (drawer 21), (bed 2), (drawer 22), television 2, (chair 14), (drawer 20), (drawer 13), (drawer 17), (garbage can 2)]
+- (kitchen 1): [garbage bag 1, credit card 1, book 1, cell phone 1, (chair 3), (chair 4), (chair 2), (chair 1), (countertop 1), (dining table 1), fork 1, (fridge 1), microwave 1, pencil 1, spoon 1, spray bottle 1, statue 1, tomato 1, vase 1]
+- (living room 1): [(dining table 2), (chair 8), (chair 5), (chair 7), television 1, dog bed 1, (sofa 1), (chair 9), (chair 6)]
+Your 5 previous actions were: go to chair 10 (success), go to chair 11 (success), go to chair 12 (success), go to pencil 1 (success), pick up pencil 1 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I pick up pencil 1. Now, I need to find desk lamp to turn it on. The desk lamp is more likely to appear in bedroom 2.
+Act: go to bedroom 2

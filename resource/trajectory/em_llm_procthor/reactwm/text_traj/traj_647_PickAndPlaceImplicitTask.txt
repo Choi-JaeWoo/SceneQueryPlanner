@@ -1,0 +1,65 @@
+Your task is to: Clear the countertop by moving all objects to the dining table.
+You are in the house, and there are 2 rooms: kitchen (1), living room (1). You are in the middle of a living room (1). Looking quickly around the room, you see TV stand (1), armchair (1), dining table (2), painting (3, 4), shelf (1), sofa (1).
+Think: To solve the task, I need to find countertop and check what is on top of it. Then, I need to move everything on countertop to dining table.
+OK.
+Think: First, I need to find countertop.
+OK.
+Query: recall location of countertop
+You saw countertop 1 in kitchen 1.
+Think: Countertop 1 is in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see chair (1), countertop (1), dining table (1), fridge (1), garbage bag (1), garbage can (1), painting (1, 2), stool (1).
+Act: go to countertop 1
+You arrive at the countertop (1). You see apple (1), bread (1), countertop (1), spoon (1), spray bottle (1), stool (1), tomato (1).
+Think: Now, I need to move apple (1), bread (1), spoon (1), spray bottle (1), tomato (1) to dining table.
+OK.
+Act: go to apple 1
+You arrive at the apple (1). You see apple (1), bread (1), countertop (1), spoon (1), spray bottle (1), stool (1), tomato (1).
+Act: pick up apple 1
+You pick up apple (1). You hold apple (1).
+Think: Now, I need to find dining table.
+OK.
+Query: recall location of dining table
+You saw dining table 1 in kitchen 1. You saw dining table 2 in living room 1.
+Think: Dining table 1 is in kitchen 1.
+OK.
+Act: go to dining table 1
+You arrive at the dining table (1). You see bottle (1), chair (1), dining table (1), garbage can (1), house plant (1), lettuce (1), mug (1), painting (2), pen (1), pepper shaker (1), plate (1), statue (1), wine bottle (1). You hold apple (1).
+Act: put down apple 1
+You put apple (1) in dining table (1).
+Act: go to bread 1
+You arrive at the bread (1). You see bread (1), countertop (1), spoon (1), spray bottle (1), stool (1), tomato (1).
+Act: pick up bread 1
+You pick up bread (1). You hold bread (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see apple (1), bottle (1), chair (1), dining table (1), garbage can (1), house plant (1), lettuce (1), mug (1), painting (2), pen (1), pepper shaker (1), plate (1), statue (1), wine bottle (1). You hold bread (1).
+Act: put down bread 1
+You put bread (1) in dining table (1).
+Act: go to spoon 1
+You arrive at the spoon (1). You see countertop (1), spoon (1), spray bottle (1), stool (1), tomato (1).
+Act: pick up spoon 1
+You pick up spoon (1). You hold spoon (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see apple (1), bottle (1), bread (1), chair (1), dining table (1), garbage can (1), house plant (1), lettuce (1), mug (1), painting (2), pen (1), pepper shaker (1), plate (1), statue (1), wine bottle (1). You hold spoon (1).
+Act: put down spoon 1
+You put spoon (1) in dining table (1).
+Act: go to spray bottle 1
+You arrive at the spray bottle (1). You see countertop (1), spray bottle (1), stool (1), tomato (1).
+Act: pick up spray bottle 1
+You pick up spray bottle (1). You hold spray bottle (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see apple (1), bottle (1), bread (1), chair (1), dining table (1), garbage can (1), house plant (1), lettuce (1), mug (1), painting (2), pen (1), pepper shaker (1), plate (1), spoon (1), statue (1), wine bottle (1). You hold spray bottle (1).
+Act: put down spray bottle 1
+You put spray bottle (1) in dining table (1).
+Act: go to tomato 1
+You arrive at the tomato (1). You see countertop (1), stool (1), tomato (1).
+Act: pick up tomato 1
+You pick up tomato (1). You hold tomato (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see apple (1), bottle (1), bread (1), chair (1), dining table (1), garbage can (1), house plant (1), lettuce (1), mug (1), painting (2), pen (1), pepper shaker (1), plate (1), spoon (1), spray bottle (1), statue (1), wine bottle (1). You hold tomato (1).
+Act: put down tomato 1
+You put tomato (1) in dining table (1).
+Think: Now I complete the task.
+OK.
+Act: done

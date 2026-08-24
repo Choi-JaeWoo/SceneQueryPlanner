@@ -1,0 +1,11 @@
+Your task is to: Put 1 wine glass on the kitchen table.
+You arrive at the kitchen cabinet 2. The kitchen cabinet 2 is closed. You see cooking pot 1, cutlery knife (1, 2), faucet 1, kitchen cabinet (1, 2, 3), kitchen counter 3, milk (1, 2), minced meat 1, salmon 1, sink 1, stove 1, water glass 1. Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- (bathroom 1): [(bathroom cabinet 1), (bathroom counter 1), (faucet 2), (light switch 4), (sink 2), (toilet 1), (towel rack 1), (towel rack 2), (towel rack 3), (washing machine 1)]
+- (bedroom 1): [(bed 1), (bookshelf 5), (chair 2), (desk 1), (light switch 3), (nightstand 1)]
+- (bedroom 2): [(bed 2), (bookshelf 6), (cabinet 1), (chair 3), (closet 1), (computer 1), (desk 2), (light switch 5), (nightstand 2)]
+- kitchen 1: [bananas 1, bananas 2, (bench 1), (bench 2), (bench 3), (bench 4), (bookshelf 1), (bookshelf 2), (bowl 6), bowl 7, (chair 1), (coffee pot 1), cooking pot 1, cutlery knife 1, cutlery knife 2, (dishwasher 1), (faucet 1), (fridge 1), frying pan 1, kitchen cabinet 1, kitchen cabinet 2, (kitchen cabinet 3), (kitchen cabinet 4), (kitchen cabinet 5), (kitchen cabinet 6), (kitchen cabinet 7), (kitchen cabinet 8), (kitchen counter 1), (kitchen counter 2), (kitchen counter 3), (kitchen table 1), (kitchen table 2), (light switch 1), (microwave oven 1), milk 1, milk 2, minced meat 1, (oven tray 1), salmon 1, (sink 1), (slice of bread 1), (slice of bread 2), (stove 1), (toaster 1), water glass 1]
+- (living room 1): [(bookshelf 3), (bookshelf 4), (coffee table 1), (light switch 2), (sofa 1), (tv 1)]
+Your 3 previous actions were: go to kitchen cabinet 1 (success), open kitchen cabinet 1 (success), go to kitchen cabinet 2 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: Kitchen cabinet 2 is closed. Now, I need to open it.
+Act: open kitchen cabinet 2

@@ -1,0 +1,7 @@
+Your task is to: Collect a pencil and a book and place them in the drawer.
+You arrive at the garbage can (1). You see garbage can (1), painting (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- bedroom 1: [painting 2, baseball bat 1, television 1, book 1, bowl 1, CD 1, cell phone 1, house plant 1, pen 1, pencil 1, pillow 2, pillow 1, statue 1, teddy bear 1, drawer 2, drawer 3, garbage can 1, painting 1, drawer 1, drawer 4, drawer 6, dresser 1, bed 1, side table 1, drawer 5]
+Your 5 previous actions were: go to drawer 1 (success), open drawer 1 (success), go to dresser 1 (success), go to side table 1 (success), go to garbage can 1 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I need to check unexplored areas in bedroom 1 to find pencil. Now, I need to check drawer 2.
+Act: go to drawer 2

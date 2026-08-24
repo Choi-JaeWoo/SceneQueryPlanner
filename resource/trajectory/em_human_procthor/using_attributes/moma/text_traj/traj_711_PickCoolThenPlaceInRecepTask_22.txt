@@ -1,0 +1,8 @@
+Your task is to: Put the item made of glass from the countertop in the fridge first, then take it out and set it on the countertop.
+You pick up wine bottle (1). You hold wine bottle (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- kitchen 1: [painting 1, mug 1, soap bottle 1, spoon 1, vase 1, (cabinet 1), countertop 1, fridge 1, (shelf 3), (shelf 2), (shelf 1), shelving unit 1, (stool 1), wine bottle 1]
+- living room 1: [boots 1, (dining table 1), painting 4, painting 3, painting 2, (shelf 4), (shelf 6), (shelf 7), (shelf 8), (shelf 9), (shelf 5), (sofa 1), (TV stand 1)]
+Your 5 previous actions were: put down wine bottle 1 (success), close fridge 1 (success), open fridge 1 (success), go to wine bottle 1 (success), pick up wine bottle 1 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I pick up wine bottle 1. Now, I need to find countertop. I find countertop 1. Now, I need to move toward countertop 1 to put down wine bottle 1.
+Act: go to countertop 1

@@ -1,0 +1,41 @@
+Your task is to: Place the box, which has a pencil in it, on the dining table.
+You are in the house, and there are 7 rooms: bathroom (1), bedroom (1, 2, 3), kitchen (1), living room (1, 2). You are in the middle of a living room (1). Looking quickly around the room, you see TV stand (1), armchair (1, 2, 3), box (1), dining table (2), dog bed (1), floor lamp (1), shelf (1), sofa (1).
+Think: To solve the task, I need to find and pick up pencil, put it in box, pick up and place box on dining table.
+OK.
+Think: First, I need to find and pick up pencil.
+OK.
+Query: find_objects({'label': 'pencil'})
+Info: 
+Think: I have not seen pencil yet. Now I need to check where to search. First, I will search living room 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'living room 1'})
+Info: TV stand 1, armchair (1, 2, 3), box (1, 2), dining table 2, shelf 1, sofa 1
+Think: In living room 1, the pencil is likely to appear in/on TV stand 1, armchair (1, 2, 3), box (1, 2), dining table 2, shelf 1, sofa 1. I can check each place one by one until I find pencil.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), armchair (1, 2, 3), box (1), dining table (2), dog bed (1), floor lamp (1), shelf (1), sofa (1).
+Act: go to TV stand 1
+You arrive at the TV stand (1). You see TV stand (1), newspaper (1), pencil (1), shelf (1), television (1).
+Act: go to pencil 1
+You arrive at the pencil (1). You see TV stand (1), armchair (2), newspaper (1), pencil (1), shelf (1), television (1).
+Act: pick up pencil 1
+You pick up pencil (1). You hold pencil (1).
+Think: Now, I need to find box and put down pencil 1.
+OK.
+Act: go to box 1
+You arrive at the box (1). You see box (1, 2), key chain (1), laptop (1). You hold pencil (1).
+Act: put down pencil 1
+You put pencil (1) in box (1).
+Think: Now, I need to pick up box 1.
+OK.
+Act: pick up box 1
+You pick up box (1). You hold box (1).
+Think: Now, I need to find dining table and put down box 1.
+OK.
+Act: go to dining table 2
+You arrive at the dining table (2). You see armchair (2), box (2), dining table (2), house plant (4), key chain (1), laptop (1), pencil (1). You hold box (1).
+Act: put down box 1
+You put box (1) in dining table (2).
+Think: Now I complete the task.
+OK.
+Act: done

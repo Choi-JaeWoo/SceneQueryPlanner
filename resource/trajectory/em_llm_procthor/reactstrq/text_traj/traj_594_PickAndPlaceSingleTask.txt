@@ -1,0 +1,71 @@
+Your task is to: Take a pillow and set it down on the armchair.
+You are in the house, and there are 1 rooms: living room (1). You are in the middle of a living room (1). Looking quickly around the room, you see TV stand (1), armchair (1, 2, 3), box (1), chair (1, 2, 3, 4, 5), dining table (1), floor lamp (1, 2), house plant (1), painting (1, 2), shelf (1, 2, 3, 4, 5, 6), sofa (1).
+Think: To solve the task, I need to find pillow and armchair. Then, I need to pick up pillow and put it on armchair.
+OK.
+Think: First, I need to find pillow.
+OK.
+Query: find_objects({'label': 'pillow'})
+Info: 
+Think: I have not seen pillow yet. Now I need to check where to search. First, I will search living room 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'living room 1'})
+Info: TV stand 1, armchair (1, 2, 3), box (1, 2), chair (1, 2, 3, 4, 5), dining table 1, shelf (1, 2, 3, 4, 5, 6), sofa 1
+Think: In living room 1, the pillow is likely to appear in/on TV stand 1, armchair (1, 2, 3), box (1, 2), chair (1, 2, 3, 4, 5), dining table 1, shelf (1, 2, 3, 4, 5, 6), sofa 1. I can check each place one by one until I find pillow.
+OK.
+Act: go to TV stand 1
+You arrive at the TV stand (1). You see TV stand (1), credit card (1), pencil (2), pillow (1), remote control (1, 2), shelf (1, 2, 3, 4, 5, 6), television (1), vase (1).
+Act: go to armchair 1
+You arrive at the armchair (1). You see armchair (1), pillow (1), sofa (1).
+Act: go to armchair 2
+You arrive at the armchair (2). You see armchair (2), floor lamp (1).
+Act: go to armchair 3
+You arrive at the armchair (3). You see armchair (2, 3).
+Act: go to box 1
+You arrive at the box (1). The box (1) is closed. You see box (1), floor lamp (1), painting (1).
+Act: go to box 2
+You arrive at the box (2). The box (2) is open. You see bowl (1), box (2), chair (1, 2, 3, 4, 5), dining table (1), newspaper (1), pencil (1), statue (1).
+Act: go to chair 1
+You arrive at the chair (1). You see bowl (1), box (2), chair (1, 4, 5), dining table (1), pencil (1).
+Act: go to chair 2
+You arrive at the chair (2). You see bowl (1), box (2), chair (2, 3), dining table (1), newspaper (1), pillow (1), sofa (1), statue (1).
+Act: go to chair 3
+You arrive at the chair (3). You see bowl (1), box (2), chair (1, 2, 3, 4, 5), dining table (1), newspaper (1), pencil (1), statue (1).
+Act: go to chair 4
+You arrive at the chair (4). You see bowl (1), box (2), chair (1, 2, 4), dining table (1), newspaper (1), pencil (1), statue (1).
+Act: go to chair 5
+You arrive at the chair (5). You see bowl (1), box (2), chair (1, 3, 5), dining table (1), pencil (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see bowl (1), box (2), chair (1, 2, 3, 5), dining table (1), newspaper (1), pencil (1), statue (1).
+Act: go to shelf 1
+You arrive at the shelf (1). You see TV stand (1), credit card (1), pencil (2), remote control (1, 2), shelf (1, 2, 3, 4, 5, 6), television (1), vase (1).
+Act: go to shelf 2
+You arrive at the shelf (2). You see TV stand (1), credit card (1), pencil (2), remote control (1, 2), shelf (1, 2, 3, 4, 5, 6), television (1), vase (1).
+Act: go to shelf 3
+You arrive at the shelf (3). You see TV stand (1), credit card (1), pencil (2), remote control (1, 2), shelf (1, 2, 3, 4, 5, 6), television (1), vase (1).
+Act: go to shelf 4
+You arrive at the shelf (4). You see TV stand (1), credit card (1), pencil (2), remote control (2), shelf (1, 2, 3, 4, 5, 6), television (1), vase (1).
+Act: go to shelf 5
+You arrive at the shelf (5). You see TV stand (1), credit card (1), pencil (2), remote control (2), shelf (1, 2, 3, 4, 5, 6), television (1), vase (1).
+Act: go to shelf 6
+You arrive at the shelf (6). You see TV stand (1), credit card (1), pencil (2), remote control (2), shelf (1, 2, 3, 4, 5, 6), television (1), vase (1).
+Act: go to sofa 1
+You arrive at the sofa (1). You see armchair (1), pillow (1), remote control (1, 2), shelf (4), sofa (1).
+Think: I find pillow 1. Now, I need to pick it up.
+OK.
+Act: go to pillow 1
+You arrive at the pillow (1). You see armchair (1), pillow (1), remote control (1, 2), shelf (4), sofa (1).
+Act: pick up pillow 1
+You pick up pillow (1). You hold pillow (1).
+Think: Now, I need to find armchair.
+OK.
+Query: find_objects({'label': 'armchair'})
+Info: [{'name_id_nl': 'armchair 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}, {'name_id_nl': 'armchair 3', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}, {'name_id_nl': 'armchair 2', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}]
+Think: I find armchair 1, armchair 3, armchair 2.
+OK.
+Act: go to armchair 1
+You arrive at the armchair (1). You see armchair (1), sofa (1). You hold pillow (1).
+Act: put down pillow 1
+You put pillow (1) in armchair (1).
+Think: Now I complete the task.
+OK.
+Act: done

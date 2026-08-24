@@ -1,0 +1,65 @@
+Your task is to: Microwave an egg and place it on the countertop afterwards.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a bathroom (1). Looking quickly around the room, you see garbage can (1), plunger (1), sink (1), sink basin (1), toilet (1).
+Think: To solve the task, I need to find the egg and use the microwave to heat it.
+OK.
+Think: First, I need to check if there is a microwave.
+OK.
+Query: recall location of microwave
+You have not seen microwave before.
+Think: I have not seen microwave yet. The microwave is more likely to appear in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see countertop (1), fridge (1), house plant (2), painting (4).
+Think: In kitchen 1, the microwave is likely to appear in/on countertop 1, fridge 1. I can check each place one by one until I find microwave.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see bottle (1), butter knife (1, 2), cell phone (2, 3), coffee machine (1), countertop (1), cup (1), egg (2), fork (1, 2), microwave (1), painting (4), paper towel roll (1), pepper shaker (1), spoon (1), spray bottle (2), wine bottle (1).
+Think: I find microwave 1. Now, I need to find and pick up egg.
+OK.
+Query: recall location of egg
+You saw egg 2 near countertop 1 in kitchen 1.
+Think: Egg 2 is near countertop 1 in kitchen 1.
+OK.
+Act: go to egg 2
+You arrive at the egg (2). You see bottle (1), butter knife (1, 2), cell phone (2, 3), coffee machine (1), countertop (1), cup (1), egg (2), fork (1, 2), microwave (1), paper towel roll (1), pepper shaker (1), spoon (1), spray bottle (2), wine bottle (1).
+Act: pick up egg 2
+You pick up egg (2). You hold egg (2).
+Think: Now, I need to find microwave.
+OK.
+Query: recall location of microwave
+You saw microwave 1 near countertop 1 in kitchen 1.
+Think: Microwave 1 is near countertop 1 in kitchen 1.
+OK.
+Act: go to microwave 1
+You arrive at the microwave (1). The microwave (1) is closed. You see bottle (1), butter knife (1, 2), cell phone (2, 3), coffee machine (1), countertop (1), cup (1), fork (1, 2), microwave (1), paper towel roll (1), pepper shaker (1), spoon (1), spray bottle (2), wine bottle (1). You hold egg (2).
+Act: open microwave 1
+You open microwave (1). You see bottle (1), butter knife (1, 2), cell phone (2, 3), coffee machine (1), countertop (1), cup (1), fork (1, 2), microwave (1), paper towel roll (1), pepper shaker (1), spoon (1), spray bottle (2), wine bottle (1). You hold egg (2).
+Act: put down egg 2
+You put egg (2) in microwave (1).
+Act: close microwave 1
+You close microwave (1).
+Act: turn on microwave 1
+You turn on microwave (1).
+Think: Now, I need to turn off microwave 1 and pick up egg 2.
+OK.
+Act: turn off microwave 1
+You turn off microwave (1).
+Act: open microwave 1
+You open microwave (1). You see bottle (1), butter knife (1, 2), cell phone (2, 3), coffee machine (1), countertop (1), cup (1), egg (2), fork (1, 2), microwave (1), paper towel roll (1), pepper shaker (1), spoon (1), spray bottle (2), wine bottle (1).
+Act: pick up egg 2
+Pick up action failed: The target object is not within the visible range.
+Think: I need to move toward egg 2 so I can see it clearly.
+OK.
+Act: go to egg 2
+You arrive at the egg (2). You see bottle (1), butter knife (1), cell phone (2, 3), coffee machine (1), cup (1), egg (2), fork (2), microwave (1), pepper shaker (1), spray bottle (2), wine bottle (1).
+Act: pick up egg 2
+You pick up egg (2). You hold egg (2).
+Think: Now, I need to put down egg 2 on countertop 1.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see bottle (1), butter knife (1, 2), cell phone (2, 3), coffee machine (1), countertop (1), cup (1), fork (1, 2), microwave (1), painting (4), paper towel roll (1), pepper shaker (1), spoon (1), spray bottle (2), wine bottle (1). You hold egg (2).
+Act: put down egg 2
+You put egg (2) in countertop (1).
+Think: Now I complete task.
+OK.
+Act: done

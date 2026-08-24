@@ -1,0 +1,9 @@
+Your task is to: Make a mug of coffee with the coffee machine and place it on the countertop.
+You are in the house, and there are 3 rooms: bedroom (1), kitchen (1), living room (1). You are in the middle of a living room (1). Looking quickly around the room, you see TV stand (1), armchair (1), chair (4, 5, 6, 7), dining table (2), floor lamp (1), shelf (4, 5, 6, 7, 8, 9), sofa (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- (bedroom 1): [(box 1), (drawer 3), (drawer 6), (dresser 1), (side table 1), painting 3, (drawer 5), television 1, painting 1, (drawer 1), (drawer 4), (bed 2), (bed 1), house plant 1, (drawer 2), (garbage can 1), painting 2, (chair 1)]
+- (kitchen 1): [(countertop 1), house plant 2, (cabinet 1), (chair 3), shelving unit 1, (chair 2), (shelf 1), (shelf 3), (stool 1), (dining table 1), painting 4, (fridge 1), (shelf 2)]
+- living room 1: [(shelf 7), (dining table 2), (chair 5), floor lamp 1, (chair 7), (TV stand 1), (armchair 1), (shelf 8), (chair 6), (chair 4), (shelf 6), (sofa 1), (box 2), (shelf 9), (shelf 5), (shelf 4)]
+You have not taken any actions yet.
+What is the best next action to complete the task as efficiently as possible?
+Think: First, I need to find and pick up mug. The mug is more likely to appear in kitchen 1.
+Act: go to kitchen 1

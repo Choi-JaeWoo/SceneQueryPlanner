@@ -1,0 +1,10 @@
+Your task is to: Transfer everything from the countertop to the dining table.
+You move to the kitchen (1). Looking quickly around the room, you see cabinet (1), chair (6, 7, 8), countertop (1), dining table (2), fridge (1), garbage can (2), painting (1, 2), shelf (1, 2, 3), shelving unit (1), stool (1). You hold butter knife (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- (bathroom 1): [faucet 1, (garbage can 1), plunger 1, (sink 1), (sink basin 1), (toilet 1)]
+- bedroom 1: [basket ball 1, (bed 1), (chair 4), (chair 3), (chair 5), (chair 2), (chair 1), (dining table 1), (drawer 2), (drawer 1), (drawer 3), (dresser 1), pillow 1]
+- kitchen 1: [painting 1, shelving unit 1, painting 2, butter knife 1, (cabinet 1), (chair 8), (chair 7), (chair 6), countertop 1, (dining table 2), (fridge 1), (garbage can 2), pepper shaker 1, (shelf 2), (shelf 1), (shelf 3), soap bottle 1, spray bottle 1, (stool 1)]
+- (living room 1): [cart 1, (chair 9), (chair 11), (chair 10), (dining table 3), house plant 1, painting 4, painting 3, (sofa 1)]
+Your 5 previous actions were: go to kitchen 1 (success), go to countertop 1 (success), go to butter knife 1 (success), pick up butter knife 1 (success), go to kitchen 1 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I move to kitchen 1. I hold butter knife 1. Now, I need to put down butter knife 1.
+Act: put down butter knife 1

@@ -1,0 +1,10 @@
+Your task is to: Pick up a book and put it on the countertop.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a kitchen (1). Looking quickly around the room, you see chair (1), countertop (1), dining table (1), fridge (1), garbage bag (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- (bathroom 1): [faucet 1, (garbage can 2), painting 4, painting 3, plunger 1, (sink 1), (sink basin 1), (toilet 1)]
+- (bedroom 1): [basket ball 1, (bed 1), (drawer 3), (drawer 1), (drawer 2), (dresser 1), (garbage can 1), house plant 1, painting 1, painting 2, (safe 1), (shelf 4), (TV stand 1)]
+- kitchen 1: [book 1, (chair 1), (countertop 1), (dining table 1), fork 1, (fridge 1), garbage bag 1, plate 1, tomato 1]
+- (living room 1): [(box 1), (cabinet 1), (chair 3), (chair 2), (chair 4), (chair 5), (dining table 2), floor lamp 1, (shelf 5), (shelf 3), (shelf 2), (shelf 1), shelving unit 1, (sofa 1), (TV stand 2)]
+You have not taken any actions yet.
+What is the best next action to complete the task as efficiently as possible?
+Think: First, I need to find and pick up book. The book is more likely to appear in kitchen 1.
+Act: go to book 1

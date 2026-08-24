@@ -1,0 +1,45 @@
+Your task is to: Examine a pillow in the light of the candle.
+You are in the house, and there are 5 rooms: bathroom (1), bedroom (1, 2), kitchen (1), living room (1). You are in the middle of a bedroom (1). Looking quickly around the room, you see bed (1), television (1).
+Think: To solve the task, I need to find and pick up pillow, find and turn on candle to examine pillow.
+OK.
+Think: First, I need to find and pick up pillow.
+OK.
+Query: find_objects({'label': 'pillow'})
+Info: 
+Think: I have not seen pillow yet. Now I need to check where to search. First, I will search bedroom 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'bedroom 1'})
+Info: bed 1
+Think: In bedroom 1, the pillow is likely to appear in/on bed 1. I can check each place one by one until I find pillow.
+OK.
+Act: go to bed 1
+You arrive at the bed (1). You see bed (1), laptop (1), pillow (1), teddy bear (1).
+Think: I find pillow 1. Now, I need to pick it up.
+OK.
+Act: go to pillow 1
+You arrive at the pillow (1). You see bed (1), laptop (1), pillow (1), teddy bear (1).
+Act: pick up pillow 1
+You pick up pillow (1). You hold pillow (1).
+Think: Now I need to find and turn on candle.
+OK.
+Query: find_objects({'label': 'candle'})
+Info: 
+Think: I have not seen candle yet. Now I need to check where to search. First, I will search bathroom 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'bathroom 1'})
+Info: toilet 1
+Think: In bathroom 1, the candle is likely to appear in/on toilet 1. I can check each place one by one until I find candle.
+OK.
+Act: go to bathroom 1
+You move to the bathroom (1). Looking quickly around the room, you see toilet (1). You hold pillow (1).
+Act: go to toilet 1
+You arrive at the toilet (1). The toilet (1) is closed. You see candle (1), toilet (1), toilet paper (1). You hold pillow (1).
+Act: open toilet 1
+You open toilet (1). You see candle (1), toilet (1), toilet paper (1). You hold pillow (1).
+Act: go to candle 1
+You arrive at the candle (1). You see candle (1), toilet (1), toilet paper (1). You hold pillow (1).
+Act: turn on candle 1
+You turn on candle (1). You hold pillow (1).
+Think: Now I complete the task.
+OK.
+Act: done

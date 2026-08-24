@@ -1,0 +1,75 @@
+Your task is to: Put a book and a pencil into the box.
+You are in the house, and there are 5 rooms: bathroom (1), bedroom (1, 2), kitchen (1), living room (1). You are in the middle of a bedroom (2). Looking quickly around the room, you see armchair (1), baseball bat (1), bed (2), chair (2, 3, 4), dining table (2), drawer (5, 6, 7, 8, 9), dresser (2), side table (1), television (1).
+Think: To solve the task, I need to find and pick up book, put it in box, find and pick up pencil, put it in box.
+OK.
+Think: First, I need to find and pick up book.
+OK.
+Query: recall location of book
+You have not seen book before.
+Think: I have not seen book yet. The book is more likely to appear in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see box (1), cart (1), chair (1), dining table (1), sofa (1).
+Think: In living room 1, the book is likely to appear in/on box 1, cart 1, chair 1, dining table 1, sofa 1. I can check each place one by one until I find book.
+OK.
+Act: go to box 1
+You arrive at the box (1). The box (1) is open. You see box (1).
+Act: go to cart 1
+You arrive at the cart (1). You see bowl (2), cart (1), chair (1), dining table (1), newspaper (1), vase (2).
+Act: go to chair 1
+You arrive at the chair (1). You see bowl (2), cart (1), chair (1), dining table (1), newspaper (1), vase (2).
+Act: go to dining table 1
+You arrive at the dining table (1). You see bowl (2), cart (1), chair (1), dining table (1), newspaper (1), pillow (2), vase (2).
+Act: go to sofa 1
+You arrive at the sofa (1). You see dish sponge (1), garbage can (2), spray bottle (2), toilet (1).
+Think: There is no book in living room 1. I need to move to bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see bed (1), cabinet (1, 2, 3, 4), drawer (1, 2, 3, 4), dresser (1), house plant (1), painting (1, 2, 3, 4).
+Think: In bedroom 1, the book is likely to appear in/on bed 1, cabinet (1, 2, 3, 4), drawer (1, 2, 3, 4), dresser 1, house plant 1. I can check each place one by one until I find book.
+OK.
+Act: go to bed 1
+You arrive at the bed (1). You see basket ball (1), bed (1), book (1, 3), cabinet (1, 2), drawer (1, 2), laptop (1), painting (2), pillow (3).
+Think: I find book 1. Now, I need to pick it up.
+OK.
+Act: go to book 1
+You arrive at the book (1). The book (1) is closed. You see basket ball (1), book (1), cabinet (1, 2, 3, 4), drawer (1, 2, 3, 4), dresser (1), key chain (1), laptop (1), painting (3), pencil (1).
+Act: pick up book 1
+You pick up book (1). You hold book (1).
+Think: Now, I need to find box and put down book 1.
+OK.
+Query: recall location of box
+You saw box 1 in living room 1. You saw box 2 in bedroom 2.
+Think: Box 1 is in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see box (1), cart (1), chair (1), dining table (1), sofa (1). You hold book (1).
+Act: go to box 1
+You arrive at the box (1). The box (1) is open. You see box (1). You hold book (1).
+Act: put down book 1
+You put book (1) in box (1).
+Think: Now, I need to find and pick up pencil.
+OK.
+Query: recall location of pencil
+You saw pencil 1 near bed 1 in bedroom 1.
+Think: Pencil 1 is near bed 1 in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see bed (1), cabinet (1, 2, 3, 4), drawer (1, 2, 3, 4), dresser (1), house plant (1), painting (1, 2, 3, 4).
+Act: go to bed 1
+You arrive at the bed (1). You see basket ball (1), bed (1), book (3), cabinet (1, 2), drawer (1, 2), laptop (1), painting (2), pillow (3).
+Act: go to pencil 1
+You arrive at the pencil (1). You see basket ball (1), cabinet (1, 2, 3, 4), drawer (1, 2, 3, 4), dresser (1), key chain (1), laptop (1), painting (3), pencil (1).
+Act: pick up pencil 1
+You pick up pencil (1). You hold pencil (1).
+Think: Now, I need to find box and put down pencil 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see box (1), cart (1), chair (1), dining table (1), sofa (1). You hold pencil (1).
+Act: go to box 1
+You arrive at the box (1). The box (1) is open. You see book (1), box (1). You hold pencil (1).
+Act: put down pencil 1
+You put pencil (1) in box (1).
+Think: Now I complete the task.
+OK.
+Act: done

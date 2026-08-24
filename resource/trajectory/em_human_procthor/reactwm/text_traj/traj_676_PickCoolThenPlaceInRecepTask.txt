@@ -1,0 +1,63 @@
+Your task is to: Place a cold apple on the countertop.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a bedroom (1). Looking quickly around the room, you see TV stand (1), bed (1), box (1), chair (1, 2), dining table (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), painting (1, 2), shelf (1).
+Think: To solve the task, I need to find and pick up apple, find fridge, put down apple in fridge briefly and pick up apple, find countertop and put down apple.
+OK.
+Think: First, I need to find and pick up apple.
+OK.
+Query: recall location of apple
+You have not seen apple before.
+Think: I have not seen apple yet. The apple is more likely to appear in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see chair (3, 4, 5, 6), countertop (1), dining table (2), fridge (1), garbage bag (1).
+Think: In kitchen 1, the apple is likely to appear in/on countertop 1, dining table 2, fridge 1. I can check each place one by one until I find apple.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see apple (1), bottle (1), cell phone (4), countertop (1), house plant (3), soap bottle (1).
+Think: I find apple 1. Now, I need to pick it up.
+OK.
+Act: go to apple 1
+You arrive at the apple (1). You see apple (1), bottle (1), cell phone (4), countertop (1), house plant (3), soap bottle (1).
+Act: pick up apple 1
+You pick up apple (1). You hold apple (1).
+Think: Now, I need to find fridge.
+OK.
+Query: recall location of fridge
+You saw fridge 1 in kitchen 1.
+Think: Fridge 1 is in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see chair (3, 4, 5, 6), countertop (1), dining table (2), fridge (1), garbage bag (1). You hold apple (1).
+Act: go to fridge 1
+You arrive at the fridge (1). The fridge (1) is closed. You see fridge (1). You hold apple (1).
+Think: Since fridge 1 is closed, I need to open it to put down apple 1.
+OK.
+Act: open fridge 1
+You open fridge (1). You see egg (1, 2), fridge (1). You hold apple (1).
+Act: put down apple 1
+You put apple (1) in fridge (1).
+Think: To make apple 1 cold, I need to briefly close fridge 1 and then open it again.
+OK.
+Act: close fridge 1
+You close fridge (1).
+Act: open fridge 1
+You open fridge (1). You see apple (1), egg (1, 2), fridge (1).
+Think: Now I need to pick up apple 1 and find countertop.
+OK.
+Act: go to apple 1
+You arrive at the apple (1). You see apple (1), egg (1, 2), fridge (1).
+Act: pick up apple 1
+You pick up apple (1). You hold apple (1).
+Think: Now, I need to find countertop and put down apple 1.
+OK.
+Query: recall location of countertop
+You saw countertop 1 in kitchen 1.
+Think: Countertop 1 is in kitchen 1.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see bottle (1), cell phone (4), countertop (1), egg (2), house plant (3), soap bottle (1). You hold apple (1).
+Act: put down apple 1
+You put apple (1) in countertop (1).
+Think: Now I complete task.
+OK.
+Act: done

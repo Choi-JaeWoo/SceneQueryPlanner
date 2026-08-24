@@ -1,0 +1,75 @@
+Your task is to: Place a box containing a pencil on the sofa.
+You are in the house, and there are 2 rooms: kitchen (1), living room (1). You are in the middle of a living room (1). Looking quickly around the room, you see TV stand (1), armchair (1), chair (2, 3, 4), dining table (2), dog bed (1), house plant (1), painting (3, 4), shelf (1, 2, 3, 4, 5, 6), sofa (1).
+Think: To solve the task, I need to find and pick up pencil, put it in box, pick up and place box on sofa.
+OK.
+Think: First, I need to find and pick up pencil.
+OK.
+Query: find_objects({'label': 'pencil'})
+Info: 
+Think: I have not seen pencil yet. Now I need to check where to search. First, I will search living room 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'living room 1'})
+Info: TV stand 1, armchair 1, box (1, 2, 3), chair (2, 3, 4), dining table 2, shelf (1, 2, 3, 4, 5, 6), sofa 1
+Think: In living room 1, the pencil is likely to appear in/on TV stand 1, armchair 1, box (1, 2, 3), chair (2, 3, 4), dining table 2, shelf (1, 2, 3, 4, 5, 6), sofa 1. I can check each place one by one until I find pencil.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), armchair (1), chair (2, 3, 4), dining table (2), dog bed (1), house plant (1), painting (3, 4), shelf (1, 2, 3, 4, 5, 6), sofa (1).
+Act: go to TV stand 1
+You arrive at the TV stand (1). You see TV stand (1), box (3), key chain (1), shelf (1, 2, 3, 4, 5, 6), statue (1), television (1).
+Act: go to box 1
+You arrive at the box (1). The box (1) is closed. You see book (2), bowl (2), box (1, 2), cell phone (2), chair (2, 4), desk lamp (1), dining table (2), pen (1), vase (2).
+Act: go to box 2
+You arrive at the box (2). The box (2) is open. You see book (2), bowl (2), box (1, 2), cell phone (2), chair (2, 4), desk lamp (1), dining table (2), pen (1), vase (2).
+Act: go to box 3
+You arrive at the box (3). The box (3) is closed. You see TV stand (1), box (3), key chain (1), shelf (1, 2, 3, 4, 5, 6), statue (1), television (1).
+Act: go to armchair 1
+You arrive at the armchair (1). You see armchair (1), key chain (2).
+Act: go to chair 2
+You arrive at the chair (2). You see book (2), box (1, 2), cell phone (2), chair (2, 3), desk lamp (1), dining table (2), pen (1), vase (2).
+Act: go to chair 3
+You arrive at the chair (3). You see book (2), box (1, 2), cell phone (2), chair (2, 3), desk lamp (1), dining table (2), dog bed (1), pen (1), vase (2).
+Act: go to chair 4
+You arrive at the chair (4). You see book (2), box (2), cell phone (2), chair (3, 4), desk lamp (1), dining table (2), painting (3), pen (1), vase (2).
+Act: go to dining table 2
+You arrive at the dining table (2). You see book (2), bowl (2), box (1, 2), cell phone (2), chair (2, 4), desk lamp (1), dining table (2), pen (1), vase (2).
+Act: go to shelf 1
+You arrive at the shelf (1). You see TV stand (1), box (3), key chain (1), shelf (1, 2, 3, 4, 5, 6), statue (1), television (1).
+Act: go to shelf 2
+You arrive at the shelf (2). You see TV stand (1), box (3), key chain (1), shelf (1, 2, 3, 4, 5, 6), statue (1), television (1).
+Act: go to shelf 3
+You arrive at the shelf (3). You see TV stand (1), box (3), key chain (1), shelf (1, 2, 3, 4, 5, 6), statue (1), television (1).
+Act: go to shelf 4
+You arrive at the shelf (4). You see TV stand (1), box (3), key chain (1), shelf (1, 2, 3, 4, 5, 6), statue (1), television (1).
+Act: go to shelf 5
+You arrive at the shelf (5). You see TV stand (1), box (3), key chain (1), shelf (1, 2, 3, 4, 5, 6), statue (1), television (1).
+Act: go to shelf 6
+You arrive at the shelf (6). You see TV stand (1), box (3), key chain (1), shelf (1, 2, 3, 4, 5, 6), statue (1), television (1).
+Act: go to sofa 1
+You arrive at the sofa (1). You see newspaper (1), pencil (2), remote control (1), sofa (1).
+Think: I find pencil 2. Now, I need to pick it up.
+OK.
+Act: go to pencil 2
+You arrive at the pencil (2). You see armchair (1), key chain (2), newspaper (1), pencil (2), remote control (1), sofa (1).
+Act: pick up pencil 2
+You pick up pencil (2). You hold pencil (2).
+Think: Now, I need to find box and put down pencil 2.
+OK.
+Act: go to box 1
+You arrive at the box (1). The box (1) is closed. You see book (2), bowl (2), box (1, 2), cell phone (2), chair (2, 4), desk lamp (1), dining table (2), pen (1), vase (2). You hold pencil (2).
+Act: open box 1
+You open box (1). You see book (2), bowl (2), box (1, 2), cell phone (2), chair (2, 4), desk lamp (1), dining table (2), pen (1), vase (2). You hold pencil (2).
+Act: put down pencil 2
+You put pencil (2) in box (1).
+Think: Now, I need to pick up box 1.
+OK.
+Act: pick up box 1
+You pick up box (1). You hold box (1).
+Think: Now, I need to find sofa and put down box 1.
+OK.
+Act: go to sofa 1
+You arrive at the sofa (1). You see newspaper (1), pencil (2), remote control (1), sofa (1). You hold box (1).
+Act: put down box 1
+You put box (1) in sofa (1).
+Think: Now I complete the task.
+OK.
+Act: done

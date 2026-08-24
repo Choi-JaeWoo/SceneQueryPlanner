@@ -1,0 +1,654 @@
+[
+  {
+    "env_id": 53,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Pick up a pencil and put it on the countertop.",
+      "Place a pencil on the countertop.",
+      "Take a pencil and set it down on the countertop.",
+      "Put a pencil down on the countertop after picking it up."
+    ],
+    "task_goal": {
+      "on_pencil_countertop": 1
+    }
+  },
+  {
+    "env_id": 889,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Pick up a remote control and put it on the armchair.",
+      "Place the remote control on the armchair.",
+      "Put the remote control down on the armchair.",
+      "Set the remote control on the armchair after picking it up."
+    ],
+    "task_goal": {
+      "on_remotecontrol_armchair": 1
+    }
+  },
+  {
+    "env_id": 533,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Pick up a knife and put it on the plate.",
+      "Place a knife on the plate.",
+      "Put the knife down on the plate.",
+      "Set a knife down on the plate."
+    ],
+    "task_goal": {
+      "on_knife_plate": 1
+    }
+  },
+  {
+    "env_id": 261,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Pick up a baseball bat and put it on the countertop.",
+      "Place a baseball bat on the countertop.",
+      "Put the baseball bat down on the countertop.",
+      "Set a baseball bat on the countertop."
+    ],
+    "task_goal": {
+      "on_baseballbat_countertop": 1
+    }
+  },
+  {
+    "env_id": 439,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Pick up a pencil and put it on the countertop.",
+      "Place a pencil on the countertop.",
+      "Put the pencil down on the countertop.",
+      "Set a pencil on the countertop."
+    ],
+    "task_goal": {
+      "on_pencil_countertop": 1
+    }
+  },
+  {
+    "env_id": 54,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Pick up a pencil and put it on the countertop.",
+      "Place a pencil on the countertop.",
+      "Put the pencil down on the countertop.",
+      "Set a pencil on the countertop."
+    ],
+    "task_goal": {
+      "on_pencil_countertop": 1
+    }
+  },
+  {
+    "env_id": 739,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Pick up a spoon and put it in the bowl.",
+      "Place a spoon inside the bowl.",
+      "Put the spoon in the bowl after picking it up.",
+      "Take a spoon and deposit it into the bowl."
+    ],
+    "task_goal": {
+      "in_spoon_bowl": 1
+    }
+  },
+  {
+    "env_id": 631,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Pick up a book and put it on the countertop.",
+      "Put a book on the countertop after you've picked it up.",
+      "Take a book and set it down on the countertop.",
+      "Position a book on the countertop by picking it up first."
+    ],
+    "task_goal": {
+      "on_book_countertop": 1
+    }
+  },
+  {
+    "env_id": 279,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Pick up a pencil and put it on the countertop.",
+      "Place a pencil on the countertop.",
+      "Put the pencil down on the countertop.",
+      "Set a pencil on the countertop."
+    ],
+    "task_goal": {
+      "on_pencil_countertop": 1
+    }
+  },
+  {
+    "env_id": 328,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Pick up a book and put it on the countertop.",
+      "Put a book on the countertop.",
+      "Take a book and set it on the countertop.",
+      "Set a book down on the countertop."
+    ],
+    "task_goal": {
+      "on_book_countertop": 1
+    }
+  },
+  {
+    "env_id": 158,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Pick up a pencil and put it in the drawer.",
+      "Put a pencil inside the drawer.",
+      "Place a pencil in the drawer after picking it up.",
+      "Take a pencil and deposit it into the drawer."
+    ],
+    "task_goal": {
+      "in_pencil_drawer": 1
+    }
+  },
+  {
+    "env_id": 72,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Pick up a book and put it in the drawer.",
+      "Place a book inside the drawer.",
+      "Put the book away in the drawer.",
+      "Take a book and deposit it into the drawer."
+    ],
+    "task_goal": {
+      "in_book_drawer": 1
+    }
+  },
+  {
+    "env_id": 861,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Pick up a book and put it on the countertop.",
+      "Put a book on the countertop.",
+      "Take a book and set it on the countertop.",
+      "Set a book down on the countertop."
+    ],
+    "task_goal": {
+      "on_book_countertop": 1
+    }
+  },
+  {
+    "env_id": 931,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Pick up a baseball bat and put it on the countertop.",
+      "Place a baseball bat on the countertop.",
+      "Take the baseball bat and position it on the countertop.",
+      "Put the baseball bat down on the countertop."
+    ],
+    "task_goal": {
+      "on_baseballbat_countertop": 1
+    }
+  },
+  {
+    "env_id": 144,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Pick up a book and put it on the shelf.",
+      "Place a book on the shelf.",
+      "Take a book and position it on the shelf.",
+      "Put the book on the shelf after picking it up."
+    ],
+    "task_goal": {
+      "on_book_shelf": 1
+    }
+  },
+  {
+    "env_id": 174,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Pick up a book and put it on the countertop.",
+      "Put a book on the countertop.",
+      "Take a book and set it on the countertop.",
+      "Position a book on the countertop after picking it up."
+    ],
+    "task_goal": {
+      "on_book_countertop": 1
+    }
+  },
+  {
+    "env_id": 898,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Pick up an apple and put it in the pan.",
+      "Place an apple inside the pan.",
+      "Put the apple in the pan.",
+      "Pick up an apple and deposit it into the pan."
+    ],
+    "task_goal": {
+      "in_apple_pan": 1
+    }
+  },
+  {
+    "env_id": 386,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Pick up an apple and put it in the garbage can.",
+      "Place an apple in the garbage can.",
+      "Take an apple and deposit it into the garbage can.",
+      "Put the apple inside the garbage can."
+    ],
+    "task_goal": {
+      "in_apple_garbagecan": 1
+    }
+  },
+  {
+    "env_id": 7,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Pick up a pencil and put it in the drawer.",
+      "Place a pencil inside the drawer.",
+      "Take a pencil and put it away in the drawer.",
+      "Put the pencil in the drawer after you pick it up."
+    ],
+    "task_goal": {
+      "in_pencil_drawer": 1
+    }
+  },
+  {
+    "env_id": 28,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Pick up a book and put it in the box.",
+      "Place a book in the box.",
+      "Take a book and set it down in the box.",
+      "Put the book in the box after you pick it up."
+    ],
+    "task_goal": {
+      "in_book_box": 1
+    }
+  },
+  {
+    "env_id": 108,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Pick up a baseball bat and put it on the countertop.",
+      "Place a baseball bat on the countertop.",
+      "Put the baseball bat down on the countertop.",
+      "Set a baseball bat on the countertop."
+    ],
+    "task_goal": {
+      "on_baseballbat_countertop": 1
+    }
+  },
+  {
+    "env_id": 394,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Pick up a book and put it on the countertop.",
+      "Put a book on the countertop.",
+      "Position a book on the countertop after lifting it.",
+      "Take a book and set it down on the countertop."
+    ],
+    "task_goal": {
+      "on_book_countertop": 1
+    }
+  },
+  {
+    "env_id": 405,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Pick up a baseball bat and put it on the countertop.",
+      "Place a baseball bat on the countertop.",
+      "Put the baseball bat down on the countertop.",
+      "Set a baseball bat on the countertop."
+    ],
+    "task_goal": {
+      "on_baseballbat_countertop": 1
+    }
+  },
+  {
+    "env_id": 891,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Pick up a pencil and put it in the box.",
+      "Put a pencil inside the box.",
+      "Place the pencil in the box.",
+      "Deposit a pencil into the box."
+    ],
+    "task_goal": {
+      "in_pencil_box": 1
+    }
+  },
+  {
+    "env_id": 728,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Pick up a toilet paper and put it in the garbage can.",
+      "Place a toilet paper in the garbage can.",
+      "Put the toilet paper into the garbage can.",
+      "Deposit a toilet paper into the garbage can."
+    ],
+    "task_goal": {
+      "in_toiletpaper_garbagecan": 1
+    }
+  },
+  {
+    "env_id": 104,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Pick up a book and put it on the dining table.",
+      "Place a book on the dining table.",
+      "Take a book and set it down on the dining table.",
+      "Put a book down on the dining table after you pick it up."
+    ],
+    "task_goal": {
+      "on_book_diningtable": 1
+    }
+  },
+  {
+    "env_id": 226,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Pick up a book and put it on the countertop.",
+      "Put a book on the countertop after you've picked it up.",
+      "Position a book on the countertop by picking it up first.",
+      "Take a book and set it down on the countertop."
+    ],
+    "task_goal": {
+      "on_book_countertop": 1
+    }
+  },
+  {
+    "env_id": 153,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Pick up a book and put it on the armchair.",
+      "Place a book on the armchair.",
+      "Take a book and set it down on the armchair.",
+      "Put the book down on the armchair after you pick it up."
+    ],
+    "task_goal": {
+      "on_book_armchair": 1
+    }
+  },
+  {
+    "env_id": 100,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Pick up a pencil and put it on the countertop.",
+      "Place a pencil on the countertop.",
+      "Take a pencil and set it on the countertop.",
+      "Put a pencil down on the countertop."
+    ],
+    "task_goal": {
+      "on_pencil_countertop": 1
+    }
+  },
+  {
+    "env_id": 799,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Pick up a pencil and put it in the box.",
+      "Put a pencil inside the box.",
+      "Place the pencil in the box after lifting it.",
+      "Deposit a pencil into the box."
+    ],
+    "task_goal": {
+      "in_pencil_box": 1
+    }
+  },
+  {
+    "env_id": 440,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Pick up a book and put it on the countertop.",
+      "Put a book on the countertop after you pick it up.",
+      "Take a book and set it down on the countertop.",
+      "Set a book down on the countertop."
+    ],
+    "task_goal": {
+      "on_book_countertop": 1
+    }
+  },
+  {
+    "env_id": 442,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Pick up a pencil and put it in the drawer.",
+      "Place a pencil inside the drawer.",
+      "Put the pencil away in the drawer.",
+      "Take a pencil and deposit it into the drawer."
+    ],
+    "task_goal": {
+      "in_pencil_drawer": 1
+    }
+  },
+  {
+    "env_id": 215,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Pick up a baseball bat and put it on the countertop.",
+      "Place a baseball bat on the countertop.",
+      "Put the baseball bat down on the countertop.",
+      "Set a baseball bat on the countertop."
+    ],
+    "task_goal": {
+      "on_baseballbat_countertop": 1
+    }
+  },
+  {
+    "env_id": 342,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Pick up an apple and put it in the fridge.",
+      "Put an apple in the fridge.",
+      "Place an apple inside the fridge.",
+      "Take an apple and deposit it into the fridge."
+    ],
+    "task_goal": {
+      "in_apple_fridge": 1
+    }
+  },
+  {
+    "env_id": 194,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Pick up a book and put it in the box.",
+      "Place a book inside the box.",
+      "Take a book and deposit it into the box.",
+      "Put the book in the box after you pick it up."
+    ],
+    "task_goal": {
+      "in_book_box": 1
+    }
+  },
+  {
+    "env_id": 30,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Pick up a pencil and put it in the box.",
+      "Put a pencil inside the box.",
+      "Place the pencil in the box after lifting it.",
+      "Deposit a pencil into the box."
+    ],
+    "task_goal": {
+      "in_pencil_box": 1
+    }
+  },
+  {
+    "env_id": 998,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Pick up a pencil and put it on the countertop.",
+      "Place a pencil on the countertop.",
+      "Put the pencil down on the countertop.",
+      "Set a pencil down on the countertop."
+    ],
+    "task_goal": {
+      "on_pencil_countertop": 1
+    }
+  },
+  {
+    "env_id": 274,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Pick up a book and put it on the countertop.",
+      "Put a book on the countertop.",
+      "Take a book and set it on the countertop.",
+      "Position a book on the countertop after lifting it."
+    ],
+    "task_goal": {
+      "on_book_countertop": 1
+    }
+  },
+  {
+    "env_id": 254,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Pick up a book and put it on the armchair.",
+      "Place a book on the armchair.",
+      "Take a book and set it down on the armchair.",
+      "Put the book down on the armchair."
+    ],
+    "task_goal": {
+      "on_book_armchair": 1
+    }
+  },
+  {
+    "env_id": 555,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Pick up a book and put it on the armchair.",
+      "Place a book on the armchair.",
+      "Put the book down on the armchair.",
+      "Set a book on the armchair."
+    ],
+    "task_goal": {
+      "on_book_armchair": 1
+    }
+  },
+  {
+    "env_id": 832,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Pick up a pencil and put it on the countertop.",
+      "Place a pencil on the countertop.",
+      "Put the pencil down on the countertop.",
+      "Set a pencil on the countertop."
+    ],
+    "task_goal": {
+      "on_pencil_countertop": 1
+    }
+  },
+  {
+    "env_id": 973,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Pick up a book and put it on the countertop.",
+      "Put a book on the countertop.",
+      "Position a book on the countertop.",
+      "Set a book down on the countertop."
+    ],
+    "task_goal": {
+      "on_book_countertop": 1
+    }
+  },
+  {
+    "env_id": 499,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Pick up a book and put it on the countertop.",
+      "Put a book on the countertop.",
+      "Position a book on the countertop after lifting it.",
+      "Take a book and set it down on the countertop."
+    ],
+    "task_goal": {
+      "on_book_countertop": 1
+    }
+  },
+  {
+    "env_id": 475,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Slice a tomato and put it in the bowl.",
+      "Place a sliced tomato in the bowl.",
+      "Take a sliced tomato and put it into the bowl.",
+      "Put the sliced tomato inside the bowl."
+    ],
+    "task_goal": {
+      "in_tomato_bowl": 1,
+      "isSliced_tomato": 1
+    }
+  },
+  {
+    "env_id": 529,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Pick up a pencil and put it in the box.",
+      "Put a pencil inside the box.",
+      "Place the pencil in the box after picking it up.",
+      "Take a pencil and deposit it into the box."
+    ],
+    "task_goal": {
+      "in_pencil_box": 1
+    }
+  },
+  {
+    "env_id": 280,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Pick up a book and put it in the drawer.",
+      "Place a book inside the drawer.",
+      "Take a book and put it away in the drawer.",
+      "Put the book in the drawer after you pick it up."
+    ],
+    "task_goal": {
+      "in_book_drawer": 1
+    }
+  },
+  {
+    "env_id": 403,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Slice a potato and put it in the bowl.",
+      "Place a sliced potato in the bowl.",
+      "Lift a sliced potato and deposit it into the bowl.",
+      "Put a sliced potato inside the bowl."
+    ],
+    "task_goal": {
+      "in_potato_bowl": 1,
+      "isSliced_potato": 1
+    }
+  },
+  {
+    "env_id": 873,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Pick up a pencil and put it in the box.",
+      "Put a pencil inside the box.",
+      "Take a pencil and place it in the box.",
+      "Deposit a pencil into the box."
+    ],
+    "task_goal": {
+      "in_pencil_box": 1
+    }
+  },
+  {
+    "env_id": 185,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Pick up a book and put it on the countertop.",
+      "Put a book on the countertop.",
+      "Take a book and set it down on the countertop.",
+      "Set a book down on the countertop after you pick it up."
+    ],
+    "task_goal": {
+      "on_book_countertop": 1
+    }
+  },
+  {
+    "env_id": 908,
+    "mode": "PickAndPlaceSingleTask",
+    "instruction": [
+      "Pick up a pencil and put it on the countertop.",
+      "Place a pencil on the countertop.",
+      "Put the pencil down on the countertop.",
+      "Set a pencil on the countertop."
+    ],
+    "task_goal": {
+      "on_pencil_countertop": 1
+    }
+  }
+]

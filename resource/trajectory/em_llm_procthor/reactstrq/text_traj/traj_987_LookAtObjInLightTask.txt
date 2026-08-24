@@ -1,0 +1,127 @@
+Your task is to: Hold the book up to the candle's light.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a living room (1). Looking quickly around the room, you see TV stand (2), cabinet (1), dining table (3), painting (2, 3, 4), shelf (1, 2, 3, 10, 11, 12, 13, 14, 15), shelving unit (1), sofa (1).
+Think: To solve the task, I need to find and pick up book, then find and turn on candle.
+OK.
+Think: First, I need to find and pick up book.
+OK.
+Query: find_objects({'label': 'book'})
+Info: 
+Think: I have not seen book yet. Now I need to check where to search. First, I will search living room 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'living room 1'})
+Info: TV stand 2, box 1, cabinet 1, dining table 3, shelf (1, 2, 3, 10, 11, 12, 13, 14, 15), sofa 1
+Think: In living room 1, the book is likely to appear in/on TV stand 2, box 1, cabinet 1, dining table 3, shelf (1, 2, 3, 10, 11, 12, 13, 14, 15), sofa 1. I can check each place one by one until I find book.
+OK.
+Act: go to TV stand 2
+You arrive at the TV stand (2). You see TV stand (2), bowl (2), shelf (10, 11, 12, 13, 14, 15), sofa (1), television (2), vase (1).
+Act: go to box 1
+You arrive at the box (1). The box (1) is closed. You see box (1), cabinet (1), candle (2), dining table (3), painting (2, 3), pencil (1), shelf (1, 2, 3), shelving unit (1).
+Act: open box 1
+You open box (1). You see box (1), cabinet (1), candle (2), dining table (3), painting (2, 3), pencil (1), shelf (1, 2, 3), shelving unit (1).
+Act: go to cabinet 1
+You arrive at the cabinet (1). The cabinet (1) is closed. You see box (1), cabinet (1), candle (2), painting (2, 3), pencil (1), shelf (1, 2, 3), shelving unit (1).
+Act: open cabinet 1
+You open cabinet (1). You see box (1), cabinet (1), candle (2), painting (2, 3), pencil (1), shelf (1, 2, 3), shelving unit (1).
+Act: go to dining table 3
+You arrive at the dining table (3). You see box (1), cabinet (1), candle (2), dining table (3), painting (3), pencil (1), shelf (1, 2, 3), shelving unit (1).
+Act: go to shelf 1
+You arrive at the shelf (1). You see box (1), cabinet (1), candle (2), painting (2, 3), pencil (1), shelf (1, 2, 3), shelving unit (1).
+Act: go to shelf 2
+You arrive at the shelf (2). You see box (1), cabinet (1), candle (2), painting (2, 3), pencil (1), shelf (1, 2, 3), shelving unit (1).
+Act: go to shelf 3
+You arrive at the shelf (3). You see box (1), cabinet (1), candle (2), dining table (3), painting (2, 3), pencil (1), shelf (1, 2, 3), shelving unit (1).
+Act: go to shelf 10
+You arrive at the shelf (10). You see TV stand (2), bowl (2), shelf (10, 11, 12, 13, 14, 15), sofa (1), television (2), vase (1).
+Act: go to shelf 11
+You arrive at the shelf (11). You see TV stand (2), bowl (2), shelf (10, 11, 12, 13, 14, 15), sofa (1), television (2), vase (1).
+Act: go to shelf 12
+You arrive at the shelf (12). You see TV stand (2), bowl (2), shelf (10, 11, 12, 13, 14, 15), sofa (1), television (2), vase (1).
+Act: go to shelf 13
+You arrive at the shelf (13). You see TV stand (2), bowl (2), shelf (10, 11, 12, 13, 14, 15), sofa (1), television (2), vase (1).
+Act: go to shelf 14
+You arrive at the shelf (14). You see TV stand (2), bowl (2), shelf (10, 11, 12, 13, 14, 15), sofa (1), television (2), vase (1).
+Act: go to shelf 15
+You arrive at the shelf (15). You see TV stand (2), bowl (2), shelf (10, 11, 12, 13, 14, 15), sofa (1), television (2), vase (1).
+Act: go to sofa 1
+You arrive at the sofa (1). You see TV stand (2), bowl (2), painting (4), shelf (10, 11, 12, 13, 14, 15), sofa (1), television (2), vase (1).
+Think: I need to check whether I see book.
+OK.
+Query: find_objects({'label': 'book'})
+Info: 
+Think: I need to check if there's any place in living room 1 that I haven't visited.
+OK.
+Query: get_child_node_names({'parent_node_id': 'living room 1', 'child_node_attrs': {'visited': False}})
+Info: 
+Think: In living room 1, I visit all places. Now I need to search bedroom 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'bedroom 1'})
+Info: TV stand 1, bed 1, chair 1, dining table 1, drawer (1, 2, 3), dresser 1, shelf (4, 5, 6, 7, 8, 9)
+Think: In bedroom 1, the book is likely to appear in/on TV stand 1, bed 1, chair 1, dining table 1, drawer (1, 2, 3), dresser 1, shelf (4, 5, 6, 7, 8, 9). I can check each place one by one until I find book.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see TV stand (1), bed (1), chair (1), dining table (1), drawer (1, 2, 3), dresser (1), shelf (4, 5, 6, 7, 8, 9).
+Act: go to TV stand 1
+You arrive at the TV stand (1). You see butter knife (1, 2), countertop (1), dish sponge (1), house plant (1), soap bottle (1), spatula (1), stool (1), toaster (1).
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see TV stand (1), bed (1), chair (1), dining table (1), drawer (1, 2, 3), dresser (1), shelf (4, 5, 6, 7, 8, 9).
+Act: go to bed 1
+You arrive at the bed (1). You see baseball bat (1), bed (1), book (1), chair (1), pillow (1).
+Act: go to chair 1
+You arrive at the chair (1). You see baseball bat (1), bed (1), book (1), chair (1), dining table (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see TV stand (1), bowl (1), chair (1), dining table (1), house plant (2), remote control (1), shelf (4, 5, 6, 7, 8, 9), statue (1), television (1), tissue box (1).
+Act: go to drawer 1
+You arrive at the drawer (1). The drawer (1) is closed. You see drawer (1, 2, 3), dresser (1).
+Act: open drawer 1
+You open drawer (1). You see drawer (1, 2, 3), dresser (1).
+Act: go to drawer 2
+You arrive at the drawer (2). The drawer (2) is closed. You see drawer (1, 2, 3), dresser (1).
+Act: open drawer 2
+You open drawer (2). You see drawer (1, 2, 3), dresser (1).
+Act: go to drawer 3
+You arrive at the drawer (3). The drawer (3) is closed. You see drawer (1, 2, 3), dresser (1).
+Act: open drawer 3
+You open drawer (3). You see drawer (1, 2, 3), dresser (1).
+Act: go to dresser 1
+You arrive at the dresser (1). You see drawer (1, 2, 3), dresser (1).
+Act: go to shelf 4
+You arrive at the shelf (4). You see butter knife (1, 2), countertop (1), dish sponge (1), house plant (1), soap bottle (1), spatula (1), stool (1), toaster (1).
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see TV stand (1), bed (1), chair (1), dining table (1), drawer (1, 2, 3), dresser (1), shelf (4, 5, 6, 7, 8, 9).
+Act: go to shelf 5
+You arrive at the shelf (5). You see butter knife (1, 2), countertop (1), dish sponge (1), house plant (1), soap bottle (1), spatula (1), stool (1), toaster (1).
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see TV stand (1), bed (1), chair (1), dining table (1), drawer (1, 2, 3), dresser (1), shelf (4, 5, 6, 7, 8, 9).
+Act: go to shelf 6
+You arrive at the shelf (6). You see butter knife (1, 2), countertop (1), dish sponge (1), house plant (1), soap bottle (1), spatula (1), stool (1), toaster (1).
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see TV stand (1), bed (1), chair (1), dining table (1), drawer (1, 2, 3), dresser (1), shelf (4, 5, 6, 7, 8, 9).
+Act: go to shelf 7
+You arrive at the shelf (7). You see TV stand (1), bowl (1), chair (1), dining table (1), house plant (2), remote control (1), shelf (4, 5, 6, 7, 8, 9), statue (1), television (1), tissue box (1).
+Act: go to shelf 8
+You arrive at the shelf (8). You see TV stand (1), bowl (1), chair (1), dining table (1), house plant (2), remote control (1), shelf (4, 5, 6, 7, 8, 9), statue (1), television (1), tissue box (1).
+Act: go to shelf 9
+You arrive at the shelf (9). You see TV stand (1), bowl (1), chair (1), dining table (1), house plant (2), remote control (1), shelf (4, 5, 6, 7, 8, 9), statue (1), television (1), tissue box (1).
+Think: I need to check whether I see book.
+OK.
+Query: find_objects({'label': 'book'})
+Info: [{'name_id_nl': 'book 1', 'node_type': 'object', 'properties': ['openable', 'pickupable'], 'states': []}]
+Think: I find book 1. Now, I need to pick it up.
+OK.
+Act: go to book 1
+You arrive at the book (1). The book (1) is closed. You see baseball bat (1), bed (1), book (1), chair (1), pillow (1).
+Act: pick up book 1
+You pick up book (1). You hold book (1).
+Think: Now, I need to find and turn on candle.
+OK.
+Query: find_objects({'label': 'candle'})
+Info: [{'name_id_nl': 'candle 2', 'node_type': 'object', 'properties': ['toggleable', 'pickupable'], 'states': []}]
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (2), cabinet (1), dining table (3), painting (2, 3, 4), shelf (1, 2, 3, 10, 11, 12, 13, 14, 15), sofa (1). You hold book (1).
+Act: go to candle 2
+You arrive at the candle (2). You see box (1), cabinet (1), candle (2), dining table (3), painting (3), pencil (1), shelf (1, 2, 3), shelving unit (1). You hold book (1).
+Act: turn on candle 2
+You turn on candle (2). You hold book (1).
+Think: Now I complete the task.
+OK.
+Act: done

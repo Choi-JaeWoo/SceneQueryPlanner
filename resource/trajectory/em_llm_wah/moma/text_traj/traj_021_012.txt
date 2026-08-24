@@ -1,0 +1,10 @@
+Your task is to: put 1 fork and serve a glass of wine in the kitchen table
+You arrive at the fridge 1. The fridge 1 is closed. You see bench 1, fridge 1, kitchen table 1. Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- (bathroom 1): [(bathroom cabinet 1), (bathroom counter 1), (faucet 1), (light switch 1), (sink 1), (toilet 1), (washing machine 1)]
+- (bedroom 1): [(bed 1), (bookshelf 2), (cabinet 1), (chair 1), (coffee table 1), (computer 1), (desk 1), (light switch 3), (nightstand 1), (nightstand 2), (sofa 1)]
+- kitchen 1: [apple 1, apple 10, apple 11, apple 2, apple 3, apple 4, apple 5, apple 6, apple 7, apple 8, apple 9, bench 1, bench 2, book 1, (bookshelf 1), bowl 6, cell phone 1, (coffee pot 1), condiment shaker 1, condiment shaker 2, dishwasher 1, (faucet 2), fridge 1, (kitchen cabinet 1), (kitchen cabinet 2), (kitchen cabinet 3), (kitchen cabinet 4), (kitchen cabinet 5), (kitchen cabinet 6), (kitchen cabinet 7), (kitchen cabinet 8), (kitchen counter 1), (kitchen counter 2), (kitchen counter 3), (kitchen table 1), (light switch 2), (microwave oven 1), (oven tray 1), (sink 2), (slice of bread 1), (slice of bread 2), (stove 1), (toaster 1)]
+- living room 1: [(bookshelf 3), (chair 2), (closet 1), (coffee table 2), (computer 2), (desk 2), (light switch 4), remote control 1, (sofa 2), (tv 1), wine glass 2]
+Your 6 previous actions were: go to kitchen 1 (success), go to bench 1 (success), go to bench 2 (success), go to dishwasher 1 (success), open dishwasher 1 (success), go to fridge 1 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: Fridge 1 is closed. Now, I need to open it.
+Act: open fridge 1

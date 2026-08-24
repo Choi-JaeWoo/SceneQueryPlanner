@@ -1,0 +1,57 @@
+Your task is to: Pick up the water glass and plate and put it on the kitchen table
+You are in the house, and there are 4 rooms: bathroom 1, bedroom 1, kitchen 1, living room 1. You are in the middle of a kitchen 1. Looking quickly around the room, you see bookshelf 1, chair (2, 3, 4, 5), dishwasher 1, faucet 1, fridge 1, kitchen cabinet (1, 2, 3, 4, 5, 6, 7, 8), kitchen counter 1, kitchen table 1, microwave oven 1, sink 1, sofa 2, stove 1, toaster 1, tv 2.
+Think: To solve the task I need to find and pick up water glass, find kitchen table and put down water glass, find and pick up plate, find kitchen table and put down plate.
+OK.
+Think: First, I need to find and pick up water glass.
+OK.
+Query: recall location of water glass
+You have not seen water glass before.
+Think: I have not seen water glass yet. The water glass is more likely to appear in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen 1. Looking quickly around the room, you see bookshelf 1, chair (2, 3, 4, 5), dishwasher 1, faucet 1, fridge 1, kitchen cabinet (1, 2, 3, 4, 5, 6, 7, 8), kitchen counter 1, kitchen table 1, microwave oven 1, sink 1, sofa 2, stove 1, toaster 1, tv 2.
+Think: In kitchen 1, the water glass is likely to appear in/on chair (2, 3, 4, 5), dishwasher 1, fridge 1, kitchen cabinet (1, 2, 3, 4, 5, 6, 7, 8), kitchen counter 1, kitchen table 1, sink 1, sofa 2. I can check each place one by one until I find water glass.
+OK.
+Act: go to chair 2
+You arrive at the chair 2. You see chair (2, 3, 5), chocolate syrup 1, coffee pot 1, cooking pot 1, cupcake (2, 3), kitchen counter 1, kitchen table 1, mug (2, 3), stove 1.
+Act: go to chair 3
+You arrive at the chair 3. You see chair (2, 3), coffee pot 1, kitchen counter 1, kitchen table 1, pie 1.
+Act: go to chair 4
+You arrive at the chair 4. You see bananas (1, 2), bowl 2, chair (4, 5), coffee pot 1, condiment shaker (1, 2), cupcake (2, 3), dishwashing liquid 1, fridge 1, kitchen cabinet (5, 6), kitchen counter 1, kitchen table 1, mug (2, 3), pie 1, pudding 1, sink 1.
+Act: go to chair 5
+You arrive at the chair 5. You see bananas (1, 2), bowl 2, cell phone 2, chair (4, 5), coffee pot 1, condiment shaker (1, 2), cupcake (2, 3), dishwashing liquid 1, faucet 1, fridge 1, kitchen cabinet (5, 6, 7), kitchen counter 1, kitchen table 1, mug (2, 3), pie 1, pudding 1, sink 1, washing sponge 1.
+Act: go to dishwasher 1
+You arrive at the dishwasher 1. The dishwasher 1 is closed. You see cell phone 2, cereal 1, chair (2, 5), chocolate syrup 1, coffee pot 1, cupcake (2, 3), cutlets 1, dishwasher 1, kitchen cabinet (2, 3), kitchen counter 1, kitchen table 1, microwave oven 1, minced meat 1, mug (2, 3).
+Act: open dishwasher 1
+You open dishwasher 1. You see cell phone 2, cereal 1, chair (2, 5), chocolate syrup 1, coffee pot 1, cupcake (2, 3), cutlery fork 2, cutlets 1, dishwasher 1, kitchen cabinet (2, 3), kitchen counter 1, kitchen table 1, microwave oven 1, minced meat 1, mug (2, 3)
+Act: go to fridge 1
+You arrive at the fridge 1. The fridge 1 is closed. You see bananas (1, 2), bowl 2, chair (4, 5), coffee pot 1, condiment shaker (1, 2), cupcake (2, 3), fridge 1, kitchen cabinet 5, kitchen counter 1, kitchen table 1, mug (2, 3), pie 1, pudding 1, sofa 2.
+Act: open fridge 1
+You open fridge 1. You see bananas (1, 2), bowl 2, chair (4, 5), coffee pot 1, condiment shaker (1, 2), cupcake (2, 3), cutlery fork 1, fridge 1, kitchen cabinet 5, kitchen counter 1, kitchen table 1, mug 3, pie 1, plate (1, 2), pudding 1, sofa 2, water glass 1
+Think: I find water glass 1. Now, I need to pick it up.
+OK.
+Act: pick up water glass 1
+You pick up water glass 1. You hold water glass 1.
+Think: Now, I need to find kitchen table and put down water glass 1.
+OK.
+Act: go to kitchen table 1
+You arrive at the kitchen table 1. You see bananas (1, 2), bowl 2, cell phone 2, chair (4, 5), coffee pot 1, condiment shaker (1, 2), cupcake (2, 3), cutlery fork 1, dishwashing liquid 1, faucet 1, fridge 1, kitchen cabinet (5, 6), kitchen counter 1, kitchen table 1, mug (2, 3), pie 1, plate (1, 2), pudding 1, sink 1, water glass 1. You hold water glass 1.
+Act: put down water glass 1
+You put water glass 1 on kitchen table 1.
+Think: Now, I need to find and pick up plate.
+OK.
+Query: recall location of plate
+You saw plate 1 near kitchen table 1 in kitchen 1. You saw plate 2 near kitchen table 1 in kitchen 1.
+Act: go to kitchen table 1
+You arrive at the kitchen table 1. You see bananas (1, 2), bowl 2, cell phone 2, chair (4, 5), coffee pot 1, condiment shaker (1, 2), cupcake (2, 3), cutlery fork 1, dishwashing liquid 1, faucet 1, fridge 1, kitchen cabinet (5, 6), kitchen counter 1, kitchen table 1, mug (2, 3), pie 1, plate (1, 2), pudding 1, sink 1, water glass 1.
+Act: pick up plate 1
+You pick up plate 1. You hold plate 1.
+Think: Now, I need to find kitchen table and put down plate 1.
+OK.
+Act: go to kitchen table 1
+You arrive at the kitchen table 1. You see bananas (1, 2), bowl 2, cell phone 2, chair (4, 5), coffee pot 1, condiment shaker (1, 2), cupcake (2, 3), cutlery fork 1, dishwashing liquid 1, faucet 1, fridge 1, kitchen cabinet (5, 6), kitchen counter 1, kitchen table 1, mug (2, 3), pie 1, plate (1, 2), pudding 1, sink 1, washing sponge 1, water glass 1. You hold plate 1.
+Act: put down plate 1
+You put plate 1 on kitchen table 1.
+Think: Now I complete task.
+OK.
+Act: done

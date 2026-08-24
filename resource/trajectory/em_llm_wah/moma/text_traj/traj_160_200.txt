@@ -1,0 +1,2 @@
+Your task is to: Collect one cutlery fork, one wine glass and one plate and place it on the kitchen table
+Max decision steps reached.

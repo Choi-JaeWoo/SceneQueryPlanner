@@ -1,0 +1,65 @@
+Your task is to: Put a pencil inside the box.
+You are in the house, and there are 5 rooms: bathroom (1), bedroom (1, 2), kitchen (1), living room (1). You are in the middle of a bathroom (1). Looking quickly around the room, you see garbage can (1), plunger (1), sink (1), sink basin (1), toilet (1).
+Think: To solve the task, I need to find and pick up pencil, put it in box.
+OK.
+Think: First, I need to find and pick up pencil.
+OK.
+Query: find_objects({'label': 'pencil'})
+Info: 
+Think: I have not seen pencil yet. Now I need to check where to search. First, I will search bedroom 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'bedroom 1'})
+Info: bed 1, box 1, chair (1, 2), dining table 1, drawer (1, 2, 3), dresser 1
+Think: In bedroom 1, the pencil is likely to appear in/on bed 1, box 1, chair (1, 2), dining table 1, drawer (1, 2, 3), dresser 1. I can check each place one by one until I find pencil.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see baseball bat (1), bed (1), chair (1, 2), dining table (1), drawer (1, 2, 3), dresser (1), painting (1, 2, 3).
+Act: go to bed 1
+You arrive at the bed (1). You see baseball bat (1), bed (1), pillow (1, 2), teddy bear (1).
+Act: go to box 1
+You arrive at the box (1). The box (1) is closed. You see CD (1), alarm clock (1), book (1), box (1), chair (1, 2), credit card (1), dining table (1), drawer (1, 2, 3), dresser (1), house plant (1), key chain (1), laptop (1), pencil (1, 2), tissue box (1), vase (1).
+Act: go to chair 1
+You arrive at the chair (1). You see CD (1), box (1), chair (1), dining table (1), drawer (1, 2), house plant (1), laptop (1), painting (1, 2), pencil (1, 2), statue (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see CD (1), box (1), chair (1, 2), dining table (1), house plant (1), laptop (1), pencil (1), statue (1).
+Act: go to drawer 1
+You arrive at the drawer (1). The drawer (1) is closed. You see alarm clock (1), book (1), box (1), credit card (1), drawer (1, 2, 3), dresser (1), key chain (1), laptop (1), painting (1, 2), pencil (2), tissue box (1), vase (1).
+Act: open drawer 1
+You open drawer (1). You see alarm clock (1), book (1), box (1), credit card (1), drawer (1, 2, 3), dresser (1), key chain (1), laptop (1), painting (1, 2), pencil (2), tissue box (1), vase (1).
+Act: go to drawer 2
+You arrive at the drawer (2). The drawer (2) is closed. You see CD (1), alarm clock (1), book (1), box (1), chair (1), credit card (1), dining table (1), drawer (1, 2, 3), dresser (1), house plant (1), key chain (1), laptop (1), painting (1, 2), pencil (2), tissue box (1), vase (1).
+Act: open drawer 2
+You open drawer (2). You see CD (1), alarm clock (1), book (1), box (1), chair (1), credit card (1), dining table (1), drawer (1, 2, 3), dresser (1), house plant (1), key chain (1), laptop (1), painting (1, 2), pencil (2), tissue box (1), vase (1).
+Act: go to drawer 3
+You arrive at the drawer (3). The drawer (3) is closed. You see CD (1), alarm clock (1), book (1), box (1), chair (1), credit card (1), dining table (1), drawer (1, 2, 3), dresser (1), house plant (1), key chain (1), laptop (1), painting (1, 2), pencil (1, 2), tissue box (1), vase (1).
+Act: open drawer 3
+You open drawer (3). You see CD (1), alarm clock (1), book (1), box (1), chair (1), credit card (1), dining table (1), drawer (1, 2, 3), dresser (1), house plant (1), key chain (1), laptop (1), painting (1, 2), pencil (1, 2), tissue box (1), vase (1).
+Act: go to dresser 1
+You arrive at the dresser (1). You see CD (1), alarm clock (1), book (1), box (1), chair (1), credit card (1), dining table (1), drawer (1, 2, 3), dresser (1), house plant (1), key chain (1), laptop (1), painting (1, 2), pencil (2), tissue box (1), vase (1).
+Think: I need to check whether I see pencil.
+OK.
+Query: find_objects({'label': 'pencil'})
+Info: [{'name_id_nl': 'pencil 1', 'node_type': 'object', 'properties': ['pickupable'], 'states': []}, {'name_id_nl': 'pencil 2', 'node_type': 'object', 'properties': ['pickupable'], 'states': []}]
+Query: get_edges_for_node({'node_id': 'pencil 1'})
+Info: [('pencil 1', 'statue 1', 'CLOSE'), ('pencil 1', 'dining table 1', 'ON'), ('pencil 1', 'box 1', 'CLOSE'), ('pencil 1', 'CD 1', 'CLOSE'), ('pencil 1', 'chair 2', 'CLOSE'), ('pencil 1', 'chair 1', 'CLOSE'), ('pencil 1', 'house plant 1', 'CLOSE'), ('pencil 1', 'laptop 1', 'CLOSE'), ('pencil 1', 'bedroom 1', 'INSIDE'), ('statue 1', 'pencil 1', 'CLOSE'), ('box 1', 'pencil 1', 'CLOSE'), ('CD 1', 'pencil 1', 'CLOSE'), ('chair 2', 'pencil 1', 'CLOSE'), ('chair 1', 'pencil 1', 'CLOSE'), ('house plant 1', 'pencil 1', 'CLOSE'), ('laptop 1', 'pencil 1', 'CLOSE')]
+Query: get_edges_for_node({'node_id': 'pencil 2'})
+Info: [('pencil 2', 'dresser 1', 'ON'), ('pencil 2', 'alarm clock 1', 'CLOSE'), ('pencil 2', 'book 1', 'CLOSE'), ('pencil 2', 'box 1', 'CLOSE'), ('pencil 2', 'credit card 1', 'CLOSE'), ('pencil 2', 'drawer 3', 'CLOSE'), ('pencil 2', 'drawer 2', 'CLOSE'), ('pencil 2', 'drawer 1', 'CLOSE'), ('pencil 2', 'key chain 1', 'CLOSE'), ('pencil 2', 'painting 2', 'CLOSE'), ('pencil 2', 'painting 1', 'CLOSE'), ('pencil 2', 'tissue box 1', 'CLOSE'), ('pencil 2', 'vase 1', 'CLOSE'), ('pencil 2', 'user 1', 'CLOSE'), ('pencil 2', 'bedroom 1', 'INSIDE'), ('alarm clock 1', 'pencil 2', 'CLOSE'), ('book 1', 'pencil 2', 'CLOSE'), ('box 1', 'pencil 2', 'CLOSE'), ('credit card 1', 'pencil 2', 'CLOSE'), ('drawer 3', 'pencil 2', 'CLOSE'), ('drawer 2', 'pencil 2', 'CLOSE'), ('drawer 1', 'pencil 2', 'CLOSE'), ('key chain 1', 'pencil 2', 'CLOSE'), ('painting 2', 'pencil 2', 'CLOSE'), ('painting 1', 'pencil 2', 'CLOSE'), ('tissue box 1', 'pencil 2', 'CLOSE'), ('vase 1', 'pencil 2', 'CLOSE'), ('user 1', 'pencil 2', 'CLOSE')]
+Think: Pencil 1 is on dining table 1.
+OK.
+Act: go to dining table 1
+You arrive at the dining table (1). You see CD (1), box (1), chair (1, 2), dining table (1), house plant (1), laptop (1), pencil (1), statue (1).
+Act: go to pencil 1
+You arrive at the pencil (1). You see CD (1), box (1), chair (1), dining table (1), house plant (1), laptop (1), painting (2), pencil (1), statue (1).
+Act: pick up pencil 1
+You pick up pencil (1). You hold pencil (1).
+Think: Now, I need to find box and put down pencil 1.
+OK.
+Act: go to box 1
+You arrive at the box (1). The box (1) is closed. You see CD (1), alarm clock (1), book (1), box (1), chair (1, 2), credit card (1), dining table (1), drawer (1, 2, 3), dresser (1), house plant (1), key chain (1), laptop (1), pencil (2), tissue box (1), vase (1). You hold pencil (1).
+Act: open box 1
+You open box (1). You see CD (1), alarm clock (1), book (1), box (1), chair (1, 2), credit card (1), dining table (1), drawer (1, 2, 3), dresser (1), house plant (1), key chain (1), laptop (1), pencil (2), tissue box (1), vase (1). You hold pencil (1).
+Act: put down pencil 1
+You put pencil (1) in box (1).
+Think: Now I complete the task.
+OK.
+Act: done

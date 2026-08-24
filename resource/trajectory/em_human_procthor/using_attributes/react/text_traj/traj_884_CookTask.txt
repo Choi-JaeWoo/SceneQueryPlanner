@@ -1,0 +1,71 @@
+Your task is to: Toast a slice of bread using a toaster and then place the toasted bread next to the mug.
+You are in the house, and there are 8 rooms: bathroom (1, 2), bedroom (1, 2, 3), kitchen (1), living room (1, 2). You are in the middle of a bedroom (2). Looking quickly around the room, you see baseball bat (1), bed (2), drawer (16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27), dresser (3), house plant (3).
+Think: To solve the task, I need to find and pick up knife or butter knife, find and slice bread, put down knife or butter knife and pick up sliced bread, put sliced bread in toaster and turn on toaster, turn off toaster, pick up sliced bread and put it next to mug.
+OK.
+Think: First, I need to find and pick up knife or butter knife. The knife or butter knife is more likely to appear in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see cabinet (1), chair (1), countertop (1), dining table (1), fridge (1), garbage bag (1), shelf (1, 2, 3), shelving unit (1), stool (1).
+Think: In kitchen 1, the knife or butter knife is likely to appear in/on cabinet 1, chair 1, countertop 1, dining table 1, fridge 1, shelf (1, 2, 3), shelving unit 1, stool 1. I can check each place one by one until I find knife or butter knife.
+OK.
+Act: go to cabinet 1
+You arrive at the cabinet (1). The cabinet (1) is closed. You see cabinet (1), garbage bag (1), shelf (1, 2, 3), shelving unit (1).
+Act: open cabinet 1
+You open cabinet (1). You see cabinet (1), garbage bag (1), shelf (1, 2, 3), shelving unit (1), spray bottle (1).
+Act: go to chair 1
+You arrive at the chair (1). You see bowl (1), chair (1), dining table (1), garbage bag (1), knife (1), pan (1), pen (1), potato (1).
+Think: I find knife 1. Now, I need to pick it up.
+OK.
+Act: go to knife 1
+You arrive at the knife (1). You see bowl (1), bread (2), chair (1), dining table (1), knife (1), mug (1), pan (1), pen (1), potato (1).
+Act: pick up knife 1
+You pick up knife (1). You hold knife (1).
+Think: Now, I need to find and slice bread. I see bread 1.
+OK.
+Act: go to bread 1
+You arrive at the bread (1). You see bread (1, 2), house plant (4), ladle (1), mug (1), salt shaker (1), spoon (1), toaster (1). You hold knife (1).
+Act: slice bread 1
+You slice bread (1). You see bread (2), house plant (4), ladle (1), mug (1), salt shaker (1), sliced bread (1), spoon (1), toaster (1). You hold knife (1).
+Think: Now, I need to put down knife 1 and pick up sliced bread 1.
+OK.
+Act: put down knife 1
+You put knife (1) in chair (1).
+Act: pick up sliced bread 1
+You pick up sliced bread (1). You hold sliced bread (1).
+Think: Now, I need to find toaster.
+OK.
+Act: go to toaster 1
+You arrive at the toaster (1). You see toaster (1). You hold sliced bread (1).
+Think: Now, I need to put down sliced bread 1 in the toaster 1 and turn on toaster 1.
+OK.
+Act: put down sliced bread 1
+You put sliced bread (1) in toaster (1).
+Think: Now, I need to turn on toaster 1 briefly and turn off toaster 1.
+OK.
+Act: turn on toaster 1
+You turn on toaster (1).
+Think: Now, I need to turn off toaster 1 and pick up sliced bread 1.
+OK.
+Act: turn off toaster 1
+You turn off toaster (1).
+Act: pick up sliced bread 1
+You pick up sliced bread (1). You hold sliced bread (1).
+Think: Now, I need to find mug and check the receptacle where mug is located. The mug is more likely to appear in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see cabinet (1), chair (1), countertop (1), dining table (1), fridge (1), garbage bag (1), shelf (1, 2, 3), shelving unit (1), stool (1). You hold sliced bread (1).
+Think: In kitchen 1, the mug is likely to appear in/on cabinet 1, countertop 1, dining table 1, shelf (1, 2, 3). I can check each place one by one until I find mug.
+OK.
+Act: go to cabinet 1
+You arrive at the cabinet (1). The cabinet (1) is open. You see cabinet (1), garbage bag (1), shelf (1, 2, 3), shelving unit (1), spray bottle (1). You hold sliced bread (1).
+Act: go to countertop 1
+You arrive at the countertop (1). You see bread (2), countertop (1), house plant (4), ladle (1), mug (1), salt shaker (1), spoon (1), toaster (1). You hold sliced bread (1).
+Think: I find mug 1. Mug 1 is on countertop 1. Now, I need to move to countertop 1 and put down sliced bread 1.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see bread (2), countertop (1), house plant (4), ladle (1), mug (1), salt shaker (1), spoon (1), toaster (1). You hold sliced bread (1).
+Act: put down sliced bread 1
+You put sliced bread (1) in countertop (1).
+Think: Now I complete the task.
+OK.
+Act: done

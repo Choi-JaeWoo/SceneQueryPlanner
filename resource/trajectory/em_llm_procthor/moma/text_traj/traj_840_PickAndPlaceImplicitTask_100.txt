@@ -1,0 +1,2 @@
+Your task is to: Remove all objects from the side table and place them in the dresser.
+Max decision steps reached.

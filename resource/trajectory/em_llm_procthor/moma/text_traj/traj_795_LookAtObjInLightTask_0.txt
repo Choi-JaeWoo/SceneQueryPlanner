@@ -1,0 +1,7 @@
+Your task is to: Hold the remote control and switch on the desk lamp.
+You are in the house, and there are 1 rooms: living room (1). You are in the middle of a living room (1). Looking quickly around the room, you see TV stand (1), armchair (1, 2, 3, 4, 5), dining table (1), floor lamp (1, 2, 3, 4), garbage can (1), painting (1, 2), shelf (1, 2, 3, 4, 5, 6), sofa (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- living room 1: [(armchair 1), (armchair 5), (armchair 2), (armchair 4), (armchair 3), (dining table 1), floor lamp 1, floor lamp 2, floor lamp 3, floor lamp 4, (garbage can 1), painting 2, painting 1, (shelf 4), (shelf 2), (shelf 1), (shelf 6), (shelf 5), (shelf 3), (sofa 1), (TV stand 1)]
+You have not taken any actions yet.
+What is the best next action to complete the task as efficiently as possible?
+Think: First, I need to find and pick up remote control. The remote control is more likely to appear in living room 1.
+Act: go to living room 1

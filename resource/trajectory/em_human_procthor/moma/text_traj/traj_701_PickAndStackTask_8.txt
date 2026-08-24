@@ -1,0 +1,12 @@
+Your task is to: Put a box with a candle inside it on the shelf.
+You arrive at the toilet (1). The toilet (1) is closed. You see candle (1), cloth (1), spray bottle (1), toilet (1), toilet paper (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- bathroom 1: [faucet 1, plunger 1, candle 1, cloth 1, (garbage can 1), sink 1, sink basin 1, spray bottle 1, toilet 1, toilet paper 1]
+- (bathroom 2): [faucet 2, (garbage can 2), plunger 2, (sink 2), (sink basin 2), (toilet 2)]
+- (bedroom 1): [baseball bat 1, basket ball 1, (bed 1), (drawer 5), (drawer 6), (drawer 4), (drawer 1), (drawer 3), (drawer 2), (dresser 1), (safe 1), (shelf 2), (shelf 6), (shelf 5), (shelf 4), (shelf 3), (shelf 1), (TV stand 1)]
+- (bedroom 2): [baseball bat 2, (bed 2), (box 2), (chair 3), (chair 2), (chair 1), (chair 4), (dining table 1), (drawer 10), (drawer 11), (drawer 16), (drawer 15), (drawer 14), (drawer 9), (drawer 8), (drawer 7), (drawer 13), (drawer 12), (dresser 2), television 2]
+- (kitchen 1): [(chair 6), (chair 5), (countertop 1), (dining table 2), (fridge 1), house plant 1, painting 2, painting 1]
+- living room 1: [(box 1), (box 3), candle 2, credit card 3, (dining table 3), key chain 3, newspaper 1, painting 4, painting 3, pen 3, plate 2, statue 3]
+Your 4 previous actions were: go to bathroom 1 (success), go to sink 1 (success), go to sink basin 1 (success), go to toilet 1 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I arrive at toilet 1. I find candle 1. Now, I need to move toward candle 1 to pick it up.
+Act: go to candle 1

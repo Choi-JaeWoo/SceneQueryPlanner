@@ -1,0 +1,11 @@
+Your task is to: Put a pencil inside the box.
+You pick up pencil (1). You hold pencil (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- bathroom 1: [faucet 1, (garbage can 1), plunger 1, (sink 1), (sink basin 1), (toilet 1)]
+- bedroom 1: [painting 3, painting 1, baseball bat 1, pillow 1, pillow 2, teddy bear 1, bed 1, (box 1), CD 1, chair 2, (chair 1), (dining table 1), (drawer 3), (drawer 2), (drawer 1), (dresser 1), house plant 1, laptop 1, painting 2, pencil 1, statue 1]
+- (bedroom 2): [baseball bat 2, (bed 2), (bed 3), (chair 4), (chair 3), (desk 1), (dining table 2), dog bed 1, (drawer 10), (drawer 13), (drawer 12), (drawer 11), (drawer 6), (drawer 8), (drawer 4), (drawer 9), (drawer 7), (drawer 5), (dresser 2), painting 4, television 1]
+- (kitchen 1): [(cabinet 1), (chair 5), (countertop 1), (dining table 3), (fridge 1), (shelf 2), (shelf 1), (shelf 3), shelving unit 1]
+- (living room 1): [(box 2), (chair 6), (chair 8), (chair 7), (chair 9), (chair 10), (chair 11), (dining table 4), (safe 1), (shelf 4), television 2, (TV stand 1)]
+Your 5 previous actions were: go to bedroom 1 (success), go to bed 1 (success), go to chair 2 (success), go to pencil 1 (success), pick up pencil 1 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I pick up pencil 1. Now, I need to find box to put down pencil 1. Box 1 is in bedroom 1.
+Act: go to bedroom 1

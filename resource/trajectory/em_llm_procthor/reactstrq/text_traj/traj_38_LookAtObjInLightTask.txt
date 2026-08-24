@@ -1,0 +1,39 @@
+Your task is to: Hold the remote control and turn on the candle for illumination.
+You are in the house, and there are 1 rooms: living room (1). You are in the middle of a living room (1). Looking quickly around the room, you see TV stand (1), cart (1), dining table (1), drawer (1), painting (1, 2), room decor (1), shelf (1, 2, 3, 4, 5, 6), side table (1).
+Think: To solve the task, I need to find and pick up remote control, then find and turn on candle.
+OK.
+Think: First, I need to find and pick up remote control.
+OK.
+Query: find_objects({'label': 'remote control'})
+Info: 
+Think: I have not seen remote control yet. Now I need to check where to search. First, I will search living room 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'living room 1'})
+Info: TV stand 1, dining table 1, drawer 1, shelf (1, 2, 3, 4, 5, 6), side table 1
+Think: In living room 1, the remote control is likely to appear in/on TV stand 1, dining table 1, drawer 1, shelf (1, 2, 3, 4, 5, 6), side table 1. I can check each place one by one until I find remote control.
+OK.
+Act: go to TV stand 1
+You arrive at the TV stand (1). You see TV stand (1), bowl (1), candle (1), cell phone (1, 2), drawer (1), plate (1), remote control (2), room decor (1), shelf (1, 2, 3, 4, 5, 6), side table (1), television (1), vase (1).
+Think: I find remote control 2. Now, I need to pick it up.
+OK.
+Act: go to remote control 2
+You arrive at the remote control (2). You see TV stand (1), bowl (1), candle (1), cart (1), cell phone (1, 2), dining table (1), drawer (1), key chain (1), laptop (1), pen (1), pencil (1), plate (1), remote control (1, 2), shelf (1, 2, 3, 4, 5, 6), side table (1), television (1), vase (1).
+Act: pick up remote control 2
+You pick up remote control (2). You hold remote control (2).
+Think: Now, I need to find and turn on candle.
+OK.
+Query: find_objects({'label': 'candle'})
+Info: [{'name_id_nl': 'candle 1', 'node_type': 'object', 'properties': ['toggleable', 'pickupable'], 'states': []}]
+Query: get_edges_for_node({'node_id': 'candle 1'})
+Info: [('candle 1', 'shelf 5', 'ON'), ('candle 1', 'bowl 1', 'CLOSE'), ('candle 1', 'cell phone 1', 'CLOSE'), ('candle 1', 'cell phone 2', 'CLOSE'), ('candle 1', 'drawer 1', 'CLOSE'), ('candle 1', 'remote control 2', 'CLOSE'), ('candle 1', 'room decor 1', 'CLOSE'), ('candle 1', 'shelf 1', 'CLOSE'), ('candle 1', 'shelf 2', 'CLOSE'), ('candle 1', 'shelf 3', 'CLOSE'), ('candle 1', 'shelf 4', 'CLOSE'), ('candle 1', 'shelf 6', 'CLOSE'), ('candle 1', 'side table 1', 'CLOSE'), ('candle 1', 'television 1', 'CLOSE'), ('candle 1', 'TV stand 1', 'CLOSE'), ('candle 1', 'vase 1', 'CLOSE'), ('candle 1', 'user 1', 'CLOSE'), ('candle 1', 'living room 1', 'INSIDE'), ('bowl 1', 'candle 1', 'CLOSE'), ('cell phone 1', 'candle 1', 'CLOSE'), ('cell phone 2', 'candle 1', 'CLOSE'), ('drawer 1', 'candle 1', 'CLOSE'), ('remote control 2', 'candle 1', 'CLOSE'), ('room decor 1', 'candle 1', 'CLOSE'), ('shelf 1', 'candle 1', 'CLOSE'), ('shelf 2', 'candle 1', 'CLOSE'), ('shelf 3', 'candle 1', 'CLOSE'), ('shelf 4', 'candle 1', 'CLOSE'), ('shelf 6', 'candle 1', 'CLOSE'), ('side table 1', 'candle 1', 'CLOSE'), ('television 1', 'candle 1', 'CLOSE'), ('TV stand 1', 'candle 1', 'CLOSE'), ('vase 1', 'candle 1', 'CLOSE'), ('user 1', 'candle 1', 'CLOSE')]
+Think: Candle 1 is on shelf 5.
+OK.
+Act: go to shelf 5
+You arrive at the shelf (5). You see TV stand (1), bowl (1), candle (1), cell phone (1), drawer (1), room decor (1), shelf (1, 2, 3, 4, 5, 6), television (1), vase (1). You hold remote control (2).
+Act: go to candle 1
+You arrive at the candle (1). You see TV stand (1), bowl (1), candle (1), cell phone (1), drawer (1), room decor (1), shelf (1, 2, 3, 4, 5, 6), television (1), vase (1). You hold remote control (2).
+Act: turn on candle 1
+You turn on candle (1). You hold remote control (2).
+Think: Now I complete the task.
+OK.
+Act: done

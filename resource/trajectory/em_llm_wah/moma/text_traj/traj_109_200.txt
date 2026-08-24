@@ -1,0 +1,2 @@
+Your task is to: Put 1 wine glass on the kitchen table.
+Max decision steps reached.

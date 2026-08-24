@@ -1,0 +1,103 @@
+Your task is to: Pick up a book and put it on the countertop.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a kitchen (1). Looking quickly around the room, you see chair (1), countertop (1), dining table (1), fridge (1), garbage bag (1).
+Think: To solve the task, I need to find and pick up book, then put it on countertop.
+OK.
+Think: First, I need to find and pick up book. The book is more likely to appear in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (2), cabinet (1), chair (2, 3, 4, 5), dining table (2), floor lamp (1), shelf (1, 2, 3, 5), shelving unit (1), sofa (1).
+Think: In living room 1, the book is likely to appear in/on TV stand 2, cabinet 1, chair (2, 3, 4, 5), dining table 2, shelf (1, 2, 3, 5), shelving unit 1, sofa 1. I can check each place one by one until I find book.
+OK.
+Act: go to TV stand 2
+You arrive at the TV stand (2). You see TV stand (2), box (1), cabinet (1), candle (1), shelf (1, 2, 3, 5), shelving unit (1), television (2).
+Act: go to cabinet 1
+You arrive at the cabinet (1). The cabinet (1) is closed. You see box (1), cabinet (1), shelf (1, 2, 3), shelving unit (1), television (2).
+Act: open cabinet 1
+You open cabinet (1). You see box (1), cabinet (1), shelf (1, 2, 3), shelving unit (1), television (2).
+Act: go to chair 2
+You arrive at the chair (2). You see bowl (2), chair (2, 3, 4, 5), dining table (2), floor lamp (1), house plant (3), statue (1).
+Act: go to chair 3
+You arrive at the chair (3). You see bowl (2), chair (2, 3, 4, 5), dining table (2), floor lamp (1), house plant (3), statue (1).
+Act: go to chair 4
+You arrive at the chair (4). You see bowl (2), chair (2, 4, 5), dining table (2), house plant (3), sofa (1), statue (1).
+Act: go to chair 5
+You arrive at the chair (5). You see bowl (2), chair (2, 3, 4, 5), dining table (2), house plant (3), statue (1).
+Act: go to dining table 2
+You arrive at the dining table (2). You see bowl (2), chair (2, 3, 4, 5), dining table (2), house plant (3), statue (1).
+Act: go to shelf 1
+You arrive at the shelf (1). You see TV stand (2), box (1), cabinet (1), candle (1), shelf (1, 2, 3, 5), shelving unit (1), television (2).
+Act: go to shelf 2
+You arrive at the shelf (2). You see TV stand (2), box (1), cabinet (1), candle (1), shelf (1, 2, 3, 5), shelving unit (1), television (2).
+Act: go to shelf 3
+You arrive at the shelf (3). You see TV stand (2), box (1), cabinet (1), candle (1), shelf (1, 2, 3, 5), shelving unit (1), television (2).
+Act: go to shelf 5
+You arrive at the shelf (5). You see TV stand (2), box (1), cabinet (1), candle (1), shelf (1, 2, 3, 5), shelving unit (1), television (2).
+Act: go to shelving unit 1
+You arrive at the shelving unit (1). You see TV stand (2), box (1), cabinet (1), candle (1), shelf (1, 2, 3, 5), shelving unit (1), television (2).
+Act: go to sofa 1
+You arrive at the sofa (1). You see sofa (1).
+Think: There is no book in living room 1. I need to move to bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see TV stand (1), basket ball (1), bed (1), drawer (1, 2, 3), dresser (1), garbage can (1), house plant (1), painting (1, 2), safe (1), shelf (4).
+Think: In bedroom 1, the book is likely to appear in/on TV stand 1, basket ball 1, bed 1, drawer (1, 2, 3), dresser 1, garbage can 1, house plant 1, painting (1, 2), safe 1, shelf 4. I can check each place one by one until I find book.
+OK.
+Act: go to TV stand 1
+You arrive at the TV stand (1). You see garbage can (2), painting (3).
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see TV stand (1), basket ball (1), bed (1), drawer (1, 2, 3), dresser (1), garbage can (1), house plant (1), painting (1, 2), safe (1), shelf (4).
+Act: go to basket ball 1
+You arrive at the basket ball (1). You see basket ball (1).
+Act: go to bed 1
+You arrive at the bed (1). You see bed (1), drawer (1, 2, 3), dresser (1), painting (1), pillow (1), remote control (1), safe (1).
+Act: go to drawer 1
+You arrive at the drawer (1). The drawer (1) is closed. You see drawer (1, 2, 3), dresser (1), remote control (1), safe (1).
+Act: open drawer 1
+You open drawer (1). You see drawer (1, 2, 3), dresser (1), remote control (1), safe (1).
+Act: go to drawer 2
+You arrive at the drawer (2). The drawer (2) is closed. You see drawer (1, 2, 3), dresser (1), remote control (1), safe (1).
+Act: open drawer 2
+You open drawer (2). You see drawer (1, 2, 3), dresser (1), remote control (1), safe (1).
+Act: go to drawer 3
+You arrive at the drawer (3). The drawer (3) is closed. You see drawer (1, 2, 3), dresser (1), safe (1).
+Act: open drawer 3
+You open drawer (3). You see drawer (1, 2, 3), dresser (1), safe (1).
+Act: go to dresser 1
+You arrive at the dresser (1). You see drawer (1, 2, 3), dresser (1), garbage can (1), safe (1).
+Act: go to garbage can 1
+You arrive at the garbage can (1). You see drawer (1, 2, 3), dresser (1), garbage can (1), safe (1).
+Act: go to house plant 1
+You arrive at the house plant (1). You see house plant (1), television (1), watch (1).
+Act: go to painting 1
+You arrive at the painting (1). You see bed (1), drawer (1, 2, 3), dresser (1), painting (1), pillow (1), remote control (1), safe (1).
+Act: go to painting 2
+You arrive at the painting (2). You see basket ball (1), bed (1), painting (2), pillow (1), remote control (1).
+Act: go to safe 1
+You arrive at the safe (1). The safe (1) is closed. You see bed (1), drawer (1, 2, 3), dresser (1), painting (1), pillow (1), remote control (1), safe (1).
+Act: open safe 1
+You open safe (1). You see bed (1), drawer (1, 2, 3), dresser (1), painting (1), pillow (1), remote control (1), safe (1).
+Act: go to shelf 4
+You arrive at the shelf (4). You see garbage can (2), painting (3).
+Think: There is no book in bedroom 1. I need to move to kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see chair (1), countertop (1), dining table (1), fridge (1), garbage bag (1).
+Think: In kitchen 1, the book is likely to appear in/on chair 1, countertop 1, dining table 1, fridge 1. I can check each place one by one until I find book.
+OK.
+Act: go to chair 1
+You arrive at the chair (1). You see book (1, 2), bowl (1), chair (1), dining table (1), fork (1), plate (1), pot (1).
+Think: I find book 1. Now, I need to pick it up.
+OK.
+Act: go to book 1
+You arrive at the book (1). The book (1) is closed. You see book (1, 2), bowl (1), chair (1), dining table (1), fork (1), plate (1), pot (1).
+Act: pick up book 1
+You pick up book (1). You hold book (1).
+Think: Now, I need to find countertop and put down book 1.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see apple (1), coffee machine (1), countertop (1), dish sponge (1), house plant (2), mug (2), pepper shaker (1), salt shaker (1), soap bottle (1), spray bottle (1), tomato (2). You hold book (1).
+Act: put down book 1
+You put book (1) in countertop (1).
+Think: Now I complete the task.
+OK.
+Act: done

@@ -1,0 +1,111 @@
+Your task is to: Power down all laptops, televisions, and cell phones that are currently on.
+You are in the house, and there are 3 rooms: bedroom (1), kitchen (1), living room (1). You are in the middle of a kitchen (1). Looking quickly around the room, you see countertop (1), garbage bag (1), painting (1).
+Think: To solve the task, I need to go through every room, check for laptop, television, and cell phone, and turn them off if they are turned on.
+OK.
+Think: First, I need to check if I saw laptop, television, cell phone.
+OK.
+Query: recall location of laptop
+You have not seen laptop before.
+Query: recall location of television
+You have not seen television before.
+Query: recall location of cell phone
+You have not seen cell phone before.
+Think: I have not seen laptop, television, cell phone yet. I need to check kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see countertop (1), garbage bag (1), painting (1).
+Think: In kitchen 1, I can check each place one by one until I find laptop, television, and cell phone.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see bottle (1), countertop (1), mug (1), plate (1), toaster (1).
+Act: go to garbage bag 1
+You arrive at the garbage bag (1). You see garbage bag (1), painting (1).
+Act: go to painting 1
+You arrive at the painting (1). You see garbage bag (1), painting (1).
+Think: It seems there are no more objects to turn off in kitchen 1, so I should go to living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (2), dining table (2), painting (2, 3, 4), shelf (2), sofa (1).
+Think: In living room 1, I can check each place one by one until I find laptop, television, and cell phone.
+OK.
+Act: go to TV stand 2
+You arrive at the TV stand (2). You see TV stand (2), pillow (2), shelf (2), sofa (1), television (2).
+Think: I find television 2. Now, I need to turn it off.
+OK.
+Act: go to television 2
+You arrive at the television (2). You see TV stand (2), pillow (2), shelf (2), sofa (1), television (2).
+Act: turn off television 2
+(controller) Turn off action failed: can't toggle object off if it's already off!
+Act: go to dining table 2
+You arrive at the dining table (2). You see dining table (2), painting (4), pillow (2), remote control (2).
+Act: go to painting 2
+You arrive at the painting (2). You see painting (2).
+Act: go to painting 3
+You arrive at the painting (3). You see painting (3), pillow (2), sofa (1).
+Act: go to painting 4
+You arrive at the painting (4). You see dining table (2), painting (3, 4), pillow (2), remote control (2).
+Act: go to shelf 2
+You arrive at the shelf (2). You see TV stand (2), pillow (2), shelf (2), sofa (1), television (2).
+Act: go to sofa 1
+You arrive at the sofa (1). You see painting (3), pillow (2), remote control (2), sofa (1), television (2).
+Think: It seems there are no more objects to turn off in living room 1, so I need to go to bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see TV stand (1), bed (1), chair (1, 2, 3, 4), dining table (1), drawer (1, 2, 3), dresser (1), house plant (1), shelf (1).
+Think: In bedroom 1, I can check each place one by one until I find laptop, television, and cell phone.
+OK.
+Act: go to TV stand 1
+You arrive at the TV stand (1). You see TV stand (1), basket ball (1), bed (1), book (1), bowl (1), chair (1), laptop (1), pillow (1), shelf (1), statue (1), television (1).
+Think: I find laptop 1. Now, I need to turn it off.
+OK.
+Act: go to laptop 1
+You arrive at the laptop (1). The laptop (1) is closed. You see TV stand (1), basket ball (1), bed (1), laptop (1), pillow (1), remote control (1), shelf (1), statue (1), television (1).
+Act: open laptop 1
+You open laptop (1). You see TV stand (1), basket ball (1), bed (1), laptop (1), pillow (1), remote control (1), shelf (1), statue (1), television (1).
+Act: turn off laptop 1
+You turn off laptop (1).
+Think: I find television 1. Now, I need to turn it off.
+OK.
+Act: go to television 1
+You arrive at the television (1). You see TV stand (1), book (1), bowl (1), chair (1), laptop (1), pillow (1), shelf (1), statue (1), television (1).
+Act: turn off television 1
+You turn off television (1).
+Act: go to bed 1
+You arrive at the bed (1). You see TV stand (1), basket ball (1), bed (1), chair (1), laptop (1), pillow (1), remote control (1), shelf (1), statue (1), television (1).
+Act: go to chair 1
+You arrive at the chair (1). You see book (1), bowl (1), cell phone (1), chair (1, 4), drawer (1, 2, 3), pillow (1), statue (1), vase (1).
+Think: I find cell phone 1. Now, I need to turn it off.
+OK.
+Act: go to cell phone 1
+You arrive at the cell phone (1). You see book (1), bowl (1), cell phone (1), chair (1, 2, 3, 4), dining table (1), statue (1).
+Act: turn off cell phone 1
+You turn off cell phone (1).
+Act: go to chair 2
+You arrive at the chair (2). You see chair (2, 3).
+Act: go to chair 3
+You arrive at the chair (3). You see book (1), bowl (1), cell phone (1), chair (1, 2, 3, 4), dining table (1), statue (1).
+Act: go to chair 4
+You arrive at the chair (4). You see book (1), bowl (1), cell phone (1), chair (1, 2, 3, 4), dining table (1), statue (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see book (1), bowl (1), cell phone (1), chair (1, 2, 3, 4), dining table (1), statue (1).
+Act: go to drawer 1
+You arrive at the drawer (1). The drawer (1) is closed. You see credit card (1), drawer (1, 2, 3), dresser (1), vase (1).
+Act: open drawer 1
+You open drawer (1). You see credit card (1), drawer (1, 2, 3), dresser (1), vase (1).
+Act: go to drawer 2
+You arrive at the drawer (2). The drawer (2) is closed. You see credit card (1), drawer (1, 2, 3), dresser (1), vase (1).
+Act: open drawer 2
+You open drawer (2). You see credit card (1), drawer (1, 2, 3), dresser (1), vase (1).
+Act: go to drawer 3
+You arrive at the drawer (3). The drawer (3) is closed. You see credit card (1), drawer (1, 2, 3), dresser (1), vase (1).
+Act: open drawer 3
+You open drawer (3). You see credit card (1), drawer (1, 2, 3), dresser (1), vase (1).
+Act: go to dresser 1
+You arrive at the dresser (1). You see credit card (1), drawer (1, 2, 3), dresser (1), vase (1).
+Act: go to house plant 1
+You arrive at the house plant (1). You see book (1), bowl (1), chair (2), dining table (1), house plant (1), shelf (1), statue (1), television (1).
+Act: go to shelf 1
+You arrive at the shelf (1). You see TV stand (1), book (1), bowl (1), chair (1), laptop (1), pillow (1), shelf (1), statue (1), television (1).
+Think: Now I complete the task.
+OK.
+Act: done

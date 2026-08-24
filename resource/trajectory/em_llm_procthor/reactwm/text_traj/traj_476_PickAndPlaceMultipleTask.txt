@@ -1,0 +1,59 @@
+Your task is to: Place both a laptop and a newspaper on the armchair.
+You are in the house, and there are 1 rooms: living room (1). You are in the middle of a living room (1). Looking quickly around the room, you see TV stand (1), armchair (1, 2), dining table (1), floor lamp (1), house plant (1), shelf (1), sofa (1).
+Think: To solve the task, I need to find laptop and newspaper, then put them on armchair.
+OK.
+Think: First, I need to find laptop.
+OK.
+Query: recall location of laptop
+You have not seen laptop before.
+Think: I have not seen laptop yet. The laptop is more likely to appear in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), armchair (1, 2), dining table (1), floor lamp (1), house plant (1), shelf (1), sofa (1).
+Think: In living room 1, laptop is likely to appear in/on TV stand 1, armchair (1, 2), dining table 1, shelf 1. I can check each place one by one until I find laptop.
+OK.
+Act: go to TV stand 1
+You arrive at the TV stand (1). You see TV stand (1), credit card (1), newspaper (1), pencil (1), remote control (1), shelf (1), television (1).
+Act: go to armchair 1
+You arrive at the armchair (1). You see armchair (1).
+Act: go to armchair 2
+You arrive at the armchair (2). You see armchair (2), floor lamp (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see bowl (1), dining table (1), laptop (1).
+Think: I find laptop 1. Now, I need to pick it up.
+OK.
+Act: go to laptop 1
+You arrive at the laptop (1). The laptop (1) is open. You see bowl (1), dining table (1), house plant (1), laptop (1).
+Act: pick up laptop 1
+You pick up laptop (1). You hold laptop (1).
+Think: Now, I need to find armchair and put down laptop 1.
+OK.
+Query: recall location of armchair
+You saw armchair 1 in living room 1. You saw armchair 2 in living room 1.
+Think: Armchair 1 is in living room 1.
+OK.
+Act: go to armchair 1
+You arrive at the armchair (1). You see armchair (1). You hold laptop (1).
+Act: put down laptop 1
+You put laptop (1) in armchair (1).
+Think: Now, I need to find newspaper.
+OK.
+Query: recall location of newspaper
+You saw newspaper 1 near TV stand 1 in living room 1.
+Think: Newspaper 1 is near TV stand 1 in living room 1.
+OK.
+Act: go to TV stand 1
+You arrive at the TV stand (1). You see TV stand (1), credit card (1), newspaper (1), pencil (1), remote control (1), shelf (1), television (1).
+Act: go to newspaper 1
+You arrive at the newspaper (1). You see TV stand (1), credit card (1), newspaper (1), pencil (1), remote control (1), shelf (1), television (1).
+Act: pick up newspaper 1
+You pick up newspaper (1). You hold newspaper (1).
+Think: Now, I need to find armchair and put down newspaper 1.
+OK.
+Act: go to armchair 1
+You arrive at the armchair (1). You see armchair (1), laptop (1). You hold newspaper (1).
+Act: put down newspaper 1
+You put newspaper (1) in armchair (1).
+Think: Now I complete the task.
+OK.
+Act: done

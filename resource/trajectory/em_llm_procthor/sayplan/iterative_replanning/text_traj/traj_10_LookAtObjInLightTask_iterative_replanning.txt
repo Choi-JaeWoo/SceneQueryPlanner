@@ -1,0 +1,7 @@
+Your task is to: With a pencil in hand, illuminate the area with the candle.
+3D Scene Graph: {nodes: {agent: [{id: user 1, location: bedroom 3}], room: [{id: kitchen 1}, {id: bedroom 3}, {id: bathroom 1}, {id: bedroom 1}, {id: bedroom 2}, {id: living room 1}, {id: living room 2}], asset: [], object: []}, links: [user 1↔bedroom 3]}
+Memory: []
+chain-of-thought: i have found the candle and pencil on the graph -> search complete -> i will switch to planning mode -> generate plan to examine the pencil with the candle lit
+reasoning: I will generate a task plan using the identified subgraph
+plan: [go to bedroom 2, go to pencil 2, pick up pencil 2, go to bathroom 1, go to candle 2, turn on candle 2]
+Scene Graph Simulator: Plan Verified

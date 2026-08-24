@@ -1,0 +1,59 @@
+Your task is to: Take a book and set it down on the countertop.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a kitchen (1). Looking quickly around the room, you see chair (5), countertop (1), dining table (2), fridge (1), painting (3), television (1).
+Think: To solve the task, I need to find and pick up book, then put it on countertop.
+OK.
+Think: First, I need to find and pick up book.
+OK.
+Query: find_objects({'label': 'book'})
+Info: 
+Think: I have not seen book yet. Now I need to check where to search. First, I will search living room 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'living room 1'})
+Info: chair (6, 7, 8, 9, 10), dining table 3, garbage can 2, sofa 2
+Think: In living room 1, the book is likely to appear in/on chair (6, 7, 8, 9, 10), dining table 3, garbage can 2, sofa 2. I can check each place one by one until I find book.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see chair (6, 7, 8, 9, 10), dining table (3), garbage can (2), painting (4), sofa (2), television (2).
+Act: go to chair 6
+You arrive at the chair (6). You see bowl (1), chair (6, 9, 10), garbage can (2), painting (4), statue (2).
+Act: go to chair 7
+You arrive at the chair (7). You see chair (7, 8), desk lamp (1), dining table (3), pencil (2).
+Act: go to chair 8
+You arrive at the chair (8). You see chair (7, 8), desk lamp (1), dining table (3), pencil (2), statue (2).
+Act: go to chair 9
+You arrive at the chair (9). You see bowl (1), chair (6, 9, 10), dining table (3), garbage can (2), statue (2).
+Act: go to chair 10
+You arrive at the chair (10). You see bowl (1), chair (6, 8, 10), dining table (3), pencil (2), statue (2).
+Act: go to dining table 3
+You arrive at the dining table (3). You see bowl (1), chair (6, 7, 8, 9, 10), desk lamp (1), dining table (3), pencil (2), statue (2).
+Act: go to garbage can 2
+You arrive at the garbage can (2). You see bowl (1), chair (6, 9), garbage can (2).
+Act: go to sofa 2
+You arrive at the sofa (2). You see book (7, 8), cell phone (3), laptop (2), newspaper (1), sofa (2), television (2).
+Think: I need to check whether I see book.
+OK.
+Query: find_objects({'label': 'book'})
+Info: [{'name_id_nl': 'book 7', 'node_type': 'object', 'properties': ['openable', 'pickupable'], 'states': []}, {'name_id_nl': 'book 8', 'node_type': 'object', 'properties': ['openable', 'pickupable'], 'states': []}]
+Query: get_edges_for_node({'node_id': 'book 7'})
+Info: [('book 7', 'sofa 2', 'ON'), ('book 7', 'book 8', 'CLOSE'), ('book 7', 'cell phone 3', 'CLOSE'), ('book 7', 'laptop 2', 'CLOSE'), ('book 7', 'newspaper 1', 'CLOSE'), ('book 7', 'television 2', 'CLOSE'), ('book 7', 'user 1', 'CLOSE'), ('book 7', 'living room 1', 'INSIDE'), ('book 8', 'book 7', 'CLOSE'), ('cell phone 3', 'book 7', 'CLOSE'), ('laptop 2', 'book 7', 'CLOSE'), ('newspaper 1', 'book 7', 'CLOSE'), ('television 2', 'book 7', 'CLOSE'), ('user 1', 'book 7', 'CLOSE')]
+Query: get_edges_for_node({'node_id': 'book 8'})
+Info: [('book 8', 'sofa 2', 'ON'), ('book 8', 'book 7', 'CLOSE'), ('book 8', 'cell phone 3', 'CLOSE'), ('book 8', 'laptop 2', 'CLOSE'), ('book 8', 'newspaper 1', 'CLOSE'), ('book 8', 'television 2', 'CLOSE'), ('book 8', 'user 1', 'CLOSE'), ('book 8', 'living room 1', 'INSIDE'), ('book 7', 'book 8', 'CLOSE'), ('cell phone 3', 'book 8', 'CLOSE'), ('laptop 2', 'book 8', 'CLOSE'), ('newspaper 1', 'book 8', 'CLOSE'), ('television 2', 'book 8', 'CLOSE'), ('user 1', 'book 8', 'CLOSE')]
+Think: Book 7 is on sofa 2 in living room 1. Book 8 is on sofa 2 in living room 1.
+OK.
+Act: go to sofa 2
+You arrive at the sofa (2). You see book (7, 8), cell phone (3), laptop (2), newspaper (1), sofa (2), television (2).
+Act: go to book 7
+You arrive at the book (7). The book (7) is closed. You see book (7, 8), cell phone (3), laptop (2), newspaper (1), sofa (2), television (2).
+Act: pick up book 7
+You pick up book (7). You hold book (7).
+Think: Now, I need to find countertop and put down book 7.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see chair (5), countertop (1), dining table (2), fridge (1), painting (3), television (1). You hold book (7).
+Act: go to countertop 1
+You arrive at the countertop (1).  You hold book (7).
+Act: put down book 7
+You put book (7) in countertop (1).
+Think: Now I complete the task.
+OK.
+Act: done

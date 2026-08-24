@@ -1,0 +1,51 @@
+Your task is to: Pick up a newspaper and put it in the drawer.
+You are in the house, and there are 3 rooms: bedroom (1), kitchen (1), living room (1). You are in the middle of a kitchen (1). Looking quickly around the room, you see chair (1), countertop (1), dining table (1), fridge (1), garbage bag (1), house plant (1), painting (3, 4).
+Think: To solve the task, I need to find and pick up newspaper, then put it in drawer.
+OK.
+Think: First, I need to find and pick up newspaper. The newspaper is more likely to appear in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see cabinet (1), drawer (7, 8, 9), dresser (2), shelf (1, 2, 3), shelving unit (1), television (2).
+Think: In living room 1, the newspaper is likely to appear in/on cabinet 1, drawer (7, 8, 9), dresser 2, shelf (1, 2, 3), shelving unit 1. I can check each place one by one until I find newspaper.
+OK.
+Act: go to cabinet 1
+You arrive at the cabinet (1). The cabinet (1) is closed. You see cabinet (1), newspaper (1), shelf (1, 2, 3), shelving unit (1).
+Act: open cabinet 1
+You open cabinet (1). You see cabinet (1), newspaper (1), shelf (1, 2, 3), shelving unit (1), vase (1).
+Act: go to drawer 7
+You arrive at the drawer (7). The drawer (7) is closed. You see candle (1), drawer (7, 8, 9), dresser (2), remote control (1), television (2).
+Act: open drawer 7
+You open drawer (7). You see candle (1), drawer (7, 8, 9), dresser (2), remote control (1), television (2).
+Act: go to drawer 8
+You arrive at the drawer (8). The drawer (8) is closed. You see candle (1), drawer (7, 8, 9), dresser (2), remote control (1), television (2).
+Act: open drawer 8
+You open drawer (8). You see candle (1), drawer (7, 8, 9), dresser (2), remote control (1), television (2).
+Act: go to drawer 9
+You arrive at the drawer (9). The drawer (9) is closed. You see candle (1), drawer (7, 8, 9), dresser (2), remote control (1), television (2).
+Act: open drawer 9
+You open drawer (9). You see candle (1), drawer (7, 8, 9), dresser (2), remote control (1), television (2).
+Act: go to dresser 2
+You arrive at the dresser (2). You see candle (1), drawer (7, 8, 9), dresser (2), remote control (1), television (2).
+Act: go to shelf 1
+You arrive at the shelf (1). You see cabinet (1), newspaper (1), shelf (1, 2, 3), shelving unit (1), vase (1).
+Act: go to shelf 2
+You arrive at the shelf (2). You see cabinet (1), newspaper (1), shelf (1, 2, 3), shelving unit (1), vase (1).
+Act: go to shelf 3
+You arrive at the shelf (3). You see cabinet (1), newspaper (1), shelf (1, 2, 3), shelving unit (1), vase (1).
+Act: go to shelving unit 1
+You arrive at the shelving unit (1). You see cabinet (1), newspaper (1), shelf (1, 2, 3), shelving unit (1), vase (1).
+Think: I find newspaper 1. Now, I need to pick it up.
+OK.
+Act: go to newspaper 1
+You arrive at the newspaper (1). You see cabinet (1), newspaper (1), shelf (1, 2, 3), shelving unit (1), vase (1).
+Act: pick up newspaper 1
+You pick up newspaper (1). You hold newspaper (1).
+Think: Now, I need to find drawer and put down newspaper 1.
+OK.
+Act: go to drawer 7
+You arrive at the drawer (7). The drawer (7) is open. You see candle (1), drawer (7, 8, 9), dresser (2), remote control (1), television (2). You hold newspaper (1).
+Act: put down newspaper 1
+You put newspaper (1) in drawer (7).
+Think: Now I complete the task.
+OK.
+Act: done

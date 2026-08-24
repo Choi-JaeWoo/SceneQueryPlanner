@@ -1,0 +1,63 @@
+Your task is to: Clean the butter knife and place it in the shelf.
+You are in the house, and there are 10 rooms: bathroom (1, 2, 3), bedroom (1, 2, 3), kitchen (1), living room (1, 2, 3). You are in the middle of a living room (1). Looking quickly around the room, you see TV stand (1), box (2), painting (1, 2), shelf (10), sofa (1).
+Think: To solve the task, I need to find and pick up butter knife, put it in sink basin and turn on faucet, pick up and put down butter knife in shelf.
+OK.
+Think: First, I need to find and pick up butter knife.
+OK.
+Query: recall location of butter knife
+You have not seen butter knife before.
+Think: I have not seen butter knife yet. The butter knife is more likely to appear in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see cabinet (5, 6), chair (1), countertop (1), dining table (1), fridge (1), garbage bag (1), shelf (1, 2, 3, 4, 5, 6), shelving unit (1, 2).
+Think: In kitchen 1, the butter knife is likely to appear in/on cabinet (5, 6), chair 1, countertop 1, dining table 1, fridge 1, shelf (1, 2, 3, 4, 5, 6), shelving unit (1, 2). I can check each place one by one until I find butter knife.
+OK.
+Act: go to cabinet 5
+You arrive at the cabinet (5). The cabinet (5) is closed. You see apple (1), bowl (2), butter knife (1), cabinet (5), cell phone (3), chair (1), credit card (1), dining table (1), fridge (1), mug (2), shelf (1, 2, 3), shelving unit (1).
+Act: open cabinet 5
+You open cabinet (5). You see apple (1), bowl (2), butter knife (1), cabinet (5), cell phone (3), chair (1), credit card (1), dining table (1), fridge (1), house plant (4), mug (2), shelf (1, 2, 3), shelving unit (1).
+Think: I find butter knife 1. Now, I need to pick it up.
+OK.
+Act: go to butter knife 1
+You arrive at the butter knife (1). You see apple (1), bowl (2), butter knife (1), cabinet (5), cell phone (3), chair (1), credit card (1), dining table (1), fridge (1), mug (2), shelf (1).
+Act: pick up butter knife 1
+You pick up butter knife (1). You hold butter knife (1).
+Think: Now, I need to find sink basin.
+OK.
+Query: recall location of sink basin
+You saw sink basin 3 in bathroom 3. You saw sink basin 2 in bathroom 2. You saw sink basin 1 in bathroom 1.
+Think: Sink basin 3 is in bathroom 3.
+OK.
+Act: go to bathroom 3
+You move to the bathroom (3). Looking quickly around the room, you see garbage can (3), sink (3), sink basin (3), toilet (3). You hold butter knife (1).
+Act: go to sink basin 3
+You arrive at the sink basin (3). You see candle (4), faucet (3), garbage can (3), sink (3), sink basin (3), toilet paper (3). You hold butter knife (1).
+Think: Now, I need to put down butter knife 1.
+OK.
+Act: put down butter knife 1
+You put butter knife (1) in sink basin (3).
+Think: Now, I need to turn on faucet 3 briefly and turn off to wash butter knife 1.
+OK.
+Act: turn on faucet 3
+You turn on faucet (3).
+Act: turn off faucet 3
+You turn off faucet (3).
+Think: Now, I need to pick up butter knife 1 and find shelf.
+OK.
+Act: pick up butter knife 1
+You pick up butter knife (1). You hold butter knife (1).
+Query: recall location of shelf
+You saw shelf 10 in living room 1. You saw shelf 2 in kitchen 1. You saw shelf 6 in kitchen 1. You saw shelf 5 in kitchen 1. You saw shelf 11 in living room 2. You saw shelf 3 in kitchen 1. You saw shelf 4 in kitchen 1. You saw shelf 1 in kitchen 1. You saw shelf 8 in living room 3. You saw shelf 7 in living room 3. You saw shelf 12 in bedroom 3. You saw shelf 13 in bedroom 3. You saw shelf 9 in living room 3. You saw shelf 14 in bedroom 3. You saw shelf 15 in bedroom 3. You saw shelf 16 in bedroom 3. You saw shelf 17 in bedroom 3.
+Think: Shelf 10 is in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), box (2), painting (1, 2), shelf (10), sofa (1). You hold butter knife (1).
+Act: go to shelf 10
+You arrive at the shelf (10). You see TV stand (1), box (2), key chain (2), laptop (2), painting (2), remote control (2), shelf (10), television (1), tissue box (1). You hold butter knife (1).
+Think: Now, I need to put down butter knife 1.
+OK.
+Act: put down butter knife 1
+You put butter knife (1) in shelf (10).
+Think: Now I complete the task.
+OK.
+Act: done

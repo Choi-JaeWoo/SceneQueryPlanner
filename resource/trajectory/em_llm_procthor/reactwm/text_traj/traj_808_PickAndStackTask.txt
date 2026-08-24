@@ -1,0 +1,53 @@
+Your task is to: Place a box containing a cell phone on the sofa.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a bathroom (1). Looking quickly around the room, you see drawer (4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15), dresser (2), garbage can (1), painting (1, 2), plunger (1), sink (1), sink basin (1), toilet (1).
+Think: To solve the task, I need to find and pick up cell phone, put it in box, pick up and place box on sofa.
+OK.
+Think: First, I need to find and pick up cell phone.
+OK.
+Query: recall location of cell phone
+You have not seen cell phone before.
+Think: I have not seen cell phone yet. The cell phone is more likely to appear in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see basket ball (1), bed (1), box (1), chair (1, 2, 3), dining table (1), drawer (1, 2, 3), dresser (1), television (1).
+Think: In bedroom 1, the cell phone is likely to appear in/on bed 1, box 1, chair (1, 2, 3), dining table 1, drawer (1, 2, 3), dresser 1. I can check each place one by one until I find cell phone.
+OK.
+Act: go to bed 1
+You arrive at the bed (1). You see basket ball (1), bed (1), book (2), cell phone (1), chair (2), pillow (1).
+Act: go to cell phone 1
+You arrive at the cell phone (1). You see basket ball (1), bed (1), book (2), cell phone (1), chair (2), pillow (1).
+Think: I find cell phone 1. Now, I need to pick it up.
+OK.
+Act: pick up cell phone 1
+You pick up cell phone (1). You hold cell phone (1).
+Think: Now, I need to find box and put down cell phone 1.
+OK.
+Query: recall location of box
+You saw box 1 in bedroom 1.
+Think: Box 1 is in bedroom 1.
+OK.
+Act: go to box 1
+You arrive at the box (1). The box (1) is closed. You see basket ball (1), bed (1), book (2), box (1), television (1). You hold cell phone (1).
+Act: open box 1
+You open box (1). You see basket ball (1), bed (1), book (2), box (1), television (1). You hold cell phone (1).
+Act: put down cell phone 1
+You put cell phone (1) in box (1).
+Think: Now, I need to pick up box 1.
+OK.
+Act: pick up box 1
+You pick up box (1). You hold box (1).
+Think: Now, I need to find sofa and put down box 1.
+OK.
+Query: recall location of sofa
+You saw sofa 1 in living room 1.
+Think: Sofa 1 is in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), cell phone (1), dining table (2), shelf (1, 2, 3, 4, 5, 6, 7, 8), side table (1), sofa (1). You hold box (1).
+Act: go to sofa 1
+You arrive at the sofa (1). You see cell phone (1), desk lamp (1), laptop (1), shelf (1, 2), side table (1), sofa (1). You hold box (1).
+Act: put down box 1
+You put box (1) in sofa (1).
+Think: Now I complete the task.
+OK.
+Act: done

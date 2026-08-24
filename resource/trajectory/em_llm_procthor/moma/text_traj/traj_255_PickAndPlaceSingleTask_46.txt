@@ -1,0 +1,8 @@
+Your task is to: Take the key chain and deposit it into the box.
+You arrive at the drawer (5). The drawer (5) is open. You see TV stand (1), box (1), candle (1), credit card (1), drawer (1, 2, 3, 4, 5, 6), dresser (1), key chain (1), pencil (1), remote control (4), shelf (4), television (2), vase (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- (kitchen 1): [(cabinet 1), (chair 4), (chair 3), (chair 2), (chair 1), (countertop 1), (dining table 1), egg 1, (fridge 1), house plant 1, painting 1, painting 2, (shelf 1), (shelf 3), (shelf 2), shelving unit 1, television 1]
+- living room 1: [dog bed 1, painting 3, painting 4, (armchair 1), box 1, candle 1, credit card 1, (dining table 2), drawer 2, drawer 3, drawer 4, drawer 6, drawer 1, drawer 5, dresser 1, (garbage can 1), key chain 1, pencil 1, remote control 4, (shelf 4), (sofa 1), television 2, (TV stand 1), vase 1]
+Your 5 previous actions were: go to key chain 1 (success), pick up key chain 1 (success), go to box 1 (success), put down key chain 1 (success), go to drawer 5 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I arrive at drawer 5. Now, I need to close drawer 5.
+Act: close drawer 5

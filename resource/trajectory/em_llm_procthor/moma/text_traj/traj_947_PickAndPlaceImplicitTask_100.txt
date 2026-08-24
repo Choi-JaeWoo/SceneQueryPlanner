@@ -1,0 +1,2 @@
+Your task is to: Transfer all the objects from the side table to the dresser.
+Max decision steps reached.

@@ -1,0 +1,43 @@
+Your task is to: Turn off all cell phones that are presently on.
+You are in the house, and there are 2 rooms: kitchen (1), living room (1). You are in the middle of a living room (1). Looking quickly around the room, you see TV stand (1), dining table (1), floor lamp (1), painting (1, 2, 3, 4), shelf (7), sofa (1).
+Think: To solve the task, I need to find and turn off all active cell phones.
+OK.
+Think: First, I need to check living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), dining table (1), floor lamp (1), painting (1, 2, 3, 4), shelf (7), sofa (1).
+Think: In living room 1, I can check TV stand 1, dining table 1, floor lamp 1, shelf 7, sofa 1 until I find cell phone.
+OK.
+Act: go to TV stand 1
+You arrive at the TV stand (1). You see TV stand (1), box (1), cell phone (2, 3, 4), floor lamp (1), painting (1, 3), plate (1), shelf (7), television (1).
+Think: I find cell phone 2. Now, I need to turn it off.
+OK.
+Act: go to cell phone 2
+You arrive at the cell phone (2). You see box (1), cell phone (2, 3), newspaper (1), painting (1, 3), remote control (2), sofa (1).
+Act: turn off cell phone 2
+You turn off cell phone (2).
+Think: I find cell phone 3. Now, I need to turn it off.
+OK.
+Act: go to cell phone 3
+You arrive at the cell phone (3). You see TV stand (1), box (1), cell phone (2, 3, 4), floor lamp (1), newspaper (1), painting (1, 3), plate (1), shelf (7), television (1).
+Act: turn off cell phone 3
+You turn off cell phone (3).
+Act: go to box 1
+You arrive at the box (1). The box (1) is open. You see TV stand (1), box (1), cell phone (2, 3, 4), floor lamp (1), newspaper (1), painting (1, 3), plate (1), shelf (7), television (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see bowl (1), candle (1), cell phone (1), credit card (1), desk lamp (1), dining table (1), painting (2, 4), remote control (1), statue (3), vase (2).
+Think: I find cell phone 1. Now, I need to turn it off.
+OK.
+Act: go to cell phone 1
+You arrive at the cell phone (1). You see bowl (1), candle (1), cell phone (1), credit card (1), desk lamp (1), dining table (1), painting (2, 4), remote control (1), statue (3), vase (2).
+Act: turn off cell phone 1
+You turn off cell phone (1).
+Act: go to floor lamp 1
+You arrive at the floor lamp (1). You see TV stand (1), box (1), cell phone (3, 4), floor lamp (1), painting (1), plate (1), shelf (7), television (1).
+Act: go to shelf 7
+You arrive at the shelf (7). You see TV stand (1), box (1), cell phone (2, 3, 4), floor lamp (1), painting (1, 3), plate (1), shelf (7), television (1).
+Act: go to sofa 1
+You arrive at the sofa (1). You see cell phone (2), newspaper (1), painting (1, 3), remote control (1, 2), sofa (1).
+Think: Now I complete the task.
+OK.
+Act: done

@@ -1,0 +1,31 @@
+Your task is to: Hold the remote control and switch on the desk lamp.
+You are in the house, and there are 1 rooms: living room (1). You are in the middle of a living room (1). Looking quickly around the room, you see TV stand (1), armchair (1, 2), dining table (1), garbage can (1), painting (1, 2, 3, 4), shelf (1, 2, 3, 4, 5, 6), sofa (1).
+Think: To solve the task, I need to find and pick up remote control, find and turn on desk lamp.
+OK.
+Think: First, I need to find and pick up remote control. The remote control is more likely to appear in living room 1.
+OK.
+Act: go to TV stand 1
+You arrive at the TV stand (1). You see TV stand (1), cell phone (1), painting (4), pencil (1), remote control (1, 2), shelf (1, 2, 3, 4, 5, 6), sofa (1), television (1), vase (1).
+Think: I find remote control 1. Now, I need to pick it up.
+OK.
+Act: go to remote control 1
+You arrive at the remote control (1). You see TV stand (1), armchair (2), cell phone (1), painting (1), pencil (1), remote control (1, 2), shelf (1, 2, 3, 4, 5, 6), television (1), vase (1).
+Act: pick up remote control 1
+You pick up remote control (1). You hold remote control (1).
+Think: Now I need to find and turn on desk lamp. The desk lamp is more likely to appear in living room 1.
+OK.
+Act: go to armchair 1
+You arrive at the armchair (1). You see armchair (1, 2). You hold remote control (1).
+Act: go to armchair 2
+You arrive at the armchair (2). You see armchair (1, 2), painting (1), pencil (1), shelf (4, 5), vase (1). You hold remote control (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see bowl (1), desk lamp (1), dining table (1), plate (1), remote control (3). You hold remote control (1).
+Think: I find desk lamp 1. Now, I need to turn it on.
+OK.
+Act: go to desk lamp 1
+You arrive at the desk lamp (1). You see bowl (1), desk lamp (1), dining table (1), plate (1), remote control (3). You hold remote control (1).
+Act: turn on desk lamp 1
+You turn on desk lamp (1). You hold remote control (1).
+Think: Now I complete the task.
+OK.
+Act: done

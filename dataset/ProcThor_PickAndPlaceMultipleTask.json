@@ -1,0 +1,721 @@
+[
+  {
+    "env_id": 610,
+    "mode": "PickAndPlaceMultipleTask",
+    "instruction": [
+      "Collect a book and a CD and place them on the countertop.",
+      "Gather a book and a CD, then put them on the countertop.",
+      "Place a book and a CD together on the countertop.",
+      "Put a book and a CD on the countertop as a pair."
+    ],
+    "task_goal": {
+      "on_book_countertop": 1,
+      "on_cd_countertop": 1
+    }
+  },
+  {
+    "env_id": 72,
+    "mode": "PickAndPlaceMultipleTask",
+    "instruction": [
+      "Collect a book and a remote control and place them in the drawer.",
+      "Gather a book and a remote control, then put them in the drawer.",
+      "Place a book and a remote control together inside the drawer.",
+      "Put a book and a remote control into the drawer for storage."
+    ],
+    "task_goal": {
+      "in_book_drawer": 1,
+      "in_remotecontrol_drawer": 1
+    }
+  },
+  {
+    "env_id": 563,
+    "mode": "PickAndPlaceMultipleTask",
+    "instruction": [
+      "Collect a sliced apple and a slice of tomato and place them in the garbage can.",
+      "Put a sliced apple and a slice of tomato into the garbage can.",
+      "Place both the sliced apple and the slice of tomato in the garbage can.",
+      "Gather a sliced apple and a slice of tomato, and throw them in the garbage can."
+    ],
+    "task_goal": {
+      "in_apple_garbagecan": 1,
+      "in_tomato_garbagecan": 1,
+      "isSliced_apple": 1,
+      "isSliced_tomato": 1
+    }
+  },
+  {
+    "env_id": 149,
+    "mode": "PickAndPlaceMultipleTask",
+    "instruction": [
+      "Collect a book and a pen and place them on the side table.",
+      "Gather a book and a pen, and set them on the side table.",
+      "Put a book and a pen together on the side table.",
+      "Place a book and a pen side by side on the side table."
+    ],
+    "task_goal": {
+      "on_book_sidetable": 1,
+      "on_pen_sidetable": 1
+    }
+  },
+  {
+    "env_id": 496,
+    "mode": "PickAndPlaceMultipleTask",
+    "instruction": [
+      "Collect a pencil, a pen, and a book and place them on the countertop.",
+      "Gather a pencil, a pen, and a book, and set them on the countertop.",
+      "Put a pencil, a pen, and a book together on the countertop.",
+      "Place a pencil, a pen, and a book side by side on the countertop."
+    ],
+    "task_goal": {
+      "on_pencil_countertop": 1,
+      "on_pen_countertop": 1,
+      "on_book_countertop": 1
+    }
+  },
+  {
+    "env_id": 947,
+    "mode": "PickAndPlaceMultipleTask",
+    "instruction": [
+      "Collect a pencil and a pen and place them in the box.",
+      "Put a pencil and a pen into the box.",
+      "Move a pencil and a pen to the box.",
+      "Gather a pencil and a pen, and set them in the box."
+    ],
+    "task_goal": {
+      "in_pencil_box": 1,
+      "in_pen_box": 1
+    }
+  },
+  {
+    "env_id": 122,
+    "mode": "PickAndPlaceMultipleTask",
+    "instruction": [
+      "Collect a pencil and a pen and place them in the box.",
+      "Put a pencil and a pen into the box.",
+      "Move a pencil and a pen to the box to store them.",
+      "Gather a pencil and a pen, and set them inside the box."
+    ],
+    "task_goal": {
+      "in_pencil_box": 1,
+      "in_pen_box": 1
+    }
+  },
+  {
+    "env_id": 996,
+    "mode": "PickAndPlaceMultipleTask",
+    "instruction": [
+      "Collect a book and a pen and place them in the box.",
+      "Gather a book and a pen, then put them in the box.",
+      "Place a book and a pen inside the box.",
+      "Put a book and a pen into the box together."
+    ],
+    "task_goal": {
+      "in_book_box": 1,
+      "in_pen_box": 1
+    }
+  },
+  {
+    "env_id": 199,
+    "mode": "PickAndPlaceMultipleTask",
+    "instruction": [
+      "Collect a pencil, a book, and a remote control and place them on the countertop.",
+      "Gather a pencil, a book, and a remote control, and put them on the countertop.",
+      "Place a pencil, a book, and a remote control together on the countertop.",
+      "Put a pencil, a book, and a remote control on the countertop, all at once."
+    ],
+    "task_goal": {
+      "on_pencil_countertop": 1,
+      "on_book_countertop": 1,
+      "on_remotecontrol_countertop": 1
+    }
+  },
+  {
+    "env_id": 62,
+    "mode": "PickAndPlaceMultipleTask",
+    "instruction": [
+      "Collect a book and a pen and place them in the box.",
+      "Put a book and a pen into the box.",
+      "Place a pen and a book inside the box.",
+      "Gather a book and a pen, and put them in the box."
+    ],
+    "task_goal": {
+      "in_book_box": 1,
+      "in_pen_box": 1
+    }
+  },
+  {
+    "env_id": 964,
+    "mode": "PickAndPlaceMultipleTask",
+    "instruction": [
+      "Collect a book and a remote control and place them on the countertop.",
+      "Gather a book and a remote control, and put them on the countertop.",
+      "Place a book and a remote control together on the countertop.",
+      "Put a book and a remote control side by side on the countertop."
+    ],
+    "task_goal": {
+      "on_book_countertop": 1,
+      "on_remotecontrol_countertop": 1
+    }
+  },
+  {
+    "env_id": 291,
+    "mode": "PickAndPlaceMultipleTask",
+    "instruction": [
+      "Collect a spoon, a fork, and a knife and place them in the bowl.",
+      "Gather a spoon, a fork, and a knife, and put them into the bowl.",
+      "Place a spoon, a fork, and a knife together inside the bowl.",
+      "Put a spoon, a fork, and a knife in the bowl, all at once."
+    ],
+    "task_goal": {
+      "in_spoon_bowl": 1,
+      "in_fork_bowl": 1,
+      "in_knife_bowl": 1
+    }
+  },
+  {
+    "env_id": 204,
+    "mode": "PickAndPlaceMultipleTask",
+    "instruction": [
+      "Collect a pen and a newspaper and place them on the TV stand.",
+      "Gather a pen and a newspaper, then put them on the TV stand.",
+      "Place a pen and a newspaper together on the TV stand.",
+      "Put a pen and a newspaper on the TV stand, side by side."
+    ],
+    "task_goal": {
+      "on_pen_tvstand": 1,
+      "on_newspaper_tvstand": 1
+    }
+  },
+  {
+    "env_id": 516,
+    "mode": "PickAndPlaceMultipleTask",
+    "instruction": [
+      "Collect a slice of apple and a spoon and place them on the plate.",
+      "Gather a slice of apple and a spoon, and put them on the plate.",
+      "Place a slice of apple and a spoon together on the plate.",
+      "Put a spoon and a sliced apple on the plate."
+    ],
+    "task_goal": {
+      "on_apple_plate": 1,
+      "on_spoon_plate": 1,
+      "isSliced_apple": 1
+    }
+  },
+  {
+    "env_id": 924,
+    "mode": "PickAndPlaceMultipleTask",
+    "instruction": [
+      "Collect a laptop and a credit card and place them on the armchair.",
+      "Gather a laptop and a credit card, and put them on the armchair.",
+      "Place a laptop and a credit card together on the armchair.",
+      "Put a laptop and a credit card side by side on the armchair."
+    ],
+    "task_goal": {
+      "on_laptop_armchair": 1,
+      "on_creditcard_armchair": 1
+    }
+  },
+  {
+    "env_id": 464,
+    "mode": "PickAndPlaceMultipleTask",
+    "instruction": [
+      "Collect a pencil, a cloth, and a remote control and place them in the dresser.",
+      "Gather a pencil, a cloth, and a remote control, and put them away in the dresser.",
+      "Place a pencil, a cloth, and a remote control inside the dresser.",
+      "Put a pencil, a cloth, and a remote control in the dresser together."
+    ],
+    "task_goal": {
+      "in_pencil_dresser": 1,
+      "in_cloth_dresser": 1,
+      "in_remotecontrol_dresser": 1
+    }
+  },
+  {
+    "env_id": 937,
+    "mode": "PickAndPlaceMultipleTask",
+    "instruction": [
+      "Collect a pencil and a pen and place them in the box.",
+      "Put a pencil and a pen into the box.",
+      "Move a pencil and a pen to be stored in the box.",
+      "Gather a pencil and a pen, and set them inside the box."
+    ],
+    "task_goal": {
+      "in_pencil_box": 1,
+      "in_pen_box": 1
+    }
+  },
+  {
+    "env_id": 481,
+    "mode": "PickAndPlaceMultipleTask",
+    "instruction": [
+      "Collect a book, a cell phone, and a pencil and place them on the shelf.",
+      "Gather a book, a cell phone, and a pencil, and put them on the shelf.",
+      "Place a book, a cell phone, and a pencil together on the shelf.",
+      "Put a book, a cell phone, and a pencil on the shelf, all at once."
+    ],
+    "task_goal": {
+      "on_book_shelf": 1,
+      "on_cellphone_shelf": 1,
+      "on_pencil_shelf": 1
+    }
+  },
+  {
+    "env_id": 904,
+    "mode": "PickAndPlaceMultipleTask",
+    "instruction": [
+      "Collect a book and a pencil and place them on the side table.",
+      "Gather a book and a pencil, then put them on the side table.",
+      "Place a book and a pencil together on the side table.",
+      "Put a book and a pencil side by side on the side table."
+    ],
+    "task_goal": {
+      "on_book_sidetable": 1,
+      "on_pencil_sidetable": 1
+    }
+  },
+  {
+    "env_id": 440,
+    "mode": "PickAndPlaceMultipleTask",
+    "instruction": [
+      "Collect a book and a sliced apple and place them on the countertop.",
+      "Gather a book and a slice of apple, and set them on the countertop.",
+      "Place a book and a sliced apple together on the countertop.",
+      "Put a book and a sliced apple on the countertop."
+    ],
+    "task_goal": {
+      "on_book_countertop": 1,
+      "on_apple_countertop": 1,
+      "isSliced_apple": 1
+    }
+  },
+  {
+    "env_id": 236,
+    "mode": "PickAndPlaceMultipleTask",
+    "instruction": [
+      "Collect a pencil, a book, and a newspaper and place them on the countertop.",
+      "Gather a pencil, a book, and a newspaper to put them on the countertop.",
+      "Place a pencil, a book, and a newspaper together on the countertop.",
+      "Put a pencil, a book, and a newspaper on the countertop for organization."
+    ],
+    "task_goal": {
+      "on_pencil_countertop": 1,
+      "on_book_countertop": 1,
+      "on_newspaper_countertop": 1
+    }
+  },
+  {
+    "env_id": 635,
+    "mode": "PickAndPlaceMultipleTask",
+    "instruction": [
+      "Collect a book and a remote control and place them in the box.",
+      "Gather a book and a remote control, then put them in the box.",
+      "Place a book and a remote control inside the box.",
+      "Put a book and a remote control together into the box."
+    ],
+    "task_goal": {
+      "in_book_box": 1,
+      "in_remotecontrol_box": 1
+    }
+  },
+  {
+    "env_id": 316,
+    "mode": "PickAndPlaceMultipleTask",
+    "instruction": [
+      "Collect a book and a cell phone and place them in the drawer.",
+      "Gather a book and a cell phone, then put them in the drawer.",
+      "Place a book and a cell phone together inside the drawer.",
+      "Put a book and a cell phone into the drawer for storage."
+    ],
+    "task_goal": {
+      "in_book_drawer": 1,
+      "in_cellphone_drawer": 1
+    }
+  },
+  {
+    "env_id": 168,
+    "mode": "PickAndPlaceMultipleTask",
+    "instruction": [
+      "Collect a baseball bat and a credit card and place them on the countertop.",
+      "Gather a baseball bat and a credit card, then put them on the countertop.",
+      "Place a baseball bat and a credit card together on the countertop.",
+      "Put a baseball bat and a credit card on the countertop for storage."
+    ],
+    "task_goal": {
+      "on_baseballbat_countertop": 1,
+      "on_creditcard_countertop": 1
+    }
+  },
+  {
+    "env_id": 378,
+    "mode": "PickAndPlaceMultipleTask",
+    "instruction": [
+      "Collect a book and a cell phone and place them on the countertop.",
+      "Gather a book and a cell phone, and set them on the countertop.",
+      "Put a book and a cell phone together on the countertop.",
+      "Place a book and a cell phone side by side on the countertop."
+    ],
+    "task_goal": {
+      "on_book_countertop": 1,
+      "on_cellphone_countertop": 1
+    }
+  },
+  {
+    "env_id": 518,
+    "mode": "PickAndPlaceMultipleTask",
+    "instruction": [
+      "Collect a pencil, a pen, and a book and place them on the countertop.",
+      "Gather a pencil, a pen, and a book, and set them on the countertop.",
+      "Put a pencil, a pen, and a book together on the countertop.",
+      "Place a pencil, a pen, and a book on the countertop for organization."
+    ],
+    "task_goal": {
+      "on_pencil_countertop": 1,
+      "on_pen_countertop": 1,
+      "on_book_countertop": 1
+    }
+  },
+  {
+    "env_id": 262,
+    "mode": "PickAndPlaceMultipleTask",
+    "instruction": [
+      "Collect a pencil and a book and place them on the shelf.",
+      "Gather a pencil and a book, then put them on the shelf.",
+      "Place a pencil and a book together on the shelf.",
+      "Put a book and a pencil on the shelf as a pair."
+    ],
+    "task_goal": {
+      "on_pencil_shelf": 1,
+      "on_book_shelf": 1
+    }
+  },
+  {
+    "env_id": 708,
+    "mode": "PickAndPlaceMultipleTask",
+    "instruction": [
+      "Collect a book and a remote control and place them on the countertop.",
+      "Put a book and a remote control on the countertop.",
+      "Gather a book and a remote control, then set them on the countertop.",
+      "Place a book and a remote control together on the countertop."
+    ],
+    "task_goal": {
+      "on_book_countertop": 1,
+      "on_remotecontrol_countertop": 1
+    }
+  },
+  {
+    "env_id": 907,
+    "mode": "PickAndPlaceMultipleTask",
+    "instruction": [
+      "Collect a pencil, a pen, and a book and place them on the countertop.",
+      "Gather a pencil, a pen, and a book to put them on the countertop.",
+      "Place a pencil, a pen, and a book together on the countertop.",
+      "Put a pencil, a pen, and a book on the countertop, all at once."
+    ],
+    "task_goal": {
+      "on_pencil_countertop": 1,
+      "on_pen_countertop": 1,
+      "on_book_countertop": 1
+    }
+  },
+  {
+    "env_id": 864,
+    "mode": "PickAndPlaceMultipleTask",
+    "instruction": [
+      "Collect a book and a pencil and place them on the countertop.",
+      "Gather a book and a pencil, then put them on the countertop.",
+      "Place a book and a pencil together on the countertop.",
+      "Put a book and a pencil on the countertop for storage."
+    ],
+    "task_goal": {
+      "on_book_countertop": 1,
+      "on_pencil_countertop": 1
+    }
+  },
+  {
+    "env_id": 287,
+    "mode": "PickAndPlaceMultipleTask",
+    "instruction": [
+      "Collect a remote control and a pencil and place them in the box.",
+      "Gather a remote control and a pencil, then put them in the box.",
+      "Place a remote control and a pencil inside the box.",
+      "Put a remote control and a pencil together into the box."
+    ],
+    "task_goal": {
+      "in_remotecontrol_box": 1,
+      "in_pencil_box": 1
+    }
+  },
+  {
+    "env_id": 288,
+    "mode": "PickAndPlaceMultipleTask",
+    "instruction": [
+      "Collect a pencil, a CD, and a key chain and place them in the drawer.",
+      "Put a pencil, a CD, and a key chain into the drawer.",
+      "Gather a pencil, a CD, and a key chain and set them in the drawer.",
+      "Move a pencil, a CD, and a key chain to the drawer for storage."
+    ],
+    "task_goal": {
+      "in_pencil_drawer": 1,
+      "in_cd_drawer": 1,
+      "in_keychain_drawer": 1
+    }
+  },
+  {
+    "env_id": 861,
+    "mode": "PickAndPlaceMultipleTask",
+    "instruction": [
+      "Collect a book and a pen and place them on the countertop.",
+      "Gather a book and a pen, then set them on the countertop.",
+      "Put a book and a pen together on the countertop.",
+      "Place a book and a pen side by side on the countertop."
+    ],
+    "task_goal": {
+      "on_book_countertop": 1,
+      "on_pen_countertop": 1
+    }
+  },
+  {
+    "env_id": 304,
+    "mode": "PickAndPlaceMultipleTask",
+    "instruction": [
+      "Collect a pencil and a pen and place them in the box.",
+      "Put a pencil and a pen into the box.",
+      "Gather a pencil and a pen, and then place them in the box.",
+      "Move a pencil and a pen to their place in the box."
+    ],
+    "task_goal": {
+      "in_pencil_box": 1,
+      "in_pen_box": 1
+    }
+  },
+  {
+    "env_id": 856,
+    "mode": "PickAndPlaceMultipleTask",
+    "instruction": [
+      "Collect an apple and a tomato and place them in the bowl.",
+      "Put an apple and a tomato into the bowl.",
+      "Gather an apple and a tomato, and set them in the bowl.",
+      "Place an apple and a tomato in the bowl."
+    ],
+    "task_goal": {
+      "in_apple_bowl": 1,
+      "in_tomato_bowl": 1
+    }
+  },
+  {
+    "env_id": 86,
+    "mode": "PickAndPlaceMultipleTask",
+    "instruction": [
+      "Collect a pencil and a cell phone and place them in the drawer.",
+      "Put a pencil and a cell phone into the drawer.",
+      "Gather a pencil and a cell phone, then place them in the drawer.",
+      "Move a pencil and a cell phone to the drawer for storage."
+    ],
+    "task_goal": {
+      "in_pencil_drawer": 1,
+      "in_cellphone_drawer": 1
+    }
+  },
+  {
+    "env_id": 604,
+    "mode": "PickAndPlaceMultipleTask",
+    "instruction": [
+      "Collect a baseball bat and a teddy bear and place them on the countertop.",
+      "Gather a baseball bat and a teddy bear to put them on the countertop.",
+      "Place a baseball bat and a teddy bear together on the countertop.",
+      "Put a baseball bat and a teddy bear on the countertop."
+    ],
+    "task_goal": {
+      "on_baseballbat_countertop": 1,
+      "on_teddybear_countertop": 1
+    }
+  },
+  {
+    "env_id": 359,
+    "mode": "PickAndPlaceMultipleTask",
+    "instruction": [
+      "Collect a pencil, a pen, and a book and place them in the box.",
+      "Put a pencil, a pen, and a book into the box.",
+      "Gather a pencil, a pen, and a book, and then place them in the box.",
+      "Move a pencil, a pen, and a book to their new location in the box."
+    ],
+    "task_goal": {
+      "in_pencil_box": 1,
+      "in_pen_box": 1,
+      "in_book_box": 1
+    }
+  },
+  {
+    "env_id": 920,
+    "mode": "PickAndPlaceMultipleTask",
+    "instruction": [
+      "Collect a book and a pencil and place them on the side table.",
+      "Gather a book and a pencil, then set them on the side table.",
+      "Place a book and a pencil together on the side table.",
+      "Put a book and a pencil on the side table."
+    ],
+    "task_goal": {
+      "on_book_sidetable": 1,
+      "on_pencil_sidetable": 1
+    }
+  },
+  {
+    "env_id": 7,
+    "mode": "PickAndPlaceMultipleTask",
+    "instruction": [
+      "Collect a book, a cell phone, and a credit card and place them on the countertop.",
+      "Gather a book, a cell phone, and a credit card, and set them on the countertop.",
+      "Put a book, a cell phone, and a credit card together on the countertop.",
+      "Place a book, a cell phone, and a credit card on the countertop, all at once."
+    ],
+    "task_goal": {
+      "on_book_countertop": 1,
+      "on_cellphone_countertop": 1,
+      "on_creditcard_countertop": 1
+    }
+  },
+  {
+    "env_id": 683,
+    "mode": "PickAndPlaceMultipleTask",
+    "instruction": [
+      "Collect a pencil, a pen, and a newspaper and place them on the countertop.",
+      "Gather a pencil, a pen, and a newspaper to put them on the countertop.",
+      "Place a pencil, a pen, and a newspaper together on the countertop.",
+      "Put a pencil, a pen, and a newspaper on the countertop for storage."
+    ],
+    "task_goal": {
+      "on_pencil_countertop": 1,
+      "on_pen_countertop": 1,
+      "on_newspaper_countertop": 1
+    }
+  },
+  {
+    "env_id": 439,
+    "mode": "PickAndPlaceMultipleTask",
+    "instruction": [
+      "Collect a book and a newspaper and place them on the dining table.",
+      "Gather a book and a newspaper to put on the dining table.",
+      "Place a book and a newspaper together on the dining table.",
+      "Put a book and a newspaper on the dining table."
+    ],
+    "task_goal": {
+      "on_book_diningtable": 1,
+      "on_newspaper_diningtable": 1
+    }
+  },
+  {
+    "env_id": 905,
+    "mode": "PickAndPlaceMultipleTask",
+    "instruction": [
+      "Collect a book, a pencil, and a vase and place them on the countertop.",
+      "Gather a book, a pencil, and a vase to put them on the countertop.",
+      "Place a book, a pencil, and a vase together on the countertop.",
+      "Put a book, a pencil, and a vase on the countertop as a group."
+    ],
+    "task_goal": {
+      "on_book_countertop": 1,
+      "on_pencil_countertop": 1,
+      "on_vase_countertop": 1
+    }
+  },
+  {
+    "env_id": 801,
+    "mode": "PickAndPlaceMultipleTask",
+    "instruction": [
+      "Collect a pencil, a pen, and a book and place them on the countertop.",
+      "Gather a pencil, a pen, and a book to put them on the countertop.",
+      "Place a pencil, a pen, and a book together on the countertop.",
+      "Put a pencil, a pen, and a book on the countertop, arranging them as needed."
+    ],
+    "task_goal": {
+      "on_pencil_countertop": 1,
+      "on_pen_countertop": 1,
+      "on_book_countertop": 1
+    }
+  },
+  {
+    "env_id": 703,
+    "mode": "PickAndPlaceMultipleTask",
+    "instruction": [
+      "Collect a pencil and a key chain and place them in the box.",
+      "Put a pencil and a key chain into the box.",
+      "Gather a pencil and a key chain, then place them in the box.",
+      "Move a pencil and a key chain to their spot in the box."
+    ],
+    "task_goal": {
+      "in_pencil_box": 1,
+      "in_keychain_box": 1
+    }
+  },
+  {
+    "env_id": 282,
+    "mode": "PickAndPlaceMultipleTask",
+    "instruction": [
+      "Collect a book and a pencil and place them on the countertop.",
+      "Gather a book and a pencil, then put them on the countertop.",
+      "Place a book and a pencil together on the countertop.",
+      "Put a book and a pencil on the countertop for safekeeping."
+    ],
+    "task_goal": {
+      "on_book_countertop": 1,
+      "on_pencil_countertop": 1
+    }
+  },
+  {
+    "env_id": 82,
+    "mode": "PickAndPlaceMultipleTask",
+    "instruction": [
+      "Collect a book and a remote control and place them on the armchair.",
+      "Gather a book and a remote control, and put them on the armchair.",
+      "Place a book and a remote control together on the armchair.",
+      "Put a book and a remote control side by side on the armchair."
+    ],
+    "task_goal": {
+      "on_book_armchair": 1,
+      "on_remotecontrol_armchair": 1
+    }
+  },
+  {
+    "env_id": 166,
+    "mode": "PickAndPlaceMultipleTask",
+    "instruction": [
+      "Collect a book and a vase and place them on the side table.",
+      "Gather a book and a vase, and set them on the side table.",
+      "Put a book and a vase together on the side table.",
+      "Move a book and a vase to be placed on the side table."
+    ],
+    "task_goal": {
+      "on_book_sidetable": 1,
+      "on_vase_sidetable": 1
+    }
+  },
+  {
+    "env_id": 533,
+    "mode": "PickAndPlaceMultipleTask",
+    "instruction": [
+      "Collect a knife, a ladle, and a spoon and place them in the bowl.",
+      "Gather a knife, a ladle, and a spoon, and put them into the bowl.",
+      "Place a knife, a ladle, and a spoon together inside the bowl.",
+      "Put a knife, a ladle, and a spoon in the bowl, all at once."
+    ],
+    "task_goal": {
+      "in_knife_bowl": 1,
+      "in_ladle_bowl": 1,
+      "in_spoon_bowl": 1
+    }
+  },
+  {
+    "env_id": 202,
+    "mode": "PickAndPlaceMultipleTask",
+    "instruction": [
+      "Collect a book and a pen and place them in the box.",
+      "Put a book and a pen into the box.",
+      "Gather a book and a pen, and set them in the box.",
+      "Place a book and a pen together inside the box."
+    ],
+    "task_goal": {
+      "in_book_box": 1,
+      "in_pen_box": 1
+    }
+  }
+]

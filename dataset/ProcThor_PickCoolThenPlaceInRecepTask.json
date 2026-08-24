@@ -1,0 +1,759 @@
+[
+  {
+    "env_id": 189,
+    "mode": "PickCoolThenPlaceInRecepTask",
+    "instruction": [
+      "Place a cold apple on the countertop.",
+      "Put the apple in the fridge first, then take it out and place it on the countertop.",
+      "Chill an apple in the fridge, then move it to the countertop.",
+      "First, store the apple in the fridge, and afterwards, set it on the countertop."
+    ],
+    "task_goal": {
+      "temperatureCold_apple": 1,
+      "on_apple_countertop": 1,
+      "on_temperatureCold_apple_countertop": 1
+    }
+  },
+  {
+    "env_id": 500,
+    "mode": "PickCoolThenPlaceInRecepTask",
+    "instruction": [
+      "Place a cold knife on the dining table.",
+      "Put the knife in the fridge first, then take it out and place it on the dining table.",
+      "Chill a knife in the fridge, then transfer it to the dining table.",
+      "First, store the knife in the fridge, and afterwards, set it down on the dining table."
+    ],
+    "task_goal": {
+      "temperatureCold_knife": 1,
+      "on_knife_diningtable": 1,
+      "on_temperatureCold_knife_diningtable": 1
+    }
+  },
+  {
+    "env_id": 333,
+    "mode": "PickCoolThenPlaceInRecepTask",
+    "instruction": [
+      "Place a cold tomato on the countertop.",
+      "Put the tomato in the fridge first, then transfer it to the countertop.",
+      "Chill a tomato in the fridge, and afterwards, set it on the countertop.",
+      "First, store the tomato in the fridge, and then move it to the countertop."
+    ],
+    "task_goal": {
+      "temperatureCold_tomato": 1,
+      "on_tomato_countertop": 1,
+      "on_temperatureCold_tomato_countertop": 1
+    }
+  },
+  {
+    "env_id": 343,
+    "mode": "PickCoolThenPlaceInRecepTask",
+    "instruction": [
+      "Place a cold egg on the countertop.",
+      "Put the egg in the fridge first, then take it out and place it on the countertop.",
+      "Chill an egg in the fridge, then transfer it to the countertop.",
+      "First, refrigerate the egg, and afterwards, set it down on the countertop."
+    ],
+    "task_goal": {
+      "temperatureCold_egg": 1,
+      "on_egg_countertop": 1,
+      "on_temperatureCold_egg_countertop": 1
+    }
+  },
+  {
+    "env_id": 197,
+    "mode": "PickCoolThenPlaceInRecepTask",
+    "instruction": [
+      "Place a cold bottle on the countertop.",
+      "Put the bottle in the fridge first, then set it on the countertop.",
+      "Chill the bottle in the fridge, then transfer it to the countertop.",
+      "Place the bottle in the fridge temporarily, then move it to the countertop."
+    ],
+    "task_goal": {
+      "temperatureCold_bottle": 1,
+      "on_bottle_countertop": 1,
+      "on_temperatureCold_bottle_countertop": 1
+    }
+  },
+  {
+    "env_id": 615,
+    "mode": "PickCoolThenPlaceInRecepTask",
+    "instruction": [
+      "Place a cold apple slice on the countertop.",
+      "Put the apple slice in the fridge first, then take it out and place it on the countertop.",
+      "Chill an apple slice in the fridge, then transfer it to the countertop.",
+      "First, place the apple slice in the fridge to keep it cold, then move it to the countertop."
+    ],
+    "task_goal": {
+      "temperatureCold_apple": 1,
+      "on_apple_countertop": 1,
+      "isSliced_apple": 1,
+      "on_temperatureCold_apple_countertop": 1
+    }
+  },
+  {
+    "env_id": 931,
+    "mode": "PickCoolThenPlaceInRecepTask",
+    "instruction": [
+      "Place a slice of cold bread on the countertop.",
+      "Put the slice of bread in the fridge first, then transfer it to the countertop.",
+      "Chill the slice of bread in the fridge, then place it on the countertop afterwards.",
+      "Place the slice of bread in the fridge for a bit, then move it to the countertop."
+    ],
+    "task_goal": {
+      "temperatureCold_bread": 1,
+      "on_bread_countertop": 1,
+      "isSliced_bread": 1,
+      "on_temperatureCold_bread_countertop": 1
+    }
+  },
+  {
+    "env_id": 323,
+    "mode": "PickCoolThenPlaceInRecepTask",
+    "instruction": [
+      "Place a cold apple on the countertop.",
+      "Put the apple in the fridge first, then take it out and place it on the countertop.",
+      "Chill an apple in the fridge, then move it to the countertop.",
+      "Place an apple in the fridge temporarily, and afterwards set it on the countertop."
+    ],
+    "task_goal": {
+      "temperatureCold_apple": 1,
+      "on_apple_countertop": 1,
+      "on_temperatureCold_apple_countertop": 1
+    }
+  },
+  {
+    "env_id": 861,
+    "mode": "PickCoolThenPlaceInRecepTask",
+    "instruction": [
+      "Place a cold mug on the dining table.",
+      "Put the mug in the fridge first, then take it out and place it on the dining table.",
+      "Chill an mug in the fridge, afterwards set it on the dining table.",
+      "First, store an mug in the fridge, then remove and position it on the dining table."
+    ],
+    "task_goal": {
+      "temperatureCold_mug": 1,
+      "on_mug_diningtable": 1,
+      "on_temperatureCold_mug_diningtable": 1
+    }
+  },
+  {
+    "env_id": 833,
+    "mode": "PickCoolThenPlaceInRecepTask",
+    "instruction": [
+      "Place a cold bottle on the countertop.",
+      "Put the bottle in the fridge first, then position it on the countertop.",
+      "Place the bottle on the countertop after it has been in the fridge.",
+      "First, chill the bottle in the fridge, then transfer it to the countertop."
+    ],
+    "task_goal": {
+      "temperatureCold_bottle": 1,
+      "on_bottle_countertop": 1,
+      "on_temperatureCold_bottle_countertop": 1
+    }
+  },
+  {
+    "env_id": 254,
+    "mode": "PickCoolThenPlaceInRecepTask",
+    "instruction": [
+      "Place a cold apple on the countertop.",
+      "Put the apple in the fridge first, then take it out and place it on the countertop.",
+      "Chill an apple in the fridge, then transfer it to the countertop.",
+      "First, store the apple in the fridge to keep it cold, and afterwards, move it to the countertop."
+    ],
+    "task_goal": {
+      "temperatureCold_apple": 1,
+      "on_apple_countertop": 1,
+      "on_temperatureCold_apple_countertop": 1
+    }
+  },
+  {
+    "env_id": 714,
+    "mode": "PickCoolThenPlaceInRecepTask",
+    "instruction": [
+      "Place a cold apple on the countertop.",
+      "Put the apple in the fridge first, then take it out and place it on the countertop.",
+      "Chill an apple in the fridge, then transfer it to the countertop.",
+      "First, store the apple in the fridge, and afterwards, set it down on the countertop."
+    ],
+    "task_goal": {
+      "temperatureCold_apple": 1,
+      "on_apple_countertop": 1,
+      "on_temperatureCold_apple_countertop": 1
+    }
+  },
+  {
+    "env_id": 179,
+    "mode": "PickCoolThenPlaceInRecepTask",
+    "instruction": [
+      "Place a cold apple on the countertop.",
+      "Put the apple in the fridge first, then take it out and place it on the countertop.",
+      "Chill an apple in the fridge, then transfer it to the countertop.",
+      "Place an apple in the fridge temporarily, before moving it to the countertop."
+    ],
+    "task_goal": {
+      "temperatureCold_apple": 1,
+      "on_apple_countertop": 1,
+      "on_temperatureCold_apple_countertop": 1
+    }
+  },
+  {
+    "env_id": 510,
+    "mode": "PickCoolThenPlaceInRecepTask",
+    "instruction": [
+      "Place a cold bottle on the countertop.",
+      "Put the cold bottle on the countertop for now.",
+      "Set a cold bottle down on the countertop.",
+      "Position a cold bottle on the countertop."
+    ],
+    "task_goal": {
+      "temperatureCold_bottle": 1,
+      "on_bottle_countertop": 1,
+      "on_temperatureCold_bottle_countertop": 1
+    }
+  },
+  {
+    "env_id": 207,
+    "mode": "PickCoolThenPlaceInRecepTask",
+    "instruction": [
+      "Place a cold bottle on the countertop.",
+      "Put the cold bottle on the countertop for now.",
+      "Set a cold bottle down on the countertop.",
+      "Position a cold bottle on the countertop."
+    ],
+    "task_goal": {
+      "temperatureCold_bottle": 1,
+      "on_bottle_countertop": 1,
+      "on_temperatureCold_bottle_countertop": 1
+    }
+  },
+  {
+    "env_id": 342,
+    "mode": "PickCoolThenPlaceInRecepTask",
+    "instruction": [
+      "Place a cold apple on the countertop.",
+      "Put the apple in the fridge first, then take it out and set it on the countertop.",
+      "Chill an apple in the fridge, then place it on the countertop afterwards.",
+      "First, place the apple in the fridge to keep it cold, and later move it to the countertop."
+    ],
+    "task_goal": {
+      "temperatureCold_apple": 1,
+      "on_apple_countertop": 1,
+      "on_temperatureCold_apple_countertop": 1
+    }
+  },
+  {
+    "env_id": 328,
+    "mode": "PickCoolThenPlaceInRecepTask",
+    "instruction": [
+      "Place a cold bottle on the countertop.",
+      "Put the cold bottle on the countertop for now.",
+      "Position a cold bottle on the countertop.",
+      "Set a cold bottle down on the countertop."
+    ],
+    "task_goal": {
+      "temperatureCold_bottle": 1,
+      "on_bottle_countertop": 1,
+      "on_temperatureCold_bottle_countertop": 1
+    }
+  },
+  {
+    "env_id": 978,
+    "mode": "PickCoolThenPlaceInRecepTask",
+    "instruction": [
+      "Place a cold slice of apple on the countertop.",
+      "Put the slice of apple in the fridge first, then take it out and place it on the countertop.",
+      "Chill a slice of apple in the fridge, then transfer it to the countertop.",
+      "Place a slice of apple in the fridge to cool, and afterwards, set it on the countertop."
+    ],
+    "task_goal": {
+      "temperatureCold_apple": 1,
+      "on_apple_countertop": 1,
+      "isSliced_apple": 1,
+      "on_temperatureCold_apple_countertop": 1
+    }
+  },
+  {
+    "env_id": 794,
+    "mode": "PickCoolThenPlaceInRecepTask",
+    "instruction": [
+      "Place a cold knife on the side table.",
+      "Put the knife in the fridge first, then take it out and place it on the side table.",
+      "Chill an knife in the fridge, then transfer it to the side table.",
+      "First, place the knife in the fridge to keep it cool, and afterwards set it on the side table."
+    ],
+    "task_goal": {
+      "temperatureCold_knife": 1,
+      "on_knife_sidetable": 1,
+      "on_temperatureCold_knife_sidetable": 1
+    }
+  },
+  {
+    "env_id": 391,
+    "mode": "PickCoolThenPlaceInRecepTask",
+    "instruction": [
+      "Place a cold sliced apple on the pan.",
+      "Put the sliced apple in the fridge first, then take it out and place it on the pan.",
+      "Chill a sliced apple by placing it in the fridge, afterwards put it on the pan.",
+      "First, store a sliced cold apple in the fridge for a bit, then remove and set it on the pan."
+    ],
+    "task_goal": {
+      "temperatureCold_apple": 1,
+      "on_apple_pan": 1,
+      "isSliced_apple": 1,
+      "on_temperatureCold_apple_pan": 1
+    }
+  },
+  {
+    "env_id": 975,
+    "mode": "PickCoolThenPlaceInRecepTask",
+    "instruction": [
+      "Place a cold apple on the countertop.",
+      "Put the apple in the fridge first, then take it out and place it on the countertop.",
+      "Chill an apple in the fridge, then transfer it to the countertop.",
+      "Place an apple in the fridge temporarily, and afterwards move it to the countertop."
+    ],
+    "task_goal": {
+      "temperatureCold_apple": 1,
+      "on_apple_countertop": 1,
+      "on_temperatureCold_apple_countertop": 1
+    }
+  },
+  {
+    "env_id": 664,
+    "mode": "PickCoolThenPlaceInRecepTask",
+    "instruction": [
+      "Place a cold bowl on the countertop.",
+      "Put the bowl in the fridge first, then take it out and set it on the countertop.",
+      "Chill a bowl in the fridge, and afterwards, place it on the countertop.",
+      "First, place the bowl in the fridge to cool, then move it to the countertop."
+    ],
+    "task_goal": {
+      "temperatureCold_bowl": 1,
+      "on_bowl_countertop": 1,
+      "on_temperatureCold_bowl_countertop": 1
+    }
+  },
+  {
+    "env_id": 679,
+    "mode": "PickCoolThenPlaceInRecepTask",
+    "instruction": [
+      "Place a cold egg on the plate.",
+      "Put the cold egg onto the plate.",
+      "Set a cold egg down on the plate.",
+      "Place an egg that's been chilled on the plate."
+    ],
+    "task_goal": {
+      "temperatureCold_egg": 1,
+      "on_egg_plate": 1,
+      "on_temperatureCold_egg_plate": 1
+    }
+  },
+  {
+    "env_id": 956,
+    "mode": "PickCoolThenPlaceInRecepTask",
+    "instruction": [
+      "Place a cold apple on the countertop.",
+      "Put the apple in the fridge first, then take it out and place it on the countertop.",
+      "Chill an apple in the fridge, then transfer it to the countertop.",
+      "First, store the apple in the fridge, and afterwards, move it to the countertop."
+    ],
+    "task_goal": {
+      "temperatureCold_apple": 1,
+      "on_apple_countertop": 1,
+      "on_temperatureCold_apple_countertop": 1
+    }
+  },
+  {
+    "env_id": 319,
+    "mode": "PickCoolThenPlaceInRecepTask",
+    "instruction": [
+      "Place a cold apple on the countertop.",
+      "Put the apple in the fridge first, then take it out and place it on the countertop.",
+      "Chill an apple in the fridge, then transfer it to the countertop.",
+      "Place an apple in the fridge to cool, then move it to the countertop afterwards."
+    ],
+    "task_goal": {
+      "temperatureCold_apple": 1,
+      "on_apple_countertop": 1,
+      "on_temperatureCold_apple_countertop": 1
+    }
+  },
+  {
+    "env_id": 473,
+    "mode": "PickCoolThenPlaceInRecepTask",
+    "instruction": [
+      "Place a cold apple on the countertop.",
+      "Put the apple in the fridge first, then transfer it to the countertop.",
+      "Chill an apple in the fridge, then place it on the countertop afterwards.",
+      "First, store the apple in the fridge, and later move it to the countertop."
+    ],
+    "task_goal": {
+      "temperatureCold_apple": 1,
+      "on_apple_countertop": 1,
+      "on_temperatureCold_apple_countertop": 1
+    }
+  },
+  {
+    "env_id": 477,
+    "mode": "PickCoolThenPlaceInRecepTask",
+    "instruction": [
+      "Place a cold bottle on the countertop.",
+      "Put the bottle in the fridge first, then set it on the countertop.",
+      "Place a bottle in the fridge temporarily, and afterwards put it on the countertop.",
+      "First, chill the bottle in the fridge, and then move it to the countertop."
+    ],
+    "task_goal": {
+      "temperatureCold_bottle": 1,
+      "on_bottle_countertop": 1,
+      "on_temperatureCold_bottle_countertop": 1
+    }
+  },
+  {
+    "env_id": 380,
+    "mode": "PickCoolThenPlaceInRecepTask",
+    "instruction": [
+      "Place a cold slice of apple on the countertop.",
+      "Put the slice of apple in the fridge first, then take it out and place it on the countertop.",
+      "Chill a slice of apple in the fridge, then transfer it to the countertop.",
+      "First, store a slice of apple in the fridge, and afterwards, set it out on the countertop."
+    ],
+    "task_goal": {
+      "temperatureCold_apple": 1,
+      "on_apple_countertop": 1,
+      "isSliced_apple": 1,
+      "on_temperatureCold_apple_countertop": 1
+    }
+  },
+  {
+    "env_id": 63,
+    "mode": "PickCoolThenPlaceInRecepTask",
+    "instruction": [
+      "Place a cold apple on the countertop.",
+      "Put the apple in the fridge first, then take it out and place it on the countertop.",
+      "Chill an apple in the fridge, then transfer it to the countertop.",
+      "Store an apple in the fridge temporarily, before moving it to the countertop."
+    ],
+    "task_goal": {
+      "temperatureCold_apple": 1,
+      "on_apple_countertop": 1,
+      "on_temperatureCold_apple_countertop": 1
+    }
+  },
+  {
+    "env_id": 954,
+    "mode": "PickCoolThenPlaceInRecepTask",
+    "instruction": [
+      "Place a cold egg on the countertop.",
+      "Put the egg in the fridge first, then take it out and set it on the countertop.",
+      "Chill an egg in the fridge, then transfer it to the countertop.",
+      "Place an egg in the fridge for a bit, then remove it and put it on the countertop."
+    ],
+    "task_goal": {
+      "temperatureCold_egg": 1,
+      "on_egg_countertop": 1,
+      "on_temperatureCold_egg_countertop": 1
+    }
+  },
+  {
+    "env_id": 847,
+    "mode": "PickCoolThenPlaceInRecepTask",
+    "instruction": [
+      "Place a cold bottle on the countertop.",
+      "Put the cold bottle on the countertop for now.",
+      "Set a cold bottle down on the countertop.",
+      "Position a cold bottle on the countertop."
+    ],
+    "task_goal": {
+      "temperatureCold_bottle": 1,
+      "on_bottle_countertop": 1,
+      "on_temperatureCold_bottle_countertop": 1
+    }
+  },
+  {
+    "env_id": 893,
+    "mode": "PickCoolThenPlaceInRecepTask",
+    "instruction": [
+      "Place a cold apple on the countertop.",
+      "Put the apple in the fridge first, then take it out and place it on the countertop.",
+      "Chill an apple in the fridge, then transfer it to the countertop.",
+      "First, store the apple in the fridge, and afterwards, move it to the countertop."
+    ],
+    "task_goal": {
+      "temperatureCold_apple": 1,
+      "on_apple_countertop": 1,
+      "on_temperatureCold_apple_countertop": 1
+    }
+  },
+  {
+    "env_id": 709,
+    "mode": "PickCoolThenPlaceInRecepTask",
+    "instruction": [
+      "Place a cold apple on the countertop.",
+      "Put the apple in the fridge first, then take it out and place it on the countertop.",
+      "Chill an apple in the fridge, then move it to the countertop.",
+      "Place an apple in the fridge to cool, and afterwards set it on the countertop."
+    ],
+    "task_goal": {
+      "temperatureCold_apple": 1,
+      "on_apple_countertop": 1,
+      "on_temperatureCold_apple_countertop": 1
+    }
+  },
+  {
+    "env_id": 813,
+    "mode": "PickCoolThenPlaceInRecepTask",
+    "instruction": [
+      "Place a cold apple on the countertop.",
+      "Put the apple in the fridge first, then take it out and place it on the countertop.",
+      "Chill an apple in the fridge, then transfer it to the countertop.",
+      "First, store the apple in the fridge, and afterwards, move it to the countertop."
+    ],
+    "task_goal": {
+      "temperatureCold_apple": 1,
+      "on_apple_countertop": 1,
+      "on_temperatureCold_apple_countertop": 1
+    }
+  },
+  {
+    "env_id": 118,
+    "mode": "PickCoolThenPlaceInRecepTask",
+    "instruction": [
+      "Place a cold apple on the countertop.",
+      "Put the apple in the fridge first, then transfer it to the countertop.",
+      "Chill an apple in the fridge, then place it on the countertop afterwards.",
+      "First, place the apple in the fridge to keep it cold, and later move it to the countertop."
+    ],
+    "task_goal": {
+      "temperatureCold_apple": 1,
+      "on_apple_countertop": 1,
+      "on_temperatureCold_apple_countertop": 1
+    }
+  },
+  {
+    "env_id": 511,
+    "mode": "PickCoolThenPlaceInRecepTask",
+    "instruction": [
+      "Place a cold mug on the TV stand.",
+      "Put the mug in the fridge first, then take it out and place it on the TV stand.",
+      "Chill a mug in the fridge, then transfer it to the TV stand.",
+      "First, store the mug in the fridge, and afterwards, move it to the TV stand."
+    ],
+    "task_goal": {
+      "temperatureCold_mug": 1,
+      "on_mug_tvstand": 1,
+      "on_temperatureCold_mug_tvstand": 1
+    }
+  },
+  {
+    "env_id": 508,
+    "mode": "PickCoolThenPlaceInRecepTask",
+    "instruction": [
+      "Place a cold bottle on the countertop.",
+      "Put the bottle in the fridge first, then transfer it to the countertop.",
+      "Chill the bottle in the fridge, and afterwards, set it on the countertop.",
+      "Store the bottle in the fridge temporarily, before placing it on the countertop."
+    ],
+    "task_goal": {
+      "temperatureCold_bottle": 1,
+      "on_bottle_countertop": 1,
+      "on_temperatureCold_bottle_countertop": 1
+    }
+  },
+  {
+    "env_id": 809,
+    "mode": "PickCoolThenPlaceInRecepTask",
+    "instruction": [
+      "Place a cold apple on the countertop.",
+      "Put the apple in the fridge first, then take it out and place it on the countertop.",
+      "Chill an apple in the fridge, then transfer it to the countertop.",
+      "First, store the apple in the fridge, and afterwards, move it to the countertop."
+    ],
+    "task_goal": {
+      "temperatureCold_apple": 1,
+      "on_apple_countertop": 1,
+      "on_temperatureCold_apple_countertop": 1
+    }
+  },
+  {
+    "env_id": 612,
+    "mode": "PickCoolThenPlaceInRecepTask",
+    "instruction": [
+      "Place a cold apple on the countertop.",
+      "Put the apple in the fridge first, then take it out and place it on the countertop.",
+      "Chill an apple in the fridge, then move it to the countertop.",
+      "First, place an apple in the fridge to cool, then set it out on the countertop."
+    ],
+    "task_goal": {
+      "temperatureCold_apple": 1,
+      "on_apple_countertop": 1,
+      "on_temperatureCold_apple_countertop": 1
+    }
+  },
+  {
+    "env_id": 64,
+    "mode": "PickCoolThenPlaceInRecepTask",
+    "instruction": [
+      "Place a cold apple slice on the plate.",
+      "Put the cold apple slice on the plate for serving.",
+      "Set a cold apple slice down on the plate.",
+      "Position a cold apple slice on top of the plate."
+    ],
+    "task_goal": {
+      "temperatureCold_apple": 1,
+      "on_apple_plate": 1,
+      "isSliced_apple": 1,
+      "on_temperatureCold_apple_plate": 1
+    }
+  },
+  {
+    "env_id": 888,
+    "mode": "PickCoolThenPlaceInRecepTask",
+    "instruction": [
+      "Place a cold apple on the countertop.",
+      "Put the apple in the fridge first, then take it out and place it on the countertop.",
+      "Chill an apple in the fridge, then transfer it to the countertop.",
+      "First, store the apple in the fridge, and afterwards, move it to the countertop."
+    ],
+    "task_goal": {
+      "temperatureCold_apple": 1,
+      "on_apple_countertop": 1,
+      "on_temperatureCold_apple_countertop": 1
+    }
+  },
+  {
+    "env_id": 141,
+    "mode": "PickCoolThenPlaceInRecepTask",
+    "instruction": [
+      "Place a cold apple on the countertop.",
+      "Put the apple in the fridge first, then take it out and place it on the countertop.",
+      "Chill an apple in the fridge, then transfer it to the countertop.",
+      "Store an apple in the fridge temporarily, before moving it to the countertop."
+    ],
+    "task_goal": {
+      "temperatureCold_apple": 1,
+      "on_apple_countertop": 1,
+      "on_temperatureCold_apple_countertop": 1
+    }
+  },
+  {
+    "env_id": 706,
+    "mode": "PickCoolThenPlaceInRecepTask",
+    "instruction": [
+      "Place a cold apple on the countertop.",
+      "Put the apple in the fridge first, then take it out and place it on the countertop.",
+      "Chill an apple in the fridge, then transfer it to the countertop.",
+      "First, store an apple in the fridge, and afterwards, move it to the countertop."
+    ],
+    "task_goal": {
+      "temperatureCold_apple": 1,
+      "on_apple_countertop": 1,
+      "on_temperatureCold_apple_countertop": 1
+    }
+  },
+  {
+    "env_id": 850,
+    "mode": "PickCoolThenPlaceInRecepTask",
+    "instruction": [
+      "Place a cold apple on the countertop.",
+      "Put the apple in the fridge first, then transfer it to the countertop.",
+      "Chill an apple by placing it in the fridge, and afterwards, set it on the countertop.",
+      "First, place the apple in the fridge to cool, then move it to the countertop."
+    ],
+    "task_goal": {
+      "temperatureCold_apple": 1,
+      "on_apple_countertop": 1,
+      "on_temperatureCold_apple_countertop": 1
+    }
+  },
+  {
+    "env_id": 852,
+    "mode": "PickCoolThenPlaceInRecepTask",
+    "instruction": [
+      "Place a cold mug on the side table.",
+      "Put the mug in the fridge for now, then take it out and place it on the side table.",
+      "First, chill a mug in the fridge, and afterwards, set it on the side table.",
+      "Place a mug in the fridge to cool, then remove it and put it on the side table."
+    ],
+    "task_goal": {
+      "temperatureCold_mug": 1,
+      "on_mug_sidetable": 1,
+      "on_temperatureCold_mug_sidetable": 1
+    }
+  },
+  {
+    "env_id": 105,
+    "mode": "PickCoolThenPlaceInRecepTask",
+    "instruction": [
+      "Place a cold slice of apple on the countertop.",
+      "Put the sliced apple in the fridge first, then take it out and place it on the countertop.",
+      "Chill a sliced apple in the fridge, then transfer it to the countertop.",
+      "First, place the sliced apple in the fridge to keep it cool, then move it to the countertop."
+    ],
+    "task_goal": {
+      "temperatureCold_apple": 1,
+      "on_apple_countertop": 1,
+      "isSliced_apple": 1,
+      "on_temperatureCold_apple_countertop": 1
+    }
+  },
+  {
+    "env_id": 677,
+    "mode": "PickCoolThenPlaceInRecepTask",
+    "instruction": [
+      "Place a cold apple on the countertop.",
+      "Put the apple in the fridge first, then take it out and place it on the countertop.",
+      "Chill an apple in the fridge, then transfer it to the countertop.",
+      "First, store the apple in the fridge, and afterwards, move it to the countertop."
+    ],
+    "task_goal": {
+      "temperatureCold_apple": 1,
+      "on_apple_countertop": 1,
+      "on_temperatureCold_apple_countertop": 1
+    }
+  },
+  {
+    "env_id": 618,
+    "mode": "PickCoolThenPlaceInRecepTask",
+    "instruction": [
+      "Place a cold plate on the dining table.",
+      "Put the plate in the fridge first, then take it out and place it on the dining table.",
+      "Chill a plate in the fridge, then move it to the dining table.",
+      "First, store the plate in the fridge, and afterwards, set it down on the dining table."
+    ],
+    "task_goal": {
+      "temperatureCold_plate": 1,
+      "on_plate_diningtable": 1,
+      "on_temperatureCold_plate_diningtable": 1
+    }
+  },
+  {
+    "env_id": 516,
+    "mode": "PickCoolThenPlaceInRecepTask",
+    "instruction": [
+      "Place a cold plate on the dining table.",
+      "Put the cold plate on the dining table for serving.",
+      "Set a cold plate down on the dining table.",
+      "Place a chilled plate onto the dining table."
+    ],
+    "task_goal": {
+      "temperatureCold_plate": 1,
+      "on_plate_diningtable": 1,
+      "on_temperatureCold_plate_diningtable": 1
+    }
+  },
+  {
+    "env_id": 514,
+    "mode": "PickCoolThenPlaceInRecepTask",
+    "instruction": [
+      "Place a cold apple on the countertop.",
+      "Put the apple in the fridge first, then take it out and set it on the countertop.",
+      "Chill an apple in the fridge, afterwards place it on the countertop.",
+      "Place an apple in the fridge to cool, then move it to the countertop."
+    ],
+    "task_goal": {
+      "temperatureCold_apple": 1,
+      "on_apple_countertop": 1,
+      "on_temperatureCold_apple_countertop": 1
+    }
+  }
+]

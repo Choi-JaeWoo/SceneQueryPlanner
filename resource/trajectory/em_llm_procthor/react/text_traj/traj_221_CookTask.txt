@@ -1,0 +1,51 @@
+Your task is to: Make a mug of coffee with the coffeemachine and place it on the countertop.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a kitchen (1). Looking quickly around the room, you see cabinet (1), chair (2), countertop (1), fridge (1), shelf (1, 2, 3), shelving unit (1), stool (1).
+Think: To solve the task, I need to find and put mug in coffee machine, turn on coffee machine, and put mug on countertop.
+OK.
+Think: First, I need to find and pick up mug. The mug is more likely to appear in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see cabinet (1), chair (2), countertop (1), fridge (1), shelf (1, 2, 3), shelving unit (1), stool (1).
+Think: In kitchen 1, the mug is likely to appear in/on countertop 1, shelf 1, 2, 3. I can check each place one by one until I find mug.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see book (2), bread (1), butter knife (1), coffee machine (1), countertop (1), egg (1), fork (1), house plant (2), kettle (1), knife (1), mug (1), pencil (3), pepper shaker (1), plate (1), spatula (1), spoon (1), tomato (1), wine bottle (1).
+Act: go to shelf 1
+You arrive at the shelf (1). You see cabinet (1), shelf (1, 2, 3), shelving unit (1).
+Act: go to shelf 2
+You arrive at the shelf (2). You see cabinet (1), shelf (1, 2, 3), shelving unit (1).
+Act: go to shelf 3
+You arrive at the shelf (3). You see cabinet (1), shelf (1, 2, 3), shelving unit (1).
+Think: I find mug 1. Now, I need to pick it up.
+OK.
+Act: go to mug 1
+You arrive at the mug (1). You see bread (1), butter knife (1), countertop (1), fork (1), mug (1), pepper shaker (1), spoon (1).
+Act: pick up mug 1
+You pick up mug (1). You hold mug (1).
+Think: Now, I need to find coffee machine.
+OK.
+Act: go to coffee machine 1
+You arrive at the coffee machine (1). You see book (2), bread (1), butter knife (1), coffee machine (1), egg (1), fork (1), house plant (2), kettle (1), knife (1), pencil (3), pepper shaker (1), plate (1), spatula (1), spoon (1), tomato (1), wine bottle (1). You hold mug (1).
+Think: Now, I need to put down mug 1 in coffee machine 1.
+OK.
+Act: put down mug 1
+You put mug (1) in coffee machine (1).
+Think: Now, I need to turn on coffee machine 1 to brew the coffee.
+OK.
+Act: turn on coffee machine 1
+You turn on coffee machine (1).
+Think: Now, I need to turn off coffee machine 1 and pick up mug 1.
+OK.
+Act: turn off coffee machine 1
+You turn off coffee machine (1).
+Act: pick up mug 1
+You pick up mug (1). You hold mug (1).
+Think: Now, I need to put down mug 1 on countertop 1.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see book (2), bread (1), butter knife (1), coffee machine (1), countertop (1), egg (1), fork (1), house plant (2), kettle (1), knife (1), pencil (3), pepper shaker (1), plate (1), spatula (1), spoon (1), tomato (1), wine bottle (1). You hold mug (1).
+Act: put down mug 1
+You put mug (1) in countertop (1).
+Think: Now I complete task.
+OK.
+Act: done

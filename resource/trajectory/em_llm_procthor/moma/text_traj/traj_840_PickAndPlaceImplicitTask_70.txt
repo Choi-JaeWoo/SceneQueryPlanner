@@ -1,0 +1,7 @@
+Your task is to: Remove all objects from the side table and place them in the dresser.
+Pick up action failed: The target object is not within the visible range. Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- bedroom 1: [pillow 2, cell phone 1, credit card 1, pencil 2, remote control 1, statue 1, television 1, alarm clock 1, basket ball 1, bed 1, cloth 1, drawer 3, drawer 1, drawer 2, drawer 4, dresser 1, garbage can 1, painting 1, painting 2, pencil 1, pillow 1, side table 1]
+Your 5 previous actions were: go to dresser 1 (success), put down remote control 1 (success), go to side table 1 (success), go to painting 2 (success), pick up pencil 2 (fail)
+What is the best next action to complete the task as efficiently as possible?
+Think: I go to dresser 1. I put down remote control 1. I go to side table 1. I go to painting 2. I pick up pencil 2. The target object is not within the visible range. Now, I need to move toward pencil 2 to pick it up.
+Act: go to pencil 2

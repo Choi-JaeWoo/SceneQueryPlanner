@@ -1,0 +1,107 @@
+Your task is to: Ensure the soap bar is clean before placing it in the sinkbasin.
+You are in the house, and there are 5 rooms: bathroom (1), bedroom (1, 2), kitchen (1), living room (1). You are in the middle of a living room (1). Looking quickly around the room, you see box (1), cart (1), chair (1, 2, 3), dining table (1), room decor (1), sofa (1).
+Think: To solve the task, I need to find and pick up soap bar, put it in sink basin and turn on faucet, pick up and put down soap bar in sink basin.
+OK.
+Think: First, I need to find and pick up soap bar.
+OK.
+Query: find_objects({'label': 'soap bar'})
+Info: 
+Think: I have not seen soap bar yet. Now I need to check where to search. First, I will search living room 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'living room 1'})
+Info: box (1, 2), chair (1, 2, 3), dining table 1, sofa 1
+Think: In living room 1, the soap bar is likely to appear in/on box (1, 2), chair (1, 2, 3), dining table 1, sofa 1. I can check each place one by one until I find soap bar.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see box (1), cart (1), chair (1, 2, 3), dining table (1), room decor (1), sofa (1).
+Act: go to box 1
+You arrive at the box (1). The box (1) is open. You see box (1), cart (1).
+Act: go to box 2
+You arrive at the box (2). You see bowl (1), box (2), candle (1), chair (2), dining table (1), house plant (2), laptop (1), pencil (1), plate (1), vase (1).
+Act: go to chair 1
+You arrive at the chair (1). You see bowl (1), box (1), candle (1), chair (1), dining table (1), house plant (2), laptop (1), pencil (1), plate (1), vase (1).
+Act: go to chair 2
+You arrive at the chair (2). You see bowl (1), box (2), candle (1), chair (2), dining table (1), house plant (2), laptop (1), pencil (1), plate (1), vase (1).
+Act: go to chair 3
+You arrive at the chair (3). You see chair (3).
+Act: go to dining table 1
+You arrive at the dining table (1). You see bowl (1), box (1, 2), candle (1), chair (1, 2), dining table (1), house plant (2), laptop (1), pencil (1), plate (1), vase (1).
+Act: go to sofa 1
+You arrive at the sofa (1). You see book (1), cart (1), pillow (2), sofa (1).
+Think: I need to check whether I see soap bar.
+OK.
+Query: find_objects({'label': 'soap bar'})
+Info: 
+Think: I have not seen soap bar yet. Now I need to check where to search. First, I will search kitchen 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'kitchen 1'})
+Info: countertop 1, fridge 1
+Think: In kitchen 1, the soap bar is likely to appear in/on countertop 1, fridge 1. I can check each place one by one until I find soap bar.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see countertop (1), fridge (1), garbage bag (1), house plant (1), painting (1, 2), television (1).
+Act: go to countertop 1
+You arrive at the countertop (1). 
+Think: I need to check whether I see soap bar.
+OK.
+Query: find_objects({'label': 'soap bar'})
+Info: 
+Think: I have not seen soap bar yet. Now I need to check where to search. First, I will search bathroom 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'bathroom 1'})
+Info: sink 1, sink basin 1, toilet 1
+Think: In bathroom 1, the soap bar is likely to appear in/on sink 1, sink basin 1, toilet 1. I can check each place one by one until I find soap bar.
+OK.
+Act: go to bathroom 1
+You move to the bathroom (1). Looking quickly around the room, you see sink (1), sink basin (1), toilet (1).
+Act: go to sink 1
+You arrive at the sink (1). You see alarm clock (1), armchair (1), floor lamp (1).
+Act: go to bathroom 1
+You move to the bathroom (1). Looking quickly around the room, you see sink (1), sink basin (1), toilet (1).
+Act: go to sink basin 1
+You arrive at the sink basin (1). You see faucet (1), sink (1), sink basin (1).
+Act: go to toilet 1
+You arrive at the toilet (1). The toilet (1) is closed. You see dish sponge (1), soap bar (1), spray bottle (2), toilet (1), toilet paper (1).
+Act: open toilet 1
+You open toilet (1). You see dish sponge (1), soap bar (1), spray bottle (2), toilet (1), toilet paper (1).
+Think: I find soap bar 1. Now, I need to pick it up.
+OK.
+Act: go to soap bar 1
+You arrive at the soap bar (1). You see dish sponge (1), soap bar (1), spray bottle (2), toilet (1), toilet paper (1).
+Act: pick up soap bar 1
+You pick up soap bar (1). You hold soap bar (1).
+Think: Now, I need to find sink basin.
+OK.
+Query: find_objects({'label': 'sink basin'})
+Info: [{'name_id_nl': 'sink basin 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'bathroom 1'}]
+Think: Sink basin 1 is in bathroom 1.
+OK.
+Act: go to bathroom 1
+You move to the bathroom (1). Looking quickly around the room, you see sink (1), sink basin (1), toilet (1). You hold soap bar (1).
+Act: go to sink basin 1
+You arrive at the sink basin (1). You see faucet (1), sink (1), sink basin (1). You hold soap bar (1).
+Act: put down soap bar 1
+You put soap bar (1) in sink basin (1).
+Think: Now, I need to turn on faucet 1 briefly and turn off to wash soap bar 1.
+OK.
+Act: turn on faucet 1
+You turn on faucet (1).
+Act: turn off faucet 1
+You turn off faucet (1).
+Think: Now, I need to pick up soap bar 1 and find sink basin.
+OK.
+Act: pick up soap bar 1
+You pick up soap bar (1). You hold soap bar (1).
+Query: find_objects({'label': 'sink basin'})
+Info: [{'name_id_nl': 'sink basin 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'bathroom 1'}]
+Think: Sink basin 1 is in bathroom 1.
+OK.
+Act: go to bathroom 1
+You move to the bathroom (1). Looking quickly around the room, you see sink (1), sink basin (1), toilet (1). You hold soap bar (1).
+Act: go to sink basin 1
+You arrive at the sink basin (1). You see faucet (1), sink (1), sink basin (1). You hold soap bar (1).
+Act: put down soap bar 1
+You put soap bar (1) in sink basin (1).
+Think: Now I complete the task.
+OK.
+Act: done

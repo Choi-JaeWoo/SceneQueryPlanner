@@ -1,0 +1,103 @@
+Your task is to: Can you bring 1 apple, 1 pancake, and 1 wine to the kitchen table, please?
+You are in the house, and there are 4 rooms: bathroom 1, bedroom 1, kitchen 1, living room 1. You are in the middle of a bedroom 1. Looking quickly around the room, you see bed 1, cabinet 1, chair 6, closet 2, nightstand 2, sofa 3.
+Think: To solve the task I need to find and pick up apple, find kitchen table and put down apple, find and pick up pancake, find kitchen table and put down pancake, find and pick up wine, find kitchen table and put down wine.
+OK.
+Think: First, I need to find and pick up apple.
+OK.
+Query: find_objects({'label': 'apple'})
+Info: 
+Think: I have not seen apple yet. Now I need to check where to search. First, I will search kitchen 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'kitchen 1', 'child_node_attrs': {'visited': False}})
+Info: bookshelf 1, bowl 1, chair (2, 3, 4, 5), dishwasher 1, faucet 1, fridge 1, kitchen cabinet (1, 2, 3, 4, 5, 6, 7, 8), kitchen counter 1, kitchen table 1, light switch 2, microwave oven 1, oven tray 1, sink 1, slice of bread (1, 2), sofa 2, stove 1, toaster 1, tv 2
+Think: In kitchen 1, the apple is likely to appear in/on bookshelf 1, bowl 1, chair (2, 3, 4, 5), dishwasher 1, fridge 1, kitchen cabinet (1, 2, 3, 4, 5, 6, 7, 8), kitchen counter 1, kitchen table 1, microwave oven 1, oven tray 1, sink 1, slice of bread (1, 2), sofa 2, stove 1, toaster 1, tv 2. I can check each place one by one until I find apple.
+OK.
+Act: go to kitchen 1
+You move to the kitchen 1. Looking quickly around the room, you see bookshelf 1, chair (2, 3, 4, 5), dishwasher 1, faucet 1, fridge 1, kitchen cabinet (1, 2, 3, 4, 5, 6, 7, 8), kitchen counter 1, kitchen table 1, microwave oven 1, sink 1, sofa 2, stove 1, toaster 1, tv 2.
+Act: go to bookshelf 1
+You arrive at the bookshelf 1. The bookshelf 1 is closed. You see bookshelf 1, light switch 2.
+Act: open bookshelf 1
+You can't open bookshelf (1) because of low-level controller problem.
+Act: go to bowl 2
+You arrive at the bowl 2. You see bananas (1, 2), bowl 2, cell phone 2, chair (4, 5), condiment shaker (1, 2), dishwashing liquid 1, faucet 1, fridge 1, kitchen cabinet (5, 6, 7), kitchen counter 1, kitchen table 1, mug (2, 3), sink 1, washing sponge 1.
+Act: go to chair 2
+You arrive at the chair 2. You see chair (2, 3, 5), chocolate syrup 1, cooking pot 1, kitchen counter 1, kitchen table 1, mug (2, 3), stove 1.
+Act: go to chair 3
+You arrive at the chair 3. You see chair (2, 3), kitchen counter 1, kitchen table 1, pie 1.
+Act: go to chair 4
+You arrive at the chair 4. You see bananas (1, 2), bowl 2, chair (4, 5), condiment shaker (1, 2), dishwashing liquid 1, fridge 1, kitchen cabinet (5, 6), kitchen counter 1, kitchen table 1, mug (2, 3), pie 1, sink 1.
+Act: go to chair 5
+You arrive at the chair 5. You see bananas (1, 2), bowl 2, cell phone 2, chair (4, 5), condiment shaker (1, 2), dishwashing liquid 1, faucet 1, fridge 1, kitchen cabinet (5, 6, 7), kitchen counter 1, kitchen table 1, mug (2, 3), pie 1, sink 1, washing sponge 1.
+Act: go to dishwasher 1
+You arrive at the dishwasher 1. The dishwasher 1 is closed. You see cell phone 2, cereal 1, chair (2, 5), chocolate syrup 1, cutlets 1, dishwasher 1, kitchen cabinet (2, 3), kitchen counter 1, kitchen table 1, microwave oven 1, minced meat 1, mug (2, 3).
+Act: open dishwasher 1
+You open dishwasher 1. You see cell phone 2, cereal 1, chair (2, 5), chocolate syrup 1, cutlets 1, dishwasher 1, kitchen cabinet (2, 3), kitchen counter 1, kitchen table 1, microwave oven 1, minced meat 1, mug (2, 3), pancake 1
+Think: I find pancake 1. Now, I need to pick it up.
+OK.
+Act: pick up pancake 1
+You pick up pancake 1. You hold pancake 1.
+Think: Now, I need to find kitchen table and put down pancake 1.
+OK.
+Query: find_objects({'label': 'kitchen table'})
+Info: [{'name_id_nl': 'kitchen table 1', 'node_type': 'asset', 'properties': ['SURFACES', 'MOVABLE'], 'states': [], 'room': 'kitchen 1'}]
+Think: Kitchen table 1 is in kitchen 1.
+OK.
+Act: go to kitchen table 1
+You arrive at the kitchen table 1. You see bananas (1, 2), bowl 2, chair (4, 5), condiment shaker (1, 2), fridge 1, kitchen cabinet 5, kitchen counter 1, kitchen table 1, mug (2, 3), pancake 1, pie 1. You hold pancake 1.
+Act: put down pancake 1
+You put pancake 1 on kitchen table 1.
+Think: Now, I need to find and pick up wine.
+OK.
+Query: find_objects({'label': 'wine'})
+Info: 
+Think: I have not seen wine yet. Now, I need to check where to search. First, I will search kitchen 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'kitchen 1', 'child_node_attrs': {'visited': False}})
+Info: bowl 1, faucet 1, fridge 1, kitchen cabinet (1, 2, 3, 4, 5, 6, 7, 8), kitchen counter 1, light switch 2, microwave oven 1, oven tray 1, sink 1, slice of bread (1, 2), sofa 2, stove 1, toaster 1, tv 2
+Think: In kitchen 1, the wine is likely to appear in/on bowl 1, fridge 1, kitchen cabinet (1, 2, 3, 4, 5, 6, 7, 8), kitchen counter 1, microwave oven 1, oven tray 1, sink 1, slice of bread (1, 2), sofa 2, stove 1, toaster 1, tv 2. I can check each place one by one until I find wine.
+OK.
+Act: go to bowl 2
+You arrive at the bowl 2. You see bananas (1, 2), bowl 2, cell phone 2, chair (4, 5), condiment shaker (1, 2), dishwashing liquid 1, faucet 1, fridge 1, kitchen cabinet (5, 6, 7), kitchen counter 1, kitchen table 1, mug (2, 3), pancake 1, sink 1, washing sponge 1.
+Act: go to faucet 1
+You arrive at the faucet 1. You see bananas (1, 2), bowl 2, cell phone 2, chair (4, 5), condiment shaker (1, 2), dishwashing liquid 1, faucet 1, fridge 1, kitchen cabinet (5, 6, 7), kitchen counter 1, kitchen table 1, mug (2, 3), pancake 1, sink 1, washing sponge 1.
+Act: go to fridge 1
+You arrive at the fridge 1. The fridge 1 is closed. You see bananas (1, 2), bowl 2, chair (4, 5), condiment shaker (1, 2), fridge 1, kitchen cabinet 5, kitchen counter 1, kitchen table 1, mug (2, 3), pancake 1, pie 1, sofa 2.
+Act: open fridge 1
+You open fridge 1. You see apple 1, bananas (1, 2), bowl 2, chair (4, 5), condiment shaker (1, 2), fridge 1, juice 1, kitchen cabinet 5, kitchen counter 1, kitchen table 1, mug (2, 3), pancake 1, pie 1, sofa 2, wine 1
+Think: I find wine 1. Now, I need to pick it up.
+OK.
+Act: pick up wine 1
+You pick up wine 1. You hold wine 1.
+Think: Now, I need to find kitchen table and put down wine 1.
+OK.
+Query: find_objects({'label': 'kitchen table'})
+Info: [{'name_id_nl': 'kitchen table 1', 'node_type': 'asset', 'properties': ['SURFACES', 'MOVABLE'], 'states': [], 'room': 'kitchen 1'}]
+Think: Kitchen table 1 is in kitchen 1.
+OK.
+Act: go to kitchen table 1
+You arrive at the kitchen table 1. You see apple 1, bananas (1, 2), bowl 2, chair (4, 5), condiment shaker (1, 2), fridge 1, juice 1, kitchen cabinet 5, kitchen counter 1, kitchen table 1, mug (2, 3), pancake 1, pie 1, wine 1. You hold wine 1.
+Act: put down wine 1
+You put wine 1 on kitchen table 1.
+Think: Now, I need to find and pick up apple.
+OK.
+Query: find_objects({'label': 'apple'})
+Info: [{'name_id_nl': 'apple 1', 'node_type': 'object', 'properties': ['GRABBABLE', 'MOVABLE'], 'states': []}]
+Think: Apple 1 is in fridge 1.
+OK.
+Act: go to fridge 1
+You arrive at the fridge 1. The fridge 1 is open. You see apple 1, bananas (1, 2), bowl 2, chair (4, 5), condiment shaker (1, 2), fridge 1, juice 1, kitchen cabinet 5, kitchen counter 1, kitchen table 1, mug (2, 3), pancake 1, pie 1, sofa 2, wine 1.
+Act: pick up apple 1
+You pick up apple 1. You hold apple 1.
+Think: Now, I need to find kitchen table and put down apple 1.
+OK.
+Query: find_objects({'label': 'kitchen table'})
+Info: [{'name_id_nl': 'kitchen table 1', 'node_type': 'asset', 'properties': ['SURFACES', 'MOVABLE'], 'states': [], 'room': 'kitchen 1'}]
+Think: Kitchen table 1 is in kitchen 1.
+OK.
+Act: go to kitchen table 1
+You arrive at the kitchen table 1. You see apple 1, bananas (1, 2), bowl 2, chair (4, 5), condiment shaker (1, 2), fridge 1, juice 1, kitchen cabinet 5, kitchen counter 1, kitchen table 1, mug (2, 3), pancake 1, pie 1, wine 1. You hold apple 1.
+Act: put down apple 1
+You put apple 1 on kitchen table 1.
+Think: Now I complete task.
+OK.
+Act: done

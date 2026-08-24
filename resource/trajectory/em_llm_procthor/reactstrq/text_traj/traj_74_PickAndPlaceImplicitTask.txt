@@ -1,0 +1,71 @@
+Your task is to: Transfer all items from the countertop to the dining table.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a kitchen (1). Looking quickly around the room, you see chair (1, 2), countertop (1), dining table (1), fridge (1), garbage bag (1).
+Think: To solve the task, I need to find countertop and check what is on top of it. Then, I need to move everything on countertop to dining table.
+OK.
+Think: First, I need to find countertop.
+OK.
+Query: find_objects({'label': 'countertop'})
+Info: [{'name_id_nl': 'countertop 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'kitchen 1'}]
+Think: I find countertop 1.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see bowl (1), countertop (1), dish sponge (1), mug (1), soap bottle (1), spray bottle (2).
+Think: Now, I need to check what is on top of countertop 1.
+OK.
+Query: get_edges_for_node({'node_id': 'countertop 1', 'relation': 'ON'})
+Info: [('bowl 1', 'countertop 1', 'ON'), ('dish sponge 1', 'countertop 1', 'ON'), ('mug 1', 'countertop 1', 'ON'), ('soap bottle 1', 'countertop 1', 'ON'), ('spray bottle 2', 'countertop 1', 'ON')]
+Think: Now, I need to move bowl 1, dish sponge 1, mug 1, soap bottle 1, spray bottle 2 to dining table.
+OK.
+Act: go to bowl 1
+You arrive at the bowl (1). You see bowl (1), countertop (1), dish sponge (1), mug (1), soap bottle (1), spray bottle (2).
+Act: pick up bowl 1
+You pick up bowl (1). You hold bowl (1).
+Think: Now, I need to find dining table.
+OK.
+Query: find_objects({'label': 'dining table'})
+Info: [{'name_id_nl': 'dining table 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'kitchen 1'}, {'name_id_nl': 'dining table 2', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}]
+Think: I find dining table 1.
+OK.
+Act: go to dining table 1
+You arrive at the dining table (1). You see cell phone (2), chair (1, 2), dining table (1), house plant (1). You hold bowl (1).
+Act: put down bowl 1
+You put bowl (1) in dining table (1).
+Act: go to dish sponge 1
+You arrive at the dish sponge (1). You see countertop (1), dish sponge (1), mug (1), soap bottle (1), spray bottle (2).
+Act: pick up dish sponge 1
+You pick up dish sponge (1). You hold dish sponge (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see bowl (1), cell phone (2), chair (1, 2), dining table (1), house plant (1). You hold dish sponge (1).
+Act: put down dish sponge 1
+You put dish sponge (1) in dining table (1).
+Act: go to mug 1
+You arrive at the mug (1). You see countertop (1), mug (1), soap bottle (1), spray bottle (2).
+Act: pick up mug 1
+You pick up mug (1). You hold mug (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see bowl (1), cell phone (2), chair (1, 2), dining table (1), dish sponge (1), house plant (1). You hold mug (1).
+Act: put down mug 1
+You put mug (1) in dining table (1).
+Act: go to soap bottle 1
+You arrive at the soap bottle (1). You see countertop (1), soap bottle (1), spray bottle (2).
+Act: pick up soap bottle 1
+You pick up soap bottle (1). You hold soap bottle (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see bowl (1), cell phone (2), chair (1, 2), dining table (1), dish sponge (1), house plant (1), mug (1). You hold soap bottle (1).
+Act: put down soap bottle 1
+You put soap bottle (1) in dining table (1).
+Act: go to spray bottle 2
+You arrive at the spray bottle (2). You see countertop (1), spray bottle (2).
+Act: pick up spray bottle 2
+You pick up spray bottle (2). You hold spray bottle (2).
+Act: go to dining table 1
+You arrive at the dining table (1). You see bowl (1), cell phone (2), chair (1, 2), dining table (1), dish sponge (1), house plant (1), mug (1), soap bottle (1). You hold spray bottle (2).
+Act: put down spray bottle 2
+You put spray bottle (2) in dining table (1).
+Think: Now I need to check what's left on countertop 1.
+OK.
+Query: get_edges_for_node({'node_id': 'countertop 1', 'relation': 'ON'})
+Info: 
+Think: Now I complete the task.
+OK.
+Act: done

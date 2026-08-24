@@ -1,0 +1,2 @@
+Your task is to: Put a pillow and a book on the armchair.
+Max decision steps reached.

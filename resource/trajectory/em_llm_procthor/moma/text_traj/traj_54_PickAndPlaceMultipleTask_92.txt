@@ -1,0 +1,7 @@
+Your task is to: Collect a pen and a pencil and place them on the countertop.
+You put pencil (1) in countertop (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- kitchen 1: [painting 1, painting 3, television 1, vase 1, apple 1, cell phone 1, (chair 5), (chair 1), (chair 2), (chair 3), (chair 6), (chair 4), countertop 1, credit card 1, (dining table 1), (fridge 1), (garbage can 1), house plant 1, knife 1, lettuce 1, mug 1, painting 2, pan 1, pen 1, pencil 1, pepper shaker 1, plate 1, spatula 1, spray bottle 1, (stool 1)]
+Your 5 previous actions were: go to pencil 1 (success), pick up pencil 1 (success), go to kitchen 1 (success), go to countertop 1 (success), put down pencil 1 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I put pencil 1 in countertop 1. Now, I need to find and pick up pen. Pen 1 is in kitchen 1.
+Act: go to pen 1

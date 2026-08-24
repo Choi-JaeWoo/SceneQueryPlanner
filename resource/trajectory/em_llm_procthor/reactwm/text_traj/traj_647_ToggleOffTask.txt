@@ -1,0 +1,39 @@
+Your task is to: Make sure all active televisions and cell phones are turned off.
+You are in the house, and there are 2 rooms: kitchen (1), living room (1). You are in the middle of a living room (1). Looking quickly around the room, you see TV stand (1), armchair (1), dining table (2), painting (3, 4), shelf (1), sofa (1).
+Think: To solve the task, I need to find and turn off all active televisions and cell phones.
+OK.
+Think: First, I need to check if I saw television and cell phone.
+OK.
+Query: recall location of television
+You have not seen television before.
+Query: recall location of cell phone
+You have not seen cell phone before.
+Think: I have not seen television and cell phone yet. I need to check living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), armchair (1), dining table (2), painting (3, 4), shelf (1), sofa (1).
+Think: In living room 1, I can check TV stand 1, armchair 1, dining table 2, shelf 1 until I find television or cell phone.
+OK.
+Act: go to TV stand 1
+You arrive at the TV stand (1). You see TV stand (1), box (1), cell phone (1), credit card (1), newspaper (1), shelf (1), television (1), vase (1).
+Think: I find television 1. Now, I need to turn it off.
+OK.
+Act: go to television 1
+You arrive at the television (1). You see TV stand (1), box (1), cell phone (1), credit card (1), newspaper (1), shelf (1), television (1), vase (1).
+Act: turn off television 1
+You turn off television (1).
+Think: I find cell phone 1. Now, I need to turn it off.
+OK.
+Act: go to cell phone 1
+You arrive at the cell phone (1). You see TV stand (1), box (1), cell phone (1), credit card (1), newspaper (1), shelf (1), television (1), vase (1).
+Act: turn off cell phone 1
+You turn off cell phone (1).
+Act: go to armchair 1
+You arrive at the armchair (1). You see armchair (1).
+Act: go to dining table 2
+You arrive at the dining table (2). You see book (1, 2), dining table (2), house plant (2).
+Act: go to shelf 1
+You arrive at the shelf (1). You see TV stand (1), box (1), cell phone (1), credit card (1), newspaper (1), shelf (1), television (1), vase (1).
+Think: Now I complete the task.
+OK.
+Act: done

@@ -1,0 +1,99 @@
+Your task is to: Get me a glass of wine, a cupcake and one pudding to the coffee table.
+You are in the house, and there are 4 rooms: bathroom 1, bedroom 1, kitchen 1, living room 1. You are in the middle of a kitchen 1. Looking quickly around the room, you see bench (1, 2), bookshelf 2, faucet 2, fridge 1, kitchen cabinet (1, 2, 3, 4), kitchen counter 1, kitchen table 1, microwave oven 1, sink 2, stove 1, toaster 1, tv 1.
+Think: To solve the task, I need to find and pick up glass of wine, find coffee table and put down glass of wine, find and pick up cupcake, find coffee table and put down cupcake, find and pick up pudding, find coffee table and put down pudding.
+OK.
+Think: First, I need to find and pick up glass of wine. The glass of wine is more likely to appear in kitchen 1.
+OK.
+Think: In kitchen 1, the glass of wine is likely to appear in/on fridge 1, kitchen cabinet (1, 2, 3, 4), kitchen counter 1. I can check each place one by one until I find it.
+OK.
+Act: go to fridge 1
+You arrive at the fridge 1. The fridge 1 is closed. You see bell pepper (1, 2, 5, 6), bowl 3, clock 1, fridge 1, kitchen cabinet 4, kitchen counter 1, light switch 3, microwave oven 1, salmon 1.
+Act: open fridge 1
+You open fridge 1. You see apple 2, bell pepper (1, 2, 5, 6), bowl 3, clock 1, fridge 1, kitchen cabinet 4, kitchen counter 1, light switch 3, microwave oven 1, salmon 1, wine 2
+Act: go to kitchen cabinet 1
+You arrive at the kitchen cabinet 1. The kitchen cabinet 1 is closed. You see candy bar 1, chips (1, 2), chocolate syrup 1, coffee pot 1, dishwashing liquid 1, faucet 2, frying pan 1, kitchen cabinet (1, 2), kitchen counter 1, sink 2, stove 1, toaster 1.
+Act: open kitchen cabinet 1
+You open kitchen cabinet 1. You see candy bar 1, chips (1, 2), chocolate syrup 1, coffee pot 1, dishwashing liquid 1, frying pan 1, kitchen cabinet (1, 2), kitchen counter 1, sink 2, stove 1, toaster 1
+Act: go to kitchen cabinet 2
+You arrive at the kitchen cabinet 2. The kitchen cabinet 2 is closed. You see bell pepper (1, 2, 3, 4, 5, 6), bowl 3, chocolate syrup 1, coffee pot 1, dishwashing liquid 1, faucet 2, frying pan 1, kitchen cabinet (1, 2, 3), kitchen counter 1, sink 2, stove 1, toaster 1, washing sponge 1.
+Act: open kitchen cabinet 2
+You open kitchen cabinet 2. You see bell pepper (1, 2, 3, 4, 5, 6), bowl 3, coffee pot 1, dishwashing liquid 1, faucet 2, frying pan 1, kitchen cabinet (1, 2, 3), kitchen counter 1, sink 2, stove 1, toaster 1, washing sponge 1
+Act: go to kitchen cabinet 3
+You arrive at the kitchen cabinet 3. The kitchen cabinet 3 is closed. You see bell pepper (1, 2, 3, 4, 5, 6), bowl 3, coffee pot 1, dishwashing liquid 1, faucet 2, kitchen cabinet (1, 2, 3, 4), kitchen counter 1, microwave oven 1, salmon 1, sink 2, toaster 1, washing sponge 1.
+Act: open kitchen cabinet 3
+You open kitchen cabinet 3. You see bell pepper (1, 2, 3, 4, 5, 6), bowl 3, coffee pot 1, dishwashing liquid 1, faucet 2, kitchen cabinet (1, 2, 3, 4), kitchen counter 1, microwave oven 1, pudding 2, salmon 1, sink 2, toaster 1, washing sponge 1
+Act: go to kitchen cabinet 4
+You arrive at the kitchen cabinet 4. The kitchen cabinet 4 is closed. You see apple 2, bell pepper (1, 2, 3, 4, 5, 6), bowl 3, dishwashing liquid 1, faucet 2, fridge 1, kitchen cabinet (2, 3, 4), kitchen counter 1, microwave oven 1, pudding 2, salmon 1, sink 2, toaster 1, washing sponge 1, wine 2.
+Act: open kitchen cabinet 4
+You open kitchen cabinet 4. You see apple 2, bell pepper (1, 2, 3, 4, 5, 6), bowl 3, cupcake (1, 2), dishwashing liquid 1, faucet 2, fridge 1, kitchen cabinet (2, 3, 4), kitchen counter 1, microwave oven 1, pudding 2, salmon 1, sink 2, toaster 1, washing sponge 1, wine 2
+Act: go to kitchen counter 1
+You arrive at the kitchen counter 1. You see apple 3, bell pepper (1, 2, 3, 4, 5, 6), bench 2, bowl 3, cupcake (1, 2), dishwashing liquid 1, faucet 2, juice 1, kitchen cabinet (1, 2, 3, 4), kitchen counter 1, microwave oven 1, pudding 2, salmon 1, sink 2, toaster 1, washing sponge 1.
+Think: I find glass of wine 1. Now, I need to pick it up.
+OK.
+Act: pick up wine 2
+You can't pick up wine 2 because it's not close to you.
+Act: go to wine 2
+You arrive at the wine 2. You see apple 2, bell pepper (1, 2, 3, 4, 5, 6), bowl 3, cupcake (1, 2), fridge 1, kitchen cabinet (3, 4), kitchen counter 1, microwave oven 1, salmon 1, washing sponge 1, wine 2.
+Act: pick up wine 2
+You pick up wine 2. You hold wine 2.
+Think: Now I need to find coffee table and put down glass of wine 1.
+OK.
+Act: go to living room 1
+You move to the living room 1. Looking quickly around the room, you see bookshelf 3, cabinet 1, chair 3, closet 3, coffee table 2, computer 2, desk 2, sofa 1, tv 2. You hold wine 2.
+Act: go to coffee table 2
+You arrive at the coffee table 2. You see cell phone 3, coffee table 2, sofa 1, wine 2. You hold wine 2.
+Act: put down wine 2
+You put wine 2 on coffee table 2.
+Think: Now I need to find and pick up cupcake.
+OK.
+Think: I have not seen cupcake yet. In kitchen 1, the cupcake is likely to appear in/on kitchen cabinet (1, 2, 3, 4), kitchen counter 1. I can check each place one by one until I find cupcake.
+OK.
+Act: go to kitchen 1
+You move to the kitchen 1. Looking quickly around the room, you see bench (1, 2), bookshelf 2, faucet 2, fridge 1, kitchen cabinet (1, 2, 3, 4), kitchen counter 1, kitchen table 1, microwave oven 1, sink 2, stove 1, toaster 1, tv 1.
+Act: go to kitchen cabinet 1
+You arrive at the kitchen cabinet 1. The kitchen cabinet 1 is open. You see candy bar 1, chips (1, 2), chocolate syrup 1, coffee pot 1, dishwashing liquid 1, faucet 2, frying pan 1, kitchen cabinet (1, 2), kitchen counter 1, sink 2, stove 1, toaster 1.
+Act: go to kitchen cabinet 2
+You arrive at the kitchen cabinet 2. The kitchen cabinet 2 is open. You see bell pepper (1, 2, 3, 4, 5, 6), bowl 3, chocolate syrup 1, coffee pot 1, dishwashing liquid 1, faucet 2, frying pan 1, kitchen cabinet (1, 2, 3), kitchen counter 1, pudding 2, sink 2, stove 1, toaster 1, washing sponge 1.
+Act: go to kitchen cabinet 3
+You arrive at the kitchen cabinet 3. The kitchen cabinet 3 is open. You see bell pepper (1, 2, 3, 4, 5, 6), bowl 3, coffee pot 1, cupcake (1, 2), dishwashing liquid 1, faucet 2, kitchen cabinet (1, 2, 3, 4), kitchen counter 1, microwave oven 1, pudding 2, salmon 1, sink 2, toaster 1, washing sponge 1.
+Act: go to kitchen cabinet 4
+You arrive at the kitchen cabinet 4. The kitchen cabinet 4 is open. You see apple 2, bell pepper (1, 2, 3, 4, 5, 6), bowl 3, cupcake (1, 2), dishwashing liquid 1, faucet 2, fridge 1, kitchen cabinet (2, 3, 4), kitchen counter 1, microwave oven 1, pudding 2, salmon 1, sink 2, toaster 1, washing sponge 1.
+Act: go to kitchen counter 1
+You arrive at the kitchen counter 1. You see apple 3, bell pepper (1, 2, 3, 4, 5, 6), bench 2, bowl 3, cupcake (1, 2), dishwashing liquid 1, faucet 2, juice 1, kitchen cabinet (1, 2, 3, 4), kitchen counter 1, microwave oven 1, pudding 2, salmon 1, sink 2, toaster 1, washing sponge 1.
+Think: I find cupcake 1. Now, I need to pick it up.
+OK.
+Act: pick up cupcake 1
+You can't pick up cupcake (1) because of low-level controller problem.
+Act: go to cupcake 1
+You can't go to cupcake (1) because of low-level controller problem.
+Act: go to cupcake 2
+You arrive at the cupcake 2. You see apple 2, bell pepper (1, 2, 3, 4, 5, 6), bowl 3, cupcake (1, 2), dishwashing liquid 1, faucet 2, fridge 1, kitchen cabinet (2, 3, 4), kitchen counter 1, microwave oven 1, pudding 2, salmon 1, sink 2, toaster 1, washing sponge 1.
+Act: pick up cupcake 2
+You pick up cupcake 2. You hold cupcake 2.
+Think: Now I need to find coffee table and put down cupcake 1.
+OK.
+Act: go to living room 1
+You move to the living room 1. Looking quickly around the room, you see bookshelf 3, cabinet 1, chair 3, closet 3, coffee table 2, computer 2, desk 2, sofa 1, tv 2. You hold cupcake 2.
+Act: go to coffee table 2
+You arrive at the coffee table 2. You see cell phone 3, coffee table 2, cupcake 2, sofa 1, wine 2. You hold cupcake 2.
+Act: put down cupcake 2
+You put cupcake 2 on coffee table 2.
+Think: Now, I need to find and pick up pudding. I already found the pudding in kitchen cabinet 3.
+OK.
+Act: go to kitchen 1
+You move to the kitchen 1. Looking quickly around the room, you see bench (1, 2), bookshelf 2, faucet 2, fridge 1, kitchen cabinet (1, 2, 3, 4), kitchen counter 1, kitchen table 1, microwave oven 1, sink 2, stove 1, toaster 1, tv 1.
+Act: go to kitchen cabinet 3
+You arrive at the kitchen cabinet 3. The kitchen cabinet 3 is open. You see bell pepper (1, 2, 3, 4, 5, 6), bowl 3, coffee pot 1, cupcake 1, dishwashing liquid 1, faucet 2, kitchen cabinet (1, 2, 3, 4), kitchen counter 1, microwave oven 1, pudding 2, salmon 1, sink 2, toaster 1, washing sponge 1.
+Act: pick up pudding 2
+You pick up pudding 2. You hold pudding 2.
+Think: Now I need to find coffee table and put down pudding 2.
+OK.
+Act: go to living room 1
+You move to the living room 1. Looking quickly around the room, you see bookshelf 3, cabinet 1, chair 3, closet 3, coffee table 2, computer 2, desk 2, sofa 1, tv 2. You hold pudding 2.
+Act: go to coffee table 2
+You arrive at the coffee table 2. You see cell phone 3, coffee table 2, cupcake 2, pudding 2, sofa 1, wine 2. You hold pudding 2.
+Act: put down pudding 2
+You put pudding 2 on coffee table 2.
+Think: Now I complete the task.
+OK.
+Act: done

@@ -1,0 +1,7 @@
+Your task is to: Collect a pen and a sliced potato and place them on the countertop.
+You arrive at the potato (1). You see chair (1, 2), dining table (1), mug (1), painting (2), plate (1), potato (1). You hold butter knife (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- kitchen 1: [painting 3, painting 1, house plant 1, butter knife 1, butter knife 2, (chair 2), (chair 1), countertop 1, (dining table 1), (fridge 1), kettle 1, mug 1, painting 2, pen 1, plate 1, potato 1, salt shaker 1, soap bottle 1, spatula 1, toaster 1, vase 1, wine bottle 1]
+Your 5 previous actions were: go to countertop 1 (success), put down pen 1 (success), go to butter knife 1 (success), pick up butter knife 1 (success), go to potato 1 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I arrive at potato 1. I hold butter knife 1. Now, I need to slice potato 1.
+Act: slice potato 1

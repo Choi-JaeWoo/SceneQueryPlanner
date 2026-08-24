@@ -1,0 +1,9 @@
+Your task is to: Place a book on the armchair.
+You arrive at the box (1). The box (1) is closed. You see CD (1), book (4), box (1), drawer (6, 7, 8, 9, 10), key chain (1), pen (1), pencil (1), side table (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- bedroom 1: [television 1, book 3, book 2, book 1, pencil 2, statue 2, pillow 1, bowl 1, desk lamp 1, desk lamp 2, remote control 1, statue 1, book 5, cell phone 1, floor lamp 1, laptop 1, armchair 1, bed 2, bed 1, book 4, box 1, CD 1, chair 2, (chair 1), (desk 1), desk lamp 3, (dining table 1), drawer 6, drawer 7, drawer 8, drawer 9, drawer 10, drawer 5, drawer 2, drawer 1, drawer 3, drawer 4, dresser 1, key chain 1, pen 1, pencil 1, (shelf 2), shelf 1, (side table 1), vase 1]
+- (kitchen 1): [garbage bag 1, house plant 1, painting 1, painting 2, (countertop 1), (fridge 1), (dining table 2), (chair 3)]
+- (living room 1): [(armchair 2), (dining table 3), floor lamp 2, (garbage can 1), painting 3, painting 4, (shelf 4), (shelf 5), (shelf 8), (shelf 7), (shelf 6), (shelf 3), (sofa 1), (TV stand 1)]
+Your 5 previous actions were: go to bed 2 (success), go to bed 1 (success), go to chair 2 (success), go to armchair 1 (success), go to box 1 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I arrive at box 1. Box 1 is closed. I need to open box 1 to find book.
+Act: open box 1

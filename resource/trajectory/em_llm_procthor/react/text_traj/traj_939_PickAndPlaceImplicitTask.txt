@@ -1,0 +1,31 @@
+Your task is to: Move all the objects from the sofa to the dining table.
+You are in the house, and there are 3 rooms: bedroom (1), kitchen (1), living room (1). You are in the middle of a bedroom (1). Looking quickly around the room, you see armchair (1, 2), bed (1, 2), drawer (1, 2, 3, 4, 5, 6), dresser (1), floor lamp (1, 2), safe (1).
+Think: To solve the task, I need to find sofa and check what is on top of it. Then, I need to move everything on sofa to dining table.
+OK.
+Think: First, I need to find sofa. The sofa is more likely to appear in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), cabinet (1, 2), dining table (1), house plant (1), painting (3, 4), shelf (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), shelving unit (1, 2), sofa (1).
+Act: go to sofa 1
+You arrive at the sofa (1). You see laptop (2), pillow (3), sofa (1).
+Think: Now, I need to move laptop 2, pillow 3 to dining table.
+OK.
+Act: go to laptop 2
+You arrive at the laptop (2). The laptop (2) is open. You see laptop (2), pillow (3), sofa (1).
+Act: pick up laptop 2
+You pick up laptop (2). You hold laptop (2).
+Act: go to dining table 1
+You arrive at the dining table (1). You see book (4), bowl (2), cabinet (2), cell phone (4), credit card (2), dining table (1), key chain (1), newspaper (1), painting (3), pen (1), pencil (1), shelf (4, 5, 6), shelving unit (2), statue (2). You hold laptop (2).
+Act: put down laptop 2
+You put laptop (2) in dining table (1).
+Act: go to pillow 3
+You arrive at the pillow (3). You see pillow (3), sofa (1).
+Act: pick up pillow 3
+You pick up pillow (3). You hold pillow (3).
+Act: go to dining table 1
+You arrive at the dining table (1). You see book (4), bowl (2), cabinet (2), cell phone (4), credit card (2), dining table (1), key chain (1), laptop (2), newspaper (1), painting (3), pen (1), pencil (1), shelf (4, 5, 6), shelving unit (2), statue (2). You hold pillow (3).
+Act: put down pillow 3
+You put pillow (3) in dining table (1).
+Think: Now I complete the task.
+OK.
+Act: done

@@ -1,0 +1,9 @@
+Your task is to: Move all items from the receptacle made of wood and fabric onto the dining table.
+You pick up pillow (1). You hold pillow (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- bedroom 1: [baseball bat 1, painting 1, key chain 1, bed 1, (desk 1), (drawer 6), (drawer 5), (drawer 4), (drawer 3), (drawer 2), (drawer 1), (dresser 1), painting 2, pillow 1]
+- kitchen 1: [television 1, butter knife 2, cup 1, soap bottle 1, (chair 1), (countertop 1), cup 2, dining table 1, (fridge 1), knife 2, laptop 1, mug 1, (stool 1)]
+- (living room 1): [(box 1), (dining table 2), painting 4, painting 3, television 2]
+Your 5 previous actions were: put down laptop 1 (success), go to bedroom 1 (success), go to bed 1 (success), go to pillow 1 (success), pick up pillow 1 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I pick up pillow 1. Now, I need to find dining table to put down pillow 1. I find dining table 2 in living room 1. Now, I need to move to living room 1.
+Act: go to living room 1

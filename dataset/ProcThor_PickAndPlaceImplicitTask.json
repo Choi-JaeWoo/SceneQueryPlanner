@@ -1,0 +1,702 @@
+[
+  {
+    "env_id": 208,
+    "mode": "PickAndPlaceImplicitTask",
+    "instruction": [
+      "Move all the objects from the countertop to the TV stand.",
+      "Relocate all items from the countertop to the TV stand.",
+      "Transfer everything from the countertop to the TV stand.",
+      "Take all the objects from the countertop and put them on the TV stand."
+    ],
+    "task_goal": {
+      "empty_countertop": 1,
+      "moveTo_tvstand": 1
+    }
+  },
+  {
+    "env_id": 599,
+    "mode": "PickAndPlaceImplicitTask",
+    "instruction": [
+      "Move all the objects from the side table to the dining table.",
+      "Transfer all items from the side table to the dining table.",
+      "Remove everything from the side table and put it on the dining table.",
+      "Clear off the side table by moving all objects to the dining table."
+    ],
+    "task_goal": {
+      "empty_sidetable": 1,
+      "moveTo_diningtable": 1
+    }
+  },
+  {
+    "env_id": 908,
+    "mode": "PickAndPlaceImplicitTask",
+    "instruction": [
+      "Move all the objects from the countertop to the dining table.",
+      "Transfer all items from the countertop to the dining table.",
+      "Remove everything from the countertop and put it on the dining table.",
+      "Take all the objects off the countertop and place them on the dining table."
+    ],
+    "task_goal": {
+      "empty_countertop": 1,
+      "moveTo_diningtable": 1
+    }
+  },
+  {
+    "env_id": 288,
+    "mode": "PickAndPlaceImplicitTask",
+    "instruction": [
+      "Move all the objects from the bed to the dining table.",
+      "Transfer all items from the bed to the dining table.",
+      "Place all the objects from the bed onto the dining table.",
+      "Put everything from the bed on the dining table."
+    ],
+    "task_goal": {
+      "empty_bed": 1,
+      "moveTo_diningtable": 1
+    }
+  },
+  {
+    "env_id": 946,
+    "mode": "PickAndPlaceImplicitTask",
+    "instruction": [
+      "Move all the objects from the coffee table to the dresser.",
+      "Relocate all items from the coffee table to the dresser.",
+      "Take everything off the coffee table and put it in the dresser.",
+      "Transfer the contents of the coffee table to the dresser."
+    ],
+    "task_goal": {
+      "empty_coffeetable": 1,
+      "moveTo_dresser": 1
+    }
+  },
+  {
+    "env_id": 393,
+    "mode": "PickAndPlaceImplicitTask",
+    "instruction": [
+      "Move all the objects from the countertop to the dining table.",
+      "Transfer all items from the countertop to the dining table.",
+      "Remove everything from the countertop and put it on the dining table.",
+      "Take all the objects from the countertop and place them on the dining table."
+    ],
+    "task_goal": {
+      "empty_countertop": 1,
+      "moveTo_diningtable": 1
+    }
+  },
+  {
+    "env_id": 519,
+    "mode": "PickAndPlaceImplicitTask",
+    "instruction": [
+      "Move all the objects from the TV stand to the dining table.",
+      "Transfer everything from the TV stand to the dining table.",
+      "Take all the items off the TV stand and put them on the dining table.",
+      "Clear off the TV stand by moving all objects to the dining table."
+    ],
+    "task_goal": {
+      "empty_tvstand": 1,
+      "moveTo_diningtable": 1
+    }
+  },
+  {
+    "env_id": 284,
+    "mode": "PickAndPlaceImplicitTask",
+    "instruction": [
+      "Move all the objects from the coffee table to the countertop.",
+      "Transfer all items from the coffee table to the countertop.",
+      "Remove everything from the coffee table and put it on the countertop.",
+      "Clear the coffee table by moving all objects to the countertop."
+    ],
+    "task_goal": {
+      "empty_coffeetable": 1,
+      "moveTo_countertop": 1
+    }
+  },
+  {
+    "env_id": 327,
+    "mode": "PickAndPlaceImplicitTask",
+    "instruction": [
+      "Move all the objects from the dresser to the bed.",
+      "Transfer everything from the dresser to the bed.",
+      "Remove all items from the dresser and put them on the bed.",
+      "Take all the objects off the dresser and place them onto the bed."
+    ],
+    "task_goal": {
+      "empty_dresser": 1,
+      "moveTo_bed": 1
+    }
+  },
+  {
+    "env_id": 354,
+    "mode": "PickAndPlaceImplicitTask",
+    "instruction": [
+      "Move all the objects from the toilet to the dining table.",
+      "Transfer all items from the toilet to the dining table.",
+      "Remove everything from the toilet and put it on the dining table.",
+      "Take all the objects from the toilet and relocate them to the dining table."
+    ],
+    "task_goal": {
+      "empty_toilet": 1,
+      "moveTo_diningtable": 1
+    }
+  },
+  {
+    "env_id": 292,
+    "mode": "PickAndPlaceImplicitTask",
+    "instruction": [
+      "Move all the objects from the side table to the bed.",
+      "Transfer everything from the side table to the bed.",
+      "Clear the side table by moving all objects to the bed.",
+      "Remove all items from the side table and place them on the bed."
+    ],
+    "task_goal": {
+      "empty_sidetable": 1,
+      "moveTo_bed": 1
+    }
+  },
+  {
+    "env_id": 336,
+    "mode": "PickAndPlaceImplicitTask",
+    "instruction": [
+      "Move all the objects from the sofa to the dining table.",
+      "Transfer everything from the sofa to the dining table.",
+      "Remove all items from the sofa and put them on the dining table.",
+      "Take all the objects off the sofa and relocate them to the dining table."
+    ],
+    "task_goal": {
+      "empty_sofa": 1,
+      "moveTo_diningtable": 1
+    }
+  },
+  {
+    "env_id": 693,
+    "mode": "PickAndPlaceImplicitTask",
+    "instruction": [
+      "Move all the objects from the countertop to the dining table.",
+      "Transfer everything from the countertop to the dining table.",
+      "Put all the objects from the countertop onto the dining table.",
+      "Take all items off the countertop and put them on the dining table."
+    ],
+    "task_goal": {
+      "empty_countertop": 1,
+      "moveTo_diningtable": 1
+    }
+  },
+  {
+    "env_id": 339,
+    "mode": "PickAndPlaceImplicitTask",
+    "instruction": [
+      "Move all the objects from the toilet to the dining table.",
+      "Transfer all items from the toilet to the dining table.",
+      "Remove everything from the toilet and put it on the dining table.",
+      "Shift the contents of the toilet to the dining table."
+    ],
+    "task_goal": {
+      "empty_toilet": 1,
+      "moveTo_diningtable": 1
+    }
+  },
+  {
+    "env_id": 373,
+    "mode": "PickAndPlaceImplicitTask",
+    "instruction": [
+      "Move all the objects from the countertop to the dining table.",
+      "Transfer all items from the countertop to the dining table.",
+      "Clear the countertop by moving everything to the dining table.",
+      "Put all the objects from the countertop onto the dining table."
+    ],
+    "task_goal": {
+      "empty_countertop": 1,
+      "moveTo_diningtable": 1
+    }
+  },
+  {
+    "env_id": 201,
+    "mode": "PickAndPlaceImplicitTask",
+    "instruction": [
+      "Move all the objects from the sofa to the dining table.",
+      "Transfer everything from the sofa to the dining table.",
+      "Put all the objects from the sofa onto the dining table.",
+      "Shift the contents of the sofa to the dining table."
+    ],
+    "task_goal": {
+      "empty_sofa": 1,
+      "moveTo_diningtable": 1
+    }
+  },
+  {
+    "env_id": 620,
+    "mode": "PickAndPlaceImplicitTask",
+    "instruction": [
+      "Move all the objects from the countertop to the dining table.",
+      "Transfer everything from the countertop to the dining table.",
+      "Take all the objects from the countertop and put them on the dining table.",
+      "Remove all items from the countertop and relocate them to the dining table."
+    ],
+    "task_goal": {
+      "empty_countertop": 1,
+      "moveTo_diningtable": 1
+    }
+  },
+  {
+    "env_id": 822,
+    "mode": "PickAndPlaceImplicitTask",
+    "instruction": [
+      "Move all the objects from the dresser to the TV stand.",
+      "Transfer all items from the dresser to the TV stand.",
+      "Relocate everything from the dresser onto the TV stand.",
+      "Take all the objects off the dresser and put them on the TV stand."
+    ],
+    "task_goal": {
+      "empty_dresser": 1,
+      "moveTo_tvstand": 1
+    }
+  },
+  {
+    "env_id": 357,
+    "mode": "PickAndPlaceImplicitTask",
+    "instruction": [
+      "Move all the objects from the side table to the shelf.",
+      "Transfer all items from the side table to the shelf.",
+      "Relocate everything from the side table to the shelf.",
+      "Take all the objects from the side table and put them on the shelf."
+    ],
+    "task_goal": {
+      "empty_sidetable": 1,
+      "moveTo_shelf": 1
+    }
+  },
+  {
+    "env_id": 185,
+    "mode": "PickAndPlaceImplicitTask",
+    "instruction": [
+      "Move all the objects from the countertop to the dining table.",
+      "Transfer all items from the countertop to the dining table.",
+      "Remove everything from the countertop and put it on the dining table.",
+      "Take all the objects from the countertop and place them on the dining table."
+    ],
+    "task_goal": {
+      "empty_countertop": 1,
+      "moveTo_diningtable": 1
+    }
+  },
+  {
+    "env_id": 416,
+    "mode": "PickAndPlaceImplicitTask",
+    "instruction": [
+      "Move all the objects from the TV stand to the dining table.",
+      "Transfer everything from the TV stand to the dining table.",
+      "Remove all items from the TV stand and put them on the dining table.",
+      "Take all the objects off the TV stand and relocate them to the dining table."
+    ],
+    "task_goal": {
+      "empty_tvstand": 1,
+      "moveTo_diningtable": 1
+    }
+  },
+  {
+    "env_id": 938,
+    "mode": "PickAndPlaceImplicitTask",
+    "instruction": [
+      "Move all the objects from the sofa to the dining table.",
+      "Transfer all items from the sofa to the dining table.",
+      "Put everything from the sofa onto the dining table.",
+      "Shift all the objects from the sofa to the dining table."
+    ],
+    "task_goal": {
+      "empty_sofa": 1,
+      "moveTo_diningtable": 1
+    }
+  },
+  {
+    "env_id": 279,
+    "mode": "PickAndPlaceImplicitTask",
+    "instruction": [
+      "Move all the objects from the cabinet to the dining table.",
+      "Transfer all items from the cabinet to the dining table.",
+      "Remove everything from the cabinet and put it on the dining table.",
+      "Take all the objects off the cabinet and place them on the dining table."
+    ],
+    "task_goal": {
+      "empty_cabinet": 1,
+      "moveTo_diningtable": 1
+    }
+  },
+  {
+    "env_id": 203,
+    "mode": "PickAndPlaceImplicitTask",
+    "instruction": [
+      "Move all the objects from the countertop to the dining table.",
+      "Transfer all items from the countertop to the dining table.",
+      "Remove everything from the countertop and put it on the dining table.",
+      "Take all the objects off the countertop and place them on the dining table."
+    ],
+    "task_goal": {
+      "empty_countertop": 1,
+      "moveTo_diningtable": 1
+    }
+  },
+  {
+    "env_id": 251,
+    "mode": "PickAndPlaceImplicitTask",
+    "instruction": [
+      "Move all the objects from the bed to the dining table.",
+      "Transfer all items from the bed to the dining table.",
+      "Remove everything from the bed and put it on the dining table.",
+      "Take all the objects off the bed and place them on the dining table."
+    ],
+    "task_goal": {
+      "empty_bed": 1,
+      "moveTo_diningtable": 1
+    }
+  },
+  {
+    "env_id": 683,
+    "mode": "PickAndPlaceImplicitTask",
+    "instruction": [
+      "Move all the objects from the dresser to the dining table.",
+      "Transfer all items from the dresser to the dining table.",
+      "Remove everything from the dresser and put it on the dining table.",
+      "Take all the objects off the dresser and relocate them to the dining table."
+    ],
+    "task_goal": {
+      "empty_dresser": 1,
+      "moveTo_diningtable": 1
+    }
+  },
+  {
+    "env_id": 298,
+    "mode": "PickAndPlaceImplicitTask",
+    "instruction": [
+      "Move all the objects from the sofa to the dining table.",
+      "Transfer everything from the sofa to the dining table.",
+      "Take all the items from the sofa and put them on the dining table.",
+      "Remove all objects from the sofa and place them on the dining table."
+    ],
+    "task_goal": {
+      "empty_sofa": 1,
+      "moveTo_diningtable": 1
+    }
+  },
+  {
+    "env_id": 344,
+    "mode": "PickAndPlaceImplicitTask",
+    "instruction": [
+      "Move all the objects from the side table to the dining table.",
+      "Transfer all items from the side table to the dining table.",
+      "Remove everything from the side table and put it on the dining table.",
+      "Take all the objects off the side table and place them on the dining table."
+    ],
+    "task_goal": {
+      "empty_sidetable": 1,
+      "moveTo_diningtable": 1
+    }
+  },
+  {
+    "env_id": 435,
+    "mode": "PickAndPlaceImplicitTask",
+    "instruction": [
+      "Move all the objects from the countertop to the dining table.",
+      "Transfer all items from the countertop to the dining table.",
+      "Put all the objects from the countertop onto the dining table.",
+      "Remove everything from the countertop and place it on the dining table."
+    ],
+    "task_goal": {
+      "empty_countertop": 1,
+      "moveTo_diningtable": 1
+    }
+  },
+  {
+    "env_id": 642,
+    "mode": "PickAndPlaceImplicitTask",
+    "instruction": [
+      "Move all the objects from the dining table to the countertop.",
+      "Transfer everything from the dining table to the countertop.",
+      "Remove all items from the dining table and place them on the countertop.",
+      "Shift the contents of the dining table over to the countertop."
+    ],
+    "task_goal": {
+      "empty_diningtable": 1,
+      "moveTo_countertop": 1
+    }
+  },
+  {
+    "env_id": 26,
+    "mode": "PickAndPlaceImplicitTask",
+    "instruction": [
+      "Move all the objects from the countertop to the dining table.",
+      "Transfer everything from the countertop to the dining table.",
+      "Put all the objects from the countertop onto the dining table.",
+      "Remove all items from the countertop and place them on the dining table."
+    ],
+    "task_goal": {
+      "empty_countertop": 1,
+      "moveTo_diningtable": 1
+    }
+  },
+  {
+    "env_id": 964,
+    "mode": "PickAndPlaceImplicitTask",
+    "instruction": [
+      "Move all the objects from the TV stand to the dining table.",
+      "Transfer everything from the TV stand to the dining table.",
+      "Remove all items from the TV stand and put them on the dining table.",
+      "Take all the objects off the TV stand and relocate them to the dining table."
+    ],
+    "task_goal": {
+      "empty_tvstand": 1,
+      "moveTo_diningtable": 1
+    }
+  },
+  {
+    "env_id": 194,
+    "mode": "PickAndPlaceImplicitTask",
+    "instruction": [
+      "Move all the objects from the side table to the countertop.",
+      "Transfer everything from the side table to the countertop.",
+      "Put all the objects from the side table onto the countertop.",
+      "Remove all items from the side table and place them on the countertop."
+    ],
+    "task_goal": {
+      "empty_sidetable": 1,
+      "moveTo_countertop": 1
+    }
+  },
+  {
+    "env_id": 314,
+    "mode": "PickAndPlaceImplicitTask",
+    "instruction": [
+      "Move all the objects from the bed to the dining table.",
+      "Transfer everything from the bed to the dining table.",
+      "Remove all objects from the bed and put them on the dining table.",
+      "Take all items off the bed and relocate them to the dining table."
+    ],
+    "task_goal": {
+      "empty_bed": 1,
+      "moveTo_diningtable": 1
+    }
+  },
+  {
+    "env_id": 59,
+    "mode": "PickAndPlaceImplicitTask",
+    "instruction": [
+      "Move all the objects from the dining table to the countertop.",
+      "Transfer everything from the dining table to the countertop.",
+      "Clear the dining table by moving all objects to the countertop.",
+      "Remove all items from the dining table and place them on the countertop."
+    ],
+    "task_goal": {
+      "empty_diningtable": 1,
+      "moveTo_countertop": 1
+    }
+  },
+  {
+    "env_id": 927,
+    "mode": "PickAndPlaceImplicitTask",
+    "instruction": [
+      "Move all the objects from the side table to the countertop.",
+      "Transfer everything from the side table to the countertop.",
+      "Take all the objects from the side table and put them on the countertop.",
+      "Clear the side table by moving all items to the countertop."
+    ],
+    "task_goal": {
+      "empty_sidetable": 1,
+      "moveTo_countertop": 1
+    }
+  },
+  {
+    "env_id": 629,
+    "mode": "PickAndPlaceImplicitTask",
+    "instruction": [
+      "Move all the objects from the fridge to the dining table.",
+      "Transfer all items from the fridge to the dining table.",
+      "Remove everything from the fridge and put it on the dining table.",
+      "Take all the objects off the fridge and place them on the dining table."
+    ],
+    "task_goal": {
+      "empty_fridge": 1,
+      "moveTo_diningtable": 1
+    }
+  },
+  {
+    "env_id": 528,
+    "mode": "PickAndPlaceImplicitTask",
+    "instruction": [
+      "Move all the objects from the dining table to the shelf.",
+      "Relocate all items from the dining table to the shelf.",
+      "Take everything off the dining table and put it on the shelf.",
+      "Transfer the contents of the dining table to the shelf."
+    ],
+    "task_goal": {
+      "empty_diningtable": 1,
+      "moveTo_shelf": 1
+    }
+  },
+  {
+    "env_id": 659,
+    "mode": "PickAndPlaceImplicitTask",
+    "instruction": [
+      "Move all the objects from the dresser to the side table.",
+      "Transfer all the objects from the dresser to the side table.",
+      "Relocate everything from the dresser to the side table.",
+      "Take all items from the dresser and put them on the side table."
+    ],
+    "task_goal": {
+      "empty_dresser": 1,
+      "moveTo_sidetable": 1
+    }
+  },
+  {
+    "env_id": 451,
+    "mode": "PickAndPlaceImplicitTask",
+    "instruction": [
+      "Move all the objects from the countertop to the dining table.",
+      "Transfer everything from the countertop to the dining table.",
+      "Remove all items from the countertop and put them on the dining table.",
+      "Clear the countertop by moving all objects to the dining table."
+    ],
+    "task_goal": {
+      "empty_countertop": 1,
+      "moveTo_diningtable": 1
+    }
+  },
+  {
+    "env_id": 967,
+    "mode": "PickAndPlaceImplicitTask",
+    "instruction": [
+      "Move all the objects from the side table to the countertop.",
+      "Transfer everything from the side table to the countertop.",
+      "Remove all items from the side table and put them on the countertop.",
+      "Take all the objects off the side table and relocate them to the countertop."
+    ],
+    "task_goal": {
+      "empty_sidetable": 1,
+      "moveTo_countertop": 1
+    }
+  },
+  {
+    "env_id": 516,
+    "mode": "PickAndPlaceImplicitTask",
+    "instruction": [
+      "Move all the objects from the countertop to the dining table.",
+      "Transfer everything from the countertop to the dining table.",
+      "Put all the objects from the countertop onto the dining table.",
+      "Remove all items from the countertop and place them on the dining table."
+    ],
+    "task_goal": {
+      "empty_countertop": 1,
+      "moveTo_diningtable": 1
+    }
+  },
+  {
+    "env_id": 306,
+    "mode": "PickAndPlaceImplicitTask",
+    "instruction": [
+      "Move all the objects from the cabinet to the bed.",
+      "Transfer all items from the cabinet to the bed.",
+      "Clear the cabinet by moving all objects to the bed.",
+      "Shift everything from the cabinet over to the bed."
+    ],
+    "task_goal": {
+      "empty_cabinet": 1,
+      "moveTo_bed": 1
+    }
+  },
+  {
+    "env_id": 766,
+    "mode": "PickAndPlaceImplicitTask",
+    "instruction": [
+      "Move all the objects from the countertop to the shelf.",
+      "Transfer all items from the countertop to the shelf.",
+      "Remove everything from the countertop and put it on the shelf.",
+      "Clear the countertop by moving all objects to the shelf."
+    ],
+    "task_goal": {
+      "empty_countertop": 1,
+      "moveTo_shelf": 1
+    }
+  },
+  {
+    "env_id": 329,
+    "mode": "PickAndPlaceImplicitTask",
+    "instruction": [
+      "Move all the objects from the ottoman to the TV stand.",
+      "Transfer all items from the ottoman to the TV stand.",
+      "Remove everything from the ottoman and put it on the TV stand.",
+      "Take all the objects off the ottoman and place them on the TV stand."
+    ],
+    "task_goal": {
+      "empty_ottoman": 1,
+      "moveTo_tvstand": 1
+    }
+  },
+  {
+    "env_id": 206,
+    "mode": "PickAndPlaceImplicitTask",
+    "instruction": [
+      "Move all the objects from the side table to the dining table.",
+      "Transfer everything from the side table to the dining table.",
+      "Take all the objects from the side table and put them on the dining table.",
+      "Remove all items from the side table and place them on the dining table."
+    ],
+    "task_goal": {
+      "empty_sidetable": 1,
+      "moveTo_diningtable": 1
+    }
+  },
+  {
+    "env_id": 220,
+    "mode": "PickAndPlaceImplicitTask",
+    "instruction": [
+      "Move all the objects from the countertop to the dining table.",
+      "Transfer all items from the countertop to the dining table.",
+      "Remove everything from the countertop and put it on the dining table.",
+      "Shift all the objects from the countertop to the dining table."
+    ],
+    "task_goal": {
+      "empty_countertop": 1,
+      "moveTo_diningtable": 1
+    }
+  },
+  {
+    "env_id": 933,
+    "mode": "PickAndPlaceImplicitTask",
+    "instruction": [
+      "Move all the objects from the dresser to the dining table.",
+      "Transfer all items from the dresser to the dining table.",
+      "Remove everything from the dresser and put it on the dining table.",
+      "Take all the objects from the dresser and place them on the dining table."
+    ],
+    "task_goal": {
+      "empty_dresser": 1,
+      "moveTo_diningtable": 1
+    }
+  },
+  {
+    "env_id": 667,
+    "mode": "PickAndPlaceImplicitTask",
+    "instruction": [
+      "Move all the objects from the desk to the dining table.",
+      "Transfer all items from the desk to the dining table.",
+      "Place all the objects currently on the desk onto the dining table.",
+      "Remove everything from the desk and put it on the dining table."
+    ],
+    "task_goal": {
+      "empty_desk": 1,
+      "moveTo_diningtable": 1
+    }
+  },
+  {
+    "env_id": 809,
+    "mode": "PickAndPlaceImplicitTask",
+    "instruction": [
+      "Move all the objects from the sofa to the bed.",
+      "Transfer everything from the sofa to the bed.",
+      "Remove all items from the sofa and put them on the bed.",
+      "Shift the contents of the sofa to the bed."
+    ],
+    "task_goal": {
+      "empty_sofa": 1,
+      "moveTo_bed": 1
+    }
+  }
+]

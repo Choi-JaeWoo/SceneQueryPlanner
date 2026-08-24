@@ -1,0 +1,85 @@
+Your task is to: Put a box with a pencil inside it on the shelf.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a living room (1). Looking quickly around the room, you see TV stand (1), dining table (2), dog bed (1), painting (3, 4), shelf (4), sofa (1).
+Think: To solve the task, I need to find and pick up pencil, put it in box, pick up and place box on shelf.
+OK.
+Think: First, I need to find and pick up pencil.
+OK.
+Query: recall location of pencil
+You have not seen pencil before.
+Think: I have not seen pencil yet. The pencil is more likely to appear in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see armchair (1), bed (1), box (1), drawer (1, 2, 3, 4, 5, 6), dresser (1), floor lamp (1), painting (1, 2).
+Think: In bedroom 1, the pencil is likely to appear in/on bed 1, box 1, drawer (1, 2, 3, 4, 5, 6), dresser 1. I can check each place one by one until I find pencil.
+OK.
+Act: go to bed 1
+You arrive at the bed (1). You see armchair (1), basket ball (1), bed (1), cell phone (1), laptop (1), pillow (1).
+Act: go to box 1
+You arrive at the box (1). You see box (1), drawer (1, 2, 3, 4, 5, 6), dresser (1), house plant (1), painting (1).
+Act: go to drawer 1
+You arrive at the drawer (1). The drawer (1) is closed. You see box (1), drawer (1, 2, 3, 4, 5, 6), dresser (1), house plant (1), painting (1).
+Act: open drawer 1
+You open drawer (1). You see box (1), drawer (1, 2, 3, 4, 5, 6), dresser (1), house plant (1), painting (1).
+Act: go to drawer 2
+You arrive at the drawer (2). The drawer (2) is closed. You see box (1), drawer (1, 2, 3, 4, 5, 6), dresser (1), house plant (1), painting (1).
+Act: open drawer 2
+You open drawer (2). You see box (1), drawer (1, 2, 3, 4, 5, 6), dresser (1), house plant (1), painting (1).
+Act: go to drawer 3
+You arrive at the drawer (3). The drawer (3) is closed. You see box (1), drawer (1, 2, 3, 4, 5, 6), dresser (1), house plant (1), painting (1).
+Act: open drawer 3
+You open drawer (3). You see box (1), drawer (1, 2, 3, 4, 5, 6), dresser (1), house plant (1), painting (1).
+Act: go to drawer 4
+You arrive at the drawer (4). The drawer (4) is closed. You see box (1), drawer (1, 2, 3, 4, 5, 6), dresser (1), house plant (1), painting (1).
+Act: open drawer 4
+You open drawer (4). You see box (1), drawer (1, 2, 3, 4, 5, 6), dresser (1), house plant (1), painting (1).
+Act: go to drawer 5
+You arrive at the drawer (5). The drawer (5) is closed. You see box (1), drawer (1, 2, 3, 4, 5, 6), dresser (1), house plant (1), painting (1).
+Act: open drawer 5
+You open drawer (5). You see box (1), drawer (1, 2, 3, 4, 5, 6), dresser (1), house plant (1), painting (1).
+Act: go to drawer 6
+You arrive at the drawer (6). The drawer (6) is closed. You see box (1), drawer (1, 2, 3, 4, 5, 6), dresser (1), house plant (1), painting (1).
+Act: open drawer 6
+You open drawer (6). You see box (1), drawer (1, 2, 3, 4, 5, 6), dresser (1), house plant (1), painting (1).
+Act: go to dresser 1
+You arrive at the dresser (1). You see drawer (1, 2, 3, 4, 5, 6), dresser (1), house plant (1).
+Think: There is no pencil in bedroom 1. I need to move to living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), dining table (2), dog bed (1), painting (3, 4), shelf (4), sofa (1).
+Think: In living room 1, the pencil is likely to appear in/on dining table 2, sofa 1. I can check each place one by one until I find pencil.
+OK.
+Act: go to dining table 2
+You arrive at the dining table (2). You see bowl (2), box (2), candle (2), dining table (2), laptop (2), pencil (1), remote control (1, 2, 3), statue (1), watch (2).
+Think: I find pencil 1. Now, I need to pick it up.
+OK.
+Act: go to pencil 1
+You arrive at the pencil (1). You see bowl (2), box (2), candle (2), dining table (2), laptop (2), pencil (1), remote control (1, 2, 3), statue (1), watch (2).
+Act: pick up pencil 1
+You pick up pencil (1). You hold pencil (1).
+Think: Now, I need to find box and put down pencil 1.
+OK.
+Query: recall location of box
+You saw box 1 in bedroom 1. You saw box 2 in living room 1.
+Think: Box 2 is in living room 1.
+OK.
+Act: go to box 2
+You arrive at the box (2). The box (2) is open. You see bowl (2), box (2), candle (2), dining table (2), laptop (2), remote control (1, 2, 3), statue (1), watch (2). You hold pencil (1).
+Act: put down pencil 1
+You put pencil (1) in box (2).
+Think: Now, I need to pick up box 2.
+OK.
+Act: pick up box 2
+You pick up box (2). You hold box (2).
+Think: Now, I need to find shelf and put down box 2.
+OK.
+Query: recall location of shelf
+You saw shelf 4 in living room 1. You saw shelf 2 in kitchen 1. You saw shelf 1 in kitchen 1. You saw shelf 3 in kitchen 1.
+Think: Shelf 4 is in living room 1.
+OK.
+Act: go to shelf 4
+You arrive at the shelf (4). You see TV stand (1), book (2), candle (1), pencil (1), shelf (4), television (1), watch (1). You hold box (2).
+Act: put down box 2
+You put box (2) in shelf (4).
+Think: Now I complete the task.
+OK.
+Act: done

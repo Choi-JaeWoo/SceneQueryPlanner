@@ -1,0 +1,7 @@
+Your task is to: Pick up the toggleable item from the dining table and the item made of paper from the TV stand, and put them onto the armchair so I can use them together.
+You are in the house, and there are 1 rooms: living room (1). You are in the middle of a living room (1). Looking quickly around the room, you see TV stand (1), armchair (1, 2), dining table (1), floor lamp (1), house plant (1), shelf (1), sofa (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- living room 1: [(armchair 1), (armchair 2), (dining table 1), floor lamp 1, house plant 1, (shelf 1), (sofa 1), (TV stand 1)]
+You have not taken any actions yet.
+What is the best next action to complete the task as efficiently as possible?
+Think: First, I need to find dining table and pick up the toggleable item from dining table. I find dining table 1. Now, I need to move toward dining table 1.
+Act: go to dining table 1

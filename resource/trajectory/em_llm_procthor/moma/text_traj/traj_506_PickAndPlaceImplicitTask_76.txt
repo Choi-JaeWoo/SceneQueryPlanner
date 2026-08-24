@@ -1,0 +1,13 @@
+Your task is to: Take all the objects off the toilet and place them on the dining table.
+You pick up toilet paper (1). You hold toilet paper (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- bathroom 1: [spray bottle 2, tissue box 2, faucet 1, drawer 10, drawer 1, drawer 9, drawer 8, drawer 7, drawer 6, drawer 5, drawer 4, drawer 2, drawer 3, dresser 1, garbage can 2, sink 1, sink basin 1, toilet 1, toilet paper 1]
+- (bedroom 1): [basket ball 1, (bed 1), dog bed 1, (drawer 20), (drawer 19), (drawer 17), (drawer 16), (drawer 15), (drawer 12), (drawer 11), (drawer 21), (drawer 18), (drawer 22), (drawer 14), (drawer 13), (dresser 2), house plant 1, (shelf 8), (shelf 9), (shelf 10), (shelf 11), (shelf 12), (shelf 13), (TV stand 3)]
+- (bedroom 2): [baseball bat 1, (bed 2), (chair 3), (chair 2), (dining table 4), (drawer 28), (drawer 27), (drawer 26), (drawer 24), (drawer 25), (drawer 23), (dresser 3), painting 1, painting 2]
+- (bedroom 3): [basket ball 2, (bed 3), dog bed 2, painting 3, painting 4]
+- kitchen 1: [(chair 1), (countertop 1), (dining table 1), plate 1, spray bottle 1, tomato 1, wine bottle 1]
+- (living room 1): [(armchair 1), (armchair 2), (box 2), (box 1), cart 1, (dining table 2), floor lamp 1, (garbage can 1), (shelf 4), (shelf 1), (shelf 2), (shelf 3), (shelf 5), (shelf 6), (sofa 1), (TV stand 1)]
+- (living room 2): [(dining table 3), (shelf 7), (sofa 2), (TV stand 2)]
+Your 5 previous actions were: go to sink 1 (success), go to sink basin 1 (success), go to toilet 1 (success), go to toilet paper 1 (success), pick up toilet paper 1 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I pick up toilet paper 1. Now, I need to go to dining table 1 to place toilet paper 1.
+Act: go to kitchen 1

@@ -1,0 +1,71 @@
+Your task is to: Move all the objects from the dresser to the desk.
+You are in the house, and there are 2 rooms: bathroom (1), bedroom (1). You are in the middle of a bathroom (1). Looking quickly around the room, you see garbage can (2), painting (4), plunger (1), sink (1), sink basin (1), toilet (1).
+Think: To solve the task, I need to find dresser and check what is on top of it. Then, I need to move everything on dresser to desk.
+OK.
+Think: First, I need to find dresser.
+OK.
+Query: recall location of dresser
+You saw dresser 1 in bedroom 1.
+Think: Dresser 1 is in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see basket ball (1), bed (1, 2), chair (1, 2, 3, 4), desk (1), dining table (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), garbage can (1), painting (1, 2, 3), television (1).
+Act: go to dresser 1
+You arrive at the dresser (1). You see book (1), chair (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), key chain (1), pencil (1), vase (1), watch (1).
+Think: Now, I need to move book 1, key chain 1, pencil 1, vase 1, watch 1 to desk.
+OK.
+Act: go to book 1
+You arrive at the book (1). The book (1) is closed. You see faucet (1), painting (4), sink (1), sink basin (1).
+Act: pick up paper towel roll 1
+Pick up action failed: The target object is not within the visible range.
+Act: go to paper towel roll 1
+You arrive at the paper towel roll (1). You see paper towel roll (1), toilet (1), toilet paper (1).
+Act: pick up paper towel roll 1
+You pick up paper towel roll (1). You hold paper towel roll (1).
+Think: Now, I need to find desk and put down paper towel roll 1.
+OK.
+Query: recall location of desk
+You saw desk 1 in bedroom 1.
+Think: Desk 1 is in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see basket ball (1), bed (1, 2), chair (1, 2, 3, 4), desk (1), dining table (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), garbage can (1), painting (1, 2, 3), television (1). You hold paper towel roll (1).
+Act: go to desk 1
+You arrive at the desk (1). You see book (2), cell phone (1), credit card (1), desk (1), desk lamp (1), drawer (1, 2, 5), mug (1), painting (3). You hold paper towel roll (1).
+Act: put down paper towel roll 1
+You put paper towel roll (1) in desk (1).
+Act: go to key chain 1
+You arrive at the key chain (1). You see book (1), chair (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), key chain (1), pencil (1), vase (1), watch (1).
+Act: pick up key chain 1
+You pick up key chain (1). You hold key chain (1).
+Act: go to desk 1
+You arrive at the desk (1). You see book (2), cell phone (1), credit card (1), desk (1), desk lamp (1), drawer (1, 2, 5), mug (1), painting (3), paper towel roll (1). You hold key chain (1).
+Act: put down key chain 1
+You put key chain (1) in desk (1).
+Act: go to pencil 1
+You arrive at the pencil (1). You see book (1), chair (1, 4), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), house plant (1), painting (2), pencil (1), vase (1), watch (1).
+Act: pick up pencil 1
+You pick up pencil (1). You hold pencil (1).
+Act: go to desk 1
+You arrive at the desk (1). You see book (2), cell phone (1), credit card (1), desk (1), desk lamp (1), drawer (1, 2, 5), key chain (1), mug (1), painting (3), paper towel roll (1). You hold pencil (1).
+Act: put down pencil 1
+You put pencil (1) in desk (1).
+Act: go to vase 1
+You arrive at the vase (1). You see book (1), chair (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), painting (3), vase (1).
+Act: pick up vase 1
+You pick up vase (1). You hold vase (1).
+Act: go to desk 1
+You arrive at the desk (1). You see book (2), cell phone (1), credit card (1), desk (1), desk lamp (1), drawer (1, 2, 5), key chain (1), mug (1), painting (3), paper towel roll (1), pencil (1). You hold vase (1).
+Act: put down vase 1
+You put vase (1) in desk (1).
+Act: go to watch 1
+You arrive at the watch (1). You see basket ball (1), book (1), chair (1, 2), dining table (1), house plant (1), statue (1), watch (1).
+Act: pick up watch 1
+You pick up watch (1). You hold watch (1).
+Act: go to desk 1
+You arrive at the desk (1). You see book (2), cell phone (1), credit card (1), desk (1), desk lamp (1), drawer (1, 2, 5), key chain (1), mug (1), painting (3), paper towel roll (1), pencil (1), vase (1). You hold watch (1).
+Act: put down watch 1
+You put watch (1) in desk (1).
+Think: Now I complete the task.
+OK.
+Act: done

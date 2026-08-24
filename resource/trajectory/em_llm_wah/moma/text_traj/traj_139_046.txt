@@ -1,0 +1,14 @@
+Your task is to: 1. find all of: 1 cutlery fork and 1 wine glass and remember their location.
+2. remove all that are already on the kitchen table
+3. grab as much as you can hold by going to remembered locations
+4. go to kitchen table deposit at the table.
+5. if any elements aren't yet on the table go to step 3.
+You arrive at the kitchen counter 3. You see bowl (1, 2, 3, 4, 5), fridge 1, kitchen cabinet (3, 4), kitchen counter (1, 3), light switch 2, water glass 1, wine glass 1. You hold wine glass 1. Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- (bathroom 1): [(bathroom cabinet 1), (bathroom counter 1), (faucet 1), (light switch 1), (sink 1), (toilet 1), (washing machine 1)]
+- (bedroom 1): [(bed 1), (bookshelf 2), (cabinet 1), (chair 1), (coffee table 1), (computer 1), (desk 1), (light switch 3), (nightstand 1), (nightstand 2), (sofa 1)]
+- kitchen 1: [apple 1, apple 10, apple 11, apple 2, apple 3, apple 4, apple 5, apple 6, apple 7, apple 8, apple 9, (bench 1), (bench 2), (bookshelf 1), bowl 1, bowl 2, bowl 3, bowl 4, bowl 5, bowl 6, cell phone 1, chicken 1, (coffee pot 1), condiment shaker 1, condiment shaker 2, cooking pot 1, cutlery fork 1, cutlery knife 1, cutlery knife 2, cutlets 1, (dishwasher 1), dishwashing liquid 1, (faucet 2), (fridge 1), frying pan 1, kitchen cabinet 1, kitchen cabinet 2, kitchen cabinet 3, kitchen cabinet 4, kitchen cabinet 5, kitchen cabinet 6, kitchen cabinet 7, kitchen cabinet 8, kitchen counter 1, (kitchen counter 2), kitchen counter 3, (kitchen table 1), (light switch 2), (microwave oven 1), (oven tray 1), (sink 2), (slice of bread 1), (slice of bread 2), (stove 1), (toaster 1), water glass 1, water glass 2, wine glass 1]
+- (living room 1): [(bookshelf 3), (chair 2), (closet 1), (coffee table 2), (computer 2), (desk 2), (light switch 4), (sofa 2), (tv 1)]
+Your 23 previous actions were: go to kitchen cabinet 1 (success), open kitchen cabinet 1 (success), go to kitchen cabinet 2 (success), open kitchen cabinet 2 (success), go to kitchen cabinet 3 (success), open kitchen cabinet 3 (success), go to kitchen cabinet 4 (success), open kitchen cabinet 4 (success), go to kitchen cabinet 5 (success), open kitchen cabinet 5 (success), go to kitchen cabinet 6 (success), open kitchen cabinet 6 (success), go to kitchen cabinet 7 (success), open kitchen cabinet 7 (success), pick up wine glass 1 (success), go to kitchen cabinet 8 (success), open kitchen cabinet 8 (success), go to kitchen counter 1 (success), go to kitchen counter 3 (success), go to kitchen counter 1 (success), go to kitchen counter 3 (success), go to kitchen counter 1 (success), go to kitchen counter 3 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I cannot find cutlery fork at kitchen counter 3. I can check kitchen counter 1.
+Act: go to kitchen counter 1

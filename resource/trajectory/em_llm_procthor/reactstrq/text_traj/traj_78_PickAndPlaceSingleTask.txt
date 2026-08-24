@@ -1,0 +1,61 @@
+Your task is to: Pick up a book and put it on the countertop.
+You are in the house, and there are 10 rooms: bathroom (1, 2, 3, 4), bedroom (1, 2, 3, 4), kitchen (1), living room (1). You are in the middle of a bedroom (1). Looking quickly around the room, you see TV stand (1), armchair (1), bed (1), chair (1), dining table (1), drawer (1, 2, 3), dresser (1), floor lamp (1), shelf (1, 2, 3, 4, 5, 6).
+Think: To solve the task, I need to find and pick up book, then put it on countertop.
+OK.
+Think: First, I need to find and pick up book.
+OK.
+Query: find_objects({'label': 'book'})
+Info: 
+Think: I have not seen book yet. Now I need to check where to search. First, I will search living room 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'living room 1'})
+Info: TV stand 2, chair (5, 6, 7, 8), dining table 3, shelf 7, sofa 1
+Think: In living room 1, the book is likely to appear in/on TV stand 2, chair (5, 6, 7, 8), dining table 3, shelf 7, sofa 1. I can check each place one by one until I find book.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (2), chair (5, 6, 7, 8), dining table (3), shelf (7), sofa (1).
+Act: go to TV stand 2
+You arrive at the TV stand (2). You see TV stand (2), bowl (3), shelf (7), television (2).
+Act: go to chair 5
+You arrive at the chair (5). You see chair (5, 8), credit card (2), dining table (3), laptop (2).
+Act: go to chair 6
+You arrive at the chair (6). You see book (2), cell phone (4), chair (6, 7), dining table (3), house plant (4), plate (2), vase (2).
+Act: go to chair 7
+You arrive at the chair (7). You see book (2), cell phone (4), chair (6, 7, 8), credit card (2), dining table (3), house plant (4), plate (2), vase (2).
+Act: go to chair 8
+You arrive at the chair (8). You see book (3), cell phone (4), chair (5, 8), credit card (2), dining table (3), house plant (4), laptop (2), pillow (5), plate (2), sofa (1).
+Act: go to dining table 3
+You arrive at the dining table (3). You see book (2), cell phone (4), chair (5, 6, 7, 8), credit card (2), dining table (3), house plant (4), laptop (2), plate (2), vase (2).
+Act: go to shelf 7
+You arrive at the shelf (7). You see TV stand (2), bowl (3), shelf (7), television (2).
+Act: go to sofa 1
+You arrive at the sofa (1). You see dish sponge (1), soap bar (1), soap bottle (1), spray bottle (1), toilet (1), toilet paper (1).
+Think: I need to check whether I see book.
+OK.
+Query: find_objects({'label': 'book'})
+Info: [{'name_id_nl': 'book 2', 'node_type': 'object', 'properties': ['openable', 'pickupable'], 'states': []}, {'name_id_nl': 'book 3', 'node_type': 'object', 'properties': ['openable', 'pickupable'], 'states': []}]
+Query: get_edges_for_node({'node_id': 'book 2'})
+Info: [('book 2', 'dining table 3', 'ON'), ('book 2', 'cell phone 4', 'CLOSE'), ('book 2', 'chair 7', 'CLOSE'), ('book 2', 'chair 6', 'CLOSE'), ('book 2', 'chair 8', 'CLOSE'), ('book 2', 'credit card 2', 'CLOSE'), ('book 2', 'house plant 4', 'CLOSE'), ('book 2', 'laptop 2', 'CLOSE'), ('book 2', 'plate 2', 'CLOSE'), ('book 2', 'vase 2', 'CLOSE'), ('book 2', 'living room 1', 'INSIDE'), ('cell phone 4', 'book 2', 'CLOSE'), ('chair 7', 'book 2', 'CLOSE'), ('chair 6', 'book 2', 'CLOSE'), ('chair 8', 'book 2', 'CLOSE'), ('credit card 2', 'book 2', 'CLOSE'), ('house plant 4', 'book 2', 'CLOSE'), ('laptop 2', 'book 2', 'CLOSE'), ('plate 2', 'book 2', 'CLOSE'), ('vase 2', 'book 2', 'CLOSE')]
+Query: get_edges_for_node({'node_id': 'book 3'})
+Info: [('book 3', 'sofa 1', 'ON'), ('book 3', 'pillow 5', 'CLOSE'), ('book 3', 'living room 1', 'INSIDE'), ('pillow 5', 'book 3', 'CLOSE')]
+Think: Book 2 is on dining table 3 in living room 1. Book 3 is on sofa 1 in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (2), chair (5, 6, 7, 8), dining table (3), shelf (7), sofa (1).
+Act: go to dining table 3
+You arrive at the dining table (3). You see book (2), cell phone (4), chair (5, 6, 7, 8), credit card (2), dining table (3), house plant (4), laptop (2), plate (2), vase (2).
+Act: go to book 2
+You arrive at the book (2). The book (2) is closed. You see book (2), cell phone (4), chair (6, 7), credit card (2), dining table (3), house plant (4), plate (2), vase (2).
+Act: pick up book 2
+You pick up book (2). You hold book (2).
+Think: Now, I need to find countertop and put down book 2.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see chair (2, 3, 4), countertop (1), dining table (2), fridge (1). You hold book (2).
+Act: go to countertop 1
+You arrive at the countertop (1). You see cell phone (3), countertop (1), egg (2), kettle (1), paper towel roll (1), pepper shaker (1), spatula (1). You hold book (2).
+Act: put down book 2
+You put book (2) in countertop (1).
+Think: Now I complete the task.
+OK.
+Act: done

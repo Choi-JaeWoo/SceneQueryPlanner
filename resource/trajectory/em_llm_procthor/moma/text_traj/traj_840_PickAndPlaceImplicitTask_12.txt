@@ -1,0 +1,7 @@
+Your task is to: Remove all objects from the side table and place them in the dresser.
+You open drawer (2). You see basket ball (1), bed (1), cell phone (1), credit card (1), drawer (1, 2, 3), dresser (1), pencil (2), pillow (1), remote control (1), statue (1), television (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- bedroom 1: [painting 1, alarm clock 1, cloth 1, painting 2, pencil 1, pillow 2, basket ball 1, bed 1, cell phone 1, credit card 1, (drawer 3), drawer 1, drawer 2, (drawer 4), (dresser 1), (garbage can 1), pencil 2, pillow 1, remote control 1, side table 1, statue 1, television 1]
+Your 5 previous actions were: go to bed 1 (success), go to drawer 1 (success), open drawer 1 (success), go to drawer 2 (success), open drawer 2 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I open drawer 2. I need to check unexplored areas in bedroom 1 to find side table 1. Now, I need to check drawer 3.
+Act: go to drawer 3

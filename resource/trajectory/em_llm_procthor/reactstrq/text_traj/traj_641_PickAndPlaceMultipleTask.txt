@@ -1,0 +1,111 @@
+Your task is to: Place a book, a candle, and a pencil together on the shelf.
+You are in the house, and there are 1 rooms: living room (1). You are in the middle of a living room (1). Looking quickly around the room, you see TV stand (1), coffee table (1), dining table (1), painting (1, 2), shelf (1, 2, 3, 4, 5, 6), sofa (1), statue (2).
+Think: To solve the task, I need to find and pick up book, candle, pencil, put them on shelf.
+OK.
+Think: First, I need to find and pick up book.
+OK.
+Query: find_objects({'label': 'book'})
+Info: 
+Think: I have not seen book yet. Now I need to check where to search. First, I will search living room 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'living room 1'})
+Info: TV stand 1, coffee table 1, dining table 1, shelf (1, 2, 3, 4, 5, 6), sofa 1
+Think: In living room 1, the book is likely to appear in/on TV stand 1, coffee table 1, dining table 1, shelf (1, 2, 3, 4, 5, 6), sofa 1. I can check each place one by one until I find book.
+OK.
+Act: go to TV stand 1
+You arrive at the TV stand (1). You see TV stand (1), book (1), house plant (1), painting (2), pillow (1), remote control (1), shelf (1, 2, 3, 4, 5, 6), sofa (1), statue (2), television (1).
+Think: I find book 1. Now, I need to pick it up.
+OK.
+Act: go to book 1
+You arrive at the book (1). The book (1) is closed. You see TV stand (1), book (1), bowl (1), candle (1), cell phone (1), coffee table (1), credit card (1), house plant (1), key chain (1), pillow (1), plate (1), remote control (2, 3), shelf (1, 2, 3, 4, 5, 6), statue (2), television (1), vase (1).
+Act: pick up book 1
+You pick up book (1). You hold book (1).
+Think: Now, I need to find and pick up candle.
+OK.
+Query: find_objects({'label': 'candle'})
+Info: [{'name_id_nl': 'candle 1', 'node_type': 'object', 'properties': ['toggleable', 'pickupable'], 'states': []}]
+Think: I find candle 1.
+OK.
+Act: go to candle 1
+You arrive at the candle (1). You see bowl (1), candle (1), cell phone (1), coffee table (1), credit card (1), dining table (1), key chain (1), pencil (1), plate (1), remote control (2, 3), shelf (1, 2, 3), statue (1, 2), vase (1). You hold book (1).
+Act: pick up candle 1
+Pick up action failed: Robot is currently holding book
+Think: I need to put down book 1 and pick up candle 1.
+OK.
+Act: put down book 1
+You put book (1) in TV stand (1).
+Act: pick up candle 1
+You pick up candle (1). You hold candle (1).
+Think: Now, I need to find and pick up pencil.
+OK.
+Query: find_objects({'label': 'pencil'})
+Info: [{'name_id_nl': 'pencil 1', 'node_type': 'object', 'properties': ['pickupable'], 'states': []}]
+Think: I find pencil 1.
+OK.
+Act: go to pencil 1
+You arrive at the pencil (1). You see bowl (1), dining table (1), painting (1), pencil (1), plate (1), remote control (2, 3), statue (1), vase (1). You hold candle (1).
+Act: pick up pencil 1
+Pick up action failed: Robot is currently holding candle
+Think: I need to put down candle 1 and pick up pencil 1.
+OK.
+Act: put down candle 1
+You put candle (1) in TV stand (1).
+Act: pick up pencil 1
+You pick up pencil (1). You hold pencil (1).
+Think: Now, I need to find shelf and put down book 1, candle 1, pencil 1.
+OK.
+Query: find_objects({'label': 'shelf'})
+Info: [{'name_id_nl': 'shelf 2', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}, {'name_id_nl': 'shelf 3', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}, {'name_id_nl': 'shelf 4', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}, {'name_id_nl': 'shelf 5', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}, {'name_id_nl': 'shelf 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}, {'name_id_nl': 'shelf 6', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}]
+Think: Shelf 2 is in living room 1.
+OK.
+Act: go to shelf 2
+You arrive at the shelf (2). You see TV stand (1), book (1), bowl (1), candle (1), cell phone (1), coffee table (1), credit card (1), house plant (1), key chain (1), pillow (1), plate (1), remote control (2, 3), shelf (1, 2, 3, 4, 5, 6), statue (2), television (1), vase (1). You hold pencil (1).
+Act: put down pencil 1
+Put action failed: There is no valid space to place the object in the target receptacle.
+Think: I need to find another shelf. I see shelf 3.
+OK.
+Act: go to shelf 3
+You arrive at the shelf (3). You see TV stand (1), book (1), bowl (1), candle (1), cell phone (1), coffee table (1), credit card (1), house plant (1), key chain (1), pillow (1), plate (1), remote control (2, 3), shelf (1, 2, 3, 4, 5, 6), statue (2), television (1), vase (1). You hold pencil (1).
+Act: put down pencil 1
+Put action failed: There is no valid space to place the object in the target receptacle.
+Think: I need to find another shelf. I see shelf 4.
+OK.
+Act: go to shelf 4
+You arrive at the shelf (4). You see TV stand (1), book (1), candle (1), house plant (1), painting (2), pillow (1), remote control (1), shelf (1, 2, 3, 4, 5, 6), sofa (1), statue (2), television (1). You hold pencil (1).
+Act: put down pencil 1
+Put action failed: There is no valid space to place the object in the target receptacle.
+Think: I need to find another shelf. I see shelf 5.
+OK.
+Act: go to shelf 5
+You arrive at the shelf (5). You see TV stand (1), book (1), candle (1), house plant (1), painting (2), pillow (1), remote control (1), shelf (1, 2, 3, 4, 5, 6), sofa (1), statue (2), television (1). You hold pencil (1).
+Act: put down pencil 1
+Put action failed: There is no valid space to place the object in the target receptacle.
+Think: I need to find another shelf. I see shelf 6.
+OK.
+Act: go to shelf 6
+You arrive at the shelf (6). You see TV stand (1), book (1), candle (1), house plant (1), painting (2), pillow (1), remote control (1), shelf (1, 2, 3, 4, 5, 6), sofa (1), statue (2), television (1). You hold pencil (1).
+Act: put down pencil 1
+You put pencil (1) in shelf (6).
+Think: Now I need to pick up book 1 and candle 1 and put them on shelf 6.
+OK.
+Act: go to book 1
+You arrive at the book (1). The book (1) is closed. You see TV stand (1), book (1), candle (1), house plant (1), painting (2), pencil (1), pillow (1), remote control (1), shelf (1, 2, 3, 4, 5, 6), sofa (1), statue (2), television (1).
+Act: pick up book 1
+You pick up book (1). You hold book (1).
+Act: go to candle 1
+You arrive at the candle (1). You see TV stand (1), bowl (1), candle (1), cell phone (1), coffee table (1), credit card (1), house plant (1), key chain (1), pencil (1), pillow (1), plate (1), remote control (2, 3), shelf (1, 2, 3, 4, 5, 6), statue (2), television (1), vase (1). You hold book (1).
+Act: pick up candle 1
+Pick up action failed: Robot is currently holding book
+Think: I need to put down book 1 and pick up candle 1.
+OK.
+Act: put down book 1
+You put book (1) in shelf (6).
+Act: pick up candle 1
+You pick up candle (1). You hold candle (1).
+Act: go to shelf 6
+You arrive at the shelf (6). You see TV stand (1), book (1), house plant (1), painting (2), pencil (1), pillow (1), remote control (1), shelf (1, 2, 3, 4, 5, 6), sofa (1), statue (2), television (1). You hold candle (1).
+Act: put down candle 1
+You put candle (1) in shelf (6).
+Think: Now I complete the task.
+OK.
+Act: done

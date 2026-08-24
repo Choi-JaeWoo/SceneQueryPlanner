@@ -1,0 +1,55 @@
+Your task is to: Move all the objects from the dresser to the dining table.
+You are in the house, and there are 1 rooms: bedroom (1). You are in the middle of a bedroom (1). Looking quickly around the room, you see armchair (1), bed (1), chair (1), dining table (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), floor lamp (1), garbage can (1), painting (1, 2, 3, 4), television (1).
+Think: To solve the task, I need to find dresser and check what is on top of it. Then, I need to move everything on dresser to dining table.
+OK.
+Think: First, I need to find dresser.
+OK.
+Query: find_objects({'label': 'dresser'})
+Info: [{'name_id_nl': 'dresser 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'bedroom 1'}]
+Think: I find dresser 1.
+OK.
+Act: go to dresser 1
+You arrive at the dresser (1). You see alarm clock (1), cell phone (1), desk lamp (1), dining table (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), laptop (1), painting (1), pen (1), statue (1), television (1).
+Think: Now, I need to check what is on top of dresser 1.
+OK.
+Query: get_edges_for_node({'node_id': 'dresser 1', 'relation': 'ON'})
+Info: [('alarm clock 1', 'dresser 1', 'ON'), ('cell phone 1', 'dresser 1', 'ON'), ('statue 1', 'dresser 1', 'ON')]
+Think: Now, I need to move alarm clock 1, cell phone 1, statue 1 to dining table.
+OK.
+Act: go to alarm clock 1
+You arrive at the alarm clock (1). You see alarm clock (1), cell phone (1), desk lamp (1), dining table (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), laptop (1), painting (1), pen (1), statue (1), television (1).
+Act: pick up alarm clock 1
+You pick up alarm clock (1). You hold alarm clock (1).
+Think: Now, I need to find dining table.
+OK.
+Query: find_objects({'label': 'dining table'})
+Info: [{'name_id_nl': 'dining table 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'bedroom 1'}]
+Think: I find dining table 1.
+OK.
+Act: go to dining table 1
+You arrive at the dining table (1). You see cell phone (1), chair (1), desk lamp (1), dining table (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), key chain (1), laptop (1), mug (1), pen (1), statue (1), television (1). You hold alarm clock (1).
+Act: put down alarm clock 1
+You put alarm clock (1) in dining table (1).
+Act: go to cell phone 1
+You arrive at the cell phone (1). You see cell phone (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), garbage can (1), painting (1, 4), statue (1).
+Act: pick up cell phone 1
+You pick up cell phone (1). You hold cell phone (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see alarm clock (1), chair (1), desk lamp (1), dining table (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), key chain (1), laptop (1), mug (1), pen (1), statue (1), television (1). You hold cell phone (1).
+Act: put down cell phone 1
+You put cell phone (1) in dining table (1).
+Act: go to statue 1
+You arrive at the statue (1). You see alarm clock (1), cell phone (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), laptop (1), painting (1), pen (1), statue (1), television (1).
+Act: pick up statue 1
+You pick up statue (1). You hold statue (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see alarm clock (1), cell phone (1), chair (1), desk lamp (1), dining table (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), key chain (1), laptop (1), mug (1), pen (1), television (1). You hold statue (1).
+Act: put down statue 1
+You put statue (1) in dining table (1).
+Think: Now I need to check what's left on dresser 1.
+OK.
+Query: get_edges_for_node({'node_id': 'dresser 1', 'relation': 'ON'})
+Info: 
+Think: Now I complete the task.
+OK.
+Act: done

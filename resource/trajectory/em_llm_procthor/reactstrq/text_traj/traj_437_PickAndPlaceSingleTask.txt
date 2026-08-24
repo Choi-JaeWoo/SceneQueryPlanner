@@ -1,0 +1,25 @@
+Your task is to: Pick up a book and put it on the countertop.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a kitchen (1). Looking quickly around the room, you see chair (1), countertop (1), dining table (1), fridge (1), garbage bag (1).
+Think: To solve the task, I need to find and pick up book, then put it on countertop.
+OK.
+Query: find_objects({'label': 'book'})
+Info: [{'name_id_nl': 'book 1', 'node_type': 'object', 'properties': ['openable', 'pickupable'], 'states': []}]
+Query: get_edges_for_node({'node_id': 'book 1'})
+Info: [('book 1', 'kitchen 1', 'INSIDE'), ('book 1', 'dining table 1', 'ON'), ('book 1', 'chair 1', 'CLOSE'), ('book 1', 'fork 1', 'CLOSE'), ('book 1', 'plate 1', 'CLOSE'), ('book 1', 'user 1', 'CLOSE'), ('chair 1', 'book 1', 'CLOSE'), ('fork 1', 'book 1', 'CLOSE'), ('plate 1', 'book 1', 'CLOSE'), ('user 1', 'book 1', 'CLOSE')]
+Think: Book 1 is on dining table 1 in kitchen 1.
+OK.
+Act: go to dining table 1
+You arrive at the dining table (1). You see book (1, 2), bowl (1), chair (1), dining table (1), fork (1), house plant (2), plate (1), pot (1), tomato (2).
+Act: go to book 1
+You arrive at the book (1). The book (1) is closed. You see book (1, 2), bowl (1), chair (1), dining table (1), fork (1), house plant (2), plate (1), pot (1), tomato (2).
+Act: pick up book 1
+You pick up book (1). You hold book (1).
+Think: Now, I need to find countertop and put down book 1.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see apple (1), coffee machine (1), countertop (1), dish sponge (1), house plant (2), mug (2), pepper shaker (1), salt shaker (1), soap bottle (1), spray bottle (1), tomato (2). You hold book (1).
+Act: put down book 1
+You put book (1) in countertop (1).
+Think: Now I complete the task.
+OK.
+Act: done

@@ -1,0 +1,65 @@
+Your task is to: Turn on the desk lamp while holding a remote control.
+You are in the house, and there are 3 rooms: bedroom (1), kitchen (1), living room (1). You are in the middle of a bedroom (1). Looking quickly around the room, you see baseball bat (1), bed (1), drawer (1, 2, 3, 7), dresser (1), house plant (1), side table (1), television (1).
+Think: To solve the task, I need to find and pick up remote control, then find and turn on desk lamp.
+OK.
+Think: First, I need to find and pick up remote control.
+OK.
+Query: find_objects({'label': 'remote control'})
+Info: 
+Think: I have not seen remote control yet. Now I need to check where to search. First, I will search bedroom 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'bedroom 1'})
+Info: bed 1, drawer (1, 2, 3, 7), dresser 1, side table 1
+Think: In bedroom 1, the remote control is likely to appear in/on bed 1, drawer (1, 2, 3, 7), dresser 1, side table 1. I can check each place one by one until I find remote control.
+OK.
+Act: go to bed 1
+You arrive at the bed (1). You see bed (1), house plant (1), pillow (1), teddy bear (1).
+Act: go to drawer 1
+You arrive at the drawer (1). The drawer (1) is closed. You see drawer (1, 2, 3), dresser (1), remote control (1), television (1).
+Act: go to drawer 2
+You arrive at the drawer (2). The drawer (2) is closed. You see drawer (1, 2, 3), dresser (1), remote control (1), television (1).
+Act: go to drawer 3
+You arrive at the drawer (3). The drawer (3) is closed. You see drawer (1, 2, 3), dresser (1), remote control (1), television (1).
+Act: go to dresser 1
+You arrive at the dresser (1). You see desk lamp (1), drawer (1, 2, 3, 7), dresser (1), remote control (1), television (1).
+Act: go to side table 1
+You arrive at the side table (1). You see baseball bat (1), bed (1), desk lamp (1), drawer (7), pillow (1), side table (1).
+Think: I have not found remote control yet. Now I need to check where to search. Next, I will search kitchen 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'kitchen 1'})
+Info: countertop 1, fridge 1
+Think: In kitchen 1, the remote control is likely to appear in/on countertop 1, fridge 1. I can check each place one by one until I find remote control.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see countertop (1), fridge (1), house plant (2), painting (1).
+Act: go to countertop 1
+You arrive at the countertop (1). You see apple (1), butter knife (1), countertop (1), painting (1), pan (1), salt shaker (1), spatula (1, 2), spray bottle (1), toaster (1), wine bottle (1).
+Act: go to fridge 1
+You arrive at the fridge (1). The fridge (1) is closed. You see fridge (1).
+Think: I have not found remote control yet. Now I need to check where to search. Next, I will search living room 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'living room 1'})
+Info: TV stand 1, chair 1, dining table 1, drawer (4, 5, 6), dresser 2, shelf (1, 2, 3, 4, 5, 6), sofa 1
+Think: In living room 1, the remote control is likely to appear in/on TV stand 1, chair 1, dining table 1, drawer (4, 5, 6), dresser 2, shelf (1, 2, 3, 4, 5, 6), sofa 1. I can check each place one by one until I find remote control.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), chair (1), dining table (1), drawer (4, 5, 6), dresser (2), floor lamp (1), painting (2, 3, 4), shelf (1, 2, 3, 4, 5, 6), sofa (1).
+Act: go to TV stand 1
+You arrive at the TV stand (1). You see TV stand (1), dining table (1), floor lamp (1), remote control (2, 3, 4), shelf (1, 2, 3, 4, 5, 6), statue (1), television (2).
+Think: I find remote control 2. Now, I need to pick it up.
+OK.
+Act: go to remote control 2
+You arrive at the remote control (2). You see TV stand (1), bowl (1), desk lamp (2), dining table (1), remote control (2, 3, 4), shelf (1, 2, 3, 4, 5, 6), statue (1), television (2).
+Act: pick up remote control 2
+You pick up remote control (2). You hold remote control (2).
+Think: Now, I need to find and turn on desk lamp.
+OK.
+Query: find_objects({'label': 'desk lamp'})
+Info: [{'name_id_nl': 'desk lamp 1', 'node_type': 'object', 'properties': ['toggleable'], 'states': []}, {'name_id_nl': 'desk lamp 2', 'node_type': 'object', 'properties': ['toggleable'], 'states': []}]
+Act: go to desk lamp 2
+You arrive at the desk lamp (2). You see bowl (1), chair (1), desk lamp (2), dining table (1). You hold remote control (2).
+Act: turn on desk lamp 2
+You turn on desk lamp (2). You hold remote control (2).
+Think: Now I complete the task.
+OK.
+Act: done

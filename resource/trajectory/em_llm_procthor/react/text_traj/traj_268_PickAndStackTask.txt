@@ -1,0 +1,43 @@
+Your task is to: Set a candle in a box and then place the box on the shelf.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a bathroom (1). Looking quickly around the room, you see plunger (1), sink (1), sink basin (1), toilet (1).
+Think: To solve the task, I need to find and pick up candle, put it in box, pick up and place box on shelf.
+OK.
+Think: First, I need to find and pick up candle. The candle is more likely to appear in bathroom 1.
+OK.
+Think: In bathroom 1, the candle is likely to appear in/on toilet 1, sink 1, sink basin 1. I can check each place one by one until I find candle.
+OK.
+Act: go to toilet 1
+You arrive at the toilet (1). The toilet (1) is closed. You see candle (1), paper towel roll (1), plunger (1), toilet (1), toilet paper (1).
+Act: open toilet 1
+You open toilet (1). You see candle (1), paper towel roll (1), plunger (1), toilet (1), toilet paper (1).
+Think: I find candle 1. Now, I need to pick it up.
+OK.
+Act: go to candle 1
+You arrive at the candle (1). You see candle (1), paper towel roll (1), plunger (1), toilet (1), toilet paper (1).
+Act: pick up candle 1
+You pick up candle (1). You hold candle (1).
+Think: Now, I need to find box and put down candle 1. The box is more likely to appear in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (2), box (1), dining table (1), painting (3, 4), shelf (2, 3, 4, 5, 6, 7). You hold candle (1).
+Act: go to box 1
+You arrive at the box (1). The box (1) is closed. You see TV stand (2), bowl (3), box (1), dining table (1), key chain (1), laptop (1), painting (3), plate (1), remote control (2), shelf (2, 3, 4, 5, 6, 7), television (3), vase (1), watch (2). You hold candle (1).
+Act: open box 1
+You open box (1). You see TV stand (2), bowl (3), box (1), dining table (1), key chain (1), laptop (1), painting (3), plate (1), remote control (2), shelf (2, 3, 4, 5, 6, 7), television (3), vase (1), watch (2). You hold candle (1).
+Act: put down candle 1
+You put candle (1) in box (1).
+Think: Now, I need to pick up box 1.
+OK.
+Act: pick up box 1
+You pick up box (1). You hold box (1).
+Think: Now, I need to find shelf and put down box 1. The shelf is more likely to appear in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see TV stand (1), bed (1), cabinet (1, 2, 3, 4), candle (1), desk (1), drawer (1, 2, 3, 4), dresser (1), painting (1, 2), shelf (1). You hold box (1).
+Act: go to shelf 1
+You arrive at the shelf (1). You see TV stand (1), cabinet (1, 2, 3), candle (1), drawer (1, 2, 3), shelf (1), television (1), watch (1). You hold box (1).
+Act: put down box 1
+You put box (1) in shelf (1).
+Think: Now I complete the task.
+OK.
+Act: done

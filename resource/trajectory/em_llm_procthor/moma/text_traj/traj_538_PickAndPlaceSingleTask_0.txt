@@ -1,0 +1,7 @@
+Your task is to: Place a laptop on the armchair.
+You are in the house, and there are 1 rooms: bedroom (1). You are in the middle of a bedroom (1). Looking quickly around the room, you see armchair (1), bed (1), box (1), chair (1, 2), dining table (1), drawer (1, 2, 3), dresser (1), floor lamp (1), painting (1, 2, 3), side table (1), television (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- bedroom 1: [(armchair 1), (bed 1), (box 2), (box 1), (chair 2), (chair 1), (dining table 1), (drawer 1), (drawer 2), (drawer 3), (dresser 1), floor lamp 1, house plant 1, painting 3, painting 2, painting 1, (side table 1), television 1, tissue box 1]
+You have not taken any actions yet.
+What is the best next action to complete the task as efficiently as possible?
+Think: I need to find laptop. I find laptop 1. Now, I need to move toward laptop 1 to pick it up.
+Act: go to laptop 1

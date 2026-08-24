@@ -1,0 +1,35 @@
+Your task is to: Turn on the candle while holding a dish sponge.
+You are in the house, and there are 1 rooms: bathroom (1). You are in the middle of a bathroom (1). Looking quickly around the room, you see garbage can (1), painting (1, 2, 3), plunger (1), sink (1), sink basin (1), toilet (1).
+Think: To solve the task, I need to find and pick up dish sponge, find and turn on candle.
+OK.
+Think: First, I need to find and pick up dish sponge.
+OK.
+Query: recall location of dish sponge
+You have not seen dish sponge before.
+Think: I have not seen dish sponge yet. The dish sponge is more likely to appear in kitchen 1.
+OK.
+Act: go to bathroom 1
+You move to the bathroom (1). Looking quickly around the room, you see garbage can (1), painting (1, 2, 3), plunger (1), sink (1), sink basin (1), toilet (1).
+Think: In bathroom 1, the dish sponge is likely to appear in/on toilet 1, garbage can 1, sink 1, sink basin 1. I can check each place one by one until I find dish sponge.
+OK.
+Act: go to toilet 1
+You arrive at the toilet (1). The toilet (1) is closed. You see candle (1), dish sponge (1), faucet (1), painting (2), sink (1), sink basin (1), toilet (1), toilet paper (1).
+Think: I find dish sponge 1. Now, I need to pick it up.
+OK.
+Act: go to dish sponge 1
+You arrive at the dish sponge (1). You see candle (1), dish sponge (1), faucet (1), painting (2), sink (1), sink basin (1), toilet (1), toilet paper (1).
+Act: pick up dish sponge 1
+You pick up dish sponge (1). You hold dish sponge (1).
+Think: Now I need to find and turn on candle.
+OK.
+Query: recall location of candle
+You saw candle 1 near toilet 1 in bathroom 1.
+Think: Candle 1 is near toilet 1 in bathroom 1.
+OK.
+Act: go to candle 1
+You arrive at the candle (1). You see candle (1), faucet (1), painting (2), sink (1), sink basin (1), toilet (1), toilet paper (1). You hold dish sponge (1).
+Act: turn on candle 1
+You turn on candle (1). You hold dish sponge (1).
+Think: Now I complete the task.
+OK.
+Act: done

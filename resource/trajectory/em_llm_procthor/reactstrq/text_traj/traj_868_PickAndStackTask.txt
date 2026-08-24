@@ -1,0 +1,109 @@
+Your task is to: Set a fork on a plate and then place the plate on the countertop.
+You are in the house, and there are 2 rooms: kitchen (1), living room (1). You are in the middle of a kitchen (1). Looking quickly around the room, you see cabinet (1, 2, 3), countertop (1), fridge (1), garbage bag (1), painting (1, 2), shelf (1, 2, 3, 4, 5, 6, 7, 8, 9), shelving unit (1, 2, 3), television (1).
+Think: To solve the task, I need to find fork and plate, put down fork on plate, find countertop and put down plate.
+OK.
+Think: First, I need to find fork and plate.
+OK.
+Query: find_objects({'label': 'fork'})
+Info: 
+Query: find_objects({'label': 'plate'})
+Info: 
+Think: I have not seen fork or plate yet. Now I need to check where to search. First, I will search kitchen 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'kitchen 1'})
+Info: cabinet (1, 2, 3), countertop 1, fridge 1, shelf (1, 2, 3, 4, 5, 6, 7, 8, 9)
+Think: In kitchen 1, the fork or plate is likely to appear in/on cabinet (1, 2, 3), countertop 1, fridge 1, shelf (1, 2, 3, 4, 5, 6, 7, 8, 9). I can check each place one by one until I find fork or plate.
+OK.
+Act: go to cabinet 1
+You arrive at the cabinet (1). The cabinet (1) is closed. You see cabinet (1, 3), fridge (1), garbage bag (1), shelf (1, 2, 3, 7, 8, 9), shelving unit (1, 3), spray bottle (1), vase (1).
+Act: go to cabinet 2
+You arrive at the cabinet (2). The cabinet (2) is closed. You see book (1), cabinet (2), painting (2), shelf (4, 5, 6), shelving unit (2), soap bottle (1).
+Act: go to cabinet 3
+You arrive at the cabinet (3). The cabinet (3) is closed. You see cabinet (1, 3), shelf (1, 2, 3, 7, 8, 9), shelving unit (1, 3), spray bottle (1), vase (1).
+Act: go to countertop 1
+You arrive at the countertop (1). You see book (1), bread (1), coffee machine (1), countertop (1), fork (1), garbage bag (1), house plant (2), painting (1, 2), pen (1), soap bottle (1), television (1).
+Think: I see fork 1.
+OK.
+Act: go to fork 1
+You arrive at the fork (1). You see book (1), bread (1), coffee machine (1), countertop (1), fork (1), garbage bag (1), house plant (2), painting (1, 2), pen (1), soap bottle (1), television (1).
+Act: pick up fork 1
+You pick up fork (1). You hold fork (1).
+Think: Now, I need to find plate.
+OK.
+Query: find_objects({'label': 'plate'})
+Info: 
+Think: I have not seen plate yet. Now I need to check where to search. First, I will search kitchen 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'kitchen 1'})
+Info: cabinet (1, 2, 3), countertop 1, fridge 1, shelf (1, 2, 3, 4, 5, 6, 7, 8, 9)
+Think: In kitchen 1, the plate is likely to appear in/on cabinet (1, 2, 3), countertop 1, fridge 1, shelf (1, 2, 3, 4, 5, 6, 7, 8, 9). I can check each place one by one until I find plate.
+OK.
+Act: go to cabinet 1
+You arrive at the cabinet (1). The cabinet (1) is closed. You see cabinet (1, 3), fridge (1), garbage bag (1), shelf (1, 2, 3, 7, 8, 9), shelving unit (1, 3), spray bottle (1), vase (1). You hold fork (1).
+Act: go to cabinet 2
+You arrive at the cabinet (2). The cabinet (2) is closed. You see book (1), cabinet (2), painting (2), shelf (4, 5, 6), shelving unit (2), soap bottle (1). You hold fork (1).
+Act: go to cabinet 3
+You arrive at the cabinet (3). The cabinet (3) is closed. You see cabinet (1, 3), shelf (1, 2, 3, 7, 8, 9), shelving unit (1, 3), spray bottle (1), vase (1). You hold fork (1).
+Act: go to countertop 1
+You arrive at the countertop (1). You see book (1), bread (1), coffee machine (1), countertop (1), garbage bag (1), house plant (2), painting (1, 2), pen (1), soap bottle (1), television (1). You hold fork (1).
+Act: go to fridge 1
+You arrive at the fridge (1). The fridge (1) is closed. You see cabinet (1, 3), fridge (1), garbage bag (1), house plant (2), shelf (1, 2, 3), shelving unit (1), spray bottle (1), television (1), vase (1). You hold fork (1).
+Act: go to shelf 1
+You arrive at the shelf (1). You see cabinet (1, 3), fridge (1), garbage bag (1), shelf (1, 2, 3, 7, 8, 9), shelving unit (1, 3), spray bottle (1), vase (1). You hold fork (1).
+Act: go to shelf 2
+You arrive at the shelf (2). You see cabinet (1, 3), fridge (1), garbage bag (1), shelf (1, 2, 3, 7, 8, 9), shelving unit (1, 3), spray bottle (1), vase (1). You hold fork (1).
+Act: go to shelf 3
+You arrive at the shelf (3). You see cabinet (1, 3), fridge (1), garbage bag (1), shelf (1, 2, 3, 7, 8, 9), shelving unit (1, 3), spray bottle (1), vase (1). You hold fork (1).
+Act: go to shelf 4
+You arrive at the shelf (4). You see book (1), cabinet (2), painting (2), shelf (4, 5, 6), shelving unit (2), soap bottle (1). You hold fork (1).
+Act: go to shelf 5
+You arrive at the shelf (5). You see book (1), cabinet (2), painting (2), shelf (4, 5, 6), shelving unit (2), soap bottle (1). You hold fork (1).
+Act: go to shelf 6
+You arrive at the shelf (6). You see book (1), cabinet (2), painting (2), shelf (4, 5, 6), shelving unit (2), soap bottle (1). You hold fork (1).
+Act: go to shelf 7
+You arrive at the shelf (7). You see cabinet (1, 3), shelf (1, 2, 3, 7, 8, 9), shelving unit (1, 3), spray bottle (1), vase (1). You hold fork (1).
+Act: go to shelf 8
+You arrive at the shelf (8). You see cabinet (1, 3), shelf (1, 2, 3, 7, 8, 9), shelving unit (1, 3), spray bottle (1), vase (1). You hold fork (1).
+Act: go to shelf 9
+You arrive at the shelf (9). You see cabinet (1, 3), shelf (1, 2, 3, 7, 8, 9), shelving unit (1, 3), spray bottle (1), vase (1). You hold fork (1).
+Think: I need to check whether I see plate.
+OK.
+Query: find_objects({'label': 'plate'})
+Info: 
+Think: I have not seen plate yet. Now I need to check where to search. First, I will search living room 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'living room 1'})
+Info: TV stand 1, dining table 1, shelf 10
+Think: In living room 1, the plate is likely to appear in/on TV stand 1, dining table 1, shelf 10. I can check each place one by one until I find plate.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), dining table (1), house plant (1), painting (3), shelf (10). You hold fork (1).
+Act: go to TV stand 1
+You arrive at the TV stand (1). You see TV stand (1), house plant (1), plate (1), remote control (1, 2, 3), shelf (10), television (2). You hold fork (1).
+Think: I see plate 1.
+OK.
+Act: go to plate 1
+You arrive at the plate (1). You see TV stand (1), bowl (1), dining table (1), painting (3), plate (1), remote control (1, 2, 3), shelf (10), television (2). You hold fork (1).
+Act: pick up plate 1
+Pick up action failed: Robot is currently holding fork
+Think: I need to put down fork 1 to pick up plate 1.
+OK.
+Act: put down fork 1
+You put fork (1) in plate (1).
+Act: pick up plate 1
+You pick up plate (1). You hold plate (1).
+Think: Now, I need to find countertop.
+OK.
+Query: find_objects({'label': 'countertop'})
+Info: [{'name_id_nl': 'countertop 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'kitchen 1'}]
+Think: Countertop 1 is in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see cabinet (1, 2, 3), countertop (1), fork (1), fridge (1), garbage bag (1), painting (1, 2), shelf (1, 2, 3, 4, 5, 6, 7, 8, 9), shelving unit (1, 2, 3), television (1). You hold plate (1).
+Act: go to countertop 1
+You arrive at the countertop (1). You see book (1), bread (1), coffee machine (1), countertop (1), fork (1), garbage bag (1), house plant (2), painting (1, 2), pen (1), soap bottle (1), television (1). You hold plate (1).
+Act: put down plate 1
+You put plate (1) on countertop (1).
+Think: Now I complete task.
+OK.
+Act: done

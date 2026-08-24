@@ -1,0 +1,9 @@
+Your task is to: Place a baseball bat, a basket ball, and a teddy bear together on the countertop.
+You arrive at the countertop (1). You see basket ball (1), bottle (1), bowl (1), butter knife (1), coffee machine (1), countertop (1), fridge (1), knife (1), lettuce (2), painting (1), soap bottle (1), spatula (1), spoon (1), teddy bear (1), toaster (1). You hold baseball bat (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- bedroom 1: [vacuum cleaner 1, pillow 1, bed 1, CD 1, drawer 4, drawer 2, drawer 3, drawer 5, drawer 6, drawer 1, dresser 1, laptop 1, mug 1, watch 1]
+- kitchen 1: [house plant 1, painting 4, painting 3, painting 2, garbage bag 1, baseball bat 1, basket ball 1, bottle 1, bowl 1, butter knife 1, coffee machine 1, countertop 1, (fridge 1), knife 1, lettuce 2, painting 1, soap bottle 1, spatula 1, spoon 1, teddy bear 1, toaster 1]
+- living room 1: [cart 1, house plant 2, (shelf 6), (TV stand 1), (shelf 1), (sofa 1), (shelf 2), (shelf 5), (shelf 4), (dining table 1), (shelf 3)]
+Your 5 previous actions were: go to countertop 1 (success), put down teddy bear 1 (success), go to baseball bat 1 (success), pick up baseball bat 1 (success), go to countertop 1 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I arrive at countertop 1. I hold baseball bat 1. Now, I need to put down baseball bat 1.
+Act: put down baseball bat 1

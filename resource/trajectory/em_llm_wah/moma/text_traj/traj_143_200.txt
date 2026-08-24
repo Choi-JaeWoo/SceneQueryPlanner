@@ -1,0 +1,2 @@
+Your task is to: take one fork, one wine glass, one water glass, and one plate, and place them on the table
+Max decision steps reached.

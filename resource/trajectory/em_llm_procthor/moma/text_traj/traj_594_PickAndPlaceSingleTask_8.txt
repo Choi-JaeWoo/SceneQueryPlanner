@@ -1,0 +1,7 @@
+Your task is to: Take a pillow and set it down on the armchair.
+You pick up pillow (1). You hold pillow (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- living room 1: [bowl 1, floor lamp 1, floor lamp 2, house plant 1, painting 1, painting 2, pencil 1, newspaper 1, armchair 1, (armchair 3), (armchair 2), (box 2), (box 1), (chair 4), (chair 1), (chair 5), (chair 3), (chair 2), credit card 1, (dining table 1), pillow 1, remote control 1, (shelf 2), (shelf 3), (shelf 4), (shelf 5), (shelf 1), (shelf 6), (sofa 1), (TV stand 1)]
+Your 4 previous actions were: go to living room 1 (success), go to armchair 1 (success), go to pillow 1 (success), pick up pillow 1 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I pick up pillow 1. Now, I need to find armchair to put down pillow 1. Armchair 1 is in living room 1.
+Act: go to living room 1

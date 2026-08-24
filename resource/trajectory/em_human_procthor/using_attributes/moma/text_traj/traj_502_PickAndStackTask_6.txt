@@ -1,0 +1,10 @@
+Your task is to: Place the box with the paper item found near the CD on the bed for temporary storage.
+You arrive at the dining table (1). You see CD (1), book (1), cell phone (1, 2, 3), chair (1), credit card (1), desk lamp (1), dining table (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), house plant (1), mug (1), pencil (1), statue (1), tennis racket (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- (bathroom 1): [faucet 1, painting 3, painting 4, plunger 1, (side table 2), (sink 1), (sink basin 1), (toilet 1)]
+- bedroom 1: [baseball bat 1, painting 1, painting 2, basket ball 1, pencil 2, remote control 1, television 1, tissue box 1, tissue box 2, watch 1, (bed 1), book 1, CD 1, cell phone 2, cell phone 3, cell phone 1, (chair 1), credit card 1, desk lamp 1, dining table 1, (drawer 12), (drawer 5), (drawer 6), (drawer 7), (drawer 2), (drawer 8), (drawer 3), (drawer 1), (drawer 4), (drawer 11), (drawer 14), (drawer 10), (drawer 13), (drawer 9), (dresser 1), house plant 1, mug 1, pencil 1, (shelf 3), (shelf 1), (shelf 2), (shelf 4), (shelf 5), (shelf 6), (side table 1), statue 1, tennis racket 1, TV stand 1]
+- (kitchen 1): [(chair 6), (chair 5), (chair 4), (chair 3), (chair 2), (countertop 1), (dining table 2), (fridge 1), (stool 1)]
+- (living room 1): [(box 1), (chair 7), (dining table 3), television 2]
+Your 3 previous actions were: go to bedroom 1 (success), go to TV stand 1 (success), go to dining table 1 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I arrive at dining table 1. I find CD 1. Now, I need to move toward CD 1 to find the paper item found near CD.
+Act: go to CD 1

@@ -1,0 +1,2 @@
+Your task is to: Transfer all items from the countertop to the dining table.
+Max decision steps reached.

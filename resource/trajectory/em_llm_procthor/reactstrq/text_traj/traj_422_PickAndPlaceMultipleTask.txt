@@ -1,0 +1,51 @@
+Your task is to: Gather a bottle and a soap bottle, then set them on the shelf.
+You are in the house, and there are 1 rooms: kitchen (1). You are in the middle of a kitchen (1). Looking quickly around the room, you see cabinet (1), countertop (1), fridge (1), garbage can (1), house plant (1), painting (1, 2, 3, 4), shelf (1, 2, 3), shelving unit (1), stool (1, 2).
+Think: To solve the task, I need to find and pick up bottle, then put it on shelf. And I need to find and pick up soap bottle, then put it on shelf.
+OK.
+Think: First, I need to find and pick up bottle.
+OK.
+Query: find_objects({'label': 'bottle'})
+Info: [{'name_id_nl': 'bottle 1', 'node_type': 'object', 'properties': ['canFillWithLiquid', 'breakable', 'pickupable'], 'states': []}]
+Query: get_edges_for_node({'node_id': 'bottle 1'})
+Info: [('bottle 1', 'kitchen 1', 'INSIDE'), ('bottle 1', 'countertop 1', 'ON'), ('bottle 1', 'butter knife 2', 'CLOSE'), ('bottle 1', 'butter knife 1', 'CLOSE'), ('bottle 1', 'painting 4', 'CLOSE'), ('bottle 1', 'soap bottle 1', 'CLOSE'), ('bottle 1', 'stool 2', 'CLOSE'), ('bottle 1', 'user 1', 'CLOSE'), ('butter knife 2', 'bottle 1', 'CLOSE'), ('butter knife 1', 'bottle 1', 'CLOSE'), ('painting 4', 'bottle 1', 'CLOSE'), ('soap bottle 1', 'bottle 1', 'CLOSE'), ('stool 2', 'bottle 1', 'CLOSE'), ('user 1', 'bottle 1', 'CLOSE')]
+Think: Bottle 1 is on countertop 1 in kitchen 1.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see bottle (1), butter knife (1, 2), countertop (1), soap bottle (1), stool (2).
+Act: go to bottle 1
+You arrive at the bottle (1). You see bottle (1), butter knife (1, 2), countertop (1), soap bottle (1), stool (2).
+Act: pick up bottle 1
+You pick up bottle (1). You hold bottle (1).
+Think: Now, I need to find shelf and put down bottle 1.
+OK.
+Query: find_objects({'label': 'shelf'})
+Info: [{'name_id_nl': 'shelf 3', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'kitchen 1'}, {'name_id_nl': 'shelf 2', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'kitchen 1'}, {'name_id_nl': 'shelf 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'kitchen 1'}]
+Think: Shelf 3 is in kitchen 1.
+OK.
+Act: go to shelf 3
+You arrive at the shelf (3). You see cabinet (1), garbage can (1), painting (3), shelf (1, 2, 3), shelving unit (1). You hold bottle (1).
+Act: put down bottle 1
+You put bottle (1) in shelf (3).
+Think: Now, I need to find and pick up soap bottle.
+OK.
+Query: find_objects({'label': 'soap bottle'})
+Info: [{'name_id_nl': 'soap bottle 1', 'node_type': 'object', 'properties': ['pickupable'], 'states': []}]
+Query: get_edges_for_node({'node_id': 'soap bottle 1'})
+Info: [('soap bottle 1', 'painting 4', 'CLOSE'), ('soap bottle 1', 'countertop 1', 'ON'), ('soap bottle 1', 'butter knife 2', 'CLOSE'), ('soap bottle 1', 'butter knife 1', 'CLOSE'), ('soap bottle 1', 'stool 2', 'CLOSE'), ('soap bottle 1', 'stool 1', 'CLOSE'), ('soap bottle 1', 'kitchen 1', 'INSIDE'), ('painting 4', 'soap bottle 1', 'CLOSE'), ('butter knife 2', 'soap bottle 1', 'CLOSE'), ('butter knife 1', 'soap bottle 1', 'CLOSE'), ('stool 2', 'soap bottle 1', 'CLOSE'), ('stool 1', 'soap bottle 1', 'CLOSE')]
+Think: Soap bottle 1 is on countertop 1 in kitchen 1.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see butter knife (1, 2), countertop (1), soap bottle (1), stool (2).
+Act: go to soap bottle 1
+You arrive at the soap bottle (1). You see butter knife (1, 2), countertop (1), soap bottle (1), stool (2).
+Act: pick up soap bottle 1
+You pick up soap bottle (1). You hold soap bottle (1).
+Think: Now, I need to find shelf and put down soap bottle 1.
+OK.
+Act: go to shelf 3
+You arrive at the shelf (3). You see bottle (1), cabinet (1), garbage can (1), house plant (1), painting (1, 2), shelf (1, 2, 3), shelving unit (1). You hold soap bottle (1).
+Act: put down soap bottle 1
+You put soap bottle (1) in shelf (3).
+Think: Now I complete the task.
+OK.
+Act: done

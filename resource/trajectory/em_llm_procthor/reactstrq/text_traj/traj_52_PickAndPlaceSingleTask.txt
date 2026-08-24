@@ -1,0 +1,47 @@
+Your task is to: Place a soap bar in the garbage can.
+You are in the house, and there are 1 rooms: bathroom (1). You are in the middle of a bathroom (1). Looking quickly around the room, you see garbage can (1), painting (1), sink (1), sink basin (1), toilet (1).
+Think: To solve the task, I need to find and pick up soap bar, put it in garbage can.
+OK.
+Think: First, I need to find and pick up soap bar.
+OK.
+Query: find_objects({'label': 'soap bar'})
+Info: 
+Think: I have not seen soap bar yet. Now I need to check where to search. First, I will search bathroom 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'bathroom 1'})
+Info: garbage can 1, sink 1, sink basin 1, toilet 1
+Think: In bathroom 1, the soap bar is likely to appear in/on garbage can 1, sink 1, sink basin 1, toilet 1. I can check each place one by one until I find soap bar.
+OK.
+Act: go to bathroom 1
+You move to the bathroom (1). Looking quickly around the room, you see garbage can (1), painting (1), sink (1), sink basin (1), toilet (1).
+Act: go to garbage can 1
+You arrive at the garbage can (1). You see garbage can (1), painting (1).
+Act: go to sink 1
+You arrive at the sink (1). You see faucet (1), sink (1), sink basin (1).
+Act: go to sink basin 1
+You arrive at the sink basin (1). You see faucet (1), sink (1), sink basin (1).
+Act: go to toilet 1
+You arrive at the toilet (1). The toilet (1) is closed. You see painting (1), soap bar (1), spray bottle (1), toilet (1), toilet paper (1).
+Act: open toilet 1
+You open toilet (1). You see painting (1), soap bar (1), spray bottle (1), toilet (1), toilet paper (1).
+Think: I find soap bar 1. Now, I need to pick it up.
+OK.
+Act: go to soap bar 1
+You arrive at the soap bar (1). You see painting (1), soap bar (1), spray bottle (1), toilet (1), toilet paper (1).
+Act: pick up soap bar 1
+You pick up soap bar (1). You hold soap bar (1).
+Think: Now, I need to find garbage can.
+OK.
+Query: find_objects({'label': 'garbage can'})
+Info: [{'name_id_nl': 'garbage can 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'bathroom 1'}]
+Think: Garbage can 1 is in bathroom 1.
+OK.
+Act: go to bathroom 1
+You move to the bathroom (1). Looking quickly around the room, you see garbage can (1), painting (1), sink (1), sink basin (1), toilet (1). You hold soap bar (1).
+Act: go to garbage can 1
+You arrive at the garbage can (1). You see garbage can (1), painting (1). You hold soap bar (1).
+Act: put down soap bar 1
+You put soap bar (1) in garbage can (1).
+Think: Now I complete the task.
+OK.
+Act: done

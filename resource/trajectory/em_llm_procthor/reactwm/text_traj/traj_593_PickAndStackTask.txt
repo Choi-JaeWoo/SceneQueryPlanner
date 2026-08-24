@@ -1,0 +1,59 @@
+Your task is to: Put a plate with a knife on it onto the countertop.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a living room (1). Looking quickly around the room, you see TV stand (1), dining table (3), shelf (1, 2, 3, 4, 5, 6), side table (1), sofa (1).
+Think: To solve the task, I need to find the plate and knife, put the knife on the plate, and then put the plate on the countertop.
+OK.
+Think: First, I need to find the plate and knife.
+OK.
+Query: recall location of plate
+You have not seen plate before.
+Query: recall location of knife
+You have not seen knife before.
+Think: I have not seen plate or knife yet. The plate or knife is more likely to appear in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see chair (3, 4, 5, 6), countertop (1), dining table (2), fridge (1), garbage can (2), house plant (1), television (1).
+Think: In kitchen 1, the plate or knife is likely to appear in/on countertop 1, dining table 2. I can check each place one by one until I find plate or knife.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see bread (1, 2, 3), butter knife (1, 2), countertop (1), cup (1), knife (1), ladle (1), lettuce (1), mug (2), salt shaker (1), spray bottle (2).
+Act: go to dining table 2
+You arrive at the dining table (2). You see apple (1), chair (3, 4, 5, 6), dining table (2), plate (1), statue (1), vase (2).
+Think: I find plate 1. Now, I need to find knife.
+OK.
+Query: recall location of knife
+You saw knife 1 near countertop 1 in kitchen 1.
+Think: Knife 1 is near countertop 1 in kitchen 1.
+OK.
+Act: go to knife 1
+You arrive at the knife (1). You see bread (1, 2, 3), butter knife (1, 2), countertop (1), cup (1), garbage can (2), knife (1), ladle (1), lettuce (1), mug (2), salt shaker (1), spray bottle (2).
+Act: pick up knife 1
+You pick up knife (1). You hold knife (1).
+Think: Now, I need to find plate.
+OK.
+Query: recall location of plate
+You saw plate 1 near dining table 2 in kitchen 1.
+Think: Plate 1 is near dining table 2 in kitchen 1.
+OK.
+Act: go to dining table 2
+You arrive at the dining table (2). You see apple (1), chair (3, 4, 5, 6), dining table (2), plate (1), statue (1), vase (2). You hold knife (1).
+Act: go to plate 1
+You arrive at the plate (1). You see apple (1), chair (3, 4, 5, 6), dining table (2), plate (1), statue (1), vase (2). You hold knife (1).
+Act: put down knife 1
+You put knife (1) in plate (1).
+Think: Now, I need to pick up plate 1 and find countertop.
+OK.
+Act: pick up plate 1
+You pick up plate (1). You hold plate (1).
+Think: Now, I need to find countertop and put down plate 1.
+OK.
+Query: recall location of countertop
+You saw countertop 1 in kitchen 1.
+Think: Countertop 1 is in kitchen 1.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see bread (1, 2, 3), butter knife (1, 2), countertop (1), cup (1), knife (1), ladle (1), lettuce (1), mug (2), salt shaker (1), spray bottle (2). You hold plate (1).
+Act: put down plate 1
+You put plate (1) on countertop (1).
+Think: Now I complete task.
+OK.
+Act: done

@@ -1,0 +1,2 @@
+Your task is to: Place the pudding, wine, cupcake, and juice on the coffee table.
+Max decision steps reached.

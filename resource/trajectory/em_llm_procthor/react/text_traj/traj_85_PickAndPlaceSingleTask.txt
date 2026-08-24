@@ -1,0 +1,63 @@
+Your task is to: Take a sliced apple and set it inside the bowl.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a kitchen (1). Looking quickly around the room, you see cabinet (1), chair (3), countertop (1), dining table (2), egg (2), fridge (1), garbage can (2), shelf (1, 2, 3), shelving unit (1).
+Think: To solve the task, I need to find and pick up knife or butter knife, find and slice apple, put down knife or butter knife and pick up sliced apple, find bowl and put down sliced apple.
+OK.
+Think: First, I need to find and pick up knife or butter knife. The knife or butter knife is more likely to appear in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see cabinet (1), chair (3), countertop (1), dining table (2), egg (2), fridge (1), garbage can (2), shelf (1, 2, 3), shelving unit (1).
+Think: In kitchen 1, the knife or butter knife is likely to appear in/on cabinet (1), countertop (1), fridge (1), shelf (1, 2, 3). I can check each place one by one until I find knife or butter knife.
+OK.
+Act: go to cabinet 1
+You arrive at the cabinet (1). The cabinet (1) is closed. You see book (1), bottle (1), bowl (2), cabinet (1), pencil (2), pot (1), shelf (1, 2, 3), shelving unit (1).
+Act: open cabinet 1
+You open cabinet (1). You see book (1), bottle (1), bowl (2), cabinet (1), pencil (2), pot (1), shelf (1, 2, 3), shelving unit (1).
+Act: go to countertop 1
+You arrive at the countertop (1). You see butter knife (1), coffee machine (1), countertop (1), cup (1), egg (1), house plant (2), knife (1), ladle (1), mug (2), soap bottle (1), spray bottle (2), statue (1), vase (1).
+Think: I find knife 1. Now, I need to pick it up.
+OK.
+Act: go to knife 1
+You arrive at the knife (1). You see butter knife (1), countertop (1), cup (1), house plant (2), knife (1), ladle (1), statue (1).
+Act: pick up knife 1
+You pick up knife (1). You hold knife (1).
+Think: Now, I need to find and slice apple. The apple is more likely to appear in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see cabinet (1), chair (3), countertop (1), dining table (2), egg (2), fridge (1), garbage can (2), shelf (1, 2, 3), shelving unit (1). You hold knife (1).
+Think: In kitchen 1, the apple is likely to appear in/on cabinet (1), countertop (1), dining table (2), fridge (1), shelf (1, 2, 3). I can check each place one by one until I find apple.
+OK.
+Act: go to cabinet 1
+You arrive at the cabinet (1). The cabinet (1) is open. You see book (1), bottle (1), bowl (2), cabinet (1), pencil (2), pot (1), shelf (1, 2, 3), shelving unit (1). You hold knife (1).
+Act: go to countertop 1
+You arrive at the countertop (1). You see butter knife (1), coffee machine (1), countertop (1), cup (1), egg (1), house plant (2), ladle (1), mug (2), soap bottle (1), spray bottle (2), statue (1), vase (1). You hold knife (1).
+Think: I find apple 1. Now, I need to slice it.
+OK.
+Act: go to apple 1
+You arrive at the apple (1). You see apple (1), book (1), bottle (1), bowl (2), chair (3), dining table (2), fork (1, 2), pencil (2), potato (1). You hold knife (1).
+Act: slice apple 1
+You slice apple (1). You see book (1), bottle (1), bowl (2), chair (3), dining table (2), fork (1, 2), pencil (2), potato (1), sliced apple (1). You hold knife (1).
+Think: Now, I need to put down knife 1 and pick up sliced apple 1.
+OK.
+Act: put down knife 1
+You put knife (1) in countertop (1).
+Act: go to sliced apple 1
+You arrive at the sliced apple (1). You see book (1), bottle (1), bowl (2), chair (3), dining table (2), fork (1, 2), pencil (2), potato (1), sliced apple (1).
+Act: pick up sliced apple 1
+You pick up sliced apple (1). You hold sliced apple (1).
+Think: Now, I need to find bowl. The bowl is more likely to appear in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see cabinet (1), chair (3), countertop (1), dining table (2), egg (2), fridge (1), garbage can (2), shelf (1, 2, 3), shelving unit (1). You hold sliced apple (1).
+Think: In kitchen 1, the bowl is likely to appear in/on cabinet (1), countertop (1), dining table (2), fridge (1), shelf (1, 2, 3). I can check each place one by one until I find bowl.
+OK.
+Act: go to cabinet 1
+You arrive at the cabinet (1). The cabinet (1) is open. You see book (1), bottle (1), bowl (2), cabinet (1), pencil (2), pot (1), shelf (1, 2, 3), shelving unit (1). You hold sliced apple (1).
+Think: I find bowl 2. Now, I need to put down sliced apple 1.
+OK.
+Act: go to bowl 2
+You arrive at the bowl (2). You see book (1), bottle (1), bowl (2), chair (3), cup (1), dining table (2), fork (1, 2), pencil (2), potato (1), soap bottle (1), vase (1). You hold sliced apple (1).
+Act: put down sliced apple 1
+You put sliced apple (1) in bowl (2).
+Think: Now I complete task.
+OK.
+Act: done

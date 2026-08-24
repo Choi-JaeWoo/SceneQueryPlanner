@@ -1,0 +1,41 @@
+Your task is to: Hold the book up to the candle's light.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a living room (1). Looking quickly around the room, you see TV stand (2), cabinet (1), dining table (3), painting (2, 3, 4), shelf (1, 2, 3, 10, 11, 12, 13, 14, 15), shelving unit (1), sofa (1).
+Think: To solve the task, I need to find and pick up book, find and turn on candle.
+OK.
+Think: First, I need to find and pick up book. The book is more likely to appear in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see TV stand (1), bed (1), chair (1), dining table (1), drawer (1, 2, 3), dresser (1), shelf (4, 5, 6, 7, 8, 9).
+Think: In bedroom 1, the book is likely to appear in/on TV stand 1, bed 1, chair 1, dining table 1, drawer (1, 2, 3), dresser 1, shelf (4, 5, 6, 7, 8, 9). I can check each place one by one until I find book.
+OK.
+Act: go to TV stand 1
+You arrive at the TV stand (1). You see butter knife (1, 2), countertop (1), dish sponge (1), house plant (1), soap bottle (1), spatula (1), stool (1), toaster (1).
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see TV stand (1), bed (1), chair (1), dining table (1), drawer (1, 2, 3), dresser (1), shelf (4, 5, 6, 7, 8, 9).
+Act: go to bed 1
+You arrive at the bed (1). You see baseball bat (1), bed (1), book (1), chair (1), pillow (1).
+Think: I find book 1. Now, I need to pick it up.
+OK.
+Act: go to book 1
+You arrive at the book (1). The book (1) is closed. You see baseball bat (1), bed (1), book (1), chair (1), pillow (1).
+Act: pick up book 1
+You pick up book (1). You hold book (1).
+Think: Now I need to find and turn on candle. The candle is more likely to appear in bathroom 1.
+OK.
+Act: go to bathroom 1
+You move to the bathroom (1). Looking quickly around the room, you see plunger (1), sink (1), sink basin (1), toilet (1). You hold book (1).
+Think: In bathroom 1, the candle is likely to appear in/on toilet 1, sink 1, sink basin 1. I can check each place one by one until I find candle.
+OK.
+Act: go to toilet 1
+You arrive at the toilet (1). The toilet (1) is closed. You see candle (1), toilet (1), toilet paper (1). You hold book (1).
+Act: open toilet 1
+You open toilet (1). You see candle (1), toilet (1), toilet paper (1). You hold book (1).
+Think: I find candle 1. Now, I need to turn it on.
+OK.
+Act: go to candle 1
+You arrive at the candle (1). You see candle (1), toilet (1), toilet paper (1). You hold book (1).
+Act: turn on candle 1
+You turn on candle (1). You hold book (1).
+Think: Now I complete the task.
+OK.
+Act: done

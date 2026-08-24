@@ -1,0 +1,65 @@
+Your task is to: Move all the objects from the bed to the dining table.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a living room (1). Looking quickly around the room, you see TV stand (1), dining table (3), drawer (14, 15), shelf (8, 9, 10, 11, 12, 13), side table (3), sofa (1).
+Think: To solve the task, I need to find bed and check what is on top of it. Then, I need to move everything on bed to dining table.
+OK.
+Think: First, I need to find bed.
+OK.
+Query: recall location of bed
+You saw bed 1 in bedroom 1.
+Think: Bed 1 is in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see baseball bat (1), bed (1), chair (1, 2, 3, 4, 5, 6), desk (1), dining table (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), painting (1, 2, 3), shelf (1, 2, 3, 4).
+Act: go to bed 1
+You arrive at the bed (1). You see alarm clock (1), bed (1), chair (5), drawer (1, 2, 3, 4, 5), dresser (1), key chain (1), painting (3), pillow (1), remote control (1), tissue box (1).
+Think: Now, I need to move alarm clock (1), key chain (1), pillow (1), remote control (1), tissue box (1) to dining table.
+OK.
+Act: go to alarm clock 1
+You arrive at the alarm clock (1). You see alarm clock (1), book (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), key chain (1), tissue box (1).
+Act: pick up alarm clock 1
+You pick up alarm clock (1). You hold alarm clock (1).
+Think: Now, I need to find dining table.
+OK.
+Query: recall location of dining table
+You saw dining table 2 in kitchen 1. You saw dining table 1 in bedroom 1. You saw dining table 3 in living room 1.
+Think: Dining table 1 is in bedroom 1.
+OK.
+Act: go to dining table 1
+You arrive at the dining table (1). You see CD (1), chair (1, 2, 3, 4, 6), desk lamp (2), dining table (1), pencil (1, 2). You hold alarm clock (1).
+Act: put down alarm clock 1
+You put alarm clock (1) in dining table (1).
+Act: go to key chain 1
+You arrive at the key chain (1). You see bed (1), book (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), key chain (1), pillow (1), remote control (1), tissue box (1).
+Act: pick up key chain 1
+You pick up key chain (1). You hold key chain (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see CD (1), alarm clock (1), chair (1, 2, 3, 4, 6), desk lamp (2), dining table (1), pencil (1, 2). You hold key chain (1).
+Act: put down key chain 1
+You put key chain (1) in dining table (1).
+Act: go to pillow 1
+You arrive at the pillow (1). You see bed (1), drawer (1, 2, 3, 4, 5, 9, 10), dresser (1), painting (3), pillow (1), remote control (1), tissue box (1).
+Act: pick up pillow 1
+You pick up pillow (1). You hold pillow (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see CD (1), alarm clock (1), chair (1, 2, 3, 4, 6), desk lamp (2), dining table (1), key chain (1), pencil (1, 2). You hold pillow (1).
+Act: put down pillow 1
+You put pillow (1) in dining table (1).
+Act: go to remote control 1
+You arrive at the remote control (1). You see alarm clock (1), bed (1), chair (1, 5), key chain (1), painting (2, 3), pillow (1), remote control (1).
+Act: pick up remote control 1
+You pick up remote control (1). You hold remote control (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see CD (1), alarm clock (1), chair (1, 2, 3, 4, 6), desk lamp (2), dining table (1), key chain (1), pencil (1, 2), pillow (1). You hold remote control (1).
+Act: put down remote control 1
+You put remote control (1) in dining table (1).
+Act: go to tissue box 1
+You arrive at the tissue box (1). You see book (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), tissue box (1).
+Act: pick up tissue box 1
+You pick up tissue box (1). You hold tissue box (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see CD (1), alarm clock (1), chair (1, 2, 3, 4, 6), desk lamp (2), dining table (1), key chain (1), pencil (1, 2), pillow (1), remote control (1). You hold tissue box (1).
+Act: put down tissue box 1
+You put tissue box (1) in dining table (1).
+Think: Now I complete the task.
+OK.
+Act: done

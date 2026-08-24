@@ -1,0 +1,57 @@
+Your task is to: Heat an apple and place it on the dining table.
+You are in the house, and there are 7 rooms: bathroom (1), bedroom (1, 2, 3), kitchen (1), living room (1, 2). You are in the middle of a bedroom (1). Looking quickly around the room, you see TV stand (3), baseball bat (1), bed (1), drawer (1, 2, 3, 4, 5, 6), dresser (1), laundry hamper (1), shelf (3, 4, 5, 6, 7, 8), side table (1, 2).
+Think: To solve the task, I need to find and pick up apple, find microwave and put down apple, turn on microwave to heat apple and turn off microwave, pick up heated apple and put it down on dining table.
+OK.
+Think: First, I need to find and pick up apple. The apple is more likely to appear in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see chair (1), countertop (1), dining table (1), egg (1), fridge (1), garbage bag (1), garbage can (1), house plant (1), painting (1, 2), stool (1).
+Think: In kitchen 1, the apple is likely to appear in/on countertop 1, dining table 1, fridge 1. I can check each place one by one until I find apple.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see book (1), bottle (1), bowl (1), bread (1), butter knife (1), cell phone (1), countertop (1), cup (1), ladle (1), microwave (1), pan (1), pen (1), pepper shaker (1), spray bottle (1), toaster (1), tomato (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see apple (1), bottle (2), butter knife (2), chair (1), dining table (1), pot (1), potato (1).
+Think: I find apple 1. Now, I need to pick it up.
+OK.
+Act: go to apple 1
+You arrive at the apple (1). You see apple (1), bottle (2), butter knife (2), chair (1), dining table (1), pot (1), potato (1).
+Act: pick up apple 1
+You pick up apple (1). You hold apple (1).
+Think: Now, I need to find microwave 1.
+OK.
+Act: go to microwave 1
+You arrive at the microwave (1). The microwave (1) is closed. You see book (1), bottle (1), bowl (1), bread (1), butter knife (1), cell phone (1), countertop (1), cup (1), ladle (1), microwave (1), pan (1), pen (1), pepper shaker (1), spray bottle (1), toaster (1), tomato (1). You hold apple (1).
+Think: Since microwave 1 is closed, I need to open it to put down apple 1.
+OK.
+Act: open microwave 1
+You open microwave (1). You see book (1), bottle (1), bowl (1), bread (1), butter knife (1), cell phone (1), countertop (1), cup (1), ladle (1), microwave (1), pan (1), pen (1), pepper shaker (1), spray bottle (1), toaster (1), tomato (1). You hold apple (1).
+Act: put down apple 1
+You put apple (1) in microwave (1).
+Think: Now, I need to close microwave 1, turn it on briefly, and then turn it off.
+OK.
+Act: close microwave 1
+You close microwave (1).
+Act: turn on microwave 1
+You turn on microwave (1).
+Act: turn off microwave 1
+You turn off microwave (1).
+Think: Now, I need to open microwave 1 and pick up apple 1.
+OK.
+Act: open microwave 1
+You open microwave (1). You see apple (1), book (1), bottle (1), bowl (1), bread (1), butter knife (1), cell phone (1), countertop (1), cup (1), ladle (1), microwave (1), pan (1), pen (1), pepper shaker (1), spray bottle (1), toaster (1), tomato (1).
+Act: pick up apple 1
+You pick up apple (1). You hold apple (1).
+Think: Now, I need to find dining table. The dining table is more likely to appear in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), armchair (1), dining table (2), floor lamp (1), painting (3, 4), shelf (1), sofa (1). You hold apple (1).
+Act: go to dining table 2
+You arrive at the dining table (2). You see cell phone (1), garbage bag (1), painting (2), spray bottle (1), stool (1), tomato (1). You hold apple (1).
+Think: Now, I need to put down apple 1.
+OK.
+Act: put down apple 1
+You put apple (1) in dining table (2).
+Think: Now I complete task.
+OK.
+Act: done
