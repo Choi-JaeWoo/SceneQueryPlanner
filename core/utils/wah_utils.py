@@ -315,7 +315,7 @@ def check_holding_obj(graph, agent_id, obj_id):
 # def add_text_to_np_img(np_img, text, font_path="UbuntuMono-B.ttf", font_size=35):
 #     img = Image.fromarray(np_img[:, :, ::-1])
 #     draw = ImageDraw.Draw(img)
-#     font = ImageFont.truetype(font_path, size=font_size)
+#     font = load_font(font_path, font_size)
     
 #     text_lines = textwrap.wrap(text, width=22)
 #     y_text = 10
@@ -325,12 +325,13 @@ def check_holding_obj(graph, agent_id, obj_id):
 #     return img
 
 from PIL import Image, ImageDraw, ImageFont
+from core.utils.fonts import load_font
 
 def add_text_to_np_img(np_img, text, font_path="UbuntuMono-B.ttf", font_size=35, padding=10):
     # Create and prepare the image (BGR -> RGB conversion)
     img = Image.fromarray(np_img[:, :, ::-1])
     draw = ImageDraw.Draw(img)
-    font = ImageFont.truetype(font_path, size=font_size)
+    font = load_font(font_path, font_size)
     
     # Compute line wrapping to fit the image width
     image_width = img.width - 2 * padding  # Image width accounting for left/right padding
@@ -378,7 +379,7 @@ def save_images_in_grid(img_list, text_list, title, file_name, grid_width=7, tit
     grid_image = Image.new('RGB', (total_width, total_height), 'white')
 
     draw = ImageDraw.Draw(grid_image)
-    font = ImageFont.truetype(font_path, font_size)
+    font = load_font(font_path, font_size)
     title_lines = textwrap.wrap(title, width=110)
     # y_start = 10 if len(title_lines) > 1 else 35
     y_start = 10 if len(title_lines) > 1 else 15
