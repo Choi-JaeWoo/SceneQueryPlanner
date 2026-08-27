@@ -22,3 +22,6 @@ virtualhome/simulation/unity_simulator/linux_exec*
 
 # Credentials
 .env
+
+# Local backup of the full README (restored before public documentation release)
+README_full.md
