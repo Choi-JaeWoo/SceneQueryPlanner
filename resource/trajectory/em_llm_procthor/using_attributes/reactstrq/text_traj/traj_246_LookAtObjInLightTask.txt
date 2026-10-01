@@ -1,0 +1,53 @@
+Your task is to: Hold a pen and turn on the lamp that is close to the pencil to examine it.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a living room (1). Looking quickly around the room, you see TV stand (1), armchair (1), chair (4, 5), coffee table (1), dining table (2), drawer (5, 6), house plant (2), painting (4), shelf (1, 2, 3), side table (1, 2), sofa (1).
+Think: To solve the task, I need to find and pick up pen, find and turn on the lamp that is close to pencil.
+OK.
+Think: First, I need to find and pick up pen.
+OK.
+Query: find_objects({'label': 'pen'})
+Info: 
+Think: I have not seen pen yet. Now I need to check where to search. First, I will search living room 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'living room 1'})
+Info: TV stand 1, armchair 1, chair (4, 5), coffee table 1, dining table 2, drawer (5, 6), shelf (1, 2, 3), side table (1, 2), sofa 1
+Think: In living room 1, the pen is likely to appear in/on TV stand 1, armchair 1, chair (4, 5), coffee table 1, dining table 2, drawer (5, 6), shelf (1, 2, 3), side table (1, 2), sofa 1. I can check each place one by one until I find pen.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), armchair (1), chair (4, 5), coffee table (1), dining table (2), drawer (5, 6), house plant (2), painting (4), shelf (1, 2, 3), side table (1, 2), sofa (1).
+Act: go to TV stand 1
+You arrive at the TV stand (1). You see TV stand (1), candle (1), cell phone (2), key chain (1), shelf (3), television (2).
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), armchair (1), chair (4, 5), coffee table (1), dining table (2), drawer (5, 6), house plant (2), painting (4), shelf (1, 2, 3), side table (1, 2), sofa (1).
+Act: go to armchair 1
+You arrive at the armchair (1). You see armchair (1), chair (4, 5), coffee table (1), credit card (2), desk lamp (1), dining table (2), laptop (1), pencil (1), watch (1).
+Think: I find pen 1. Now, I need to pick it up.
+OK.
+Act: go to pen 3
+You arrive at the pen (3). You see TV stand (1), cell phone (1), drawer (5, 6), key chain (1), newspaper (1), pen (3), plate (1), shelf (1, 2, 3), side table (1, 2), television (2).
+Act: pick up pen 3
+You pick up pen (3). You hold pen (3).
+Think: Now, I need to find pencil and find the lamp that is close to pencil.
+OK.
+Query: find_objects({'label': 'pencil'})
+Info: [{'name_id_nl': 'pencil 1', 'node_type': 'object', 'properties': ['pickupable'], 'states': []}]
+Query: get_edges_for_node({'node_id': 'pencil 1'})
+Info: [('pencil 1', 'dining table 2', 'ON'), ('pencil 1', 'armchair 1', 'CLOSE'), ('pencil 1', 'chair 4', 'CLOSE'), ('pencil 1', 'chair 5', 'CLOSE'), ('pencil 1', 'coffee table 1', 'CLOSE'), ('pencil 1', 'credit card 2', 'CLOSE'), ('pencil 1', 'desk lamp 1', 'CLOSE'), ('pencil 1', 'laptop 1', 'CLOSE'), ('pencil 1', 'watch 1', 'CLOSE'), ('pencil 1', 'living room 1', 'INSIDE'), ('armchair 1', 'pencil 1', 'CLOSE'), ('chair 4', 'pencil 1', 'CLOSE'), ('chair 5', 'pencil 1', 'CLOSE'), ('coffee table 1', 'pencil 1', 'CLOSE'), ('credit card 2', 'pencil 1', 'CLOSE'), ('desk lamp 1', 'pencil 1', 'CLOSE'), ('laptop 1', 'pencil 1', 'CLOSE'), ('watch 1', 'pencil 1', 'CLOSE')]
+Think: Pencil 1 is on dining table 2 in living room 1. Now, I need to move to dining table 2 and find the lamp that is close to pencil 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), armchair (1), chair (4, 5), coffee table (1), dining table (2), drawer (5, 6), house plant (2), painting (4), shelf (1, 2, 3), side table (1, 2), sofa (1). You hold pen (3).
+Act: go to dining table 2
+You arrive at the dining table (2). You see armchair (1), chair (4, 5), credit card (2), desk lamp (1), dining table (2), laptop (1), pencil (1), watch (1). You hold pen (3).
+Think: Now, I need to find all objects that are close to pencil 1.
+OK.
+Query: get_edges_for_node({'node_id': 'pencil 1', 'relation': 'CLOSE'})
+Info: [('pencil 1', 'armchair 1', 'CLOSE'), ('pencil 1', 'chair 4', 'CLOSE'), ('pencil 1', 'chair 5', 'CLOSE'), ('pencil 1', 'coffee table 1', 'CLOSE'), ('pencil 1', 'credit card 2', 'CLOSE'), ('pencil 1', 'desk lamp 1', 'CLOSE'), ('pencil 1', 'laptop 1', 'CLOSE'), ('pencil 1', 'pen 3', 'CLOSE'), ('pencil 1', 'watch 1', 'CLOSE'), ('pencil 1', 'user 1', 'CLOSE'), ('armchair 1', 'pencil 1', 'CLOSE'), ('chair 4', 'pencil 1', 'CLOSE'), ('chair 5', 'pencil 1', 'CLOSE'), ('coffee table 1', 'pencil 1', 'CLOSE'), ('credit card 2', 'pencil 1', 'CLOSE'), ('desk lamp 1', 'pencil 1', 'CLOSE'), ('laptop 1', 'pencil 1', 'CLOSE'), ('pen 3', 'pencil 1', 'CLOSE'), ('watch 1', 'pencil 1', 'CLOSE'), ('user 1', 'pencil 1', 'CLOSE')]
+Think: The lamp that is close to pencil 1 is desk lamp 1. Now, I need to turn it on.
+OK.
+Act: go to desk lamp 1
+You arrive at the desk lamp (1). You see armchair (1), chair (4, 5), credit card (2), desk lamp (1), dining table (2), laptop (1), pencil (1), watch (1). You hold pen (3).
+Act: turn on desk lamp 1
+You turn on desk lamp (1). You hold pen (3).
+Think: Now I complete the task.
+OK.
+Act: done

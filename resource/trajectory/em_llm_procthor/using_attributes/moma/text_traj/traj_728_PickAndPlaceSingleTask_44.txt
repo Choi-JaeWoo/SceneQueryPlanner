@@ -1,0 +1,7 @@
+Your task is to: Throw the item made of paper into the garbage can so I don't accidentally reuse it.
+You arrive at the toilet paper (1). You see faucet (1), garbage can (1), sink (1), sink basin (1), toilet paper (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- bathroom 1: [painting 1, plunger 1, painting 3, painting 2, faucet 1, garbage can 1, (sink 1), (sink basin 1), (toilet 1), toilet paper 1]
+Your 5 previous actions were: go to toilet paper 1 (success), pick up toilet paper 1 (fail), go to garbage can 1 (success), put down toilet paper 1 (fail), go to toilet paper 1 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I arrive at toilet paper 1. I need to pick up toilet paper 1. Now, I need to move toward toilet paper 1 to pick it up.
+Act: go to toilet paper 1

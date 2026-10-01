@@ -1,0 +1,71 @@
+Your task is to: Using the coffee machine, fill a mug with coffee and set it on a receptacle made of wood and plastic.
+You are in the house, and there are 10 rooms: bathroom (1, 2, 3, 4), bedroom (1, 2, 3, 4), kitchen (1), living room (1). You are in the middle of a bedroom (4). Looking quickly around the room, you see basket ball (1), bed (4), dog bed (1), drawer (39, 40, 41), dresser (5), television (2).
+Think: To solve the task, I need to find and pick up mug, put mug in coffee machine and turn on coffee machine, turn off coffee machine and pick up mug, put mug on a receptacle made of wood and plastic.
+OK.
+Think: First, I need to find and pick up mug.
+OK.
+Query: find_objects({'label': 'mug'})
+Info: 
+Think: I have not seen mug yet. Now I need to check where to search. First, I will search kitchen 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'kitchen 1'})
+Info: cabinet (1, 2), countertop 1, fridge 1, shelf (1, 2, 3, 4, 5, 6)
+Think: In kitchen 1, the mug is likely to appear in/on cabinet (1, 2), countertop 1, shelf (1, 2, 3, 4, 5, 6). I can check each place one by one until I find mug.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see cabinet (1, 2), countertop (1), fridge (1), house plant (1), shelf (1, 2, 3, 4, 5, 6), shelving unit (1, 2).
+Act: go to cabinet 1
+You arrive at the cabinet (1). The cabinet (1) is closed. You see book (1, 2, 3), bowl (1), bread (1), butter knife (1), cabinet (1), cell phone (3), coffee machine (1), countertop (1), cup (1), dish sponge (1), egg (2), knife (1, 2), mug (2), pepper shaker (1), shelf (1, 2, 3), shelving unit (1), soap bottle (1), spatula (1), statue (2).
+Think: I find mug 2. Now, I need to pick it up.
+OK.
+Act: go to mug 2
+You arrive at the mug (2). You see book (1, 2, 3), bowl (1), bread (1), butter knife (1), cabinet (1), cell phone (3), coffee machine (1), countertop (1), cup (1), dish sponge (1), egg (2), house plant (1), knife (1, 2), mug (2), pepper shaker (1), salt shaker (1), shelf (1, 2), shelving unit (1), soap bottle (1), spatula (1), spray bottle (2), statue (2).
+Act: pick up mug 2
+You pick up mug (2). You hold mug (2).
+Think: Now, I need to find coffee machine.
+OK.
+Query: find_objects({'label': 'coffee machine'})
+Info: [{'name_id_nl': 'coffee machine 1', 'node_type': 'object', 'properties': ['toggleable', 'isHeatSource'], 'states': []}]
+Query: get_edges_for_node({'node_id': 'coffee machine 1'})
+Info: [('coffee machine 1', 'countertop 1', 'ON'), ('coffee machine 1', 'book 2', 'CLOSE'), ('coffee machine 1', 'book 3', 'CLOSE'), ('coffee machine 1', 'book 1', 'CLOSE'), ('coffee machine 1', 'bowl 1', 'CLOSE'), ('coffee machine 1', 'bread 1', 'CLOSE'), ('coffee machine 1', 'butter knife 1', 'CLOSE'), ('coffee machine 1', 'cabinet 1', 'CLOSE'), ('coffee machine 1', 'cell phone 3', 'CLOSE'), ('coffee machine 1', 'cup 1', 'CLOSE'), ('coffee machine 1', 'dish sponge 1', 'CLOSE'), ('coffee machine 1', 'egg 2', 'CLOSE'), ('coffee machine 1', 'knife 1', 'CLOSE'), ('coffee machine 1', 'knife 2', 'CLOSE'), ('coffee machine 1', 'mug 2', 'CLOSE'), ('coffee machine 1', 'pepper shaker 1', 'CLOSE'), ('coffee machine 1', 'salt shaker 1', 'CLOSE'), ('coffee machine 1', 'shelf 2', 'CLOSE'), ('coffee machine 1', 'shelf 1', 'CLOSE'), ('coffee machine 1', 'soap bottle 1', 'CLOSE'), ('coffee machine 1', 'spatula 1', 'CLOSE'), ('coffee machine 1', 'spray bottle 2', 'CLOSE'), ('coffee machine 1', 'statue 2', 'CLOSE'), ('coffee machine 1', 'user 1', 'CLOSE'), ('coffee machine 1', 'kitchen 1', 'INSIDE'), ('book 2', 'coffee machine 1', 'CLOSE'), ('book 3', 'coffee machine 1', 'CLOSE'), ('book 1', 'coffee machine 1', 'CLOSE'), ('bowl 1', 'coffee machine 1', 'CLOSE'), ('bread 1', 'coffee machine 1', 'CLOSE'), ('butter knife 1', 'coffee machine 1', 'CLOSE'), ('cabinet 1', 'coffee machine 1', 'CLOSE'), ('cell phone 3', 'coffee machine 1', 'CLOSE'), ('cup 1', 'coffee machine 1', 'CLOSE'), ('dish sponge 1', 'coffee machine 1', 'CLOSE'), ('egg 2', 'coffee machine 1', 'CLOSE'), ('knife 1', 'coffee machine 1', 'CLOSE'), ('knife 2', 'coffee machine 1', 'CLOSE'), ('mug 2', 'coffee machine 1', 'CLOSE'), ('pepper shaker 1', 'coffee machine 1', 'CLOSE'), ('salt shaker 1', 'coffee machine 1', 'CLOSE'), ('shelf 2', 'coffee machine 1', 'CLOSE'), ('shelf 1', 'coffee machine 1', 'CLOSE'), ('soap bottle 1', 'coffee machine 1', 'CLOSE'), ('spatula 1', 'coffee machine 1', 'CLOSE'), ('spray bottle 2', 'coffee machine 1', 'CLOSE'), ('statue 2', 'coffee machine 1', 'CLOSE'), ('user 1', 'coffee machine 1', 'CLOSE')]
+Think: Coffee machine 1 is on countertop 1.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see book (1, 2, 3), bowl (1), bread (1), butter knife (1), cabinet (1), cell phone (3), coffee machine (1), countertop (1), cup (1), dish sponge (1), egg (2), knife (1, 2), pepper shaker (1), salt shaker (1), shelf (1, 2, 3), shelving unit (1), soap bottle (1), spatula (1), spray bottle (2), statue (2). You hold mug (2).
+Act: go to coffee machine 1
+You arrive at the coffee machine (1). You see book (2, 3), bowl (1), bread (1), butter knife (1), cabinet (1), cell phone (3), coffee machine (1), cup (1), dish sponge (1), knife (1, 2), salt shaker (1), shelf (1, 2), spray bottle (2), statue (2). You hold mug (2).
+Think: Now, I need to put down mug 2 in coffee machine 1.
+OK.
+Act: put down mug 2
+You put mug (2) on coffee machine (1).
+Think: Now, I need to turn on coffee machine 1 to brew the coffee.
+OK.
+Act: turn on coffee machine 1
+You turn on coffee machine (1).
+Think: Now, I need to turn off coffee machine 1 and pick up mug 2.
+OK.
+Act: turn off coffee machine 1
+You turn off coffee machine (1).
+Act: pick up mug 2
+You pick up mug (2). You hold mug (2).
+Think: Now, I need to find the receptacle made of wood and plastic. I need to check where to search. First, I will search living room 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'living room 1'})
+Info: TV stand 1, box 1, drawer (16, 17, 18), dresser 2, shelf 7, sofa 1
+Think: Now, I need to find the receptacle made of wood and plastic. I need to check each receptacle in living room 1 to find the receptacle made of wood and plastic.
+OK.
+Query: read_node({'node_id': 'TV stand 1'})
+Info: {'name_id_nl': 'TV stand 1', 'salientMaterials': ['Wood', 'Plastic'], 'properties': [], 'states': []}
+Think: The receptacle made of wood and plastic is TV stand 1. Now, I need to move toward TV stand 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), box (1), drawer (16, 17, 18), dresser (2), shelf (7), sofa (1). You hold mug (2).
+Act: go to TV stand 1
+You arrive at the TV stand (1). You see TV stand (1), book (4), credit card (1), remote control (1), shelf (7), television (1). You hold mug (2).
+Think: Now, I need to put down mug 2.
+OK.
+Act: put down mug 2
+You put mug (2) on TV stand (1).
+Think: Now I complete the task.
+OK.
+Act: done

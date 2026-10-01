@@ -1,0 +1,49 @@
+Your task is to: Move the fabric item near the toilet paper into the sink basin to rinse it.
+You are in the house, and there are 1 rooms: bathroom (1). You are in the middle of a bathroom (1). Looking quickly around the room, you see painting (1, 2), sink (1), sink basin (1), toilet (1).
+Think: To solve the task, I need to find and pick up the fabric item near the toilet paper, find sink basin and put it down, turn on faucet to rinse the fabric item, pick up the fabric item and put it down in sink basin.
+OK.
+Think: First, I need to find and pick up the fabric item near the toilet paper.
+OK.
+Query: find_objects({'label': 'toilet paper'})
+Info: 
+Think: I have not seen toilet paper yet. Now I need to check where to search. First, I will search bathroom 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'bathroom 1'})
+Info: sink 1, sink basin 1, toilet 1
+Think: In bathroom 1, the toilet paper is likely to appear in/on sink 1, sink basin 1, toilet 1. I can check each place one by one until I find toilet paper.
+OK.
+Act: go to bathroom 1
+You move to the bathroom (1). Looking quickly around the room, you see painting (1, 2), sink (1), sink basin (1), toilet (1).
+Act: go to sink 1
+You arrive at the sink (1). You see faucet (1), sink (1), sink basin (1).
+Act: go to sink basin 1
+You arrive at the sink basin (1). You see faucet (1), sink (1), sink basin (1).
+Act: go to toilet 1
+You arrive at the toilet (1). The toilet (1) is closed. You see candle (1), cloth (1), painting (2), toilet (1), toilet paper (1).
+Think: I find toilet paper 1. Now, I need to find the fabric item near the toilet paper. First, I need to find all objects that are close to toilet paper 1.
+OK.
+Query: get_edges_for_node({'node_id': 'toilet paper 1', 'relation': 'CLOSE'})
+Info: [('toilet paper 1', 'candle 1', 'CLOSE'), ('toilet paper 1', 'cloth 1', 'CLOSE'), ('toilet paper 1', 'user 1', 'CLOSE'), ('candle 1', 'toilet paper 1', 'CLOSE'), ('cloth 1', 'toilet paper 1', 'CLOSE'), ('user 1', 'toilet paper 1', 'CLOSE')]
+Think: The fabric item near the toilet paper is cloth 1. Now, I need to pick it up.
+OK.
+Act: go to cloth 1
+You arrive at the cloth (1). You see candle (1), cloth (1), painting (2), toilet (1), toilet paper (1).
+Act: pick up cloth 1
+You pick up cloth (1). You hold cloth (1).
+Think: Now, I need to find sink basin and put it down, turn on faucet to rinse the fabric item, pick up the fabric item and put it down in sink basin.
+OK.
+Act: go to sink basin 1
+You arrive at the sink basin (1). You see faucet (1), sink (1), sink basin (1). You hold cloth (1).
+Act: put down cloth 1
+You put cloth (1) in sink basin (1).
+Act: turn on faucet 1
+You turn on faucet (1).
+Act: turn off faucet 1
+You turn off faucet (1).
+Act: pick up cloth 1
+You pick up cloth (1). You hold cloth (1).
+Act: put down cloth 1
+You put cloth (1) in sink basin (1).
+Think: Now I complete the task.
+OK.
+Act: done

@@ -29,7 +29,7 @@ OK.
 Act: go to dining table 1
 You arrive at the dining table (1). You see cell phone (2), chair (1, 2), dining table (1), house plant (1). You hold bowl (1).
 Act: put down bowl 1
-You put bowl (1) in dining table (1).
+You put bowl (1) on dining table (1).
 Act: go to dish sponge 1
 You arrive at the dish sponge (1). You see countertop (1), dish sponge (1), mug (1), soap bottle (1), spray bottle (2).
 Act: pick up dish sponge 1
@@ -37,7 +37,7 @@ You pick up dish sponge (1). You hold dish sponge (1).
 Act: go to dining table 1
 You arrive at the dining table (1). You see bowl (1), cell phone (2), chair (1, 2), dining table (1), house plant (1). You hold dish sponge (1).
 Act: put down dish sponge 1
-You put dish sponge (1) in dining table (1).
+You put dish sponge (1) on dining table (1).
 Act: go to mug 1
 You arrive at the mug (1). You see countertop (1), mug (1), soap bottle (1), spray bottle (2).
 Act: pick up mug 1
@@ -45,7 +45,7 @@ You pick up mug (1). You hold mug (1).
 Act: go to dining table 1
 You arrive at the dining table (1). You see bowl (1), cell phone (2), chair (1, 2), dining table (1), dish sponge (1), house plant (1). You hold mug (1).
 Act: put down mug 1
-You put mug (1) in dining table (1).
+You put mug (1) on dining table (1).
 Act: go to soap bottle 1
 You arrive at the soap bottle (1). You see countertop (1), soap bottle (1), spray bottle (2).
 Act: pick up soap bottle 1
@@ -53,7 +53,7 @@ You pick up soap bottle (1). You hold soap bottle (1).
 Act: go to dining table 1
 You arrive at the dining table (1). You see bowl (1), cell phone (2), chair (1, 2), dining table (1), dish sponge (1), house plant (1), mug (1). You hold soap bottle (1).
 Act: put down soap bottle 1
-You put soap bottle (1) in dining table (1).
+You put soap bottle (1) on dining table (1).
 Act: go to spray bottle 2
 You arrive at the spray bottle (2). You see countertop (1), spray bottle (2).
 Act: pick up spray bottle 2
@@ -61,7 +61,7 @@ You pick up spray bottle (2). You hold spray bottle (2).
 Act: go to dining table 1
 You arrive at the dining table (1). You see bowl (1), cell phone (2), chair (1, 2), dining table (1), dish sponge (1), house plant (1), mug (1), soap bottle (1). You hold spray bottle (2).
 Act: put down spray bottle 2
-You put spray bottle (2) in dining table (1).
+You put spray bottle (2) on dining table (1).
 Think: Now I need to check what's left on countertop 1.
 OK.
 Query: get_edges_for_node({'node_id': 'countertop 1', 'relation': 'ON'})

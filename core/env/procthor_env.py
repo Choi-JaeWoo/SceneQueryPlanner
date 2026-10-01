@@ -20,6 +20,8 @@ class ProcThorEnv(BaseEnv):
         self.mode = None
         self.task_goal = None
         self.init_state = None
+        self.init_state_hard = []
+        self.init_action = ""
         self.agent_id = None
         
         self.envs = procthor_utils.load_dataset()["test"]
@@ -46,6 +48,8 @@ class ProcThorEnv(BaseEnv):
         self.mode = task_d["mode"]
         self.task_goal = task_d["task_goal"]
         self.init_state = task_d.get("init_state", [])
+        self.init_state_hard = task_d.get("init_state_hard", [])
+        self.init_action = task_d.get("init_action", "")
         self.reset_states()
         self.cur_recep_info = (None, None)
         self.sliced = []
@@ -56,6 +60,9 @@ class ProcThorEnv(BaseEnv):
         
         if self.init_state:
             self.set_init_state(self.mode, self.init_state)
+        
+        if self.init_state_hard:
+            self.set_init_state_hard(self.init_action, self.init_state_hard)
         
         self.init_event = self.controller.step(action="Pass")  
         self.last_event = self.controller.step(action="Pass")  
@@ -113,6 +120,17 @@ class ProcThorEnv(BaseEnv):
             success = event.metadata.get("lastActionSuccess", False)   
             if not success:
                 print("Error: cannot turn on objects in set_init_state")
+    
+    def set_init_state_hard(self, init_action, object_ids):
+        for obj in object_ids:
+            event = self.controller.step(
+                action=init_action,
+                objectId=obj,
+                forceAction=True
+            )
+            success = event.metadata.get("lastActionSuccess", False)
+            if not success:
+                print(f"Error: cannot make action - {init_action}")
     
     def get_reachable_positions(self):
         free_positions = self.controller.step(dict(action="GetReachablePositions")).metadata["actionReturn"]

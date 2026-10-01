@@ -1,0 +1,75 @@
+Your task is to: Collect a pen and a pencil and place them on the countertop.
+You are in the house, and there are 1 rooms: kitchen (1). You are in the middle of a kitchen (1). Looking quickly around the room, you see chair (1, 2, 3, 4, 5, 6), countertop (1), dining table (1), fridge (1), garbage can (1), painting (1, 2, 3), stool (1), television (1).
+Think: To solve the task, I need to find and pick up pen, then put it on countertop. And I need to find and pick up pencil, then put it on countertop.
+OK.
+Think: First, I need to find and pick up pen. The pen is more likely to appear in kitchen 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'kitchen 1'})
+Info: chair (1, 2, 3, 4, 5, 6), countertop 1, dining table 1, fridge 1, garbage can 1, stool 1
+Think: In kitchen 1, the pen is likely to appear in/on chair (1, 2, 3, 4, 5, 6), countertop 1, dining table 1, fridge 1, garbage can 1, stool 1. I can check each place one by one until I find pen.
+OK.
+Act: go to chair 1
+You arrive at the chair (1). You see chair (1, 5, 6), dining table (1), mug (1), pen (1), plate (1), vase (1).
+Act: go to chair 2
+You arrive at the chair (2). You see apple (1), cell phone (1), chair (2, 3, 4), countertop (1), credit card (1), dining table (1), house plant (1), knife (1), lettuce (1), mug (1), pan (1), pen (1), pencil (1), pepper shaker (1), plate (1), spatula (1), spray bottle (1).
+Act: go to chair 3
+You arrive at the chair (3). You see apple (1), cell phone (1), chair (2, 3, 4), countertop (1), credit card (1), dining table (1), house plant (1), knife (1), lettuce (1), mug (1), painting (2), pan (1), pencil (1), pepper shaker (1), plate (1), spatula (1), spray bottle (1).
+Act: go to chair 4
+You arrive at the chair (4). You see apple (1), chair (2, 4, 5), dining table (1), house plant (1), mug (1), pen (1), pencil (1), plate (1), spray bottle (1), vase (1).
+Act: go to chair 5
+You arrive at the chair (5). You see chair (1, 4, 5), dining table (1), mug (1), pen (1), pencil (1), plate (1), spray bottle (1), vase (1).
+Act: go to chair 6
+You arrive at the chair (6). You see chair (1, 5, 6), dining table (1), mug (1), painting (1), pen (1), plate (1), vase (1).
+Act: go to countertop 1
+You arrive at the countertop (1). You see apple (1), cell phone (1), chair (2, 3, 4), countertop (1), credit card (1), dining table (1), house plant (1), knife (1), lettuce (1), mug (1), painting (2), pan (1), pencil (1), pepper shaker (1), plate (1), spatula (1), spray bottle (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see apple (1), chair (1, 2, 3, 4, 5), dining table (1), house plant (1), mug (1), pen (1), pencil (1), plate (1), spray bottle (1), vase (1).
+Act: go to fridge 1
+You arrive at the fridge (1). The fridge (1) is closed. You see fridge (1), painting (3), stool (1).
+Act: go to garbage can 1
+You arrive at the garbage can (1). You see garbage can (1).
+Act: go to stool 1
+You arrive at the stool (1). You see painting (3), stool (1).
+Think: I need to check whether I see pen.
+OK.
+Query: find_objects({'label': 'pen'})
+Info: [{'name_id_nl': 'pen 1', 'node_type': 'object', 'properties': ['pickupable'], 'states': []}]
+Query: get_edges_for_node({'node_id': 'pen 1'})
+Info: [('pen 1', 'dining table 1', 'ON'), ('pen 1', 'apple 1', 'CLOSE'), ('pen 1', 'chair 5', 'CLOSE'), ('pen 1', 'chair 1', 'CLOSE'), ('pen 1', 'chair 2', 'CLOSE'), ('pen 1', 'chair 3', 'CLOSE'), ('pen 1', 'chair 6', 'CLOSE'), ('pen 1', 'chair 4', 'CLOSE'), ('pen 1', 'house plant 1', 'CLOSE'), ('pen 1', 'mug 1', 'CLOSE'), ('pen 1', 'pencil 1', 'CLOSE'), ('pen 1', 'plate 1', 'CLOSE'), ('pen 1', 'spray bottle 1', 'CLOSE'), ('pen 1', 'vase 1', 'CLOSE'), ('pen 1', 'kitchen 1', 'INSIDE'), ('apple 1', 'pen 1', 'CLOSE'), ('chair 5', 'pen 1', 'CLOSE'), ('chair 1', 'pen 1', 'CLOSE'), ('chair 2', 'pen 1', 'CLOSE'), ('chair 3', 'pen 1', 'CLOSE'), ('chair 6', 'pen 1', 'CLOSE'), ('chair 4', 'pen 1', 'CLOSE'), ('house plant 1', 'pen 1', 'CLOSE'), ('mug 1', 'pen 1', 'CLOSE'), ('pencil 1', 'pen 1', 'CLOSE'), ('plate 1', 'pen 1', 'CLOSE'), ('spray bottle 1', 'pen 1', 'CLOSE'), ('vase 1', 'pen 1', 'CLOSE')]
+Think: Pen 1 is on dining table 1 in kitchen 1.
+OK.
+Act: go to dining table 1
+You arrive at the dining table (1). You see apple (1), chair (1, 2, 3, 4, 5), dining table (1), house plant (1), mug (1), pen (1), pencil (1), plate (1), spray bottle (1), vase (1).
+Act: go to pen 1
+You arrive at the pen (1). You see apple (1), chair (1, 2, 3, 4, 5), dining table (1), house plant (1), mug (1), pen (1), pencil (1), plate (1), spray bottle (1), vase (1).
+Act: pick up pen 1
+You pick up pen (1). You hold pen (1).
+Think: Now, I need to find countertop and put down pen 1.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see apple (1), cell phone (1), chair (2, 3, 4), countertop (1), credit card (1), dining table (1), house plant (1), knife (1), lettuce (1), mug (1), painting (2), pan (1), pencil (1), pepper shaker (1), plate (1), spatula (1), spray bottle (1). You hold pen (1).
+Act: put down pen 1
+You put pen (1) on countertop (1).
+Think: Now, I need to find and pick up pencil.
+OK.
+Query: find_objects({'label': 'pencil'})
+Info: [{'name_id_nl': 'pencil 1', 'node_type': 'object', 'properties': ['pickupable'], 'states': []}]
+Query: get_edges_for_node({'node_id': 'pencil 1'})
+Info: [('pencil 1', 'vase 1', 'CLOSE'), ('pencil 1', 'dining table 1', 'ON'), ('pencil 1', 'apple 1', 'CLOSE'), ('pencil 1', 'cell phone 1', 'CLOSE'), ('pencil 1', 'chair 5', 'CLOSE'), ('pencil 1', 'chair 2', 'CLOSE'), ('pencil 1', 'chair 3', 'CLOSE'), ('pencil 1', 'chair 6', 'CLOSE'), ('pencil 1', 'chair 4', 'CLOSE'), ('pencil 1', 'countertop 1', 'CLOSE'), ('pencil 1', 'credit card 1', 'CLOSE'), ('pencil 1', 'house plant 1', 'CLOSE'), ('pencil 1', 'knife 1', 'CLOSE'), ('pencil 1', 'lettuce 1', 'CLOSE'), ('pencil 1', 'mug 1', 'CLOSE'), ('pencil 1', 'painting 2', 'CLOSE'), ('pencil 1', 'pan 1', 'CLOSE'), ('pencil 1', 'pen 1', 'CLOSE'), ('pencil 1', 'pepper shaker 1', 'CLOSE'), ('pencil 1', 'plate 1', 'CLOSE'), ('pencil 1', 'spatula 1', 'CLOSE'), ('pencil 1', 'spray bottle 1', 'CLOSE'), ('pencil 1', 'user 1', 'CLOSE'), ('pencil 1', 'kitchen 1', 'INSIDE'), ('vase 1', 'pencil 1', 'CLOSE'), ('apple 1', 'pencil 1', 'CLOSE'), ('cell phone 1', 'pencil 1', 'CLOSE'), ('chair 5', 'pencil 1', 'CLOSE'), ('chair 2', 'pencil 1', 'CLOSE'), ('chair 3', 'pencil 1', 'CLOSE'), ('chair 6', 'pencil 1', 'CLOSE'), ('chair 4', 'pencil 1', 'CLOSE'), ('countertop 1', 'pencil 1', 'CLOSE'), ('credit card 1', 'pencil 1', 'CLOSE'), ('house plant 1', 'pencil 1', 'CLOSE'), ('knife 1', 'pencil 1', 'CLOSE'), ('lettuce 1', 'pencil 1', 'CLOSE'), ('mug 1', 'pencil 1', 'CLOSE'), ('painting 2', 'pencil 1', 'CLOSE'), ('pan 1', 'pencil 1', 'CLOSE'), ('pen 1', 'pencil 1', 'CLOSE'), ('pepper shaker 1', 'pencil 1', 'CLOSE'), ('plate 1', 'pencil 1', 'CLOSE'), ('spatula 1', 'pencil 1', 'CLOSE'), ('spray bottle 1', 'pencil 1', 'CLOSE'), ('user 1', 'pencil 1', 'CLOSE')]
+Think: Pencil 1 is on dining table 1 in kitchen 1.
+OK.
+Act: go to dining table 1
+You arrive at the dining table (1). You see apple (1), chair (1, 2, 3, 4, 5), dining table (1), house plant (1), mug (1), pencil (1), plate (1), spray bottle (1), vase (1).
+Act: go to pencil 1
+You arrive at the pencil (1). You see apple (1), cell phone (1), chair (2, 3, 4), countertop (1), credit card (1), dining table (1), house plant (1), knife (1), lettuce (1), mug (1), pan (1), pen (1), pencil (1), pepper shaker (1), plate (1), spatula (1), spray bottle (1), vase (1).
+Act: pick up pencil 1
+You pick up pencil (1). You hold pencil (1).
+Think: Now, I need to find countertop and put down pencil 1.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see apple (1), cell phone (1), chair (2, 3, 4), countertop (1), credit card (1), dining table (1), house plant (1), knife (1), lettuce (1), mug (1), painting (2), pan (1), pen (1), pepper shaker (1), plate (1), spatula (1), spray bottle (1). You hold pencil (1).
+Act: put down pencil 1
+You put pencil (1) on countertop (1).
+Think: Now I complete task.
+OK.
+Act: done

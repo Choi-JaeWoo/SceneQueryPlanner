@@ -1,0 +1,25 @@
+Your task is to: Turn on the desk lamp and look at the toggleable object from the bed to inspect its controls.
+You are in the house, and there are 1 rooms: bedroom (1). You are in the middle of a bedroom (1). Looking quickly around the room, you see armchair (1), basket ball (1), bed (1), chair (1, 2, 3, 4, 5), dining table (1), drawer (1, 2, 3, 4, 5, 6), dresser (1), floor lamp (1), painting (1), television (1).
+Think: To solve the task, I need to find and pick up the toggleable object from bed, find and turn on desk lamp.
+OK.
+Think: First, I need to find bed and find and pick up the toggleable object from bed. The bed is more likely to appear in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see armchair (1), basket ball (1), bed (1), chair (1, 2, 3, 4, 5), dining table (1), drawer (1, 2, 3, 4, 5, 6), dresser (1), floor lamp (1), painting (1), television (1).
+Act: go to bed 1
+You arrive at the bed (1). You see bed (1), cell phone (1), pillow (1, 2).
+Think: On bed 1, the toggleable object is cell phone 1. Now, I need to pick it up.
+OK.
+Act: go to cell phone 1
+You arrive at the cell phone (1). You see bed (1), cell phone (1), pillow (1, 2).
+Act: pick up cell phone 1
+You pick up cell phone (1). You hold cell phone (1).
+Think: Now, I need to find desk lamp and turn it on.
+OK.
+Act: go to desk lamp 1
+You arrive at the desk lamp (1). You see desk lamp (1, 2), drawer (1, 2, 3, 4, 5, 6), dresser (1). You hold cell phone (1).
+Act: turn on desk lamp 1
+You turn on desk lamp (1). You hold cell phone (1).
+Think: Now I complete the task.
+OK.
+Act: done

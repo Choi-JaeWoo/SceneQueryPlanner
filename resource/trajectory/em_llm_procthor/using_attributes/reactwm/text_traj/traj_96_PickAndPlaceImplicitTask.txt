@@ -1,0 +1,139 @@
+Your task is to: Clear all items from the furniture that includes the alarm clock and move them to the dresser.
+You are in the house, and there are 1 rooms: bedroom (1). You are in the middle of a bedroom (1). Looking quickly around the room, you see bed (1), chair (1, 2), desk (1), dining table (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13), dresser (1), painting (1, 2, 3, 4), stool (1), television (1).
+Think: To solve the task, I need to find the furniture that includes alarm clock and check what is on top of it. Then, I need to move everything on that furniture to dresser.
+OK.
+Think: First, I need to find alarm clock.
+OK.
+Query: recall location of alarm clock
+You have not seen alarm clock before.
+Think: I have not seen alarm clock yet. The alarm clock is more likely to appear in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see bed (1), chair (1, 2), desk (1), dining table (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13), dresser (1), painting (1, 2, 3, 4), stool (1), television (1).
+Think: In bedroom 1, the alarm clock is likely to appear in/on bed 1, chair (1, 2), desk 1, dining table 1, drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13), dresser 1, stool 1, television 1. I can check each place one by one until I find alarm clock.
+OK.
+Act: go to bed 1
+You arrive at the bed (1). You see bed (1), cell phone (1, 2), painting (1), pillow (1), tennis racket (1).
+Act: go to chair 1
+You arrive at the chair (1). You see CD (3), chair (1), dining table (1), laptop (1), mug (1), painting (1), statue (1).
+Act: go to desk 1
+You arrive at the desk (1). You see CD (1, 2), alarm clock (1), book (1), chair (2), desk (1), drawer (1, 2, 3), key chain (1), painting (2), pen (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see CD (3), chair (1), dining table (1), laptop (1), mug (1), statue (1).
+Act: go to drawer 1
+You arrive at the drawer (1). The drawer (1) is closed. You see CD (1, 2), alarm clock (1), book (1), chair (2), desk (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13), dresser (1), house plant (1), key chain (1), pen (1), remote control (1).
+Act: go to dresser 1
+You arrive at the dresser (1). You see CD (1, 2), alarm clock (1), chair (2), drawer (1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13), dresser (1), house plant (1), key chain (1), painting (3), pen (1), remote control (1).
+Act: go to stool 1
+You arrive at the stool (1). You see stool (1), television (1).
+Act: go to television 1
+You arrive at the television (1). You see television (1).
+Think: I find alarm clock 1. Now, I need to find the furniture that includes alarm clock 1.
+OK.
+Act: go to alarm clock 1
+You arrive at the alarm clock (1). You see CD (1, 2), alarm clock (1), book (1), chair (2), desk (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13), dresser (1), house plant (1), key chain (1), pen (1), remote control (1).
+Think: The furniture that includes alarm clock 1 is desk 1. Now, I need to check what is on top of desk 1.
+OK.
+Act: go to desk 1
+You arrive at the desk (1). You see CD (1, 2), alarm clock (1), book (1), chair (2), desk (1), drawer (1, 2, 3), key chain (1), painting (2), pen (1).
+Think: Now, I need to move CD (1, 2), alarm clock 1, book 1, key chain 1, pen 1 to dresser.
+OK.
+Act: go to CD 1
+You arrive at the CD (1). You see CD (1, 2), alarm clock (1), book (1), chair (2), desk (1), drawer (1, 2, 3), key chain (1), painting (2), pen (1).
+Act: pick up CD 1
+You pick up CD (1). You hold CD (1).
+Think: Now, I need to find dresser.
+OK.
+Query: recall location of dresser
+You saw dresser 1 in bedroom 1.
+Think: Dresser 1 is in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see bed (1), chair (1, 2), desk (1), dining table (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13), dresser (1), painting (1, 2, 3, 4), stool (1), television (1). You hold CD (1).
+Act: go to dresser 1
+You arrive at the dresser (1). You see CD (2), alarm clock (1), chair (2), drawer (1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13), dresser (1), house plant (1), key chain (1), painting (3), pen (1), remote control (1). You hold CD (1).
+Act: put down CD 1
+You put CD (1) on dresser (1).
+Think: Now, I need to find and pick up CD 2. CD 2 is on desk 1 in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see bed (1), chair (1, 2), desk (1), dining table (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13), dresser (1), painting (1, 2, 3, 4), stool (1), television (1).
+Act: go to desk 1
+You arrive at the desk (1). You see CD (2), alarm clock (1), book (1), chair (2), desk (1), drawer (1, 2, 3), key chain (1), painting (2), pen (1).
+Act: go to CD 2
+You arrive at the CD (2). You see CD (1, 2), alarm clock (1), book (1), chair (2), desk (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13), dresser (1), house plant (1), key chain (1), pen (1), remote control (1).
+Act: pick up CD 2
+You pick up CD (2). You hold CD (2).
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see bed (1), chair (1, 2), desk (1), dining table (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13), dresser (1), painting (1, 2, 3, 4), stool (1), television (1). You hold CD (2).
+Act: go to dresser 1
+You arrive at the dresser (1). You see CD (1), alarm clock (1), chair (2), drawer (1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13), dresser (1), house plant (1), key chain (1), painting (3), pen (1), remote control (1). You hold CD (2).
+Act: put down CD 2
+You put CD (2) on dresser (1).
+Think: Now, I need to find and pick up alarm clock 1. Alarm clock 1 is on desk 1 in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see bed (1), chair (1, 2), desk (1), dining table (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13), dresser (1), painting (1, 2, 3, 4), stool (1), television (1).
+Act: go to desk 1
+You arrive at the desk (1). You see alarm clock (1), book (1), chair (2), desk (1), drawer (1, 2, 3), key chain (1), painting (2), pen (1).
+Act: go to alarm clock 1
+You arrive at the alarm clock (1). You see alarm clock (1), book (1), chair (2), desk (1), drawer (1, 2, 3), key chain (1), painting (2), pen (1).
+Act: pick up alarm clock 1
+You pick up alarm clock (1). You hold alarm clock (1).
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see bed (1), chair (1, 2), desk (1), dining table (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13), dresser (1), painting (1, 2, 3, 4), stool (1), television (1). You hold alarm clock (1).
+Act: go to dresser 1
+You arrive at the dresser (1). You see CD (1, 2), chair (2), drawer (1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13), dresser (1), house plant (1), key chain (1), painting (3), pen (1), remote control (1). You hold alarm clock (1).
+Act: put down alarm clock 1
+You put alarm clock (1) on dresser (1).
+Think: Now, I need to find and pick up book 1. Book 1 is on desk 1 in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see bed (1), chair (1, 2), desk (1), dining table (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13), dresser (1), painting (1, 2, 3, 4), stool (1), television (1).
+Act: go to desk 1
+You arrive at the desk (1). You see book (1), chair (2), desk (1), drawer (1, 2, 3), key chain (1), painting (2), pen (1).
+Act: go to book 1
+You arrive at the book (1). The book (1) is closed. You see book (1), chair (2), desk (1), drawer (1, 2, 3), key chain (1), painting (2), pen (1).
+Act: pick up book 1
+You pick up book (1). You hold book (1).
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see bed (1), chair (1, 2), desk (1), dining table (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13), dresser (1), painting (1, 2, 3, 4), stool (1), television (1). You hold book (1).
+Act: go to dresser 1
+You arrive at the dresser (1). You see CD (1, 2), alarm clock (1), chair (2), drawer (1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13), dresser (1), house plant (1), key chain (1), painting (3), pen (1), remote control (1). You hold book (1).
+Act: put down book 1
+You put book (1) on dresser (1).
+Think: Now, I need to find and pick up key chain 1. Key chain 1 is on desk 1 in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see bed (1), chair (1, 2), desk (1), dining table (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13), dresser (1), painting (1, 2, 3, 4), stool (1), television (1).
+Act: go to desk 1
+You arrive at the desk (1). You see chair (2), desk (1), drawer (1, 2, 3), key chain (1), painting (2), pen (1).
+Act: go to key chain 1
+You arrive at the key chain (1). You see CD (1, 2), alarm clock (1), book (1), chair (2), desk (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13), dresser (1), house plant (1), key chain (1), pen (1), remote control (1).
+Act: pick up key chain 1
+You pick up key chain (1). You hold key chain (1).
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see bed (1), chair (1, 2), desk (1), dining table (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13), dresser (1), painting (1, 2, 3, 4), stool (1), television (1). You hold key chain (1).
+Act: go to dresser 1
+You arrive at the dresser (1). You see CD (1, 2), alarm clock (1), book (1), chair (2), drawer (1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13), dresser (1), house plant (1), painting (3), pen (1), remote control (1). You hold key chain (1).
+Act: put down key chain 1
+You put key chain (1) on dresser (1).
+Think: Now, I need to find and pick up pen 1. Pen 1 is on desk 1 in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see bed (1), chair (1, 2), desk (1), dining table (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13), dresser (1), painting (1, 2, 3, 4), stool (1), television (1).
+Act: go to desk 1
+You arrive at the desk (1). You see chair (2), desk (1), drawer (1, 2, 3), painting (2), pen (1).
+Act: go to pen 1
+You arrive at the pen (1). You see chair (2), desk (1), drawer (1, 2, 3), painting (2), pen (1).
+Act: pick up pen 1
+You pick up pen (1). You hold pen (1).
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see bed (1), chair (1, 2), desk (1), dining table (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13), dresser (1), painting (1, 2, 3, 4), stool (1), television (1). You hold pen (1).
+Act: go to dresser 1
+You arrive at the dresser (1). You see CD (1, 2), alarm clock (1), book (1), chair (2), drawer (1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13), dresser (1), house plant (1), key chain (1), painting (3), remote control (1). You hold pen (1).
+Act: put down pen 1
+You put pen (1) on dresser (1).
+Think: Now I complete the task.
+OK.
+Act: done

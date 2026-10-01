@@ -1,0 +1,165 @@
+Your task is to: Turn on the candle while holding a pencil.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a kitchen (1). Looking quickly around the room, you see cabinet (1), chair (1, 2), countertop (1), dining table (1), fridge (1), painting (1, 2, 3, 4), shelf (1, 2, 3), shelving unit (1), stool (1).
+Think: To solve the task, I need to find and pick up pencil, find and turn on candle.
+OK.
+Think: First, I need to find and pick up pencil. The pencil is more likely to appear in kitchen 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'kitchen 1'})
+Info: cabinet 1, chair (1, 2), countertop 1, dining table 1, fridge 1, shelf (1, 2, 3), stool 1
+Think: In kitchen 1, the pencil is likely to appear in/on cabinet 1, chair (1, 2), countertop 1, dining table 1, fridge 1, shelf (1, 2, 3), stool 1. I can check each place one by one until I find pencil.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see cabinet (1), chair (1, 2), countertop (1), dining table (1), fridge (1), painting (1, 2, 3, 4), shelf (1, 2, 3), shelving unit (1), stool (1).
+Act: go to cabinet 1
+You arrive at the cabinet (1). The cabinet (1) is closed. You see cabinet (1), pepper shaker (1), shelf (1, 2, 3), shelving unit (1), stool (1).
+Act: open cabinet 1
+You open cabinet (1). You see cabinet (1), pepper shaker (1), shelf (1, 2, 3), shelving unit (1), stool (1).
+Act: go to chair 1
+You arrive at the chair (1). You see apple (1), butter knife (2), cell phone (2), chair (1, 2), coffee machine (1), countertop (1), dining table (1), kettle (1), lettuce (1), microwave (1), pencil (1), plate (1), toaster (1), tomato (1), vase (1).
+Think: I find pencil 1. Now, I need to pick it up.
+OK.
+Act: go to pencil 1
+You arrive at the pencil (1). You see apple (1), butter knife (2), cell phone (2), chair (1, 2), coffee machine (1), countertop (1), dining table (1), kettle (1), lettuce (1), microwave (1), pencil (1), plate (1), toaster (1), tomato (1), vase (1).
+Act: pick up pencil 1
+You pick up pencil (1). You hold pencil (1).
+Think: Now, I need to find and turn on candle.
+OK.
+Query: find_objects({'label': 'candle'})
+Info: 
+Think: I have not seen candle yet. Now I need to check where to search. First, I will search bathroom 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'bathroom 1'})
+Info: garbage can 1, sink 1, sink basin 1, toilet 1
+Think: In bathroom 1, the candle is likely to appear in/on toilet 1, garbage can 1, sink 1, sink basin 1. I can check each place one by one until I find candle.
+OK.
+Act: go to bathroom 1
+You move to the bathroom (1). Looking quickly around the room, you see garbage can (1), plunger (1), sink (1), sink basin (1), toilet (1). You hold pencil (1).
+Act: go to toilet 1
+You arrive at the toilet (1). The toilet (1) is closed. You see soap bar (1), spray bottle (1), toilet (1), toilet paper (1). You hold pencil (1).
+Act: open toilet 1
+You open toilet (1). You see soap bar (1), spray bottle (1), toilet (1), toilet paper (1). You hold pencil (1).
+Act: go to garbage can 1
+You arrive at the garbage can (1). You see garbage can (1). You hold pencil (1).
+Act: go to sink 1
+You arrive at the sink (1). You see faucet (1), sink (1), sink basin (1). You hold pencil (1).
+Act: go to sink basin 1
+You arrive at the sink basin (1). You see faucet (1), sink (1), sink basin (1). You hold pencil (1).
+Think: I need to check whether I see candle.
+OK.
+Query: find_objects({'label': 'candle'})
+Info: 
+Think: I need to check if there's any place in bathroom 1 that I haven't visited.
+OK.
+Query: get_child_node_names({'parent_node_id': 'bathroom 1', 'child_node_attrs': {'visited': False}})
+Info: 
+Think: In bathroom 1, I visit all places. Now I need to search bedroom 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'bedroom 1'})
+Info: bed 1, box 1, drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser 1, safe 1
+Think: In bedroom 1, the candle is likely to appear in/on bed 1, box 1, drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser 1, safe 1. I can check each place one by one until I find candle.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see basket ball (1), bed (1), dog bed (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), safe (1), television (1). You hold pencil (1).
+Act: go to bed 1
+You arrive at the bed (1). You see baseball bat (1), bed (1), book (2), box (1), dog bed (1), laptop (1), pillow (1). You hold pencil (1).
+Act: go to box 1
+You arrive at the box (1). You see baseball bat (1), bed (1), book (2), box (1), dog bed (1), laptop (1), pillow (1). You hold pencil (1).
+Act: go to drawer 1
+You arrive at the drawer (1). The drawer (1) is closed. You see alarm clock (1), cell phone (1), credit card (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), pen (1), safe (1). You hold pencil (1).
+Act: open drawer 1
+You open drawer (1). You see alarm clock (1), cell phone (1), credit card (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), pen (1), safe (1). You hold pencil (1).
+Act: go to drawer 2
+You arrive at the drawer (2). The drawer (2) is closed. You see alarm clock (1), cell phone (1), credit card (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), pen (1), safe (1). You hold pencil (1).
+Act: open drawer 2
+You open drawer (2). You see alarm clock (1), cell phone (1), credit card (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), pen (1), safe (1). You hold pencil (1).
+Act: go to drawer 3
+You arrive at the drawer (3). The drawer (3) is closed. You see alarm clock (1), cell phone (1), credit card (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), pen (1), safe (1). You hold pencil (1).
+Act: open drawer 3
+You open drawer (3). You see alarm clock (1), cell phone (1), credit card (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), pen (1), safe (1). You hold pencil (1).
+Act: go to drawer 4
+You arrive at the drawer (4). The drawer (4) is closed. You see alarm clock (1), basket ball (1), drawer (3, 4, 6, 7, 8, 9, 10, 11, 12), dresser (1), pen (1), safe (1). You hold pencil (1).
+Act: open drawer 4
+You open drawer (4). You see alarm clock (1), basket ball (1), drawer (3, 4, 6, 7, 8, 9, 10, 11, 12), dresser (1), pen (1), safe (1). You hold pencil (1).
+Act: go to drawer 5
+You arrive at the drawer (5). The drawer (5) is closed. You see alarm clock (1), cell phone (1), credit card (1), drawer (1, 2, 5, 6, 7, 8, 9, 10, 11), dresser (1), pen (1). You hold pencil (1).
+Act: open drawer 5
+You open drawer (5). You see alarm clock (1), cell phone (1), credit card (1), drawer (1, 2, 5, 6, 7, 8, 9, 10, 11), dresser (1), pen (1). You hold pencil (1).
+Act: go to drawer 6
+You arrive at the drawer (6). The drawer (6) is closed. You see alarm clock (1), cell phone (1), credit card (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), pen (1), safe (1). You hold pencil (1).
+Act: open drawer 6
+You open drawer (6). You see alarm clock (1), cell phone (1), credit card (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), pen (1), safe (1), tissue box (1). You hold pencil (1).
+Act: go to drawer 7
+You arrive at the drawer (7). The drawer (7) is closed. You see alarm clock (1), cell phone (1), credit card (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), pen (1), safe (1), tissue box (1). You hold pencil (1).
+Act: open drawer 7
+You open drawer (7). You see alarm clock (1), cell phone (1), credit card (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), pen (1), safe (1), tissue box (1). You hold pencil (1).
+Act: go to drawer 8
+You arrive at the drawer (8). The drawer (8) is closed. You see alarm clock (1), cell phone (1), credit card (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), pen (1), safe (1), tissue box (1). You hold pencil (1).
+Act: open drawer 8
+You open drawer (8). You see alarm clock (1), book (1), cell phone (1), credit card (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), pen (1), safe (1), tissue box (1). You hold pencil (1).
+Act: go to drawer 9
+You arrive at the drawer (9). The drawer (9) is closed. You see alarm clock (1), book (1), cell phone (1), credit card (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), pen (1), safe (1), tissue box (1). You hold pencil (1).
+Act: open drawer 9
+You open drawer (9). You see alarm clock (1), book (1), cell phone (1), credit card (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), pen (1), safe (1), tissue box (1). You hold pencil (1).
+Act: go to drawer 10
+You arrive at the drawer (10). The drawer (10) is closed. You see alarm clock (1), book (1), cell phone (1), credit card (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), pen (1), safe (1), tissue box (1). You hold pencil (1).
+Act: open drawer 10
+You open drawer (10). You see alarm clock (1), book (1), cell phone (1), credit card (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), pen (1), safe (1), tissue box (1). You hold pencil (1).
+Act: go to drawer 11
+You arrive at the drawer (11). The drawer (11) is closed. You see alarm clock (1), book (1), cell phone (1), credit card (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), pen (1), safe (1), tissue box (1). You hold pencil (1).
+Act: open drawer 11
+You open drawer (11). You see alarm clock (1), book (1), cell phone (1), credit card (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), pen (1), safe (1), tissue box (1). You hold pencil (1).
+Act: go to drawer 12
+You arrive at the drawer (12). The drawer (12) is closed. You see alarm clock (1), basket ball (1), book (1), drawer (3, 4, 6, 7, 8, 9, 10, 11, 12), dresser (1), pen (1), safe (1), tissue box (1). You hold pencil (1).
+Act: open drawer 12
+You open drawer (12). You see alarm clock (1), basket ball (1), book (1), drawer (3, 4, 6, 7, 8, 9, 10, 11, 12), dresser (1), pen (1), safe (1), tissue box (1). You hold pencil (1).
+Act: go to dresser 1
+You arrive at the dresser (1).  You hold pencil (1).
+Act: go to garbage can 1
+You arrive at the garbage can (1). You see garbage can (1). You hold pencil (1).
+Act: go to sink 1
+You arrive at the sink (1). You see faucet (1), sink (1), sink basin (1). You hold pencil (1).
+Act: go to sink basin 1
+You arrive at the sink basin (1). You see faucet (1), sink (1), sink basin (1). You hold pencil (1).
+Think: I need to check whether I see candle.
+OK.
+Query: find_objects({'label': 'candle'})
+Info: 
+Think: I need to check if there's any place in bedroom 1 that I haven't visited.
+OK.
+Query: get_child_node_names({'parent_node_id': 'bedroom 1', 'child_node_attrs': {'visited': False}})
+Info: safe 1
+Think: In bedroom 1, I visit all places except safe 1. Now I need to search safe 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see basket ball (1), bed (1), book (1), dog bed (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), safe (1), television (1), tissue box (1). You hold pencil (1).
+Act: go to safe 1
+You arrive at the safe (1). The safe (1) is closed. You see alarm clock (1), book (1), drawer (3, 4, 6, 7, 8, 9, 10, 11, 12), dresser (1), pen (1), safe (1), tissue box (1). You hold pencil (1).
+Act: open safe 1
+You open safe (1). You see alarm clock (1), book (1), drawer (3, 4, 6, 7, 8, 9, 10, 11, 12), dresser (1), pen (1), safe (1), tissue box (1). You hold pencil (1).
+Think: I need to check whether I see candle.
+OK.
+Query: find_objects({'label': 'candle'})
+Info: 
+Think: I need to check if there's any place in bedroom 1 that I haven't visited.
+OK.
+Query: get_child_node_names({'parent_node_id': 'bedroom 1', 'child_node_attrs': {'visited': False}})
+Info: 
+Think: In bedroom 1, I visit all places. Now I need to search living room 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'living room 1'})
+Info: dining table 2, sofa 1
+Think: In living room 1, the candle is likely to appear in/on dining table 2, sofa 1. I can check each place one by one until I find candle.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see cart (1), dining table (2), sofa (1), television (2). You hold pencil (1).
+Act: go to dining table 2
+You arrive at the dining table (2). You see candle (1), dining table (2), laptop (2), pen (2), plate (2), television (2), vase (2). You hold pencil (1).
+Think: I find candle 1. Now, I need to turn it on.
+OK.
+Act: go to candle 1
+You arrive at the candle (1). You see candle (1), dining table (2), laptop (2), pen (2), plate (2), television (2), vase (2). You hold pencil (1).
+Act: turn on candle 1
+You turn on candle (1). You hold pencil (1).
+Think: Now I complete the task.
+OK.
+Act: done

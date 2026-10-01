@@ -1,0 +1,10 @@
+Your task is to: Move the baseball bat to the receptacle that has the toaster.
+You arrive at the toaster (1). You see fork (1), painting (3), pepper shaker (1), soap bottle (1), toaster (1). You hold baseball bat (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- (bathroom 1): [faucet 1, (garbage can 1), (laundry hamper 1), plunger 1, (sink 1), (sink basin 1), (toilet 1)]
+- bedroom 1: [dog bed 1, (bed 1), (box 1), (chair 3), (chair 4), (chair 1), (chair 2), (dining table 1), (drawer 10), (drawer 9), (drawer 8), (drawer 7), (drawer 4), (drawer 5), (drawer 3), (drawer 2), (drawer 1), (drawer 6), (dresser 1)]
+- kitchen 1: [painting 4, painting 2, painting 1, shelving unit 1, vase 2, baseball bat 1, (cabinet 1), (countertop 1), fork 1, (fridge 1), garbage can 2, painting 3, pepper shaker 1, (shelf 3), (shelf 2), (shelf 1), soap bottle 1, toaster 1]
+- (living room 1): [(armchair 1), (cabinet 2), (chair 5), (dining table 2), (shelf 4), (shelf 6), (shelf 5), shelving unit 2, (sofa 1), television 1]
+Your 5 previous actions were: go to bedroom 1 (success), go to baseball bat 1 (success), pick up baseball bat 1 (success), go to kitchen 1 (success), go to toaster 1 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I arrive at toaster 1. I hold baseball bat 1. Now, I need to put down baseball bat 1.
+Act: put down baseball bat 1

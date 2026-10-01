@@ -1,0 +1,81 @@
+Your task is to: Remove everything from the sofa and place it on the furniture that contains the key chain.
+You are in the house, and there are 2 rooms: kitchen (1), living room (1). You are in the middle of a living room (1). Looking quickly around the room, you see TV stand (1), box (1), dining table (1), floor lamp (1), painting (3, 4), shelf (1, 2, 3, 4, 5, 6), sofa (1).
+Think: To solve the task, I need to find sofa and check what is on top of it. Then, I need to move everything on that sofa to the furniture that contains the key chain.
+OK.
+Think: First, I need to find sofa.
+OK.
+Query: recall location of sofa
+You saw sofa 1 in living room 1.
+Think: Sofa 1 is in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), box (1), dining table (1), floor lamp (1), painting (3, 4), shelf (1, 2, 3, 4, 5, 6), sofa (1).
+Act: go to sofa 1
+You arrive at the sofa (1). You see book (1), pencil (2), pillow (1), remote control (1), sofa (1).
+Think: Now, I need to move book 1, pencil 2, pillow 1, remote control 1 to the furniture that contains the key chain.
+OK.
+Think: First, I need to find the furniture that contains the key chain.
+OK.
+Query: recall location of key chain
+You have not seen key chain before.
+Think: I have not seen key chain yet. The key chain is more likely to appear in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), box (1), dining table (1), floor lamp (1), painting (3, 4), shelf (1, 2, 3, 4, 5, 6), sofa (1).
+Think: In living room 1, the key chain is likely to appear in/on TV stand 1, box 1, dining table 1, shelf (1, 2, 3, 4, 5, 6). I can check each place one by one until I find key chain.
+OK.
+Act: go to TV stand 1
+You arrive at the TV stand (1). You see TV stand (1), box (2), candle (2), credit card (1), pencil (2), plate (1), shelf (1, 2, 3, 4, 5, 6), statue (2), television (1), vase (1).
+Act: go to box 1
+You arrive at the box (1). The box (1) is open. You see box (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see candle (1), dining table (1), key chain (1), newspaper (1), painting (3, 4), remote control (2), statue (3).
+Think: I find key chain 1. Now, I need to move to key chain 1 to find the furniture that contains key chain 1.
+OK.
+Act: go to key chain 1
+You arrive at the key chain (1). You see candle (1), dining table (1), key chain (1), newspaper (1), painting (3, 4), remote control (2), statue (3).
+Think: The furniture that contains key chain 1 is dining table 1. Now, I need to move book 1, pencil 2, pillow 1, remote control 1 to dining table 1.
+OK.
+Act: go to sofa 1
+You arrive at the sofa (1). You see book (1), pencil (2), pillow (1), remote control (1), sofa (1).
+Act: go to book 1
+You arrive at the book (1). The book (1) is closed. You see book (1), pencil (2), pillow (1), remote control (1), sofa (1).
+Act: pick up book 1
+You pick up book (1). You hold book (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see candle (1), dining table (1), key chain (1), newspaper (1), painting (3, 4), remote control (2), statue (3). You hold book (1).
+Act: put down book 1
+You put book (1) on dining table (1).
+Act: go to sofa 1
+You arrive at the sofa (1). You see pencil (2), pillow (1), remote control (1), sofa (1).
+Act: go to pencil 2
+You arrive at the pencil (2). You see pencil (2), pillow (1), remote control (1), sofa (1).
+Act: pick up pencil 2
+You pick up pencil (2). You hold pencil (2).
+Act: go to dining table 1
+You arrive at the dining table (1). You see book (1), candle (1), dining table (1), key chain (1), newspaper (1), painting (3, 4), remote control (2), statue (3). You hold pencil (2).
+Act: put down pencil 2
+You put pencil (2) on dining table (1).
+Act: go to sofa 1
+You arrive at the sofa (1). You see pillow (1), remote control (1), sofa (1).
+Act: go to pillow 1
+You arrive at the pillow (1). You see pillow (1), remote control (1), sofa (1).
+Act: pick up pillow 1
+You pick up pillow (1). You hold pillow (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see book (1), candle (1), dining table (1), key chain (1), newspaper (1), painting (3, 4), pencil (2), remote control (2), statue (3). You hold pillow (1).
+Act: put down pillow 1
+You put pillow (1) on dining table (1).
+Act: go to sofa 1
+You arrive at the sofa (1). You see remote control (1), sofa (1).
+Act: go to remote control 1
+You arrive at the remote control (1). You see remote control (1), sofa (1).
+Act: pick up remote control 1
+You pick up remote control (1). You hold remote control (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see book (1), candle (1), dining table (1), key chain (1), newspaper (1), painting (3, 4), pencil (2), pillow (1), remote control (2), statue (3). You hold remote control (1).
+Act: put down remote control 1
+You put remote control (1) on dining table (1).
+Think: Now I complete the task.
+OK.
+Act: done

@@ -1,0 +1,11 @@
+Your task is to: Move the broken item on the desk to the bed.
+You arrive at the bed (1). You see bed (1), bowl (2), box (3), cell phone (1), chair (1, 2, 3), desk lamp (1), dining table (2), house plant (2), pen (1), pencil (2), pillow (1), remote control (2), vase (2). You hold cell phone (3). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- (bathroom 1): [faucet 1, (garbage can 1), plunger 1, (sink 1), (sink basin 1), (toilet 1)]
+- bedroom 1: [television 2, tissue box 2, alarm clock 1, book 3, credit card 3, laptop 1, pencil 4, pencil 3, bed 1, bowl 2, (box 3), (box 2), (cabinet 4), (cabinet 3), (cabinet 1), (cabinet 2), cell phone 3, cell phone 1, (chair 2), (chair 3), (chair 1), (coffee table 1), desk 1, desk lamp 1, (dining table 2), (drawer 4), (drawer 3), (drawer 2), (drawer 1), (dresser 1), house plant 2, pen 1, pencil 2, pillow 1, remote control 2, (safe 1), vase 2]
+- (bedroom 2): [(bed 2), (box 6), (box 4), (box 5), (chair 7), (chair 6), (chair 5), (chair 4), (dining table 3), dog bed 1, (drawer 14), (drawer 7), (drawer 12), (drawer 5), (drawer 11), (drawer 6), (drawer 8), (drawer 10), (drawer 9), (drawer 13), (dresser 2), (shelf 2), (shelf 3), (shelf 7), (shelf 6), (shelf 5), (shelf 4), (TV stand 2)]
+- kitchen 1: [(countertop 1), (fridge 1), lettuce 1, painting 2, painting 1, (stool 2), (stool 1)]
+- (living room 1): [(box 1), (dining table 1), floor lamp 1, (garbage can 2), painting 3, painting 4, (shelf 1), (sofa 1), (TV stand 1)]
+Your 5 previous actions were: go to desk 1 (success), go to cell phone 3 (success), pick up cell phone 3 (success), go to bedroom 1 (success), go to bed 1 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I arrive at bed 1. Now, I need to put down cell phone 3.
+Act: put down cell phone 3

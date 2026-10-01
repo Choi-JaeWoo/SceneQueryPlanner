@@ -1,0 +1,49 @@
+Your task is to: Using the coffee machine, fill a mug with coffee and set it on a receptacle made of wood and plastic.
+You are in the house, and there are 10 rooms: bathroom (1, 2, 3, 4), bedroom (1, 2, 3, 4), kitchen (1), living room (1). You are in the middle of a bedroom (4). Looking quickly around the room, you see basket ball (1), bed (4), dog bed (1), drawer (39, 40, 41), dresser (5), television (2).
+Think: To solve the task, I need to find and pick up mug, put mug in coffee machine and turn on coffee machine, turn off coffee machine and pick up mug, put mug on a receptacle made of wood and plastic.
+OK.
+Think: First, I need to find and pick up mug. The mug is likely to appear in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see cabinet (1, 2), countertop (1), fridge (1), house plant (1), shelf (1, 2, 3, 4, 5, 6), shelving unit (1, 2).
+Think: In kitchen 1, the mug is likely to appear in/on cabinet (1, 2), countertop 1, shelf (1, 2, 3, 4, 5, 6), shelving unit (1, 2). I can check each place one by one until I find mug.
+OK.
+Act: go to cabinet 1
+You arrive at the cabinet (1). The cabinet (1) is closed. You see book (1, 2, 3), bowl (1), bread (1), butter knife (1), cabinet (1), cell phone (3), coffee machine (1), countertop (1), cup (1), dish sponge (1), egg (2), knife (1, 2), mug (2), pepper shaker (1), shelf (1, 2, 3), shelving unit (1), soap bottle (1), spatula (1), statue (2).
+Think: I find mug 2. Now, I need to pick it up.
+OK.
+Act: go to mug 2
+You arrive at the mug (2). You see book (1, 2, 3), bowl (1), bread (1), butter knife (1), cabinet (1), cell phone (3), coffee machine (1), countertop (1), cup (1), dish sponge (1), egg (2), house plant (1), knife (1, 2), mug (2), pepper shaker (1), salt shaker (1), shelf (1, 2), shelving unit (1), soap bottle (1), spatula (1), spray bottle (2), statue (2).
+Act: pick up mug 2
+You pick up mug (2). You hold mug (2).
+Think: Now, I need to find coffee machine.
+OK.
+Act: go to coffee machine 1
+You arrive at the coffee machine (1). You see book (2, 3), bowl (1), bread (1), butter knife (1), cabinet (1), cell phone (3), coffee machine (1), cup (1), dish sponge (1), knife (1, 2), salt shaker (1), shelf (1, 2), spray bottle (2), statue (2). You hold mug (2).
+Think: Now, I need to put down mug 2 in coffee machine 1.
+OK.
+Act: put down mug 2
+You put mug (2) on coffee machine (1).
+Think: Now, I need to turn on coffee machine 1 to brew the coffee.
+OK.
+Act: turn on coffee machine 1
+You turn on coffee machine (1).
+Think: Now, I need to turn off coffee machine 1 and pick up mug 2.
+OK.
+Act: turn off coffee machine 1
+You turn off coffee machine (1).
+Act: pick up mug 2
+You pick up mug (2). You hold mug (2).
+Think: Now, I need to find the receptacle made of wood and plastic. The receptacle made of wood and plastic is more likely to appear in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), box (1), drawer (16, 17, 18), dresser (2), shelf (7), sofa (1). You hold mug (2).
+Think: In living room 1, the receptacle made of wood and plastic is TV stand 1.
+OK.
+Act: go to TV stand 1
+You arrive at the TV stand (1). You see TV stand (1), book (4), credit card (1), remote control (1), shelf (7), television (1). You hold mug (2).
+Act: put down mug 2
+You put mug (2) on TV stand (1).
+Think: Now I complete the task.
+OK.
+Act: done

@@ -1,0 +1,49 @@
+Your task is to: Put the item made of paper from the dresser onto the shelf.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a living room (1). Looking quickly around the room, you see TV stand (1), dog bed (2), house plant (1), shelf (7).
+Think: To solve the task, I need to find and pick up the item made of paper from the dresser, then put it on shelf.
+OK.
+Think: First, I need to find and pick up the item made of paper from the dresser. Now, I need to find dresser.
+OK.
+Query: find_objects({'label': 'dresser'})
+Info: [{'name_id_nl': 'dresser 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'bedroom 1'}]
+Think: Dresser 1 is in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see basket ball (1), bed (1), cabinet (1, 2, 3, 4), dog bed (1), drawer (1, 2, 3, 4), dresser (1), television (1).
+Act: go to dresser 1
+You arrive at the dresser (1). You see basket ball (1), book (2), bowl (1), cabinet (1, 2, 3, 4), dog bed (1), drawer (1, 2, 3, 4), dresser (1), house plant (2), mug (1), painting (1).
+Think: Now, I need to find and pick up the item made of paper from the dresser. First, I need to check what is on top of dresser 1.
+OK.
+Query: get_edges_for_node({'node_id': 'dresser 1', 'relation': 'ON'})
+Info: [('book 2', 'dresser 1', 'ON'), ('bowl 1', 'dresser 1', 'ON'), ('house plant 2', 'dresser 1', 'ON'), ('mug 1', 'dresser 1', 'ON'), ('painting 1', 'dresser 1', 'ON')]
+Think: Now, I need to check each object to find the item made of paper.
+OK.
+Query: read_node({'node_id': 'book 2'})
+Info: {'name_id_nl': 'book 2', 'salientMaterials': ['Paper'], 'properties': ['openable', 'pickupable'], 'states': []}
+Query: read_node({'node_id': 'bowl 1'})
+Info: {'name_id_nl': 'bowl 1', 'salientMaterials': ['Ceramic'], 'properties': ['canFillWithLiquid', 'breakable', 'pickupable'], 'states': []}
+Query: read_node({'node_id': 'house plant 2'})
+Info: {'name_id_nl': 'house plant 2', 'salientMaterials': ['Ceramic', 'Organic'], 'properties': ['canFillWithLiquid'], 'states': []}
+Query: read_node({'node_id': 'mug 1'})
+Info: {'name_id_nl': 'mug 1', 'salientMaterials': ['Ceramic'], 'properties': ['canFillWithLiquid', 'breakable', 'pickupable'], 'states': []}
+Think: On dresser 1, the item made of paper is book 2. Now, I need to pick it up.
+OK.
+Act: go to book 2
+You arrive at the book (2). The book (2) is closed. You see book (2), bowl (1), cabinet (1, 2, 3), drawer (1, 2), dresser (1), house plant (2), mug (1), painting (1).
+Act: pick up book 2
+You pick up book (2). You hold book (2).
+Think: Now, I need to find shelf.
+OK.
+Query: find_objects({'label': 'shelf'})
+Info: [{'name_id_nl': 'shelf 5', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'kitchen 1'}, {'name_id_nl': 'shelf 4', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'kitchen 1'}, {'name_id_nl': 'shelf 7', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}, {'name_id_nl': 'shelf 3', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'kitchen 1'}, {'name_id_nl': 'shelf 2', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'kitchen 1'}, {'name_id_nl': 'shelf 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'kitchen 1'}, {'name_id_nl': 'shelf 6', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'kitchen 1'}]
+Think: Shelf 7 is in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), dog bed (2), house plant (1), shelf (7). You hold book (2).
+Act: go to shelf 7
+You arrive at the shelf (7). You see TV stand (1), bowl (2), candle (2), credit card (1), desk lamp (1), dog bed (2), house plant (1), newspaper (1), pencil (2), shelf (7), television (2). You hold book (2).
+Act: put down book 2
+You put book (2) on shelf (7).
+Think: Now I complete the task.
+OK.
+Act: done

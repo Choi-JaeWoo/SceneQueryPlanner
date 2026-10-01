@@ -1,0 +1,67 @@
+Your task is to: Relocate everything from the sofa to the shelf.
+You are in the house, and there are 1 rooms: living room (1). You are in the middle of a living room (1). Looking quickly around the room, you see TV stand (1), box (1), cabinet (1), chair (1, 2, 3, 4), dining table (1), dog bed (1), garbage can (1), painting (1, 2), shelf (1, 2, 3, 4, 5, 6, 7, 8, 9), shelving unit (1), sofa (1).
+Think: To solve the task, I need to find sofa and check what is on top of it. Then, I need to move everything on sofa to shelf.
+OK.
+Think: First, I need to find sofa.
+OK.
+Query: find_objects({'label': 'sofa'})
+Info: [{'name_id_nl': 'sofa 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}]
+Think: I find sofa 1.
+OK.
+Act: go to sofa 1
+You arrive at the sofa (1). You see box (1), cell phone (1), chair (2), key chain (1), newspaper (1), sofa (1).
+Think: Now, I need to check what is on top of sofa 1.
+OK.
+Query: get_edges_for_node({'node_id': 'sofa 1', 'relation': 'ON'})
+Info: [('cell phone 1', 'sofa 1', 'ON'), ('newspaper 1', 'sofa 1', 'ON')]
+Think: Now, I need to move cell phone 1, newspaper 1 to shelf.
+OK.
+Act: go to cell phone 1
+You arrive at the cell phone (1). You see box (1), cell phone (1), chair (2), newspaper (1), sofa (1).
+Act: pick up cell phone 1
+You pick up cell phone (1). You hold cell phone (1).
+Think: Now, I need to find shelf.
+OK.
+Query: find_objects({'label': 'shelf'})
+Info: [{'name_id_nl': 'shelf 4', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}, {'name_id_nl': 'shelf 5', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}, {'name_id_nl': 'shelf 6', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}, {'name_id_nl': 'shelf 7', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}, {'name_id_nl': 'shelf 8', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}, {'name_id_nl': 'shelf 9', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}, {'name_id_nl': 'shelf 3', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}, {'name_id_nl': 'shelf 2', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}, {'name_id_nl': 'shelf 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}]
+Think: I find shelf 4, shelf 5, shelf 6, shelf 7, shelf 8, shelf 9, shelf 3, shelf 2, shelf 1.
+OK.
+Act: go to shelf 4
+You arrive at the shelf (4). You see TV stand (1), cell phone (2), garbage can (1), house plant (1), shelf (4, 5, 6, 7, 8, 9), television (1), tissue box (1), vase (1), watch (1). You hold cell phone (1).
+Act: put down cell phone 1
+You put cell phone (1) on shelf (4).
+Act: go to newspaper 1
+You arrive at the newspaper (1). You see candle (1), chair (2, 3), key chain (1), newspaper (1), sofa (1).
+Act: pick up newspaper 1
+You pick up newspaper (1). You hold newspaper (1).
+Act: go to shelf 4
+You arrive at the shelf (4). You see TV stand (1), cell phone (1, 2), garbage can (1), house plant (1), shelf (4, 5, 6, 7, 8, 9), television (1), tissue box (1), vase (1), watch (1). You hold newspaper (1).
+Act: put down newspaper 1
+Put action failed: There is no valid space to place newspaper (1) in shelf (4).
+Act: go to shelf 5
+You arrive at the shelf (5). You see TV stand (1), cell phone (1, 2), garbage can (1), house plant (1), shelf (4, 5, 6, 7, 8, 9), television (1), tissue box (1), vase (1), watch (1). You hold newspaper (1).
+Act: put down newspaper 1
+Put action failed: There is no valid space to place newspaper (1) in shelf (5).
+Act: go to shelf 6
+You arrive at the shelf (6). You see TV stand (1), cell phone (1, 2), garbage can (1), house plant (1), shelf (4, 5, 6, 7, 8, 9), television (1), tissue box (1), vase (1), watch (1). You hold newspaper (1).
+Act: put down newspaper 1
+Put action failed: There is no valid space to place newspaper (1) in shelf (6).
+Act: go to shelf 7
+You arrive at the shelf (7). You see TV stand (1), cell phone (1), garbage can (1), house plant (1), painting (1), shelf (4, 5, 6, 7, 8, 9), television (1), tissue box (1), vase (1), watch (1). You hold newspaper (1).
+Act: put down newspaper 1
+Put action failed: There is no valid space to place newspaper (1) in shelf (7).
+Act: go to shelf 8
+You arrive at the shelf (8). You see TV stand (1), cell phone (1, 2), garbage can (1), house plant (1), painting (1), shelf (4, 5, 6, 7, 8, 9), television (1), tissue box (1), vase (1), watch (1). You hold newspaper (1).
+Act: put down newspaper 1
+Put action failed: There is no valid space to place newspaper (1) in shelf (8).
+Act: go to shelf 9
+You arrive at the shelf (9). You see TV stand (1), cell phone (1, 2), garbage can (1), house plant (1), painting (1), shelf (4, 5, 6, 7, 8, 9), television (1), tissue box (1), vase (1), watch (1). You hold newspaper (1).
+Act: put down newspaper 1
+You put newspaper (1) on shelf (9).
+Think: Now I need to check what's left on sofa 1.
+OK.
+Query: get_edges_for_node({'node_id': 'sofa 1', 'relation': 'ON'})
+Info: 
+Think: Now I complete the task.
+OK.
+Act: done

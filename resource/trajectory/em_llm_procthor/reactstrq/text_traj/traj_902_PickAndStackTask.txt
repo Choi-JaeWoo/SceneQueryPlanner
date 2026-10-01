@@ -1,0 +1,83 @@
+Your task is to: Put a mug with a pen inside it on the shelf.
+You are in the house, and there are 1 rooms: bedroom (1). You are in the middle of a bedroom (1). Looking quickly around the room, you see basket ball (1), bed (1), chair (1), credit card (1), desk (1), dog bed (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), painting (1, 2, 3, 4), shelf (1, 2, 3, 4).
+Think: To solve the task, I need to find and pick up mug, find pen and put it in mug, find shelf and put down mug.
+OK.
+Think: First, I need to find and pick up mug. The mug is more likely to appear in bedroom 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'bedroom 1'})
+Info: bed 1, chair 1, desk 1, drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser 1, shelf (1, 2, 3, 4)
+Think: In bedroom 1, the mug is likely to appear in/on bed 1, chair 1, desk 1, drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser 1, shelf (1, 2, 3, 4). I can check each place one by one until I find mug.
+OK.
+Act: go to bed 1
+You arrive at the bed (1). You see bed (1), book (1), chair (1), drawer (3, 12), painting (4), pillow (1).
+Act: go to chair 1
+You arrive at the chair (1). You see chair (1), credit card (1), desk (1), mug (1), painting (1, 2), shelf (1, 2, 3, 4), statue (1), tabletop decor (1).
+Act: go to desk 1
+You arrive at the desk (1). You see book (1), chair (1), credit card (1), desk (1), mug (1), pillow (1), shelf (1, 2, 3, 4), statue (1), tabletop decor (1).
+Act: go to drawer 1
+You arrive at the drawer (1). The drawer (1) is closed. You see dog bed (1), drawer (1, 2, 5, 6, 7, 8, 9, 10, 11), dresser (1), pen (1).
+Act: go to drawer 2
+You arrive at the drawer (2). The drawer (2) is closed. You see dog bed (1), drawer (1, 2, 5, 6, 7, 8, 9, 10, 11), dresser (1), pen (1).
+Act: go to drawer 3
+You arrive at the drawer (3). The drawer (3) is closed. You see drawer (3, 4, 6, 7, 8, 9, 10, 11, 12), dresser (1), painting (3), pen (1).
+Act: go to drawer 4
+You arrive at the drawer (4). The drawer (4) is closed. You see dog bed (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), painting (3), pen (1).
+Act: go to drawer 5
+You arrive at the drawer (5). The drawer (5) is closed. You see drawer (1, 2, 5, 6, 7, 8, 9, 10, 11), dresser (1), pen (1).
+Act: go to drawer 6
+You arrive at the drawer (6). The drawer (6) is closed. You see dog bed (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), painting (3), pen (1).
+Act: go to drawer 7
+You arrive at the drawer (7). The drawer (7) is closed. You see dog bed (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), painting (3), pen (1).
+Act: go to drawer 8
+You arrive at the drawer (8). The drawer (8) is closed. You see dog bed (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), painting (3), pen (1).
+Act: go to drawer 9
+You arrive at the drawer (9). The drawer (9) is closed. You see dog bed (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), painting (3), pen (1).
+Act: go to drawer 10
+You arrive at the drawer (10). The drawer (10) is closed. You see dog bed (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), painting (3), pen (1).
+Act: go to drawer 11
+You arrive at the drawer (11). The drawer (11) is closed. You see dog bed (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), painting (3), pen (1).
+Act: go to drawer 12
+You arrive at the drawer (12). The drawer (12) is closed. You see dog bed (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), painting (3), pen (1).
+Act: go to dresser 1
+You arrive at the dresser (1). You see dog bed (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), painting (3), pen (1).
+Act: go to shelf 1
+You arrive at the shelf (1). You see chair (1), credit card (1), desk (1), mug (1), painting (1, 2), shelf (1, 2, 3, 4), statue (1), tabletop decor (1).
+Think: I find mug 1. Now, I need to pick it up.
+OK.
+Act: go to mug 1
+You arrive at the mug (1). You see chair (1), credit card (1), desk (1), mug (1), painting (1, 2), shelf (1, 2, 3, 4), statue (1), tabletop decor (1).
+Act: pick up mug 1
+You pick up mug (1). You hold mug (1).
+Think: Now, I need to find pen and put it in mug 1.
+OK.
+Query: find_objects({'label': 'pen'})
+Info: [{'name_id_nl': 'pen 1', 'node_type': 'object', 'properties': ['pickupable'], 'states': []}]
+Query: get_edges_for_node({'node_id': 'pen 1'})
+Info: [('pen 1', 'dresser 1', 'ON'), ('pen 1', 'dog bed 1', 'CLOSE'), ('pen 1', 'drawer 11', 'CLOSE'), ('pen 1', 'drawer 4', 'CLOSE'), ('pen 1', 'drawer 10', 'CLOSE'), ('pen 1', 'drawer 9', 'CLOSE'), ('pen 1', 'drawer 6', 'CLOSE'), ('pen 1', 'drawer 7', 'CLOSE'), ('pen 1', 'drawer 3', 'CLOSE'), ('pen 1', 'drawer 5', 'CLOSE'), ('pen 1', 'drawer 2', 'CLOSE'), ('pen 1', 'drawer 1', 'CLOSE'), ('pen 1', 'drawer 8', 'CLOSE'), ('pen 1', 'drawer 12', 'CLOSE'), ('pen 1', 'painting 3', 'CLOSE'), ('pen 1', 'bedroom 1', 'INSIDE'), ('dog bed 1', 'pen 1', 'CLOSE'), ('drawer 11', 'pen 1', 'CLOSE'), ('drawer 4', 'pen 1', 'CLOSE'), ('drawer 10', 'pen 1', 'CLOSE'), ('drawer 9', 'pen 1', 'CLOSE'), ('drawer 6', 'pen 1', 'CLOSE'), ('drawer 7', 'pen 1', 'CLOSE'), ('drawer 3', 'pen 1', 'CLOSE'), ('drawer 5', 'pen 1', 'CLOSE'), ('drawer 2', 'pen 1', 'CLOSE'), ('drawer 1', 'pen 1', 'CLOSE'), ('drawer 8', 'pen 1', 'CLOSE'), ('drawer 12', 'pen 1', 'CLOSE'), ('painting 3', 'pen 1', 'CLOSE')]
+Think: Pen 1 is on dresser 1 in bedroom 1.
+OK.
+Act: go to dresser 1
+You arrive at the dresser (1). You see dog bed (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), painting (3), pen (1). You hold mug (1).
+Act: go to pen 1
+You arrive at the pen (1). You see dog bed (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), painting (3), pen (1). You hold mug (1).
+Act: pick up pen 1
+Pick up action failed: Robot is currently holding mug.
+Act: put down mug 1
+You put mug (1) on dresser (1).
+Act: pick up pen 1
+You pick up pen (1). You hold pen (1).
+Act: go to mug 1
+You arrive at the mug (1). You see drawer (1, 2, 5, 6, 7, 8, 9, 10, 11), dresser (1), mug (1). You hold pen (1).
+Act: put down pen 1
+You put pen (1) in mug (1).
+Act: pick up mug 1
+You pick up mug (1). You hold mug (1).
+Think: Now, I need to find shelf and put down mug 1.
+OK.
+Act: go to shelf 1
+You arrive at the shelf (1). You see chair (1), credit card (1), desk (1), painting (1, 2), pen (1), shelf (1, 2, 3, 4), statue (1), tabletop decor (1). You hold mug (1).
+Act: put down mug 1
+You put mug (1) on shelf (1).
+Think: Now I complete task.
+OK.
+Act: done

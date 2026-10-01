@@ -1,0 +1,11 @@
+Your task is to: Move the broken item on the desk to the bed.
+You are in the house, and there are 5 rooms: bathroom (1), bedroom (1, 2), kitchen (1), living room (1). You are in the middle of a kitchen (1). Looking quickly around the room, you see countertop (1), fridge (1), painting (1, 2), stool (1, 2). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- (bathroom 1): [faucet 1, (garbage can 1), plunger 1, (sink 1), (sink basin 1), (toilet 1)]
+- (bedroom 1): [(bed 1), (box 3), (box 2), (cabinet 4), (cabinet 3), (cabinet 1), (cabinet 2), (chair 2), (chair 3), (chair 1), (coffee table 1), (desk 1), (dining table 2), (drawer 4), (drawer 3), (drawer 2), (drawer 1), (dresser 1), (safe 1), television 2]
+- (bedroom 2): [(bed 2), (box 6), (box 4), (box 5), (chair 7), (chair 6), (chair 5), (chair 4), (dining table 3), dog bed 1, (drawer 14), (drawer 7), (drawer 12), (drawer 5), (drawer 11), (drawer 6), (drawer 8), (drawer 10), (drawer 9), (drawer 13), (dresser 2), (shelf 2), (shelf 3), (shelf 7), (shelf 6), (shelf 5), (shelf 4), (TV stand 2)]
+- kitchen 1: [(countertop 1), (fridge 1), lettuce 1, painting 2, painting 1, (stool 2), (stool 1)]
+- (living room 1): [(box 1), (dining table 1), floor lamp 1, (garbage can 2), painting 3, painting 4, (shelf 1), (sofa 1), (TV stand 1)]
+You have not taken any actions yet.
+What is the best next action to complete the task as efficiently as possible?
+Think: First, I need to find desk. Desk 1 is in bedroom 1.
+Act: go to bedroom 1

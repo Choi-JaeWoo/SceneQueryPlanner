@@ -1,19 +1,13 @@
 Your task is to: Put a pillow and a book on the armchair.
 You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a bedroom (1). Looking quickly around the room, you see bed (1), chair (1), dining table (1), drawer (1, 2, 3), dresser (1), garbage can (1), painting (1, 2).
-Think: To solve the task, I need to find and pick up pillow, put it on armchair, find and pick up book, put it on armchair.
+Think: To solve the task, I need to find and pick up pillow, then put it on armchair. And I need to find and pick up book, then put it on armchair.
 OK.
-Think: First, I need to find and pick up pillow.
-OK.
-Query: find_objects({'label': 'pillow'})
-Info: 
-Think: I have not seen pillow yet. Now I need to check where to search. First, I will search bedroom 1.
+Think: First, I need to find and pick up pillow. The pillow is more likely to appear in bedroom 1.
 OK.
 Query: get_child_node_names({'parent_node_id': 'bedroom 1'})
 Info: bed 1, chair 1, dining table 1, drawer (1, 2, 3), dresser 1, garbage can 1
-Think: In bedroom 1, the pillow is likely to appear in/on bed 1, chair 1, dining table 1, drawer (1, 2, 3), dresser 1, garbage can 1. I can check each place one by one until I find pillow.
+Think: In bedroom 1, the pillow is likely to appear in/on bed 1, dining table 1, drawer (1, 2, 3), dresser 1. I can check each place one by one until I find pillow.
 OK.
-Act: go to bedroom 1
-You move to the bedroom (1). Looking quickly around the room, you see bed (1), chair (1), dining table (1), drawer (1, 2, 3), dresser (1), garbage can (1), painting (1, 2).
 Act: go to bed 1
 You arrive at the bed (1). You see alarm clock (1), bed (1), book (1), cell phone (1), drawer (1, 2, 3), dresser (1), mug (1), pillow (1), teddy bear (1).
 Act: go to pillow 1
@@ -24,19 +18,23 @@ Think: Now, I need to find armchair and put down pillow 1.
 OK.
 Query: find_objects({'label': 'armchair'})
 Info: [{'name_id_nl': 'armchair 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}]
-Think: I find armchair 1.
+Think: Armchair 1 is in living room 1.
 OK.
 Act: go to living room 1
 You move to the living room (1). Looking quickly around the room, you see armchair (1), cart (1), chair (2), dining table (2), house plant (1), sofa (1), television (1). You hold pillow (1).
 Act: go to armchair 1
 You arrive at the armchair (1). You see armchair (1), book (2), dining table (2), house plant (1), plate (1), television (1). You hold pillow (1).
 Act: put down pillow 1
-You put pillow (1) in armchair (1).
+You put pillow (1) on armchair (1).
 Think: Now, I need to find and pick up book.
 OK.
 Query: find_objects({'label': 'book'})
 Info: [{'name_id_nl': 'book 1', 'node_type': 'object', 'properties': ['openable', 'pickupable'], 'states': []}, {'name_id_nl': 'book 2', 'node_type': 'object', 'properties': ['openable', 'pickupable'], 'states': []}]
-Think: I find book 1, book 2.
+Query: get_edges_for_node({'node_id': 'book 1'})
+Info: [('book 1', 'dresser 1', 'ON'), ('book 1', 'alarm clock 1', 'CLOSE'), ('book 1', 'cell phone 1', 'CLOSE'), ('book 1', 'drawer 2', 'CLOSE'), ('book 1', 'drawer 1', 'CLOSE'), ('book 1', 'drawer 3', 'CLOSE'), ('book 1', 'mug 1', 'CLOSE'), ('book 1', 'bedroom 1', 'INSIDE'), ('alarm clock 1', 'book 1', 'CLOSE'), ('cell phone 1', 'book 1', 'CLOSE'), ('drawer 2', 'book 1', 'CLOSE'), ('drawer 1', 'book 1', 'CLOSE'), ('drawer 3', 'book 1', 'CLOSE'), ('mug 1', 'book 1', 'CLOSE')]
+Query: get_edges_for_node({'node_id': 'book 2'})
+Info: [('book 2', 'bowl 1', 'CLOSE'), ('book 2', 'cart 1', 'CLOSE'), ('book 2', 'dining table 2', 'ON'), ('book 2', 'chair 2', 'CLOSE'), ('book 2', 'pillow 1', 'CLOSE'), ('book 2', 'plate 1', 'CLOSE'), ('book 2', 'user 1', 'CLOSE'), ('book 2', 'living room 1', 'INSIDE'), ('bowl 1', 'book 2', 'CLOSE'), ('cart 1', 'book 2', 'CLOSE'), ('chair 2', 'book 2', 'CLOSE'), ('pillow 1', 'book 2', 'CLOSE'), ('plate 1', 'book 2', 'CLOSE'), ('user 1', 'book 2', 'CLOSE')]
+Think: Book 1 is on dresser 1 in bedroom 1. Book 2 is on dining table 2 in living room 1.
 OK.
 Act: go to book 2
 You arrive at the book (2). The book (2) is closed. You see armchair (1), book (2), bowl (1), cart (1), chair (2), dining table (2), pillow (1), plate (1).
@@ -47,7 +45,7 @@ OK.
 Act: go to armchair 1
 You arrive at the armchair (1). You see armchair (1), dining table (2), house plant (1), pillow (1), plate (1), television (1). You hold book (2).
 Act: put down book 2
-You put book (2) in armchair (1).
-Think: Now I complete the task.
+You put book (2) on armchair (1).
+Think: Now I complete task.
 OK.
 Act: done

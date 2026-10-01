@@ -4,7 +4,7 @@ import sys
 
 from core.planner.base_planner import BasePlanner
 from core.wm.wm_procthor import ProcThorWM
-from core.utils.procthor_utils import recall_working_memory, decompose_nl_skill
+from core.utils.procthor_utils import recall_working_memory, decompose_nl_skill, task_file_stem
 
 
 class ReActWM(BasePlanner):
@@ -95,7 +95,7 @@ class ReActWM(BasePlanner):
 
     def collect_human(self, task_data, collect_dir):
         self.cur_decision_step = 0
-        traj_file_path = os.path.join(collect_dir, f"traj_{task_data['env_id']}_{task_data['mode']}.txt")
+        traj_file_path = os.path.join(collect_dir, f"traj_{task_file_stem(task_data)}.txt")
         
         init_obs = self.env.reset(task_data)
         self.initial_collect(traj_file_path, task_data, init_obs)
@@ -166,7 +166,7 @@ class ReActWM(BasePlanner):
             
     def collect_llm(self, task_data, collect_dir):
         self.cur_decision_step = 0
-        traj_file_path = os.path.join(collect_dir, f"traj_{task_data['env_id']}_{task_data['mode']}.txt")
+        traj_file_path = os.path.join(collect_dir, f"traj_{task_file_stem(task_data)}.txt")
 
         init_obs = self.env.reset(task_data)
         self.initial_collect(traj_file_path, task_data, init_obs)

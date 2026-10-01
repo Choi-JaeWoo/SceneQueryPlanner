@@ -1,0 +1,69 @@
+Your task is to: Clear the location with the television by moving all items from it onto the dining table.
+You are in the house, and there are 2 rooms: kitchen (1), living room (1). You are in the middle of a kitchen (1). Looking quickly around the room, you see chair (1, 2, 3, 4, 5), countertop (1), dining table (1), fridge (1), painting (1, 2), safe (1).
+Think: To solve the task, I need to find the location with the television and check what is on top of it. Then, I need to move everything on that location to dining table.
+OK.
+Think: First, I need to find the location with the television.
+OK.
+Query: recall location of television
+You have not seen television before.
+Think: I have not seen television yet. The television is more likely to appear in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), chair (6, 7), dining table (2), garbage can (1), house plant (1), painting (3, 4), shelf (1, 2, 3, 4, 5, 6), sofa (1).
+Think: In living room 1, the television is likely to appear in/on TV stand 1, dining table 2, shelf 1, shelf 2, shelf 3, shelf 4, shelf 5, shelf 6. I can check each place one by one until I find television.
+OK.
+Act: go to TV stand 1
+You arrive at the TV stand (1). You see TV stand (1), bowl (2), laptop (1), shelf (1, 2, 3, 4, 5, 6), television (1).
+Act: go to dining table 2
+You arrive at the dining table (2). You see book (1), chair (6, 7), dining table (2), plate (2), remote control (1), statue (2).
+Act: go to shelf 1
+You arrive at the shelf (1). You see TV stand (1), bowl (2), garbage can (1), laptop (1), shelf (1, 2, 3, 4, 5, 6), television (1).
+Act: go to shelf 2
+You arrive at the shelf (2). You see TV stand (1), bowl (2), garbage can (1), laptop (1), shelf (1, 2, 3, 4, 5, 6), television (1).
+Act: go to shelf 3
+You arrive at the shelf (3). You see TV stand (1), bowl (2), garbage can (1), laptop (1), shelf (1, 2, 3, 4, 5, 6), television (1).
+Act: go to shelf 4
+You arrive at the shelf (4). You see TV stand (1), bowl (2), laptop (1), shelf (1, 2, 3, 4, 5, 6), television (1).
+Act: go to shelf 5
+You arrive at the shelf (5). You see TV stand (1), bowl (2), laptop (1), shelf (1, 2, 3, 4, 5, 6), television (1).
+Act: go to shelf 6
+You arrive at the shelf (6). You see TV stand (1), bowl (2), laptop (1), shelf (1, 2, 3, 4, 5, 6), television (1).
+Think: I find television 1. Television 1 is on TV stand 1. Now, I need to move to TV stand 1 and check what is on top of it.
+OK.
+Act: go to TV stand 1
+You arrive at the TV stand (1). You see TV stand (1), bowl (2), laptop (1), shelf (1, 2, 3, 4, 5, 6), television (1).
+Think: Now, I need to move bowl 2, laptop 1 to dining table.
+OK.
+Act: go to bowl 2
+You arrive at the bowl (2). You see TV stand (1), bowl (2), laptop (1), shelf (1, 2, 3, 4, 5, 6), television (1).
+Act: pick up bowl 2
+You pick up bowl (2). You hold bowl (2).
+Think: Now, I need to find dining table.
+OK.
+Query: recall location of dining table
+You saw dining table 1 in kitchen 1. You saw dining table 2 in living room 1.
+Think: Dining table 1 is in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see chair (1, 2, 3, 4, 5), countertop (1), dining table (1), fridge (1), painting (1, 2), safe (1). You hold bowl (2).
+Act: go to dining table 1
+You arrive at the dining table (1). You see bowl (1), bread (1), cell phone (1), chair (1, 2, 3, 4), dining table (1), house plant (2), pen (1), spoon (1), statue (1). You hold bowl (2).
+Act: put down bowl 2
+You put bowl (2) on dining table (1).
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), chair (6, 7), dining table (2), garbage can (1), house plant (1), painting (3, 4), shelf (1, 2, 3, 4, 5, 6), sofa (1).
+Act: go to TV stand 1
+You arrive at the TV stand (1). You see TV stand (1), laptop (1), shelf (1, 2, 3, 4, 5, 6), television (1).
+Act: go to laptop 1
+You arrive at the laptop (1). The laptop (1) is open. You see TV stand (1), laptop (1), shelf (1, 2, 3, 4, 5, 6), television (1).
+Act: pick up laptop 1
+You pick up laptop (1). You hold laptop (1).
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see chair (1, 2, 3, 4, 5), countertop (1), dining table (1), fridge (1), painting (1, 2), safe (1). You hold laptop (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see bowl (1, 2), bread (1), cell phone (1), chair (1, 2, 3, 4), dining table (1), house plant (2), pen (1), spoon (1), statue (1). You hold laptop (1).
+Act: put down laptop 1
+You put laptop (1) on dining table (1).
+Think: Now I complete the task.
+OK.
+Act: done

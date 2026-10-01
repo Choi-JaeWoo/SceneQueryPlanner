@@ -1,0 +1,65 @@
+Your task is to: Transfer all items from the side table to the furniture that has the pen.
+You are in the house, and there are 3 rooms: bedroom (1), kitchen (1), living room (1). You are in the middle of a bedroom (1). Looking quickly around the room, you see armchair (1), bed (1, 2), chair (1, 2), desk (1), dining table (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), floor lamp (1), shelf (1, 2), side table (1), television (1).
+Think: To solve the task, I need to find side table and check what is on top of it. Then, I need to find the furniture that has the pen and move all items from side table to that furniture.
+OK.
+Think: First, I need to find side table.
+OK.
+Query: find_objects({'label': 'side table'})
+Info: [{'name_id_nl': 'side table 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'bedroom 1'}]
+Think: Side table 1 is in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see armchair (1), bed (1, 2), chair (1, 2), desk (1), dining table (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), floor lamp (1), shelf (1, 2), side table (1), television (1).
+Act: go to side table 1
+You arrive at the side table (1). You see CD (1), box (1), drawer (6, 7, 8, 9, 10), key chain (1), pen (1), pencil (1), side table (1), statue (1).
+Think: Now, I need to check what is on top of side table 1.
+OK.
+Query: get_edges_for_node({'node_id': 'side table 1', 'relation': 'ON'})
+Info: [('box 1', 'side table 1', 'ON'), ('CD 1', 'side table 1', 'ON'), ('key chain 1', 'side table 1', 'ON')]
+Think: Now, I need to find the furniture that has the pen.
+OK.
+Query: find_objects({'label': 'pen'})
+Info: [{'name_id_nl': 'pen 1', 'node_type': 'object', 'properties': ['pickupable'], 'states': []}]
+Query: get_edges_for_node({'node_id': 'pen 1'})
+Info: [('pen 1', 'bowl 1', 'CLOSE'), ('pen 1', 'desk lamp 1', 'CLOSE'), ('pen 1', 'desk lamp 2', 'CLOSE'), ('pen 1', 'dining table 1', 'ON'), ('pen 1', 'chair 2', 'CLOSE'), ('pen 1', 'statue 1', 'CLOSE'), ('pen 1', 'user 1', 'CLOSE'), ('pen 1', 'bedroom 1', 'INSIDE'), ('bowl 1', 'pen 1', 'CLOSE'), ('desk lamp 1', 'pen 1', 'CLOSE'), ('desk lamp 2', 'pen 1', 'CLOSE'), ('chair 2', 'pen 1', 'CLOSE'), ('statue 1', 'pen 1', 'CLOSE'), ('user 1', 'pen 1', 'CLOSE')]
+Think: Pen 1 is on dining table 1 in bedroom 1. Now, I need to move all items from side table 1 to dining table 1.
+OK.
+Think: First, I need to pick up box 1.
+OK.
+Act: go to box 1
+You arrive at the box (1). The box (1) is closed. You see CD (1), box (1), drawer (6, 7, 8, 9, 10), key chain (1), pen (1), pencil (1), side table (1), statue (1).
+Act: pick up box 1
+You pick up box (1). You hold box (1).
+Think: Now, I need to find dining table 1 and put down box 1.
+OK.
+Act: go to dining table 1
+You arrive at the dining table (1). You see CD (1), bowl (1), chair (2), desk lamp (1, 2), dining table (1), key chain (1), pen (1), side table (1), statue (1). You hold box (1).
+Act: put down box 1
+You put box (1) on dining table (1).
+Think: Now, I need to pick up CD 1.
+OK.
+Act: go to CD 1
+You arrive at the CD (1). You see CD (1), book (4, 5), desk lamp (3), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), key chain (1), pencil (1), side table (1), television (1).
+Act: pick up CD 1
+You pick up CD (1). You hold CD (1).
+Think: Now, I need to find dining table 1 and put down CD 1.
+OK.
+Act: go to dining table 1
+You arrive at the dining table (1). You see bowl (1), box (1), chair (2), desk lamp (1, 2), dining table (1), key chain (1), pen (1), side table (1), statue (1). You hold CD (1).
+Act: put down CD 1
+You put CD (1) on dining table (1).
+Think: Now, I need to pick up key chain 1.
+OK.
+Act: go to key chain 1
+You arrive at the key chain (1). You see book (4), drawer (6, 7, 8, 9, 10), key chain (1), pen (1), pencil (1), side table (1).
+Act: pick up key chain 1
+You pick up key chain (1). You hold key chain (1).
+Think: Now, I need to find dining table 1 and put down key chain 1.
+OK.
+Act: go to dining table 1
+You arrive at the dining table (1). You see CD (1), bowl (1), box (1), chair (2), desk lamp (1, 2), dining table (1), pen (1), side table (1), statue (1). You hold key chain (1).
+Act: put down key chain 1
+You put key chain (1) on dining table (1).
+Think: Now I complete the task.
+OK.
+Act: done

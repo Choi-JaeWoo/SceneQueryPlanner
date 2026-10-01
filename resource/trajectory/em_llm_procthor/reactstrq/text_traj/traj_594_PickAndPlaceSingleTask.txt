@@ -1,17 +1,15 @@
 Your task is to: Take a pillow and set it down on the armchair.
 You are in the house, and there are 1 rooms: living room (1). You are in the middle of a living room (1). Looking quickly around the room, you see TV stand (1), armchair (1, 2, 3), box (1), chair (1, 2, 3, 4, 5), dining table (1), floor lamp (1, 2), house plant (1), painting (1, 2), shelf (1, 2, 3, 4, 5, 6), sofa (1).
-Think: To solve the task, I need to find pillow and armchair. Then, I need to pick up pillow and put it on armchair.
+Think: To solve the task, I need to find and pick up pillow, then put it on armchair.
 OK.
-Think: First, I need to find pillow.
-OK.
-Query: find_objects({'label': 'pillow'})
-Info: 
-Think: I have not seen pillow yet. Now I need to check where to search. First, I will search living room 1.
+Think: First, I need to find and pick up pillow. The pillow is more likely to appear in living room 1.
 OK.
 Query: get_child_node_names({'parent_node_id': 'living room 1'})
 Info: TV stand 1, armchair (1, 2, 3), box (1, 2), chair (1, 2, 3, 4, 5), dining table 1, shelf (1, 2, 3, 4, 5, 6), sofa 1
 Think: In living room 1, the pillow is likely to appear in/on TV stand 1, armchair (1, 2, 3), box (1, 2), chair (1, 2, 3, 4, 5), dining table 1, shelf (1, 2, 3, 4, 5, 6), sofa 1. I can check each place one by one until I find pillow.
 OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), armchair (1, 2, 3), box (1), chair (1, 2, 3, 4, 5), dining table (1), floor lamp (1, 2), house plant (1), painting (1, 2), shelf (1, 2, 3, 4, 5, 6), sofa (1).
 Act: go to TV stand 1
 You arrive at the TV stand (1). You see TV stand (1), credit card (1), pencil (2), pillow (1), remote control (1, 2), shelf (1, 2, 3, 4, 5, 6), television (1), vase (1).
 Act: go to armchair 1
@@ -56,16 +54,12 @@ Act: go to pillow 1
 You arrive at the pillow (1). You see armchair (1), pillow (1), remote control (1, 2), shelf (4), sofa (1).
 Act: pick up pillow 1
 You pick up pillow (1). You hold pillow (1).
-Think: Now, I need to find armchair.
-OK.
-Query: find_objects({'label': 'armchair'})
-Info: [{'name_id_nl': 'armchair 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}, {'name_id_nl': 'armchair 3', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}, {'name_id_nl': 'armchair 2', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}]
-Think: I find armchair 1, armchair 3, armchair 2.
+Think: Now, I need to find armchair and put down pillow 1.
 OK.
 Act: go to armchair 1
 You arrive at the armchair (1). You see armchair (1), sofa (1). You hold pillow (1).
 Act: put down pillow 1
-You put pillow (1) in armchair (1).
-Think: Now I complete the task.
+You put pillow (1) on armchair (1).
+Think: Now I complete task.
 OK.
 Act: done

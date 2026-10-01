@@ -1,0 +1,29 @@
+Your task is to: Illuminate the book by switching on the floor lamp.
+You are in the house, and there are 3 rooms: bedroom (1), kitchen (1), living room (1). You are in the middle of a kitchen (1). Looking quickly around the room, you see cabinet (1), chair (1, 2, 3), countertop (1), dining table (1), fridge (1), house plant (2), painting (2, 3), shelf (1, 2, 3), shelving unit (1), stool (1, 2).
+Think: To solve the task, I need to find and pick up book, find and turn on floor lamp to illuminate book.
+OK.
+Think: First, I need to find and pick up book.
+OK.
+Query: find_objects({'label': 'book'})
+Info: [{'name_id_nl': 'book 4', 'node_type': 'object', 'properties': ['openable', 'pickupable'], 'states': []}]
+Think: book 4 is in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), floor lamp (1), painting (4), room decor (1), shelf (4), sofa (1), stool (3).
+Act: go to book 5
+You arrive at the book (5). The book (5) is closed. You see book (5), sofa (1).
+Act: pick up book 5
+You pick up book (5). You hold book (5).
+Think: Now I need to find and turn on floor lamp.
+OK.
+Query: find_objects({'label': 'floor lamp'})
+Info: [{'name_id_nl': 'floor lamp 1', 'node_type': 'object', 'properties': ['toggleable'], 'states': []}]
+Think: floor lamp 1 is in living room 1.
+OK.
+Act: go to floor lamp 1
+You arrive at the floor lamp (1). You see floor lamp (1), sofa (1). You hold book (5).
+Act: turn on floor lamp 1
+You turn on floor lamp (1). You hold book (5).
+Think: Now I complete the task.
+OK.
+Act: done

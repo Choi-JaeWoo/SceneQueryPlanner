@@ -1,0 +1,63 @@
+Your task is to: Chill an apple in the fridge, then transfer it onto the receptacle that contains the kettle.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a living room (1). Looking quickly around the room, you see TV stand (1), box (2), dining table (2), house plant (1), shelf (1, 2, 3, 4, 5, 6), sofa (1).
+Think: To solve the task, I need to find and pick up apple, find fridge and put down apple, close fridge briefly and open it again, pick up apple, find kettle and check the receptacle where kettle is located, and then place apple in that receptacle.
+OK.
+Think: First, I need to find and pick up apple. The apple is more likely to appear in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see chair (1, 2, 3, 4), countertop (1), dining table (1), fridge (1), garbage bag (1), garbage can (2), painting (4), safe (1), television (2).
+Think: In kitchen 1, the apple is likely to appear in/on chair (1, 2, 3, 4), countertop 1, dining table 1, fridge 1, garbage bag 1, garbage can 2. I can check each place one by one until I find apple.
+OK.
+Act: go to chair 1
+You arrive at the chair (1). You see apple (1), chair (1, 2, 3), cup (1), dining table (1), pan (1), plate (1), salt shaker (1), tomato (1).
+Think: I find apple 1. Now, I need to pick it up.
+OK.
+Act: go to apple 1
+You arrive at the apple (1). You see apple (1), chair (1, 2, 3), cup (1), dining table (1), pan (1), plate (1), salt shaker (1), tomato (1).
+Act: pick up apple 1
+You pick up apple (1). You hold apple (1).
+Think: Now, I need to find fridge.
+OK.
+Act: go to fridge 1
+You arrive at the fridge (1). The fridge (1) is closed. You see fridge (1). You hold apple (1).
+Think: Since fridge 1 is closed, I need to open it to put down apple 1.
+OK.
+Act: open fridge 1
+You open fridge (1). You see egg (1, 2), fridge (1). You hold apple (1).
+Act: put down apple 1
+You put apple (1) in fridge (1).
+Think: To make apple 1 cold, I need to briefly close fridge 1 and then open it again.
+OK.
+Act: close fridge 1
+You close fridge (1).
+Act: open fridge 1
+You open fridge (1). You see apple (1), egg (1, 2), fridge (1).
+Think: Now I need to pick up apple 1.
+OK.
+Act: pick up apple 1
+You pick up apple (1). You hold apple (1).
+Think: Now, I need to find kettle and check the receptacle where kettle is located. The kettle is more likely to appear in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see chair (1, 2, 3, 4), countertop (1), dining table (1), fridge (1), garbage bag (1), garbage can (2), painting (4), safe (1), television (2). You hold apple (1).
+Think: In kitchen 1, the kettle is likely to appear in/on chair (1, 2, 3, 4), countertop 1, dining table 1, fridge 1, garbage bag 1, garbage can 2. I can check each place one by one until I find kettle.
+OK.
+Act: go to chair 1
+You arrive at the chair (1). You see chair (1, 2, 3), cup (1), dining table (1), pan (1), plate (1), salt shaker (1), tomato (1). You hold apple (1).
+Act: go to chair 2
+You arrive at the chair (2). You see chair (1, 2, 3), cup (1), dining table (1), pan (1), plate (1), salt shaker (1), tomato (1). You hold apple (1).
+Act: go to chair 3
+You arrive at the chair (3). You see chair (1, 2, 3), cup (1), dining table (1), egg (1, 2), fridge (1), pan (1), plate (1), salt shaker (1), tomato (1). You hold apple (1).
+Act: go to chair 4
+You arrive at the chair (4). You see chair (4), egg (1, 2). You hold apple (1).
+Act: go to countertop 1
+You arrive at the countertop (1). You see butter knife (1), countertop (1), fork (1), garbage bag (1), kettle (1), lettuce (1), mug (1), pan (1), soap bottle (1). You hold apple (1).
+Think: I find kettle 1. Kettle 1 is on countertop 1. Now, I need to move to countertop 1 and put down apple 1.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see butter knife (1), countertop (1), fork (1), garbage bag (1), kettle (1), lettuce (1), mug (1), pan (1), soap bottle (1). You hold apple (1).
+Act: put down apple 1
+You put apple (1) on countertop (1).
+Think: Now I complete the task.
+OK.
+Act: done

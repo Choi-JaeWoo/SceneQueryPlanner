@@ -1,0 +1,49 @@
+Your task is to: View the book by turning on the lamp that is close to the cell phone.
+You are in the house, and there are 5 rooms: bathroom (1), bedroom (1, 2), kitchen (1), living room (1). You are in the middle of a bedroom (2). Looking quickly around the room, you see bed (2), chair (7), desk (2), drawer (16, 17, 18, 19, 20, 21, 22), dresser (2), painting (3, 4), shelf (1, 2), side table (1).
+Think: To solve the task, I need to find and pick up book, find and turn on the lamp that is close to cell phone to illuminate book.
+OK.
+Think: First, I need to find and pick up book.
+OK.
+Query: find_objects({'label': 'book'})
+Info: [{'name_id_nl': 'book 1', 'node_type': 'object', 'properties': ['openable', 'pickupable'], 'states': []}, {'name_id_nl': 'book 2', 'node_type': 'object', 'properties': ['openable', 'pickupable'], 'states': []}, {'name_id_nl': 'book 3', 'node_type': 'object', 'properties': ['openable', 'pickupable'], 'states': []}]
+Think: Book 1 is in bedroom 2.
+OK.
+Act: go to book 1
+You arrive at the book (1). The book (1) is closed. You see book (1, 2, 3), desk (2), house plant (4), painting (3), pen (1), shelf (1, 2).
+Act: pick up book 1
+You pick up book (1). You hold book (1).
+Think: Now I need to find cell phone and find the lamp that is close to cell phone.
+OK.
+Query: find_objects({'label': 'cell phone'})
+Info: 
+Think: I have not seen cell phone yet. Now I need to check where to search. First, I will search living room 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'living room 1'})
+Info: dining table 2, ottoman 1
+Think: In living room 1, the cell phone is likely to appear in/on dining table 2, ottoman 1. I can check each place one by one until I find cell phone.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see dining table (2), ottoman (1), television (1). You hold book (1).
+Act: go to dining table 2
+You arrive at the dining table (2). You see chair (4), spray bottle (1). You hold book (1).
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see dining table (2), ottoman (1), television (1). You hold book (1).
+Act: go to ottoman 1
+You arrive at the ottoman (1). You see bed (2). You hold book (1).
+Think: I find cell phone 1.
+OK.
+Act: go to cell phone 1
+You arrive at the cell phone (1). You see cell phone (1), desk lamp (1), drawer (22), painting (4), remote control (2), side table (1). You hold book (1).
+Think: Now, I need to find and turn on the lamp that is close to cell phone 1. First, I need to find all objects that are close to cell phone 1.
+OK.
+Query: get_edges_for_node({'node_id': 'cell phone 1', 'relation': 'CLOSE'})
+Info: [('cell phone 1', 'book 1', 'CLOSE'), ('cell phone 1', 'desk lamp 1', 'CLOSE'), ('cell phone 1', 'drawer 22', 'CLOSE'), ('cell phone 1', 'painting 4', 'CLOSE'), ('cell phone 1', 'remote control 2', 'CLOSE'), ('cell phone 1', 'user 1', 'CLOSE'), ('book 1', 'cell phone 1', 'CLOSE'), ('desk lamp 1', 'cell phone 1', 'CLOSE'), ('drawer 22', 'cell phone 1', 'CLOSE'), ('painting 4', 'cell phone 1', 'CLOSE'), ('remote control 2', 'cell phone 1', 'CLOSE'), ('user 1', 'cell phone 1', 'CLOSE')]
+Think: The lamp that is close to cell phone 1 is desk lamp 1. Now, I need to turn on desk lamp 1.
+OK.
+Act: go to desk lamp 1
+You arrive at the desk lamp (1). You see cell phone (1), desk lamp (1), drawer (22), painting (4), remote control (2), side table (1). You hold book (1).
+Act: turn on desk lamp 1
+You turn on desk lamp (1). You hold book (1).
+Think: Now I complete the task.
+OK.
+Act: done

@@ -1,0 +1,97 @@
+Your task is to: Wash the pencil and then set it down next to the bread.
+You are in the house, and there are 10 rooms: bathroom (1, 2, 3), bedroom (1, 2, 3), kitchen (1), living room (1, 2, 3). You are in the middle of a living room (3). Looking quickly around the room, you see TV stand (3), armchair (2, 3), box (1), dining table (4), floor lamp (2, 3), house plant (3), shelf (11), sofa (2).
+Think: To solve the task, I need to find and pick up pencil, find sink basin and put it down, turn on faucet to wash the pencil, pick up the pencil and put it down next to bread.
+OK.
+Think: First, I need to find and pick up pencil.
+OK.
+Query: find_objects({'label': 'pencil'})
+Info: 
+Think: I have not seen pencil yet. Now I need to check where to search. First, I will search living room 3.
+OK.
+Query: get_child_node_names({'parent_node_id': 'living room 3'})
+Info: TV stand 3, armchair (2, 3), box 1, dining table 4, shelf 11, sofa 2
+Think: In living room 3, the pencil is likely to appear in/on TV stand 3, armchair (2, 3), dining table 4, shelf 11, sofa 2. I can check each place one by one until I find pencil.
+OK.
+Act: go to living room 3
+You move to the living room (3). Looking quickly around the room, you see TV stand (3), armchair (2, 3), box (1), dining table (4), floor lamp (2, 3), house plant (3), shelf (11), sofa (2).
+Act: go to TV stand 3
+You arrive at the TV stand (3). You see TV stand (3), credit card (3), shelf (11), television (5), vase (5).
+Act: go to armchair 2
+You arrive at the armchair (2). You see armchair (2), floor lamp (2).
+Act: go to armchair 3
+You arrive at the armchair (3). You see armchair (3), bowl (4), floor lamp (3), key chain (4).
+Act: go to dining table 4
+You arrive at the dining table (4). You see box (1), candle (3), dining table (4), laptop (3), pen (1), plate (2), statue (4).
+Act: go to shelf 11
+You arrive at the shelf (11). You see TV stand (3), credit card (3), shelf (11), television (5), vase (5).
+Act: go to sofa 2
+You arrive at the sofa (2). You see book (13), pillow (3), sofa (2).
+Think: I have not seen pencil yet. Now I need to check where to search. First, I will search living room 2.
+OK.
+Query: get_child_node_names({'parent_node_id': 'living room 2'})
+Info: TV stand 2, armchair 1, box (2, 3), dining table 3, shelf 10, sofa 1
+Act: go to living room 2
+You move to the living room (2). Looking quickly around the room, you see TV stand (2), armchair (1), cart (1), dining table (3), floor lamp (1), house plant (2), shelf (10), sofa (1).
+Act: go to TV stand 2
+You arrive at the TV stand (2). You see TV stand (2), box (2), candle (1, 2), cell phone (3), floor lamp (1), key chain (3), remote control (6), shelf (10), television (4).
+Act: go to armchair 1
+You arrive at the armchair (1). You see armchair (1), box (2), candle (1), cart (1), floor lamp (1), key chain (3), shelf (10), television (4).
+Act: go to dining table 3
+You arrive at the dining table (3). You see book (11, 12), bowl (3), box (3), cell phone (4), dining table (3), laptop (2), pencil (2), plate (1), sofa (1), statue (3), vase (4).
+Think: I find pencil 2. Now, I need to pick it up.
+OK.
+Act: go to pencil 2
+You arrive at the pencil (2). You see book (11, 12), bowl (3), box (3), cell phone (4), dining table (3), laptop (2), pencil (2), plate (1), sofa (1), statue (3), vase (4).
+Act: pick up pencil 2
+You pick up pencil (2). You hold pencil (2).
+Think: Now, I need to find sink basin.
+OK.
+Query: find_objects({'label': 'sink basin'})
+Info: [{'name_id_nl': 'sink basin 2', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'bathroom 2'}, {'name_id_nl': 'sink basin 3', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'bathroom 3'}, {'name_id_nl': 'sink basin 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'bathroom 1'}]
+Think: Sink basin 2 is in bathroom 2.
+OK.
+Act: go to bathroom 2
+You move to the bathroom (2). Looking quickly around the room, you see garbage can (2), painting (3, 4), plunger (2), sink (2), sink basin (2), spray bottle (3), toilet (2). You hold pencil (2).
+Act: go to sink basin 2
+You arrive at the sink basin (2). You see candle (4), faucet (2), garbage can (2), painting (4), sink (2), sink basin (2), toilet paper (2). You hold pencil (2).
+Think: Now, I need to put down pencil 2.
+OK.
+Act: put down pencil 2
+You put pencil (2) in sink basin (2).
+Think: Now, I need to turn on faucet 2 briefly and turn off to wash pencil 2.
+OK.
+Act: turn on faucet 2
+You turn on faucet (2).
+Act: turn off faucet 2
+You turn off faucet (2).
+Think: Now, I need to pick up pencil 2 and find bread.
+OK.
+Act: pick up pencil 2
+You pick up pencil (2). You hold pencil (2).
+Think: Now, I need to find bread.
+OK.
+Query: find_objects({'label': 'bread'})
+Info: 
+Think: I have not seen bread yet. Now I need to check where to search. First, I will search kitchen 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'kitchen 1'})
+Info: cabinet 1, countertop 1, fridge 1, safe 1, shelf (1, 2, 3), stool 1
+Think: In kitchen 1, the bread is likely to appear in/on cabinet 1, countertop 1, fridge 1, shelf (1, 2, 3). I can check each place one by one until I find bread.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see cabinet (1), countertop (1), fridge (1), garbage bag (1), safe (1), shelf (1, 2, 3), shelving unit (1), stool (1), television (2). You hold pencil (2).
+Act: go to cabinet 1
+You arrive at the cabinet (1). The cabinet (1) is closed. You see book (7), cabinet (1), garbage bag (1), shelf (1, 2, 3), shelving unit (1), television (2), vase (2). You hold pencil (2).
+Act: open cabinet 1
+You open cabinet (1). You see book (7), cabinet (1), garbage bag (1), house plant (6), shelf (1, 2, 3), shelving unit (1), spray bottle (2), television (2), vase (2). You hold pencil (2).
+Act: go to countertop 1
+You arrive at the countertop (1). You see bread (1), countertop (1), paper towel roll (1), salt shaker (1), soap bottle (1). You hold pencil (2).
+Think: I find bread 1. Now, I need to move to bread 1 and put down pencil 2.
+OK.
+Act: go to bread 1
+You arrive at the bread (1). You see bread (1), countertop (1), paper towel roll (1), salt shaker (1), soap bottle (1). You hold pencil (2).
+Act: put down pencil 2
+You put pencil (2) on countertop (1).
+Think: Now I complete the task.
+OK.
+Act: done

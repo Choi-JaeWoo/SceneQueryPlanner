@@ -1,0 +1,10 @@
+Your task is to: After cooking a breakable food from the fridge in the microwave, set it down on the countertop.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a bathroom (1). Looking quickly around the room, you see garbage can (1), plunger (1), sink (1), sink basin (1), toilet (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- bathroom 1: [plunger 1, (toilet 1), (sink basin 1), (sink 1), faucet 1, (garbage can 1)]
+- (bedroom 1): [(dresser 1), (drawer 6), (drawer 3), (drawer 4), painting 3, (drawer 2), (drawer 1), (drawer 10), (drawer 8), (drawer 7), (bed 1), painting 2, painting 1, house plant 1, television 1, (drawer 9), (drawer 5)]
+- (kitchen 1): [house plant 2, (countertop 1), (fridge 1), painting 4]
+- (living room 1): [(side table 1), (box 1), (sofa 1), (drawer 11), (dining table 1), (box 2), (TV stand 1), (shelf 1), (drawer 12)]
+You have not taken any actions yet.
+What is the best next action to complete the task as efficiently as possible?
+Think: First, I need to find fridge and find a breakable food from fridge. I find fridge 1 in kitchen 1. Now, I need to move to kitchen 1.
+Act: go to kitchen 1

@@ -1,0 +1,8 @@
+Your task is to: Place the pencil next to the potato so I can compare their sizes.
+You pick up pencil (1). You hold pencil (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- (kitchen 1): [(chair 2), (chair 3), (chair 4), (chair 5), (chair 6), (chair 1), (countertop 1), (dining table 1), (fridge 1)]
+- living room 1: [house plant 1, painting 3, painting 4, bowl 1, cell phone 1, desk lamp 1, plate 1, statue 2, television 1, watch 1, armchair 1, (dining table 2), floor lamp 1, painting 1, painting 2, pencil 1, pillow 1, (shelf 1), (shelf 2), (shelf 3), (shelf 4), (shelf 5), (shelf 6), (sofa 1), TV stand 1, vase 2]
+Your 5 previous actions were: go to living room 1 (success), go to TV stand 1 (success), go to armchair 1 (success), go to pencil 1 (success), pick up pencil 1 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I pick up pencil 1. Now, I need to find potato and check the receptacle where potato is located. The potato is more likely to appear in kitchen 1.
+Act: go to kitchen 1

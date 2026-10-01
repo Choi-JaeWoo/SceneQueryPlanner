@@ -1,0 +1,8 @@
+Your task is to: Move the object made of wood from the TV stand onto the shelf.
+You arrive at the TV stand (1). You see TV stand (1), key chain (1), pencil (1), shelf (4, 5, 6, 7, 8, 9), television (2), tissue box (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- kitchen 1: [apple 1, (chair 1), (countertop 1), (dining table 1), egg 4, egg 1, (fridge 1), house plant 1, ladle 1, painting 1, television 1, wine bottle 1]
+- living room 1: [floor lamp 1, painting 4, painting 3, painting 2, book 2, remote control 1, (armchair 1), (armchair 2), (cabinet 1), (dining table 2), key chain 1, pencil 1, (shelf 9), (shelf 7), (shelf 6), (shelf 5), (shelf 3), (shelf 8), (shelf 2), (shelf 1), (shelf 4), shelving unit 1, (sofa 1), television 2, tissue box 1, TV stand 1]
+Your 2 previous actions were: go to living room 1 (success), go to TV stand 1 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I arrive at TV stand 1. I need to check unexplored areas in living room 1 to find the object made of wood. Now, I need to check shelf 9.
+Act: go to shelf 9

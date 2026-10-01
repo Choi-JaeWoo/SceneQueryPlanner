@@ -1,0 +1,11 @@
+Your task is to: Put the book next to the toaster so it's within reach during breakfast.
+You arrive at the countertop (1). You see bread (1), countertop (1), kettle (1), soap bottle (1), spray bottle (2), toaster (1). You hold book (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- bathroom 1: [faucet 1, (garbage can 1), plunger 1, (sink 1), (sink basin 1), spray bottle 1, (toilet 1)]
+- bedroom 1: [floor lamp 1, basket ball 1, (armchair 1), (bed 1), (bed 2), (chair 2), (chair 3), (chair 4), (chair 1), desk lamp 1, dining table 1, (drawer 2), (drawer 5), (drawer 6), (drawer 7), (drawer 8), (drawer 4), (drawer 3), (drawer 12), (drawer 11), (drawer 10), (drawer 9), (drawer 1), (dresser 1), house plant 2, mug 1]
+- (bedroom 2): [(armchair 2), basket ball 2, (bed 3), (bed 4), (box 1), (chair 5), (desk 1), (dining table 2), (drawer 15), (drawer 14), (drawer 13), (dresser 2), floor lamp 2, painting 2, painting 3, painting 1]
+- kitchen 1: [garbage bag 1, shelving unit 1, wine bottle 1, book 1, bread 1, (cabinet 1), (chair 6), (chair 7), (chair 8), countertop 1, (dining table 3), (fridge 1), kettle 1, (shelf 1), (shelf 3), (shelf 2), soap bottle 1, spray bottle 2, toaster 1]
+- (living room 1): [(box 2), (dining table 4), dog bed 1, house plant 1, painting 4, (shelf 4), (sofa 1), (TV stand 1)]
+Your 5 previous actions were: go to dining table 1 (success), go to book 1 (success), pick up book 1 (success), go to kitchen 1 (success), go to countertop 1 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I arrive at countertop 1. I hold book 1. Now, I need to put down book 1.
+Act: put down book 1

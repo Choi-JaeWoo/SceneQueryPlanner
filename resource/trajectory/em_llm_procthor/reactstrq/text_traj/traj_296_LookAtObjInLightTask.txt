@@ -1,6 +1,6 @@
-Your task is to: View the pencil under the light of the floorlamp.
+Your task is to: View the pencil under the light of the floor lamp.
 You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a bedroom (1). Looking quickly around the room, you see bed (1, 2), dog bed (1), drawer (1, 2, 3, 4, 5, 6), dresser (1), house plant (1), painting (1, 2).
-Think: To solve the task, I need to find and pick up pencil, find and turn on floorlamp to view pencil.
+Think: To solve the task, I need to find and pick up pencil, find and turn on floor lamp to examine pencil.
 OK.
 Think: First, I need to find and pick up pencil.
 OK.
@@ -12,6 +12,8 @@ Query: get_child_node_names({'parent_node_id': 'bedroom 1'})
 Info: bed (1, 2), drawer (1, 2, 3, 4, 5, 6), dresser 1
 Think: In bedroom 1, the pencil is likely to appear in/on bed (1, 2), drawer (1, 2, 3, 4, 5, 6), dresser 1. I can check each place one by one until I find pencil.
 OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see bed (1, 2), dog bed (1), drawer (1, 2, 3, 4, 5, 6), dresser (1), house plant (1), painting (1, 2).
 Act: go to bed 1
 You arrive at the bed (1). You see bed (1), drawer (1, 2, 3, 4, 5, 6), dresser (1), laptop (1), pencil (1), tissue box (1).
 Think: I find pencil 1. Now, I need to pick it up.
@@ -20,19 +22,17 @@ Act: go to pencil 1
 You arrive at the pencil (1). You see drawer (1, 2, 3, 4, 5, 6), dresser (1), house plant (1), laptop (1), pencil (1), tissue box (1).
 Act: pick up pencil 1
 You pick up pencil (1). You hold pencil (1).
-Think: Now I need to find and turn on floorlamp.
+Think: Now I need to find and turn on floor lamp.
 OK.
-Query: find_objects({'label': 'floorlamp'})
-Info: 
-Think: I have not seen floorlamp yet. Now I need to check where to search. First, I will search living room 1.
+Query: find_objects({'label': 'floor lamp'})
+Info: [{'name_id_nl': 'floor lamp 2', 'node_type': 'object', 'properties': ['toggleable'], 'states': []}, {'name_id_nl': 'floor lamp 1', 'node_type': 'object', 'properties': ['toggleable'], 'states': []}]
+Think: Floor lamp 2 is in bedroom 1, floor lamp 1 is in living room 1.
 OK.
-Query: get_child_node_names({'parent_node_id': 'living room 1'})
-Info: armchair 1, chair 1, dining table 1, garbage can 3, sofa 1
-Think: In living room 1, the floorlamp is likely to appear in/on armchair 1, chair 1, dining table 1, garbage can 3, sofa 1. I can check each place one by one until I find floorlamp.
-OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see bed (1, 2), dog bed (1), drawer (1, 2, 3, 4, 5, 6), dresser (1), house plant (1), painting (1, 2). You hold pencil (1).
 Act: go to living room 1
 You move to the living room (1). Looking quickly around the room, you see armchair (1), chair (1), dining table (1), floor lamp (1, 2), garbage can (3), sofa (1). You hold pencil (1).
-Think: I find floorlamp 1. Now, I need to turn it on.
+Think: I find floor lamp 1. Now, I need to turn it on.
 OK.
 Act: go to floor lamp 1
 You arrive at the floor lamp (1). You see armchair (1), candle (2), dining table (1), floor lamp (1), pen (1), pencil (2), plate (1). You hold pencil (1).

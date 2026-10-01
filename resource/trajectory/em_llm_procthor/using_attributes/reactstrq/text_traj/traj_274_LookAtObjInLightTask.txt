@@ -1,0 +1,43 @@
+Your task is to: Hold the item made of paper from the dresser and turn on the desk lamp to check what's written on it.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a kitchen (1). Looking quickly around the room, you see chair (5, 6, 7, 8), countertop (1), dining table (2), fridge (1), house plant (1), painting (1).
+Think: To solve the task, I need to find and pick up the item made of paper from the dresser, then turn on the desk lamp to check what's written on it.
+OK.
+Think: First, I need to find and pick up the item made of paper from the dresser.
+OK.
+Query: find_objects({'label': 'dresser'})
+Info: [{'name_id_nl': 'dresser 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'bedroom 1'}]
+Think: Dresser 1 is in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see bed (1), box (1), chair (1, 2, 3, 4), dining table (1), dog bed (1), drawer (1, 2, 3, 4, 5, 6, 7), dresser (1), side table (1).
+Act: go to dresser 1
+You arrive at the dresser (1). You see alarm clock (1), book (1), chair (4), drawer (1, 2, 3, 4, 5, 6), dresser (1), laptop (1).
+Think: Now, I need to find and pick up the item made of paper from the dresser. First, I need to check what is on top of dresser 1.
+OK.
+Query: get_edges_for_node({'node_id': 'dresser 1', 'relation': 'ON'})
+Info: [('alarm clock 1', 'dresser 1', 'ON'), ('book 1', 'dresser 1', 'ON'), ('laptop 1', 'dresser 1', 'ON')]
+Think: Now, I need to check each object to find the item made of paper.
+OK.
+Query: read_node({'node_id': 'alarm clock 1'})
+Info: {'name_id_nl': 'alarm clock 1', 'salientMaterials': ['Metal', 'Plastic', 'Glass'], 'properties': ['pickupable'], 'states': []}
+Query: read_node({'node_id': 'book 1'})
+Info: {'name_id_nl': 'book 1', 'salientMaterials': ['Paper'], 'properties': ['openable', 'pickupable'], 'states': []}
+Think: On dresser 1, the item made of paper is book 1. Now, I need to pick it up.
+OK.
+Act: go to book 1
+You arrive at the book (1). The book (1) is closed. You see alarm clock (1), book (1), chair (4), drawer (1, 2, 3, 4, 5, 6), dresser (1), laptop (1).
+Act: pick up book 1
+You pick up book (1). You hold book (1).
+Think: Now, I need to find desk lamp and turn it on.
+OK.
+Query: find_objects({'label': 'desk lamp'})
+Info: [{'name_id_nl': 'desk lamp 1', 'node_type': 'object', 'properties': ['toggleable'], 'states': []}]
+Think: Desk lamp 1 is in bedroom 1.
+OK.
+Act: go to desk lamp 1
+You arrive at the desk lamp (1). You see CD (1), alarm clock (1), bowl (1), chair (1, 2, 3, 4), desk lamp (1), dining table (1), drawer (1, 2, 3, 4, 5, 6), dresser (1), laptop (1). You hold book (1).
+Act: turn on desk lamp 1
+You turn on desk lamp (1). You hold book (1).
+Think: Now I complete the task.
+OK.
+Act: done

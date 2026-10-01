@@ -31,7 +31,7 @@ You move to the kitchen (1). Looking quickly around the room, you see countertop
 Act: go to countertop 1
 You arrive at the countertop (1). You see apple (1), bottle (1), countertop (1), cup (1), dish sponge (1), house plant (1), kettle (1), lettuce (1), pen (1), pepper shaker (1), salt shaker (1), soap bottle (1), spatula (1), spoon (1), wine bottle (1, 2). You hold book (1).
 Act: put down book 1
-You put book (1) in countertop (1).
+You put book (1) on countertop (1).
 Act: go to living room 1
 You move to the living room (1). Looking quickly around the room, you see TV stand (1), box (1), dining table (1), drawer (1, 2), garbage can (1), house plant (2), painting (3, 4), shelf (1, 2, 3, 4, 5, 6), side table (1), sofa (1).
 Act: go to dining table 1
@@ -45,7 +45,7 @@ You move to the kitchen (1). Looking quickly around the room, you see countertop
 Act: go to countertop 1
 You arrive at the countertop (1). You see apple (1), book (1), bottle (1), countertop (1), cup (1), dish sponge (1), house plant (1), kettle (1), lettuce (1), pen (1), pepper shaker (1), salt shaker (1), soap bottle (1), spatula (1), spoon (1), wine bottle (1, 2). You hold bowl (1).
 Act: put down bowl 1
-You put bowl (1) in countertop (1).
+You put bowl (1) on countertop (1).
 Act: go to living room 1
 You move to the living room (1). Looking quickly around the room, you see TV stand (1), box (1), dining table (1), drawer (1, 2), garbage can (1), house plant (2), painting (3, 4), shelf (1, 2, 3, 4, 5, 6), side table (1), sofa (1).
 Act: go to dining table 1
@@ -59,7 +59,7 @@ You move to the kitchen (1). Looking quickly around the room, you see countertop
 Act: go to countertop 1
 You arrive at the countertop (1). You see apple (1), book (1), bottle (1), bowl (1), countertop (1), cup (1), dish sponge (1), house plant (1), kettle (1), lettuce (1), pen (1), pepper shaker (1), salt shaker (1), soap bottle (1), spatula (1), spoon (1), wine bottle (1, 2). You hold candle (1).
 Act: put down candle 1
-You put candle (1) in countertop (1).
+You put candle (1) on countertop (1).
 Act: go to living room 1
 You move to the living room (1). Looking quickly around the room, you see TV stand (1), box (1), dining table (1), drawer (1, 2), garbage can (1), house plant (2), painting (3, 4), shelf (1, 2, 3, 4, 5, 6), side table (1), sofa (1).
 Act: go to dining table 1
@@ -73,7 +73,7 @@ You move to the kitchen (1). Looking quickly around the room, you see countertop
 Act: go to countertop 1
 You arrive at the countertop (1). You see apple (1), book (1), bottle (1), bowl (1), candle (1), countertop (1), cup (1), dish sponge (1), house plant (1), kettle (1), lettuce (1), pen (1), pepper shaker (1), salt shaker (1), soap bottle (1), spatula (1), spoon (1), wine bottle (1, 2). You hold credit card (1).
 Act: put down credit card 1
-You put credit card (1) in countertop (1).
+You put credit card (1) on countertop (1).
 Think: Now I need to check what's left on dining table 1.
 OK.
 Query: get_edges_for_node({'node_id': 'dining table 1', 'relation': 'ON'})

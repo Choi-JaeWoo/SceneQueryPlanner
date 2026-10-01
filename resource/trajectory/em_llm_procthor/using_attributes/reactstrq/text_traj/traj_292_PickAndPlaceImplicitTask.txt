@@ -1,0 +1,67 @@
+Your task is to: Relocate all items from the side table into the receptacle made of wood and fabric.
+You are in the house, and there are 3 rooms: bedroom (1), kitchen (1), living room (1). You are in the middle of a bedroom (1). Looking quickly around the room, you see TV stand (1), baseball bat (1), bed (1), cabinet (1, 2, 3, 4), drawer (1, 2, 3, 4, 5), dresser (1), painting (1, 2), shelf (4), side table (1).
+Think: To solve the task, I need to find side table and check what is on top of it. Then, I need to move everything on side table to the receptacle made of wood and fabric.
+OK.
+Think: First, I need to find side table.
+OK.
+Query: find_objects({'label': 'side table'})
+Info: [{'name_id_nl': 'side table 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'bedroom 1'}]
+Think: Side table 1 is in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see TV stand (1), baseball bat (1), bed (1), cabinet (1, 2, 3, 4), drawer (1, 2, 3, 4, 5), dresser (1), painting (1, 2), shelf (4), side table (1).
+Act: go to side table 1
+You arrive at the side table (1). You see alarm clock (1), baseball bat (1), drawer (5), pencil (1, 2), side table (1).
+Think: Now, I need to check what is on top of side table 1.
+OK.
+Query: get_edges_for_node({'node_id': 'side table 1', 'relation': 'ON'})
+Info: [('alarm clock 1', 'side table 1', 'ON'), ('pencil 1', 'side table 1', 'ON'), ('pencil 2', 'side table 1', 'ON')]
+Think: Now, I need to move alarm clock 1, pencil 1, pencil 2 to the receptacle made of wood and fabric.
+OK.
+Act: go to alarm clock 1
+You arrive at the alarm clock (1). You see alarm clock (1), baseball bat (1), drawer (5), pencil (1, 2), side table (1).
+Act: pick up alarm clock 1
+You pick up alarm clock (1). You hold alarm clock (1).
+Think: Now, I need to find the receptacle made of wood and fabric and check what is on top of it. Then, I need to move everything on side table to the receptacle made of wood and fabric.
+OK.
+Query: find_objects({'label': 'receptacle'})
+Info: 
+Think: Now, I need to find the receptacle made of wood and fabric. I need to check where to search. First, I will search bedroom 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'bedroom 1'})
+Info: TV stand 1, bed 1, cabinet (1, 2, 3, 4), drawer (1, 2, 3, 4, 5), dresser 1, shelf 4, side table 1
+Think: Now, I need to find the receptacle made of wood and fabric. I need to check each receptacle in bedroom 1 to find the receptacle made of wood and fabric.
+OK.
+Query: read_node({'node_id': 'TV stand 1'})
+Info: {'name_id_nl': 'TV stand 1', 'salientMaterials': ['Wood', 'Plastic'], 'properties': [], 'states': []}
+Query: read_node({'node_id': 'bed 1'})
+Info: {'name_id_nl': 'bed 1', 'salientMaterials': ['Wood', 'Fabric'], 'properties': [], 'states': []}
+Think: The receptacle made of wood and fabric is bed 1.
+OK.
+Act: go to bed 1
+You arrive at the bed (1). You see bed (1), book (1, 2), pillow (1, 2). You hold alarm clock (1).
+Act: put down alarm clock 1
+You put alarm clock (1) on bed (1).
+Act: go to pencil 1
+You arrive at the pencil (1). You see drawer (5), pencil (1, 2), side table (1).
+Act: pick up pencil 1
+You pick up pencil (1). You hold pencil (1).
+Act: go to bed 1
+You arrive at the bed (1). You see alarm clock (1), bed (1), book (1, 2), pillow (1, 2). You hold pencil (1).
+Act: put down pencil 1
+You put pencil (1) on bed (1).
+Act: go to pencil 2
+You arrive at the pencil (2). You see drawer (5), pencil (2), side table (1).
+Act: pick up pencil 2
+You pick up pencil (2). You hold pencil (2).
+Act: go to bed 1
+You arrive at the bed (1). You see alarm clock (1), bed (1), book (1, 2), pencil (1), pillow (1, 2). You hold pencil (2).
+Act: put down pencil 2
+You put pencil (2) on bed (1).
+Think: Now I need to check what's left on side table 1.
+OK.
+Query: get_edges_for_node({'node_id': 'side table 1', 'relation': 'ON'})
+Info: 
+Think: Now I complete the task.
+OK.
+Act: done

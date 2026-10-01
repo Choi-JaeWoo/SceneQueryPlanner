@@ -1,0 +1,45 @@
+Your task is to: View the item made of paper from the dining table by the light of the wax item from the dining table.
+You are in the house, and there are 2 rooms: kitchen (1), living room (1). You are in the middle of a kitchen (1). Looking quickly around the room, you see countertop (1), fridge (1), garbage bag (1), painting (1, 2).
+Think: To solve the task, I need to find and pick up the item made of paper from the dining table, find and turn on the wax item from the dining table.
+OK.
+Think: First, I need to find and pick up the item made of paper from the dining table.
+OK.
+Query: find_objects({'label': 'dining table'})
+Info: [{'name_id_nl': 'dining table 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}]
+Think: Dining table 1 is in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), box (1), dining table (1), shelf (1, 2, 3, 4, 5, 6), sofa (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see book (1), candle (1), dining table (1), pencil (1), plate (2), sofa (1).
+Think: Now, I need to find and pick up the item made of paper from the dining table. First, I need to check what is on top of dining table 1.
+OK.
+Query: get_edges_for_node({'node_id': 'dining table 1', 'relation': 'ON'})
+Info: [('book 1', 'dining table 1', 'ON'), ('candle 1', 'dining table 1', 'ON'), ('plate 2', 'dining table 1', 'ON')]
+Think: Now, I need to check each object to find the item made of paper.
+OK.
+Query: read_node({'node_id': 'book 1'})
+Info: {'name_id_nl': 'book 1', 'salientMaterials': ['Paper'], 'properties': ['openable', 'pickupable'], 'states': []}
+Think: On dining table 1, the item made of paper is book 1. Now, I need to pick it up.
+OK.
+Act: go to book 1
+You arrive at the book (1). The book (1) is closed. You see book (1), candle (1), dining table (1), plate (2).
+Act: pick up book 1
+You pick up book (1). You hold book (1).
+Think: Now, I need to find and turn on the wax item from the dining table.
+OK.
+Query: get_edges_for_node({'node_id': 'dining table 1', 'relation': 'ON'})
+Info: [('candle 1', 'dining table 1', 'ON'), ('plate 2', 'dining table 1', 'ON')]
+Think: Now, I need to check each object to find the wax item.
+OK.
+Query: read_node({'node_id': 'candle 1'})
+Info: {'name_id_nl': 'candle 1', 'salientMaterials': ['Wax'], 'properties': ['toggleable', 'pickupable'], 'states': []}
+Think: On dining table 1, the wax item is candle 1. Now, I need to turn it on.
+OK.
+Act: go to candle 1
+You arrive at the candle (1). You see candle (1), dining table (1), plate (2). You hold book (1).
+Act: turn on candle 1
+You turn on candle (1). You hold book (1).
+Think: Now I complete the task.
+OK.
+Act: done

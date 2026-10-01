@@ -33,7 +33,7 @@ You move to the bedroom (1). Looking quickly around the room, you see TV stand (
 Act: go to dining table 1
 You arrive at the dining table (1). You see baseball bat (1), book (2), box (1), chair (1, 2), dining table (1), laptop (1), pencil (1), pillow (2). You hold cloth (1).
 Act: put down cloth 1
-You put cloth (1) in dining table (1).
+You put cloth (1) on dining table (1).
 Think: Now I need to check what's left on toilet 1.
 OK.
 Query: get_edges_for_node({'node_id': 'toilet 1', 'relation': 'ON'})

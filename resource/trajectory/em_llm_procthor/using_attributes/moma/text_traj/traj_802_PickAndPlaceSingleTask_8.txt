@@ -1,0 +1,9 @@
+Your task is to: Move the item that is openable but not toggleable from the dresser onto the countertop.
+You pick up book (1). You hold book (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- bedroom 1: [(bed 1), book 1, bowl 1, (cabinet 4), (cabinet 3), (cabinet 2), (cabinet 1), (chair 1), (desk 1), (drawer 1), (drawer 12), (drawer 11), (drawer 10), (drawer 13), (drawer 2), (drawer 8), (drawer 4), (drawer 5), (drawer 6), (drawer 7), (drawer 9), (drawer 3), dresser 1, house plant 1, laptop 1, (shelf 6), (shelf 2), (shelf 5), (shelf 4), (shelf 1), (shelf 3)]
+- (kitchen 1): [(countertop 1), (fridge 1), house plant 2, painting 2, painting 1]
+- (living room 1): [(chair 2), (dining table 1), painting 3, painting 4, (sofa 1), television 1]
+Your 4 previous actions were: go to bedroom 1 (success), go to dresser 1 (success), go to book 1 (success), pick up book 1 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I pick up book 1. Now, I need to find countertop and put down book 1. I find countertop 1 in kitchen 1. Now, I need to move to kitchen 1.
+Act: go to kitchen 1

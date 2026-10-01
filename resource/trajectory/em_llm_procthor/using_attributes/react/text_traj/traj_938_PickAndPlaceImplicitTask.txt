@@ -1,0 +1,65 @@
+Your task is to: Put everything from the sofa onto the location with the newspaper.
+You are in the house, and there are 2 rooms: kitchen (1), living room (1). You are in the middle of a kitchen (1). Looking quickly around the room, you see countertop (1), fridge (1), garbage bag (1), garbage can (1), house plant (1), painting (1), stool (1), television (1).
+Think: To solve the task, I need to find sofa and check what is on top of it. Then, I need to move everything on that sofa to the location with the newspaper.
+OK.
+Think: First, I need to find sofa. The sofa is more likely to appear in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see dining table (1), garbage can (2), house plant (2), painting (2, 3), sofa (1), television (2).
+Think: I find sofa 1. Now, I need to check what is on top of it.
+OK.
+Act: go to sofa 1
+You arrive at the sofa (1). You see laptop (1), newspaper (1), sofa (1), vase (1), watch (1).
+Think: Now, I need to move laptop 1, newspaper 1, vase 1, watch 1 to the location with the newspaper.
+OK.
+Act: go to laptop 1
+You arrive at the laptop (1). The laptop (1) is closed. You see laptop (1), newspaper (1), sofa (1), vase (1), watch (1).
+Act: pick up laptop 1
+You pick up laptop (1). You hold laptop (1).
+Think: Now, I need to find the location with the newspaper. The location with the newspaper is more likely to appear in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see dining table (1), garbage can (2), house plant (2), painting (2, 3), sofa (1), television (2). You hold laptop (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see bowl (2), dining table (1), garbage can (2), newspaper (1), painting (3), pen (1), sofa (1), vase (1), watch (1). You hold laptop (1).
+Act: put down laptop 1
+You put laptop (1) on dining table (1).
+Think: Now, I need to find and pick up newspaper 1. Newspaper 1 is on sofa 1 in living room 1.
+OK.
+Act: go to sofa 1
+You arrive at the sofa (1). You see laptop (1), newspaper (1), sofa (1), vase (1), watch (1).
+Act: go to newspaper 1
+You arrive at the newspaper (1). You see bowl (2), dining table (1), laptop (1), newspaper (1), painting (3), pen (1), sofa (1), vase (1), watch (1).
+Act: pick up newspaper 1
+You pick up newspaper (1). You hold newspaper (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see bowl (2), dining table (1), garbage can (2), laptop (1), painting (3), pen (1), sofa (1), vase (1), watch (1). You hold newspaper (1).
+Act: put down newspaper 1
+You put newspaper (1) on dining table (1).
+Think: Now, I need to find and pick up vase 1. Vase 1 is on sofa 1 in living room 1.
+OK.
+Act: go to sofa 1
+You arrive at the sofa (1). You see laptop (1), newspaper (1), sofa (1), vase (1), watch (1).
+Act: go to vase 1
+You arrive at the vase (1). You see bowl (2), dining table (1), garbage can (2), laptop (1), newspaper (1), painting (3), pen (1), sofa (1), vase (1), watch (1).
+Act: pick up vase 1
+You pick up vase (1). You hold vase (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see bowl (2), dining table (1), garbage can (2), laptop (1), newspaper (1), painting (3), pen (1), sofa (1), watch (1). You hold vase (1).
+Act: put down vase 1
+You put vase (1) on dining table (1).
+Think: Now, I need to find and pick up watch 1. Watch 1 is on sofa 1 in living room 1.
+OK.
+Act: go to sofa 1
+You arrive at the sofa (1). You see laptop (1), newspaper (1), sofa (1), vase (1), watch (1).
+Act: go to watch 1
+You arrive at the watch (1). You see bowl (2), dining table (1), garbage can (2), laptop (1), newspaper (1), painting (3), pen (1), sofa (1), vase (1), watch (1).
+Act: pick up watch 1
+You pick up watch (1). You hold watch (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see bowl (2), dining table (1), garbage can (2), laptop (1), newspaper (1), painting (3), pen (1), sofa (1), vase (1). You hold watch (1).
+Act: put down watch 1
+You put watch (1) on dining table (1).
+Think: Now I complete the task.
+OK.
+Act: done

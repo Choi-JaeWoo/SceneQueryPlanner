@@ -2,15 +2,11 @@ Your task is to: Chill an apple in the fridge, afterwards place it on the counte
 You are in the house, and there are 3 rooms: bedroom (1), kitchen (1), living room (1). You are in the middle of a kitchen (1). Looking quickly around the room, you see cabinet (1), countertop (1), drawer (4), fridge (1), painting (3, 4), shelf (1, 2, 3), shelving unit (1), side table (1).
 Think: To solve the task, I need to find and pick up apple, find fridge, put down apple in fridge briefly and pick up apple, find countertop and put down apple.
 OK.
-Think: First, I need to find and pick up apple.
-OK.
-Query: find_objects({'label': 'apple'})
-Info: 
-Think: I have not seen apple yet. Now I need to check where to search. First, I will search kitchen 1.
+Think: First, I need to find and pick up apple. The apple is more likely to appear in kitchen 1.
 OK.
 Query: get_child_node_names({'parent_node_id': 'kitchen 1'})
 Info: cabinet 1, countertop 1, drawer 4, fridge 1, shelf (1, 2, 3), side table 1
-Think: In kitchen 1, the apple is likely to appear in/on cabinet 1, countertop 1, drawer 4, shelf (1, 2, 3), side table 1. I can check each place one by one until I find apple.
+Think: In kitchen 1, the apple is likely to appear in/on cabinet 1, countertop 1, drawer 4, fridge 1, shelf (1, 2, 3), side table 1. I can check each place one by one until I find apple.
 OK.
 Act: go to cabinet 1
 You arrive at the cabinet (1). The cabinet (1) is closed. You see book (2), cabinet (1), pencil (3), pot (1), shelf (1, 2, 3), shelving unit (1), spatula (1).
@@ -43,7 +39,7 @@ You open fridge (1). You see apple (1), egg (1, 2), fridge (1), pan (1), spoon (
 Think: Now I need to pick up apple 1 and find countertop.
 OK.
 Act: pick up apple 1
-Pick up action failed: The target object is not within the visible range.
+Pick up action failed: apple (1) is not within the visible range.
 Think: I need to move toward apple 1 so I can see it clearly.
 OK.
 Act: go to apple 1
@@ -57,7 +53,7 @@ You arrive at the countertop (1). You see bottle (1), bread (1), cell phone (1),
 Think: Now I need to put down apple 1.
 OK.
 Act: put down apple 1
-You put apple (1) in countertop (1).
+You put apple (1) on countertop (1).
 Think: Now I complete task.
 OK.
 Act: done

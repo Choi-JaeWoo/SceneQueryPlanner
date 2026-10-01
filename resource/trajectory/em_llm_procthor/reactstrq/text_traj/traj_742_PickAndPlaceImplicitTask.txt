@@ -6,7 +6,7 @@ Think: First, I need to find bed.
 OK.
 Query: find_objects({'label': 'bed'})
 Info: [{'name_id_nl': 'bed 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'bedroom 1'}]
-Think: I find bed 1.
+Think: I find bed 1 in bedroom 1.
 OK.
 Act: go to bedroom 1
 You move to the bedroom (1). Looking quickly around the room, you see baseball bat (1), bed (1), chair (1, 2, 3, 4, 5, 6), desk (1), dining table (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), painting (1, 2, 3), shelf (1, 2, 3, 4).
@@ -31,7 +31,7 @@ OK.
 Act: go to dining table 1
 You arrive at the dining table (1). You see CD (1), chair (1, 2, 3, 4, 6), desk lamp (2), dining table (1), pencil (1, 2). You hold pillow (1).
 Act: put down pillow 1
-You put pillow (1) in dining table (1).
+You put pillow (1) on dining table (1).
 Act: go to remote control 1
 You arrive at the remote control (1). You see bed (1), chair (1, 5), painting (2, 3), pillow (1), remote control (1).
 Act: pick up remote control 1
@@ -39,7 +39,7 @@ You pick up remote control (1). You hold remote control (1).
 Act: go to dining table 1
 You arrive at the dining table (1). You see CD (1), chair (1, 2, 3, 4, 6), desk lamp (2), dining table (1), pencil (1, 2), pillow (1). You hold remote control (1).
 Act: put down remote control 1
-You put remote control (1) in dining table (1).
+You put remote control (1) on dining table (1).
 Think: Now I need to check what's left on bed 1.
 OK.
 Query: get_edges_for_node({'node_id': 'bed 1', 'relation': 'ON'})

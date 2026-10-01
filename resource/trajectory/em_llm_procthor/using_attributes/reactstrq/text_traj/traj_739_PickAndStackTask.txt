@@ -1,0 +1,45 @@
+Your task is to: Insert the pencil into the paper receptacle you can open and carry, then place it on the bed to organize your items.
+You are in the house, and there are 7 rooms: bathroom (1), bedroom (1, 2, 3), kitchen (1), living room (1, 2). You are in the middle of a living room (1). Looking quickly around the room, you see TV stand (1), cabinet (1), dining table (2), shelf (1, 2, 3, 4), shelving unit (1), sofa (1).
+Think: To solve the task, I need to find and pick up pencil, find the paper receptacle you can open and carry, put down pencil, pick up and place the paper receptacle you can open and carry on bed.
+OK.
+Think: First, I need to find and pick up pencil.
+OK.
+Query: find_objects({'label': 'pencil'})
+Info: [{'name_id_nl': 'pencil 1', 'node_type': 'object', 'properties': ['pickupable'], 'states': []}]
+Think: Pencil 1 is in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), cabinet (1), dining table (2), shelf (1, 2, 3, 4), shelving unit (1), sofa (1).
+Act: go to pencil 1
+You arrive at the pencil (1). You see laptop (1), pencil (1), pillow (2), sofa (1).
+Act: pick up pencil 1
+You pick up pencil (1). You hold pencil (1).
+Think: Now, I need to find the paper receptacle you can open and carry and put down pencil 1.
+OK.
+Query: find_objects({'label': 'box'})
+Info: [{'name_id_nl': 'box 3', 'node_type': 'asset', 'properties': ['openable', 'pickupable'], 'states': [], 'room': 'bedroom 1'}, {'name_id_nl': 'box 1', 'node_type': 'asset', 'properties': ['openable', 'pickupable'], 'states': ['isOpen'], 'room': 'bedroom 1'}, {'name_id_nl': 'box 2', 'node_type': 'asset', 'properties': ['openable', 'pickupable'], 'states': ['isOpen'], 'room': 'living room 1'}]
+Think: Box 2 is in living room 1.
+OK.
+Act: go to box 2
+You arrive at the box (2). The box (2) is open. You see box (2), dining table (2), statue (2). You hold pencil (1).
+Act: put down pencil 1
+You put pencil (1) in box (2).
+Think: Now, I need to pick up box 2.
+OK.
+Act: pick up box 2
+You pick up box (2). You hold box (2).
+Think: Now, I need to find bed and put down box 2.
+OK.
+Query: find_objects({'label': 'bed'})
+Info: [{'name_id_nl': 'bed 2', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'bedroom 2'}, {'name_id_nl': 'bed 4', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'bedroom 3'}, {'name_id_nl': 'bed 3', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'bedroom 3'}, {'name_id_nl': 'bed 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'bedroom 1'}]
+Think: Bed 1 is in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see TV stand (3), bed (1), box (1), dog bed (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (2), painting (1, 2), pencil (1), shelf (6, 7, 8, 9, 10, 11). You hold box (2).
+Act: go to bed 1
+You arrive at the bed (1). You see TV stand (3), baseball bat (1), bed (1), book (2), box (1, 3), laptop (3), painting (1), pencil (1), pillow (4), remote control (4, 5), shelf (6, 7, 8, 9, 10, 11), teddy bear (1), television (3), vase (3). You hold box (2).
+Act: put down box 2
+You put box (2) on bed (1).
+Think: Now I complete the task.
+OK.
+Act: done

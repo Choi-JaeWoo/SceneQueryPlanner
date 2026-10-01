@@ -1,0 +1,73 @@
+Your task is to: Put the apple on the furniture that has the microwave once it's been heated.
+You are in the house, and there are 1 rooms: kitchen (1). You are in the middle of a kitchen (1). Looking quickly around the room, you see cabinet (1), chair (1), countertop (1), dining table (1), fridge (1), house plant (1), painting (1, 2, 3), shelf (1, 2, 3), shelving unit (1).
+Think: To solve the task, I need to find and pick up apple, find microwave and put it down, turn on microwave briefly and turn off microwave, pick up apple and put it down on furniture that has the microwave.
+OK.
+Think: First, I need to find apple.
+OK.
+Query: find_objects({'label': 'apple'})
+Info: 
+Think: I have not seen apple yet. Now I need to check where to search. First, I will search kitchen 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'kitchen 1'})
+Info: cabinet 1, chair 1, countertop 1, dining table 1, fridge 1, shelf (1, 2, 3)
+Think: In kitchen 1, the apple is likely to appear in/on cabinet 1, chair 1, countertop 1, dining table 1, fridge 1, shelf (1, 2, 3). I can check each place one by one until I find apple.
+OK.
+Act: go to cabinet 1
+You arrive at the cabinet (1). The cabinet (1) is closed. You see cabinet (1), shelf (1, 2, 3), shelving unit (1).
+Act: open cabinet 1
+You open cabinet (1). You see cabinet (1), shelf (1, 2, 3), shelving unit (1), spray bottle (1).
+Act: go to chair 1
+You arrive at the chair (1). You see apple (1), book (1), cell phone (1), chair (1), dining table (1), house plant (1), vase (1).
+Act: go to apple 1
+You arrive at the apple (1). You see apple (1), book (1), cell phone (1), chair (1), dining table (1), painting (2), paper towel roll (1), vase (1).
+Act: pick up apple 1
+You pick up apple (1). You hold apple (1).
+Think: Now, I need to find microwave.
+OK.
+Query: find_objects({'label': 'microwave'})
+Info: 
+Think: I have not seen microwave yet. Now I need to check where to search. First, I will search kitchen 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'kitchen 1'})
+Info: cabinet 1, chair 1, countertop 1, dining table 1, fridge 1, shelf (1, 2, 3)
+Think: In kitchen 1, the microwave is likely to appear in/on cabinet 1, chair 1, countertop 1, dining table 1, fridge 1, shelf (1, 2, 3). I can check each place one by one until I find microwave.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see countertop (1), fork (1), microwave (1), painting (1), paper towel roll (1), soap bottle (1), spatula (1), spoon (1), toaster (1). You hold apple (1).
+Think: I find microwave 1.
+OK.
+Act: go to microwave 1
+You arrive at the microwave (1). The microwave (1) is closed. You see countertop (1), fork (1), microwave (1), painting (1), paper towel roll (1), soap bottle (1), spatula (1), spoon (1), toaster (1). You hold apple (1).
+Think: Since microwave 1 is closed, I need to open it to put down apple 1.
+OK.
+Act: open microwave 1
+You open microwave (1). You see countertop (1), fork (1), microwave (1), painting (1), paper towel roll (1), soap bottle (1), spatula (1), spoon (1), toaster (1). You hold apple (1).
+Act: put down apple 1
+You put apple (1) in microwave (1).
+Think: To warm apple 1, I need to briefly close microwave 1, turn it on, and then turn it off.
+OK.
+Act: close microwave 1
+You close microwave (1).
+Act: turn on microwave 1
+You turn on microwave (1).
+Act: turn off microwave 1
+You turn off microwave (1).
+Think: Now I need to open microwave 1 and pick up apple 1.
+OK.
+Act: open microwave 1
+You open microwave (1). You see apple (1), countertop (1), fork (1), microwave (1), painting (1), paper towel roll (1), soap bottle (1), spatula (1), spoon (1), toaster (1).
+Act: pick up apple 1
+You pick up apple (1). You hold apple (1).
+Think: Now, I need to find furniture that has the microwave and put down apple 1.
+OK.
+Query: get_edges_for_node({'node_id': 'microwave 1', 'relation': 'ON'})
+Info: [('microwave 1', 'countertop 1', 'ON')]
+Think: Microwave 1 is on countertop 1.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see countertop (1), fork (1), microwave (1), painting (1), paper towel roll (1), soap bottle (1), spatula (1), spoon (1), toaster (1). You hold apple (1).
+Act: put down apple 1
+You put apple (1) on countertop (1).
+Think: Now I complete task.
+OK.
+Act: done

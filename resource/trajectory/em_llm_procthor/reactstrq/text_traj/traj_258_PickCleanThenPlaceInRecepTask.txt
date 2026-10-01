@@ -1,0 +1,53 @@
+Your task is to: Once the spray bottle is clean, you can put it on the shelf.
+You are in the house, and there are 2 rooms: bathroom (1), bedroom (1). You are in the middle of a bedroom (1). Looking quickly around the room, you see baseball bat (1), bed (1), chair (1, 2), desk (1), dining table (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), dumbbell (1), garbage can (1), house plant (1), painting (1, 2), shelf (1, 2, 3, 4).
+Think: To solve the task, I need to find and pick up spray bottle, put it in sink basin and turn on faucet, pick up and put down spray bottle in shelf.
+OK.
+Think: First, I need to find and pick up spray bottle. The spray bottle is more likely to appear in bathroom 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'bathroom 1'})
+Info: garbage can 2, sink 1, sink basin 1, toilet 1
+Think: In bathroom 1, the spray bottle is likely to appear in/on garbage can 2, sink 1, sink basin 1, toilet 1. I can check each place one by one until I find spray bottle.
+OK.
+Act: go to bathroom 1
+You move to the bathroom (1). Looking quickly around the room, you see garbage can (2), painting (3, 4), sink (1), sink basin (1), toilet (1).
+Act: go to garbage can 2
+You arrive at the garbage can (2). You see candle (1), garbage can (2), painting (3).
+Think: I find spray bottle 1. Now, I need to pick it up.
+OK.
+Act: go to spray bottle 1
+You arrive at the spray bottle (1). You see dish sponge (1), faucet (1), sink (1), sink basin (1), spray bottle (1), toilet (1), toilet paper (1).
+Act: pick up spray bottle 1
+You pick up spray bottle (1). You hold spray bottle (1).
+Think: Now, I need to find sink basin.
+OK.
+Query: find_objects({'label': 'sink basin'})
+Info: [{'name_id_nl': 'sink basin 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'bathroom 1'}]
+Think: Sink basin 1 is in bathroom 1.
+OK.
+Act: go to sink basin 1
+You arrive at the sink basin (1). You see faucet (1), painting (4), sink (1), sink basin (1). You hold spray bottle (1).
+Act: put down spray bottle 1
+You put spray bottle (1) in sink basin (1).
+Think: Now, I need to turn on faucet 1 briefly and turn off to wash spray bottle 1.
+OK.
+Act: turn on faucet 1
+You turn on faucet (1).
+Act: turn off faucet 1
+You turn off faucet (1).
+Think: Now, I need to pick up spray bottle 1 and find shelf.
+OK.
+Act: pick up spray bottle 1
+You pick up spray bottle (1). You hold spray bottle (1).
+Query: find_objects({'label': 'shelf'})
+Info: [{'name_id_nl': 'shelf 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'bedroom 1'}, {'name_id_nl': 'shelf 4', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'bedroom 1'}, {'name_id_nl': 'shelf 3', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'bedroom 1'}, {'name_id_nl': 'shelf 2', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'bedroom 1'}]
+Think: Shelf 1 is in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see baseball bat (1), bed (1), chair (1, 2), desk (1), dining table (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), dumbbell (1), garbage can (1), house plant (1), painting (1, 2), shelf (1, 2, 3, 4). You hold spray bottle (1).
+Act: go to shelf 1
+You arrive at the shelf (1). You see CD (1, 2), book (2, 3), chair (2), desk (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), dumbbell (1), mug (1), pen (1), pencil (3), remote control (1, 2), shelf (1, 2, 3, 4), tabletop decor (1), tissue box (1), vase (1). You hold spray bottle (1).
+Act: put down spray bottle 1
+You put spray bottle (1) on shelf (1).
+Think: Now I complete the task.
+OK.
+Act: done

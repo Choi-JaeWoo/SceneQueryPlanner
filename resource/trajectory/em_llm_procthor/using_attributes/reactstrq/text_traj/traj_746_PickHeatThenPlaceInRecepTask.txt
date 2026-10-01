@@ -1,0 +1,81 @@
+Your task is to: Place the heated bread slice near the knife.
+You are in the house, and there are 5 rooms: bathroom (1), bedroom (1, 2), kitchen (1), living room (1). You are in the middle of a bedroom (2). Looking quickly around the room, you see bed (3), chair (7, 8, 9), coffee table (1), dining table (4), drawer (7, 8, 9, 10, 11, 12, 13, 14, 15, 16), dresser (2), garbage can (2), painting (3, 4).
+Think: To solve the task, I need to find and pick up knife or butter knife, find and slice bread, put down knife or butter knife and pick up sliced bread, use either microwave or toaster to heat it, find knife and check the receptacle where knife is located, and place sliced bread on that receptacle.
+OK.
+Think: First, I need to find and pick up knife or butter knife.
+OK.
+Query: find_objects({'label': 'knife'})
+Info: 
+Query: find_objects({'label': 'butter knife'})
+Info: 
+Think: I have not seen knife or butter knife yet. Now I need to check where to search. First, I will search kitchen 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'kitchen 1'})
+Info: chair (1, 2), countertop 1, dining table 1, fridge 1
+Think: In kitchen 1, the knife or butter knife is likely to appear in/on chair (1, 2), countertop 1, dining table 1, fridge 1. I can check each place one by one until I find knife or butter knife.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see chair (1, 2), countertop (1), dining table (1), egg (1), fridge (1), lettuce (1), painting (1, 2).
+Act: go to chair 1
+You arrive at the chair (1). You see apple (1), book (2), bottle (1), bowl (1), bread (1, 2), chair (1), dining table (1), lettuce (1, 2), plate (1), potato (1), spoon (3, 4), spray bottle (1).
+Act: go to chair 2
+You arrive at the chair (2). You see apple (1), bottle (1), bowl (1), chair (2), fridge (1), painting (1, 2), potato (1), spoon (4).
+Act: go to countertop 1
+You arrive at the countertop (1). You see book (1, 2), bread (2), countertop (1), knife (1), lettuce (1), mug (1), pepper shaker (1), pot (1), salt shaker (1), spoon (1, 2, 3), toaster (1), tomato (1, 2).
+Think: I find knife 1. Now, I need to pick it up.
+OK.
+Act: go to knife 1
+You arrive at the knife (1). You see knife (1), mug (1), pot (1), salt shaker (1), spoon (2), toaster (1).
+Act: pick up knife 1
+You pick up knife (1). You hold knife (1).
+Think: Now, I need to find and slice bread.
+OK.
+Query: find_objects({'label': 'bread'})
+Info: [{'name_id_nl': 'bread 1', 'node_type': 'object', 'properties': ['sliceable', 'pickupable'], 'states': []}, {'name_id_nl': 'bread 2', 'node_type': 'object', 'properties': ['sliceable', 'pickupable'], 'states': []}]
+Query: get_edges_for_node({'node_id': 'bread 1'})
+Info: [('bread 1', 'dining table 1', 'ON'), ('bread 1', 'apple 1', 'CLOSE'), ('bread 1', 'bottle 1', 'CLOSE'), ('bread 1', 'bowl 1', 'CLOSE'), ('bread 1', 'chair 1', 'CLOSE'), ('bread 1', 'lettuce 2', 'CLOSE'), ('bread 1', 'plate 1', 'CLOSE'), ('bread 1', 'potato 1', 'CLOSE'), ('bread 1', 'spoon 4', 'CLOSE'), ('bread 1', 'spray bottle 1', 'CLOSE'), ('bread 1', 'kitchen 1', 'INSIDE'), ('apple 1', 'bread 1', 'CLOSE'), ('bottle 1', 'bread 1', 'CLOSE'), ('bowl 1', 'bread 1', 'CLOSE'), ('chair 1', 'bread 1', 'CLOSE'), ('lettuce 2', 'bread 1', 'CLOSE'), ('plate 1', 'bread 1', 'CLOSE'), ('potato 1', 'bread 1', 'CLOSE'), ('spoon 4', 'bread 1', 'CLOSE'), ('spray bottle 1', 'bread 1', 'CLOSE')]
+Query: get_edges_for_node({'node_id': 'bread 2'})
+Info: [('bread 2', 'spray bottle 1', 'CLOSE'), ('bread 2', 'countertop 1', 'ON'), ('bread 2', 'book 1', 'CLOSE'), ('bread 2', 'book 2', 'CLOSE'), ('bread 2', 'lettuce 1', 'CLOSE'), ('bread 2', 'mug 1', 'CLOSE'), ('bread 2', 'pepper shaker 1', 'CLOSE'), ('bread 2', 'pot 1', 'CLOSE'), ('bread 2', 'salt shaker 1', 'CLOSE'), ('bread 2', 'spoon 1', 'CLOSE'), ('bread 2', 'spoon 2', 'CLOSE'), ('bread 2', 'spoon 3', 'CLOSE'), ('bread 2', 'toaster 1', 'CLOSE'), ('bread 2', 'tomato 1', 'CLOSE'), ('bread 2', 'tomato 2', 'CLOSE'), ('bread 2', 'kitchen 1', 'INSIDE'), ('spray bottle 1', 'bread 2', 'CLOSE'), ('book 1', 'bread 2', 'CLOSE'), ('book 2', 'bread 2', 'CLOSE'), ('lettuce 1', 'bread 2', 'CLOSE'), ('mug 1', 'bread 2', 'CLOSE'), ('pepper shaker 1', 'bread 2', 'CLOSE'), ('pot 1', 'bread 2', 'CLOSE'), ('salt shaker 1', 'bread 2', 'CLOSE'), ('spoon 1', 'bread 2', 'CLOSE'), ('spoon 2', 'bread 2', 'CLOSE'), ('spoon 3', 'bread 2', 'CLOSE'), ('toaster 1', 'bread 2', 'CLOSE'), ('tomato 1', 'bread 2', 'CLOSE'), ('tomato 2', 'bread 2', 'CLOSE')]
+Think: Bread 1 is on dining table 1 and bread 2 is on countertop 1. I will slice bread 2.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see book (1, 2), bread (2), countertop (1), lettuce (1), mug (1), pepper shaker (1), pot (1), salt shaker (1), spoon (1, 2, 3), toaster (1), tomato (1, 2). You hold knife (1).
+Act: go to bread 2
+You arrive at the bread (2). You see book (1, 2), bottle (1), bread (1, 2), chair (1), countertop (1), lettuce (1, 2), mug (1), pepper shaker (1), plate (1), pot (1), salt shaker (1), spoon (1, 2, 3), spray bottle (1), toaster (1), tomato (1, 2). You hold knife (1).
+Act: slice bread 2
+You slice bread (2). You see book (1, 2), bottle (1), bread (1), chair (1), countertop (1), lettuce (1, 2), mug (1), pepper shaker (1), plate (1), pot (1), salt shaker (1), sliced bread (1), spoon (1, 2, 3), spray bottle (1), toaster (1), tomato (1, 2). You hold knife (1).
+Think: Now, I need to put down knife 1 and pick up sliced bread 1.
+OK.
+Act: put down knife 1
+You put knife (1) on countertop (1).
+Act: pick up sliced bread 1
+You pick up sliced bread (1). You hold sliced bread (1).
+Think: Now, I need to find microwave or toaster to heat sliced bread 1. I find toaster 1.
+OK.
+Act: go to toaster 1
+You arrive at the toaster (1). You see book (1, 2), bread (1), countertop (1), knife (1), lettuce (1), mug (1), pepper shaker (1), plate (1), pot (1), salt shaker (1), spoon (1, 2, 3), spray bottle (1), toaster (1), tomato (1, 2). You hold sliced bread (1).
+Act: put down sliced bread 1
+You put sliced bread (1) in toaster (1).
+Act: turn on toaster 1
+You turn on toaster (1).
+Think: Now, I need to turn off toaster 1 and pick up sliced bread 1.
+OK.
+Act: turn off toaster 1
+You turn off toaster (1).
+Act: pick up sliced bread 1
+You pick up sliced bread (1). You hold sliced bread (1).
+Think: Now, I need to find knife and check the receptacle where knife is located.
+OK.
+Query: find_objects({'label': 'knife'})
+Info: [{'name_id_nl': 'knife 1', 'node_type': 'object', 'properties': ['pickupable'], 'states': []}]
+Query: get_edges_for_node({'node_id': 'knife 1'})
+Info: [('knife 1', 'bread 1', 'CLOSE'), ('knife 1', 'plate 1', 'CLOSE'), ('knife 1', 'spray bottle 1', 'CLOSE'), ('knife 1', 'countertop 1', 'ON'), ('knife 1', 'book 1', 'CLOSE'), ('knife 1', 'book 2', 'CLOSE'), ('knife 1', 'lettuce 1', 'CLOSE'), ('knife 1', 'mug 1', 'CLOSE'), ('knife 1', 'pepper shaker 1', 'CLOSE'), ('knife 1', 'pot 1', 'CLOSE'), ('knife 1', 'salt shaker 1', 'CLOSE'), ('knife 1', 'spoon 1', 'CLOSE'), ('knife 1', 'spoon 2', 'CLOSE'), ('knife 1', 'spoon 3', 'CLOSE'), ('knife 1', 'toaster 1', 'CLOSE'), ('knife 1', 'tomato 1', 'CLOSE'), ('knife 1', 'tomato 2', 'CLOSE'), ('knife 1', 'sliced bread 1', 'CLOSE'), ('knife 1', 'user 1', 'CLOSE'), ('knife 1', 'kitchen 1', 'INSIDE'), ('bread 1', 'knife 1', 'CLOSE'), ('countertop 1', 'knife 1', 'CLOSE'), ('plate 1', 'knife 1', 'CLOSE'), ('spray bottle 1', 'knife 1', 'CLOSE'), ('book 1', 'knife 1', 'CLOSE'), ('book 2', 'knife 1', 'CLOSE'), ('lettuce 1', 'knife 1', 'CLOSE'), ('mug 1', 'knife 1', 'CLOSE'), ('pepper shaker 1', 'knife 1', 'CLOSE'), ('pot 1', 'knife 1', 'CLOSE'), ('salt shaker 1', 'knife 1', 'CLOSE'), ('spoon 1', 'knife 1', 'CLOSE'), ('spoon 2', 'knife 1', 'CLOSE'), ('spoon 3', 'knife 1', 'CLOSE'), ('toaster 1', 'knife 1', 'CLOSE'), ('tomato 1', 'knife 1', 'CLOSE'), ('tomato 2', 'knife 1', 'CLOSE'), ('sliced bread 1', 'knife 1', 'CLOSE'), ('user 1', 'knife 1', 'CLOSE')]
+Think: Knife 1 is on countertop 1. Now, I need to move to countertop 1 and put down sliced bread 1.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see book (1, 2), countertop (1), knife (1), lettuce (1), mug (1), pepper shaker (1), pot (1), salt shaker (1), spoon (1, 2, 3), toaster (1), tomato (1, 2). You hold sliced bread (1).
+Act: put down sliced bread 1
+You put sliced bread (1) on countertop (1).
+Think: Now I complete the task.
+OK.
+Act: done

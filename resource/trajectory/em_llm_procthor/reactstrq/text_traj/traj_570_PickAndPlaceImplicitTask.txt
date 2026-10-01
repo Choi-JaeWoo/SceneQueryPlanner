@@ -29,7 +29,7 @@ OK.
 Act: go to dining table 1
 You arrive at the dining table (1). You see cell phone (1, 2), chair (1, 2, 3), credit card (1), desk lamp (1), dining table (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), house plant (2), key chain (1), pen (1), remote control (2), statue (1, 2), tissue box (1). You hold box (1).
 Act: put down box 1
-You put box (1) in dining table (1).
+You put box (1) on dining table (1).
 Act: go to pillow 2
 You arrive at the pillow (2). You see bed (1), cell phone (1), chair (2), credit card (1), desk lamp (1), drawer (1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), house plant (2), painting (1), pillow (1, 2), remote control (1), tissue box (1).
 Act: pick up pillow 2
@@ -37,7 +37,7 @@ You pick up pillow (2). You hold pillow (2).
 Act: go to dining table 1
 You arrive at the dining table (1). You see box (1), cell phone (1, 2), chair (1, 2, 3), credit card (1), desk lamp (1), dining table (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), house plant (2), key chain (1), pen (1), remote control (2), statue (1, 2), tissue box (1). You hold pillow (2).
 Act: put down pillow 2
-You put pillow (2) in dining table (1).
+You put pillow (2) on dining table (1).
 Act: go to pillow 1
 You arrive at the pillow (1). You see bed (1), cell phone (1), chair (2), credit card (1), desk lamp (1), drawer (1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), house plant (2), painting (1), pillow (1), remote control (1), tissue box (1).
 Act: pick up pillow 1
@@ -45,7 +45,7 @@ You pick up pillow (1). You hold pillow (1).
 Act: go to dining table 1
 You arrive at the dining table (1). You see box (1), cell phone (1, 2), chair (1, 2, 3), credit card (1), desk lamp (1), dining table (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), house plant (2), key chain (1), pen (1), pillow (2), remote control (2), statue (1, 2), tissue box (1). You hold pillow (1).
 Act: put down pillow 1
-You put pillow (1) in dining table (1).
+You put pillow (1) on dining table (1).
 Act: go to remote control 1
 You arrive at the remote control (1). You see bed (1), cell phone (1), chair (2), credit card (1), desk lamp (1), drawer (1, 2, 3, 5, 6, 7, 8, 9, 10, 11), dresser (1), house plant (2), key chain (1), painting (1), remote control (1), tissue box (1).
 Act: pick up remote control 1
@@ -53,7 +53,7 @@ You pick up remote control (1). You hold remote control (1).
 Act: go to dining table 1
 You arrive at the dining table (1). You see box (1), cell phone (1, 2), chair (1, 2, 3), credit card (1), desk lamp (1), dining table (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), house plant (2), key chain (1), pen (1), pillow (1, 2), remote control (2), statue (1, 2), tissue box (1). You hold remote control (1).
 Act: put down remote control 1
-You put remote control (1) in dining table (1).
+You put remote control (1) on dining table (1).
 Think: Now I need to check what's left on bed 1.
 OK.
 Query: get_edges_for_node({'node_id': 'bed 1', 'relation': 'ON'})

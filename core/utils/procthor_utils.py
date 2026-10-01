@@ -277,8 +277,15 @@ def process_same_similarity_list(experience_list, select_next='expand'):
     return result_list
 
 
+def task_file_stem(task_d):
+    stem = f"{task_d['env_id']}_{task_d['mode']}"
+    if task_d.get('init_action'):
+        stem += f"_{task_d['init_action']}"
+    return stem
+
+
 ##### Evaluation
-def check_goal_condition(task, graph, init_event, cleaned_objects, cooled_objects, heated_objects, filled_coffee_objects):
+def check_goal_condition(task, graph, init_event, cleaned_objects, cooled_objects, heated_objects, filled_coffee_objects, init_state_hard=None):
     mode = task['mode']
     task_goal = task['task_goal']
     
@@ -302,8 +309,43 @@ def check_goal_condition(task, graph, init_event, cleaned_objects, cooled_object
         subgoal_success_rate = check_goal_stack(task_goal, graph)
     elif mode == "CookTask":
         subgoal_success_rate = check_goal_cook(task_goal, graph, filled_coffee_objects, heated_objects)
+    elif mode == "AttributeHard":
+        subgoal_success_rate = check_goal_attribute(task_goal, graph, init_state_hard or [])
     
     return subgoal_success_rate
+
+def check_goal_attribute(task_goal, controller, init_state_hard):
+    s = 0
+    ts = len(task_goal)
+    objects = controller.last_event.metadata["objects"]
+    sliced_required = set()
+    for key in task_goal:
+        if key.startswith('isSliced_'):
+            sliced_obj = key.split('_')[1].lower()
+            if any(
+                sliced_obj in obj['objectType'].lower() and 'sliced' in obj['objectType'].lower()
+                for obj in objects
+            ):
+                s += 1
+                sliced_required.add(sliced_obj)
+
+    for key in task_goal:
+        if key.startswith('isSliced_'):
+            continue 
+        parts = key.split('_')
+        if parts[0] in ['on', 'in'] and len(parts) == 3:
+            obj_name, recep_name = parts[1].lower(), parts[2].lower()
+            obj_check_name = obj_name + 'sliced' if obj_name in sliced_required else obj_name
+            receptacles = get_objects_with_name_and_prop(recep_name, 'receptacle', objects)
+            objs = get_objects_with_name_and_prop(obj_check_name, 'pickupable', objects)
+            obj_ids = {obj['objectId'] for obj in objs}
+            init_state_hard_set = set(init_state_hard)
+            if any(
+                (obj_ids & set(recep.get('receptacleObjectIds', [])) & init_state_hard_set)
+                for recep in receptacles
+            ):
+                s += 1
+    return s / ts if ts > 0 else 0.0
 
 def check_goal_single(task_goal, controller):
     s = 0

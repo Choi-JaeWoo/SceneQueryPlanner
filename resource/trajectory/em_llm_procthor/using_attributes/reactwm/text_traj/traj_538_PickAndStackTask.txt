@@ -1,0 +1,51 @@
+Your task is to: Move the paper item from the side table into a box and place the box on the armchair so it's easier to reach later.
+You are in the house, and there are 1 rooms: bedroom (1). You are in the middle of a bedroom (1). Looking quickly around the room, you see armchair (1), bed (1), box (1), chair (1, 2), dining table (1), drawer (1, 2, 3), dresser (1), floor lamp (1), painting (1, 2, 3), side table (1), television (1).
+Think: To solve the task, I need to find side table and find the paper item from side table, then pick it up and put it in box, pick up box and put it on armchair.
+OK.
+Think: First, I need to find side table.
+OK.
+Query: recall location of side table
+You saw side table 1 in bedroom 1.
+Think: Side table 1 is in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see armchair (1), bed (1), box (1), chair (1, 2), dining table (1), drawer (1, 2, 3), dresser (1), floor lamp (1), painting (1, 2, 3), side table (1), television (1).
+Act: go to side table 1
+You arrive at the side table (1). You see bowl (1), drawer (1, 2, 3), dresser (1), house plant (1), painting (2), side table (1), tissue box (1).
+Think: On side table 1, the paper item is tissue box 1. Now, I need to pick it up.
+OK.
+Act: go to tissue box 1
+You arrive at the tissue box (1). You see bowl (1), drawer (1, 2, 3), dresser (1), house plant (1), painting (2), side table (1), tissue box (1).
+Act: pick up tissue box 1
+You pick up tissue box (1). You hold tissue box (1).
+Think: Now, I need to find box and put down tissue box 1.
+OK.
+Query: recall location of box
+You saw box 2 in bedroom 1. You saw box 1 in bedroom 1.
+Think: Box 1 is in bedroom 1.
+OK.
+Act: go to box 1
+You arrive at the box (1). The box (1) is closed. You see baseball bat (1), box (1), floor lamp (1), television (1). You hold tissue box (1).
+Think: Since box 1 is closed, I need to open it to put down tissue box 1.
+OK.
+Act: open box 1
+You open box (1). You see baseball bat (1), box (1), floor lamp (1), television (1). You hold tissue box (1).
+Act: put down tissue box 1
+You put tissue box (1) in box (1).
+Think: Now, I need to pick up box 1.
+OK.
+Act: pick up box 1
+You pick up box (1). You hold box (1).
+Think: Now, I need to find armchair and put down box 1.
+OK.
+Query: recall location of armchair
+You saw armchair 1 in bedroom 1.
+Think: Armchair 1 is in bedroom 1.
+OK.
+Act: go to armchair 1
+You arrive at the armchair (1). You see armchair (1), floor lamp (1), tissue box (1). You hold box (1).
+Act: put down box 1
+You put box (1) on armchair (1).
+Think: Now I complete the task.
+OK.
+Act: done

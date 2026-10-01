@@ -126,7 +126,7 @@ class SayPlan(BasePlanner):
         working_memory = ProcThorFullGraph(self.cfg, full_graph, self.env.name_id_dict_sim2nl, self.env.name_id_dict_nl2sim, task_data)
         
         ### Semantic Search
-        semantic_search_path = os.path.join(semantic_search_dir, f"traj_{task_data['env_id']}_{task_data['mode']}_semantic_search.txt")
+        semantic_search_path = os.path.join(semantic_search_dir, f"traj_{procthor_utils.task_file_stem(task_data)}_semantic_search.txt")
         sayplan_dict = working_memory.collapse_graph()
         
         self.initial_collect_semantic_search(semantic_search_path, task_data, sayplan_dict)
@@ -172,7 +172,7 @@ class SayPlan(BasePlanner):
                 print("Invalid command. Please use 'expand(node_id)', 'contract(node_id)', or 'done'.")
         
         ### Iterative Replanning
-        iterative_replanning_path = os.path.join(iterative_replanning_dir, f"traj_{task_data['env_id']}_{task_data['mode']}_iterative_replanning.txt")
+        iterative_replanning_path = os.path.join(iterative_replanning_dir, f"traj_{procthor_utils.task_file_stem(task_data)}_iterative_replanning.txt")
         self.initial_collect_iterative_replanning(iterative_replanning_path, task_data, sayplan_dict, semantic_search_memory)
         
         while True:
@@ -210,7 +210,7 @@ class SayPlan(BasePlanner):
         working_memory = ProcThorFullGraph(self.cfg, full_graph, self.env.name_id_dict_sim2nl, self.env.name_id_dict_nl2sim, task_data)
         
         ### Semantic Search ###
-        semantic_search_path = os.path.join(semantic_search_dir, f"traj_{task_data['env_id']}_{task_data['mode']}_semantic_search.txt")
+        semantic_search_path = os.path.join(semantic_search_dir, f"traj_{procthor_utils.task_file_stem(task_data)}_semantic_search.txt")
         sayplan_dict = working_memory.collapse_graph()
         
         self.initial_collect_semantic_search(semantic_search_path, task_data, sayplan_dict)
@@ -261,7 +261,7 @@ class SayPlan(BasePlanner):
                     print("Invalid command. Please use 'expand(node_id)', 'contract(node_id)', or 'done'.")
 
         ### Iterative Replanning
-        iterative_replanning_path = os.path.join(iterative_replanning_dir, f"traj_{task_data['env_id']}_{task_data['mode']}_iterative_replanning.txt")
+        iterative_replanning_path = os.path.join(iterative_replanning_dir, f"traj_{procthor_utils.task_file_stem(task_data)}_iterative_replanning.txt")
         self.initial_collect_iterative_replanning(iterative_replanning_path, task_data, sayplan_dict, semantic_search_memory)
         ######################################
 

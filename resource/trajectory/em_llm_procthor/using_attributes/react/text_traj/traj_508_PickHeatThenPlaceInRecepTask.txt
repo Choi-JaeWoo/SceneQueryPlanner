@@ -1,0 +1,51 @@
+Your task is to: Warm the sliceable and breakable object from the countertop and then place it in the bowl to prepare it without damaging its shape.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a bathroom (1). Looking quickly around the room, you see garbage can (1), plunger (1), sink (1), sink basin (1), toilet (1).
+Think: To solve the task, I need to find and pick up the sliceable and breakable object from countertop, find microwave and put it down, turn on microwave briefly and turn off microwave, pick the sliceable and breakable object and put it down in bowl.
+OK.
+Think: First, I need to find countertop and find the sliceable and breakable object from countertop. The countertop is more likely to appear in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see cabinet (1), countertop (1), dining table (1), fridge (1), garbage can (2), painting (1, 2, 3), shelf (1, 2, 3), shelving unit (1), side table (1).
+Think: I find countertop 1. Now, I need to move to countertop 1 to find the sliceable and breakable object.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see book (2), bowl (1), cabinet (1), countertop (1), dish sponge (1), egg (1), house plant (1), kettle (1), ladle (1), plate (1), pot (1), potato (1), shelf (1, 2, 3), shelving unit (1), wine bottle (1).
+Think: On countertop 1, the sliceable and breakable object is egg 1. Now, I need to pick it up.
+OK.
+Act: go to egg 1
+You arrive at the egg (1). You see book (2), bowl (1), cabinet (1), countertop (1), dish sponge (1), egg (1), house plant (1), kettle (1), ladle (1), plate (1), pot (1), potato (1), shelf (1, 2, 3), shelving unit (1), wine bottle (1).
+Act: pick up egg 1
+You pick up egg (1). You hold egg (1).
+Think: Now, I need to find microwave.
+OK.
+Act: go to microwave 1
+You arrive at the microwave (1). The microwave (1) is closed. You see butter knife (1), cell phone (1), credit card (1), cup (1), dining table (1), microwave (1), painting (2), statue (1). You hold egg (1).
+Think: Since microwave 1 is closed, I need to open it to put down egg 1.
+OK.
+Act: open microwave 1
+You open microwave (1). You see butter knife (1), cell phone (1), credit card (1), cup (1), dining table (1), microwave (1), painting (2), statue (1). You hold egg (1).
+Act: put down egg 1
+You put egg (1) in microwave (1).
+Think: To warm egg 1, I need to briefly close microwave 1, turn it on, and then turn it off.
+OK.
+Act: close microwave 1
+You close microwave (1).
+Act: turn on microwave 1
+You turn on microwave (1).
+Act: turn off microwave 1
+You turn off microwave (1).
+Think: Now I need to open microwave 1 and pick up egg 1.
+OK.
+Act: open microwave 1
+You open microwave (1). You see butter knife (1), cell phone (1), credit card (1), cup (1), dining table (1), egg (1), microwave (1), painting (2), statue (1).
+Act: pick up egg 1
+You pick up egg (1). You hold egg (1).
+Think: Now, I need to find bowl and put down egg 1.
+OK.
+Act: go to bowl 1
+You arrive at the bowl (1). You see book (2), bowl (1), countertop (1), dish sponge (1), house plant (1), ladle (1), pot (1), potato (1). You hold egg (1).
+Act: put down egg 1
+You put egg (1) in bowl (1).
+Think: Now I complete the task.
+OK.
+Act: done

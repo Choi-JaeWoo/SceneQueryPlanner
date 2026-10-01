@@ -1,0 +1,41 @@
+Your task is to: Place the pencil next to the kettle to keep everything in one place.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a living room (1). Looking quickly around the room, you see TV stand (1), armchair (1), cabinet (1), cart (1), dining table (2), painting (1, 2, 3, 4), shelf (1, 2, 3, 4), shelving unit (1), sofa (1).
+Think: To solve the task, I need to find and pick up pencil, find kettle and check the receptacle where kettle is located, and then place pencil in that receptacle.
+OK.
+Think: First, I need to find and pick up pencil.
+OK.
+Query: recall location of pencil
+You have not seen pencil before.
+Think: I have not seen pencil yet. The pencil is more likely to appear in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see chair (1, 2, 3), countertop (1), dining table (1), garbage bag (1), television (1).
+Think: In kitchen 1, the pencil is likely to appear in/on countertop 1, dining table 1. I can check each place one by one until I find pencil.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see bread (1), countertop (1), fork (1, 2), house plant (1), kettle (1), paper towel roll (1), potato (1), soap bottle (1), spoon (1), television (1), toaster (1), vase (2).
+Act: go to dining table 1
+You arrive at the dining table (1). You see book (1), butter knife (1), cell phone (1), chair (1, 2, 3), dining table (1), ladle (1), mug (1), pencil (1, 2), plate (1), pot (1), salt shaker (1).
+Think: I find pencil 1. Now, I need to pick it up.
+OK.
+Act: go to pencil 1
+You arrive at the pencil (1). You see book (1), butter knife (1), cell phone (1), chair (1, 2, 3), dining table (1), ladle (1), mug (1), pencil (1, 2), plate (1), pot (1), salt shaker (1).
+Act: pick up pencil 1
+You pick up pencil (1). You hold pencil (1).
+Think: Now, I need to find kettle and check the receptacle where kettle is located.
+OK.
+Query: recall location of kettle
+You saw kettle 1 near countertop 1 in kitchen 1.
+Think: Kettle 1 is near countertop 1 in kitchen 1.
+OK.
+Act: go to kettle 1
+You arrive at the kettle (1). The kettle (1) is closed. You see bread (1), fork (1, 2), house plant (1), kettle (1), paper towel roll (1), potato (1), soap bottle (1), spoon (1), television (1), vase (2). You hold pencil (1).
+Think: Kettle 1 is on countertop 1. Now, I need to move to countertop 1 and put down pencil 1.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see bread (1), countertop (1), fork (1, 2), house plant (1), kettle (1), paper towel roll (1), potato (1), soap bottle (1), spoon (1), television (1), toaster (1), vase (2). You hold pencil (1).
+Act: put down pencil 1
+You put pencil (1) on countertop (1).
+Think: Now I complete the task.
+OK.
+Act: done

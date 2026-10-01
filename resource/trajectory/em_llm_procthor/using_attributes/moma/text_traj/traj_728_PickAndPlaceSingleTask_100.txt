@@ -1,0 +1,2 @@
+Your task is to: Throw the item made of paper into the garbage can so I don't accidentally reuse it.
+Max decision steps reached.

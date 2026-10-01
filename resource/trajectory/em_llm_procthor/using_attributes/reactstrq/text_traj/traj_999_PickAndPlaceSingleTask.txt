@@ -1,0 +1,49 @@
+Your task is to: Place the book next to the apple.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a living room (1). Looking quickly around the room, you see TV stand (1), cart (1), chair (4), dining table (2), dog bed (1), house plant (2), shelf (8, 9, 10, 11, 12, 13), sofa (1).
+Think: To solve the task, I need to find and pick up book, find apple and check the receptacle where apple is located, and then place book in that receptacle.
+OK.
+Think: First, I need to find and pick up book.
+OK.
+Query: find_objects({'label': 'book'})
+Info: [{'name_id_nl': 'book 4', 'node_type': 'object', 'properties': ['openable', 'pickupable'], 'states': []}]
+Query: get_edges_for_node({'node_id': 'book 4'})
+Info: [('book 4', 'living room 1', 'INSIDE'), ('book 4', 'dining table 2', 'ON'), ('book 4', 'chair 4', 'CLOSE'), ('book 4', 'dog bed 1', 'CLOSE'), ('book 4', 'statue 4', 'CLOSE'), ('book 4', 'statue 5', 'CLOSE'), ('book 4', 'user 1', 'CLOSE'), ('chair 4', 'book 4', 'CLOSE'), ('dog bed 1', 'book 4', 'CLOSE'), ('statue 4', 'book 4', 'CLOSE'), ('statue 5', 'book 4', 'CLOSE'), ('user 1', 'book 4', 'CLOSE')]
+Think: Book 4 is on dining table 2.
+OK.
+Act: go to dining table 2
+You arrive at the dining table (2). You see book (4, 5), bowl (2), chair (4), dining table (2), laptop (2), pen (1), plate (1), statue (4, 5).
+Act: go to book 4
+You arrive at the book (4). The book (4) is closed. You see book (4, 5), bowl (2), chair (4), dining table (2), laptop (2), pen (1), plate (1), statue (4, 5).
+Act: pick up book 4
+You pick up book (4). You hold book (4).
+Think: Now, I need to find apple and check the receptacle where apple is located.
+OK.
+Query: find_objects({'label': 'apple'})
+Info: 
+Think: I have not seen apple yet. Now I need to check where to search. First, I will search kitchen 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'kitchen 1'})
+Info: cabinet 1, countertop 1, fridge 1, shelf (5, 6, 7), stool 1
+Think: In kitchen 1, the apple is likely to appear in/on cabinet 1, countertop 1, fridge 1, shelf (5, 6, 7), stool 1. I can check each place one by one until I find apple.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see cabinet (1), countertop (1), fridge (1), painting (3, 4), shelf (5, 6, 7), shelving unit (1), stool (1), television (2). You hold book (4).
+Act: go to cabinet 1
+You arrive at the cabinet (1). The cabinet (1) is closed. You see bowl (1), bread (1), cabinet (1), countertop (1), credit card (1), house plant (3), shelf (5, 6, 7), shelving unit (1), soap bottle (1), statue (3), toaster (1). You hold book (4).
+Act: open cabinet 1
+You open cabinet (1). You see book (3), bowl (1), bread (1), cabinet (1), countertop (1), credit card (1), house plant (3), shelf (5, 6, 7), shelving unit (1), soap bottle (1), spray bottle (1), statue (3), toaster (1). You hold book (4).
+Act: go to countertop 1
+You arrive at the countertop (1). You see apple (1), book (3), bowl (1), bread (1), cabinet (1), countertop (1), credit card (1), house plant (3), ladle (1), mug (1), shelf (5, 6, 7), shelving unit (1), soap bottle (1), spoon (1), spray bottle (1), statue (3), toaster (1), vase (2). You hold book (4).
+Think: I find apple 1. Now, I need to check the receptacle where apple 1 is located.
+OK.
+Query: get_edges_for_node({'node_id': 'apple 1', 'relation': 'ON'})
+Info: [('apple 1', 'countertop 1', 'ON')]
+Think: The receptacle where apple 1 is located is countertop 1.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see apple (1), book (3), bowl (1), bread (1), cabinet (1), countertop (1), credit card (1), house plant (3), ladle (1), mug (1), shelf (5, 6, 7), shelving unit (1), soap bottle (1), spoon (1), spray bottle (1), statue (3), toaster (1), vase (2). You hold book (4).
+Act: put down book 4
+You put book (4) on countertop (1).
+Think: Now I complete the task.
+OK.
+Act: done

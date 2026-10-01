@@ -1,0 +1,73 @@
+Your task is to: Chill a slice of apple in the fridge, then transfer it to the location where the apple was originally.
+You are in the house, and there are 3 rooms: bedroom (1), kitchen (1), living room (1). You are in the middle of a kitchen (1). Looking quickly around the room, you see chair (1), countertop (1), dining table (1), fridge (1), stool (1), television (1).
+Think: To solve the task, I need to find and pick up knife or butter knife, find and slice apple, put down knife or butter knife and pick up sliced apple, find fridge and put down sliced apple, close fridge briefly and open it again, pick up sliced apple, find the location where the apple was originally and put down sliced apple.
+OK.
+Think: First, I need to find and pick up knife or butter knife. The knife or butter knife is more likely to appear in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see chair (1), countertop (1), dining table (1), fridge (1), stool (1), television (1).
+Think: In kitchen 1, the knife or butter knife is likely to appear in/on countertop 1, dining table 1. I can check each place one by one until I find knife or butter knife.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see apple (1), book (3), bread (1), butter knife (1, 2, 3), countertop (1), cup (1), egg (1), knife (1), lettuce (1), soap bottle (1), spoon (1).
+Think: I find butter knife 1. Now, I need to pick it up.
+OK.
+Act: go to butter knife 1
+You arrive at the butter knife (1). You see apple (1), book (3), butter knife (1), egg (1), knife (1).
+Act: pick up butter knife 1
+You pick up butter knife (1). You hold butter knife (1).
+Think: Now, I need to find apple. The apple is likely to appear in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see chair (1), countertop (1), dining table (1), fridge (1), stool (1), television (1). You hold butter knife (1).
+Think: In kitchen 1, the apple is likely to appear in/on countertop 1, dining table 1, fridge 1. I can check each place one by one until I find apple.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see apple (1), book (3), bread (1), butter knife (2, 3), countertop (1), cup (1), egg (1), knife (1), lettuce (1), soap bottle (1), spoon (1). You hold butter knife (1).
+Think: I find apple 1. Now, I need to slice it.
+OK.
+Act: go to apple 1
+You arrive at the apple (1). You see apple (1), book (3), bread (1), butter knife (2, 3), countertop (1), cup (1), egg (1), knife (1), lettuce (1), soap bottle (1), spoon (1). You hold butter knife (1).
+Act: slice apple 1
+You slice apple (1). You see book (3), bread (1), butter knife (2, 3), countertop (1), cup (1), egg (1), knife (1), lettuce (1), sliced apple (1), soap bottle (1), spoon (1). You hold butter knife (1).
+Think: Now, I need to put down butter knife 1 and pick up sliced apple 1.
+OK.
+Act: put down butter knife 1
+You put butter knife (1) on countertop (1).
+Act: pick up sliced apple 1
+You pick up sliced apple (1). You hold sliced apple (1).
+Think: Now, I need to find fridge.
+OK.
+Act: go to fridge 1
+You arrive at the fridge (1). The fridge (1) is closed. You see cup (2), dining table (1), fridge (1), knife (2), mug (1). You hold sliced apple (1).
+Think: Since fridge 1 is closed, I need to open it to put down sliced apple 1.
+OK.
+Act: open fridge 1
+You open fridge (1). You see cup (2), dining table (1), fridge (1), knife (2), mug (1). You hold sliced apple (1).
+Act: put down sliced apple 1
+You put sliced apple (1) in fridge (1).
+Think: To make sliced apple 1 cold, I need to briefly close fridge 1 and then open it again.
+OK.
+Act: close fridge 1
+You close fridge (1).
+Act: open fridge 1
+You open fridge (1). You see cup (2), dining table (1), fridge (1), knife (2), mug (1), sliced apple (1).
+Think: Now I need to pick up sliced apple 1.
+OK.
+Act: pick up sliced apple 1
+Pick up action failed: sliced apple (1) is not within the visible range.
+Think: I need to move toward sliced apple 1 so I can see it clearly.
+OK.
+Act: go to sliced apple 1
+You arrive at the sliced apple (1). You see fridge (1), sliced apple (1).
+Act: pick up sliced apple 1
+You pick up sliced apple (1). You hold sliced apple (1).
+Think: Now, I need to find the location where the apple was originally. The apple was originally on countertop 1.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see book (3), bread (1), butter knife (1, 2, 3), countertop (1), cup (1), egg (1), knife (1), lettuce (1), soap bottle (1), spoon (1). You hold sliced apple (1).
+Act: put down sliced apple 1
+You put sliced apple (1) on countertop (1).
+Think: Now I complete the task.
+OK.
+Act: done

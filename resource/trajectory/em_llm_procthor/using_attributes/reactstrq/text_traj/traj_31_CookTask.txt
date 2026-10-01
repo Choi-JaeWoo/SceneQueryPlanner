@@ -1,0 +1,83 @@
+Your task is to: Cook a breakable food from the cold storage in the microwave and place it on the countertop to serve.
+You are in the house, and there are 6 rooms: bathroom (1, 2), bedroom (1, 2), kitchen (1), living room (1). You are in the middle of a bedroom (1). Looking quickly around the room, you see bed (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1).
+Think: To solve the task, I need to find and pick up a breakable food from cold storage, put it in microwave and turn it on, turn off microwave and open microwave, pick up and place cooked food on countertop.
+OK.
+Think: First, I need to find cold storage and find a breakable food from cold storage.
+OK.
+Query: find_objects({'label': 'cold storage'})
+Info: 
+Think: I have not seen cold storage yet. Now I need to check where to search. First, I will search kitchen 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'kitchen 1'})
+Info: countertop 1, fridge 1
+Think: In kitchen 1, the cold storage is likely to appear in/on countertop 1, fridge 1. I can check each place one by one until I find cold storage.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see countertop (1), fridge (1), painting (1, 2), television (1).
+Act: go to countertop 1
+You arrive at the countertop (1). You see book (4), bottle (1), bowl (1), cell phone (3), countertop (1), house plant (4), knife (1), microwave (1), painting (1), pan (1), pencil (1), pot (1), soap bottle (1), spoon (1), television (1), vase (2).
+Think: I have not seen cold storage yet. Now I need to check fridge 1.
+OK.
+Act: go to fridge 1
+You arrive at the fridge (1). The fridge (1) is closed. You see fridge (1), knife (1), pencil (1), soap bottle (1), spoon (1).
+Act: open fridge 1
+You open fridge (1). You see apple (1), egg (1, 2, 3), fridge (1), knife (1), pencil (1), soap bottle (1), spoon (1).
+Think: Now, I need to find and pick up a breakable food from the fridge. First, I need to check what is inside fridge 1.
+OK.
+Query: get_edges_for_node({'node_id': 'fridge 1', 'relation': 'INSIDE'})
+Info: [('fridge 1', 'kitchen 1', 'INSIDE'), ('apple 1', 'fridge 1', 'INSIDE'), ('egg 3', 'fridge 1', 'INSIDE'), ('egg 1', 'fridge 1', 'INSIDE'), ('egg 2', 'fridge 1', 'INSIDE')]
+Think: Now, I need to check each object to find a breakable food.
+OK.
+Query: read_node({'node_id': 'apple 1'})
+Info: {'name_id_nl': 'apple 1', 'salientMaterials': ['Food'], 'properties': ['sliceable', 'pickupable'], 'states': []}
+Query: read_node({'node_id': 'egg 3'})
+Info: {'name_id_nl': 'egg 3', 'salientMaterials': ['Food'], 'properties': ['breakable', 'sliceable', 'pickupable'], 'states': []}
+Query: read_node({'node_id': 'egg 1'})
+Info: {'name_id_nl': 'egg 1', 'salientMaterials': ['Food'], 'properties': ['breakable', 'sliceable', 'pickupable'], 'states': []}
+Query: read_node({'node_id': 'egg 2'})
+Info: {'name_id_nl': 'egg 2', 'salientMaterials': ['Food'], 'properties': ['breakable', 'sliceable', 'pickupable'], 'states': []}
+Think: In fridge 1, the breakable food is egg 3. Now, I need to pick it up.
+OK.
+Act: go to egg 3
+You arrive at the egg (3). You see apple (1), egg (1, 2, 3), fridge (1), knife (1), microwave (1), pencil (1), soap bottle (1), spoon (1).
+Act: pick up egg 3
+You pick up egg (3). You hold egg (3).
+Think: Now, I need to find microwave.
+OK.
+Query: find_objects({'label': 'microwave'})
+Info: [{'name_id_nl': 'microwave 1', 'node_type': 'object', 'properties': ['toggleable', 'isHeatSource', 'openable'], 'states': []}]
+Query: get_edges_for_node({'node_id': 'microwave 1'})
+Info: [('microwave 1', 'bottle 1', 'CLOSE'), ('microwave 1', 'house plant 4', 'CLOSE'), ('microwave 1', 'pan 1', 'CLOSE'), ('microwave 1', 'television 1', 'CLOSE'), ('microwave 1', 'vase 2', 'CLOSE'), ('microwave 1', 'countertop 1', 'ON'), ('microwave 1', 'egg 3', 'CLOSE'), ('microwave 1', 'egg 1', 'CLOSE'), ('microwave 1', 'egg 2', 'CLOSE'), ('microwave 1', 'knife 1', 'CLOSE'), ('microwave 1', 'pencil 1', 'CLOSE'), ('microwave 1', 'soap bottle 1', 'CLOSE'), ('microwave 1', 'spoon 1', 'CLOSE'), ('microwave 1', 'user 1', 'CLOSE'), ('microwave 1', 'kitchen 1', 'INSIDE'), ('bottle 1', 'microwave 1', 'CLOSE'), ('house plant 4', 'microwave 1', 'CLOSE'), ('pan 1', 'microwave 1', 'CLOSE'), ('television 1', 'microwave 1', 'CLOSE'), ('vase 2', 'microwave 1', 'CLOSE'), ('egg 3', 'microwave 1', 'CLOSE'), ('egg 1', 'microwave 1', 'CLOSE'), ('egg 2', 'microwave 1', 'CLOSE'), ('knife 1', 'microwave 1', 'CLOSE'), ('pencil 1', 'microwave 1', 'CLOSE'), ('soap bottle 1', 'microwave 1', 'CLOSE'), ('spoon 1', 'microwave 1', 'CLOSE'), ('user 1', 'microwave 1', 'CLOSE')]
+Think: Microwave 1 is on countertop 1.
+OK.
+Act: go to microwave 1
+You arrive at the microwave (1). The microwave (1) is closed. You see bottle (1), cell phone (3), house plant (4), knife (1), microwave (1), pan (1), pencil (1), soap bottle (1), spoon (1), television (1), vase (2). You hold egg (3).
+Think: Since microwave 1 is closed, I need to open it to put down egg 3.
+OK.
+Act: open microwave 1
+You open microwave (1). You see bottle (1), cell phone (3), house plant (4), knife (1), microwave (1), pan (1), pencil (1), soap bottle (1), spoon (1), television (1), vase (2). You hold egg (3).
+Act: put down egg 3
+You put egg (3) in microwave (1).
+Think: To cook egg 3, I need to briefly close microwave 1, turn it on, and then turn it off.
+OK.
+Act: close microwave 1
+You close microwave (1).
+Act: turn on microwave 1
+You turn on microwave (1).
+Act: turn off microwave 1
+You turn off microwave (1).
+Think: Now I need to open microwave 1 and pick up egg 3.
+OK.
+Act: open microwave 1
+You open microwave (1). You see bottle (1), cell phone (3), egg (3), house plant (4), knife (1), microwave (1), pan (1), pencil (1), soap bottle (1), spoon (1), television (1), vase (2).
+Act: pick up egg 3
+You pick up egg (3). You hold egg (3).
+Think: Now, I need to find countertop and put down egg 3.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see book (4), bottle (1), bowl (1), cell phone (3), countertop (1), house plant (4), knife (1), microwave (1), painting (1), pan (1), pencil (1), pot (1), soap bottle (1), spoon (1), television (1), vase (2). You hold egg (3).
+Act: put down egg 3
+You put egg (3) on countertop (1).
+Think: Now I complete task.
+OK.
+Act: done

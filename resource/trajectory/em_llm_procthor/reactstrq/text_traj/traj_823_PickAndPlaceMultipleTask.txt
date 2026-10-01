@@ -1,0 +1,65 @@
+Your task is to: Put a book and a cell phone on the coffee table.
+You are in the house, and there are 10 rooms: bathroom (1, 2, 3), bedroom (1, 2, 3), kitchen (1), living room (1, 2, 3). You are in the middle of a bathroom (1). Looking quickly around the room, you see garbage can (2), plunger (1), sink (1), sink basin (1), toilet (1).
+Think: To solve the task, I need to find and pick up book, find and pick up cell phone, find coffee table and put down book and cell phone.
+OK.
+Think: First, I need to find and pick up book. The book is more likely to appear in bedroom 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'bedroom 1'})
+Info: armchair 1, bed 1, chair (1, 2, 3, 4), dining table 1, drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser 1, garbage can 1, safe 1
+Think: In bedroom 1, the book is likely to appear in/on bed 1, dining table 1, drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser 1. I can check each place one by one until I find book.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see armchair (1), baseball bat (1), bed (1), chair (1, 2, 3, 4), dining table (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), floor lamp (1), garbage can (1), painting (1, 2), safe (1), television (1).
+Act: go to bed 1
+You arrive at the bed (1). You see alarm clock (1), baseball bat (1), bed (1), book (1), pillow (1).
+Act: go to book 1
+You arrive at the book (1). The book (1) is closed. You see alarm clock (1), baseball bat (1), bed (1), book (1), pillow (1).
+Think: I find book 1. Now, I need to pick it up.
+OK.
+Act: pick up book 1
+You pick up book (1). You hold book (1).
+Think: Now, I need to find and pick up cell phone.
+OK.
+Query: find_objects({'label': 'cell phone'})
+Info: [{'name_id_nl': 'cell phone 1', 'node_type': 'object', 'properties': ['toggleable', 'breakable', 'pickupable'], 'states': []}]
+Query: get_edges_for_node({'node_id': 'cell phone 1'})
+Info: [('cell phone 1', 'dining table 1', 'ON'), ('cell phone 1', 'bowl 1', 'CLOSE'), ('cell phone 1', 'chair 2', 'CLOSE'), ('cell phone 1', 'chair 1', 'CLOSE'), ('cell phone 1', 'chair 3', 'CLOSE'), ('cell phone 1', 'chair 4', 'CLOSE'), ('cell phone 1', 'credit card 1', 'CLOSE'), ('cell phone 1', 'house plant 1', 'CLOSE'), ('cell phone 1', 'mug 1', 'CLOSE'), ('cell phone 1', 'bedroom 1', 'INSIDE'), ('bowl 1', 'cell phone 1', 'CLOSE'), ('chair 2', 'cell phone 1', 'CLOSE'), ('chair 1', 'cell phone 1', 'CLOSE'), ('chair 3', 'cell phone 1', 'CLOSE'), ('chair 4', 'cell phone 1', 'CLOSE'), ('credit card 1', 'cell phone 1', 'CLOSE'), ('house plant 1', 'cell phone 1', 'CLOSE'), ('mug 1', 'cell phone 1', 'CLOSE')]
+Think: Cell phone 1 is on dining table 1.
+OK.
+Act: go to dining table 1
+You arrive at the dining table (1). You see bowl (1), cell phone (1), chair (1, 2, 4), credit card (1), dining table (1), house plant (1), mug (1). You hold book (1).
+Act: go to cell phone 1
+You arrive at the cell phone (1). You see alarm clock (1), bowl (1), cell phone (1), chair (1, 3, 4), credit card (1), dining table (1), house plant (1), mug (1). You hold book (1).
+Think: I find cell phone 1. Now, I need to pick it up.
+OK.
+Act: pick up cell phone 1
+Pick up action failed: Robot is currently holding book.
+Think: I need to put down book 1 first.
+OK.
+Act: put down book 1
+You put book (1) on dining table (1).
+Act: pick up cell phone 1
+You pick up cell phone (1). You hold cell phone (1).
+Think: Now, I need to find coffee table.
+OK.
+Query: find_objects({'label': 'coffee table'})
+Info: [{'name_id_nl': 'coffee table 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 3'}]
+Think: Coffee table 1 is in living room 3.
+OK.
+Act: go to living room 3
+You move to the living room (3). Looking quickly around the room, you see TV stand (3), coffee table (1), dining table (5), floor lamp (5), shelf (3), sofa (3). You hold cell phone (1).
+Act: go to coffee table 1
+You arrive at the coffee table (1). You see bowl (3), box (2), candle (1, 2), coffee table (1), credit card (4), dining table (5), newspaper (3), pencil (4), plate (2), remote control (4), statue (4), vase (3). You hold cell phone (1).
+Act: put down cell phone 1
+You put cell phone (1) on coffee table (1).
+Act: go to book 5
+You arrive at the book (5). The book (5) is closed. You see book (5), laptop (3), sofa (3).
+Act: pick up book 5
+You pick up book (5). You hold book (5).
+Act: go to coffee table 1
+You arrive at the coffee table (1). You see bowl (3), box (2), candle (1, 2), cell phone (1), coffee table (1), credit card (4), dining table (5), newspaper (3), pencil (4), plate (2), remote control (4), statue (4), vase (3). You hold book (5).
+Act: put down book 5
+You put book (5) on coffee table (1).
+Think: Now I complete task.
+OK.
+Act: done

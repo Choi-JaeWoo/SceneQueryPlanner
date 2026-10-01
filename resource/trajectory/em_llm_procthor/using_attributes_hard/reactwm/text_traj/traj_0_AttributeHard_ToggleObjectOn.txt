@@ -1,0 +1,31 @@
+Your task is to: Move the toggled item on the TV stand in the living room to the bed.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a kitchen (1). Looking quickly around the room, you see chair (1, 2), countertop (1), dining table (1), fridge (1), garbage bag (1), painting (1, 2), stool (1), television (2).
+Think: To solve the task, I need to find the TV stand in the living room, find the toggled item and pick it up, find the bed and put down the toggled item.
+OK.
+Think: First, I need to find TV stand in the living room.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (2), house plant (1), painting (3, 4), shelf (2), sofa (1).
+Act: go to TV stand 2
+You arrive at the TV stand (2). You see TV stand (2), candle (1), house plant (1), painting (3), pencil (1), remote control (4), shelf (2), television (3), watch (1).
+Think: Now, I need to find toggled item on TV stand 2. The toggled item on TV stand 2 is candle 1. Now, I need to pick it up.
+OK.
+Act: go to candle 1
+You arrive at the candle (1). You see TV stand (2), candle (1), house plant (1), painting (3), pencil (1), remote control (4), shelf (2), television (3), watch (1).
+Act: pick up candle 1
+You pick up candle (1). You hold candle (1).
+Think: I pick up candle 1. Now, I need to find the bed.
+OK.
+Query: recall location of bed
+You saw bed 1 in bedroom 1.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see TV stand (1), baseball bat (1), bed (1), drawer (1, 2, 3, 4, 5, 6), dresser (1), shelf (1), side table (1). You hold candle (1).
+Act: go to bed 1
+You arrive at the bed (1). You see CD (2), alarm clock (1), baseball bat (1), bed (1), box (1), pillow (1), remote control (2), side table (1), tissue box (2). You hold candle (1).
+Think: I arrive at bed 1. Now, I need to put down candle 1.
+OK.
+Act: put down candle 1
+You put candle (1) on bed (1).
+Think: Now I complete task.
+OK.
+Act: done

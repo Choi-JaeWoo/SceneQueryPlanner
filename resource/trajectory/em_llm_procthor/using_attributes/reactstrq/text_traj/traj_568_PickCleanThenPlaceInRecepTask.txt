@@ -1,0 +1,79 @@
+Your task is to: Clean the item that is close to the ladle, made of metal and not breakable, and place it in the cabinet.
+You are in the house, and there are 6 rooms: bathroom (1, 2), bedroom (1, 2), kitchen (1), living room (1). You are in the middle of a kitchen (1). Looking quickly around the room, you see cabinet (1, 2), chair (1), countertop (1), fridge (1), shelf (1, 2, 3, 4, 5, 6), shelving unit (1, 2).
+Think: To solve the task, I need to find and pick up the item that is close to ladle, made of metal and not breakable, find sink basin and put it down, turn on faucet to wash the item made of metal and not breakable, pick it up and put it down in cabinet.
+OK.
+Think: First, I need to find ladle and find the item that is close to ladle and made of metal and not breakable.
+OK.
+Query: find_objects({'label': 'ladle'})
+Info: [{'name_id_nl': 'ladle 1', 'node_type': 'object', 'properties': ['pickupable'], 'states': []}]
+Query: get_edges_for_node({'node_id': 'ladle 1'})
+Info: [('ladle 1', 'kitchen 1', 'INSIDE'), ('ladle 1', 'countertop 1', 'ON'), ('ladle 1', 'apple 1', 'CLOSE'), ('ladle 1', 'book 2', 'CLOSE'), ('ladle 1', 'cabinet 1', 'CLOSE'), ('ladle 1', 'cell phone 3', 'CLOSE'), ('ladle 1', 'credit card 1', 'CLOSE'), ('ladle 1', 'egg 2', 'CLOSE'), ('ladle 1', 'egg 1', 'CLOSE'), ('ladle 1', 'fridge 1', 'CLOSE'), ('ladle 1', 'kettle 1', 'CLOSE'), ('ladle 1', 'lettuce 1', 'CLOSE'), ('ladle 1', 'pepper shaker 1', 'CLOSE'), ('ladle 1', 'shelf 1', 'CLOSE'), ('ladle 1', 'shelf 3', 'CLOSE'), ('ladle 1', 'shelf 2', 'CLOSE'), ('ladle 1', 'shelving unit 1', 'CLOSE'), ('ladle 1', 'soap bottle 1', 'CLOSE'), ('ladle 1', 'spatula 1', 'CLOSE'), ('ladle 1', 'spoon 1', 'CLOSE'), ('ladle 1', 'spray bottle 1', 'CLOSE'), ('ladle 1', 'statue 3', 'CLOSE'), ('ladle 1', 'toaster 1', 'CLOSE'), ('ladle 1', 'tomato 1', 'CLOSE'), ('ladle 1', 'user 1', 'CLOSE'), ('apple 1', 'ladle 1', 'CLOSE'), ('book 2', 'ladle 1', 'CLOSE'), ('cabinet 1', 'ladle 1', 'CLOSE'), ('cell phone 3', 'ladle 1', 'CLOSE'), ('credit card 1', 'ladle 1', 'CLOSE'), ('egg 2', 'ladle 1', 'CLOSE'), ('egg 1', 'ladle 1', 'CLOSE'), ('fridge 1', 'ladle 1', 'CLOSE'), ('kettle 1', 'ladle 1', 'CLOSE'), ('lettuce 1', 'ladle 1', 'CLOSE'), ('pepper shaker 1', 'ladle 1', 'CLOSE'), ('shelf 1', 'ladle 1', 'CLOSE'), ('shelf 3', 'ladle 1', 'CLOSE'), ('shelf 2', 'ladle 1', 'CLOSE'), ('shelving unit 1', 'ladle 1', 'CLOSE'), ('soap bottle 1', 'ladle 1', 'CLOSE'), ('spatula 1', 'ladle 1', 'CLOSE'), ('spoon 1', 'ladle 1', 'CLOSE'), ('spray bottle 1', 'ladle 1', 'CLOSE'), ('statue 3', 'ladle 1', 'CLOSE'), ('toaster 1', 'ladle 1', 'CLOSE'), ('tomato 1', 'ladle 1', 'CLOSE'), ('user 1', 'ladle 1', 'CLOSE')]
+Think: Ladle 1 is on countertop 1 in kitchen 1.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see book (2), cabinet (1), cell phone (3), countertop (1), credit card (1), fridge (1), kettle (1, 2), ladle (1), pepper shaker (1), shelf (1, 2, 3), shelving unit (1), soap bottle (1), spatula (1), spoon (1), statue (3), toaster (1).
+Act: go to ladle 1
+You arrive at the ladle (1). You see book (2), cabinet (1), cell phone (3), countertop (1), credit card (1), fridge (1), ladle (1), pepper shaker (1), shelf (1, 2, 3), shelving unit (1), soap bottle (1), spatula (1), spoon (1), statue (3), toaster (1).
+Think: Now, I need to fidn and pick up the item that is close to the ladle, made of metal and not breakable. First, I need to find all objects that are close to ladle 1.
+OK.
+Query: get_edges_for_node({'node_id': 'ladle 1', 'relation': 'CLOSE'})
+Info: [('ladle 1', 'apple 1', 'CLOSE'), ('ladle 1', 'egg 2', 'CLOSE'), ('ladle 1', 'egg 1', 'CLOSE'), ('ladle 1', 'lettuce 1', 'CLOSE'), ('ladle 1', 'spray bottle 1', 'CLOSE'), ('ladle 1', 'tomato 1', 'CLOSE'), ('ladle 1', 'book 2', 'CLOSE'), ('ladle 1', 'cabinet 1', 'CLOSE'), ('ladle 1', 'cell phone 3', 'CLOSE'), ('ladle 1', 'credit card 1', 'CLOSE'), ('ladle 1', 'fridge 1', 'CLOSE'), ('ladle 1', 'kettle 1', 'CLOSE'), ('ladle 1', 'pepper shaker 1', 'CLOSE'), ('ladle 1', 'shelf 1', 'CLOSE'), ('ladle 1', 'shelf 3', 'CLOSE'), ('ladle 1', 'shelf 2', 'CLOSE'), ('ladle 1', 'shelving unit 1', 'CLOSE'), ('ladle 1', 'soap bottle 1', 'CLOSE'), ('ladle 1', 'spatula 1', 'CLOSE'), ('ladle 1', 'spoon 1', 'CLOSE'), ('ladle 1', 'statue 3', 'CLOSE'), ('ladle 1', 'toaster 1', 'CLOSE'), ('ladle 1', 'user 1', 'CLOSE'), ('apple 1', 'ladle 1', 'CLOSE'), ('egg 2', 'ladle 1', 'CLOSE'), ('egg 1', 'ladle 1', 'CLOSE'), ('lettuce 1', 'ladle 1', 'CLOSE'), ('spray bottle 1', 'ladle 1', 'CLOSE'), ('tomato 1', 'ladle 1', 'CLOSE'), ('book 2', 'ladle 1', 'CLOSE'), ('cabinet 1', 'ladle 1', 'CLOSE'), ('cell phone 3', 'ladle 1', 'CLOSE'), ('credit card 1', 'ladle 1', 'CLOSE'), ('fridge 1', 'ladle 1', 'CLOSE'), ('kettle 1', 'ladle 1', 'CLOSE'), ('pepper shaker 1', 'ladle 1', 'CLOSE'), ('shelf 1', 'ladle 1', 'CLOSE'), ('shelf 3', 'ladle 1', 'CLOSE'), ('shelf 2', 'ladle 1', 'CLOSE'), ('shelving unit 1', 'ladle 1', 'CLOSE'), ('soap bottle 1', 'ladle 1', 'CLOSE'), ('spatula 1', 'ladle 1', 'CLOSE'), ('spoon 1', 'ladle 1', 'CLOSE'), ('statue 3', 'ladle 1', 'CLOSE'), ('toaster 1', 'ladle 1', 'CLOSE'), ('user 1', 'ladle 1', 'CLOSE')]
+Think: Now, I need to check each object to find the item that is close to the ladle, made of metal and not breakable.
+OK.
+Query: read_node({'node_id': 'spray bottle 1'})
+Info: {'name_id_nl': 'spray bottle 1', 'salientMaterials': ['Plastic'], 'properties': ['pickupable'], 'states': []}
+Query: read_node({'node_id': 'kettle 1'})
+Info: {'name_id_nl': 'kettle 1', 'salientMaterials': ['Metal', 'Plastic'], 'properties': ['canFillWithLiquid', 'openable', 'pickupable'], 'states': []}
+Query: read_node({'node_id': 'pepper shaker 1'})
+Info: {'name_id_nl': 'pepper shaker 1', 'salientMaterials': ['Metal', 'Glass'], 'properties': ['pickupable'], 'states': []}
+Query: read_node({'node_id': 'spoon 1'})
+Info: {'name_id_nl': 'spoon 1', 'salientMaterials': ['Metal'], 'properties': ['pickupable'], 'states': []}
+Think: The item that is close to ladle 1, made of metal and not breakable is spoon 1. Now, I need to pick it up.
+OK.
+Act: go to spoon 1
+You arrive at the spoon (1). You see book (2), cabinet (1), cell phone (3), countertop (1), credit card (1), fridge (1), ladle (1), pepper shaker (1), shelf (1, 2, 3), shelving unit (1), soap bottle (1), spatula (1), spoon (1), statue (3), toaster (1).
+Act: pick up spoon 1
+You pick up spoon (1). You hold spoon (1).
+Think: Now, I need to find sink basin.
+OK.
+Query: find_objects({'label': 'sink basin'})
+Info: [{'name_id_nl': 'sink basin 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'bathroom 1'}, {'name_id_nl': 'sink basin 2', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'bathroom 2'}]
+Think: Sink basin 1 is in bathroom 1.
+OK.
+Act: go to bathroom 1
+You move to the bathroom (1). Looking quickly around the room, you see drawer (10, 11, 12, 13, 14, 15), dresser (2), painting (2, 3), sink (1), sink basin (1), toilet (1). You hold spoon (1).
+Act: go to sink basin 1
+You arrive at the sink basin (1). You see faucet (1), painting (2), sink (1), sink basin (1). You hold spoon (1).
+Think: Now, I need to put down spoon 1.
+OK.
+Act: put down spoon 1
+You put spoon (1) in sink basin (1).
+Think: Now, I need to turn on faucet 1 briefly and turn off to wash spoon 1.
+OK.
+Act: turn on faucet 1
+You turn on faucet (1).
+Act: turn off faucet 1
+You turn off faucet (1).
+Think: Now, I need to pick up spoon 1.
+OK.
+Act: pick up spoon 1
+You pick up spoon (1). You hold spoon (1).
+Think: Now, I need to find cabinet and put down spoon 1.
+OK.
+Query: find_objects({'label': 'cabinet'})
+Info: [{'name_id_nl': 'cabinet 1', 'node_type': 'asset', 'properties': ['openable'], 'states': [], 'room': 'kitchen 1'}, {'name_id_nl': 'cabinet 2', 'node_type': 'asset', 'properties': ['openable'], 'states': [], 'room': 'kitchen 1'}]
+Think: Cabinet 1 is in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see cabinet (1, 2), chair (1), countertop (1), fridge (1), shelf (1, 2, 3, 4, 5, 6), shelving unit (1, 2). You hold spoon (1).
+Act: go to cabinet 1
+You arrive at the cabinet (1). The cabinet (1) is closed. You see book (2), cabinet (1), cell phone (3), countertop (1), credit card (1), fridge (1), ladle (1), pepper shaker (1), shelf (1, 2, 3), shelving unit (1), soap bottle (1), spatula (1), statue (3), toaster (1). You hold spoon (1).
+Think: Since cabinet 1 is closed, I need to open it to put down spoon 1.
+OK.
+Act: open cabinet 1
+You open cabinet (1). You see book (2), cabinet (1), cell phone (3), countertop (1), credit card (1), fridge (1), ladle (1), pepper shaker (1), shelf (1, 2, 3), shelving unit (1), soap bottle (1), spatula (1), spray bottle (1), statue (3), toaster (1). You hold spoon (1).
+Act: put down spoon 1
+You put spoon (1) in cabinet (1).
+Think: Now I complete the task.
+OK.
+Act: done

@@ -1,17 +1,19 @@
 Your task is to: Collect a key chain and a cell phone and place them in the box.
 You are in the house, and there are 1 rooms: living room (1). You are in the middle of a living room (1). Looking quickly around the room, you see box (1), dining table (1), house plant (1), painting (1, 2), television (1).
-Think: To solve the task, I need to find and pick up key chain and cell phone, put them in box.
+Think: To solve the task, I need to find and pick up key chain, find and pick up cell phone, put them in box.
 OK.
-Think: First, I need to find and pick up key chain.
+Think: First, I need to find and pick up key chain. The key chain is more likely to appear in living room 1.
 OK.
-Query: find_objects({'label': 'key chain'})
-Info: [{'name_id_nl': 'key chain 1', 'node_type': 'object', 'properties': ['pickupable'], 'states': []}]
-Query: get_edges_for_node({'node_id': 'key chain 1'})
-Info: [('key chain 1', 'living room 1', 'INSIDE'), ('key chain 1', 'dining table 1', 'ON'), ('key chain 1', 'bowl 1', 'CLOSE'), ('key chain 1', 'box 2', 'CLOSE'), ('key chain 1', 'box 1', 'CLOSE'), ('key chain 1', 'candle 1', 'CLOSE'), ('key chain 1', 'cell phone 1', 'CLOSE'), ('key chain 1', 'house plant 1', 'CLOSE'), ('key chain 1', 'newspaper 1', 'CLOSE'), ('key chain 1', 'painting 2', 'CLOSE'), ('key chain 1', 'plate 1', 'CLOSE'), ('key chain 1', 'television 1', 'CLOSE'), ('key chain 1', 'user 1', 'CLOSE'), ('bowl 1', 'key chain 1', 'CLOSE'), ('box 2', 'key chain 1', 'CLOSE'), ('box 1', 'key chain 1', 'CLOSE'), ('candle 1', 'key chain 1', 'CLOSE'), ('cell phone 1', 'key chain 1', 'CLOSE'), ('house plant 1', 'key chain 1', 'CLOSE'), ('newspaper 1', 'key chain 1', 'CLOSE'), ('painting 2', 'key chain 1', 'CLOSE'), ('plate 1', 'key chain 1', 'CLOSE'), ('television 1', 'key chain 1', 'CLOSE'), ('user 1', 'key chain 1', 'CLOSE')]
-Think: Key chain 1 is on dining table 1.
+Query: get_child_node_names({'parent_node_id': 'living room 1'})
+Info: box (1, 2), dining table 1
+Think: In living room 1, the key chain is likely to appear in/on box (1, 2), dining table 1. I can check each place one by one until I find key chain.
 OK.
-Act: go to dining table 1
-You arrive at the dining table (1). You see bowl (1), box (1, 2), candle (1), cell phone (1), dining table (1), house plant (1), key chain (1), laptop (1), newspaper (1), painting (2), plate (1), television (1).
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see box (1), dining table (1), house plant (1), painting (1, 2), television (1).
+Act: go to box 1
+You arrive at the box (1). You see box (1), candle (1), cell phone (1), house plant (1), key chain (1), newspaper (1), painting (2), plate (1), television (1).
+Think: I find key chain 1. Now, I need to pick it up.
+OK.
 Act: go to key chain 1
 You arrive at the key chain (1). You see bowl (1), box (1, 2), candle (1), cell phone (1), dining table (1), house plant (1), key chain (1), laptop (1), newspaper (1), painting (2), plate (1), television (1).
 Act: pick up key chain 1
@@ -20,42 +22,30 @@ Think: Now, I need to find and pick up cell phone.
 OK.
 Query: find_objects({'label': 'cell phone'})
 Info: [{'name_id_nl': 'cell phone 1', 'node_type': 'object', 'properties': ['toggleable', 'breakable', 'pickupable'], 'states': []}]
-Query: get_edges_for_node({'node_id': 'cell phone 1'})
-Info: [('cell phone 1', 'painting 1', 'CLOSE'), ('cell phone 1', 'dining table 1', 'ON'), ('cell phone 1', 'bowl 1', 'CLOSE'), ('cell phone 1', 'box 2', 'CLOSE'), ('cell phone 1', 'candle 1', 'CLOSE'), ('cell phone 1', 'house plant 1', 'CLOSE'), ('cell phone 1', 'key chain 1', 'CLOSE'), ('cell phone 1', 'laptop 1', 'CLOSE'), ('cell phone 1', 'newspaper 1', 'CLOSE'), ('cell phone 1', 'plate 1', 'CLOSE'), ('cell phone 1', 'television 1', 'CLOSE'), ('cell phone 1', 'user 1', 'CLOSE'), ('cell phone 1', 'living room 1', 'INSIDE'), ('painting 1', 'cell phone 1', 'CLOSE'), ('bowl 1', 'cell phone 1', 'CLOSE'), ('box 2', 'cell phone 1', 'CLOSE'), ('candle 1', 'cell phone 1', 'CLOSE'), ('house plant 1', 'cell phone 1', 'CLOSE'), ('key chain 1', 'cell phone 1', 'CLOSE'), ('laptop 1', 'cell phone 1', 'CLOSE'), ('newspaper 1', 'cell phone 1', 'CLOSE'), ('plate 1', 'cell phone 1', 'CLOSE'), ('television 1', 'cell phone 1', 'CLOSE'), ('user 1', 'cell phone 1', 'CLOSE')]
-Think: Cell phone 1 is on dining table 1.
+Think: cell phone 1 is in living room 1.
 OK.
 Act: go to cell phone 1
 You arrive at the cell phone (1). You see bowl (1), box (1, 2), candle (1), cell phone (1), dining table (1), house plant (1), laptop (1), newspaper (1), painting (2), plate (1), television (1). You hold key chain (1).
 Act: pick up cell phone 1
-Pick up action failed: Robot is currently holding keychain
-Think: I need to put down key chain 1.
-OK.
+Pick up action failed: Robot is currently holding keychain.
 Act: put down key chain 1
-You put key chain (1) in dining table (1).
+You put key chain (1) in box (1).
 Act: pick up cell phone 1
 You pick up cell phone (1). You hold cell phone (1).
 Think: Now, I need to find box and put down key chain 1 and cell phone 1.
 OK.
 Act: go to box 1
 You arrive at the box (1). You see box (1), candle (1), house plant (1), key chain (1), newspaper (1), painting (2), plate (1), television (1). You hold cell phone (1).
-Act: open box 1
-(controller) Open action failed: Box|2|2 is not an Openable object
-Think: I need to find another box. I see box 2.
-OK.
-Act: go to box 2
-You arrive at the box (2). The box (2) is closed. You see bowl (1), box (1, 2), candle (1), dining table (1), house plant (1), key chain (1), laptop (1), newspaper (1), painting (2), plate (1), television (1). You hold cell phone (1).
-Act: open box 2
-You open box (2). You see bowl (1), box (1, 2), candle (1), dining table (1), house plant (1), key chain (1), laptop (1), newspaper (1), painting (2), plate (1), television (1). You hold cell phone (1).
 Act: put down cell phone 1
-You put cell phone (1) in box (2).
+You put cell phone (1) in box (1).
 Act: go to key chain 1
-You arrive at the key chain (1). You see bowl (1), box (1, 2), candle (1), cell phone (1), dining table (1), house plant (1), key chain (1), laptop (1), newspaper (1), painting (2), plate (1), television (1).
+You arrive at the key chain (1). You see bowl (1), box (1), candle (1), cell phone (1), dining table (1), house plant (1), key chain (1), newspaper (1), painting (2), plate (1), television (1).
 Act: pick up key chain 1
 You pick up key chain (1). You hold key chain (1).
-Act: go to box 2
-You arrive at the box (2). The box (2) is open. You see bowl (1), box (1, 2), candle (1), cell phone (1), dining table (1), house plant (1), laptop (1), newspaper (1), painting (2), plate (1), television (1). You hold key chain (1).
+Act: go to box 1
+You arrive at the box (1). You see box (1), candle (1), cell phone (1), house plant (1), newspaper (1), painting (2), plate (1), television (1). You hold key chain (1).
 Act: put down key chain 1
-You put key chain (1) in box (2).
-Think: Now I complete the task.
+You put key chain (1) in box (1).
+Think: Now I complete task.
 OK.
 Act: done

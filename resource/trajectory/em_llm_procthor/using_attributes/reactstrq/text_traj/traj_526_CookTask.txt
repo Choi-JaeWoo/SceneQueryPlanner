@@ -1,0 +1,77 @@
+Your task is to: Use the microwave to cook a breakable food, then put it on the countertop.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a bedroom (1). Looking quickly around the room, you see armchair (1), bed (1), chair (1), dining table (1), drawer (1, 2, 3, 4, 5, 6), dresser (1), floor lamp (1), television (1).
+Think: To solve the task, I need to find and pick up a breakable food from fridge, put it in microwave and turn it on, turn off microwave and open microwave, pick up and place cooked food on countertop.
+OK.
+Think: First, I need to find fridge and find a breakable food from fridge.
+OK.
+Query: find_objects({'label': 'fridge'})
+Info: [{'name_id_nl': 'fridge 1', 'node_type': 'asset', 'properties': ['isColdSource', 'openable'], 'states': [], 'room': 'kitchen 1'}]
+Think: Fridge 1 is in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see cabinet (1), chair (2), countertop (1), dining table (2), fridge (1), garbage can (2), painting (2, 3, 4), shelf (1, 2, 3), shelving unit (1), stool (1), television (2).
+Act: go to fridge 1
+You arrive at the fridge (1). The fridge (1) is closed. You see cabinet (1), fridge (1), painting (2), shelf (1, 2).
+Act: open fridge 1
+You open fridge (1). You see cabinet (1), egg (1), fridge (1), lettuce (1), painting (2), shelf (1, 2).
+Think: Now, I need to find and pick up a breakable food from the fridge. First, I need to check what is inside fridge 1.
+OK.
+Query: get_edges_for_node({'node_id': 'fridge 1', 'relation': 'INSIDE'})
+Info: [('fridge 1', 'kitchen 1', 'INSIDE'), ('lettuce 1', 'fridge 1', 'INSIDE'), ('egg 1', 'fridge 1', 'INSIDE')]
+Think: Now, I need to check each object to find a breakable food.
+OK.
+Query: read_node({'node_id': 'lettuce 1'})
+Info: {'name_id_nl': 'lettuce 1', 'salientMaterials': ['Food'], 'properties': ['sliceable', 'pickupable'], 'states': []}
+Query: read_node({'node_id': 'egg 1'})
+Info: {'name_id_nl': 'egg 1', 'salientMaterials': ['Food'], 'properties': ['breakable', 'sliceable', 'pickupable'], 'states': []}
+Think: In fridge 1, the breakable food is egg 1. Now, I need to pick it up.
+OK.
+Act: go to egg 1
+You arrive at the egg (1). You see book (3), cabinet (1), egg (1), fridge (1), lettuce (1), painting (2), shelf (1, 2, 3), shelving unit (1).
+Act: pick up egg 1
+You pick up egg (1). You hold egg (1).
+Think: Now, I need to find microwave.
+OK.
+Query: find_objects({'label': 'microwave'})
+Info: 
+Think: I have not seen microwave yet. Now I need to check where to search. First, I will search kitchen 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'kitchen 1'})
+Info: cabinet 1, chair 2, countertop 1, dining table 2, fridge 1, garbage can 2, shelf (1, 2, 3), stool 1
+Think: In kitchen 1, the microwave is likely to appear in/on cabinet 1, chair 2, countertop 1, dining table 2, fridge 1, garbage can 2, shelf (1, 2, 3), stool 1. I can check each place one by one until I find microwave.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see countertop (1), fork (2), microwave (1), pepper shaker (1), salt shaker (1), soap bottle (1), spatula (1), tomato (1), wine bottle (1). You hold egg (1).
+Think: I find microwave 1.
+OK.
+Act: go to microwave 1
+You arrive at the microwave (1). The microwave (1) is closed. You see countertop (1), fork (2), microwave (1), pepper shaker (1), salt shaker (1), soap bottle (1), spatula (1), tomato (1), wine bottle (1). You hold egg (1).
+Think: Now, I need to open microwave 1 and put down egg 1.
+OK.
+Act: open microwave 1
+You open microwave (1). You see countertop (1), fork (2), microwave (1), pepper shaker (1), salt shaker (1), soap bottle (1), spatula (1), tomato (1), wine bottle (1). You hold egg (1).
+Act: put down egg 1
+You put egg (1) in microwave (1).
+Think: Now, I need to close microwave 1, turn it on briefly, and then turn it off.
+OK.
+Act: close microwave 1
+You close microwave (1).
+Act: turn on microwave 1
+You turn on microwave (1).
+Act: turn off microwave 1
+You turn off microwave (1).
+Think: Now, I need to open microwave 1 and pick up egg 1.
+OK.
+Act: open microwave 1
+You open microwave (1). You see countertop (1), egg (1), fork (2), microwave (1), pepper shaker (1), salt shaker (1), soap bottle (1), spatula (1), tomato (1), wine bottle (1).
+Act: pick up egg 1
+You pick up egg (1). You hold egg (1).
+Think: Now, I need to find countertop and put down egg 1.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see countertop (1), fork (2), microwave (1), pepper shaker (1), salt shaker (1), soap bottle (1), spatula (1), tomato (1), wine bottle (1). You hold egg (1).
+Act: put down egg 1
+You put egg (1) on countertop (1).
+Think: Now I complete the task.
+OK.
+Act: done

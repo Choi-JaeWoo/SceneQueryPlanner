@@ -1,0 +1,2 @@
+Your task is to: Move the toggleable item from the dining table onto the armchair so I can use it.
+Max decision steps reached.

@@ -33,7 +33,7 @@ class SceneGraphInterface_One():
         # states: extract only states that are True
         states_keys = [
             'isToggled', 'isFilledWithLiquid', 'isCooked',
-            'isSliced', 'isOpen', 'isPickedUp', 'isBroken'
+            'isSliced', 'isOpen', 'isPickedUp', 'isBroken', 'isDirty'
         ]
         filtered_data['states'] = [
             state for state in states_keys if node_data.get(state, False) == True
@@ -121,7 +121,7 @@ class SceneGraphInterface_One():
         ]
         states_keys = [
             'isToggled', 'isFilledWithLiquid', 'isCooked',
-            'isSliced', 'isOpen', 'isPickedUp', 'isBroken'
+            'isSliced', 'isOpen', 'isPickedUp', 'isBroken', 'isDirty'
         ]
         # Parse input
         if isinstance(filt, str):

@@ -1,0 +1,8 @@
+Your task is to: Put the item made of glass from the countertop in the fridge first, then take it out and set it on the countertop.
+You are in the house, and there are 2 rooms: kitchen (1), living room (1). You are in the middle of a living room (1). Looking quickly around the room, you see TV stand (1), boots (1), dining table (1), painting (2, 3, 4), shelf (4, 5, 6, 7, 8, 9), sofa (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- (kitchen 1): [(cabinet 1), (countertop 1), (fridge 1), painting 1, (shelf 3), (shelf 2), (shelf 1), shelving unit 1, (stool 1)]
+- living room 1: [boots 1, (dining table 1), painting 4, painting 3, painting 2, (shelf 4), (shelf 6), (shelf 7), (shelf 8), (shelf 9), (shelf 5), (sofa 1), (TV stand 1)]
+You have not taken any actions yet.
+What is the best next action to complete the task as efficiently as possible?
+Think: First, I need to find countertop. I find countertop 1 in kitchen 1. Now, I need to move to kitchen 1.
+Act: go to kitchen 1

@@ -24,20 +24,20 @@ Think: Now, I need to find shelf.
 OK.
 Query: find_objects({'label': 'shelf'})
 Info: [{'name_id_nl': 'shelf 2', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}, {'name_id_nl': 'shelf 3', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}, {'name_id_nl': 'shelf 4', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}, {'name_id_nl': 'shelf 5', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}, {'name_id_nl': 'shelf 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}, {'name_id_nl': 'shelf 6', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}]
-Think: I find shelf 2.
+Think: I find shelf 2, shelf 3, shelf 4, shelf 5, shelf 1, shelf 6.
 OK.
 Act: go to shelf 2
 You arrive at the shelf (2). You see TV stand (1), book (1), bowl (1), cell phone (1), coffee table (1), credit card (1), house plant (1), key chain (1), pillow (1), plate (1), remote control (2, 3), shelf (1, 2, 3, 4, 5, 6), statue (2), television (1), vase (1). You hold candle (1).
 Act: put down candle 1
-Put action failed: There is no valid space to place the object in the target receptacle.
+Put action failed: There is no valid space to place candle (1) in shelf (2).
 Act: go to shelf 3
 You arrive at the shelf (3). You see TV stand (1), book (1), bowl (1), cell phone (1), coffee table (1), credit card (1), house plant (1), key chain (1), pillow (1), plate (1), remote control (2, 3), shelf (1, 2, 3, 4, 5, 6), statue (2), television (1), vase (1). You hold candle (1).
 Act: put down candle 1
-Put action failed: There is no valid space to place the object in the target receptacle.
+Put action failed: There is no valid space to place candle (1) in shelf (3).
 Act: go to shelf 4
 You arrive at the shelf (4). You see TV stand (1), book (1), house plant (1), painting (2), pillow (1), remote control (1), shelf (1, 2, 3, 4, 5, 6), sofa (1), statue (2), television (1). You hold candle (1).
 Act: put down candle 1
-You put candle (1) in shelf (4).
+You put candle (1) on shelf (4).
 Act: go to cell phone 1
 You arrive at the cell phone (1). You see book (1), bowl (1), cell phone (1), coffee table (1), credit card (1), dining table (1), key chain (1), pencil (1), plate (1), remote control (2, 3), shelf (1, 2, 3, 6), statue (2), television (1), vase (1).
 Act: pick up cell phone 1
@@ -45,7 +45,7 @@ You pick up cell phone (1). You hold cell phone (1).
 Act: go to shelf 4
 You arrive at the shelf (4). You see TV stand (1), book (1), candle (1), house plant (1), painting (2), pillow (1), remote control (1), shelf (1, 2, 3, 4, 5, 6), sofa (1), statue (2), television (1). You hold cell phone (1).
 Act: put down cell phone 1
-You put cell phone (1) in shelf (4).
+You put cell phone (1) on shelf (4).
 Act: go to credit card 1
 You arrive at the credit card (1). You see book (1), bowl (1), coffee table (1), credit card (1), dining table (1), key chain (1), pencil (1), plate (1), remote control (2, 3), shelf (1, 2, 3, 6), statue (2), television (1), vase (1).
 Act: pick up credit card 1
@@ -53,7 +53,7 @@ You pick up credit card (1). You hold credit card (1).
 Act: go to shelf 4
 You arrive at the shelf (4). You see TV stand (1), book (1), candle (1), cell phone (1), house plant (1), painting (2), pillow (1), remote control (1), shelf (1, 2, 3, 4, 5, 6), sofa (1), statue (2), television (1). You hold credit card (1).
 Act: put down credit card 1
-You put credit card (1) in shelf (4).
+You put credit card (1) on shelf (4).
 Act: go to key chain 1
 You arrive at the key chain (1). You see book (1), bowl (1), coffee table (1), key chain (1), plate (1), remote control (2, 3), shelf (1, 2, 3, 6), statue (2), television (1), vase (1).
 Act: pick up key chain 1
@@ -61,7 +61,7 @@ You pick up key chain (1). You hold key chain (1).
 Act: go to shelf 4
 You arrive at the shelf (4). You see TV stand (1), book (1), candle (1), cell phone (1), credit card (1), house plant (1), painting (2), pillow (1), remote control (1), shelf (1, 2, 3, 4, 5, 6), sofa (1), statue (2), television (1). You hold key chain (1).
 Act: put down key chain 1
-You put key chain (1) in shelf (4).
+You put key chain (1) on shelf (4).
 Think: Now I need to check what's left on coffee table 1.
 OK.
 Query: get_edges_for_node({'node_id': 'coffee table 1', 'relation': 'ON'})

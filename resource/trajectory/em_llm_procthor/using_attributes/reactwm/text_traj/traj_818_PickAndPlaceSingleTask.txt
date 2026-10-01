@@ -1,0 +1,39 @@
+Your task is to: Place the toggleable object that's near the watch onto the armchair so I can use it easily while sitting.
+You are in the house, and there are 1 rooms: living room (1). You are in the middle of a living room (1). Looking quickly around the room, you see TV stand (1), armchair (1, 2, 3), dining table (1), floor lamp (1, 2, 3), painting (1, 2), shelf (1, 2, 3, 4, 5, 6), sofa (1).
+Think: To solve the task, I need to find watch and find the toggleable object that's near the watch, the pick it up and put it on armchair.
+OK.
+Think: First, I need to find watch.
+OK.
+Query: recall location of watch
+You have not seen watch before.
+Think: I have not seen watch yet. The watch is more likely to appear in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), armchair (1, 2, 3), dining table (1), floor lamp (1, 2, 3), painting (1, 2), shelf (1, 2, 3, 4, 5, 6), sofa (1).
+Think: In living room 1, the watch is likely to appear in/on TV stand 1, armchair (1, 2, 3), dining table 1, shelf (1, 2, 3, 4, 5, 6), sofa 1. I can check each place one by one until I find watch.
+OK.
+Act: go to TV stand 1
+You arrive at the TV stand (1). You see TV stand (1), cell phone (1), floor lamp (2), shelf (1, 2, 3, 4, 5, 6), statue (1), television (1), vase (1), watch (1).
+Think: I find watch 1. Now, I need to find the toggleable object that's near watch 1.
+OK.
+Act: go to watch 1
+You arrive at the watch (1). You see TV stand (1), cell phone (1), floor lamp (2), shelf (1, 2, 3, 4, 5, 6), statue (1), television (1), vase (1), watch (1).
+Think: The toggleable object that's near watch 1 is cell phone 1. Now, I need to pick it up.
+OK.
+Act: go to cell phone 1
+You arrive at the cell phone (1). You see TV stand (1), cell phone (1), floor lamp (2), shelf (1, 2, 3, 4, 5, 6), statue (1), television (1), vase (1), watch (1).
+Act: pick up cell phone 1
+You pick up cell phone (1). You hold cell phone (1).
+Think: Now, I need to find armchair.
+OK.
+Query: recall location of armchair
+You saw armchair 3 in living room 1. You saw armchair 2 in living room 1. You saw armchair 1 in living room 1.
+Think: Armchair 1 is in living room 1.
+OK.
+Act: go to armchair 1
+You arrive at the armchair (1). You see armchair (1, 3), remote control (3). You hold cell phone (1).
+Act: put down cell phone 1
+You put cell phone (1) on armchair (1).
+Think: Now I complete the task.
+OK.
+Act: done

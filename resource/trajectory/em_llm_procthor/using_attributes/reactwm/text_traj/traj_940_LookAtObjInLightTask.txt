@@ -1,0 +1,151 @@
+Your task is to: Turn on the lamp made of metal while holding a book.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a kitchen (1). Looking quickly around the room, you see chair (3, 4), countertop (1), dining table (2), fridge (1), garbage can (2), painting (3, 4), stool (1, 2).
+Think: To solve the task, I need to find and pick up book, find and turn on the lamp made of metal.
+OK.
+Think: First, I need to find and pick up book.
+OK.
+Query: recall location of book
+You have not seen book before.
+Think: I have not seen book yet. The book is more likely to appear in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), dining table (3), floor lamp (2), garbage can (3), shelf (1, 2, 3, 4, 5, 6), sofa (1), stool (3).
+Think: In living room 1, the book is likely to appear in/on TV stand 1, dining table 3, shelf (1, 2, 3, 4, 5, 6), sofa 1, stool 3. I can check each place one by one until I find book.
+OK.
+Act: go to TV stand 1
+You arrive at the TV stand (1). You see TV stand (1), candle (2, 3), newspaper (1), remote control (2), shelf (1, 2, 3, 4, 5, 6), television (2).
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), dining table (3), floor lamp (2), garbage can (3), shelf (1, 2, 3, 4, 5, 6), sofa (1), stool (3).
+Act: go to dining table 3
+You arrive at the dining table (3). You see house plant (1).
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), dining table (3), floor lamp (2), garbage can (3), shelf (1, 2, 3, 4, 5, 6), sofa (1), stool (3).
+Act: go to shelf 1
+You arrive at the shelf (1). You see TV stand (1), candle (2, 3), newspaper (1), remote control (2), shelf (1, 2, 3, 4, 5, 6), television (2).
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), dining table (3), floor lamp (2), garbage can (3), shelf (1, 2, 3, 4, 5, 6), sofa (1), stool (3).
+Act: go to sofa 1
+You arrive at the sofa (1). You see pillow (3), sofa (1).
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), dining table (3), floor lamp (2), garbage can (3), shelf (1, 2, 3, 4, 5, 6), sofa (1), stool (3).
+Act: go to stool 3
+You arrive at the stool (3). You see floor lamp (2), garbage can (3), stool (3).
+Think: I have not seen book yet. The book is more likely to appear in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see armchair (1), bed (1, 2), chair (1, 2), dining table (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), floor lamp (1), house plant (1), television (1).
+Think: In bedroom 1, the book is likely to appear in/on armchair 1, bed (1, 2), dining table 1, drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser 1, floor lamp 1. I can check each place one by one until I find book.
+OK.
+Act: go to armchair 1
+You arrive at the armchair (1). You see armchair (1).
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see armchair (1), bed (1, 2), chair (1, 2), dining table (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), floor lamp (1), house plant (1), television (1).
+Act: go to bed 1
+You arrive at the bed (1). You see basket ball (1), bed (1), bowl (1), chair (1, 2), dining table (1), laptop (1), pillow (1, 2), television (1), watch (1).
+Act: go to bed 2
+You arrive at the bed (2). You see bed (2), book (1), cell phone (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), mug (1), remote control (1), teddy bear (1), tissue box (1), vase (1).
+Think: I find book 1. Now, I need to pick it up.
+OK.
+Act: go to book 1
+You arrive at the book (1). The book (1) is closed. You see bed (2), book (1), cell phone (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), mug (1), remote control (1), tissue box (1), vase (1).
+Act: pick up book 1
+You pick up book (1). You hold book (1).
+Think: Now, I need to find and turn on the lamp made of metal.
+OK.
+Query: recall location of lamp
+You have not seen lamp before.
+Think: I have not seen lamp yet. The lamp is more likely to appear in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), dining table (3), floor lamp (2), garbage can (3), shelf (1, 2, 3, 4, 5, 6), sofa (1), stool (3). You hold book (1).
+Think: In living room 1, the lamp is likely to appear in/on TV stand 1, dining table 3, shelf (1, 2, 3, 4, 5, 6), sofa 1, stool 3. I can check each place one by one until I find lamp.
+OK.
+Act: go to TV stand 1
+You arrive at the TV stand (1). You see TV stand (1), candle (2, 3), newspaper (1), remote control (2), shelf (1, 2, 3, 4, 5, 6), television (2). You hold book (1).
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), dining table (3), floor lamp (2), garbage can (3), shelf (1, 2, 3, 4, 5, 6), sofa (1), stool (3). You hold book (1).
+Act: go to dining table 3
+You arrive at the dining table (3). You see house plant (1). You hold book (1).
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), dining table (3), floor lamp (2), garbage can (3), shelf (1, 2, 3, 4, 5, 6), sofa (1), stool (3). You hold book (1).
+Act: go to shelf 1
+You arrive at the shelf (1). You see TV stand (1), candle (2, 3), newspaper (1), remote control (2), shelf (1, 2, 3, 4, 5, 6), television (2). You hold book (1).
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), dining table (3), floor lamp (2), garbage can (3), shelf (1, 2, 3, 4, 5, 6), sofa (1), stool (3). You hold book (1).
+Act: go to sofa 1
+You arrive at the sofa (1). You see pillow (3), sofa (1). You hold book (1).
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), dining table (3), floor lamp (2), garbage can (3), shelf (1, 2, 3, 4, 5, 6), sofa (1), stool (3). You hold book (1).
+Act: go to stool 3
+You arrive at the stool (3). You see floor lamp (2), garbage can (3), stool (3). You hold book (1).
+Think: I have not seen lamp yet. The lamp is more likely to appear in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see armchair (1), bed (1, 2), chair (1, 2), dining table (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), floor lamp (1), house plant (1), television (1). You hold book (1).
+Think: In bedroom 1, the lamp is likely to appear in/on armchair 1, bed (1, 2), dining table 1, drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser 1, floor lamp 1. I can check each place one by one until I find lamp.
+OK.
+Act: go to armchair 1
+You arrive at the armchair (1). You see armchair (1). You hold book (1).
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see armchair (1), bed (1, 2), chair (1, 2), dining table (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), floor lamp (1), house plant (1), television (1). You hold book (1).
+Act: go to bed 1
+You arrive at the bed (1). You see basket ball (1), bed (1), bowl (1), chair (1, 2), dining table (1), laptop (1), pillow (1, 2), television (1), watch (1). You hold book (1).
+Act: go to bed 2
+You arrive at the bed (2). You see bed (2), cell phone (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), mug (1), remote control (1), teddy bear (1), tissue box (1), vase (1). You hold book (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see floor lamp (2), garbage can (3), stool (3). You hold book (1).
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see armchair (1), bed (1, 2), chair (1, 2), dining table (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), floor lamp (1), house plant (1), television (1). You hold book (1).
+Act: go to drawer 1
+You arrive at the drawer (1). The drawer (1) is closed. You see candle (1), drawer (11, 12, 13), dresser (2), painting (1), plunger (1), spray bottle (1), toilet (1). You hold book (1).
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see armchair (1), bed (1, 2), chair (1, 2), dining table (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), floor lamp (1), house plant (1), television (1). You hold book (1).
+Act: go to drawer 2
+You arrive at the drawer (2). The drawer (2) is closed. You see bed (2), cell phone (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), mug (1), remote control (1), teddy bear (1), tissue box (1), vase (1). You hold book (1).
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see armchair (1), bed (1, 2), chair (1, 2), dining table (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), floor lamp (1), house plant (1), television (1). You hold book (1).
+Act: go to drawer 3
+You arrive at the drawer (3). The drawer (3) is closed. You see bed (2), cell phone (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), mug (1), remote control (1), teddy bear (1), tissue box (1), vase (1). You hold book (1).
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see armchair (1), bed (1, 2), chair (1, 2), dining table (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), floor lamp (1), house plant (1), television (1). You hold book (1).
+Act: go to drawer 4
+You arrive at the drawer (4). The drawer (4) is closed. You see bed (2), cell phone (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), mug (1), remote control (1), teddy bear (1), tissue box (1), vase (1). You hold book (1).
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see armchair (1), bed (1, 2), chair (1, 2), dining table (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), floor lamp (1), house plant (1), television (1). You hold book (1).
+Act: go to drawer 5
+You arrive at the drawer (5). The drawer (5) is closed. You see bed (2), cell phone (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), mug (1), remote control (1), tissue box (1), vase (1). You hold book (1).
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see armchair (1), bed (1, 2), chair (1, 2), dining table (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), floor lamp (1), house plant (1), television (1). You hold book (1).
+Act: go to drawer 6
+You arrive at the drawer (6). The drawer (6) is closed. You see candle (1), drawer (11, 12, 13), dresser (2), painting (1, 2), plunger (1), spray bottle (1), toilet (1), toilet paper (1). You hold book (1).
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see armchair (1), bed (1, 2), chair (1, 2), dining table (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), floor lamp (1), house plant (1), television (1). You hold book (1).
+Act: go to drawer 7
+You arrive at the drawer (7). The drawer (7) is closed. You see candle (1), drawer (11, 12, 13), dresser (2), painting (1, 2), plunger (1), spray bottle (1), toilet (1), toilet paper (1). You hold book (1).
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see armchair (1), bed (1, 2), chair (1, 2), dining table (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), floor lamp (1), house plant (1), television (1). You hold book (1).
+Act: go to drawer 8
+You arrive at the drawer (8). The drawer (8) is closed. You see cell phone (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), mug (1), remote control (1), tissue box (1), vase (1). You hold book (1).
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see armchair (1), bed (1, 2), chair (1, 2), dining table (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), floor lamp (1), house plant (1), television (1). You hold book (1).
+Act: go to drawer 9
+You arrive at the drawer (9). The drawer (9) is closed. You see cell phone (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), mug (1), remote control (1), tissue box (1), vase (1). You hold book (1).
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see armchair (1), bed (1, 2), chair (1, 2), dining table (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), floor lamp (1), house plant (1), television (1). You hold book (1).
+Act: go to drawer 10
+You arrive at the drawer (10). The drawer (10) is closed. You see drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), mug (1), remote control (1), tissue box (1), vase (1). You hold book (1).
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see armchair (1), bed (1, 2), chair (1, 2), dining table (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), floor lamp (1), house plant (1), television (1). You hold book (1).
+Act: go to dresser 1
+You arrive at the dresser (1). You see candle (1), drawer (11, 12, 13), dresser (2), painting (1, 2), plunger (1), spray bottle (1), toilet (1), toilet paper (1). You hold book (1).
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see armchair (1), bed (1, 2), chair (1, 2), dining table (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), floor lamp (1), house plant (1), television (1). You hold book (1).
+Act: go to floor lamp 1
+You arrive at the floor lamp (1). You see armchair (1), floor lamp (1). You hold book (1).
+Think: I find lamp 1. Now, I need to turn on lamp 1.
+OK.
+Act: turn on floor lamp 1
+You turn on floor lamp (1). You hold book (1).
+Think: Now I complete the task.
+OK.
+Act: done

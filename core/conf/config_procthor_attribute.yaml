@@ -1,0 +1,12 @@
+defaults:
+  - config_procthor
+  - _self_
+
+procthor:
+  eval_set:
+    - 'dataset/attplan_attr_test.json'
+
+llm_agent:
+  em_dir: 'resource/trajectory/em_llm_procthor/using_attributes/${task_planner}'
+  em_dir_by_mode:
+    AttributeHard: 'resource/trajectory/em_llm_procthor/using_attributes_hard/${task_planner}'

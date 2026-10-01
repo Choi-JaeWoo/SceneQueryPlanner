@@ -1,0 +1,8 @@
+Your task is to: Move the cooked item in the fridge to the countertop.
+You are in the house, and there are 2 rooms: kitchen (1), living room (1). You are in the middle of a living room (1). Looking quickly around the room, you see TV stand (1), desk (1), dining table (1), drawer (1, 2, 3), painting (3, 4), shelf (4, 5, 6, 7, 8, 9). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- (kitchen 1): [shelving unit 1, (countertop 1), painting 1, (shelf 2), (shelf 1), (fridge 1), (cabinet 1), (shelf 3), painting 2]
+- living room 1: [tissue box 2, (dining table 1), (shelf 6), (drawer 3), painting 3, painting 4, television 1, (shelf 4), statue 1, (drawer 1), (shelf 7), (shelf 8), (drawer 2), (desk 1), remote control 3, pencil 4, (shelf 5), cell phone 1, (shelf 9), (TV stand 1)]
+You have not taken any actions yet.
+What is the best next action to complete the task as efficiently as possible?
+Think: First, I need to find fridge. Fridge 1 is in kitchen 1.
+Act: go to kitchen 1

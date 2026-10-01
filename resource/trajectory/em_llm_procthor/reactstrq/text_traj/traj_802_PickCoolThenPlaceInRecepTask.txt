@@ -2,11 +2,7 @@ Your task is to: Place a cold bottle on the desk.
 You are in the house, and there are 3 rooms: bedroom (1), kitchen (1), living room (1). You are in the middle of a bedroom (1). Looking quickly around the room, you see bed (1), cabinet (1, 2, 3, 4), chair (1), desk (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13), dresser (1), house plant (1), shelf (1, 2, 3, 4, 5, 6).
 Think: To solve the task, I need to find and pick up bottle, find fridge, put down bottle in fridge briefly and pick up bottle, find desk and put down bottle.
 OK.
-Think: First, I need to find and pick up bottle.
-OK.
-Query: find_objects({'label': 'bottle'})
-Info: 
-Think: I have not seen bottle yet. Now I need to check where to search. First, I will search kitchen 1.
+Think: First, I need to find and pick up bottle. The bottle is more likely to appear in kitchen 1.
 OK.
 Query: get_child_node_names({'parent_node_id': 'kitchen 1'})
 Info: countertop 1, fridge 1
@@ -45,7 +41,7 @@ You open fridge (1). You see bottle (1), butter knife (1), cup (1), egg (1), fri
 Think: Now I need to pick up bottle 1 and find desk.
 OK.
 Act: pick up bottle 1
-Pick up action failed: The target object is not within the visible range.
+Pick up action failed: bottle (1) is not within the visible range.
 Think: I need to move toward bottle 1 so I can see it clearly.
 OK.
 Act: go to bottle 1
@@ -58,10 +54,8 @@ Act: go to bedroom 1
 You move to the bedroom (1). Looking quickly around the room, you see bed (1), cabinet (1, 2, 3, 4), chair (1), desk (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13), dresser (1), house plant (1), shelf (1, 2, 3, 4, 5, 6). You hold bottle (1).
 Act: go to desk 1
 You arrive at the desk (1). You see baseball bat (1), bed (1), cell phone (1), chair (1), desk (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9), key chain (1), pillow (2), shelf (1, 2, 3, 4, 5, 6). You hold bottle (1).
-Think: Now I need to put down bottle 1.
-OK.
 Act: put down bottle 1
-You put bottle (1) in desk (1).
+You put bottle (1) on desk (1).
 Think: Now I complete task.
 OK.
 Act: done

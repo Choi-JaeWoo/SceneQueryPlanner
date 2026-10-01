@@ -1,0 +1,33 @@
+Your task is to: Place the item from the sofa on the armchair to clear the seat.
+You are in the house, and there are 1 rooms: living room (1). You are in the middle of a living room (1). Looking quickly around the room, you see TV stand (1), armchair (1), chair (1, 2, 3, 4, 5), dining table (1), dog bed (1), floor lamp (1), painting (1, 2, 3, 4), shelf (1, 2, 3, 4, 5, 6), sofa (1).
+Think: To solve the task, I need to find sofa and find and pick up the item from sofa, then put it down on armchair.
+OK.
+Think: First, I need to find sofa.
+OK.
+Query: recall location of sofa
+You saw sofa 1 in living room 1.
+Think: Sofa 1 is in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), armchair (1), chair (1, 2, 3, 4, 5), dining table (1), dog bed (1), floor lamp (1), painting (1, 2, 3, 4), shelf (1, 2, 3, 4, 5, 6), sofa (1).
+Act: go to sofa 1
+You arrive at the sofa (1). You see laptop (1), painting (2), sofa (1).
+Think: On sofa 1, the item is laptop 1. Now, I need to pick it up.
+OK.
+Act: go to laptop 1
+You arrive at the laptop (1). The laptop (1) is open. You see laptop (1), sofa (1).
+Act: pick up laptop 1
+You pick up laptop (1). You hold laptop (1).
+Think: Now, I need to find armchair.
+OK.
+Query: recall location of armchair
+You saw armchair 1 in living room 1.
+Think: Armchair 1 is in living room 1.
+OK.
+Act: go to armchair 1
+You arrive at the armchair (1). You see armchair (1), chair (2), floor lamp (1), plate (1). You hold laptop (1).
+Act: put down laptop 1
+You put laptop (1) on armchair (1).
+Think: Now I complete the task.
+OK.
+Act: done

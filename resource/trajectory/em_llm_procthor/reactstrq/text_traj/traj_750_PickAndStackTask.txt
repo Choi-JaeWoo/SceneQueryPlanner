@@ -1,0 +1,69 @@
+Your task is to: Place a box containing a pencil on the bed.
+You are in the house, and there are 8 rooms: bathroom (1, 2), bedroom (1, 2, 3), kitchen (1), living room (1, 2). You are in the middle of a bathroom (2). Looking quickly around the room, you see clothes dryer (2), garbage can (5), plunger (2), sink (2), sink basin (2), toilet (2), toilet paper (2).
+Think: To solve the task, I need to find and pick up pencil, put it in box, pick up and place box on bed.
+OK.
+Think: First, I need to find and pick up pencil. The pencil is more likely to appear in bedroom 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'bedroom 1'})
+Info: bed (1, 2), box 1, chair (7, 8), desk 1, dining table 4, drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser 1, shelf (1, 2, 3, 4)
+Think: In bedroom 1, the pencil is likely to appear in/on bed (1, 2), box 1, chair (7, 8), desk 1, dining table 4, drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser 1, shelf (1, 2, 3, 4). I can check each place one by one until I find pencil.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see bed (1, 2), chair (7, 8), desk (1), dining table (4), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), shelf (1, 2, 3, 4).
+Act: go to bed 1
+You arrive at the bed (1). You see bed (1), box (1), chair (8), laptop (2), teddy bear (1), tennis racket (1).
+Act: go to bed 2
+You arrive at the bed (2). You see baseball bat (2), bed (2), book (6, 7, 8), credit card (1), desk lamp (1), house plant (4), mug (2), pillow (1), remote control (5).
+Act: go to box 1
+You arrive at the box (1). The box (1) is open. You see bed (1), box (1), laptop (2), teddy bear (1), tennis racket (1).
+Act: go to chair 7
+You arrive at the chair (7). You see book (8), bowl (4), chair (7), credit card (1), desk lamp (1), dining table (4), house plant (4), mug (2), pen (3), remote control (4, 5).
+Act: go to chair 8
+You arrive at the chair (8). You see CD (1), bed (1), book (9), box (1), cell phone (3), chair (8), desk (1), laptop (2), shelf (1, 2, 3, 4), statue (4), teddy bear (1), vase (3).
+Act: go to desk 1
+You arrive at the desk (1). You see CD (1), book (9), cell phone (3), chair (8), desk (1), laptop (2), shelf (1, 2, 3, 4), statue (4), vase (3).
+Act: go to dining table 4
+You arrive at the dining table (4). You see baseball bat (2), book (6, 8), bowl (4), chair (7), credit card (1), desk lamp (1), dining table (4), house plant (4), mug (2), pen (3), remote control (4, 5).
+Act: go to drawer 1
+You arrive at the drawer (1). The drawer (1) is closed. You see book (12), cell phone (7), desk lamp (4), house plant (6), pen (6), pencil (5).
+Act: go to drawer 19
+You arrive at the drawer (19). The drawer (19) is closed. You see book (11), bowl (6), drawer (17, 18, 19), dresser (3), statue (6).
+Act: go to dresser 3
+You arrive at the dresser (3). 
+Think: I need to check whether I see pencil.
+OK.
+Query: find_objects({'label': 'pencil'})
+Info: [{'name_id_nl': 'pencil 5', 'node_type': 'object', 'properties': ['pickupable'], 'states': []}]
+Think: Pencil 5 is in drawer 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see bed (1, 2), chair (7, 8), desk (1), dining table (4), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), shelf (1, 2, 3, 4).
+Act: go to drawer 1
+You arrive at the drawer (1). The drawer (1) is closed. You see book (12), cell phone (7), desk lamp (4), house plant (6), pen (6), pencil (5).
+Act: open drawer 17
+You open drawer (17). You see book (12), cell phone (7), desk lamp (4), house plant (6), pen (6), pencil (5).
+Act: go to pencil 5
+You arrive at the pencil (5). You see baseball bat (3), book (12), cell phone (6, 7), chair (10), desk lamp (4), dining table (6), house plant (6), pen (6, 7), pencil (5), remote control (10), vase (5).
+Act: pick up pencil 5
+You pick up pencil (5). You hold pencil (5).
+Think: Now, I need to find box and put down pencil 5.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see bed (1, 2), chair (7, 8), desk (1), dining table (4), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), shelf (1, 2, 3, 4). You hold pencil (5).
+Act: go to box 1
+You arrive at the box (1). The box (1) is open. You see bed (1), box (1), laptop (2), teddy bear (1), tennis racket (1). You hold pencil (5).
+Act: put down pencil 5
+You put pencil (5) in box (1).
+Think: Now, I need to pick up box 1.
+OK.
+Act: pick up box 1
+You pick up box (1). You hold box (1).
+Think: Now, I need to find bed and put down box 1.
+OK.
+Act: go to bed 1
+You arrive at the bed (1). You see bed (1), chair (8), laptop (2), pencil (5), teddy bear (1), tennis racket (1). You hold box (1).
+Act: put down box 1
+You put box (1) on bed (1).
+Think: Now I complete the task.
+OK.
+Act: done

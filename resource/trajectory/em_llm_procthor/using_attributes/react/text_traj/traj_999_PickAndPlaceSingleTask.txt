@@ -1,0 +1,37 @@
+Your task is to: Place the book next to the apple.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a living room (1). Looking quickly around the room, you see TV stand (1), cart (1), chair (4), dining table (2), dog bed (1), house plant (2), shelf (8, 9, 10, 11, 12, 13), sofa (1).
+Think: To solve the task, I need to find and pick up book, find apple and check the receptacle where apple is located, and then place book in that receptacle.
+OK.
+Think: First, I need to find and pick up book. The book is more likely to appear in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), cart (1), chair (4), dining table (2), dog bed (1), house plant (2), shelf (8, 9, 10, 11, 12, 13), sofa (1).
+Think: In living room 1, the book is likely to appear in/on TV stand 1, cart 1, chair 4, dining table 2, dog bed 1, shelf (8, 9, 10, 11, 12, 13), sofa 1. I can check each place one by one until I find book.
+OK.
+Act: go to TV stand 1
+You arrive at the TV stand (1). You see TV stand (1), candle (1), cell phone (3), remote control (3), shelf (8, 9, 10, 11, 12, 13), television (3), vase (3), watch (1).
+Act: go to cart 1
+You arrive at the cart (1). You see book (5), cart (1), dog bed (1), statue (5).
+Think: I find book 5. Now, I need to pick it up.
+OK.
+Act: go to book 5
+You arrive at the book (5). The book (5) is closed. You see book (4, 5), bowl (2), chair (4), dining table (2), dog bed (1), pen (1), plate (1), statue (5).
+Act: pick up book 5
+You pick up book (5). You hold book (5).
+Think: Now, I need to find apple and check the receptacle where apple is located. The apple is more likely to appear in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see cabinet (1), countertop (1), fridge (1), painting (3, 4), shelf (5, 6, 7), shelving unit (1), stool (1), television (2). You hold book (5).
+Think: In kitchen 1, the apple is likely to appear in/on countertop 1, fridge 1, shelf (5, 6, 7). I can check each place one by one until I find apple.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see apple (1), bowl (1), bread (1), cabinet (1), countertop (1), credit card (1), house plant (3), ladle (1), mug (1), shelf (5, 6, 7), shelving unit (1), soap bottle (1), spoon (1), statue (3), toaster (1), vase (2). You hold book (5).
+Think: I find apple 1. Apple 1 is on countertop 1. Now, I need to move to countertop 1 and put down book 5.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see apple (1), bowl (1), bread (1), cabinet (1), countertop (1), credit card (1), house plant (3), ladle (1), mug (1), shelf (5, 6, 7), shelving unit (1), soap bottle (1), spoon (1), statue (3), toaster (1), vase (2). You hold book (5).
+Act: put down book 5
+You put book (5) on countertop (1).
+Think: Now I complete the task.
+OK.
+Act: done

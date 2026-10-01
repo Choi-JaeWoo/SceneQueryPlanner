@@ -12,6 +12,8 @@ Query: get_child_node_names({'parent_node_id': 'bedroom 1'})
 Info: bed 1
 Think: In bedroom 1, the pillow is likely to appear in/on bed 1. I can check each place one by one until I find pillow.
 OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see bed (1), television (1).
 Act: go to bed 1
 You arrive at the bed (1). You see bed (1), laptop (1), pillow (1), teddy bear (1).
 Think: I find pillow 1. Now, I need to pick it up.
@@ -36,6 +38,8 @@ Act: go to toilet 1
 You arrive at the toilet (1). The toilet (1) is closed. You see candle (1), toilet (1), toilet paper (1). You hold pillow (1).
 Act: open toilet 1
 You open toilet (1). You see candle (1), toilet (1), toilet paper (1). You hold pillow (1).
+Think: I find candle 1. Now, I need to turn it on.
+OK.
 Act: go to candle 1
 You arrive at the candle (1). You see candle (1), toilet (1), toilet paper (1). You hold pillow (1).
 Act: turn on candle 1

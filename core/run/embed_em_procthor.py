@@ -10,10 +10,13 @@ log = logging.getLogger(__name__)
 
 
 def parse_filename(file_name):
+    match_attr = re.match(r"traj_(\d+)_(AttributeHard)_(\w+)\.txt", file_name)
+    if match_attr:
+        return int(match_attr.group(1)), match_attr.group(2), match_attr.group(3)
     match = re.match(r"traj_(\d+)_(\w+)\.txt", file_name)
     if match:
-        return int(match.group(1)), match.group(2)
-    return None, None
+        return int(match.group(1)), match.group(2), None
+    return None, None, None
 
 
 def load_taskset(eval_path):
@@ -57,19 +60,20 @@ def extract_success_traj(cfg, task_list):
 
     for file_name in os.listdir(collect_dir):
         file_path = os.path.join(collect_dir, file_name)
-        env_id, task_type = parse_filename(file_name)
+        env_id, task_type, init_action = parse_filename(file_name)
         if env_id is None:
             continue
 
         task_d = next(
-            (t for t in task_list if t.get("env_id") == env_id and t.get("mode") == task_type),
+            (t for t in task_list if t.get("env_id") == env_id and t.get("mode") == task_type
+             and t.get("init_action") == init_action),
             None
         )
         if task_d is None:
-            logging.warning(f"[SKIP] env_id {env_id} with task_type {task_type} not found")
+            logging.warning(f"[SKIP] env_id {env_id} with task_type {task_type} and init_action {init_action} not found")
             continue
 
-        print(f"[INFO] env_id: {env_id} / task_type: {task_type}")
+        print(f"[INFO] env_id: {env_id} / task_type: {task_type} / init_action: {init_action}")
         print(f"[INFO] instruction: {task_d['instruction']}")
 
         env.reset(task_d)
@@ -81,7 +85,7 @@ def extract_success_traj(cfg, task_list):
         ssr = check_goal_condition(
             task_d, env.controller, env.init_event,
             env.cleaned_objects, env.cooled_objects,
-            env.heated_objects, env.filled_coffee_objects
+            env.heated_objects, env.filled_coffee_objects, env.init_state_hard
         )
         print(f"[INFO] Subgoal Success Rate (SSR): {ssr}")
 

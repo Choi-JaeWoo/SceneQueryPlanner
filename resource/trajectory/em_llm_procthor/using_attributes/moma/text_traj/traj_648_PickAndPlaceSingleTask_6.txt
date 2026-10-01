@@ -1,0 +1,8 @@
+Your task is to: Move the item made of plastic from the dining table into the drawer.
+You arrive at the credit card (1). You see book (1, 5, 6), bowl (1), chair (1), credit card (1), desk (1), dining table (1), house plant (1), laptop (1), painting (1), tissue box (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- bathroom 1: [faucet 1, (laundry hamper 1), painting 3, painting 2, painting 4, plunger 1, (sink 1), (sink basin 1), (toilet 1)]
+- bedroom 1: [television 1, (bed 1), book 5, book 6, book 1, bowl 1, (chair 1), credit card 1, (desk 1), dining table 1, (drawer 3), (drawer 1), (drawer 6), (drawer 2), (drawer 11), (drawer 5), (drawer 10), (drawer 9), (drawer 8), (drawer 7), (drawer 4), (drawer 12), (dresser 1), house plant 1, laptop 1, painting 1, tissue box 1]
+Your 3 previous actions were: go to bedroom 1 (success), go to dining table 1 (success), go to credit card 1 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I arrive at credit card 1. Now, I need to pick up credit card 1.
+Act: pick up credit card 1

@@ -1,0 +1,10 @@
+Your task is to: Move the toggled item on the TV stand in the living room to the bed.
+You arrive at the bed (1). You see CD (2), alarm clock (1), baseball bat (1), bed (1), box (1), pillow (1), remote control (2), side table (1), tissue box (2). You hold candle (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- (bathroom 1): [faucet 1, (garbage can 1), plunger 1, (sink 1), (sink basin 1), (toilet 1)]
+- bedroom 1: [book 2, house plant 2, key chain 1, statue 1, tissue box 3, tissue box 1, vase 1, alarm clock 1, baseball bat 1, bed 1, (box 1), candle 1, CD 2, (drawer 1), (drawer 6), (drawer 5), (drawer 4), (drawer 3), (drawer 2), (dresser 1), pillow 1, remote control 2, (shelf 1), (side table 1), tissue box 2, (TV stand 1)]
+- kitchen 1: [(chair 2), (chair 1), (countertop 1), cup 1, (dining table 1), egg 3, egg 2, egg 1, (fridge 1), garbage bag 1, painting 2, painting 1, potato 1, (stool 1), television 2, tomato 2]
+- living room 1: [painting 4, cell phone 2, house plant 1, painting 3, pencil 1, remote control 4, (shelf 2), (sofa 1), television 3, TV stand 2, watch 1]
+Your 5 previous actions were: go to TV stand 2 (success), go to candle 1 (success), pick up candle 1 (success), go to bedroom 1 (success), go to bed 1 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I arrive at bed 1. Now, I need to put down candle 1.
+Act: put down candle 1

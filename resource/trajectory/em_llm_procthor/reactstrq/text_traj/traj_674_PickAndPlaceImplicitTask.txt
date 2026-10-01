@@ -33,7 +33,7 @@ You move to the living room (2). Looking quickly around the room, you see cart (
 Act: go to dining table 2
 You arrive at the dining table (2). You see bowl (1), cart (2), cell phone (1), chair (1), dining table (2), dog bed (1), key chain (1, 2), newspaper (1), painting (1). You hold kettle (1).
 Act: put down kettle 1
-You put kettle (1) in dining table (2).
+You put kettle (1) on dining table (2).
 Act: go to kitchen 1
 You move to the kitchen (1). Looking quickly around the room, you see countertop (1), fridge (1), garbage bag (1), safe (1).
 Act: go to mug 1
@@ -45,7 +45,7 @@ You move to the living room (2). Looking quickly around the room, you see cart (
 Act: go to dining table 2
 You arrive at the dining table (2). You see bowl (1), cart (2), cell phone (1), chair (1), dining table (2), dog bed (1), kettle (1), key chain (1, 2), newspaper (1), painting (1). You hold mug (1).
 Act: put down mug 1
-You put mug (1) in dining table (2).
+You put mug (1) on dining table (2).
 Act: go to kitchen 1
 You move to the kitchen (1). Looking quickly around the room, you see countertop (1), fridge (1), garbage bag (1), safe (1).
 Act: go to pen 1
@@ -57,7 +57,7 @@ You move to the living room (2). Looking quickly around the room, you see cart (
 Act: go to dining table 2
 You arrive at the dining table (2). You see bowl (1), cart (2), cell phone (1), chair (1), dining table (2), dog bed (1), kettle (1), key chain (1, 2), mug (1), newspaper (1), painting (1). You hold pen (1).
 Act: put down pen 1
-You put pen (1) in dining table (2).
+You put pen (1) on dining table (2).
 Act: go to kitchen 1
 You move to the kitchen (1). Looking quickly around the room, you see countertop (1), fridge (1), garbage bag (1), safe (1).
 Act: go to potato 1
@@ -69,7 +69,7 @@ You move to the living room (2). Looking quickly around the room, you see cart (
 Act: go to dining table 2
 You arrive at the dining table (2). You see bowl (1), cart (2), cell phone (1), chair (1), dining table (2), dog bed (1), kettle (1), key chain (1, 2), mug (1), newspaper (1), painting (1), pen (1). You hold potato (1).
 Act: put down potato 1
-You put potato (1) in dining table (2).
+You put potato (1) on dining table (2).
 Act: go to kitchen 1
 You move to the kitchen (1). Looking quickly around the room, you see countertop (1), fridge (1), garbage bag (1), safe (1).
 Act: go to soap bottle 1
@@ -81,7 +81,7 @@ You move to the living room (2). Looking quickly around the room, you see cart (
 Act: go to dining table 2
 You arrive at the dining table (2). You see bowl (1), cart (2), cell phone (1), chair (1), dining table (2), dog bed (1), kettle (1), key chain (1, 2), mug (1), newspaper (1), painting (1), pen (1), potato (1). You hold soap bottle (1).
 Act: put down soap bottle 1
-You put soap bottle (1) in dining table (2).
+You put soap bottle (1) on dining table (2).
 Think: Now I need to check what's left on countertop 1.
 OK.
 Query: get_edges_for_node({'node_id': 'countertop 1', 'relation': 'ON'})

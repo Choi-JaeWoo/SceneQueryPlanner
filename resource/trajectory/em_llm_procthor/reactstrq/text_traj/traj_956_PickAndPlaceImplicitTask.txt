@@ -6,7 +6,7 @@ Think: First, I need to find sofa.
 OK.
 Query: find_objects({'label': 'sofa'})
 Info: [{'name_id_nl': 'sofa 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}]
-Think: I find sofa 1.
+Think: I find sofa 1 in living room 1.
 OK.
 Act: go to living room 1
 You move to the living room (1). Looking quickly around the room, you see TV stand (1), chair (1, 2, 3, 4), dining table (1), house plant (1), painting (3, 4), shelf (7, 8, 9, 10, 11, 12), side table (1), sofa (1).
@@ -31,7 +31,7 @@ OK.
 Act: go to dining table 1
 You arrive at the dining table (1). You see book (1), box (1), cell phone (3), chair (1, 2, 3, 4), credit card (2), dining table (1), key chain (1), laptop (1), pen (1), plate (1). You hold book (2).
 Act: put down book 2
-You put book (2) in dining table (1).
+You put book (2) on dining table (1).
 Act: go to cell phone 2
 You arrive at the cell phone (2). You see cell phone (2), pillow (1), remote control (1), sofa (1).
 Act: pick up cell phone 2
@@ -39,7 +39,7 @@ You pick up cell phone (2). You hold cell phone (2).
 Act: go to dining table 1
 You arrive at the dining table (1). You see book (1, 2), box (1), cell phone (3), chair (1, 2, 3, 4), credit card (2), dining table (1), key chain (1), laptop (1), pen (1), plate (1). You hold cell phone (2).
 Act: put down cell phone 2
-You put cell phone (2) in dining table (1).
+You put cell phone (2) on dining table (1).
 Act: go to pillow 1
 You arrive at the pillow (1). You see pillow (1), remote control (1), sofa (1).
 Act: pick up pillow 1
@@ -47,7 +47,7 @@ You pick up pillow (1). You hold pillow (1).
 Act: go to dining table 1
 You arrive at the dining table (1). You see book (1, 2), box (1), cell phone (2, 3), chair (1, 2, 3, 4), credit card (2), dining table (1), key chain (1), laptop (1), pen (1), plate (1). You hold pillow (1).
 Act: put down pillow 1
-You put pillow (1) in dining table (1).
+You put pillow (1) on dining table (1).
 Act: go to remote control 1
 You arrive at the remote control (1). You see remote control (1), sofa (1).
 Act: pick up remote control 1
@@ -55,7 +55,7 @@ You pick up remote control (1). You hold remote control (1).
 Act: go to dining table 1
 You arrive at the dining table (1). You see book (1, 2), box (1), cell phone (2, 3), chair (1, 2, 3, 4), credit card (2), dining table (1), key chain (1), laptop (1), pen (1), pillow (1), plate (1). You hold remote control (1).
 Act: put down remote control 1
-You put remote control (1) in dining table (1).
+You put remote control (1) on dining table (1).
 Think: Now I need to check what's left on sofa 1.
 OK.
 Query: get_edges_for_node({'node_id': 'sofa 1', 'relation': 'ON'})

@@ -1,0 +1,14 @@
+Your task is to: Toast a slice of bread using a toaster and then place the toasted bread next to the mug.
+You turn on toaster (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- (bathroom 1): [(drawer 1), (drawer 2), (drawer 3), (dresser 1), faucet 1, (garbage can 1), plunger 1, (sink 1), (sink basin 1), spray bottle 2, (toilet 1)]
+- (bathroom 2): [faucet 2, (garbage can 2), plunger 2, (sink 2), (sink basin 2), (toilet 2), (washing machine 1)]
+- (bedroom 1): [(bed 1), (drawer 7), (drawer 6), (drawer 15), (drawer 14), (drawer 13), (drawer 12), (drawer 11), (drawer 10), (drawer 9), (drawer 8), (drawer 5), (drawer 4), (dresser 2), house plant 2, (laundry hamper 1), painting 4, painting 3]
+- bedroom 2: [baseball bat 1, (bed 2), (drawer 20), (drawer 17), (drawer 16), (drawer 22), (drawer 21), (drawer 24), (drawer 23), (drawer 19), (drawer 18), (drawer 27), (drawer 26), (drawer 25), (dresser 3), house plant 3]
+- (bedroom 3): [(bed 3), (chair 5), (drawer 35), (drawer 36), (drawer 34), (drawer 33), (drawer 32), (drawer 28), (drawer 37), (drawer 38), (drawer 39), (drawer 30), (drawer 31), (drawer 29), (dresser 4), (safe 1), television 2]
+- kitchen 1: [shelving unit 1, garbage bag 1, bowl 1, pan 1, pen 1, potato 1, bread 1, bread 2, house plant 4, knife 1, ladle 1, mug 1, salt shaker 1, spoon 1, (cabinet 1), (chair 1), countertop 1, (dining table 1), (fridge 1), (shelf 1), (shelf 2), (shelf 3), (stool 1), toaster 1, sliced bread 1]
+- (living room 1): [cart 1, (chair 2), (chair 3), (dining table 2), dog bed 1, painting 2, painting 1, (shelf 4), (sofa 1), (TV stand 1)]
+- (living room 2): [(chair 4), (dining table 3), house plant 1, (shelf 6), (shelf 10), (shelf 9), (shelf 8), (shelf 7), (shelf 5), (TV stand 2)]
+Your 5 previous actions were: put down knife 1 (success), pick up sliced bread 1 (success), go to toaster 1 (success), put down sliced bread 1 (success), turn on toaster 1 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I turn on toaster 1. Now, I need to turn off toaster 1.
+Act: turn off toaster 1

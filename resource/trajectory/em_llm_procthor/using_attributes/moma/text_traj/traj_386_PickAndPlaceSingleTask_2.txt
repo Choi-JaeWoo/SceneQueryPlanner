@@ -1,0 +1,7 @@
+Your task is to: Throw the ingredient that's sliceable but not cookable from the countertop into the garbage can so I don't accidentally try to use it.
+You arrive at the countertop (1). You see apple (1), bread (1), cell phone (1), coffee machine (1), countertop (1), cup (1), dish sponge (1), fridge (1), kettle (1), painting (3), paper towel roll (1), salt shaker (1), soap bottle (1), spatula (1, 2), spoon (1), television (1), toaster (1), wine bottle (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- kitchen 1: [egg 2, egg 1, house plant 1, lettuce 1, painting 1, painting 2, apple 1, bread 1, cell phone 1, coffee machine 1, countertop 1, cup 1, dish sponge 1, (fridge 1), (garbage can 1), kettle 1, painting 3, paper towel roll 1, salt shaker 1, soap bottle 1, spatula 2, spatula 1, spoon 1, (stool 1), television 1, toaster 1, wine bottle 1]
+Your 1 previous actions were: go to countertop 1 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I arrive at countertop 1. I find apple 1. Now, I need to move toward apple 1 to pick it up.
+Act: go to apple 1

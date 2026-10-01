@@ -6,7 +6,7 @@ Think: First, I need to find sofa.
 OK.
 Query: find_objects({'label': 'sofa'})
 Info: [{'name_id_nl': 'sofa 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'bedroom 1'}]
-Think: I find sofa 1.
+Think: I find sofa 1 in bedroom 1.
 OK.
 Act: go to bedroom 1
 You move to the bedroom (1). Looking quickly around the room, you see armchair (1), bed (1), drawer (1, 2, 3, 4, 5, 6), dresser (1), floor lamp (1), painting (1, 2), sofa (1).
@@ -33,7 +33,7 @@ You move to the living room (1). Looking quickly around the room, you see TV sta
 Act: go to dining table 1
 You arrive at the dining table (1). You see CD (2), baseball bat (2), book (1), chair (1), desk (1), drawer (7, 8, 9, 10, 11, 12, 13, 14, 15, 16), dresser (2), mug (2), pencil (1), shelf (1, 2), television (1). You hold cell phone (1).
 Act: put down cell phone 1
-You put cell phone (1) in dining table (1).
+You put cell phone (1) on dining table (1).
 Think: Now I need to check what's left on sofa 1.
 OK.
 Query: get_edges_for_node({'node_id': 'sofa 1', 'relation': 'ON'})

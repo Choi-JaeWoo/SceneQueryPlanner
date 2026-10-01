@@ -1,0 +1,95 @@
+Your task is to: Collect a book, a pen, and a CD and place them on the countertop.
+You are in the house, and there are 7 rooms: bathroom (1), bedroom (1, 2, 3), kitchen (1), living room (1, 2). You are in the middle of a bedroom (3). Looking quickly around the room, you see baseball bat (1), drawer (14, 15, 16, 17, 18), dresser (3), side table (2, 3).
+Think: To solve the task, I need to find and pick up book, then put it on countertop. And I need to find and pick up pen, then put it on countertop. And I need to find and pick up CD, then put it on countertop.
+OK.
+Think: First, I need to find and pick up book. The book is more likely to appear in bedroom 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'bedroom 1'})
+Info: bed 1, drawer (1, 2, 3), dresser 1, side table 1
+Think: In bedroom 1, the book is likely to appear in/on bed 1, drawer (1, 2, 3), dresser 1, side table 1. I can check each place one by one until I find book.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see bed (1), drawer (1, 2, 3), dresser (1), painting (1, 2), side table (1).
+Act: go to bed 1
+You arrive at the bed (1). You see baseball bat (2), bed (1), book (4), cell phone (2), drawer (1, 2, 3), dresser (1), laptop (2), painting (2), pillow (1), tennis racket (1), tissue box (1), vase (2).
+Act: go to drawer 1
+You arrive at the drawer (1). The drawer (1) is closed. You see baseball bat (2), bed (1), book (4), cell phone (2), drawer (1, 2, 3), dresser (1), painting (1, 2), tennis racket (1), tissue box (1), vase (2).
+Act: go to dresser 1
+You arrive at the dresser (1). You see baseball bat (2), bed (1), book (4), cell phone (2), drawer (1, 2, 3), dresser (1), laptop (2), painting (1, 2), pillow (1), tennis racket (1), tissue box (1), vase (2).
+Act: go to side table 1
+You arrive at the side table (1). You see CD (1), alarm clock (1), house plant (5), pen (1), remote control (3), side table (1).
+Think: I find book 4. Now, I need to pick it up.
+OK.
+Act: go to book 4
+You arrive at the book (4). The book (4) is closed. You see baseball bat (2), book (4), cell phone (2), drawer (1, 2, 3), dresser (1), painting (1, 2), tissue box (1), vase (2).
+Act: pick up book 4
+You pick up book (4). You hold book (4).
+Think: Now, I need to find countertop and put down book 4.
+OK.
+Query: find_objects({'label': 'countertop'})
+Info: [{'name_id_nl': 'countertop 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'kitchen 1'}]
+Think: Countertop 1 is in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see countertop (1), garbage bag (1). You hold book (4).
+Act: go to countertop 1
+You arrive at the countertop (1). You see credit card (2), house plant (6), pen (3), remote control (7), side table (2), tissue box (2), watch (2). You hold book (4).
+Act: put down book 4
+You put book (4) on countertop (1).
+Think: Now, I need to find and pick up pen.
+OK.
+Query: find_objects({'label': 'pen'})
+Info: [{'name_id_nl': 'pen 3', 'node_type': 'object', 'properties': ['pickupable'], 'states': []}, {'name_id_nl': 'pen 1', 'node_type': 'object', 'properties': ['pickupable'], 'states': []}]
+Query: get_edges_for_node({'node_id': 'pen 3'})
+Info: [('pen 3', 'book 4', 'CLOSE'), ('pen 3', 'side table 2', 'ON'), ('pen 3', 'credit card 2', 'CLOSE'), ('pen 3', 'house plant 6', 'CLOSE'), ('pen 3', 'remote control 7', 'CLOSE'), ('pen 3', 'tissue box 2', 'CLOSE'), ('pen 3', 'watch 2', 'CLOSE'), ('pen 3', 'user 1', 'CLOSE'), ('pen 3', 'bedroom 3', 'INSIDE'), ('book 4', 'pen 3', 'CLOSE'), ('credit card 2', 'pen 3', 'CLOSE'), ('house plant 6', 'pen 3', 'CLOSE'), ('remote control 7', 'pen 3', 'CLOSE'), ('tissue box 2', 'pen 3', 'CLOSE'), ('watch 2', 'pen 3', 'CLOSE'), ('user 1', 'pen 3', 'CLOSE')]
+Query: get_edges_for_node({'node_id': 'pen 1'})
+Info: [('pen 1', 'side table 1', 'ON'), ('pen 1', 'alarm clock 1', 'CLOSE'), ('pen 1', 'CD 1', 'CLOSE'), ('pen 1', 'house plant 5', 'CLOSE'), ('pen 1', 'remote control 3', 'CLOSE'), ('pen 1', 'bedroom 1', 'INSIDE'), ('alarm clock 1', 'pen 1', 'CLOSE'), ('CD 1', 'pen 1', 'CLOSE'), ('house plant 5', 'pen 1', 'CLOSE'), ('remote control 3', 'pen 1', 'CLOSE')]
+Think: Pen 1 is on side table 1 in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see bed (1), drawer (1, 2, 3), dresser (1), painting (1, 2), side table (1).
+Act: go to side table 1
+You arrive at the side table (1). You see CD (1), alarm clock (1), house plant (5), pen (1), remote control (3), side table (1).
+Act: go to pen 1
+You arrive at the pen (1). You see CD (1), alarm clock (1), house plant (5), pen (1), remote control (3), side table (1).
+Act: pick up pen 1
+You pick up pen (1). You hold pen (1).
+Think: Now, I need to find countertop and put down pen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see countertop (1), garbage bag (1). You hold pen (1).
+Act: go to countertop 1
+You arrive at the countertop (1). You see credit card (2), house plant (6), pen (3), remote control (7), side table (2), tissue box (2), watch (2). You hold pen (1).
+Act: put down pen 1
+You put pen (1) on countertop (1).
+Think: Now, I need to find and pick up CD.
+OK.
+Query: find_objects({'label': 'CD'})
+Info: [{'name_id_nl': 'CD 2', 'node_type': 'object', 'properties': ['pickupable'], 'states': []}, {'name_id_nl': 'CD 3', 'node_type': 'object', 'properties': ['pickupable'], 'states': []}, {'name_id_nl': 'CD 1', 'node_type': 'object', 'properties': ['pickupable'], 'states': []}]
+Query: get_edges_for_node({'node_id': 'CD 2'})
+Info: [('CD 2', 'bedroom 3', 'INSIDE'), ('CD 2', 'dresser 3', 'ON'), ('CD 2', 'alarm clock 2', 'CLOSE'), ('CD 2', 'baseball bat 1', 'CLOSE'), ('CD 2', 'CD 3', 'CLOSE'), ('CD 2', 'cloth 1', 'CLOSE'), ('CD 2', 'drawer 17', 'CLOSE'), ('CD 2', 'drawer 18', 'CLOSE'), ('CD 2', 'drawer 15', 'CLOSE'), ('CD 2', 'drawer 14', 'CLOSE'), ('CD 2', 'drawer 16', 'CLOSE'), ('CD 2', 'mug 1', 'CLOSE'), ('CD 2', 'remote control 6', 'CLOSE'), ('CD 2', 'side table 3', 'CLOSE'), ('CD 2', 'statue 4', 'CLOSE'), ('CD 2', 'watch 3', 'CLOSE'), ('alarm clock 2', 'CD 2', 'CLOSE'), ('baseball bat 1', 'CD 2', 'CLOSE'), ('CD 3', 'CD 2', 'CLOSE'), ('cloth 1', 'CD 2', 'CLOSE'), ('drawer 17', 'CD 2', 'CLOSE'), ('drawer 18', 'CD 2', 'CLOSE'), ('drawer 15', 'CD 2', 'CLOSE'), ('drawer 14', 'CD 2', 'CLOSE'), ('drawer 16', 'CD 2', 'CLOSE'), ('mug 1', 'CD 2', 'CLOSE'), ('remote control 6', 'CD 2', 'CLOSE'), ('side table 3', 'CD 2', 'CLOSE'), ('statue 4', 'CD 2', 'CLOSE'), ('watch 3', 'CD 2', 'CLOSE')]
+Query: get_edges_for_node({'node_id': 'CD 3'})
+Info: [('CD 3', 'bedroom 3', 'INSIDE'), ('CD 3', 'drawer 18', 'INSIDE'), ('CD 3', 'alarm clock 2', 'CLOSE'), ('CD 3', 'baseball bat 1', 'CLOSE'), ('CD 3', 'CD 2', 'CLOSE'), ('CD 3', 'cloth 1', 'CLOSE'), ('CD 3', 'drawer 17', 'CLOSE'), ('CD 3', 'drawer 15', 'CLOSE'), ('CD 3', 'drawer 14', 'CLOSE'), ('CD 3', 'drawer 16', 'CLOSE'), ('CD 3', 'dresser 3', 'CLOSE'), ('CD 3', 'mug 1', 'CLOSE'), ('CD 3', 'remote control 6', 'CLOSE'), ('CD 3', 'side table 3', 'CLOSE'), ('CD 3', 'statue 4', 'CLOSE'), ('CD 3', 'watch 3', 'CLOSE'), ('alarm clock 2', 'CD 3', 'CLOSE'), ('baseball bat 1', 'CD 3', 'CLOSE'), ('CD 2', 'CD 3', 'CLOSE'), ('cloth 1', 'CD 3', 'CLOSE'), ('drawer 17', 'CD 3', 'CLOSE'), ('drawer 15', 'CD 3', 'CLOSE'), ('drawer 14', 'CD 3', 'CLOSE'), ('drawer 16', 'CD 3', 'CLOSE'), ('dresser 3', 'CD 3', 'CLOSE'), ('mug 1', 'CD 3', 'CLOSE'), ('remote control 6', 'CD 3', 'CLOSE'), ('side table 3', 'CD 3', 'CLOSE'), ('statue 4', 'CD 3', 'CLOSE'), ('watch 3', 'CD 3', 'CLOSE')]
+Query: get_edges_for_node({'node_id': 'CD 1'})
+Info: [('CD 1', 'side table 1', 'ON'), ('CD 1', 'alarm clock 1', 'CLOSE'), ('CD 1', 'house plant 5', 'CLOSE'), ('CD 1', 'remote control 3', 'CLOSE'), ('CD 1', 'bedroom 1', 'INSIDE'), ('alarm clock 1', 'CD 1', 'CLOSE'), ('house plant 5', 'CD 1', 'CLOSE'), ('remote control 3', 'CD 1', 'CLOSE')]
+Think: CD 1 is on side table 1 in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see bed (1), drawer (1, 2, 3), dresser (1), painting (1, 2), side table (1).
+Act: go to side table 1
+You arrive at the side table (1). You see CD (1), alarm clock (1), house plant (5), remote control (3), side table (1).
+Act: go to CD 1
+You arrive at the CD (1). You see CD (1), alarm clock (1), house plant (5), remote control (3), side table (1).
+Act: pick up CD 1
+You pick up CD (1). You hold CD (1).
+Think: Now, I need to find countertop and put down CD 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see countertop (1), garbage bag (1). You hold CD (1).
+Act: go to countertop 1
+You arrive at the countertop (1). You see credit card (2), house plant (6), pen (3), remote control (7), side table (2), tissue box (2), watch (2). You hold CD (1).
+Act: put down CD 1
+You put CD (1) on countertop (1).
+Think: Now I complete task.
+OK.
+Act: done

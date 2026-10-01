@@ -6,7 +6,7 @@ Think: First, I need to find side table.
 OK.
 Query: find_objects({'label': 'side table'})
 Info: [{'name_id_nl': 'side table 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'bedroom 1'}]
-Think: I find side table 1.
+Think: I find side table 1 in bedroom 1.
 OK.
 Act: go to bedroom 1
 You move to the bedroom (1). Looking quickly around the room, you see bed (1), dog bed (1), drawer (1, 2, 3, 4, 5, 6), dresser (1), painting (1, 2), side table (1).
@@ -25,35 +25,39 @@ You pick up key chain (1). You hold key chain (1).
 Think: Now, I need to find dining table.
 OK.
 Query: find_objects({'label': 'dining table'})
-Info: [{'name_id_nl': 'dining table 2', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}, {'name_id_nl': 'dining table 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'kitchen 1'}]
-Think: I find dining table 2.
+Info: [{'name_id_nl': 'dining table 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'kitchen 1'}, {'name_id_nl': 'dining table 2', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}]
+Think: I find dining table 1.
 OK.
-Act: go to living room 1
-You move to the living room (1). Looking quickly around the room, you see TV stand (1), dining table (2), garbage can (3), house plant (1), painting (3, 4), shelf (1), sofa (1). You hold key chain (1).
-Act: go to dining table 2
-You arrive at the dining table (2). You see bed (1), book (1), cell phone (1), teddy bear (1). You hold key chain (1).
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see chair (1), countertop (1), dining table (1), fridge (1), garbage can (2), stool (1). You hold key chain (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see bowl (1), chair (1), credit card (2), dining table (1), fork (2), fridge (1), ladle (1), plate (1), spray bottle (2). You hold key chain (1).
 Act: put down key chain 1
-You put key chain (1) in dining table (2).
+You put key chain (1) on dining table (1).
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see bed (1), dog bed (1), drawer (1, 2, 3, 4, 5, 6), dresser (1), painting (1, 2), side table (1).
 Act: go to pencil 1
 You arrive at the pencil (1). You see pencil (1), side table (1), watch (1).
 Act: pick up pencil 1
 You pick up pencil (1). You hold pencil (1).
-Act: go to living room 1
-You move to the living room (1). Looking quickly around the room, you see TV stand (1), dining table (2), garbage can (3), house plant (1), painting (3, 4), shelf (1), sofa (1). You hold pencil (1).
-Act: go to dining table 2
-You arrive at the dining table (2). You see bed (1), book (1), cell phone (1), teddy bear (1). You hold pencil (1).
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see chair (1), countertop (1), dining table (1), fridge (1), garbage can (2), stool (1). You hold pencil (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see bowl (1), chair (1), credit card (2), dining table (1), fork (2), fridge (1), key chain (1), ladle (1), plate (1), spray bottle (2). You hold pencil (1).
 Act: put down pencil 1
-You put pencil (1) in dining table (2).
+You put pencil (1) on dining table (1).
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see bed (1), dog bed (1), drawer (1, 2, 3, 4, 5, 6), dresser (1), painting (1, 2), side table (1).
 Act: go to watch 1
 You arrive at the watch (1). You see side table (1), watch (1).
 Act: pick up watch 1
 You pick up watch (1). You hold watch (1).
-Act: go to living room 1
-You move to the living room (1). Looking quickly around the room, you see TV stand (1), dining table (2), garbage can (3), house plant (1), painting (3, 4), shelf (1), sofa (1). You hold watch (1).
-Act: go to dining table 2
-You arrive at the dining table (2). You see bed (1), book (1), cell phone (1), teddy bear (1). You hold watch (1).
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see chair (1), countertop (1), dining table (1), fridge (1), garbage can (2), stool (1). You hold watch (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see bowl (1), chair (1), credit card (2), dining table (1), fork (2), fridge (1), key chain (1), ladle (1), pencil (1), plate (1), spray bottle (2). You hold watch (1).
 Act: put down watch 1
-You put watch (1) in dining table (2).
+You put watch (1) on dining table (1).
 Think: Now I need to check what's left on side table 1.
 OK.
 Query: get_edges_for_node({'node_id': 'side table 1', 'relation': 'ON'})

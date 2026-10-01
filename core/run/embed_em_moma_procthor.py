@@ -10,10 +10,13 @@ log = logging.getLogger(__name__)
 
 
 def parse_filename(file_name):
+    match_attr = re.match(r"traj_(\d+)_(AttributeHard)_(\w+)_(\d+)\.txt", file_name)
+    if match_attr:
+        return int(match_attr.group(1)), match_attr.group(2), match_attr.group(3), int(match_attr.group(4))
     match = re.match(r"traj_(\d+)_(\w+)_(\d+)\.txt", file_name)
     if match:
-        return int(match.group(1)), match.group(2), int(match.group(3))
-    return None, None, None
+        return int(match.group(1)), match.group(2), None, int(match.group(3))
+    return None, None, None, None
 
 def load_taskset(eval_path):
     with open(eval_path, 'r') as f:
@@ -50,22 +53,23 @@ def extract_success_traj(cfg, task_list):
     
     grouped_files = {}
     for file_name in os.listdir(collect_dir):
-        env_id, task_type, num = parse_filename(file_name)
+        env_id, task_type, init_action, num = parse_filename(file_name)
         if env_id is None:
             continue
-        key = (env_id, task_type)
+        key = (env_id, task_type, init_action)
         grouped_files.setdefault(key, []).append((num, file_name))
         
-    for (env_id, task_type), file_list in grouped_files.items():
+    for (env_id, task_type, init_action), file_list in grouped_files.items():
         task_d = next(
-            (t for t in task_list if t.get("env_id") == env_id and t.get("mode") == task_type),
+            (t for t in task_list if t.get("env_id") == env_id and t.get("mode") == task_type
+             and t.get("init_action") == init_action),
             None
         )
         if task_d is None:
-            logging.warning(f"[SKIP] env_id {env_id} with task_type {task_type} not found")
+            logging.warning(f"[SKIP] env_id {env_id} with task_type {task_type} and init_action {init_action} not found")
             continue
 
-        print(f"[INFO] env_id: {env_id} / task_type: {task_type}")
+        print(f"[INFO] env_id: {env_id} / task_type: {task_type} / init_action: {init_action}")
         print(f"[INFO] instruction: {task_d['instruction']}")
 
         # Sort files by num
@@ -84,7 +88,7 @@ def extract_success_traj(cfg, task_list):
         ssr = check_goal_condition(
             task_d, env.controller, env.init_event,
             env.cleaned_objects, env.cooled_objects,
-            env.heated_objects, env.filled_coffee_objects
+            env.heated_objects, env.filled_coffee_objects, env.init_state_hard
         )
         print(f"[INFO] Subgoal Success Rate (SSR): {ssr}")
         

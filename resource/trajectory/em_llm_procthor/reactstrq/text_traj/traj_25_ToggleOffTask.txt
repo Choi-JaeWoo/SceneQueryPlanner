@@ -1,4 +1,4 @@
-Your task is to: Ensure that all active candles, televisions, and floorlamps are powered down.
+Your task is to: Ensure that all active candles, televisions, and floor lamps are powered down.
 You are in the house, and there are 2 rooms: kitchen (1), living room (1). You are in the middle of a kitchen (1). Looking quickly around the room, you see countertop (1), fridge (1), house plant (1), painting (1, 2, 3).
 Think: To solve the task, I need to go through every room, check for candle, television, and floor lamp, and turn them off if they are turned on.
 OK.

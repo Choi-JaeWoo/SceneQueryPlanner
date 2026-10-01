@@ -1,0 +1,10 @@
+Your task is to: Put the openable object from the countertop onto the armchair so I can open it easily while sitting.
+You put mug (2) on armchair (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- bathroom 1: [(drawer 11), faucet 1, (garbage can 1), painting 4, painting 3, (side table 1), (sink 1), (sink basin 1), (toilet 1), toilet paper 1]
+- bedroom 1: [painting 1, painting 2, bowl 1, cell phone 1, key chain 1, television 1, watch 1, armchair 1, baseball bat 1, (bed 1), (box 1), (box 2), (drawer 5), (drawer 8), (drawer 9), (drawer 6), (drawer 3), (drawer 1), (drawer 7), (drawer 10), (drawer 2), (drawer 4), (dresser 1), mug 2, remote control 1, (shelf 1), (shelf 2), (shelf 3), (shelf 4), (shelf 5), (shelf 6), (sofa 1), (TV stand 1)]
+- kitchen 1: [book 2, butter knife 1, pencil 1, statue 2, book 1, butter knife 2, butter knife 3, (chair 1), (chair 2), (chair 3), (chair 4), countertop 1, (dining table 1), fork 1, (fridge 1), (garbage can 2), soap bottle 1, spatula 1, spatula 2, spatula 3, spray bottle 2, vase 2]
+- (living room 1): [(chair 5), (dining table 2), (garbage can 3), (shelf 8), (shelf 11), (shelf 9), (shelf 7), (shelf 12), (shelf 10), (sofa 2), (TV stand 2)]
+Your 5 previous actions were: go to mug 2 (success), pick up mug 2 (success), go to bedroom 1 (success), go to armchair 1 (success), put down mug 2 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I put mug 2 on armchair 1. Now, I need to find countertop. I find countertop 1 in kitchen 1. Now, I need to move to kitchen 1.
+Act: go to kitchen 1

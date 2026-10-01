@@ -1,0 +1,73 @@
+Your task is to: Warm the bread and then put it back in the location where the bread was originally.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a kitchen (1). Looking quickly around the room, you see chair (1), countertop (1), dining table (1), fridge (1), painting (1, 2), stool (1).
+Think: To solve the task, I need to find and pick up knife or butter knife, find and slice bread, put down knife or butter knife and pick up sliced bread, use either microwave or toaster to heat it, find bread and check the receptacle where bread is located, and place sliced bread on that receptacle.
+OK.
+Think: First, I need to find and pick up knife or butter knife.
+OK.
+Query: find_objects({'label': 'knife'})
+Info: [{'name_id_nl': 'knife 1', 'node_type': 'object', 'properties': ['pickupable'], 'states': []}]
+Query: find_objects({'label': 'butter knife'})
+Info: 
+Think: Knife 1 is on countertop 1.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see bottle (1), bread (1, 2), butter knife (1, 2, 3), coffee machine (1), countertop (1), dish sponge (1), lettuce (1, 2), paper towel roll (1), pen (1), pepper shaker (1), soap bottle (2), spatula (1), statue (1).
+Act: go to knife 1
+You arrive at the knife (1). You see chair (1), coffee machine (1), credit card (2), dining table (1), knife (1), lettuce (3), pencil (1), soap bottle (2), spray bottle (1), toaster (1), wine bottle (1).
+Think: Now, I need to pick it up.
+OK.
+Act: pick up knife 1
+You pick up knife (1). You hold knife (1).
+Think: Now, I need to find bread.
+OK.
+Query: find_objects({'label': 'bread'})
+Info: [{'name_id_nl': 'bread 1', 'node_type': 'object', 'properties': ['sliceable', 'pickupable'], 'states': []}, {'name_id_nl': 'bread 2', 'node_type': 'object', 'properties': ['sliceable', 'pickupable'], 'states': []}]
+Query: get_edges_for_node({'node_id': 'bread 1'})
+Info: [('bread 1', 'countertop 1', 'ON'), ('bread 1', 'bottle 1', 'CLOSE'), ('bread 1', 'bread 2', 'CLOSE'), ('bread 1', 'butter knife 2', 'CLOSE'), ('bread 1', 'dish sponge 1', 'CLOSE'), ('bread 1', 'lettuce 1', 'CLOSE'), ('bread 1', 'pen 1', 'CLOSE'), ('bread 1', 'pepper shaker 1', 'CLOSE'), ('bread 1', 'spatula 1', 'CLOSE'), ('bread 1', 'kitchen 1', 'INSIDE'), ('bottle 1', 'bread 1', 'CLOSE'), ('bread 2', 'bread 1', 'CLOSE'), ('butter knife 2', 'bread 1', 'CLOSE'), ('dish sponge 1', 'bread 1', 'CLOSE'), ('lettuce 1', 'bread 1', 'CLOSE'), ('pen 1', 'bread 1', 'CLOSE'), ('pepper shaker 1', 'bread 1', 'CLOSE'), ('spatula 1', 'bread 1', 'CLOSE')]
+Query: get_edges_for_node({'node_id': 'bread 2'})
+Info: [('bread 2', 'countertop 1', 'ON'), ('bread 2', 'bottle 1', 'CLOSE'), ('bread 2', 'bread 1', 'CLOSE'), ('bread 2', 'butter knife 3', 'CLOSE'), ('bread 2', 'butter knife 1', 'CLOSE'), ('bread 2', 'butter knife 2', 'CLOSE'), ('bread 2', 'dish sponge 1', 'CLOSE'), ('bread 2', 'lettuce 2', 'CLOSE'), ('bread 2', 'lettuce 1', 'CLOSE'), ('bread 2', 'paper towel roll 1', 'CLOSE'), ('bread 2', 'pen 1', 'CLOSE'), ('bread 2', 'pepper shaker 1', 'CLOSE'), ('bread 2', 'spatula 1', 'CLOSE'), ('bread 2', 'statue 1', 'CLOSE'), ('bread 2', 'kitchen 1', 'INSIDE'), ('bottle 1', 'bread 2', 'CLOSE'), ('bread 1', 'bread 2', 'CLOSE'), ('butter knife 3', 'bread 2', 'CLOSE'), ('butter knife 1', 'bread 2', 'CLOSE'), ('butter knife 2', 'bread 2', 'CLOSE'), ('dish sponge 1', 'bread 2', 'CLOSE'), ('lettuce 2', 'bread 2', 'CLOSE'), ('lettuce 1', 'bread 2', 'CLOSE'), ('paper towel roll 1', 'bread 2', 'CLOSE'), ('pen 1', 'bread 2', 'CLOSE'), ('pepper shaker 1', 'bread 2', 'CLOSE'), ('spatula 1', 'bread 2', 'CLOSE'), ('statue 1', 'bread 2', 'CLOSE')]
+Think: Bread 1 and bread 2 are on countertop 1.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see bottle (1), bread (1, 2), butter knife (1, 2, 3), coffee machine (1), countertop (1), dish sponge (1), lettuce (1, 2), paper towel roll (1), pen (1), pepper shaker (1), soap bottle (2), spatula (1), statue (1). You hold knife (1).
+Act: go to bread 1
+You arrive at the bread (1). You see bottle (1), bread (1, 2), butter knife (2), dish sponge (1), lettuce (1), pen (1), pepper shaker (1), spatula (1). You hold knife (1).
+Act: slice bread 1
+You slice bread (1). You see bottle (1), bread (2), butter knife (2), dish sponge (1), lettuce (1), pen (1), pepper shaker (1), sliced bread (1), spatula (1). You hold knife (1).
+Think: Now, I need to put down knife 1 and pick up sliced bread 1.
+OK.
+Act: put down knife 1
+You put knife (1) on countertop (1).
+Act: pick up sliced bread 1
+You pick up sliced bread (1). You hold sliced bread (1).
+Think: Now, I need to find microwave or toaster to heat sliced bread 1. I find toaster 1.
+OK.
+Act: go to toaster 1
+You arrive at the toaster (1). You see chair (1), credit card (2), dining table (1), lettuce (3), pencil (1), spray bottle (1), toaster (1), wine bottle (1). You hold sliced bread (1).
+Act: put down sliced bread 1
+You put sliced bread (1) in toaster (1).
+Act: turn on toaster 1
+You turn on toaster (1).
+Think: Now, I need to turn off toaster 1 and pick up sliced bread 1.
+OK.
+Act: turn off toaster 1
+You turn off toaster (1).
+Act: pick up sliced bread 1
+You pick up sliced bread (1). You hold sliced bread (1).
+Think: Now, I need to find bread and check the receptacle where bread is located.
+OK.
+Query: find_objects({'label': 'bread'})
+Info: [{'name_id_nl': 'bread 1', 'node_type': 'object', 'properties': ['sliceable', 'pickupable'], 'states': []}, {'name_id_nl': 'bread 2', 'node_type': 'object', 'properties': ['sliceable', 'pickupable'], 'states': []}]
+Query: get_edges_for_node({'node_id': 'bread 1'})
+Info: [('bread 1', 'countertop 1', 'ON'), ('bread 1', 'bottle 1', 'CLOSE'), ('bread 1', 'bread 2', 'CLOSE'), ('bread 1', 'butter knife 2', 'CLOSE'), ('bread 1', 'dish sponge 1', 'CLOSE'), ('bread 1', 'lettuce 1', 'CLOSE'), ('bread 1', 'pen 1', 'CLOSE'), ('bread 1', 'pepper shaker 1', 'CLOSE'), ('bread 1', 'spatula 1', 'CLOSE'), ('bread 1', 'kitchen 1', 'INSIDE'), ('bottle 1', 'bread 1', 'CLOSE'), ('bread 2', 'bread 1', 'CLOSE'), ('butter knife 2', 'bread 1', 'CLOSE'), ('dish sponge 1', 'bread 1', 'CLOSE'), ('lettuce 1', 'bread 1', 'CLOSE'), ('pen 1', 'bread 1', 'CLOSE'), ('pepper shaker 1', 'bread 1', 'CLOSE'), ('spatula 1', 'bread 1', 'CLOSE')]
+Query: get_edges_for_node({'node_id': 'bread 2'})
+Info: [('bread 2', 'bread 1', 'CLOSE'), ('bread 2', 'countertop 1', 'ON'), ('bread 2', 'bottle 1', 'CLOSE'), ('bread 2', 'butter knife 3', 'CLOSE'), ('bread 2', 'butter knife 1', 'CLOSE'), ('bread 2', 'butter knife 2', 'CLOSE'), ('bread 2', 'dish sponge 1', 'CLOSE'), ('bread 2', 'knife 1', 'CLOSE'), ('bread 2', 'lettuce 2', 'CLOSE'), ('bread 2', 'lettuce 1', 'CLOSE'), ('bread 2', 'paper towel roll 1', 'CLOSE'), ('bread 2', 'pen 1', 'CLOSE'), ('bread 2', 'pepper shaker 1', 'CLOSE'), ('bread 2', 'spatula 1', 'CLOSE'), ('bread 2', 'statue 1', 'CLOSE'), ('bread 2', 'kitchen 1', 'INSIDE'), ('bread 1', 'bread 2', 'CLOSE'), ('bottle 1', 'bread 2', 'CLOSE'), ('butter knife 3', 'bread 2', 'CLOSE'), ('butter knife 1', 'bread 2', 'CLOSE'), ('butter knife 2', 'bread 2', 'CLOSE'), ('dish sponge 1', 'bread 2', 'CLOSE'), ('knife 1', 'bread 2', 'CLOSE'), ('lettuce 2', 'bread 2', 'CLOSE'), ('lettuce 1', 'bread 2', 'CLOSE'), ('paper towel roll 1', 'bread 2', 'CLOSE'), ('pen 1', 'bread 2', 'CLOSE'), ('pepper shaker 1', 'bread 2', 'CLOSE'), ('spatula 1', 'bread 2', 'CLOSE'), ('statue 1', 'bread 2', 'CLOSE')]
+Think: Bread 1 and bread 2 are on countertop 1. Now, I need to move to countertop 1 and put down sliced bread 1.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1). You see bottle (1), bread (2), butter knife (1, 2, 3), coffee machine (1), countertop (1), dish sponge (1), knife (1), lettuce (1, 2), paper towel roll (1), pen (1), pepper shaker (1), soap bottle (2), spatula (1), statue (1). You hold sliced bread (1).
+Act: put down sliced bread 1
+You put sliced bread (1) on countertop (1).
+Think: Now I complete the task.
+OK.
+Act: done

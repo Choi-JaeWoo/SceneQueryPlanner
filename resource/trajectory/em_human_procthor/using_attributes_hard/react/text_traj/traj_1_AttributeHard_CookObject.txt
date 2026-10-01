@@ -1,0 +1,31 @@
+Your task is to: Move the cooked item in the fridge to the countertop.
+You are in the house, and there are 2 rooms: kitchen (1), living room (1). You are in the middle of a living room (1). Looking quickly around the room, you see TV stand (1), desk (1), dining table (1), drawer (1, 2, 3), painting (3, 4), shelf (4, 5, 6, 7, 8, 9).
+Think: To solve the task, I need to find the fridge, find the cooked item in the fridge and pick it up, find the countertop and put down the cooked item.
+OK.
+Think: First, I need to find fridge. The fridge is more likely to appear in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see cabinet (1), countertop (1), fridge (1), painting (1, 2), shelf (1, 2, 3), shelving unit (1).
+Act: go to fridge 1
+You arrive at the fridge (1). The fridge (1) is closed. You see cabinet (1), fridge (1), shelf (1, 2, 3), shelving unit (1).
+Think: I arrive fridge 1. Since fridge 1 is closed, I need to open it.
+OK.
+Act: open fridge 1
+You open fridge (1). You see apple (1), cabinet (1), egg (1, 2), fridge (1), lettuce (1), potato (1), shelf (1, 2, 3), shelving unit (1).
+Think: Now, I need to find cooked item in fridge 1. The cooked item in fridge 1 is potato 1. Now, I need to pick it up.
+OK.
+Act: go to potato 1
+You arrive at the potato (1). You see apple (1), egg (1, 2), fridge (1), lettuce (1), potato (1).
+Act: pick up potato 1
+You pick up potato (1). You hold potato (1).
+Think: I pick up potato 1. Now, I need to find the countertop.
+OK.
+Act: go to countertop 1
+You arrive at the countertop (1).  You hold potato (1).
+Think: I arrive at countertop 1. Now, I need to put down potato 1.
+OK.
+Act: put down potato 1
+You put potato (1) on countertop (1).
+Think: Now I complete task.
+OK.
+Act: done

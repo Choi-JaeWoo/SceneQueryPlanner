@@ -39,12 +39,17 @@ def collect_procthor(cfg, tp):
     os.makedirs(collect_dir, exist_ok=True)
 
     while True:
-        task_mode = input("Type task mode (e.g., PickAndPlaceSingleTask): ").strip()
+        task_mode = input("Type task mode (e.g., PickAndPlaceSingleTask, AttributeHard): ").strip()
         task_id = int(input('Type target env id (0~999): '))
+        init_action = None
+        if task_mode == "AttributeHard":
+            init_action = input("Type init action (e.g., ToggleObjectOn, DirtyObject, OpenObject, BreakObject, CookObject): ").strip()
         task_d = next((task for task in train_set
-                       if task['mode'] == task_mode and task['env_id'] == task_id), None)
+                       if task['mode'] == task_mode and task['env_id'] == task_id
+                       and task.get('init_action') == init_action), None)
         if task_d is None:
-            print(f"[WARNING] No task found with mode '{task_mode}' and env_id {task_id}")
+            print(f"[WARNING] No task found with mode '{task_mode}', env_id {task_id}"
+                  + (f" and init_action '{init_action}'" if init_action else ""))
             continue
         tp.collect_human(task_d, collect_dir)
 

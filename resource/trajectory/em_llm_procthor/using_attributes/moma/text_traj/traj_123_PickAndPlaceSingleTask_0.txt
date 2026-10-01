@@ -1,0 +1,10 @@
+Your task is to: Put the item made of paper from the dresser onto the shelf.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a living room (1). Looking quickly around the room, you see TV stand (1), dog bed (2), house plant (1), shelf (7). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- (bathroom 1): [faucet 1, (garbage can 1), painting 3, painting 4, painting 2, plunger 1, (sink 1), (sink basin 1), spray bottle 1, (toilet 1)]
+- (bedroom 1): [basket ball 1, (bed 1), (cabinet 1), (cabinet 4), (cabinet 3), (cabinet 2), dog bed 1, (drawer 3), (drawer 1), (drawer 4), (drawer 2), (dresser 1), television 1]
+- (kitchen 1): [(cabinet 5), (cabinet 6), (countertop 1), (fridge 1), (shelf 5), (shelf 4), (shelf 3), (shelf 2), (shelf 1), (shelf 6), shelving unit 1, shelving unit 2]
+- living room 1: [bowl 2, candle 2, desk lamp 1, dog bed 2, house plant 1, pencil 2, (shelf 7), television 2, (TV stand 1)]
+You have not taken any actions yet.
+What is the best next action to complete the task as efficiently as possible?
+Think: First, I need to find dresser. I find dresser 1 in bedroom 1. Now, I need to move to bedroom 1.
+Act: go to bedroom 1

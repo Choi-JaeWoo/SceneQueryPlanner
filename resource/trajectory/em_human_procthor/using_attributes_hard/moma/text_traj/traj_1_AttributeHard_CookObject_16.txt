@@ -1,0 +1,8 @@
+Your task is to: Move the cooked item in the fridge to the countertop.
+You put potato (1) on countertop (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- kitchen 1: [painting 1, painting 2, shelving unit 1, (cabinet 1), fridge 1, apple 1, (shelf 3), (shelf 2), countertop 1, (shelf 1), egg 1, egg 2, lettuce 1]
+- living room 1: [tissue box 2, painting 3, painting 4, television 1, statue 1, remote control 3, pencil 4, cell phone 1, potato 1, (shelf 5), (drawer 3), (drawer 1), (shelf 9), (dining table 1), (shelf 7), (TV stand 1), (shelf 6), (shelf 8), (drawer 2), (shelf 4), (desk 1)]
+Your 5 previous actions were: go to potato 1 (success), pick up potato 1 (success), go to kitchen 1 (success), go to countertop 1 (success), put down potato 1 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I put potato 1 on countertop 1. Now I complete task.
+Act: done

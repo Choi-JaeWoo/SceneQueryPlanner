@@ -1,0 +1,9 @@
+Your task is to: Place the openable item on the dining table to make it easier to access what's inside.
+You arrive at the TV stand (1). You see TV stand (1), book (2), house plant (1), remote control (1), shelf (1), television (1), vase (1), watch (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- bedroom 1: [basket ball 1, (bed 1), book 2, (drawer 5), (drawer 1), (drawer 2), (drawer 3), (drawer 10), (drawer 9), (drawer 8), (drawer 7), (drawer 6), (drawer 4), (dresser 1), house plant 1, remote control 1, (shelf 1), television 1, TV stand 1, vase 1, watch 1]
+- (kitchen 1): [(countertop 1), (fridge 1), (garbage can 1), house plant 2, painting 1, painting 2, (stool 1), television 2]
+- (living room 1): [cart 1, (dining table 1), dog bed 1, painting 4, painting 3, (sofa 1)]
+Your 2 previous actions were: go to bedroom 1 (success), go to TV stand 1 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I arrive at TV stand 1. I need to check unexplored areas in bedroom 1 to find openable item. Now, I need to check bed 1.
+Act: go to bed 1

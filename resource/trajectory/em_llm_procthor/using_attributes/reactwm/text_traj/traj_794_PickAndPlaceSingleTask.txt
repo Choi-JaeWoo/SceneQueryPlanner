@@ -1,0 +1,29 @@
+Your task is to: Place the wooden item near the box into the box to keep it safe.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a living room (1). Looking quickly around the room, you see TV stand (1), dining table (3), drawer (5), painting (3, 4), shelf (7, 8, 9, 10, 11, 12, 13, 14), side table (1, 2, 3), sofa (1).
+Think: To solve the task, I need to find and pick up the wooden item near box, put it in box.
+OK.
+Think: First, I need to find box and find the wooden item near box.
+OK.
+Query: recall location of box
+You saw box 1 in bedroom 1.
+Think: Box 1 is in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see basket ball (1), bed (1), cabinet (1, 2, 3, 4), chair (1, 2, 3, 4), dining table (1), drawer (1, 2, 3, 4), dresser (1), house plant (1).
+Act: go to box 1
+You arrive at the box (1). You see book (1), box (1), cell phone (1), chair (1, 2, 3, 4), dining table (1), key chain (1), pen (1), pencil (1).
+Think: Near box 1, the wooden item is pencil 1. Now, I need to pick it up.
+OK.
+Act: go to pencil 1
+You arrive at the pencil (1). You see book (1), box (1), cell phone (1), chair (1, 2, 3, 4), dining table (1), key chain (1), pen (1), pencil (1).
+Act: pick up pencil 1
+You pick up pencil (1). You hold pencil (1).
+Think: Now, I need to find box and put down pencil 1.
+OK.
+Act: go to box 1
+You arrive at the box (1). You see book (1), box (1), cell phone (1), chair (1, 2, 3, 4), dining table (1), key chain (1), pen (1). You hold pencil (1).
+Act: put down pencil 1
+You put pencil (1) in box (1).
+Think: Now I complete the task.
+OK.
+Act: done

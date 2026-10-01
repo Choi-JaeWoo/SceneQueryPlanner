@@ -1,12 +1,8 @@
 Your task is to: Using the coffee machine, fill a mug with coffee and set it on the countertop.
 You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a bedroom (1). Looking quickly around the room, you see baseball bat (1), bed (1), cabinet (1, 2, 3, 4), chair (1, 2, 3, 4, 5, 6), dining table (1), drawer (1, 2, 3, 4), dresser (1), painting (1, 2), side table (1), television (1).
-Think: To solve the task, I need to find and put mug in coffee machine, turn on coffee machine, and put mug on countertop.
+Think: To solve the task, I need to find and pick up mug, find coffee machine and put down mug, turn on coffee machine, and put mug on countertop.
 OK.
-Think: First, I need to find and pick up mug.
-OK.
-Query: find_objects({'label': 'mug'})
-Info: 
-Think: I have not seen mug yet. Now I need to check where to search. First, I will search kitchen 1.
+Think: First, I need to find and pick up mug. The mug is more likely to appear in kitchen 1.
 OK.
 Query: get_child_node_names({'parent_node_id': 'kitchen 1'})
 Info: cabinet 5, chair (7, 8, 9, 10), countertop 1, dining table 2, fridge 1, safe 1, shelf (1, 2, 3)
@@ -39,13 +35,9 @@ You arrive at the coffee machine (1). You see apple (1), bowl (2), coffee machin
 Think: Now, I need to put down mug 2 in coffee machine 1.
 OK.
 Act: put down mug 2
-You put mug (2) in coffee machine (1).
-Think: Now, I need to turn on coffee machine 1 to brew the coffee.
-OK.
+You put mug (2) on coffee machine (1).
 Act: turn on coffee machine 1
 You turn on coffee machine (1).
-Think: Now, I need to turn off coffee machine 1 and pick up mug 2.
-OK.
 Act: turn off coffee machine 1
 You turn off coffee machine (1).
 Act: pick up mug 2
@@ -55,7 +47,7 @@ OK.
 Act: go to countertop 1
 You arrive at the countertop (1). You see apple (1), bowl (2), coffee machine (1), countertop (1), cup (1), fridge (1), painting (3), paper towel roll (1), pen (1), pepper shaker (1), potato (1, 2), salt shaker (1), soap bottle (2), spatula (1), spoon (2), tomato (1). You hold mug (2).
 Act: put down mug 2
-You put mug (2) in countertop (1).
+You put mug (2) on countertop (1).
 Think: Now I complete task.
 OK.
 Act: done

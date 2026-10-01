@@ -1,0 +1,51 @@
+Your task is to: Place the wooden item near the box into the box to keep it safe.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a living room (1). Looking quickly around the room, you see TV stand (1), dining table (3), drawer (5), painting (3, 4), shelf (7, 8, 9, 10, 11, 12, 13, 14), side table (1, 2, 3), sofa (1).
+Think: To solve the task, I need to find and pick up the wooden item near the box, put it in box to keep it safe.
+OK.
+Think: First, I need to find and pick up the wooden item near the box. Now, I need to find box.
+OK.
+Query: find_objects({'label': 'box'})
+Info: [{'name_id_nl': 'box 1', 'node_type': 'asset', 'properties': ['pickupable'], 'states': [], 'room': 'bedroom 1'}]
+Think: Box 1 is in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see basket ball (1), bed (1), cabinet (1, 2, 3, 4), chair (1, 2, 3, 4), dining table (1), drawer (1, 2, 3, 4), dresser (1), house plant (1).
+Act: go to box 1
+You arrive at the box (1). You see book (1), box (1), cell phone (1), chair (1, 2, 3, 4), dining table (1), key chain (1), pen (1), pencil (1).
+Think: Now, I need to find and pick up the wooden item near the box. First, I need to find all objects that are close to box 1.
+OK.
+Query: get_edges_for_node({'node_id': 'box 1', 'relation': 'CLOSE'})
+Info: [('box 1', 'book 1', 'CLOSE'), ('box 1', 'cell phone 1', 'CLOSE'), ('box 1', 'chair 2', 'CLOSE'), ('box 1', 'chair 1', 'CLOSE'), ('box 1', 'chair 3', 'CLOSE'), ('box 1', 'chair 4', 'CLOSE'), ('box 1', 'key chain 1', 'CLOSE'), ('box 1', 'pen 1', 'CLOSE'), ('box 1', 'pencil 1', 'CLOSE'), ('box 1', 'user 1', 'CLOSE'), ('book 1', 'box 1', 'CLOSE'), ('cell phone 1', 'box 1', 'CLOSE'), ('chair 2', 'box 1', 'CLOSE'), ('chair 1', 'box 1', 'CLOSE'), ('chair 3', 'box 1', 'CLOSE'), ('chair 4', 'box 1', 'CLOSE'), ('key chain 1', 'box 1', 'CLOSE'), ('pen 1', 'box 1', 'CLOSE'), ('pencil 1', 'box 1', 'CLOSE'), ('user 1', 'box 1', 'CLOSE')]
+Think: Now, I need to check each object to find the wooden item.
+OK.
+Query: read_node({'node_id': 'book 1'})
+Info: {'name_id_nl': 'book 1', 'salientMaterials': ['Paper'], 'properties': ['openable', 'pickupable'], 'states': []}
+Query: read_node({'node_id': 'cell phone 1'})
+Info: {'name_id_nl': 'cell phone 1', 'salientMaterials': ['Metal', 'Glass'], 'properties': ['toggleable', 'breakable', 'pickupable'], 'states': []}
+Query: read_node({'node_id': 'chair 2'})
+Info: {'name_id_nl': 'chair 2', 'salientMaterials': ['Wood'], 'properties': [], 'states': []}
+Query: read_node({'node_id': 'chair 1'})
+Info: {'name_id_nl': 'chair 1', 'salientMaterials': ['Wood'], 'properties': [], 'states': []}
+Query: read_node({'node_id': 'chair 3'})
+Info: {'name_id_nl': 'chair 3', 'salientMaterials': ['Wood'], 'properties': [], 'states': []}
+Query: read_node({'node_id': 'chair 4'})
+Info: {'name_id_nl': 'chair 4', 'salientMaterials': ['Wood'], 'properties': [], 'states': []}
+Query: read_node({'node_id': 'key chain 1'})
+Info: {'name_id_nl': 'key chain 1', 'salientMaterials': ['Metal', 'Plastic'], 'properties': ['pickupable'], 'states': []}
+Query: read_node({'node_id': 'pen 1'})
+Info: {'name_id_nl': 'pen 1', 'salientMaterials': ['Plastic', 'Metal'], 'properties': ['pickupable'], 'states': []}
+Query: read_node({'node_id': 'pencil 1'})
+Info: {'name_id_nl': 'pencil 1', 'salientMaterials': ['Wood'], 'properties': ['pickupable'], 'states': []}
+Think: The wooden item near box 1 is pencil 1. Now, I need to pick it up.
+OK.
+Act: go to pencil 1
+You arrive at the pencil (1). You see book (1), box (1), cell phone (1), chair (1, 2, 3, 4), dining table (1), key chain (1), pen (1), pencil (1).
+Act: pick up pencil 1
+You pick up pencil (1). You hold pencil (1).
+Think: Now, I need to put down pencil 1.
+OK.
+Act: put down pencil 1
+You put pencil (1) in box (1).
+Think: Now I complete the task.
+OK.
+Act: done

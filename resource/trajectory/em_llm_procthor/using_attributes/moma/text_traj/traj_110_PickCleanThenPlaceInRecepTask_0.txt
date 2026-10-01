@@ -1,0 +1,10 @@
+Your task is to: Wash the sponge object on the countertop and then put it in the sink basin.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a bathroom (1). Looking quickly around the room, you see garbage can (1), painting (2, 3, 4), plunger (1), sink (1), sink basin (1), toilet (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- bathroom 1: [(toilet 1), (sink 1), painting 2, painting 4, (sink basin 1), plunger 1, painting 3, (garbage can 1), faucet 1]
+- (bedroom 1): [(drawer 1), (drawer 2), basket ball 1, painting 1, television 1, (drawer 3), (bed 2), (chair 1), (dresser 1), (desk 1), (bed 1), (side table 1)]
+- (kitchen 1): [(dining table 1), (chair 2), (fridge 1), (countertop 1)]
+- (living room 1): [(box 1), house plant 1, (dining table 2), television 2, (sofa 1)]
+You have not taken any actions yet.
+What is the best next action to complete the task as efficiently as possible?
+Think: First, I need to find countertop and find the sponge object on countertop. I find countertop 1 in kitchen 1. Now, I need to move to kitchen 1.
+Act: go to kitchen 1

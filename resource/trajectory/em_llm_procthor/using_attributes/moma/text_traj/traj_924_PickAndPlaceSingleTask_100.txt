@@ -1,0 +1,2 @@
+Your task is to: Place the item from the sofa on the armchair to clear the seat.
+Max decision steps reached.

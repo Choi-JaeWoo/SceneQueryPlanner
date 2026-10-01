@@ -6,8 +6,10 @@ Think: First, I need to check living room 1.
 OK.
 Query: get_child_node_names({'parent_node_id': 'living room 1'})
 Info: TV stand 1, box (1, 2), dining table 1, shelf (1, 2, 3, 4, 5, 6), sofa 1
-Think: In living room 1, I can check TV stand 1, box (1, 2), dining table 1, shelf (1, 2, 3, 4, 5, 6), sofa 1 until I find television, cell phone, or floor lamp.
+Think: In living room 1, I can check TV stand 1, box (1, 2), dining table 1, shelf (1, 2, 3, 4, 5, 6), sofa 1 by one until I find television, cell phone, or floor lamp.
 OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), box (1), dining table (1), dog bed (1), floor lamp (1), painting (2, 3), shelf (1, 2, 3, 4, 5, 6), sofa (1).
 Act: go to TV stand 1
 You arrive at the TV stand (1). You see TV stand (1), box (2), candle (1), cell phone (1), credit card (2), dining table (1), house plant (2), pencil (1), plate (2), remote control (1), shelf (1, 2, 3, 4, 5, 6), television (1), tissue box (1), vase (1).
 Think: I find television 1. Now I need to check if television 1 is toggled on.
@@ -20,6 +22,16 @@ Act: go to television 1
 You arrive at the television (1). You see TV stand (1), box (2), candle (1), cell phone (1), credit card (2), dining table (1), house plant (2), pencil (1), plate (2), remote control (1), shelf (1, 2, 3, 4, 5, 6), television (1), tissue box (1), vase (1).
 Act: turn off television 1
 You turn off television (1).
+Think: I find cell phone 1. Now I need to check if cell phone 1 is toggled on.
+OK.
+Query: read_node({'node_id': 'cell phone 1', 'attrs': 'isToggled'})
+Info: {'isToggled': True}
+Think: Cell phone 1 is toggled on. Now I need to turn it off.
+OK.
+Act: go to cell phone 1
+You arrive at the cell phone (1). You see TV stand (1), box (2), candle (1), cell phone (1), credit card (2), dining table (1), house plant (2), pencil (1), plate (2), remote control (1), shelf (1, 2, 3, 4, 5, 6), television (1), tissue box (1), vase (1).
+Act: turn off cell phone 1
+You turn off cell phone (1).
 Act: go to box 1
 You arrive at the box (1). The box (1) is closed. You see box (1).
 Act: open box 1
@@ -48,7 +60,7 @@ Think: I need to check if there is any place I do not visit in living room 1.
 OK.
 Query: get_child_node_names({'parent_node_id': 'living room 1', 'child_node_attrs': {'visited': False}})
 Info: 
-Think: It seems there are no more objects to turn off in living room 1, so I need to go to kitchen 1.
+Think: It seems there are no more objects to turn off in living room 1, so I should go to kitchen 1.
 OK.
 Query: get_child_node_names({'parent_node_id': 'kitchen 1'})
 Info: countertop 1, fridge 1, garbage can 1
@@ -73,21 +85,7 @@ OK.
 Query: find_objects({'label': 'television', 'attrs': {'isToggled': True}})
 Info: 
 Query: find_objects({'label': 'cell phone', 'attrs': {'isToggled': True}})
-Info: [{'name_id_nl': 'cell phone 1', 'node_type': 'object', 'properties': ['toggleable', 'breakable', 'pickupable'], 'states': ['isToggled']}]
-Think: I find cell phone 1. Now I need to check if cell phone 1 is toggled on.
-OK.
-Query: read_node({'node_id': 'cell phone 1', 'attrs': 'isToggled'})
-Info: {'isToggled': True}
-Think: Cell phone 1 is toggled on. Now I need to turn it off.
-OK.
-Act: go to living room 1
-You move to the living room (1). Looking quickly around the room, you see TV stand (1), box (1), dining table (1), dog bed (1), floor lamp (1), painting (2, 3), shelf (1, 2, 3, 4, 5, 6), sofa (1).
-Act: go to TV stand 1
-You arrive at the TV stand (1). You see TV stand (1), box (2), candle (1), cell phone (1), credit card (2), dining table (1), house plant (2), pencil (1), plate (2), remote control (1), shelf (1, 2, 3, 4, 5, 6), television (1), tissue box (1), vase (1).
-Act: go to cell phone 1
-You arrive at the cell phone (1). You see TV stand (1), box (2), candle (1), cell phone (1), credit card (2), dining table (1), house plant (2), pencil (1), plate (2), remote control (1), shelf (1, 2, 3, 4, 5, 6), television (1), tissue box (1), vase (1).
-Act: turn off cell phone 1
-You turn off cell phone (1).
+Info: 
 Query: find_objects({'label': 'floor lamp', 'attrs': {'isToggled': True}})
 Info: [{'name_id_nl': 'floor lamp 1', 'node_type': 'object', 'properties': ['toggleable'], 'states': ['isToggled']}]
 Think: I find floor lamp 1. Now I need to check if floor lamp 1 is toggled on.
@@ -96,18 +94,12 @@ Query: read_node({'node_id': 'floor lamp 1', 'attrs': 'isToggled'})
 Info: {'isToggled': True}
 Think: Floor lamp 1 is toggled on. Now I need to turn it off.
 OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), box (1), dining table (1), dog bed (1), floor lamp (1), painting (2, 3), shelf (1, 2, 3, 4, 5, 6), sofa (1).
 Act: go to floor lamp 1
 You arrive at the floor lamp (1). You see floor lamp (1), pillow (1), sofa (1).
 Act: turn off floor lamp 1
 You turn off floor lamp (1).
-Think: Now, I need to check whether any televisions, cell phones, or floor lamps that are turned on are still remaining.
-OK.
-Query: find_objects({'label': 'television', 'attrs': {'isToggled': True}})
-Info: 
-Query: find_objects({'label': 'cell phone', 'attrs': {'isToggled': True}})
-Info: 
-Query: find_objects({'label': 'floor lamp', 'attrs': {'isToggled': True}})
-Info: 
 Think: Now I complete the task.
 OK.
 Act: done

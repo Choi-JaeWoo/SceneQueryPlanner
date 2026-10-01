@@ -1,0 +1,37 @@
+Your task is to: Place the openable item on the dining table to make it easier to access what's inside.
+You are in the house, and there are 3 rooms: bedroom (1), kitchen (1), living room (1). You are in the middle of a bedroom (1). Looking quickly around the room, you see TV stand (1), bed (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), shelf (1).
+Think: To solve the task, I need to find and pick up the openable item, find dining table and put it down.
+OK.
+Think: First, I need to find and pick up the openable item.
+OK.
+Query: recall location of openable item
+You have not seen openable item before.
+Think: I have not seen openable item yet. The openable item is more likely to appear in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see TV stand (1), bed (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), shelf (1).
+Think: In bedroom 1, the openable item is likely to appear in/on TV stand 1, bed 1, drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser 1, shelf 1. I can check each place one by one until I find openable item.
+OK.
+Act: go to TV stand 1
+You arrive at the TV stand (1). You see TV stand (1), book (2), house plant (1), remote control (1), shelf (1), television (1), vase (1), watch (1).
+Think: I find openable item 1. Now, I need to pick it up.
+OK.
+Act: go to book 2
+You arrive at the book (2). The book (2) is closed. You see TV stand (1), book (2), house plant (1), remote control (1), shelf (1), television (1), vase (1), watch (1).
+Act: pick up book 2
+You pick up book (2). You hold book (2).
+Think: Now, I need to find dining table.
+OK.
+Query: recall location of dining table
+You saw dining table 1 in living room 1.
+Think: Dining table 1 is in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see cart (1), dining table (1), dog bed (1), painting (3, 4), sofa (1). You hold book (2).
+Act: go to dining table 1
+You arrive at the dining table (1). You see book (1), desk lamp (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), mug (1). You hold book (2).
+Act: put down book 2
+You put book (2) on dining table (1).
+Think: Now I complete the task.
+OK.
+Act: done

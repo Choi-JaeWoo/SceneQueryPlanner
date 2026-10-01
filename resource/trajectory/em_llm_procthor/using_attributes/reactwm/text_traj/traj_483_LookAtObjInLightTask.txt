@@ -1,0 +1,39 @@
+Your task is to: Turn on the lamp on the TV stand while holding a pencil.
+You are in the house, and there are 6 rooms: bathroom (1, 2), bedroom (1, 2), kitchen (1), living room (1). You are in the middle of a bathroom (2). Looking quickly around the room, you see drawer (4, 5, 6), dresser (2), garbage can (2), laundry hamper (1), painting (1), plunger (2), sink (1), sink basin (1), toilet (1).
+Think: To solve the task, I need to find and pick up pencil, find and turn on the lamp on TV stand.
+OK.
+Think: First, I need to find and pick up pencil.
+OK.
+Query: recall location of pencil
+You have not seen pencil before.
+Think: I have not seen pencil yet. The pencil is more likely to appear in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), chair (6, 7, 8, 9), dining table (3), drawer (8), house plant (1), painting (2, 3, 4), shelf (1, 2, 3, 4, 5, 6), side table (2).
+Think: In living room 1, the pencil is likely to appear in/on TV stand 1, dining table 3, shelf (1, 2, 3, 4, 5, 6), side table 2. I can check each place one by one until I find pencil.
+OK.
+Act: go to TV stand 1
+You arrive at the TV stand (1). You see TV stand (1), candle (2), desk lamp (1), drawer (8), house plant (1), key chain (1), laptop (2), pencil (4), shelf (1, 2, 3, 4, 5, 6), side table (2), statue (4), television (2), vase (1).
+Think: I find pencil 4. Now, I need to pick it up.
+OK.
+Act: go to pencil 4
+You arrive at the pencil (4). You see TV stand (1), candle (2), chair (7, 8), desk lamp (1), dining table (3), drawer (8), key chain (1), laptop (2), painting (3, 4), pencil (4), plate (2), remote control (1), shelf (1, 2, 3, 4, 5, 6), side table (2), statue (4), television (2).
+Act: pick up pencil 4
+You pick up pencil (4). You hold pencil (4).
+Think: Now, I need to find TV stand and find the lamp on TV stand.
+OK.
+Query: recall location of TV stand
+You saw TV stand 1 in living room 1.
+Think: TV stand 1 is in living room 1.
+OK.
+Act: go to TV stand 1
+You arrive at the TV stand (1). You see TV stand (1), candle (2), desk lamp (1), drawer (8), house plant (1), key chain (1), laptop (2), shelf (1, 2, 3, 4, 5, 6), side table (2), statue (4), television (2), vase (1). You hold pencil (4).
+Think: The lamp on TV stand 1 is desk lamp 1. Now, I need to turn it on.
+OK.
+Act: go to desk lamp 1
+You arrive at the desk lamp (1). You see TV stand (1), desk lamp (1), drawer (8), key chain (1), painting (4), shelf (1, 2, 3, 4, 5, 6), side table (2), statue (4), television (2), vase (1). You hold pencil (4).
+Act: turn on desk lamp 1
+You turn on desk lamp (1). You hold pencil (4).
+Think: Now I complete the task.
+OK.
+Act: done

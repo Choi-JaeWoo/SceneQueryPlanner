@@ -29,7 +29,7 @@ OK.
 Act: go to dining table 2
 You arrive at the dining table (2). You see book (2), bowl (2), cabinet (2), dining table (2), house plant (1), painting (4), remote control (2), shelf (4, 5, 6), shelving unit (2), television (1). You hold newspaper (1).
 Act: put down newspaper 1
-You put newspaper (1) in dining table (2).
+You put newspaper (1) on dining table (2).
 Act: go to remote control 1
 You arrive at the remote control (1). You see book (2), cabinet (2), drawer (4, 5), newspaper (1), remote control (1, 2), shelf (4, 5, 6), shelving unit (2), side table (1).
 Act: pick up remote control 1
@@ -37,7 +37,7 @@ You pick up remote control (1). You hold remote control (1).
 Act: go to dining table 2
 You arrive at the dining table (2). You see book (2), bowl (2), cabinet (2), dining table (2), house plant (1), newspaper (1), painting (4), remote control (2), shelf (4, 5, 6), shelving unit (2), television (1). You hold remote control (1).
 Act: put down remote control 1
-You put remote control (1) in dining table (2).
+You put remote control (1) on dining table (2).
 Think: Now I need to check what's left on side table 1.
 OK.
 Query: get_edges_for_node({'node_id': 'side table 1', 'relation': 'ON'})

@@ -1,0 +1,9 @@
+Your task is to: Place the openable item on the dining table to make it easier to access what's inside.
+You arrive at the vase (1). You see book (1), butter knife (1), dining table (1), egg (1), vase (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- bedroom 1: [pillow 2, book 1, butter knife 1, egg 1, basket ball 1, pillow 1, house plant 1, bed 1, book 2, desk lamp 1, (drawer 5), drawer 1, (drawer 2), (drawer 3), (drawer 10), (drawer 9), (drawer 8), (drawer 7), (drawer 6), (drawer 4), (dresser 1), mug 1, remote control 1, (shelf 1), television 1, TV stand 1, watch 1]
+- kitchen 1: [house plant 2, painting 2, painting 1, countertop 1, fridge 1, (garbage can 1), kettle 1, ladle 1, paper towel roll 1, pepper shaker 1, pot 1, soap bottle 1, (stool 1), television 2, vase 2]
+- living room 1: [painting 4, painting 3, pillow 3, book 1, butter knife 1, cart 1, dining table 1, dog bed 1, egg 1, (sofa 1), vase 1]
+Your 5 previous actions were: pick up vase 1 (success), go to living room 1 (success), go to dining table 1 (success), put down vase 1 (success), go to vase 1 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I arrive at vase 1. Now, I need to open vase 1.
+Act: open book 1

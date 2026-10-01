@@ -1,0 +1,77 @@
+Your task is to: Clear the location with the television by moving all items from it onto the dining table.
+You are in the house, and there are 2 rooms: kitchen (1), living room (1). You are in the middle of a kitchen (1). Looking quickly around the room, you see chair (1, 2, 3, 4, 5), countertop (1), dining table (1), fridge (1), painting (1, 2), safe (1).
+Think: To solve the task, I need to find the location with the television and check what is on top of it. Then, I need to move everything on that location to dining table.
+OK.
+Think: First, I need to find the location with the television. I need to check where to search. First, I will search kitchen 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'kitchen 1'})
+Info: chair (1, 2, 3, 4, 5), countertop 1, dining table 1, fridge 1, safe 1
+Think: Now, I need to find the location with the television. I need to check each location in kitchen 1 to find the location with the television.
+OK.
+Query: read_node({'node_id': 'chair 1'})
+Info: {'name_id_nl': 'chair 1', 'salientMaterials': ['Metal', 'Fabric'], 'properties': [], 'states': []}
+Query: read_node({'node_id': 'chair 2'})
+Info: {'name_id_nl': 'chair 2', 'salientMaterials': ['Metal', 'Fabric'], 'properties': [], 'states': []}
+Query: read_node({'node_id': 'chair 3'})
+Info: {'name_id_nl': 'chair 3', 'salientMaterials': ['Metal', 'Fabric'], 'properties': [], 'states': []}
+Query: read_node({'node_id': 'chair 4'})
+Info: {'name_id_nl': 'chair 4', 'salientMaterials': ['Metal', 'Fabric'], 'properties': [], 'states': []}
+Query: read_node({'node_id': 'chair 5'})
+Info: {'name_id_nl': 'chair 5', 'salientMaterials': ['Metal', 'Fabric'], 'properties': [], 'states': []}
+Query: read_node({'node_id': 'countertop 1'})
+Info: {'name_id_nl': 'countertop 1', 'salientMaterials': None, 'properties': [], 'states': []}
+Query: read_node({'node_id': 'dining table 1'})
+Info: {'name_id_nl': 'dining table 1', 'salientMaterials': ['Wood'], 'properties': [], 'states': []}
+Query: read_node({'node_id': 'fridge 1'})
+Info: {'name_id_nl': 'fridge 1', 'salientMaterials': None, 'properties': ['isColdSource', 'openable'], 'states': []}
+Query: read_node({'node_id': 'safe 1'})
+Info: {'name_id_nl': 'safe 1', 'salientMaterials': ['Metal'], 'properties': ['openable'], 'states': []}
+Think: The location with the television is not in kitchen 1.
+OK.
+Think: Now, I need to find the location with the television. I need to check each location in living room 1 to find the location with the television.
+OK.
+Query: get_child_node_names({'parent_node_id': 'living room 1'})
+Info: TV stand 1, chair (6, 7), dining table 2, garbage can 1, shelf (1, 2, 3, 4, 5, 6), sofa 1
+Query: read_node({'node_id': 'TV stand 1'})
+Info: {'name_id_nl': 'TV stand 1', 'salientMaterials': ['Wood', 'Metal'], 'properties': [], 'states': []}
+Think: The location with the television is TV stand 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), chair (6, 7), dining table (2), garbage can (1), house plant (1), painting (3, 4), shelf (1, 2, 3, 4, 5, 6), sofa (1).
+Act: go to TV stand 1
+You arrive at the TV stand (1). You see TV stand (1), bowl (2), laptop (1), shelf (1, 2, 3, 4, 5, 6), television (1).
+Think: Now, I need to check what is on top of TV stand 1.
+OK.
+Query: get_edges_for_node({'node_id': 'TV stand 1', 'relation': 'ON'})
+Info: [('bowl 2', 'TV stand 1', 'ON'), ('television 1', 'TV stand 1', 'ON')]
+Think: Now, I need to move bowl 2, television 1 to dining table.
+OK.
+Act: go to bowl 2
+You arrive at the bowl (2). You see TV stand (1), bowl (2), laptop (1), shelf (1, 2, 3, 4, 5, 6), television (1).
+Act: pick up bowl 2
+You pick up bowl (2). You hold bowl (2).
+Think: Now, I need to find dining table and put down bowl 2.
+OK.
+Query: find_objects({'label': 'dining table'})
+Info: [{'name_id_nl': 'dining table 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'kitchen 1'}, {'name_id_nl': 'dining table 2', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}]
+Think: Dining table 2 is in living room 1.
+OK.
+Act: go to dining table 2
+You arrive at the dining table (2). You see book (1), chair (6, 7), dining table (2), plate (2), remote control (1), statue (2). You hold bowl (2).
+Act: put down bowl 2
+You put bowl (2) on dining table (2).
+Think: Now I need to find and pick up television 1. Television 1 is on TV stand 1 in living room 1.
+OK.
+Act: go to TV stand 1
+You arrive at the TV stand (1). You see TV stand (1), laptop (1), shelf (1, 2, 3, 4, 5, 6), television (1).
+Act: pick up laptop 1
+You pick up laptop (1). You hold laptop (1).
+Think: Now, I need to find dining table and put down laptop 1. Dining table 2 is in living room 1.
+OK.
+Act: go to dining table 2
+You arrive at the dining table (2). You see book (1), bowl (2), chair (6, 7), dining table (2), plate (2), remote control (1), statue (2). You hold laptop (1).
+Act: put down laptop 1
+You put laptop (1) on dining table (2).
+Think: Now I complete the task.
+OK.
+Act: done

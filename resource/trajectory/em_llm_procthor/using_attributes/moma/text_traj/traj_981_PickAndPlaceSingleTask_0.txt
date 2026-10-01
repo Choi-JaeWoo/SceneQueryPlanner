@@ -1,0 +1,8 @@
+Your task is to: Slice the apple and put it into the receptacle that is a cold source to keep it fresh.
+You are in the house, and there are 2 rooms: kitchen (1), living room (1). You are in the middle of a living room (1). Looking quickly around the room, you see TV stand (1), chair (1, 2, 3), dining table (1), drawer (1), painting (2, 3), shelf (4), side table (1, 2), sofa (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- (kitchen 1): [(fridge 1), shelving unit 1, (shelf 3), (cabinet 1), painting 1, (countertop 1), (shelf 2), (shelf 1)]
+- living room 1: [(side table 1), (sofa 1), (drawer 1), (chair 2), (side table 2), (box 1), (chair 1), (shelf 4), painting 2, (chair 3), (dining table 1), (TV stand 1), painting 3]
+You have not taken any actions yet.
+What is the best next action to complete the task as efficiently as possible?
+Think: First, I need to find and pick up knife or butter knife. The knife or butter knife is more likely to appear in kitchen 1.
+Act: go to kitchen 1

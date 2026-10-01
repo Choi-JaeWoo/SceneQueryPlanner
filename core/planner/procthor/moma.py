@@ -4,6 +4,7 @@ from collections import defaultdict, Counter
 
 
 from core.planner.base_planner import BasePlanner
+from core.utils.procthor_utils import task_file_stem
 from core.wm.sg_procthor import ProcThorSG
 from core.wm.sg_procthor import ProcThorSG_One
 from core.wm.sg_procthor import draw_scene_graph
@@ -90,7 +91,7 @@ class MoMa(BasePlanner):
         previous_step = None
 
         while True:
-            traj_file_path = os.path.join(collect_dir, f"traj_{task_data['env_id']}_{task_data['mode']}_{self.cur_decision_step}.txt")
+            traj_file_path = os.path.join(collect_dir, f"traj_{task_file_stem(task_data)}_{self.cur_decision_step}.txt")
             self.initial_collect(traj_file_path, task_data)
             
             if self.cur_decision_step > self.max_decision_step:
@@ -152,7 +153,7 @@ class MoMa(BasePlanner):
         previous_step = None
         
         while True:
-            traj_file_path = os.path.join(collect_dir, f"traj_{task_data['env_id']}_{task_data['mode']}_{self.cur_decision_step}.txt")
+            traj_file_path = os.path.join(collect_dir, f"traj_{task_file_stem(task_data)}_{self.cur_decision_step}.txt")
             self.initial_collect(traj_file_path, task_data)
             
             if self.cur_decision_step > self.max_decision_step:

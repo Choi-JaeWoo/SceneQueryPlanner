@@ -1,0 +1,53 @@
+Your task is to: Hold a baseball bat and turn on the toggleable lamp that is close to the credit card for a closer look.
+You are in the house, and there are 1 rooms: bedroom (1). You are in the middle of a bedroom (1). Looking quickly around the room, you see TV stand (1), baseball bat (1), basket ball (1), bed (1), chair (1, 2, 3, 4, 5, 6), dining table (1), drawer (1, 2, 3), dresser (1), painting (1, 2), shelf (1), sofa (1).
+Think: To solve the task, I need to find and pick up baseball bat, find and turn on the toggleable lamp that is close to credit card.
+OK.
+Think: First, I need to find and pick up baseball bat.
+OK.
+Query: find_objects({'label': 'baseball bat'})
+Info: [{'name_id_nl': 'baseball bat 1', 'node_type': 'object', 'properties': ['pickupable'], 'states': []}]
+Think: Baseball bat 1 is in bedroom 1.
+OK.
+Act: go to baseball bat 1
+You arrive at the baseball bat (1). You see baseball bat (1), painting (2).
+Act: pick up baseball bat 1
+You pick up baseball bat (1). You hold baseball bat (1).
+Think: Now, I need to find credit card and find the toggleable lamp that is close to credit card.
+OK.
+Query: find_objects({'label': 'credit card'})
+Info: 
+Think: I have not seen credit card yet. Now I need to check where to search. First, I will search bedroom 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'bedroom 1'})
+Info: TV stand 1, bed 1, chair (1, 2, 3, 4, 5, 6), dining table 1, drawer (1, 2, 3), dresser 1, shelf 1, sofa 1
+Think: In bedroom 1, the credit card is likely to appear in/on TV stand 1, bed 1, chair (1, 2, 3, 4, 5, 6), dining table 1, drawer (1, 2, 3), dresser 1, shelf 1, sofa 1. I can check each place one by one until I find credit card.
+OK.
+Act: go to TV stand 1
+You arrive at the TV stand (1). You see TV stand (1), book (1), bowl (1), chair (1, 5), mug (1), shelf (1), television (1). You hold baseball bat (1).
+Act: go to bed 1
+You arrive at the bed (1). You see bed (1), cell phone (1), pillow (1). You hold baseball bat (1).
+Act: go to chair 1
+You arrive at the chair (1). You see TV stand (1), book (1), bowl (1), chair (1, 5, 6), dining table (1), mug (1), shelf (1), television (1). You hold baseball bat (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see chair (1, 2, 3, 4, 6), dining table (1), pen (2), remote control (1). You hold baseball bat (1).
+Act: go to drawer 1
+You arrive at the drawer (1). The drawer (1) is closed. You see chair (2, 3, 4), credit card (1), desk lamp (1), drawer (1, 2, 3), dresser (1), pen (1, 2), remote control (1), statue (1). You hold baseball bat (1).
+Act: open drawer 1
+You open drawer (1). You see chair (2, 3, 4), credit card (1), desk lamp (1), drawer (1, 2, 3), dresser (1), pen (1, 2), remote control (1), statue (1). You hold baseball bat (1).
+Think: I find credit card 1.
+OK.
+Act: go to credit card 1
+You arrive at the credit card (1). You see chair (2, 3, 4), credit card (1), desk lamp (1), drawer (1, 2, 3), dresser (1), pen (1, 2), remote control (1), statue (1). You hold baseball bat (1).
+Think: Now, I need to find and turn on the toggleable lamp that is close to credit card 1. First, I need to find all objects that are close to credit card 1.
+OK.
+Query: get_edges_for_node({'node_id': 'credit card 1', 'relation': 'CLOSE'})
+Info: [('credit card 1', 'baseball bat 1', 'CLOSE'), ('credit card 1', 'chair 2', 'CLOSE'), ('credit card 1', 'desk lamp 1', 'CLOSE'), ('credit card 1', 'drawer 2', 'CLOSE'), ('credit card 1', 'drawer 3', 'CLOSE'), ('credit card 1', 'drawer 1', 'CLOSE'), ('credit card 1', 'pen 1', 'CLOSE'), ('credit card 1', 'statue 1', 'CLOSE'), ('credit card 1', 'user 1', 'CLOSE'), ('baseball bat 1', 'credit card 1', 'CLOSE'), ('chair 2', 'credit card 1', 'CLOSE'), ('desk lamp 1', 'credit card 1', 'CLOSE'), ('drawer 2', 'credit card 1', 'CLOSE'), ('drawer 3', 'credit card 1', 'CLOSE'), ('drawer 1', 'credit card 1', 'CLOSE'), ('pen 1', 'credit card 1', 'CLOSE'), ('statue 1', 'credit card 1', 'CLOSE'), ('user 1', 'credit card 1', 'CLOSE')]
+Think: The toggleable lamp that is close to credit card 1 is desk lamp 1. Now, I need to turn on desk lamp 1.
+OK.
+Act: go to desk lamp 1
+You arrive at the desk lamp (1). You see chair (2, 3, 4), credit card (1), desk lamp (1), drawer (1, 2, 3), dresser (1), pen (1, 2), remote control (1), statue (1). You hold baseball bat (1).
+Act: turn on desk lamp 1
+You turn on desk lamp (1). You hold baseball bat (1).
+Think: Now I complete the task.
+OK.
+Act: done

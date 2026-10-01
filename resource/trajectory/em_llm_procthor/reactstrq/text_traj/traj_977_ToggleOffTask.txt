@@ -6,7 +6,7 @@ Think: First, I need to check bedroom 1.
 OK.
 Query: get_child_node_names({'parent_node_id': 'bedroom 1'})
 Info: bed 1, drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser 1
-Think: In bedroom 1, I can check bed 1, drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser 1 until I find faucet or laptop.
+Think: In bedroom 1, I can check bed 1, drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser 1 by one until I find faucet or laptop.
 OK.
 Act: go to bedroom 1
 You move to the bedroom (1). Looking quickly around the room, you see baseball bat (1), bed (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), painting (1, 2).
@@ -70,7 +70,7 @@ Think: It seems there are no more objects to turn off in bedroom 1, so I should 
 OK.
 Query: get_child_node_names({'parent_node_id': 'bathroom 1'})
 Info: garbage can 1, sink 1, sink basin 1, toilet 1
-Think: In bathroom 1, I can check garbage can 1, sink 1, sink basin 1, toilet 1 until I find faucet or laptop.
+Think: In bathroom 1, I can check garbage can 1, sink 1, sink basin 1, toilet 1 by one until I find faucet or laptop.
 OK.
 Act: go to bathroom 1
 You move to the bathroom (1). Looking quickly around the room, you see garbage can (1), painting (3), plunger (1), sink (1), sink basin (1), toilet (1).
@@ -92,11 +92,13 @@ Act: go to sink basin 1
 You arrive at the sink basin (1). You see dish sponge (1), faucet (1), sink (1), sink basin (1).
 Act: go to toilet 1
 You arrive at the toilet (1). The toilet (1) is closed. You see plunger (1), toilet (1), toilet paper (1).
+Act: open toilet 1
+You open toilet (1). You see plunger (1), toilet (1), toilet paper (1).
 Think: I need to check if there is any place I do not visit in bathroom 1.
 OK.
 Query: get_child_node_names({'parent_node_id': 'bathroom 1', 'child_node_attrs': {'visited': False}})
 Info: 
-Think: Now, I need to check whether any faucets, laptops that are turned on are still remaining.
+Think: Now, I need to check whether any faucets or laptops that are turned on are still remaining.
 OK.
 Query: find_objects({'label': 'faucet', 'attrs': {'isToggled': True}})
 Info: 

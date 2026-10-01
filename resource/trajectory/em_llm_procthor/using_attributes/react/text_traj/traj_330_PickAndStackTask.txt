@@ -1,0 +1,53 @@
+Your task is to: Put a box with the toggleable item from the bed inside it onto the dining table.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a bathroom (1). Looking quickly around the room, you see drawer (11, 12, 13, 14, 15, 16), dresser (2), garbage can (1), plunger (1), sink (1), sink basin (1), toilet (1), toilet paper (1).
+Think: To solve the task, I need to find and pick up the toggleable item from bed, put it in box, pick up and place box on dining table.
+OK.
+Think: First, I need to find bed and find the toggleable item from bed. The bed is more likely to appear in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see basket ball (1), bed (1), dog bed (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), house plant (1), television (1).
+Think: I find bed 1. Now, I need to move to bed 1 to find the toggleable item.
+OK.
+Act: go to bed 1
+You arrive at the bed (1). You see basket ball (1), bed (1), cell phone (1, 2), pillow (1), television (1).
+Think: On bed 1, the toggleable item is cell phone 1. Now, I need to pick it up.
+OK.
+Act: go to cell phone 1
+You arrive at the cell phone (1). You see bed (1), cell phone (1, 2), pillow (1).
+Act: pick up cell phone 1
+You pick up cell phone (1). You hold cell phone (1).
+Think: Now, I need to find box and put down cell phone 1. The box is more likely to appear in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see cabinet (1), dining table (2), painting (1, 2, 3, 4), shelf (1, 2, 3), shelving unit (1), sofa (1), television (2). You hold cell phone (1).
+Act: go to cabinet 1
+You arrive at the cabinet (1). The cabinet (1) is closed. You see book (4), cabinet (1), pencil (2), plate (2), shelf (1, 2, 3), shelving unit (1), statue (1), vase (3). You hold cell phone (1).
+Act: open cabinet 1
+You open cabinet (1). You see book (4), box (1), cabinet (1), pencil (2), plate (2), shelf (1, 2, 3), shelving unit (1), statue (1), vase (3). You hold cell phone (1).
+Act: go to box 1
+You arrive at the box (1). The box (1) is closed. You see book (4), box (1), cabinet (1), pencil (2), plate (2), shelf (1, 2, 3), shelving unit (1), statue (1), vase (3). You hold cell phone (1).
+Act: open box 1
+You open box (1). You see book (4), box (1), cabinet (1), pencil (2), plate (2), shelf (1, 2, 3), shelving unit (1), statue (1), vase (3). You hold cell phone (1).
+Act: put down cell phone 1
+You put cell phone (1) in box (1).
+Think: Now, I need to pick up box 1.
+OK.
+Act: pick up box 1
+You pick up box (1). You hold box (1).
+Think: Now, I need to find dining table and put down box 1. The dining table is more likely to appear in living room 1.
+OK.
+Act: go to dining table 2
+You arrive at the dining table (2). You see book (4), bowl (2), cabinet (1), cell phone (1, 4), dining table (2), house plant (3), painting (4), pencil (2), pillow (2), plate (2), shelf (1, 2), shelving unit (1), sofa (1), vase (3). You hold box (1).
+Act: put down box 1
+Put action failed: There is no valid space to place box (1) in dining table (2).
+Think: Since there is no valid space to place box 1, I need to find another dining table. The dining table is more likely to appear in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see cell phone (1), chair (1, 2, 3, 4, 5, 6), countertop (1), dining table (1), fridge (1), house plant (2). You hold box (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see book (2, 3), butter knife (1), cell phone (1, 3), chair (1, 2, 4, 5), dining table (1), mug (1), pen (2), pencil (1), plate (1), spoon (1), vase (2). You hold box (1).
+Act: put down box 1
+You put box (1) on dining table (1).
+Think: Now I complete the task.
+OK.
+Act: done

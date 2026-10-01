@@ -1,0 +1,33 @@
+Your task is to: Move the object made of wood from the TV stand onto the shelf.
+You are in the house, and there are 2 rooms: kitchen (1), living room (1). You are in the middle of a kitchen (1). Looking quickly around the room, you see chair (1), countertop (1), dining table (1), fridge (1), painting (1), television (1).
+Think: To solve the task, I need to find and pick up the object made of wood from TV stand, then put it on shelf.
+OK.
+Think: First, I need to find TV stand and find and pick up the object made of wood from TV stand.
+OK.
+Query: recall location of TV stand
+You saw TV stand 1 in living room 1.
+Think: TV stand 1 is in living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), armchair (1, 2), cabinet (1), dining table (2), floor lamp (1), painting (2, 3, 4), shelf (1, 2, 3, 4, 5, 6, 7, 8, 9), shelving unit (1), sofa (1).
+Act: go to TV stand 1
+You arrive at the TV stand (1). You see TV stand (1), key chain (1), pencil (1), shelf (4, 5, 6, 7, 8, 9), television (2), tissue box (1).
+Think: On TV stand 1, the object made of wood is pencil 1. Now, I need to pick it up.
+OK.
+Act: go to pencil 1
+You arrive at the pencil (1). You see TV stand (1), cabinet (1), key chain (1), pencil (1), shelf (1, 2, 3, 4, 5, 6, 7, 8, 9), shelving unit (1), television (2), tissue box (1).
+Act: pick up pencil 1
+You pick up pencil (1). You hold pencil (1).
+Think: Now, I need to find shelf.
+OK.
+Query: recall location of shelf
+You saw shelf 9 in living room 1. You saw shelf 7 in living room 1. You saw shelf 6 in living room 1. You saw shelf 5 in living room 1. You saw shelf 3 in living room 1. You saw shelf 8 in living room 1. You saw shelf 2 in living room 1. You saw shelf 1 in living room 1. You saw shelf 4 in living room 1.
+Think: Shelf 1 is in living room 1.
+OK.
+Act: go to shelf 1
+You arrive at the shelf (1). You see book (1), cabinet (1), house plant (2), pen (2), shelf (1, 2, 3, 4, 5, 6), shelving unit (1), tissue box (1). You hold pencil (1).
+Act: put down pencil 1
+You put pencil (1) on shelf (1).
+Think: Now I complete the task.
+OK.
+Act: done

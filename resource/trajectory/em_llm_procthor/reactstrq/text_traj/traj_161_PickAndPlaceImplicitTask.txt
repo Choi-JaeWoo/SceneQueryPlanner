@@ -24,10 +24,8 @@ Think: Now, I need to find drawer.
 OK.
 Query: find_objects({'label': 'drawer'})
 Info: [{'name_id_nl': 'drawer 1', 'node_type': 'asset', 'properties': ['openable'], 'states': [], 'room': 'bedroom 1'}, {'name_id_nl': 'drawer 2', 'node_type': 'asset', 'properties': ['openable'], 'states': [], 'room': 'bedroom 1'}, {'name_id_nl': 'drawer 3', 'node_type': 'asset', 'properties': ['openable'], 'states': [], 'room': 'bedroom 1'}]
-Think: Drawer 1 is in bedroom 1.
+Think: I find drawer 1, drawer 2, drawer 3.
 OK.
-Act: go to bedroom 1
-You move to the bedroom (1). Looking quickly around the room, you see baseball bat (1), basket ball (1), bed (1), drawer (1, 2, 3), dresser (1), house plant (1), painting (1, 2), television (1). You hold CD (1).
 Act: go to drawer 1
 You arrive at the drawer (1). The drawer (1) is closed. You see drawer (1, 2, 3), dresser (1), pen (1). You hold CD (1).
 Act: open drawer 1

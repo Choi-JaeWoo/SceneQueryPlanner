@@ -1,0 +1,51 @@
+Your task is to: Put the object made of wood from the desk into the box to prevent it from getting scratched.
+You are in the house, and there are 1 rooms: bedroom (1). You are in the middle of a bedroom (1). Looking quickly around the room, you see bed (1), chair (1), desk (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), painting (1, 2), side table (1).
+Think: To solve the task, I need to find and pick up the object made of wood from desk, find box and put it down.
+OK.
+Think: First, I need to find desk and find the object made of wood from desk.
+OK.
+Query: find_objects({'label': 'desk'})
+Info: [{'name_id_nl': 'desk 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'bedroom 1'}]
+Think: Desk 1 is in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see bed (1), chair (1), desk (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), painting (1, 2), side table (1).
+Act: go to desk 1
+You arrive at the desk (1). You see bed (1), box (1), chair (1), credit card (1), desk (1), mug (1), pen (1), pencil (1), pillow (1), tennis racket (1), tissue box (1).
+Think: Now, I need to find and pick up the object made of wood from the desk. First, I need to check what is on top of desk 1.
+OK.
+Query: get_edges_for_node({'node_id': 'desk 1', 'relation': 'ON'})
+Info: [('credit card 1', 'desk 1', 'ON'), ('mug 1', 'desk 1', 'ON'), ('pen 1', 'desk 1', 'ON'), ('pencil 1', 'desk 1', 'ON'), ('tissue box 1', 'desk 1', 'ON')]
+Think: Now, I need to check each object to find the object made of wood.
+OK.
+Query: read_node({'node_id': 'credit card 1'})
+Info: {'name_id_nl': 'credit card 1', 'salientMaterials': ['Plastic'], 'properties': ['pickupable'], 'states': []}
+Query: read_node({'node_id': 'mug 1'})
+Info: {'name_id_nl': 'mug 1', 'salientMaterials': ['Ceramic'], 'properties': ['pickupable'], 'states': []}
+Query: read_node({'node_id': 'pen 1'})
+Info: {'name_id_nl': 'pen 1', 'salientMaterials': ['Plastic', 'Metal'], 'properties': ['pickupable'], 'states': []}
+Query: read_node({'node_id': 'pencil 1'})
+Info: {'name_id_nl': 'pencil 1', 'salientMaterials': ['Wood'], 'properties': ['pickupable'], 'states': []}
+Think: On desk 1, the object made of wood is pencil 1. Now, I need to pick it up.
+OK.
+Act: go to pencil 1
+You arrive at the pencil (1). You see bed (1), box (1), chair (1), credit card (1), desk (1), mug (1), pen (1), pencil (1), pillow (1), tennis racket (1), tissue box (1).
+Act: pick up pencil 1
+You pick up pencil (1). You hold pencil (1).
+Think: Now, I need to find box.
+OK.
+Query: find_objects({'label': 'box'})
+Info: [{'name_id_nl': 'box 1', 'node_type': 'asset', 'properties': ['openable', 'pickupable'], 'states': [], 'room': 'bedroom 1'}]
+Think: Box 1 is in bedroom 1.
+OK.
+Act: go to box 1
+You arrive at the box (1). The box (1) is closed. You see bed (1), box (1), chair (1), credit card (1), desk (1), mug (1), pen (1), pillow (1), tennis racket (1), tissue box (1). You hold pencil (1).
+Think: Since box 1 is closed, I need to open it to put down pencil 1.
+OK.
+Act: open box 1
+You open box (1). You see bed (1), box (1), chair (1), credit card (1), desk (1), mug (1), pen (1), pillow (1), tennis racket (1), tissue box (1). You hold pencil (1).
+Act: put down pencil 1
+You put pencil (1) in box (1).
+Think: Now I complete the task.
+OK.
+Act: done

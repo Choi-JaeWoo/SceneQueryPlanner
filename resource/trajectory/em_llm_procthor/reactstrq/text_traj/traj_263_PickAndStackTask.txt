@@ -1,0 +1,53 @@
+Your task is to: Set a box that contains a pencil onto the shelf.
+You are in the house, and there are 3 rooms: bedroom (1), kitchen (1), living room (1). You are in the middle of a bedroom (1). Looking quickly around the room, you see bed (1), boots (1), box (1), desk (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9), dresser (1), painting (1, 2), television (1).
+Think: To solve the task, I need to find and pick up pencil, put it in box, pick up and place box on shelf.
+OK.
+Think: First, I need to find and pick up pencil. The pencil is more likely to appear in bedroom 1.
+OK.
+Query: get_child_node_names({'parent_node_id': 'bedroom 1'})
+Info: bed 1, box 1, desk 1, drawer (1, 2, 3, 4, 5, 6, 7, 8, 9), dresser 1
+Think: In bedroom 1, the pencil is likely to appear in/on bed 1, box 1, desk 1, drawer (1, 2, 3, 4, 5, 6, 7, 8, 9), dresser 1. I can check each place one by one until I find pencil.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see bed (1), boots (1), box (1), desk (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9), dresser (1), painting (1, 2), television (1).
+Act: go to bed 1
+You arrive at the bed (1). You see bottle (1, 2), chair (1), dining table (1), lettuce (1, 2), pencil (2), stool (1).
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see bed (1), boots (1), box (1), desk (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9), dresser (1), painting (1, 2), television (1).
+Act: go to box 1
+You arrive at the box (1). The box (1) is open. You see bed (1), book (3), box (1), desk (1), drawer (1, 2, 3), pen (1), pencil (1), pillow (1), tissue box (1).
+Think: I find pencil 1. Now, I need to pick it up.
+OK.
+Act: go to pencil 1
+You arrive at the pencil (1). You see book (3), box (1), desk (1), drawer (1, 2, 3), pen (1), pencil (1), tissue box (1).
+Act: pick up pencil 1
+You pick up pencil (1). You hold pencil (1).
+Think: Now, I need to find box and put down pencil 1.
+OK.
+Act: go to box 1
+You arrive at the box (1). The box (1) is open. You see bed (1), book (3), box (1), desk (1), drawer (1, 2, 3), pen (1), pillow (1), tissue box (1). You hold pencil (1).
+Act: put down pencil 1
+You put pencil (1) in box (1).
+Think: Now, I need to pick up box 1.
+OK.
+Act: pick up box 1
+You pick up box (1). You hold box (1).
+Think: Now, I need to find shelf and put down box 1.
+OK.
+Query: find_objects({'label': 'shelf'})
+Info: [{'name_id_nl': 'shelf 6', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}, {'name_id_nl': 'shelf 11', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}, {'name_id_nl': 'shelf 8', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}, {'name_id_nl': 'shelf 7', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}, {'name_id_nl': 'shelf 4', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}, {'name_id_nl': 'shelf 3', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}, {'name_id_nl': 'shelf 2', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}, {'name_id_nl': 'shelf 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}, {'name_id_nl': 'shelf 5', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}, {'name_id_nl': 'shelf 9', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}, {'name_id_nl': 'shelf 10', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}]
+Think: shelf 6 is living room 1.
+OK.
+Act: go to living room 1
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), cabinet (1), dining table (2), painting (3, 4), pencil (1), shelf (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11), shelving unit (1), side table (1). You hold box (1).
+Act: go to shelf 6
+You arrive at the shelf (6). You see TV stand (1), cabinet (1), candle (1, 2), pencil (1), shelf (1, 2, 3, 6, 7, 8, 9, 10, 11), shelving unit (1), television (2). You hold box (1).
+Act: put down box 1
+Put action failed: There is no valid space to place box (1) in shelf (6).
+Act: go to shelf 11
+You arrive at the shelf (11). You see TV stand (1), cabinet (1), candle (1, 2), pencil (1, 3), shelf (1, 2, 3, 6, 7, 8, 9, 10, 11), shelving unit (1), television (2). You hold box (1).
+Act: put down box 1
+You put box (1) on shelf (11).
+Think: Now I complete task.
+OK.
+Act: done

@@ -1,0 +1,47 @@
+Your task is to: Put the wooden item from the dresser into the box to prevent it from rotting.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a bathroom (1). Looking quickly around the room, you see garbage can (1), plunger (1), sink (1), sink basin (1), toilet (1), toilet paper (1).
+Think: To solve the task, I need to find dresser and find the wooden item from dresser, then pick it up and put it down in box.
+OK.
+Think: First, I need to find dresser.
+OK.
+Query: find_objects({'label': 'dresser'})
+Info: [{'name_id_nl': 'dresser 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'bedroom 1'}]
+Think: Dresser 1 is in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see TV stand (1), baseball bat (1), bed (1), chair (1, 2, 3, 4), dining table (1), drawer (1, 2, 3), dresser (1), shelf (7).
+Act: go to dresser 1
+You arrive at the dresser (1). You see book (1), box (1), chair (1), drawer (1, 2, 3), dresser (1), mug (1), pencil (1, 3), tissue box (1, 2).
+Think: Now, I need to find and pick up the wooden item from the dresser. First, I need to check what is on top of dresser 1.
+OK.
+Query: get_edges_for_node({'node_id': 'dresser 1', 'relation': 'ON'})
+Info: [('book 1', 'dresser 1', 'ON'), ('pencil 1', 'dresser 1', 'ON'), ('tissue box 1', 'dresser 1', 'ON')]
+Think: Now, I need to check each object to find the wooden item.
+OK.
+Query: read_node({'node_id': 'book 1'})
+Info: {'name_id_nl': 'book 1', 'salientMaterials': ['Paper'], 'properties': ['openable', 'pickupable'], 'states': []}
+Query: read_node({'node_id': 'pencil 1'})
+Info: {'name_id_nl': 'pencil 1', 'salientMaterials': ['Wood'], 'properties': ['pickupable'], 'states': []}
+Query: read_node({'node_id': 'tissue box 1'})
+Info: {'name_id_nl': 'tissue box 1', 'salientMaterials': ['Paper'], 'properties': ['pickupable'], 'states': []}
+Think: On dresser 1, the wooden item is pencil 1. Now, I need to pick it up.
+OK.
+Act: go to pencil 1
+You arrive at the pencil (1). You see book (1), box (1), chair (1), drawer (1, 2, 3), dresser (1), mug (1), pencil (1, 3), tissue box (1, 2).
+Act: pick up pencil 1
+You pick up pencil (1). You hold pencil (1).
+Think: Now, I need to find box.
+OK.
+Query: find_objects({'label': 'box'})
+Info: [{'name_id_nl': 'box 1', 'node_type': 'asset', 'properties': ['openable', 'pickupable'], 'states': [], 'room': 'bedroom 1'}, {'name_id_nl': 'box 2', 'node_type': 'asset', 'properties': ['openable', 'pickupable'], 'states': [], 'room': 'living room 1'}]
+Think: Box 1 is in bedroom 1.
+OK.
+Act: go to box 1
+You arrive at the box (1). The box (1) is closed. You see box (1), chair (1, 2, 4), credit card (1), dining table (1), drawer (1, 2, 3), house plant (1), mug (1), pencil (2). You hold pencil (1).
+Act: open box 1
+You open box (1). You see box (1), chair (1, 2, 4), credit card (1), dining table (1), drawer (1, 2, 3), house plant (1), mug (1), pencil (2). You hold pencil (1).
+Act: put down pencil 1
+You put pencil (1) in box (1).
+Think: Now I complete the task.
+OK.
+Act: done

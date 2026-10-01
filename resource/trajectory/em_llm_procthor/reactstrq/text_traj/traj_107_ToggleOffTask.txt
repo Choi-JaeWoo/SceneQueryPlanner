@@ -1,6 +1,6 @@
 Your task is to: Turn off every faucet that is currently on.
 You are in the house, and there are 1 rooms: bathroom (1). You are in the middle of a bathroom (1). Looking quickly around the room, you see laundry hamper (1), painting (1), sink (1), sink basin (1), toilet (1).
-Think: To solve the task, I need to find and turn off every faucet that is currently on.
+Think: To solve the task, I need to find and turn off all active faucets.
 OK.
 Think: First, I need to check bathroom 1.
 OK.

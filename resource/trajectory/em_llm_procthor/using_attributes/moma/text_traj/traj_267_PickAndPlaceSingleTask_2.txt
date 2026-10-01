@@ -1,0 +1,8 @@
+Your task is to: Move the item made of wood from the dining table onto the countertop.
+You move to the living room (1). Looking quickly around the room, you see TV stand (1), armchair (1, 2), chair (1, 2, 3, 4), dining table (1), floor lamp (1, 2), painting (2, 3, 4), shelf (1), sofa (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- kitchen 1: [(stool 1), painting 1, (fridge 1), garbage bag 1, (countertop 1)]
+- living room 1: [painting 3, painting 2, floor lamp 1, floor lamp 2, painting 4, (TV stand 1), (chair 1), (armchair 1), (chair 2), (armchair 2), (sofa 1), (chair 3), (shelf 1), (chair 4), (dining table 1)]
+Your 1 previous actions were: go to living room 1 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I move to living room 1. I find dining table 1. Now, I need to move toward dining table 1 to find the item made of wood.
+Act: go to dining table 1

@@ -1,0 +1,8 @@
+Your task is to: Move the item made of plastic from the dining table into the drawer.
+You arrive at the drawer (1). The drawer (1) is closed. You see alarm clock (1), book (2, 4), drawer (1, 2, 5, 6, 7, 8, 9, 10, 11), dresser (1). You hold credit card (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- bathroom 1: [faucet 1, (laundry hamper 1), painting 3, painting 2, painting 4, plunger 1, (sink 1), (sink basin 1), (toilet 1)]
+- bedroom 1: [television 1, book 5, book 6, book 1, bowl 1, house plant 1, laptop 1, painting 1, tissue box 1, alarm clock 1, (bed 1), book 2, book 4, (chair 1), credit card 1, (desk 1), dining table 1, (drawer 3), drawer 1, (drawer 6), (drawer 2), (drawer 11), (drawer 5), (drawer 10), (drawer 9), (drawer 8), (drawer 7), (drawer 4), (drawer 12), (dresser 1)]
+Your 5 previous actions were: go to bedroom 1 (success), go to dining table 1 (success), go to credit card 1 (success), pick up credit card 1 (success), go to drawer 1 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I arrive at drawer 1. Drawer 1 is closed. I hold credit card 1. Now, I need to open drawer 1 to put credit card 1.
+Act: open drawer 1

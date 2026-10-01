@@ -26,32 +26,28 @@ Think: Now, I need to find dining table.
 OK.
 Query: find_objects({'label': 'dining table'})
 Info: [{'name_id_nl': 'dining table 1', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'bedroom 1'}, {'name_id_nl': 'dining table 2', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'kitchen 1'}, {'name_id_nl': 'dining table 3', 'node_type': 'asset', 'properties': [], 'states': [], 'room': 'living room 1'}]
-Think: I find dining table 1.
+Think: I find dining table 2.
 OK.
-Act: go to bedroom 1
-You move to the bedroom (1). Looking quickly around the room, you see baseball bat (1), bed (1), chair (1, 2, 3), dining table (1), drawer (1, 2, 3), dresser (1), laundry hamper (1), side table (1). You hold knife (1).
-Act: go to dining table 1
-You arrive at the dining table (1). You see chair (1, 2), dining table (1), mug (1), statue (1). You hold knife (1).
+Act: go to dining table 2
+You arrive at the dining table (2). You see bottle (1), cell phone (1), dining table (2), garbage bag (1), ladle (1), pencil (2), spatula (1), spray bottle (2). You hold knife (1).
 Act: put down knife 1
-You put knife (1) in dining table (1).
-Act: go to kitchen 1
-You move to the kitchen (1). Looking quickly around the room, you see countertop (1), dining table (2), fridge (1), garbage bag (1), painting (1, 2), television (1).
+You put knife (1) on dining table (2).
 Act: go to potato 1
 You arrive at the potato (1). You see countertop (1), potato (1), spatula (1), television (1).
 Act: pick up potato 1
 You pick up potato (1). You hold potato (1).
 Act: go to dining table 2
-You arrive at the dining table (2). You see bottle (1), cell phone (1), dining table (2), garbage bag (1), ladle (1), pencil (2), spatula (1), spray bottle (2). You hold potato (1).
+You arrive at the dining table (2). You see bottle (1), cell phone (1), dining table (2), garbage bag (1), knife (1), ladle (1), pencil (2), spatula (1), spray bottle (2). You hold potato (1).
 Act: put down potato 1
-You put potato (1) in dining table (2).
+You put potato (1) on dining table (2).
 Act: go to spatula 1
 You arrive at the spatula (1). You see countertop (1), painting (2), pencil (2), spatula (1), television (1).
 Act: pick up spatula 1
 You pick up spatula (1). You hold spatula (1).
 Act: go to dining table 2
-You arrive at the dining table (2). You see bottle (1), cell phone (1), dining table (2), garbage bag (1), ladle (1), pencil (2), potato (1), spray bottle (2). You hold spatula (1).
+You arrive at the dining table (2). You see bottle (1), cell phone (1), dining table (2), garbage bag (1), knife (1), ladle (1), pencil (2), potato (1), spray bottle (2). You hold spatula (1).
 Act: put down spatula 1
-You put spatula (1) in dining table (2).
+You put spatula (1) on dining table (2).
 Think: Now I need to check what's left on countertop 1.
 OK.
 Query: get_edges_for_node({'node_id': 'countertop 1', 'relation': 'ON'})

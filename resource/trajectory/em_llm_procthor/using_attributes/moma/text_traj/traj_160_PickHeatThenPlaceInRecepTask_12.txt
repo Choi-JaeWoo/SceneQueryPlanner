@@ -1,0 +1,8 @@
+Your task is to: Warm the cookable item from the countertop and put it back onto the countertop to prepare it for serving.
+You open microwave (1). You see countertop (1), fork (1), fridge (1), ladle (1), microwave (1), pepper shaker (1), plate (1), soap bottle (1), spoon (2), spray bottle (1), wine bottle (1). You hold potato (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- kitchen 1: [house plant 1, painting 1, book 1, credit card 1, mug 1, spoon 1, statue 1, countertop 1, fork 1, (fridge 1), (garbage can 1), ladle 1, microwave 1, pepper shaker 1, plate 1, potato 1, soap bottle 1, spoon 2, spray bottle 1, wine bottle 1]
+- living room 1: [(box 1), dog bed 1, (shelf 5), pillow 1, painting 2, (box 2), (shelf 2), (shelf 3), (TV stand 1), floor lamp 1, (sofa 1), painting 3, (shelf 6), (shelf 4), (dining table 1), (shelf 1)]
+Your 5 previous actions were: go to countertop 1 (success), go to potato 1 (success), pick up potato 1 (success), go to microwave 1 (success), open microwave 1 (success)
+What is the best next action to complete the task as efficiently as possible?
+Think: I open microwave 1. I hold potato 1. Now, I need to put down potato 1.
+Act: put down potato 1

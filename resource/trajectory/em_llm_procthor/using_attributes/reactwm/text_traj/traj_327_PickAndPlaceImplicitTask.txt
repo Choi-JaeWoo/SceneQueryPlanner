@@ -1,0 +1,71 @@
+Your task is to: Clear the furniture that has the safe, and place all items from it onto the bed.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a bedroom (1). Looking quickly around the room, you see TV stand (1), baseball bat (1), basket ball (1), bed (1), drawer (1, 2, 3, 4, 5, 6), dresser (1), painting (1, 2, 3), safe (1), shelf (1), sofa (1), stool (1).
+Think: To solve the task, I need to find the furniture that has the safe, find and pick up all items from it, then put them down on bed.
+OK.
+Think: First, I need to find the furniture that has the safe. The furniture that has the safe is more likely to appear in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see TV stand (1), baseball bat (1), basket ball (1), bed (1), drawer (1, 2, 3, 4, 5, 6), dresser (1), painting (1, 2, 3), safe (1), shelf (1), sofa (1), stool (1).
+Think: In bedroom 1, the furniture that has the safe is dresser 1. Now, I need to check what is on top of it.
+OK.
+Act: go to dresser 1
+You arrive at the dresser (1). You see CD (1), cell phone (1), drawer (1, 2, 3, 4, 5, 6), dresser (1), house plant (1), safe (1).
+Think: Now, I need to move CD 1, cell phone 1, house plant 1 to bed.
+OK.
+Act: go to CD 1
+You arrive at the CD (1). You see CD (1), cell phone (1), drawer (1, 2, 3, 4, 5, 6), dresser (1), house plant (1), safe (1), teddy bear (1).
+Act: pick up CD 1
+You pick up CD (1). You hold CD (1).
+Think: Now, I need to find bed.
+OK.
+Query: recall location of bed
+You saw bed 1 in bedroom 1.
+Think: Bed 1 is in bedroom 1.
+OK.
+Act: go to bed 1
+You arrive at the bed (1). You see basket ball (1), bed (1), pillow (1), teddy bear (1). You hold CD (1).
+Act: put down CD 1
+You put CD (1) on bed (1).
+Think: Now, I need to find and pick up cell phone 1. Cell phone 1 is on dresser 1 in bedroom 1.
+OK.
+Act: go to dresser 1
+You arrive at the dresser (1). You see cell phone (1), drawer (1, 2, 3, 4, 5, 6), dresser (1), house plant (1), safe (1).
+Act: go to cell phone 1
+You arrive at the cell phone (1). You see cell phone (1), drawer (1, 2, 3, 4, 5, 6), dresser (1), house plant (1), safe (1).
+Act: pick up cell phone 1
+You pick up cell phone (1). You hold cell phone (1).
+Act: go to bed 1
+You arrive at the bed (1). You see CD (1), basket ball (1), bed (1), pillow (1), teddy bear (1). You hold cell phone (1).
+Act: put down cell phone 1
+You put cell phone (1) on bed (1).
+Think: Now, I need to find and pick up house plant 1. House plant 1 is on dresser 1 in bedroom 1.
+OK.
+Act: go to dresser 1
+You arrive at the dresser (1). You see drawer (1, 2, 3, 4, 5, 6), dresser (1), house plant (1), safe (1).
+Act: go to house plant 1
+You arrive at the house plant (1). You see drawer (1, 2, 3, 4, 5, 6), dresser (1), house plant (1), safe (1).
+Act: pick up statue 1
+Pick up action failed: statue (1) is not within the visible range.
+Think: Since statue 1 is not within the visible range, I need to find it.
+OK.
+Query: recall location of statue
+You have not seen statue before.
+Think: I have not seen statue yet. The statue is more likely to appear in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see TV stand (1), baseball bat (1), basket ball (1), bed (1), drawer (1, 2, 3, 4, 5, 6), dresser (1), painting (1, 2, 3), safe (1), shelf (1), sofa (1), stool (1).
+Think: In bedroom 1, the statue is likely to appear in/on TV stand 1, bed 1, drawer (1, 2, 3, 4, 5, 6), dresser 1, shelf 1, sofa 1, stool 1. I can check each place one by one until I find statue.
+OK.
+Act: go to TV stand 1
+You arrive at the TV stand (1). You see TV stand (1), bowl (1), remote control (1), shelf (1), statue (1), television (1), tissue box (1).
+Act: go to statue 1
+You arrive at the statue (1). You see TV stand (1), bowl (1), remote control (1), shelf (1), statue (1), television (1), tissue box (1).
+Act: pick up statue 1
+You pick up statue (1). You hold statue (1).
+Act: go to bed 1
+You arrive at the bed (1). You see CD (1), basket ball (1), bed (1), cell phone (1), pillow (1), teddy bear (1). You hold statue (1).
+Act: put down statue 1
+You put statue (1) on bed (1).
+Think: Now I complete the task.
+OK.
+Act: done

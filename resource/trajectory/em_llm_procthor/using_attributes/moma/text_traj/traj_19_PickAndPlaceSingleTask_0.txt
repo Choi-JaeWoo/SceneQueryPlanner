@@ -1,0 +1,10 @@
+Your task is to: Put the wooden item near the watch onto the countertop to keep its surface from getting scratched.
+You are in the house, and there are 4 rooms: bathroom (1), bedroom (1), kitchen (1), living room (1). You are in the middle of a kitchen (1). Looking quickly around the room, you see countertop (1), fridge (1), garbage bag (1), house plant (1). Furthermore, you have found the following rooms and objects in the house so far (areas in parentheses have not been explored yet):
+- (bathroom 1): [(garbage can 1), (sink basin 1), (toilet 1), (sink 1), faucet 1, plunger 1]
+- (bedroom 1): [(desk 1), (drawer 3), (chair 3), (chair 4), (chair 5), (dining table 1), painting 1, (chair 1), painting 2, (bed 1), (bed 2), (drawer 1), (dresser 1), (laundry hamper 1), (chair 2), (drawer 2)]
+- kitchen 1: [house plant 1, (fridge 1), garbage bag 1, (countertop 1)]
+- (living room 1): [(TV stand 1), painting 3, (shelf 1), (sofa 1), (dining table 2), painting 4]
+You have not taken any actions yet.
+What is the best next action to complete the task as efficiently as possible?
+Think: First, I need to find watch. I find watch 1 in bedroom 1. Now, I need to move to bedroom 1.
+Act: go to bedroom 1

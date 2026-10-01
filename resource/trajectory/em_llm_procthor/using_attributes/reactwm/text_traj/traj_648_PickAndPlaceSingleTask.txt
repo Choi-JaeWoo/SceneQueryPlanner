@@ -1,0 +1,37 @@
+Your task is to: Move the item made of plastic from the dining table into the drawer.
+You are in the house, and there are 2 rooms: bathroom (1), bedroom (1). You are in the middle of a bathroom (1). Looking quickly around the room, you see laundry hamper (1), painting (2, 3, 4), plunger (1), sink (1), sink basin (1), toilet (1).
+Think: To solve the task, I need to find and pick up the item made of plastic from dining table, find drawer and put it down.
+OK.
+Think: First, I need to find dining table.
+OK.
+Query: recall location of dining table
+You saw dining table 1 in bedroom 1.
+Think: Dining table 1 is in bedroom 1.
+OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see bed (1), chair (1), desk (1), dining table (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), painting (1), television (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see book (1), chair (1), credit card (1), dining table (1), house plant (1).
+Think: On dining table 1, the item made of plastic is credit card 1. Now, I need to pick it up.
+OK.
+Act: go to credit card 1
+You arrive at the credit card (1). You see book (1, 5, 6), bowl (1), chair (1), credit card (1), desk (1), dining table (1), house plant (1), laptop (1), painting (1), tissue box (1).
+Act: pick up credit card 1
+You pick up credit card (1). You hold credit card (1).
+Think: Now, I need to find drawer.
+OK.
+Query: recall location of drawer
+You saw drawer 3 in bedroom 1. You saw drawer 1 in bedroom 1. You saw drawer 6 in bedroom 1. You saw drawer 2 in bedroom 1. You saw drawer 11 in bedroom 1. You saw drawer 5 in bedroom 1. You saw drawer 10 in bedroom 1. You saw drawer 9 in bedroom 1. You saw drawer 8 in bedroom 1. You saw drawer 7 in bedroom 1. You saw drawer 4 in bedroom 1. You saw drawer 12 in bedroom 1.
+Think: Drawer 3 is in bedroom 1.
+OK.
+Act: go to drawer 3
+You arrive at the drawer (3). The drawer (3) is closed. You see alarm clock (1), bed (1), book (2, 4), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), pillow (1). You hold credit card (1).
+Think: Since drawer 3 is closed, I need to open it to put down credit card 1.
+OK.
+Act: open drawer 3
+You open drawer (3). You see alarm clock (1), bed (1), book (2, 4), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), dresser (1), pillow (1). You hold credit card (1).
+Act: put down credit card 1
+You put credit card (1) in drawer (3).
+Think: Now I complete the task.
+OK.
+Act: done

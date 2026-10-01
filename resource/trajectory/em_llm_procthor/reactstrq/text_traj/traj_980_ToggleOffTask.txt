@@ -1,6 +1,6 @@
 Your task is to: Switch off any faucets and cell phones that are currently in use.
 You are in the house, and there are 2 rooms: bathroom (1), bedroom (1). You are in the middle of a bedroom (1). Looking quickly around the room, you see baseball bat (1), bed (1), box (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), garbage can (1), house plant (1), painting (1).
-Think: To solve the task, I need to go through every room, check for faucet and cell phone, and turn them off if they are turned on.
+Think: To solve the task, I need to find and turn off all active faucets and cell phones.
 OK.
 Think: First, I need to check bedroom 1.
 OK.
@@ -8,6 +8,8 @@ Query: get_child_node_names({'parent_node_id': 'bedroom 1'})
 Info: bed 1, box 1, drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser 1, garbage can 1
 Think: In bedroom 1, I can check bed 1, box 1, drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser 1, garbage can 1 until I find faucet or cell phone.
 OK.
+Act: go to bedroom 1
+You move to the bedroom (1). Looking quickly around the room, you see baseball bat (1), bed (1), box (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), garbage can (1), house plant (1), painting (1).
 Act: go to bed 1
 You arrive at the bed (1). You see baseball bat (1), bed (1), pillow (1), remote control (1).
 Act: go to box 1
@@ -66,15 +68,17 @@ Act: go to dresser 1
 You arrive at the dresser (1). You see CD (1), book (1), bowl (1), cell phone (1), drawer (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), dresser (1), garbage can (1), house plant (1), mug (1), painting (1), pen (1), remote control (2), tissue box (1), vase (1).
 Act: go to garbage can 1
 You arrive at the garbage can (1). You see garbage can (1), house plant (1), painting (1), pillow (1).
-Think: I need to check if there is any place I do not visit in bedroom 1.
+Think: Now, I need to check whether any faucets, cell phones that are turned on are still remaining.
 OK.
-Query: get_child_node_names({'parent_node_id': 'bedroom 1', 'child_node_attrs': {'visited': False}})
+Query: find_objects({'label': 'faucet', 'attrs': {'isToggled': True}})
+Info: [{'name_id_nl': 'faucet 1', 'node_type': 'object', 'properties': ['toggleable'], 'states': ['isToggled']}]
+Query: find_objects({'label': 'cell phone', 'attrs': {'isToggled': True}})
 Info: 
-Think: It seems there are no more objects to turn off in bedroom 1, so I should go to bathroom 1.
+Think: It seems there are still faucets that are turned on, so I should go to bathroom 1.
 OK.
 Query: get_child_node_names({'parent_node_id': 'bathroom 1'})
 Info: sink 1, sink basin 1, toilet 1, washing machine 1
-Think: In bathroom 1, I can check sink 1, sink basin 1, toilet 1, washing machine 1 until I find faucet or cell phone.
+Think: In bathroom 1, I can check sink 1, sink basin 1, toilet 1, washing machine 1 until I find faucet.
 OK.
 Act: go to bathroom 1
 You move to the bathroom (1). Looking quickly around the room, you see painting (2, 3), sink (1), sink basin (1), spray bottle (1), toilet (1), toilet paper (1), washing machine (1).
@@ -94,12 +98,10 @@ Act: go to sink basin 1
 You arrive at the sink basin (1). You see faucet (1), painting (2, 3), sink (1), sink basin (1), soap bar (1), spray bottle (1), toilet paper (1).
 Act: go to toilet 1
 You arrive at the toilet (1). The toilet (1) is closed. You see sink basin (1), soap bar (1), spray bottle (1), toilet (1), toilet paper (1), washing machine (1).
+Act: open toilet 1
+You open toilet (1). You see sink basin (1), soap bar (1), spray bottle (1), toilet (1), toilet paper (1), washing machine (1).
 Act: go to washing machine 1
 You arrive at the washing machine (1). You see washing machine (1).
-Think: I need to check if there is any place I do not visit in bathroom 1.
-OK.
-Query: get_child_node_names({'parent_node_id': 'bathroom 1', 'child_node_attrs': {'visited': False}})
-Info: 
 Think: Now, I need to check whether any faucets, cell phones that are turned on are still remaining.
 OK.
 Query: find_objects({'label': 'faucet', 'attrs': {'isToggled': True}})

@@ -1,0 +1,53 @@
+Your task is to: Move all items from the receptacle that is a cold source onto the dining table.
+You are in the house, and there are 1 rooms: kitchen (1). You are in the middle of a kitchen (1). Looking quickly around the room, you see cabinet (1, 2), chair (1, 2), countertop (1), dining table (1), fridge (1), house plant (1), painting (1, 2), shelf (1, 2, 3, 4, 5, 6), shelving unit (1, 2), television (1).
+Think: To solve the task, I need to find the receptacle that is a cold source and check what is on top of it. Then, I need to move everything on that receptacle to dining table.
+OK.
+Think: First, I need to find the receptacle that is a cold source. In the current environment, the fridge serves as a cold source.
+OK.
+Act: go to fridge 1
+You arrive at the fridge (1). The fridge (1) is closed. You see book (5), cabinet (1), fridge (1), plate (1), shelf (1, 2, 3), shelving unit (1).
+Think: Since fridge 1 is closed, I need to open it to check what is on top of it.
+OK.
+Act: open fridge 1
+You open fridge (1). You see book (5), cabinet (1), egg (1, 2, 3), fridge (1), plate (1), shelf (1, 2, 3), shelving unit (1).
+Think: Now, I need to move egg 1, egg 2, egg 3, plate 1 to dining table.
+OK.
+Act: go to egg 1
+You arrive at the egg (1). You see cabinet (2), egg (1, 2, 3), fridge (1), plate (1), shelf (4, 5), shelving unit (2).
+Act: pick up egg 1
+You pick up egg (1). You hold egg (1).
+Think: Now, I need to find dining table. The dining table is more likely to appear in kitchen 1.
+OK.
+Act: go to kitchen 1
+You move to the kitchen (1). Looking quickly around the room, you see cabinet (1, 2), chair (1, 2), countertop (1), dining table (1), fridge (1), house plant (1), painting (1, 2), shelf (1, 2, 3, 4, 5, 6), shelving unit (1, 2), television (1). You hold egg (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see book (1, 4), bottle (1), bowl (1), butter knife (1), chair (1), dining table (1), ladle (2), lettuce (1), microwave (1), mug (1), pen (1), pepper shaker (1), plate (1), pot (1), potato (1), television (1), wine bottle (1). You hold egg (1).
+Act: put down egg 1
+You put egg (1) on dining table (1).
+Act: go to egg 2
+You arrive at the egg (2). You see cabinet (2), egg (2, 3), fridge (1), shelf (4, 5), shelving unit (2).
+Act: pick up egg 2
+You pick up egg (2). You hold egg (2).
+Act: go to dining table 1
+You arrive at the dining table (1). You see book (1, 4), bottle (1), bowl (1), butter knife (1), chair (1), dining table (1), egg (1), ladle (2), lettuce (1), microwave (1), mug (1), pen (1), pepper shaker (1), plate (1), pot (1), potato (1), television (1), wine bottle (1). You hold egg (2).
+Act: put down egg 2
+You put egg (2) on dining table (1).
+Act: go to egg 3
+You arrive at the egg (3). You see cabinet (2), egg (3), fridge (1), plate (1), shelf (4, 5), shelving unit (2).
+Act: pick up egg 3
+You pick up egg (3). You hold egg (3).
+Act: go to dining table 1
+You arrive at the dining table (1). You see book (1, 4), bottle (1), bowl (1), butter knife (1), chair (1), dining table (1), egg (1, 2), ladle (2), lettuce (1), microwave (1), mug (1), pen (1), pepper shaker (1), plate (1), pot (1), potato (1), television (1), wine bottle (1). You hold egg (3).
+Act: put down egg 3
+You put egg (3) on dining table (1).
+Act: go to plate 1
+You arrive at the plate (1). You see book (1, 4), bottle (1), bowl (1), butter knife (1), cabinet (2), chair (1), dining table (1), egg (1, 2, 3), ladle (2), lettuce (1), microwave (1), mug (1), pen (1), pepper shaker (1), plate (1), pot (1), potato (1), shelf (4, 5, 6), shelving unit (2), wine bottle (1).
+Act: pick up plate 1
+You pick up plate (1). You hold plate (1).
+Act: go to dining table 1
+You arrive at the dining table (1). You see book (1, 4), bottle (1), bowl (1), butter knife (1), chair (1), dining table (1), egg (1, 2, 3), ladle (2), lettuce (1), microwave (1), mug (1), pen (1), pepper shaker (1), pot (1), potato (1), television (1), wine bottle (1). You hold plate (1).
+Act: put down plate 1
+You put plate (1) on dining table (1).
+Think: Now I complete the task.
+OK.
+Act: done
