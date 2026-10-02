@@ -305,7 +305,9 @@ class WahEnv(BaseEnv):
             possible = is_free_hand and is_obj_close and is_obj_in_open_recep and is_obj_grabbable
         elif sim_act == 'putin':
             sim_recep_info = sim_skill_info['sim_recep_info']
-            nl_recep_info = name_id_dict_sim2nl[sim_recep_info]
+            nl_recep_info = name_id_dict_sim2nl.get(sim_recep_info)
+            if nl_recep_info is None:  # receptacle outside the task vocabulary: report failure instead of crashing
+                return False, f"You can't put {nl_obj_info[0]} {nl_obj_info[1]} there because that receptacle is not available."
             is_holding_obj = wah_utils.check_holding_obj(graph, agent_id, sim_obj_info[1])
             is_recep_close = wah_utils.check_obj_close_to_agent(graph, agent_id, sim_recep_info[1])
             is_recep_container = wah_utils.check_properties(graph, sim_recep_info[1], 'CONTAINERS')
@@ -324,7 +326,9 @@ class WahEnv(BaseEnv):
         elif sim_act == 'putback':
             ### Check: 1) agent holding obj 2) recep close 3) recep surface
             sim_recep_info = sim_skill_info['sim_recep_info']
-            nl_recep_info = name_id_dict_sim2nl[sim_recep_info]
+            nl_recep_info = name_id_dict_sim2nl.get(sim_recep_info)
+            if nl_recep_info is None:  # receptacle outside the task vocabulary: report failure instead of crashing
+                return False, f"You can't put {nl_obj_info[0]} {nl_obj_info[1]} there because that receptacle is not available."
             is_holding_obj = wah_utils.check_holding_obj(graph, agent_id, sim_obj_info[1])
             is_recep_close = wah_utils.check_obj_close_to_agent(graph, agent_id, sim_recep_info[1])
             is_recep_surface = wah_utils.check_properties(graph, sim_recep_info[1], 'SURFACES')
