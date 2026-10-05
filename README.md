@@ -2,13 +2,15 @@
 
 **Memory–Environment Dual-Grounding for Embodied Agents: Active Information Seeking Beyond Passive Observation**
 
-*Findings of the Association for Computational Linguistics: EMNLP 2026*
+### Accepted to Findings of EMNLP 2026
 
-[Paper](TODO) · [Project page](TODO)
+### [Paper](TODO) | [Project Page](TODO)
 
-[Jae-Woo Choi](https://choi-jaewoo.github.io/)<sup>1,2\*</sup>, Sehoon Oh<sup>3\*</sup>, Ue-Hwan Kim<sup>3†</sup>
-<sup>1</sup>Electronics and Telecommunications Research Institute (ETRI) · <sup>2</sup>University of Science and Technology (UST) · <sup>3</sup>Department of AI, Gwangju Institute of Science and Technology (GIST)
-<sup>\*</sup>Equal contribution · <sup>†</sup>Corresponding author
+[Jae-Woo Choi](https://choi-jaewoo.github.io/)<sup>1, 2, \*</sup>, Sehoon Oh<sup>3, \*</sup>, Ue-Hwan Kim<sup>3, †</sup>
+
+<sup>1</sup> Electronics and Telecommunications Research Institute (ETRI), <sup>2</sup> University of Science and Technology (UST), <sup>3</sup> Department of AI, Gwangju Institute of Science and Technology (GIST)
+
+<sup>\*</sup> Equal contribution, <sup>†</sup> Corresponding author
 
 SceneQueryPlanner is an LLM-based embodied task planner that treats information acquisition as a first-class planning action. The agent interleaves three action types — `Think:` (reasoning), `Act:` (environment grounding), and `Query:` (memory grounding) — where `Query:` issues structured queries (`find_objects`, `read_node`, `get_child_node_names`, `get_edges_for_node`) against a dynamic hierarchical 3D scene graph built from partial observations.
 
