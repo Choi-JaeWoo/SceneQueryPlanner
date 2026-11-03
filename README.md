@@ -4,7 +4,7 @@
 
 ### Accepted to Findings of EMNLP 2026
 
-### [Paper](TODO) | [Project Page](TODO)
+### [Paper](https://aclanthology.org/2026.findings-emnlp.16/)
 
 [Jae-Woo Choi](https://choi-jaewoo.github.io/)<sup>1, 2, \*</sup>, Sehoon Oh<sup>3, \*</sup>, Ue-Hwan Kim<sup>3, †</sup>
 
@@ -13,6 +13,8 @@
 <sup>\*</sup> Equal contribution, <sup>†</sup> Corresponding author
 
 SceneQueryPlanner is an LLM-based embodied task planner that treats information acquisition as a first-class planning action. The agent interleaves three action types — `Think:` (reasoning), `Act:` (environment grounding), and `Query:` (memory grounding) — where `Query:` issues structured queries (`find_objects`, `read_node`, `get_child_node_names`, `get_edges_for_node`) against a dynamic hierarchical 3D scene graph built from partial observations.
+
+<p align="center"><img src="assets/teaser.gif" width="100%" alt="SceneQueryPlanner finding the broken item on a desk by querying its scene-graph memory"></p>
 
 <p align="center"><img src="assets/figure1.png" width="100%" alt="Overview of SceneQueryPlanner"></p>
 
@@ -156,10 +158,15 @@ This project is released under the MIT License (see [LICENSE](LICENSE)). The ven
 ## Citation
 
 ```bibtex
-@inproceedings{choi2026scenequeryplanner,
-  title     = {Memory--Environment Dual-Grounding for Embodied Agents: Active Information Seeking Beyond Passive Observation},
-  author    = {Choi, Jae-Woo and Oh, Sehoon and Kim, Ue-Hwan},
-  booktitle = {Findings of the Association for Computational Linguistics: EMNLP 2026},
-  year      = {2026}
+@inproceedings{choi-etal-2026-memory,
+    title     = "Memory{--}Environment Dual-Grounding for Embodied Agents: Active Information Seeking Beyond Passive Observation",
+    author    = "Choi, Jae-Woo and Oh, Sehoon and Kim, Ue-Hwan",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2026",
+    year      = "2026",
+    address   = "Budapest, Hungary",
+    publisher = "Association for Computational Linguistics",
+    url       = "https://aclanthology.org/2026.findings-emnlp.16/",
+    doi       = "10.18653/2026.findings-emnlp.16",
+    pages     = "317--338"
 }
 ```
